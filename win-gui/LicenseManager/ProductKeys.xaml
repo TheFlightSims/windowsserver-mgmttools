@@ -1,0 +1,57 @@
+﻿<lm:ScalableWindow x:Class="HGM.Hotbird64.LicenseManager.ProductKeys" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:lm="clr-namespace:HGM.Hotbird64.LicenseManager" Title="Install a Generic Key" Height="600"
+    Width="450">
+  <Grid x:Name="TopElement">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <DockPanel Margin="5,5,5,5">
+      <TextBlock DockPanel.Dock="Top" Text="Choose a License Key" />
+      <TreeView x:Name="ProductTree" Margin="0,2,0,0">
+        <TreeView.ItemContainerStyle>
+          <Style TargetType="{x:Type TreeViewItem}">
+            <EventSetter Event="MouseDoubleClick" Handler="TreeViewItem_DoubleClick" />
+            <EventSetter Event="Collapsed" Handler="TreeViewItem_Collapse" />
+          </Style>
+        </TreeView.ItemContainerStyle>
+      </TreeView>
+    </DockPanel>
+
+    <StackPanel Margin="5,5,5,5" Grid.Row="1">
+      <TextBlock TextWrapping="Wrap" Foreground="Red" Visibility="Collapsed" Name="TextBlockGenerated">Warning! This key is user-generated and cannot be used to acquire a Windows Genuine Ticket.</TextBlock>
+      <TextBlock TextWrapping="Wrap" Margin="0,7,0,2">Product Key</TextBlock>
+      <TextBox x:Name="GvlkKey" Text="{Binding ElementName=ProductTree, Path=SelectedItem.(lm:ProductKeys.ToolTip)}" Style="{StaticResource StandardTextBox}" />
+
+      <WrapPanel Margin="0,5,0,5" HorizontalAlignment="Right">
+        <Button x:Name="InstallButton" Margin="5,5,5,5" MinWidth="70" IsDefault="True" IsEnabled="False" Click="AnalyzeButton_Click">Check</Button>
+        <Button Margin="5,5,0,5" MinWidth="70" IsCancel="True" Click="CancelButton_Clicked">Cancel</Button>
+      </WrapPanel>
+
+      <TextBlock Margin="0,5,0,0" TextAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap">Please check for updated or additional Product Keys at Microsoft Technet</TextBlock>
+      <WrapPanel HorizontalAlignment="Center">
+
+        <TextBlock TextAlignment="Center" Margin="15,0,15,0" FontSize="11">
+                <Hyperlink Foreground="Blue" NavigateUri="https://docs.microsoft.com/en-us/windows-server/get-started/kmsclientkeys" RequestNavigate="Hyperlink_RequestNavigate">Windows</Hyperlink>
+        </TextBlock>
+
+        <TextBlock TextAlignment="Center" Margin="15,0,15,0" FontSize="11">
+                <Hyperlink Foreground="Blue" NavigateUri="http://technet.microsoft.com/en-us/library/ee624355(v=office.14).aspx#section2_3"
+              RequestNavigate="Hyperlink_RequestNavigate">Office2010</Hyperlink>
+        </TextBlock>
+
+          <TextBlock TextAlignment="Center" Margin="15,0,15,0" FontSize="11">
+              <Hyperlink Foreground="Blue" NavigateUri="http://technet.microsoft.com/en-us/library/dn385360.aspx" RequestNavigate="Hyperlink_RequestNavigate">Office2013</Hyperlink>
+          </TextBlock>
+
+          <TextBlock TextAlignment="Center" Margin="15,0,15,0" FontSize="11">
+              <Hyperlink Foreground="Blue" NavigateUri="https://docs.microsoft.com/en-us/DeployOffice/vlactivation/gvlks" RequestNavigate="Hyperlink_RequestNavigate">Office2016/2019</Hyperlink>
+          </TextBlock>
+
+      </WrapPanel>
+
+    </StackPanel>
+  </Grid>
+
+</lm:ScalableWindow>
