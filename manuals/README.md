@@ -3,225 +3,225 @@ You may use these product names or numbers(vlmcs -x):
 
 ### Windows Server (2008 - 2022)
 
-Numbers|Product
-:-|-
- 1  | Windows Server 2008 Web
- 2  | Windows Server 2008 Compute Cluster
- 3  | Windows Server 2008 Standard
- 4  | Windows Server 2008 Standard without Hyper-V
- 5  | Windows Server 2008 Enterprise
- 6  | Windows Server 2008 Enterprise without Hyper-V
- 7  | Windows Server 2008 Datacenter
- 8  | Windows Server 2008 Datacenter without Hyper-V
- 9  | Windows Server 2008 for Itanium
- 10 | Windows MultiPoint Server 2010
- 11 | Windows Server 2008 R2 Web
- 12 | Windows Server 2008 R2 HPC Edition
- 13 | Windows Server 2008 R2 Standard
- 14 | Windows Server 2008 R2 Enterprise
- 15 | Windows Server 2008 R2 Datacenter
- 16 | Windows Server 2008 R2 for Itanium Enterprise
- 17 | Windows Server 2012 Datacenter
- 18 | Windows Server 2012 MultiPoint Premium
- 19 | Windows Server 2012 MultiPoint Standard
- 20 | Windows Server 2012 Standard
- 21 | Windows Server 2012 R2 Cloud Storage
- 22 | Windows Server 2012 R2 Datacenter
- 23 | Windows Server 2012 R2 Essentials
- 24 | Windows Server 2012 R2 Standard
- 25 | Windows Server 2016 Azure Core
- 26 | Windows Server 2016 Cloud Storage
- 27 | Windows Server 2016 Datacenter
- 28 | Windows Server 2016 Essentials
- 29 | Windows Server 2016 Standard
- 30 | Windows Server 2016 ARM64
- 31 | Windows Server 2016 Datacenter (Semi-Annual Channel)
- 32 | Windows Server 2016 Standard (Semi-Annual Channel)
- 33 | Windows Server 2016 Datacenter Preview
- 34 | Windows Server 2019 ARM64
- 35 | Windows Server 2019 Azure Core
- 36 | Windows Server 2019 Datacenter
- 37 | Windows Server 2019 Essentials
- 38 | Windows Server 2019 Standard
- 39 | Windows Server 2019 Datacenter (Semi-Annual Channel)
- 40 | Windows Server 2019 Standard (Semi-Annual Channel)
- 42 | Windows Server 2021 Datacenter (Semi-Annual Channel)
- 43 | Windows Server 2021 Standard (Semi-Annual Channel)
- 44 | Windows Server 2022 Azure Core
- 45 | Windows Server 2022 Datacenter
- 46 | Windows Server 2022 Standard
+Product
+:-|
+Windows Server 2008 Web
+Windows Server 2008 Compute Cluster
+Windows Server 2008 Standard
+Windows Server 2008 Standard without Hyper-V
+Windows Server 2008 Enterprise
+Windows Server 2008 Enterprise without Hyper-V
+Windows Server 2008 Datacenter
+Windows Server 2008 Datacenter without Hyper-V
+Windows Server 2008 for Itanium
+Windows MultiPoint Server 2010
+Windows Server 2008 R2 Web
+Windows Server 2008 R2 HPC Edition
+Windows Server 2008 R2 Standard
+Windows Server 2008 R2 Enterprise
+Windows Server 2008 R2 Datacenter
+Windows Server 2008 R2 for Itanium Enterprise
+Windows Server 2012 Datacenter
+Windows Server 2012 MultiPoint Premium
+Windows Server 2012 MultiPoint Standard
+Windows Server 2012 Standard
+Windows Server 2012 R2 Cloud Storage
+Windows Server 2012 R2 Datacenter
+Windows Server 2012 R2 Essentials
+Windows Server 2012 R2 Standard
+Windows Server 2016 Azure Core
+Windows Server 2016 Cloud Storage
+Windows Server 2016 Datacenter
+Windows Server 2016 Essentials
+Windows Server 2016 Standard
+Windows Server 2016 ARM64
+Windows Server 2016 Datacenter (Semi-Annual Channel)
+Windows Server 2016 Standard (Semi-Annual Channel)
+Windows Server 2016 Datacenter Preview
+Windows Server 2019 ARM64
+Windows Server 2019 Azure Core
+Windows Server 2019 Datacenter
+Windows Server 2019 Essentials
+Windows Server 2019 Standard
+Windows Server 2019 Datacenter (Semi-Annual Channel)
+Windows Server 2019 Standard (Semi-Annual Channel)
+Windows Server 2021 Datacenter (Semi-Annual Channel)
+Windows Server 2021 Standard (Semi-Annual Channel)
+Windows Server 2022 Azure Core
+Windows Server 2022 Datacenter
+Windows Server 2022 Standard
  
-### Windows Client (6.0 - 10.0.22500)
+### Windows Client (6.0 -0.0.22500)
 
-Numbers|Product
-:-|-
-  8 | Windows 10 Enterprise LTSC 2019
-  9 | Windows 10 Enterprise LTSC 2019 N
- 10 | Windows 10 Enterprise G
- 11 | Windows 10 Enterprise GN
- 12 | Windows 10 Enterprise 2016 LTSB
- 13 | Windows 10 Enterprise 2016 LTSB N
- 14 | Windows 10 Home
- 15 | Windows 10 Home Country Specific
- 16 | Windows 10 Home N
- 17 | Windows 10 Home Single Language
- 18 | Windows 10 Education
- 19 | Windows 10 Education N
- 20 | Windows 10 Enterprise
- 21 | Windows 10 Enterprise 2015 LTSB
- 22 | Windows 10 Enterprise 2015 LTSB N
- 23 | Windows 10 Enterprise N
- 24 | Windows 10 Professional Workstation
- 25 | Windows 10 Professional Workstation N
- 26 | Windows 10 Professional
- 27 | Windows 10 Professional Education
- 28 | Windows 10 Professional Education N
- 29 | Windows 10 Professional N
- 30 | Windows 10 Professional Preview
- 31 | Windows 10 Enterprise Preview
- 32 | Windows 10 Enterprise for Virtual Desktops
- 33 | Windows 10 Remote Server
- 34 | Windows 10 S (Lean)
- 35 | Windows 7 Enterprise
- 36 | Windows 7 Enterprise E
- 37 | Windows 7 Enterprise N
- 38 | Windows 7 Professional
- 39 | Windows 7 Professional E
- 40 | Windows 7 Professional N
- 41 | Windows 7 Embedded POSReady
- 42 | Windows 7 Embedded Standard
- 43 | Windows 7 ThinPC
- 44 | Windows 8 Core
- 45 | Windows 8 Core Country Specific
- 46 | Windows 8 Core N
- 47 | Windows 8 Core Single Language
- 48 | Windows 8 Professional WMC
- 49 | Windows 8 Embedded Industry Professional
- 50 | Windows 8 Embedded Industry Enterprise
- 51 | Windows 8 Enterprise
- 52 | Windows 8 Enterprise N
- 53 | Windows 8 Professional
- 54 | Windows 8 Professional N
- 55 | Windows 8.1 Core
- 56 | Windows 8.1 Core ARM
- 57 | Windows 8.1 Core Country Specific
- 58 | Windows 8.1 Core N
- 59 | Windows 8.1 Core Single Language
- 60 | Windows 8.1 Professional Student
- 61 | Windows 8.1 Professional Student N
- 62 | Windows 8.1 Professional WMC
- 63 | Windows 8.1 Core Connected
- 64 | Windows 8.1 Core Connected Country Specific
- 65 | Windows 8.1 Core Connected N
- 66 | Windows 8.1 Core Connected Single Language
- 67 | Windows 8.1 Enterprise
- 68 | Windows 8.1 Enterprise N
- 69 | Windows 8.1 Professional
- 70 | Windows 8.1 Professional N
- 71 | Windows 8.1 Embedded Industry Professional
- 72 | Windows 8.1 Embedded Industry Automotive
- 73 | Windows 8.1 Embedded Industry Enterprise
- 74 | Windows 10 Enterprise Preview
- 75 | Windows 10 Professional Preview
- 76 | Windows 10 Professional WMC Preview
- 77 | Windows 8.x Preview
- 78 | Windows 8.x Preview ARM
-112 | Windows Vista Business
-113 | Windows Vista Business N
-114 | Windows Vista Enterprise
-115 | Windows Vista Enterprise N
+Product
+:-|
+Windows 10/11 Enterprise LTSC 2019
+Windows 10/11 Enterprise LTSC 2019 N
+Windows 10/11 Enterprise G
+Windows 10/11 Enterprise GN
+Windows 10/11 Enterprise 2016 LTSB
+Windows 10/11 Enterprise 2016 LTSB N
+Windows 10/11 Home
+Windows 10/11 Home Country Specific
+Windows 10/11 Home N
+Windows 10/11 Home Single Language
+Windows 10/11 Education
+Windows 10/11 Education N
+Windows 10/11 Enterprise
+Windows 10/11 Enterprise 2015 LTSB
+Windows 10/11 Enterprise 2015 LTSB N
+Windows 10/11 Enterprise N
+Windows 10/11 Professional Workstation
+Windows 10/11 Professional Workstation N
+Windows 10/11 Professional
+Windows 10/11 Professional Education
+Windows 10/11 Professional Education N
+Windows 10/11 Professional N
+Windows 10/11 Professional Preview
+Windows 10/11 Enterprise Preview
+Windows 10/11 Enterprise for Virtual Desktops
+Windows 10/11 Remote Server
+Windows 10/11 S (Lean)
+Windows 10/11 Enterprise Preview
+Windows 10/11 Professional Preview
+Windows 10/11 Professional WMC Preview
+Windows 7 Enterprise
+Windows 7 Enterprise E
+Windows 7 Enterprise N
+Windows 7 Professional
+Windows 7 Professional E
+Windows 7 Professional N
+Windows 7 Embedded POSReady
+Windows 7 Embedded Standard
+Windows 7 ThinPC
+Windows 8 Core
+Windows 8 Core Country Specific
+Windows 8 Core N
+Windows 8 Core Single Language
+Windows 8 Professional WMC
+Windows 8 Embedded Industry Professional
+Windows 8 Embedded Industry Enterprise
+Windows 8 Enterprise
+Windows 8 Enterprise N
+Windows 8 Professional
+Windows 8 Professional N
+Windows 8.1 Core
+Windows 8.1 Core ARM
+Windows 8.1 Core Country Specific
+Windows 8.1 Core N
+Windows 8.1 Core Single Language
+Windows 8.1 Professional Student
+Windows 8.1 Professional Student N
+Windows 8.1 Professional WMC
+Windows 8.1 Core Connected
+Windows 8.1 Core Connected Country Specific
+Windows 8.1 Core Connected N
+Windows 8.1 Core Connected Single Language
+Windows 8.1 Enterprise
+Windows 8.1 Enterprise N
+Windows 8.1 Professional
+Windows 8.1 Professional N
+Windows 8.1 Embedded Industry Professional
+Windows 8.1 Embedded Industry Automotive
+Windows 8.1 Embedded Industry Enterprise
+Windows 8.x Preview
+Windows 8.x Preview ARM
+Windows Vista Business
+Windows Vista Business N
+Windows Vista Enterprise
+Windows Vista Enterprise N
 
 ### Office (2010 - 2021)
 
-Numbers|Product
-:-|-
-116 | Office Access 2010
-117 | Office Excel 2010
-118 | Office Groove 2010
-119 | Office InfoPath 2010
-120 | Office Mondo 1 2010
-121 | Office Mondo 2 2010
-122 | Office OneNote 2010
-123 | Office OutLook 2010
-124 | Office PowerPoint 2010
-125 | Office Professional Plus 2010
-126 | Office Project Pro 2010
-127 | Office Project Standard 2010
-128 | Office Publisher 2010
-129 | Office Small Business Basics 2010
-130 | Office Standard 2010
-131 | Office Visio Premium 2010
-132 | Office Visio Pro 2010
-133 | Office Visio Standard 2010
-134 | Office Word 2010
-135 | Office Access 2013
-136 | Office Excel 2013
-137 | Office InfoPath 2013
-138 | Office Lync 2013
-139 | Office Mondo 2013
-140 | Office OneNote 2013
-141 | Office OutLook 2013
-142 | Office PowerPoint 2013
-143 | Office Professional Plus 2013
-144 | Office Project Pro 2013
-145 | Office Project Standard 2013
-146 | Office Publisher 2013
-147 | Office Standard 2013
-148 | Office Visio Pro 2013
-149 | Office Visio Standard 2013
-150 | Office Word 2013
-151 | Office Access 2013 (Pre-Release)
-152 | Office Excel 2013 (Pre-Release)
-153 | Office Groove 2013 (Pre-Release)
-154 | Office InfoPath 2013 (Pre-Release)
-155 | Office Lync 2013 (Pre-Release)
-156 | Office Mondo 2013 (Pre-Release)
-157 | Office OneNote 2013 (Pre-Release)
-158 | Office Outlook 2013 (Pre-Release)
-159 | Office PowerPoint 2013 (Pre-Release)
-160 | Office Professional Plus 2013 (Pre-Release)
-161 | Office Project Pro 2013 (Pre-Release)
-162 | Office Project Standard 2013 (Pre-Release)
-163 | Office Publisher 2013 (Pre-Release)
-164 | Office Visio Pro 2013 (Pre-Release)
-165 | Office Visio Standard 2013 (Pre-Release)
-166 | Office Word 2013 (Pre-Release)
-167 | Office Access 2016
-168 | Office Excel 2016
-169 | Office Mondo 2016
-170 | Office Mondo R 2016
-171 | Office OneNote 2016
-172 | Office Outlook 2016
-173 | Office Powerpoint 2016
-174 | Office Professional Plus 2016
-175 | Office Project Pro 2016
-176 | Office Project Pro 2016 C2R
-177 | Office Project Standard 2016
-178 | Office Project Standard 2016 C2R
-179 | Office Publisher 2016
-180 | Office Skype for Business 2016
-181 | Office Standard 2016
-182 | Office Visio Pro 2016
-183 | Office Visio Pro 2016 C2R
-184 | Office Visio Standard 2016
-185 | Office Visio Standard 2016 C2R
-186 | Office Word 2016
-187 | Office Professional Plus 2019 C2R Preview
-188 | Office Project Pro 2019 C2R Preview
-189 | Office Visio Pro 2019 C2R Preview
-190 | Office Access 2019
-191 | Office Excel 2019
-192 | Office Outlook 2019
-193 | Office Powerpoint 2019
-194 | Office Professional Plus 2019
-195 | Office Project Pro 2019
-196 | Office Project Standard 2019
-197 | Office Publisher 2019
-198 | Office Skype for Business 2019
-199 | Office Standard 2019
-200 | Office Visio Pro 2019
-201 | Office Visio Standard 2019
-202 | Office Word 2019
+Product
+:-|
+Office Access 2010
+Office Excel 2010
+Office Groove 2010
+Office InfoPath 2010
+Office Mondo 2010
+Office Mondo 2 2010
+Office OneNote 2010
+Office OutLook 2010
+Office PowerPoint 2010
+Office Professional Plus 2010
+Office Project Pro 2010
+Office Project Standard 2010
+Office Publisher 2010
+Office Small Business Basics 2010
+Office Standard 2010
+Office Visio Premium 2010
+Office Visio Pro 2010
+Office Visio Standard 2010
+Office Word 2010
+Office Access 2013
+Office Excel 2013
+Office InfoPath 2013
+Office Lync 2013
+Office Mondo 2013
+Office OneNote 2013
+Office OutLook 2013
+Office PowerPoint 2013
+Office Professional Plus 2013
+Office Project Pro 2013
+Office Project Standard 2013
+Office Publisher 2013
+Office Standard 2013
+Office Visio Pro 2013
+Office Visio Standard 2013
+Office Word 2013
+Office Access 2013 (Pre-Release)
+Office Excel 2013 (Pre-Release)
+Office Groove 2013 (Pre-Release)
+Office InfoPath 2013 (Pre-Release)
+Office Lync 2013 (Pre-Release)
+Office Mondo 2013 (Pre-Release)
+Office OneNote 2013 (Pre-Release)
+Office Outlook 2013 (Pre-Release)
+Office PowerPoint 2013 (Pre-Release)
+Office Professional Plus 2013 (Pre-Release)
+Office Project Pro 2013 (Pre-Release)
+Office Project Standard 2013 (Pre-Release)
+Office Publisher 2013 (Pre-Release)
+Office Visio Pro 2013 (Pre-Release)
+Office Visio Standard 2013 (Pre-Release)
+Office Word 2013 (Pre-Release)
+Office Access 2016
+Office Excel 2016
+Office Mondo 2016
+Office Mondo R 2016
+Office OneNote 2016
+Office Outlook 2016
+Office Powerpoint 2016
+Office Professional Plus 2016
+Office Project Pro 2016
+Office Project Pro 2016 C2R
+Office Project Standard 2016
+Office Project Standard 2016 C2R
+Office Publisher 2016
+Office Skype for Business 2016
+Office Standard 2016
+Office Visio Pro 2016
+Office Visio Pro 2016 C2R
+Office Visio Standard 2016
+Office Visio Standard 2016 C2R
+Office Word 2016
+Office Professional Plus 2019 C2R Preview
+Office Project Pro 2019 C2R Preview
+Office Visio Pro 2019 C2R Preview
+Office Access 2019
+Office Excel 2019
+Office Outlook 2019
+Office Powerpoint 2019
+Office Professional Plus 2019
+Office Project Pro 2019
+Office Project Standard 2019
+Office Publisher 2019
+Office Skype for Business 2019
+Office Standard 2019
+Office Visio Pro 2019
+Office Visio Standard 2019
+Office Word 2019
 Office Access LTSC 2021
 Office Excel LTSC 2021
 Office LTSC Professional Plus 2021
