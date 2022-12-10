@@ -24,4 +24,4 @@ vlmcsdmulti | vlmcsdmulti is a multi-call binary that contains vlmcs and vlmcsd 
 ----------
 
 ## Valid Apps 
-### To see vaild applications can be activated using Volume Activation Service, see [there]([manual/README.md](https://github.com/TheFlightSimulationsOfficial/vlmcsd-beta/blob/master/manuals/README.md)) 
+### To see vaild applications can be activated using Volume Activation Service, see [there](https://github.com/TheFlightSimulationsOfficial/vlmcsd-beta/tree/master/manuals)
