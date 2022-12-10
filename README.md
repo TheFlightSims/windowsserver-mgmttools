@@ -6,7 +6,7 @@
 
 |Supported operating systems|
 :-|
-Supported operating systems：Windows, GNU/Linux (all distros), macOS, UNIX |
+Supported OS gens：Windows, GNU/Linux (all distros), macOS, UNIX |
 Supported CPU architectures: x86, arm, mips, PowerPC, Sparc, s390 |
 
 ---------
