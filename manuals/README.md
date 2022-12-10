@@ -1,58 +1,60 @@
-# vlmcsd - Portable open-source KMS Emulator in C  
-**vlmcsd-1113-2020-03-28   [Releases][1]**   
-
-|Supported operating systems / run-time environments|
-:-|
-Supported operating systems：Linux, GNU/Linux, uclibc/Linux, musl/Linux, Android (bionic/Linux), FreeBSD, FreeBSD with glibc (e.g. debian/kFreeBSD), OpenBSD, NetBSD, DragonflyBSD, Solaris, Open Indiana, Dyson, Minix, Darwin, Mac OS, iOS, Windows, Cygwin, WSL, Wine, The Hurd. |
-Supported CPUs : x86，arm, mips, PowerPC, Sparc, s390|
-Number of explicitly supported products to activate : 202|
-
-NAME|DESCRIPTION|USAGE
-:-|-|-
-vlmcs | a client for testing and/or charging KMS servers|vlmcs [ options ] [ target ] [options ]
-vlmcsd | a fully Microsoft compatible KMS server|vlmcsd [ options ] 
-vlmcsdmulti | vlmcsdmulti is a multi-call binary that contains vlmcs and vlmcsd in  a  single binary. |vlmcsdmulti  vlmcs [options ] [ hostname\|ip-address[:port] ] [ options ] or vlmcsd [ option ]|
-
-### To view the documentation cd to the [directory][2] containing the distribution  
-**files and type**  
-
- - man man/vlmcsd.8  
-	to see documentation for vlmcsd  
-
- - man man/vlmcs.1  
-	to see documentation for vlmcs  
-
- - man man/vlmcsd.7  
-	to see general documentation for kms  
-
-If you don't have man, you may also use the .txt, .html and .pdf files in [the man directory][2]. 
-
-
-----------
-
-
-**vlmcsd is**   
-
-- a replacement for Microsoft's KMS server It contains vlmcs a KMS test client, mainly for debugging purposes, that also can "charge" a genuine KMS server designed to run on an always-on or often-on device,e.g. router, NAS Box, ... intended to help people who lost activation of their legally-owned licenses, e.g. due to a change of hardware (motherboard, CPU, ...)  
-
-**vlmcsd is not**
-
- - a one-click activation or crack tool intended to activate illegal copies of software (Windows, Office, Project, Visio)  
-
-----------
-
-### Valid Apps 
+## Valid Microsoft applications that can be acitvated using vlmcsd
 You may use these product names or numbers(vlmcs -x): 
 
-Numbers|Product names
+### Windows Server (2008 - 2022)
+
+Numbers|Product
 :-|-
-  1 | Windows Server 2019 ARM64
-  2 | Windows Server 2019 Azure Core
-  3 | Windows Server 2019 Datacenter
-  4 | Windows Server 2019 Essentials
-  5 | Windows Server 2019 Standard
-  6 | Windows Server 2019 Datacenter (Semi-Annual Channel)
-  7 | Windows Server 2019 Standard (Semi-Annual Channel)
+ 1  | Windows Server 2008 Web
+ 2  | Windows Server 2008 Compute Cluster
+ 3  | Windows Server 2008 Standard
+ 4  | Windows Server 2008 Standard without Hyper-V
+ 5  | Windows Server 2008 Enterprise
+ 6  | Windows Server 2008 Enterprise without Hyper-V
+ 7  | Windows Server 2008 Datacenter
+ 8  | Windows Server 2008 Datacenter without Hyper-V
+ 9  | Windows Server 2008 for Itanium
+ 10 | Windows MultiPoint Server 2010
+ 11 | Windows Server 2008 R2 Web
+ 12 | Windows Server 2008 R2 HPC Edition
+ 13 | Windows Server 2008 R2 Standard
+ 14 | Windows Server 2008 R2 Enterprise
+ 15 | Windows Server 2008 R2 Datacenter
+ 16 | Windows Server 2008 R2 for Itanium Enterprise
+ 17 | Windows Server 2012 Datacenter
+ 18 | Windows Server 2012 MultiPoint Premium
+ 19 | Windows Server 2012 MultiPoint Standard
+ 20 | Windows Server 2012 Standard
+ 21 | Windows Server 2012 R2 Cloud Storage
+ 22 | Windows Server 2012 R2 Datacenter
+ 23 | Windows Server 2012 R2 Essentials
+ 24 | Windows Server 2012 R2 Standard
+ 25 | Windows Server 2016 Azure Core
+ 26 | Windows Server 2016 Cloud Storage
+ 27 | Windows Server 2016 Datacenter
+ 28 | Windows Server 2016 Essentials
+ 29 | Windows Server 2016 Standard
+ 30 | Windows Server 2016 ARM64
+ 31 | Windows Server 2016 Datacenter (Semi-Annual Channel)
+ 32 | Windows Server 2016 Standard (Semi-Annual Channel)
+ 33 | Windows Server 2016 Datacenter Preview
+ 34 | Windows Server 2019 ARM64
+ 35 | Windows Server 2019 Azure Core
+ 36 | Windows Server 2019 Datacenter
+ 37 | Windows Server 2019 Essentials
+ 38 | Windows Server 2019 Standard
+ 39 | Windows Server 2019 Datacenter (Semi-Annual Channel)
+ 40 | Windows Server 2019 Standard (Semi-Annual Channel)
+ 42 | Windows Server 2021 Datacenter (Semi-Annual Channel)
+ 43 | Windows Server 2021 Standard (Semi-Annual Channel)
+ 44 | Windows Server 2022 Azure Core
+ 45 | Windows Server 2022 Datacenter
+ 46 | Windows Server 2022 Standard
+ 
+### Windows Client (6.0 - 10.0.22500)
+
+Numbers|Product
+:-|-
   8 | Windows 10 Enterprise LTSC 2019
   9 | Windows 10 Enterprise LTSC 2019 N
  10 | Windows 10 Enterprise G
@@ -124,43 +126,15 @@ Numbers|Product names
  76 | Windows 10 Professional WMC Preview
  77 | Windows 8.x Preview
  78 | Windows 8.x Preview ARM
- 79 | Windows Server 2008 Web
- 80 | Windows Server 2008 Compute Cluster
- 81 | Windows Server 2008 Standard
- 82 | Windows Server 2008 Standard without Hyper-V
- 83 | Windows Server 2008 Enterprise
- 84 | Windows Server 2008 Enterprise without Hyper-V
- 85 | Windows Server 2008 Datacenter
- 86 | Windows Server 2008 Datacenter without Hyper-V
- 87 | Windows Server 2008 for Itanium
- 88 | Windows MultiPoint Server 2010
- 89 | Windows Server 2008 R2 Web
- 90 | Windows Server 2008 R2 HPC Edition
- 91 | Windows Server 2008 R2 Standard
- 92 | Windows Server 2008 R2 Enterprise
- 93 | Windows Server 2008 R2 Datacenter
- 94 | Windows Server 2008 R2 for Itanium Enterprise
- 95 | Windows Server 2012 Datacenter
- 96 | Windows Server 2012 MultiPoint Premium
- 97 | Windows Server 2012 MultiPoint Standard
- 98 | Windows Server 2012 Standard
- 99 | Windows Server 2012 R2 Cloud Storage
-100 | Windows Server 2012 R2 Datacenter
-101 | Windows Server 2012 R2 Essentials
-102 | Windows Server 2012 R2 Standard
-103 | Windows Server 2016 Azure Core
-104 | Windows Server 2016 Cloud Storage
-105 | Windows Server 2016 Datacenter
-106 | Windows Server 2016 Essentials
-107 | Windows Server 2016 Standard
-108 | Windows Server 2016 ARM64
-109 | Windows Server 2016 Datacenter (Semi-Annual Channel)
-110 | Windows Server 2016 Standard (Semi-Annual Channel)
-111 | Windows Server 2016 Datacenter Preview
 112 | Windows Vista Business
 113 | Windows Vista Business N
 114 | Windows Vista Enterprise
 115 | Windows Vista Enterprise N
+
+### Office (2010 - 2021)
+
+Numbers|Product
+:-|-
 116 | Office Access 2010
 117 | Office Excel 2010
 118 | Office Groove 2010
@@ -248,11 +222,16 @@ Numbers|Product names
 200 | Office Visio Pro 2019
 201 | Office Visio Standard 2019
 202 | Office Word 2019
-
-
-> This is a copy from the mydigitallife forum.  
-> https://forums.mydigitallife.net/threads/emulated-kms-servers-on-non-windows-platforms.50234/
-
-
-  [1]: https://github.com/kkkgo/vlmcsd/releases "releases"
-  [2]: https://github.com/kkkgo/vlmcsd/tree/master/man
+Office Access LTSC 2021
+Office Excel LTSC 2021
+Office LTSC Professional Plus 2021
+Office LTSC Standard 2021
+Office Outlook LTSC 2021
+Office Powerpoint LTSC 2021
+Office Project Pro 2021
+Office Project Standard 2021
+Office Publisher LTSC 2021
+Office Skype for Business LTSC 2021
+Office Visio LTSC Pro 2021
+Office Visio LTSC Standard 2021
+Office Word LTSC 2021
