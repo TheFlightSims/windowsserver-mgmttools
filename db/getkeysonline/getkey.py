@@ -78,7 +78,7 @@ def win7():
                         open('Keys.txt','a',encoding="utf-8").write("\n")
                 
                 #Clear the file to prevent memory error
-                open(getcontent.msmetadata, 'r').close()
+                os.remove("getcontent.msmetadata")
             
             #If the selecting page isn't every 4 pages, continue the code and ignore the export
             else: continue
@@ -133,7 +133,7 @@ def win81():
                         open('Keys.txt','a',encoding="utf-8").write("\n")
                 
                 #Clear the file to prevent memory error
-                open(getcontent.msmetadata, 'r').close()
+                os.remove("getcontent.msmetadata")
             
             #If the selecting page isn't every 4 pages, continue the code and ignore the export
             else: continue
@@ -188,7 +188,7 @@ def win10():
                         open('Keys.txt','a',encoding="utf-8").write("\n")
                 
                 #Clear the file to prevent memory error
-                open(getcontent.msmetadata, 'r').close()
+                os.remove("getcontent.msmetadata")
             
             #If the selecting page isn't every 4 pages, continue the code and ignore the export
             else: continue
@@ -249,7 +249,7 @@ def office2010():
                         open('Keys.txt','a',encoding="utf-8").write("\n")
                 
                 #Clear the file to prevent memory error
-                open(getcontent.msmetadata, 'r').close()
+                os.remove("getcontent.msmetadata")
             
             #If the selecting page isn't every 4 pages, continue the code and ignore the export
             else: continue
@@ -304,7 +304,7 @@ def office2013():
                         open('Keys.txt','a',encoding="utf-8").write("\n")
                 
                 #Clear the file to prevent memory error
-                open(getcontent.msmetadata, 'r').close()
+                os.remove("getcontent.msmetadata")
             
             #If the selecting page isn't every 4 pages, continue the code and ignore the export
             else: continue
@@ -359,7 +359,7 @@ def office2016():
                         open('Keys.txt','a',encoding="utf-8").write("\n")
                 
                 #Clear the file to prevent memory error
-                open(getcontent.msmetadata, 'r').close()
+                os.remove("getcontent.msmetadata")
             
             #If the selecting page isn't every 4 pages, continue the code and ignore the export
             else: continue
@@ -415,7 +415,7 @@ def office2019():
                         open('Keys.txt','a',encoding="utf-8").write("\n")
                 
                 #Clear the file to prevent memory error
-                open(getcontent.msmetadata, 'r').close()
+                os.remove("getcontent.msmetadata")
             
             #If the selecting page isn't every 4 pages, continue the code and ignore the export
             else: continue
@@ -470,7 +470,7 @@ def office2021():
                         open('Keys.txt','a',encoding="utf-8").write("\n")
                 
                 #Clear the file to prevent memory error
-                open(getcontent.msmetadata, 'r').close()
+                os.remove("getcontent.msmetadata")
             
             #If the selecting page isn't every 4 pages, continue the code and ignore the export
             else: continue
@@ -531,7 +531,7 @@ def server1619():
                         open('Keys.txt','a',encoding="utf-8").write("\n")
                 
                 #Clear the file to prevent memory error
-                open(getcontent.msmetadata, 'r').close()
+                os.remove("getcontent.msmetadata")
             
             #If the selecting page isn't every 4 pages, continue the code and ignore the export
             else: continue
@@ -586,7 +586,7 @@ def server2022():
                         open('Keys.txt','a',encoding="utf-8").write("\n")
                 
                 #Clear the file to prevent memory error
-                open(getcontent.msmetadata, 'r').close()
+                os.remove("getcontent.msmetadata")
             
             #If the selecting page isn't every 4 pages, continue the code and ignore the export
             else: continue
@@ -639,14 +639,14 @@ def start():
     if ask == 1: 
         cli()
         retvar()
-        server()
+        ser()
         retvar()
         off()
     elif ask == 2:
         cli()
         retvar()
     elif ask == 3:
-        server()
+        ser()
         retvar()
     elif ask == 4:
         off()
