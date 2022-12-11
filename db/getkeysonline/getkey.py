@@ -28,67 +28,7 @@ import math
 import requests
 from bs4 import BeautifulSoup
 import re
-
-"""
-Operation modules
-
-Any failure in editing in this may cause the application crash, OS crash, OS hang
-
-Stay caution.
-"""
-
-#This header is used to report the current browser emulator. Recommend for maintenance to update the header to the lastest emulator version and OS
-headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0",
-    "Accept-Encoding": "*",
-    "Connection": "keep-alive"
-}
-
-start()
-
-def cli():
-    win7()
-    win81()
-    win10()
-
-def ser():
-    server1619()
-    server2022()
-
-def off():
-    office2010()
-    office2013()
-    office2016()
-    office2019()
-    office2021()
-
-def start():
-    ask = int(input("1. Download all \n2.Download Windows Clients Keys only \n3. Download Windows Server Keys only \n4. Download Microsoft Office Keys only \nChoose operation mode: "))
-    if ask == 1: 
-        cli()
-        retvar()
-        server()
-        retvar()
-        off()
-    elif ask == 2:
-        cli()
-        retvar()
-    elif ask == 3:
-        server()
-        retvar()
-    elif ask == 4:
-        off()
-        retvar()
-    else:
-        print("Invaild input. Please do it again...")
-        os.console('cls')
-        start()
     
-def retvar():
-    loop = int(1)
-    i = int(1)
-    j = int(1)
-
 """
 Generate Windows Client Keys
 
@@ -656,3 +596,65 @@ def server2022():
         
     #Clear the console. Recommends to prevent verbose logging, causing memory error
     os.system('cls')
+    
+    
+"""
+Operation modules
+
+Any failure in editing in this may cause the application crash, OS crash, OS hang
+
+Stay caution.
+"""
+
+#This header is used to report the current browser emulator. Recommend for maintenance to update the header to the lastest emulator version and OS
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0",
+    "Accept-Encoding": "*",
+    "Connection": "keep-alive"
+}
+
+def retvar():
+    loop = int(1)
+    i = int(1)
+    j = int(1)
+
+def cli():
+    win7()
+    win81()
+    win10()
+
+def ser():
+    server1619()
+    server2022()
+
+def off():
+    office2010()
+    office2013()
+    office2016()
+    office2019()
+    office2021()
+
+def start():
+    ask = int(input("1. Download all \n2.Download Windows Clients Keys only \n3. Download Windows Server Keys only \n4. Download Microsoft Office Keys only \nChoose operation mode: "))
+    if ask == 1: 
+        cli()
+        retvar()
+        server()
+        retvar()
+        off()
+    elif ask == 2:
+        cli()
+        retvar()
+    elif ask == 3:
+        server()
+        retvar()
+    elif ask == 4:
+        off()
+        retvar()
+    else:
+        print("Invaild input. Please do it again...")
+        os.console('cls')
+        start()
+
+
+start()
