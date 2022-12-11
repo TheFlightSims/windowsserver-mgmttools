@@ -70,7 +70,7 @@ def win7():
                 print("Shorting Keys...")
                 
                 #Filter the keys only, and export it into the file keys.txt
-                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines().read(1024):
+                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines():
                     
                     #Filter the PID only, and write it into the file
                     if (line.startswith("Key: ")):
@@ -125,7 +125,7 @@ def win81():
                 print("Shorting Keys...")
                 
                 #Filter the keys only, and export it into the file keys.txt
-                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines().read(1024):
+                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines():
                     
                     #Filter the PID only, and write it into the file
                     if (line.startswith("Key: ")):
@@ -180,7 +180,7 @@ def win10():
                 print("Shorting Keys...")
                 
                 #Filter the keys only, and export it into the file keys.txt
-                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines().read(1024):
+                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines():
                     
                     #Filter the PID only, and write it into the file
                     if (line.startswith("Key: ")):
@@ -241,7 +241,7 @@ def office2010():
                 print("Shorting Keys...")
                 
                 #Filter the keys only, and export it into the file keys.txt
-                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines().read(1024):
+                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines():
                     
                     #Filter the PID only, and write it into the file
                     if (line.startswith("Key: ")):
@@ -296,7 +296,7 @@ def office2013():
                 print("Shorting Keys...")
                 
                 #Filter the keys only, and export it into the file keys.txt
-                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines().read(1024):
+                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines():
                     
                     #Filter the PID only, and write it into the file
                     if (line.startswith("Key: ")):
@@ -351,7 +351,7 @@ def office2016():
                 print("Shorting Keys...")
                 
                 #Filter the keys only, and export it into the file keys.txt
-                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines().read(1024):
+                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines():
                     
                     #Filter the PID only, and write it into the file
                     if (line.startswith("Key: ")):
@@ -407,7 +407,7 @@ def office2019():
                 print("Shorting Keys...")
                 
                 #Filter the keys only, and export it into the file keys.txt
-                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines().read(1024):
+                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines():
                     
                     #Filter the PID only, and write it into the file
                     if (line.startswith("Key: ")):
@@ -462,7 +462,7 @@ def office2021():
                 print("Shorting Keys...")
                 
                 #Filter the keys only, and export it into the file keys.txt
-                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines().read(1024):
+                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines():
                     
                     #Filter the PID only, and write it into the file
                     if (line.startswith("Key: ")):
@@ -523,7 +523,7 @@ def server1619():
                 print("Shorting Keys...")
                 
                 #Filter the keys only, and export it into the file keys.txt
-                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines().read(1024):
+                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines():
                     
                     #Filter the PID only, and write it into the file
                     if (line.startswith("Key: ")):
@@ -578,7 +578,7 @@ def server2022():
                 print("Shorting Keys...")
                 
                 #Filter the keys only, and export it into the file keys.txt
-                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines().read(1024):
+                for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines():
                     
                     #Filter the PID only, and write it into the file
                     if (line.startswith("Key: ")):
@@ -635,7 +635,7 @@ def off():
     office2021()
 
 def start():
-    ask = int(input("1. Download all \n2.Download Windows Clients Keys only \n3. Download Windows Server Keys only \n4. Download Microsoft Office Keys only \nChoose operation mode: "))
+    ask = int(input("1. Download all \n2. Download Windows Clients Keys only \n3. Download Windows Server Keys only \n4. Download Microsoft Office Keys only \nChoose operation mode: "))
     if ask == 1: 
         cli()
         retvar()
