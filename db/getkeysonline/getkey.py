@@ -52,7 +52,7 @@ headers = {
 }
 
 #This module will be used to download and generate keys
-def gen():
+def gen(pag, web):
 
     #Looping from page 1 to page "pag"
     for loop in range(1,pag+1):
@@ -95,6 +95,7 @@ def gen():
     #Clear the console. Recommends to prevent verbose logging, causing memory error
     os.system('cls')
 
+
 #===================================================================================================================
 #===================================================================================================================
 # III. CALL KEYS FUNCTION
@@ -114,7 +115,7 @@ def win7():
     web = str("https://jike.info/topic/381/windows-7-professional-enterprise-mak%E6%BF%80%E6%B4%BB%E5%AF%86%E9%92%A5/19?lang=en-US&page=")
     
     #Start downloading and generating
-    gen()
+    gen(pag, web)
 
 def win81():
     #Notificate to user that the keys is being generated
@@ -127,7 +128,7 @@ def win81():
     web = str("https://jike.info/topic/343/windows-8-1-pro%E6%BF%80%E6%B4%BB%E5%AF%86%E9%92%A5/19?lang=en-US&page=")
     
     #Start downloading and generating
-    gen()
+    gen(pag, web)
 
 def win10():
     #Notificate to user that the keys is being generated
@@ -137,10 +138,23 @@ def win10():
     pag = int(94)
     
     #Source webpage
-    web = str("https://jike.info/topic/343/windows-8-1-pro%E6%BF%80%E6%B4%BB%E5%AF%86%E9%92%A5/19?lang=en-US&page=")
+    web = str("https://jike.info/topic/2631/win-10-rtm-professional-retail-oem-mak?lang=en-US&page=")
     
     #Start downloading and generating
-    gen()
+    gen(pag, web)
+    
+def win10home():
+    #Notificate to user that the keys is being generated
+    print("Downloading Microsoft Windows 10/11 Keys (Core)")
+    
+    #Define how much page that can be generated from
+    pag = int(94)
+    
+    #Source webpage
+    web = str("https://jike.info/topic/8925/windows-10-core-home-retail?lang=en-US&page=")
+    
+    #Start downloading and generating
+    gen(pag, web)
 
 def server1619():
     #Notificate to user that the keys is being generated
@@ -153,7 +167,7 @@ def server1619():
     web = str("https://jike.info/topic/5050/windows-server-2016-2019-retail?lang=en-US&page=")
     
     #Start downloading and generating
-    gen()
+    gen(pag, web)
     
 
 def server2022():
@@ -167,7 +181,7 @@ def server2022():
     web = str("https://jike.info/topic/6165/windows-server-2022-key?lang=en-US&page=")
     
     #Start downloading and generating
-    gen()
+    gen(pag, web)
 
 def office2010():
     #Notificate to user that the keys is being generated
@@ -180,7 +194,7 @@ def office2010():
     web = str("https://jike.info/topic/360/office-2010-proplus-vl_mak%E6%BF%80%E6%B4%BB%E5%AF%86%E9%92%A5?lang=en-US&page=")
     
     #Start downloading and generating
-    gen()
+    gen(pag, web)
 
 def office2013():
     #Notificate to user that the keys is being generated
@@ -193,7 +207,7 @@ def office2013():
     web = str("https://jike.info/topic/277/office-2013-professional-plus%E6%BF%80%E6%B4%BB%E5%AF%86%E9%92%A5?lang=en-US&page=")
     
     #Start downloading and generating
-    gen()
+    gen(pag, web)
     
 def office2016():
     #Notificate to user that the keys is being generated
@@ -206,7 +220,7 @@ def office2016():
     web = str("https://jike.info/topic/2502/office-2016-proplus-retail/99?lang=zh-CN&page=")
     
     #Start downloading and generating
-    gen()
+    gen(pag, web)
 
 def office2019():
     #Notificate to user that the keys is being generated
@@ -219,7 +233,7 @@ def office2019():
     web = str("https://jike.info/topic/1095/office-2019-professional-plus-retail?lang=en-US&page=")
     
     #Start downloading and generating
-    gen()
+    gen(pag, web)
     
 def office2021():
     #Notificate to user that the keys is being generated
@@ -232,7 +246,7 @@ def office2021():
     web = str("https://jike.info/topic/7168/office-2021-professional-plus-retail?lang=en-US&page=")
     
     #Start downloading and generating
-    gen()
+    gen(pag, web)
 
 #------------------------------------------------------------------------------------------------------------------
 
@@ -249,6 +263,7 @@ def cli():
     win7()
     win81()
     win10()
+    win10home()
 
 #This will generate server keys by calling specific target
 def ser():
@@ -265,7 +280,6 @@ def off():
 
 #Where we start
 def start():
-    buff = int(input("Select Buffer (1 Buffer = 100Mib)"))
     ask = int(input("1. Download all \n2. Download Clients Keys only \n3. Download Server Keys only \n4. Download Office Keys only \nChoose operation mode: "))
     if ask == 1: 
         cli()
