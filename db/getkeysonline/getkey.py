@@ -92,8 +92,7 @@ def gen(pag, web):
             else: 
                 continue
         
-    #Clear the console. Recommends to prevent verbose logging, causing memory error
-    os.system('cls')
+
 
 
 #===================================================================================================================
