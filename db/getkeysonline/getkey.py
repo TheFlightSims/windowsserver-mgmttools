@@ -32,11 +32,17 @@ Report problems at: https://github.com/TheFlightSimulationsOfficial/vlmcsd-beta/
 #===================================================================================================================
 #===================================================================================================================
 
+#Installed libs
 import os
 import math
+import re
+import csv
+
+#Install it from "pip install"
 import requests
 from bs4 import BeautifulSoup
 import re
+import pandas as pd
 
 #===================================================================================================================
 #===================================================================================================================
@@ -61,7 +67,7 @@ def gen(pag, web, ver):
         #Generate file is "gencontent.msmetadata", which is the metadata file
         
         # Download database from the website, and write all content into the file "gencontent.msmetadata"
-        for i in (BeautifulSoup(requests.get(str(web) + str(loop), headers=headers).text,'html.parser')):
+        for i in (BeautifulSoup(requests.get(str(web) + str(loop), headers=headers).text, 'html.parser')):
             with open('getcontent.msmetadata', 'a', encoding="utf-8") as f:
                 for j in i.text:
                     if len(i.text) == 0:
@@ -102,6 +108,9 @@ def gen(pag, web, ver):
     
     #Delete old *_pre.txt
     os.remove(str(ver) + str("_pre.txt"))
+    
+    #Write to the *.csv for easier to import, extract and audit
+    pd.read_fwf(str(ver) + str(".txt")).to_csv(str(ver) + str(".csv"))
 
 
 #===================================================================================================================
