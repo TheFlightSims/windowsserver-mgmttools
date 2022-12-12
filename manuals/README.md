@@ -51,7 +51,7 @@ Windows Server 2022 Azure Core
 Windows Server 2022 Datacenter
 Windows Server 2022 Standard
  
-### Windows Client (6.0 -0.0.22500)
+### Windows Client (6.0 - 10.0.22500)
 
 Product
 :-|
