@@ -100,17 +100,10 @@ def gen(pag, web, ver):
     
     #Open *_pre.txt and re-write it into the new *.txt file. The "Key: " is replaced in there.
     for liner in open(str(ver) + str("_pre.txt"), 'r'):
-        open(str(ver) + str(".txt"), 'a').write(line.replace('Key: ', ' '))
-    
-    #Save and close all files
-    open(str(ver) + str("_pre.txt"), 'r').close()
-    open(str(ver) + str(".txt"), 'a').close()
+        open(str(ver) + str(".txt"), 'a').write(liner.replace('Key: ', ' '))
     
     #Delete old *_pre.txt
     os.remove(str(ver) + str("_pre.txt"))
-    
-    #Write to the *.csv for easier to import, extract and audit
-    pd.read_fwf(str(ver) + str(".txt")).to_csv(str(ver) + str(".csv"))
 
 
 #===================================================================================================================
