@@ -10,14 +10,14 @@
    VLMCSD - a free, open-source portable Volume activation
 
    Support systems
-    + Supported OS gens：Windows, GNU/Linux (all distros), macOS, UNIX
+    + Supported OS gens： Windows, GNU/Linux (all distros), macOS, UNIX
     + Supported CPU architectures: x86, arm, mips, PowerPC, Sparc, s390
     
 
     This script is used to download all keys for Windows/Office products. DO NOT use it for
-    any illegal operations. 
+    any illegal operation. 
     
-    The script divives into three-large section for easier to maintain (You can Find these):
+    The script divives into three-large sections for easier to maintain (You can Find these):
         + I. REQUIRED LIBRARY
         + II. MAIN CORE APPLICATION
         + III. CALL KEYS FUNCTION
