@@ -71,7 +71,7 @@ def gen(pag, web, ver):
         
             #Export all keys to the Keys.txt, every 1-page database. Uses UTF-8, so if opening it and the file returns to the non-readable types, open it as UTF-8.
             
-            #Export all keys every 4 pages
+            #Export all keys every 2 pages
             if int(loop) % int(2) == 0 and int(loop) != 0:
             
                 #Notificate to user that the keys is being generated
