@@ -1,5 +1,10 @@
 ## Valid Microsoft applications that can be acitvated using vlmcsd
-You may use these product names or numbers(vlmcs -x): 
+
+ See all vaild product keys for (Windows)[https://github.com/TheFlightSimulationsOfficial/vlmcsd-beta/blob/master/db/getkeysonline/windows/Windows.csv] and Office
+
+###OR
+
+ You may use these product names or numbers(vlmcs -x): 
 
 ### Windows Server (2008 - 2022)
 
