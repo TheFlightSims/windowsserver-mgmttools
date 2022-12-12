@@ -72,7 +72,7 @@ def gen(pag, web):
             #Export all keys to the Keys.txt, every 1-page database. Uses UTF-8, so if opening it and the file returns to the non-readable types, open it as UTF-8.
             
             #Export all keys every 4 pages
-            if int(loop) % int(1) == 0:
+            if int(loop) % int(1) == 0 and int(loop) != 0:
             
                 #Notificate to user that the keys is being generated
                 print("Shorting Keys...")
