@@ -79,9 +79,6 @@ def gen(pag, web, ver):
             
             #Export all keys every 2 pages
             if int(loop) % int(2) == 0 and int(loop) != 0:
-            
-                #Notificate to user that the keys is being generated
-                print("Shorting Keys...")
                 
                 #Filter the keys only, and export it into the file *_pre.txt
                 for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines():
@@ -303,22 +300,22 @@ def retvar():
 
 #This will generate client keys by calling specific target
 def cli():
-    win7()
-    win81()
-    win10()
+    #win7()
+    #win81()
+    #win10()
     win10home()
 
 #This will generate server keys by calling specific target
 def ser():
-    server1619()
+    #server1619()
     server2022()
 
 #This will generate Office keys by calling specific target
 def off():
-    office2010()
-    office2013()
-    office2016()
-    office2019()
+    #office2010()
+    #office2013()
+    #office2016()
+    #office2019()
     office2021()
 
 #Where we start
