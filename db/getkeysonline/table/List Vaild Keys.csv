@@ -1,9 +1,8 @@
-KeyDescription,(No column name)
+KeyDescription,Number of vaild keys
 Win 10 RTM Professional Retail,666
 Win 8.1 RTM Professional Retail,379
 Windows Server 2021 RTM ServerDatacenter;AzureStackHCIAddOn2021 Retail,377
 Windows Server 2021 RTM ServerStandard Retail,369
-Win 10 RTM Professional Volume:MAK,214
 Windows Server 2019 RTM AzureStackHCIAddOn Retail,100
 Win 10 RTM Core OEM:DM,85
 Windows Embedded Industry 8.1 RTM EmbeddedIndustry Retail,78
@@ -22,8 +21,8 @@ Win 8 RTM Professional OEM:DM,27
 Win 10 RTM CoreSingleLanguage OEM:DM,27
 Office21_ProjectPro2021R_Retail,24
 Office21_VisioPro2021R_Retail,22
-Office15_VisioProR_Retail,18
 Office15_ProjectProR_Retail,18
+Office15_VisioProR_Retail,18
 Win 8 RTM Professional Retail,13
 Office19_VisioPro2019R_Retail,11
 Office19_ProPlus2019R_Retail,9
@@ -47,21 +46,19 @@ Office15_HomeBusinessR_OEM_Perp,2
 RTM_Standard_MAK,2
 Office21_ProPlus2021MSDNR_Retail,2
 Win 10 RTM EnterpriseSN Volume:GVLK,2
-Win 8 RTM Enterprise Volume:GVLK,1
-Win 8 RTM EnterpriseN Volume:GVLK,1
-Windows 7 Professional Volume:GVLK,1
-Windows 7 ProfessionalN Volume:GVLK,1
 Office21_ProjectPro2021MSDNR_Retail1,1
 Win 8 RTM ProfessionalN Volume:GVLK,1
 Win 8.1 RTM ProfessionalN Volume:GVLK,1
-Win 10 RTM EnterpriseG Volume:GVLK,1
 Win 8 RTM CoreCountrySpecific Volume:GVLK,1
 Windows Vista EnterpriseN GVLK,1
-Win 10 RTM ProfessionalN Volume:GVLK,1
-Windows 7 ProfessionalE Volume:GVLK,1
+Win 10 RTM EnterpriseG Volume:GVLK,1
 Windows 7 Ultimate Retail,1
 MultiPoint Server 2012 RTM ServerMultiPointPremium Volume:GVLK,1
 Windows Vista Enterprise - GVLK,1
+Windows 7 ProfessionalN Volume:GVLK,1
+Win 8 RTM Enterprise Volume:GVLK,1
+Win 8 RTM EnterpriseN Volume:GVLK,1
+Windows 7 Professional Volume:GVLK,1
 Win 10 RTM Professional Volume:GVLK,1
 Win 10 RTM Enterprise Volume:GVLK,1
 Win 10 RTM ProfessionalWorkstationN Volume:GVLK,1
@@ -77,11 +74,13 @@ Win 8 RTM Enterprise;EnterpriseN;Professional;ProfessionalN Volume:CSVLK,1
 Win 8.1 RTM CoreCountrySpecific OEM:DM,1
 Win 10 RTM ProfessionalEducation Volume:GVLK,1
 Windows Server 2021 RTM ServerDatacenter Volume:GVLK,1
+Windows 7 EnterpriseE Volume:GVLK,1
 Windows Server Essentials 2012 R2 RTM ServerSolution Volume:GVLK,1
 Office15_ProfessionalR_Retail,1
-Win 10 RTM EnterpriseGN Volume:GVLK,1
+Win 10 RTM ProfessionalN Volume:GVLK,1
+Windows 7 ProfessionalE Volume:GVLK,1
 Win 8 RTM Professional Volume:GVLK,1
-Windows 7 EnterpriseE Volume:GVLK,1
+Win 10 RTM EnterpriseGN Volume:GVLK,1
 Windows Server 2012 RTM ServerDatacenter Volume:GVLK,1
 Windows Server 2016 RTM ServerStandard Volume:GVLK,1
 Win 10 RTM ProfessionalWorkstation Volume:GVLK,1
