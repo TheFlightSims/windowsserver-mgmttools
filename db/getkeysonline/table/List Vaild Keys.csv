@@ -1,9 +1,9 @@
-KeyDescription,Number of vaild keys
-Win 10 RTM Professional Retail,666
-Win 8.1 RTM Professional Retail,379
-Windows Server 2021 RTM ServerDatacenter;AzureStackHCIAddOn2021 Retail,377
-Windows Server 2021 RTM ServerStandard Retail,369
-Windows Server 2019 RTM AzureStackHCIAddOn Retail,100
+KeyDescription,(No column name)
+Win 10 RTM Professional Retail,389
+Win 8.1 RTM Professional Retail,284
+Windows Server 2021 RTM ServerDatacenter;AzureStackHCIAddOn2021 Retail,257
+Windows Server 2021 RTM ServerStandard Retail,181
+Windows Server 2019 RTM AzureStackHCIAddOn Retail,86
 Win 10 RTM Core OEM:DM,85
 Windows Embedded Industry 8.1 RTM EmbeddedIndustry Retail,78
 Win 10 RTM Professional OEM:DM,71
@@ -11,22 +11,22 @@ Windows Server 2016 RTM ServerDatacenter Retail,70
 Office19_ProPlus2019MSDNR_Retail,51
 Office16_ProPlusMSDNR_Retail,49
 Win 10 RTM Professional OEM:NONSLP,40
-Win 8.1 RTM Professional OEM:DM,36
 Office15_ProPlusMSDNR_Retail,35
 Office21_Access2021R_Retail,29
-Win 10 RTM Core Retail,29
 Win 10 RTM Core OEM:NONSLP,29
+Win 10 RTM Core Retail,29
 Win 8.1 RTM Professional OEM:NONSLP,28
-Win 8 RTM Professional OEM:DM,27
 Win 10 RTM CoreSingleLanguage OEM:DM,27
 Office21_ProjectPro2021R_Retail,24
 Office21_VisioPro2021R_Retail,22
 Office15_ProjectProR_Retail,18
 Office15_VisioProR_Retail,18
+Win 8 RTM Professional OEM:DM,14
 Win 8 RTM Professional Retail,13
+Win 8.1 RTM Professional OEM:DM,11
 Office19_VisioPro2019R_Retail,11
-Office19_ProPlus2019R_Retail,9
 Office15_ProPlusR_Retail,9
+Office19_ProPlus2019R_Retail,9
 Windows Server Essentials 2016 RTM ServerSolution Retail,8
 Win 8.1 RTM Core Retail,8
 Office19_ProjectPro2019R_Retail,7
