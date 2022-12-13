@@ -1,6 +1,6 @@
 ## Valid Microsoft applications that can be acitvated using vlmcsd
 
- To see all vaild product keys for Windows and Office, see [here](https://github.com/TheFlightSimulationsOfficial/vlmcsd-beta/blob/master/db/getkeysonline/table/Keys.csv), and the list of vaild keys, check [there](https://github.com/TheFlightSimulationsOfficial/vlmcsd-beta/blob/master/db/getkeysonline/table/Keys.csv)
+ To see all vaild product keys for Windows and Office, see [here](https://github.com/TheFlightSimulationsOfficial/vlmcsd-beta/blob/master/db/getkeysonline/table/Keys.csv), and the list of vaild keys, check [there](https://github.com/TheFlightSimulationsOfficial/vlmcsd-beta/blob/master/db/getkeysonline/table/List%20Vaild%20Keys.csv)
 
 ### OR
 
