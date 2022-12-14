@@ -102,7 +102,6 @@ def gen(pag, web, ver):
     #Delete old *_pre.txt
     os.remove(str(ver) + str("_pre.txt"))
 
-
 #===================================================================================================================
 #===================================================================================================================
 # III. CALL KEYS FUNCTION
@@ -290,52 +289,30 @@ def office2021():
 
 #------------------------------------------------------------------------------------------------------------------
 
-#This will reset all required varibles
-def retvar():
-    loop = int(1)
-    i = int(1)
-    j = int(1)
-    pag = int(1)
-    web = str("")
-
-#This will generate client keys by calling specific target
-def cli():
-    #win7()
-    #win81()
-    #win10()
-    win10home()
-
-#This will generate server keys by calling specific target
-def ser():
-    #server1619()
-    server2022()
-
-#This will generate Office keys by calling specific target
-def off():
-    #office2010()
-    #office2013()
-    #office2016()
-    #office2019()
-    office2021()
-
 #Where we start
 def start():
-    ask = int(input("1. Download all \n2. Download Clients Keys only \n3. Download Server Keys only \n4. Download Office Keys only \nChoose operation mode: "))
-    if ask == 1: 
-        cli()
-        retvar()
-        ser()
-        retvar()
-        off()
+    ask = int(input("1. Download Keys for Microsoft Windows 7 \n2.  Download Keys for Microsoft Windows 8.1 \n3. Download Keys for Microsoft Windows 10/11 \n4. Download Keys for Microsoft Windows Server 2016/2019 \n5.  Download Keys for Microsoft Windows Server 2022 \n6. Download Keys for Microsoft Office 2010 \n7. Download Keys for Microsoft Office 2013 \n8. Download Keys for Microsoft Office 2016 \n9. Download Keys for Microsoft Office 2019 \n10. Download Keys for Microsoft Office 2021 \nChoose operation mode: "))
+    if ask == 1:
+        win7()
     elif ask == 2:
-        cli()
-        retvar()
+        win81()
     elif ask == 3:
-        ser()
-        retvar()
+        win10()
+        win10home()
     elif ask == 4:
-        off()
-        retvar()
+        server1619()
+    elif ask == 5:
+        server2022()
+    elif ask == 6:
+        office2010()
+    elif ask == 7:
+        office2013()
+    elif ask == 8:
+        office2016()
+    elif ask == 9:
+        office2019()
+    elif ask == 10:
+        office2021()
     else:
         print("Invaild input. Please do it again...")
         start()
