@@ -21,6 +21,11 @@
         + I. REQUIRED LIBRARY
         + II. MAIN CORE APPLICATION
         + III. CALL KEYS FUNCTION
+       
+    Thanks to TheFlightSims sysadmins, Hotbird64, @kkkgo, @harukaMa and other contributors for 
+    all contributions to this project.
+    
+    By community, for community.
 
 Report problems at: https://github.com/TheFlightSimulationsOfficial/vlmcsd-beta/issues
 
