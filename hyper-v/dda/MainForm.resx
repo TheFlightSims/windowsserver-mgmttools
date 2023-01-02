@@ -117,25 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="columnHeaderDevice.Text" xml:space="preserve">
-    <value>Mounted device name</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="columnHeaderDevice.Width" type="System.Int32, mscorlib">
-    <value>262</value>
-  </data>
-  <data name="columnHeaderClass.Text" xml:space="preserve">
-    <value>Device Type</value>
-  </data>
-  <data name="columnHeaderClass.Width" type="System.Int32, mscorlib">
-    <value>140</value>
-  </data>
-  <data name="columnHeaderLocation.Text" xml:space="preserve">
-    <value>Device Address</value>
-  </data>
-  <data name="columnHeaderLocation.Width" type="System.Int32, mscorlib">
-    <value>363</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 13</value>
@@ -143,6 +124,7 @@
   <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
     <value>771, 549</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="listView1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -158,9 +140,42 @@
   <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="columnHeaderDevice.Text" xml:space="preserve">
+    <value>Mounted device name</value>
+  </data>
+  <data name="columnHeaderDevice.Width" type="System.Int32, mscorlib">
+    <value>262</value>
+  </data>
+  <data name="columnHeaderClass.Text" xml:space="preserve">
+    <value>Device Type</value>
+  </data>
+  <data name="columnHeaderClass.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="columnHeaderLocation.Text" xml:space="preserve">
+    <value>Device Address</value>
+  </data>
+  <data name="columnHeaderLocation.Width" type="System.Int32, mscorlib">
+    <value>363</value>
+  </data>
   <metadata name="contextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>21, 18</value>
   </metadata>
+  <data name="contextMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 126</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip.Name" xml:space="preserve">
+    <value>contextMenuStrip</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="其它toolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="其它toolStripMenuItem.Text" xml:space="preserve">
+    <value>Other settings</value>
+  </data>
   <data name="lowMemoryMappedIoSpaceToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -209,12 +224,6 @@
   <data name="GCCTtoolStripMenuItem.Text" xml:space="preserve">
     <value>GuestControlledCacheTypes</value>
   </data>
-  <data name="其它toolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 22</value>
-  </data>
-  <data name="其它toolStripMenuItem.Text" xml:space="preserve">
-    <value>Other settings</value>
-  </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
     <value>179, 6</value>
   </data>
@@ -244,15 +253,6 @@
   </data>
   <data name="刷新列表toolStripMenuItem.Text" xml:space="preserve">
     <value>Refresh</value>
-  </data>
-  <data name="contextMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 148</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip.Name" xml:space="preserve">
-    <value>contextMenuStrip</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
