@@ -1,23 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Management.Automation;
-using System.Management.Automation.Runspaces;
-using System.Collections.ObjectModel;
+using Microsoft.Management.Infrastructure;
+using DeviceData = System.Tuple<Microsoft.HyperV.PowerShell.VirtualMachine, Microsoft.HyperV.PowerShell.VMAssignedDevice>;
 
 namespace DiscreteDeviceAssigner
 {
-    using Microsoft.HyperV.PowerShell;
-    using Microsoft.Management.Infrastructure;
-    using DeviceData = Tuple<Microsoft.HyperV.PowerShell.VirtualMachine,
-Microsoft.HyperV.PowerShell.VMAssignedDevice>;
-
     public partial class MainForm : Form
     {
         public MainForm()
@@ -25,24 +15,25 @@ Microsoft.HyperV.PowerShell.VMAssignedDevice>;
             InitializeComponent();
         }
 
-        //更新虚拟机和设备显示
+        //Update virtual machine and device display
         private void UpdateVM()
         {
             listView1.Groups.Clear();
             listView1.Items.Clear();
 
-            //获取虚拟机列表
+            //Get the list of virtual machines
             var vms = PowerShellWrapper.GetVM();
             var groups = new List<ListViewGroup>();
             foreach (var vm in vms)
             {
-                ListViewGroup group = new ListViewGroup("[" + vm.State + "]" + vm.Name);
+                ListViewGroup group = new ListViewGroup( "[State: " + vm.State + "] " + vm.Name);
                 groups.Add(group);
             }
 
-            //获取每个虚拟机下设备列表
+            //Get the list of devices under each virtual machine
             var lviss = new List<ListViewItem>[vms.Count];
-            Parallel.For(0, vms.Count, (int i) => {
+            _ = Parallel.For(0, vms.Count, (int i) =>
+            {
                 var vm = vms[i];
                 var group = groups[i];
                 lviss[i] = new List<ListViewItem>();
@@ -65,9 +56,9 @@ Microsoft.HyperV.PowerShell.VMAssignedDevice>;
                 });
             });
 
-            //更新ListView
+            //Refresh List
             listView1.BeginUpdate();
-            foreach (var group in groups)
+            foreach (ListViewGroup group in groups)
             {
                 listView1.Groups.Add(group);
             }
@@ -81,14 +72,14 @@ Microsoft.HyperV.PowerShell.VMAssignedDevice>;
             listView1.EndUpdate();
         }
 
-        //加载事件
+        //Loading event
         private async void Form1_Load(object sender, EventArgs e)
         {
             await Task.Delay(1);
             UpdateVM();
         }
 
-        //呼出右键菜单
+        //Right - click the menu
         private void listView1_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -103,7 +94,7 @@ Microsoft.HyperV.PowerShell.VMAssignedDevice>;
             }
         }
 
-        //右键菜单呼出事件
+        //Right-click the menu to call out event
         private void contextMenuStrip_Opening(object sender, CancelEventArgs e)
         {
             DeviceData data = contextMenuStrip.Tag as DeviceData;
@@ -120,7 +111,7 @@ Microsoft.HyperV.PowerShell.VMAssignedDevice>;
             uint lowMMIO = 0;
             try
             {
-                //这句会莫名其妙抛出异常
+                //This sentence will be inexplicable
                 lowMMIO = data.Item1.LowMemoryMappedIoSpace;
             }
             catch { }
@@ -129,7 +120,7 @@ Microsoft.HyperV.PowerShell.VMAssignedDevice>;
             GCCTtoolStripMenuItem.Checked = data.Item1.GuestControlledCacheTypes;
         }
 
-        //添加设备
+        //Add device
         private void 添加设备ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeviceData data = contextMenuStrip.Tag as DeviceData;
@@ -138,7 +129,7 @@ Microsoft.HyperV.PowerShell.VMAssignedDevice>;
             {
                 string name = dev.CimInstanceProperties["Name"] != null ? dev.CimInstanceProperties["Name"].Value as string : null;
                 if (name == null) name = "";
-                if (MessageBox.Show("确定添加设备“" + name + "”到虚拟机“" + data.Item1.Name + "”吗？", "确认", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Add this device: " + name + "to this following virtual machine: " + data.Item1.Name, ". Confirm?", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     try
                     {
@@ -146,18 +137,18 @@ Microsoft.HyperV.PowerShell.VMAssignedDevice>;
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message, "错误");
+                        MessageBox.Show(ex.Message, " error occured");
                     }
                     UpdateVM();
                 }
             }
         }
 
-        //移除设备
+        //Removal
         private void 移除设备ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeviceData data = contextMenuStrip.Tag as DeviceData;
-            if (MessageBox.Show("确定从虚拟机“" + data.Item1.Name + "”移除设备“" + data.Item2.Name + "”吗？", "确认", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Perform removal device " + data.Item2.Name + "from " + data.Item1.Name, ". Confirm?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 try
                 {
@@ -165,20 +156,20 @@ Microsoft.HyperV.PowerShell.VMAssignedDevice>;
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "错误");
+                    MessageBox.Show(ex.Message, " error occured");
                 }
                 UpdateVM();
             }
         }
 
-        //复制地址
+        //Replication address
         private void 复制地址ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeviceData data = contextMenuStrip.Tag as DeviceData;
             Clipboard.SetText(data.Item2.LocationPath);
         }
 
-        //刷新列表
+        //refresh the list
         private void 刷新列表ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             UpdateVM();
@@ -194,7 +185,7 @@ Microsoft.HyperV.PowerShell.VMAssignedDevice>;
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "错误");
+                MessageBox.Show(ex.Message, " error occured");
             }
         }
 
@@ -220,7 +211,7 @@ Microsoft.HyperV.PowerShell.VMAssignedDevice>;
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.Message, "错误");
+                            MessageBox.Show(ex.Message, " error occured");
                         }
                     }
                 }
@@ -244,7 +235,7 @@ Microsoft.HyperV.PowerShell.VMAssignedDevice>;
                     uint lowMMIO = 0;
                     try
                     {
-                        //这句会莫名其妙抛出异常
+                        //This sentence will be inexplicable
                         lowMMIO = data.Item1.LowMemoryMappedIoSpace;
                     }
                     catch { }
@@ -259,7 +250,7 @@ Microsoft.HyperV.PowerShell.VMAssignedDevice>;
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.Message, "错误");
+                            MessageBox.Show(ex.Message, " error occured");
                         }
                     }
                 }
@@ -267,6 +258,21 @@ Microsoft.HyperV.PowerShell.VMAssignedDevice>;
                 //Failed
                 LMMIOtoolStripTextBox.Text = (data.Item1.LowMemoryMappedIoSpace / 1024 / 1024).ToString();
             }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void 其它toolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void highMemoryMappedIoSpaceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

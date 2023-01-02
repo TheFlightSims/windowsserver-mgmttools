@@ -1,0 +1,16 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\obj\Debug\hypervpassth.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\obj\Debug\hypervpassth.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\obj\Debug\DiscreteDeviceAssigner.MainForm.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\obj\Debug\DiscreteDeviceAssigner.PnpDeviceForm.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\obj\Debug\HyperVpassthroughdev.Properties.Resources.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\obj\Debug\hypervpassth.csproj.GenerateResource.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\obj\Debug\hypervpassth.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\obj\Debug\Hyper-V Passthrough Device.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\obj\Debug\Hyper-V Passthrough Device.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Debug\Hyper-V Passthrough Device.exe.config
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Debug\Hyper-V Passthrough Device.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Debug\Hyper-V Passthrough Device.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Debug\Microsoft.HyperV.PowerShell.Objects.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Debug\Microsoft.Management.Infrastructure.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Debug\System.Management.Automation.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\obj\Debug\hypervpassth.csproj.CopyComplete
