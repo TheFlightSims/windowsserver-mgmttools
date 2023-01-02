@@ -129,7 +129,7 @@ namespace DiscreteDeviceAssigner
             {
                 string name = dev.CimInstanceProperties["Name"] != null ? dev.CimInstanceProperties["Name"].Value as string : null;
                 if (name == null) name = "";
-                if (MessageBox.Show("Add this device: " + name + "to this following virtual machine: " + data.Item1.Name, ". Confirm?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Add this device: " + name + " to this following virtual machine: " + data.Item1.Name, "Confirm?", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     try
                     {
@@ -148,7 +148,7 @@ namespace DiscreteDeviceAssigner
         private void 移除设备ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeviceData data = contextMenuStrip.Tag as DeviceData;
-            if (MessageBox.Show("Perform removal device " + data.Item2.Name + "from " + data.Item1.Name, ". Confirm?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Perform removal device " + data.Item2.Name + " from " + data.Item1.Name, "Confirm?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 try
                 {
