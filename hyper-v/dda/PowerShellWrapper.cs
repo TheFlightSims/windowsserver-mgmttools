@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections.ObjectModel;
-using Microsoft.HyperV.PowerShell;
-using System.Management.Automation.Runspaces;
-using System.Management.Automation;
+﻿using Microsoft.HyperV.PowerShell;
 using Microsoft.Management.Infrastructure;
-using System.Windows.Forms;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Management.Automation;
+using System.Management.Automation.Runspaces;
 
 namespace DiscreteDeviceAssigner
 {
@@ -134,7 +130,7 @@ namespace DiscreteDeviceAssigner
             string id = device.CimInstanceProperties["DeviceId"] != null ? device.CimInstanceProperties["DeviceId"].Value as string : null;
 
             var locationPaths = GetPnpDeviceLocationPath(id);
-            if (locationPaths.Count == 0) throw new InvalidOperationException("无法添加指定类型的设备");
+            if (locationPaths.Count == 0) throw new InvalidOperationException("Cannot do action specified device to the VM");
 
             try
             {

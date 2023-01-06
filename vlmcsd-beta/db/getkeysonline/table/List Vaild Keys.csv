@@ -1,5 +1,5 @@
-KeyDescription,List of vaild keys
-Win 10 RTM Professional Retail,389
+KeyDescription,List vaild keys
+Win 10 RTM Professional Retail,429
 Win 8.1 RTM Professional Retail,284
 Windows Server 2021 RTM ServerDatacenter;AzureStackHCIAddOn2021 Retail,257
 Windows Server 2021 RTM ServerStandard Retail,181
@@ -12,96 +12,249 @@ Office19_ProPlus2019MSDNR_Retail,51
 Office16_ProPlusMSDNR_Retail,49
 Win 10 RTM Professional OEM:NONSLP,40
 Office15_ProPlusMSDNR_Retail,35
-Office21_Access2021R_Retail,29
 Win 10 RTM Core OEM:NONSLP,29
 Win 10 RTM Core Retail,29
+Office21_Access2021R_Retail,29
 Win 8.1 RTM Professional OEM:NONSLP,28
 Win 10 RTM CoreSingleLanguage OEM:DM,27
 Office21_ProjectPro2021R_Retail,24
 Office21_VisioPro2021R_Retail,22
 Office15_ProjectProR_Retail,18
 Office15_VisioProR_Retail,18
-Win 8 RTM Professional OEM:DM,14
+Win 8 RTM Professional OEM:DM,16
 Win 8 RTM Professional Retail,13
 Win 8.1 RTM Professional OEM:DM,11
 Office19_VisioPro2019R_Retail,11
-Office15_ProPlusR_Retail,9
 Office19_ProPlus2019R_Retail,9
-Windows Server Essentials 2016 RTM ServerSolution Retail,8
+Office15_ProPlusR_Retail,9
 Win 8.1 RTM Core Retail,8
-Office19_ProjectPro2019R_Retail,7
+Windows Server Essentials 2016 RTM ServerSolution Retail,8
 Win 8.1 RTM ProfessionalN Retail,7
-Windows Server 2016 RTM ServerStandard Retail,6
+Office19_ProjectPro2019R_Retail,7
+Win 10 RTM Enterprise Volume:MAK,7
 Office16_ProPlusR_Retail,6
 Office15_HomeStudentR_Retail,6
-Win 10 RTM CoreCountrySpecific OEM:DM,4
-Windows 7 SP1 Professional Retail,4
+Win 10 RTM Professional Volume:MAK,6
+Windows Server 2016 RTM ServerStandard Retail,6
 Office15_HomeStudentR_OEM_Perp,4
-Win 8 RTM ProfessionalN Retail,3
+Windows 7 SP1 Professional Retail,4
+Win 10 RTM CoreCountrySpecific OEM:DM,4
 Win 8 RTM CoreSingleLanguage OEM:NONSLP,3
-Win 10 RTM EnterpriseS Volume:GVLK,2
-RTM_ProPlus_MAK,2
+Win 8 RTM ProfessionalN Retail,3
 Win 8 RTM Core Retail,2
-Office15_HomeBusinessR_OEM_Perp,2
-RTM_Standard_MAK,2
-Office21_ProPlus2021MSDNR_Retail,2
 Win 10 RTM EnterpriseSN Volume:GVLK,2
-Office21_ProjectPro2021MSDNR_Retail1,1
-Win 8 RTM ProfessionalN Volume:GVLK,1
-Win 8.1 RTM ProfessionalN Volume:GVLK,1
-Win 8 RTM CoreCountrySpecific Volume:GVLK,1
-Windows Vista EnterpriseN GVLK,1
-Win 10 RTM EnterpriseG Volume:GVLK,1
-Windows 7 Ultimate Retail,1
-MultiPoint Server 2012 RTM ServerMultiPointPremium Volume:GVLK,1
-Windows Vista Enterprise - GVLK,1
-Windows 7 ProfessionalN Volume:GVLK,1
-Win 8 RTM Enterprise Volume:GVLK,1
-Win 8 RTM EnterpriseN Volume:GVLK,1
-Windows 7 Professional Volume:GVLK,1
-Win 10 RTM Professional Volume:GVLK,1
-Win 10 RTM Enterprise Volume:GVLK,1
-Win 10 RTM ProfessionalWorkstationN Volume:GVLK,1
-RTM_StandardMSDN_Retail,1
-Win 8 RTM Professional OEM:NONSLP,1
-Win 10 RTM EnterpriseN Volume:GVLK,1
-Win 8 RTM Core Volume:GVLK,1
-MultiPoint Server 2012 RTM ServerMultiPointStandard Volume:GVLK,1
-Win 8.1 RTM Enterprise Volume:GVLK,1
-Win 10 RTM CoreN Retail,1
-Windows Server 2016 RTM ServerDatacenter Volume:GVLK,1
-Win 8 RTM Enterprise;EnterpriseN;Professional;ProfessionalN Volume:CSVLK,1
-Win 8.1 RTM CoreCountrySpecific OEM:DM,1
-Win 10 RTM ProfessionalEducation Volume:GVLK,1
-Windows Server 2021 RTM ServerDatacenter Volume:GVLK,1
-Windows 7 EnterpriseE Volume:GVLK,1
-Windows Server Essentials 2012 R2 RTM ServerSolution Volume:GVLK,1
-Office15_ProfessionalR_Retail,1
-Win 10 RTM ProfessionalN Volume:GVLK,1
-Windows 7 ProfessionalE Volume:GVLK,1
-Win 8 RTM Professional Volume:GVLK,1
-Win 10 RTM EnterpriseGN Volume:GVLK,1
-Windows Server 2012 RTM ServerDatacenter Volume:GVLK,1
-Windows Server 2016 RTM ServerStandard Volume:GVLK,1
-Win 10 RTM ProfessionalWorkstation Volume:GVLK,1
-Win 8.1 RTM Professional Volume:GVLK,1
+Win 10 RTM EnterpriseS Volume:GVLK,2
+Office21_ProPlus2021MSDNR_Retail,2
+RTM_Standard_MAK,2
+Office15_HomeBusinessR_OEM_Perp,2
 Office15_HomeBusinessR_Retail,1
-Windows 7 Enterprise Volume:GVLK,1
-Win 8.1 RTM Core OEM:DM,1
-Windows Vista Business N - GVLK,1
-Windows 7 EnterpriseN Volume:GVLK,1
-RTM_HomeBusiness_Retail,1
-Win 8 RTM CoreN Volume:GVLK,1
-Windows Server 12 R2 RTM ServerDatacenter Volume:GVLK,1
-Win 10 RTM Education Volume:GVLK,1
-Win 8 RTM CoreSingleLanguage Volume:GVLK,1
-Win 10 RTM EducationN Volume:GVLK,1
-Win 10 RTM ProfessionalEducationN Volume:GVLK,1
-Windows Vista Business - GVLK,1
-Windows Server 12 R2 RTM ServerStandard Volume:GVLK,1
-Windows Server 2021 RTM ServerStandard Volume:GVLK,1
-Win 8 RTM CoreSingleLanguage OEM:DM,1
-Windows Server 2012 RTM ServerStandard Volume:GVLK,1
-Win 8.1 RTM EnterpriseN Volume:GVLK,1
-Windows Server Essentials 2016 RTM ServerSolution Volume:GVLK,1
+Office15_ProjectProVL_KMS_Client,1
+Office15_ProjectStdVL_KMS_Client,1
+Office15_ProPlusVL_KMS_Client,1
+Office15_PublisherVL_KMS_Client,1
+Office15_StandardVL_KMS_Client,1
+Office15_InfoPathVL_KMS_Client,1
+Office15_LyncVL_KMS_Client,1
+Office15_MondoVL_KMS_Client,1
+Office15_OneNoteVL_KMS_Client,1
+Office15_OutlookVL_KMS_Client,1
+Office15_PowerPointVL_KMS_Client,1
+Office15_ProfessionalR_Retail,1
+MultiPoint Server 2012 RTM ServerMultiPointPremium Volume:GVLK,1
+MultiPoint Server 2012 RTM ServerMultiPointStandard Volume:GVLK,1
+Multipoint Server Volume:GVLK,1
+Office15_AccessVL_KMS_Client,1
+Office15_Alpha_AccessVL_KMS_Client,1
+Office15_Alpha_ExcelVL_KMS_Client,1
+Office15_Alpha_GrooveVL_KMS_Client,1
+Office15_Alpha_InfoPathVL_KMS_Client,1
+Office15_Alpha_LyncVL_KMS_Client,1
+Office15_Alpha_MondoVL_KMS_Client,1
+Office15_Alpha_OneNoteVL_KMS_Client,1
+Office15_Alpha_OutlookVL_KMS_Client,1
+Office15_Alpha_PowerPointVL_KMS_Client,1
+Office15_Alpha_ProjectProVL_KMS_Client,1
+Office15_Alpha_ProjectStdVL_KMS_Client,1
+Office15_Alpha_ProPlusVL_KMS_Client,1
+Office15_Alpha_PublisherVL_KMS_Client,1
+Office15_Alpha_VisioProVL_KMS_Client,1
+Office15_Alpha_VisioStdVL_KMS_Client,1
+Office15_Alpha_WordVL_KMS_Client,1
+Office15_ExcelVL_KMS_Client,1
+Office16_ProPlusVL_KMS_Client,1
+Office16_PublisherVL_KMS_Client,1
+Office16_SkypeforBusinessVL_KMS_Client,1
+Office16_StandardVL_KMS_Client,1
+Office16_VisioProVL_KMS_Client,1
+Office16_VisioProXC2RVL_KMS_ClientC2R,1
+Office16_VisioStdVL_KMS_Client,1
+Office16_VisioStdXC2RVL_KMS_ClientC2R,1
+Office16_WordVL_KMS_Client,1
+Office19_Access2019VL_KMS_Client_AE,1
+Office19_Excel2019VL_KMS_Client_AE,1
+Office19_Outlook2019VL_KMS_Client_AE,1
+Office19_PowerPoint2019VL_KMS_Client_AE,1
+Office19_ProjectPro2019VL_KMS_Client_AE,1
+Office19_ProjectPro2019XC2RVL_KMS_ClientC2R,1
+Office19_ProjectStd2019VL_KMS_Client_AE,1
+Office19_ProPlus2019VL_KMS_Client_AE,1
+Office19_ProPlus2019XC2RVL_KMS_ClientC2R,1
+Office19_Publisher2019VL_KMS_Client_AE,1
+Office19_SkypeforBusiness2019VL_KMS_Client_AE,1
+Office19_Standard2019VL_KMS_Client_AE,1
+Office15_VisioProVL_KMS_Client,1
+Office15_VisioStdVL_KMS_Client,1
+Office15_WordVL_KMS_Client,1
+Office16_AccessVL_KMS_Client,1
+Office16_ExcelVL_KMS_Client,1
 Office16_HomeStudentR_Retail,1
+Office16_MondoR_KMS_Automation,1
+Office16_MondoVL_KMS_Client,1
+Office16_OneNoteVL_KMS_Client,1
+Office16_OutlookVL_KMS_Client,1
+Office16_PowerPointVL_KMS_Client,1
+Office16_ProjectProVL_KMS_Client,1
+Office16_ProjectProXC2RVL_KMS_ClientC2R,1
+Office16_ProjectStdVL_KMS_Client,1
+Office16_ProjectStdXC2RVL_KMS_ClientC2R,1
+RTM_StandardMSDN_Retail,1
+RTM_VisioPrem_KMS_Client,1
+RTM_VisioPro_KMS_Client,1
+RTM_VisioStd_KMS_Client,1
+RTM_Word_KMS_Client,1
+Server 2008 R2 Compute Cluster (HPC) Volume:GVLK,1
+Server 2008 R2 Datacenter Volume:GVLK,1
+Server 2008 R2 Enterprise IA64 Volume:GVLK,1
+Server 2008 R2 Enterprise Volume:GVLK,1
+Server 2008 R2 Standard Volume:GVLK,1
+Server 2008 R2 Web Volume:GVLK,1
+ServerCloudStorage 12 R2 RTM ServerCloudStorage Volume:GVLK,1
+ServerCloudStorage 2016 RTM ServerCloudStorage Volume:GVLK,1
+Win 10 Pre-Release Enterprise Volume:GVLK,1
+Win 10 Pre-Release Professional Volume:GVLK,1
+Win 10 RTM CloudEdition Volume:GVLK,1
+Win 10 RTM CloudEditionN Volume:GVLK,1
+Office21_VisioPro2021VL_KMS_Client_AE,1
+Office21_VisioStd2021VL_KMS_Client_AE,1
+Office21_Word2021VL_KMS_Client_AE,1
+RTM_Access_KMS_Client,1
+RTM_Excel_KMS_Client,1
+RTM_Groove_KMS_Client,1
+RTM_HomeBusiness_Retail,1
+RTM_InfoPath_KMS_Client,1
+RTM_Mondo_KMS_Client,1
+RTM_Mondo_KMS_Client2,1
+RTM_OneNote_KMS_Client,1
+RTM_Outlook_KMS_Client,1
+RTM_PowerPoint_KMS_Client,1
+RTM_ProjectPro_KMS_Client,1
+RTM_ProjectStd_KMS_Client,1
+RTM_ProPlus_KMS_Client,1
+RTM_ProPlus_MAK,1
+RTM_Publisher_KMS_Client,1
+RTM_SmallBusBasics_KMS_Client,1
+RTM_Standard_KMS_Client,1
+Office21_ProPlus2021VL_KMS_Client_AE,1
+Office21_Publisher2021VL_KMS_Client_AE,1
+Office21_SkypeforBusiness2021VL_KMS_Client_AE,1
+Office21_Standard2021VL_KMS_Client_AE,1
+Win 10 RTM Core Volume:GVLK,1
+Office19_VisioPro2019VL_KMS_Client_AE,1
+Office19_VisioPro2019XC2RVL_KMS_ClientC2R,1
+Office19_VisioStd2019VL_KMS_Client_AE,1
+Office19_Word2019VL_KMS_Client_AE,1
+Office21_Access2021VL_KMS_Client_AE,1
+Office21_Excel2021VL_KMS_Client_AE,1
+Office21_Outlook2021VL_KMS_Client_AE,1
+Office21_PowerPoint2021VL_KMS_Client_AE,1
+Office21_ProjectPro2021MSDNR_Retail1,1
+Win 10 RTM EnterpriseS Volume:MAK,1
+Office21_ProjectPro2021VL_KMS_Client_AE,1
+Office21_ProjectStd2021VL_KMS_Client_AE,1
+Win 10 RTM EnterpriseG Volume:GVLK,1
+Win 10 RTM EnterpriseGN Volume:GVLK,1
+Win 10 RTM EnterpriseN Volume:GVLK,1
+Win 10 RTM CoreCountrySpecific Volume:GVLK,1
+Win 10 RTM CoreN Retail,1
+Win 10 RTM CoreN Volume:GVLK,1
+Win 10 RTM CoreSingleLanguage Volume:GVLK,1
+Win 10 RTM Education Volume:GVLK,1
+Win 10 RTM EducationN Volume:GVLK,1
+Win 10 RTM Enterprise Volume:GVLK,1
+Win 10 RTM ProfessionalEducation Volume:GVLK,1
+Win 10 RTM ProfessionalEducationN Volume:GVLK,1
+Win 10 RTM ProfessionalN Volume:GVLK,1
+Win 10 RTM ProfessionalWorkstation Volume:GVLK,1
+Win 10 RTM ProfessionalWorkstationN Volume:GVLK,1
+Win 11 RTM IoTEnterpriseS Volume:GVLK,1
+Win 8 RTM Core Volume:GVLK,1
+Win 8 RTM CoreCountrySpecific Volume:GVLK,1
+Win 8 RTM CoreN Volume:GVLK,1
+Win 8 RTM CoreSingleLanguage OEM:DM,1
+Win 8 RTM CoreSingleLanguage Volume:GVLK,1
+Win 8 RTM Enterprise Volume:GVLK,1
+Win 8 RTM Enterprise;EnterpriseN;Professional;ProfessionalN Volume:CSVLK,1
+Win 8 RTM EnterpriseN Volume:GVLK,1
+Win 8 RTM ProfessionalN Volume:GVLK,1
+Win 8 RTM ProfessionalWMC Volume:GVLK,1
+Win 8.1 RTM Core OEM:DM,1
+Win 8 RTM Professional OEM:NONSLP,1
+Win 10 RTM Professional Volume:GVLK,1
+Win 8.1 RTM Core Volume:GVLK,1
+Win 8.1 RTM CoreARM Volume:GVLK,1
+Win 8.1 RTM CoreCountrySpecific OEM:DM,1
+Win 8.1 RTM CoreCountrySpecific Volume:GVLK,1
+Win 8.1 RTM CoreN Volume:GVLK,1
+Win 8.1 RTM CoreSingleLanguage Volume:GVLK,1
+Win 8.1 RTM Enterprise Volume:GVLK,1
+Win 8.1 RTM EnterpriseN Volume:GVLK,1
+Windows 7 Ultimate Retail,1
+Windows Embedded Industry 8 RTM EmbeddedIndustry Volume:GVLK,1
+Windows Embedded Industry 8 RTM EmbeddedIndustryE Volume:GVLK,1
+Win 8 RTM Professional Volume:GVLK,1
+Win 8.1 RTM ProfessionalN Volume:GVLK,1
+Win 8.1 RTM ProfessionalWMC Volume:GVLK,1
+Windows 7 All Volume Editions Volume:MAK,1
+Windows 7 Enterprise Volume:GVLK,1
+Windows 7 EnterpriseE Volume:GVLK,1
+Windows 7 EnterpriseN Volume:GVLK,1
+Windows 7 Professional Volume:GVLK,1
+Windows 7 ProfessionalE Volume:GVLK,1
+Windows 7 ProfessionalN Volume:GVLK,1
+Windows Embedded Industry 8.1 RTM EmbeddedIndustry Volume:GVLK,1
+Windows Embedded Industry 8.1 RTM EmbeddedIndustryA Volume:GVLK,1
+Windows Embedded Industry 8.1 RTM EmbeddedIndustryE Volume:GVLK,1
+Windows Embedded POSReady 7 POSReady Volume:GVLK,1
+Windows Server 12 R2 RTM ServerDatacenter Volume:GVLK,1
+Windows Server 12 R2 RTM ServerStandard Volume:GVLK,1
+Windows Server 2008 Compute Cluster GVLK,1
+Windows Server 2008 Datacenter GVLK,1
+Windows Server 2008 DatacenterV GVLK,1
+Windows Server 2008 Enterprise GVLK,1
+Windows Server 2008 EnterpriseV GVLK,1
+Windows Server 2008 Itanium GVLK,1
+Windows Server 2008 Standard GVLK,1
+Windows Server 2008 StandardV GVLK,1
+Windows Server 2008 Web GVLK,1
+Windows Server 2012 RTM ServerDatacenter Volume:GVLK,1
+Windows Server 2012 RTM ServerStandard Volume:GVLK,1
+Windows Server 2016 RTM ServerAzureCor Volume:GVLK,1
+Windows Server 2016 RTM ServerStandard Volume:GVLK,1
+Windows Server 2021 RTM ServerDatacenterACor Volume:GVLK,1
+Windows Server 2021 RTM ServerStandard Volume:GVLK,1
+Windows Server 2021 RTM ServerStandardACor Volume:GVLK,1
+Windows Server Essentials 2012 R2 RTM ServerSolution Volume:GVLK,1
+Windows Server 2016 RTM ServerDatacenter Volume:GVLK,1
+Win 8.1 RTM Professional Volume:GVLK,1
+Windows Server 2019 RTM ServerRdsh Volume:GVLK,1
+Windows Server 2019 RTM ServerTurbine Volume:GVLK,1
+Windows Server 2021 RTM ServerAzureCor Volume:GVLK,1
+Windows Server 2021 RTM ServerDatacenter Volume:GVLK,1
+Windows Server Essentials 2016 RTM ServerSolution Volume:GVLK,1
+Windows Server Next Beta ServerRdsh Volume:GVLK,1
+Windows Thin PC Embedded Volume:GVLK,1
+Windows Vista Business - GVLK,1
+Windows Vista Business N - GVLK,1
+Windows Vista Enterprise - GVLK,1
+Windows Vista EnterpriseN GVLK,1
+WinServer Next ServerDatacenter Volume:GVLK,1

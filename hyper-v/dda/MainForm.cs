@@ -1,15 +1,18 @@
-﻿using System;
+﻿/* 
+ Adding required libraries
+ */
+using Microsoft.Management.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Management.Infrastructure;
 using DeviceData = System.Tuple<Microsoft.HyperV.PowerShell.VirtualMachine, Microsoft.HyperV.PowerShell.VMAssignedDevice>;
 
 namespace DiscreteDeviceAssigner
 {
     public partial class MainForm : Form
-    {
+    { 
         public MainForm()
         {
             InitializeComponent();
@@ -24,9 +27,10 @@ namespace DiscreteDeviceAssigner
             //Get the list of virtual machines
             var vms = PowerShellWrapper.GetVM();
             var groups = new List<ListViewGroup>();
+            //Display VM name and its state
             foreach (var vm in vms)
             {
-                ListViewGroup group = new ListViewGroup( "[State: " + vm.State + "] " + vm.Name);
+                ListViewGroup group = new ListViewGroup("[State: " + vm.State + "] " + vm.Name);
                 groups.Add(group);
             }
 
@@ -38,13 +42,14 @@ namespace DiscreteDeviceAssigner
                 var group = groups[i];
                 lviss[i] = new List<ListViewItem>();
                 var lvis = lviss[i];
-
                 foreach (var dd in PowerShellWrapper.GetVMAssignableDevice(vm))
                 {
                     var dev = PowerShellWrapper.GetPnpDevice(dd.InstanceID);
-                    //string name = dev.CimInstanceProperties["Name"] != null ? dev.CimInstanceProperties["Name"].Value as string : null;
                     string name = dd.Name;
+
+                    //Filter any Plug-n-Play hardware is already mounted into the VM
                     string clas = dev.CimInstanceProperties["PnpClass"] != null ? dev.CimInstanceProperties["PnpClass"].Value as string : null;
+                    
                     lvis.Add(new ListViewItem(new string[] { name != null ? name : "", clas != null ? clas : "", dd.LocationPath }, group)
                     {
                         Tag = new DeviceData(vm, dd),
@@ -129,22 +134,24 @@ namespace DiscreteDeviceAssigner
             {
                 string name = dev.CimInstanceProperties["Name"] != null ? dev.CimInstanceProperties["Name"].Value as string : null;
                 if (name == null) name = "";
+                //Display confirm dialog box
                 if (MessageBox.Show("Add this device: " + name + " to this following virtual machine: " + data.Item1.Name, "Confirm?", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     try
                     {
                         PowerShellWrapper.AddVMAssignableDevice(data.Item1, dev);
                     }
+                    //Display an error if none of action can happen
                     catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message, " error occured");
+                    {   
+                        MessageBox.Show(ex.Message, "Error");
                     }
                     UpdateVM();
                 }
             }
         }
 
-        //Removal
+        //Removal device from specific virtual machine
         private void 移除设备ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeviceData data = contextMenuStrip.Tag as DeviceData;
@@ -156,7 +163,7 @@ namespace DiscreteDeviceAssigner
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, " error occured");
+                    MessageBox.Show(ex.Message, "Error");
                 }
                 UpdateVM();
             }
@@ -185,7 +192,7 @@ namespace DiscreteDeviceAssigner
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, " error occured");
+                MessageBox.Show(ex.Message, "Error");
             }
         }
 
@@ -211,7 +218,7 @@ namespace DiscreteDeviceAssigner
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.Message, " error occured");
+                            MessageBox.Show(ex.Message, "Error");
                         }
                     }
                 }
@@ -250,7 +257,7 @@ namespace DiscreteDeviceAssigner
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.Message, " error occured");
+                            MessageBox.Show(ex.Message, "Error");
                         }
                     }
                 }
@@ -262,7 +269,7 @@ namespace DiscreteDeviceAssigner
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void 其它toolStripMenuItem_Click(object sender, EventArgs e)

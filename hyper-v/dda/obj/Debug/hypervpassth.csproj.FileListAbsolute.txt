@@ -7,10 +7,10 @@ C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hy
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\obj\Debug\hypervpassth.csproj.CoreCompileInputs.cache
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\obj\Debug\Hyper-V Passthrough Device.exe
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\obj\Debug\Hyper-V Passthrough Device.pdb
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Debug\Hyper-V Passthrough Device.exe.config
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Debug\Hyper-V Passthrough Device.exe
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Debug\Hyper-V Passthrough Device.pdb
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Debug\Microsoft.HyperV.PowerShell.Objects.dll
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Debug\Microsoft.Management.Infrastructure.dll
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Debug\System.Management.Automation.dll
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\obj\Debug\hypervpassth.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Hyper-V Passthrough Device.exe.config
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Hyper-V Passthrough Device.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Hyper-V Passthrough Device.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Microsoft.HyperV.PowerShell.Objects.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\Microsoft.Management.Infrastructure.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\github\windowsserver-mgmttools\hyper-v\dda\bin\System.Management.Automation.dll
