@@ -1,6 +1,6 @@
 
 
-![Windows Server Management Tools - Banner](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools/tree/master/!docs & ref!/docs_image.png)
+![Windows Server Management Tools - Banner](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools/tree/master/!docs%20&%20ref!/docs_image.png)
 # The Repository
 
 ***This repository presents to you a collection of server management tools for various purposes:***
