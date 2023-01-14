@@ -1,4 +1,8 @@
-﻿using System;
+﻿using HGM.Hotbird64.LicenseManager.Contracts;
+using HGM.Hotbird64.LicenseManager.Extensions;
+using HGM.Hotbird64.Vlmcs;
+using LicenseManager.Annotations;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -17,10 +21,6 @@ using System.Windows.Media;
 using System.Windows.Threading;
 using System.Xml;
 using System.Xml.Serialization;
-using HGM.Hotbird64.LicenseManager.Contracts;
-using HGM.Hotbird64.LicenseManager.Extensions;
-using HGM.Hotbird64.Vlmcs;
-using LicenseManager.Annotations;
 
 // ReSharper disable once CheckNamespace
 namespace HGM.Hotbird64.LicenseManager
@@ -319,7 +319,7 @@ namespace HGM.Hotbird64.LicenseManager
         }
 
         [NotifyPropertyChangedInvocator]
-        public void NotifyOfPropertyChange([CallerMemberName]string propertyName = null)
+        public void NotifyOfPropertyChange([CallerMemberName] string propertyName = null)
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
         private void OnMainWindowStatusChange(object sender, BusyEventArgs e)
@@ -454,7 +454,7 @@ namespace HGM.Hotbird64.LicenseManager
 
                 Parallel.ForEach(pKeyConfig.Items.OfType<ProductKeyConfigurationKeyRanges>().Single().KeyRange, keyRange =>
                 {
-                        keyRange.FileName = pKeyConfigFile.DisplayName;
+                    keyRange.FileName = pKeyConfigFile.DisplayName;
                 });
 
                 return pKeyConfig;

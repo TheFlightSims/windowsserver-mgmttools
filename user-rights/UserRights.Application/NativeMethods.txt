@@ -1,0 +1,13 @@
+POLICY_CREATE_ACCOUNT
+POLICY_LOOKUP_NAMES
+POLICY_VIEW_LOCAL_INFORMATION
+LsaAddAccountRights
+LsaClose
+LsaEnumerateAccountRights
+LsaEnumerateAccountsWithUserRight
+LsaFreeMemory
+LsaOpenPolicy
+LsaNtStatusToWinError
+LsaRemoveAccountRights
+LSA_ENUMERATION_INFORMATION
+WIN32_ERROR

@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Tests.MockLsaUserRights">
+            <summary>
+            Represents a mock <see cref="T:UserRights.Application.ILsaUserRights"/> implementation.
+            </summary>
+        </member>
+        <member name="M:Tests.MockLsaUserRights.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tests.MockLsaUserRights"/> class.
+            </summary>
+        </member>
+        <member name="M:Tests.MockLsaUserRights.#ctor(System.Collections.Generic.IDictionary{System.String,System.Collections.Generic.ICollection{System.Security.Principal.SecurityIdentifier}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tests.MockLsaUserRights"/> class.
+            </summary>
+            <param name="database">A map of privilege to assigned principals.</param>
+        </member>
+        <member name="M:Tests.MockLsaUserRights.Connect(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Tests.MockLsaUserRights.LsaAddAccountRights(System.Security.Principal.SecurityIdentifier,System.String[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Tests.MockLsaUserRights.LsaEnumerateAccountRights(System.Security.Principal.SecurityIdentifier)">
+            <inheritdoc />
+        </member>
+        <member name="M:Tests.MockLsaUserRights.LsaEnumerateAccountsWithUserRight(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Tests.MockLsaUserRights.LsaRemoveAccountRights(System.Security.Principal.SecurityIdentifier,System.String[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Tests.MockLsaUserRights.ResetConnection">
+            <summary>
+            Allow a test to assert the policy database before manipulating it.
+            </summary>
+        </member>
+        <member name="T:Tests.MockUserRightsManager">
+            <summary>
+            Represents a mock user rights manager with noop interface implementations.
+            </summary>
+        </member>
+        <member name="M:Tests.MockUserRightsManager.GetUserRights(UserRights.Application.IUserRights)">
+            <inheritdoc />
+        </member>
+        <member name="M:Tests.MockUserRightsManager.ModifyPrincipal(UserRights.Application.IUserRights,System.String,System.String[],System.String[],System.Boolean,System.Boolean,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Tests.MockUserRightsManager.ModifyPrivilege(UserRights.Application.IUserRights,System.String,System.String[],System.String[],System.Boolean,System.Boolean,System.Text.RegularExpressions.Regex,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="T:Tests.PrivilegeConstants">
+            <summary>
+            Represents Windows user right privileges.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeAssignPrimaryTokenPrivilege">
+            <summary>
+            Replace a process-level token.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeAuditPrivilege">
+            <summary>
+            Generate security audits.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeBackupPrivilege">
+            <summary>
+            Back up files and directories.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeBatchLogonRight">
+            <summary>
+            Required for an account to log on using the batch logon type.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeChangeNotifyPrivilege">
+            <summary>
+            Bypass traverse checking.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeCreateGlobalPrivilege">
+            <summary>
+            Create global objects.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeCreatePagefilePrivilege">
+            <summary>
+            Create a pagefile.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeCreatePermanentPrivilege">
+            <summary>
+            Create permanent shared objects.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeCreateSymbolicLinkPrivilege">
+            <summary>
+            Create symbolic links.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeCreateTokenPrivilege">
+            <summary>
+            Create a token object.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeDebugPrivilege">
+            <summary>
+            Debug programs.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeDelegateSessionUserImpersonatePrivilege">
+            <summary>
+            Impersonate other users.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeDenyBatchLogonRight">
+            <summary>
+            Explicitly denies an account the right to log on using the batch logon type.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeDenyInteractiveLogonRight">
+            <summary>
+            Explicitly denies an account the right to log on using the interactive logon type.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeDenyNetworkLogonRight">
+            <summary>
+            Explicitly denies an account the right to log on using the network logon type.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeDenyRemoteInteractiveLogonRight">
+            <summary>
+            Explicitly denies an account the right to log on remotely using the interactive logon type.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeDenyServiceLogonRight">
+            <summary>
+            Explicitly denies an account the right to log on using the service logon type.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeEnableDelegationPrivilege">
+            <summary>
+            Enable computer and user accounts to be trusted for delegation.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeImpersonatePrivilege">
+            <summary>
+            Impersonate a client after authentication.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeIncreaseBasePriorityPrivilege">
+            <summary>
+            Increase scheduling priority.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeIncreaseQuotaPrivilege">
+            <summary>
+            Adjust memory quotas for a process.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeIncreaseWorkingSetPrivilege">
+            <summary>
+            Increase a process working set.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeInteractiveLogonRight">
+            <summary>
+            Required for an account to log on using the interactive logon type.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeLoadDriverPrivilege">
+            <summary>
+            Load and unload device drivers.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeLockMemoryPrivilege">
+            <summary>
+            Lock pages in memory.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeMachineAccountPrivilege">
+            <summary>
+            Add workstations to domain.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeManageVolumePrivilege">
+            <summary>
+            Manage the files on a volume.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeNetworkLogonRight">
+            <summary>
+            Required for an account to log on using the network logon type.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeProfileSingleProcessPrivilege">
+            <summary>
+            Profile single process.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeRelabelPrivilege">
+            <summary>
+            Modify an object label.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeRemoteInteractiveLogonRight">
+            <summary>
+            Required for an account to log on remotely using the interactive logon type.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeRemoteShutdownPrivilege">
+            <summary>
+            Force shutdown from a remote system.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeRestorePrivilege">
+            <summary>
+            Restore files and directories.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeSecurityPrivilege">
+            <summary>
+            Manage auditing and security log.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeServiceLogonRight">
+            <summary>
+            Required for an account to log on using the service logon type.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeShutdownPrivilege">
+            <summary>
+            Shut down the system.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeSyncAgentPrivilege">
+            <summary>
+            Synchronize directory service data.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeSystemEnvironmentPrivilege">
+            <summary>
+            Modify firmware environment values.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeSystemProfilePrivilege">
+            <summary>
+            Profile system performance.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeSystemtimePrivilege">
+            <summary>
+            Change the system time.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeTakeOwnershipPrivilege">
+            <summary>
+            Take ownership of files or other objects.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeTcbPrivilege">
+            <summary>
+            Act as part of the operating system.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeTimeZonePrivilege">
+            <summary>
+            Change the time zone.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeTrustedCredManAccessPrivilege">
+            <summary>
+            Access Credential Manager as a trusted caller.
+            </summary>
+        </member>
+        <member name="F:Tests.PrivilegeConstants.SeUndockPrivilege">
+            <summary>
+            Remove computer from docking station.
+            </summary>
+        </member>
+        <member name="T:Tests.SecurityIdentifierConstants">
+            <summary>
+            Represents Windows security identifiers.
+            </summary>
+        </member>
+        <member name="F:Tests.SecurityIdentifierConstants.Administrators">
+            <summary>
+            The builtin administrators security group.
+            </summary>
+        </member>
+        <member name="F:Tests.SecurityIdentifierConstants.BackupOperators">
+            <summary>
+            The builtin backup operators security group.
+            </summary>
+        </member>
+        <member name="F:Tests.SecurityIdentifierConstants.Users">
+            <summary>
+            The builtin users security group.
+            </summary>
+        </member>
+        <member name="T:Tests.TestData">
+            <summary>
+            Represents test data.
+            </summary>
+        </member>
+        <member name="F:Tests.TestData.Privilege1">
+            <summary>
+            Represents the allow log on locally security policy setting.
+            </summary>
+        </member>
+        <member name="F:Tests.TestData.Privilege2">
+            <summary>
+            Represents the log on as a service security policy setting.
+            </summary>
+        </member>
+        <member name="F:Tests.TestData.PrincipalSidCurrent">
+            <summary>
+            Represents the security identity for the currently logged on user.
+            </summary>
+        </member>
+        <member name="F:Tests.TestData.PrincipalName1">
+            <summary>
+            Represents the default local Administrator account.
+            </summary>
+        </member>
+        <member name="F:Tests.TestData.PrincipalSid1">
+            <summary>
+            Represents the security identity for the default local Administrator account.
+            </summary>
+        </member>
+        <member name="F:Tests.TestData.PrincipalName2">
+            <summary>
+            Represents the builtin group containing only the <b>Authenticated Users</b> group by default.
+            </summary>
+        </member>
+        <member name="F:Tests.TestData.PrincipalSid2">
+            <summary>
+            Represents the security identity for the built in local users group.
+            </summary>
+        </member>
+        <member name="F:Tests.TestData.PrincipalName3">
+            <summary>
+            Represents the builtin group containing only the <b>Guest</b> user by default.
+            </summary>
+        </member>
+        <member name="F:Tests.TestData.PrincipalSid3">
+            <summary>
+            Represents the security identity for the built in local guests group.
+            </summary>
+        </member>
+        <member name="T:Tests.UserRightEntryEqualityComparer">
+            <summary>
+            Represents the equality comparison for <see cref="T:UserRights.Application.IUserRightEntry"/> objects.
+            </summary>
+        </member>
+        <member name="M:Tests.UserRightEntryEqualityComparer.Equals(UserRights.Application.IUserRightEntry,UserRights.Application.IUserRightEntry)">
+            <inheritdoc />
+        </member>
+        <member name="M:Tests.UserRightEntryEqualityComparer.GetHashCode(UserRights.Application.IUserRightEntry)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

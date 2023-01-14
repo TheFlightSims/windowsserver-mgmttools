@@ -1,0 +1,11 @@
+<CatalogSubscription>
+  <IsActive>True</IsActive>
+  <Address>http://armmf.adobe.com/arm-manifests/win/SCUP</Address>
+  <CheckEvery>1</CheckEvery>
+  <Unit>Weeks</Unit>
+  <LastCheck>28/07/2015 00:00:00</LastCheck>
+  <LastCheckResult>True</LastCheckResult>
+  <CatalogName>ReaderCatalog-2015.cab</CatalogName>
+  <Hash>83f5918bd79def3639587101a37e4cf9</Hash>
+  <LastDownloadDate>28/07/2015 00:00:00</LastDownloadDate>
+</CatalogSubscription>

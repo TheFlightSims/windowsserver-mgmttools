@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "aoPRSzHkOXDWJsgkTGu3EP5Idwh/kq+JShrVzWEoaMzCokOtBF1E7Q/RlD7+C3SpKRijHaj7Un0H9IZ/3RoFMA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\WindowsUpdateApiController.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\log4net\\2.0.10\\log4net.2.0.10.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\system.servicemodel.primitives\\4.7.0\\system.servicemodel.primitives.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

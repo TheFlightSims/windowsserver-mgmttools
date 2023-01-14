@@ -1,0 +1,13 @@
+<WsusPackagePublisher>
+  <Server>
+    <Name>W2K22-DC01</Name>
+    <IsLocal>True</IsLocal>
+    <Port>80</Port>
+    <UseSSL>False</UseSSL>
+    <IgnoreCertErrors>False</IgnoreCertErrors>
+    <DeadLineDaysSpan>0</DeadLineDaysSpan>
+    <DeadLineHour>0</DeadLineHour>
+    <DeadLineMinute>0</DeadLineMinute>
+    <VisibleInWsusConsole>Never</VisibleInWsusConsole>
+  </Server>
+</WsusPackagePublisher>

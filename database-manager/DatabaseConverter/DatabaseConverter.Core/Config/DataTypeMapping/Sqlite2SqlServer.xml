@@ -1,0 +1,23 @@
+<mappings>
+	<mapping>
+		<source type="blob" />
+		<target type="image" />
+	</mapping>
+	<mapping>
+		<source type="integer" />
+		<target type="int" />
+	</mapping>
+	<mapping>
+		<source type="numeric" />
+		<target type="numeric" />
+		<special name="precisionScale" precision="isNullOrZero" scale="isNullOrZero"  type="float"></special>
+	</mapping>
+	<mapping>
+		<source type="real" />
+		<target type="real" />
+	</mapping>
+	<mapping>
+		<source type="text" />
+		<target type="varchar" length="100" substitute="text"/>		
+	</mapping>	
+</mappings>

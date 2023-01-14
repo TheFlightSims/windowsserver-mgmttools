@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  winman:
+    image: winman:dev
+    build:
+      args:
+        source: obj/Docker/empty/
+    volumes:
+      - C:\Users\sameh\.jenkins\workspace\WinMan\WinMan:C:\app
+      - :C:\remote_debugger:ro
+    entrypoint: cmd /c "set DISABLE_PERFORMANCE_DEBUGGER=1 & C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646"
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "C:\\app\\bin\\Debug\\WinMan.exe"
+      com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"

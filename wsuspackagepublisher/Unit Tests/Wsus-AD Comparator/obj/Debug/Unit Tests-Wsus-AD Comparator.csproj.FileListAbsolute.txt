@@ -1,0 +1,7 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\Unit Tests-Wsus-AD Comparator.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\Unit Tests-Wsus-AD Comparator.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\Wsus-AD Comparator\obj\Debug\Unit Tests-Wsus-AD Comparator.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\Wsus-AD Comparator\obj\Debug\Unit Tests-Wsus-AD Comparator.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\Wsus-AD Comparator\obj\Debug\Unit Tests-Wsus-AD Comparator.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\Wsus-AD Comparator\obj\Debug\Unit Tests-Wsus-AD Comparator.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\Wsus-AD Comparator\obj\Debug\Unit Tests-Wsus-AD Comparator.pdb

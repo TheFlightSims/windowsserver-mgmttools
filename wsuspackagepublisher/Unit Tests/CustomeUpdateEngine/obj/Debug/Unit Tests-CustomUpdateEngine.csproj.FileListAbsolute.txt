@@ -1,0 +1,7 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\Unit Tests-CustomeUpdateEngine.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\Unit Tests-CustomeUpdateEngine.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomeUpdateEngine\obj\Debug\Unit Tests-CustomUpdateEngine.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomeUpdateEngine\obj\Debug\Unit Tests-CustomUpdateEngine.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomeUpdateEngine\obj\Debug\Unit Tests-CustomUpdateEngine.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomeUpdateEngine\obj\Debug\Unit Tests-CustomeUpdateEngine.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomeUpdateEngine\obj\Debug\Unit Tests-CustomeUpdateEngine.pdb

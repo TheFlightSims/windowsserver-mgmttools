@@ -1,0 +1,15 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  winman:
+    build:
+      context: C:\Users\sameh\.jenkins\workspace\WinMan\WinMan
+      dockerfile: Dockerfile
+    image: winman
+    ports:
+    - 8000:8000/tcp
+    stdin_open: true
+    tty: true
+version: '3.0'

@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteMsiManager", "RemoteMsiManager\RemoteMsiManager.csproj", "{CD4E4567-AF8D-499B-8150-D5C8FC3D4A53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{180E76B3-52A9-4AFB-A415-6F09D974D1B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD4E4567-AF8D-499B-8150-D5C8FC3D4A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD4E4567-AF8D-499B-8150-D5C8FC3D4A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD4E4567-AF8D-499B-8150-D5C8FC3D4A53}.Debug|x64.ActiveCfg = Debug|x64
+		{CD4E4567-AF8D-499B-8150-D5C8FC3D4A53}.Debug|x86.ActiveCfg = Debug|x86
+		{CD4E4567-AF8D-499B-8150-D5C8FC3D4A53}.Debug|x86.Build.0 = Debug|x86
+		{CD4E4567-AF8D-499B-8150-D5C8FC3D4A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD4E4567-AF8D-499B-8150-D5C8FC3D4A53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD4E4567-AF8D-499B-8150-D5C8FC3D4A53}.Release|x64.ActiveCfg = Release|x64
+		{CD4E4567-AF8D-499B-8150-D5C8FC3D4A53}.Release|x86.ActiveCfg = Release|x86
+		{CD4E4567-AF8D-499B-8150-D5C8FC3D4A53}.Release|x86.Build.0 = Release|x86
+		{180E76B3-52A9-4AFB-A415-6F09D974D1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{180E76B3-52A9-4AFB-A415-6F09D974D1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{180E76B3-52A9-4AFB-A415-6F09D974D1B3}.Debug|x64.ActiveCfg = Debug|x64
+		{180E76B3-52A9-4AFB-A415-6F09D974D1B3}.Debug|x86.ActiveCfg = Debug|x86
+		{180E76B3-52A9-4AFB-A415-6F09D974D1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{180E76B3-52A9-4AFB-A415-6F09D974D1B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{180E76B3-52A9-4AFB-A415-6F09D974D1B3}.Release|x64.ActiveCfg = Release|x64
+		{180E76B3-52A9-4AFB-A415-6F09D974D1B3}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		BuildVersion_DetectChanges = False
+		BuildVersion_AssemblyInfoFilename = RemoteMsiManager\Properties\AssemblyInfo.cs
+		BuildVersion_UpdateFileVersion = True
+		BuildVersion_UpdateAssemblyVersion = True
+		BuildVersion_BuildVersioningStyle = None.None.YearDecadeAndMonthStamp.DeltaBaseDate
+		SolutionGuid = {79F6CB40-3F0F-47A7-923A-B76023C8C279}
+	EndGlobalSection
+EndGlobal

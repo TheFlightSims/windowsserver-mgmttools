@@ -1,0 +1,30 @@
+C:\Users\sameh\Source\Repos\WinMan\WinMan.Storage\bin\Debug\WinMan.Storage.dll
+C:\Users\sameh\Source\Repos\WinMan\WinMan.Storage\bin\Debug\WinMan.Storage.pdb
+C:\Users\sameh\Source\Repos\WinMan\WinMan.Storage\obj\Debug\WinMan.Storage.csproj.CoreCompileInputs.cache
+C:\Users\sameh\Source\Repos\WinMan\WinMan.Storage\obj\Debug\WinMan.Storage.dll
+C:\Users\sameh\Source\Repos\WinMan\WinMan.Storage\obj\Debug\WinMan.Storage.pdb
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan.Storage\bin\Debug\WinMan.Storage.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan.Storage\bin\Debug\WinMan.Storage.pdb
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan.Storage\obj\Debug\WinMan.Storage.csprojResolveAssemblyReference.cache
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan.Storage\obj\Debug\WinMan.Storage.csproj.CoreCompileInputs.cache
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan.Storage\obj\Debug\WinMan.Storage.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan.Storage\obj\Debug\WinMan.Storage.pdb
+C:\Users\sfako\Source\Repos\WinMan\WinMan.Storage\bin\Debug\WinMan.Storage.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan.Storage\bin\Debug\WinMan.Storage.pdb
+C:\Users\sfako\Source\Repos\WinMan\WinMan.Storage\obj\Debug\WinMan.Storage.csprojResolveAssemblyReference.cache
+C:\Users\sfako\Source\Repos\WinMan\WinMan.Storage\obj\Debug\WinMan.Storage.csproj.CoreCompileInputs.cache
+C:\Users\sfako\Source\Repos\WinMan\WinMan.Storage\obj\Debug\WinMan.Storage.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan.Storage\obj\Debug\WinMan.Storage.pdb
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan.Storage\bin\Debug\WinMan.Storage.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan.Storage\bin\Debug\WinMan.Storage.pdb
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan.Storage\obj\Debug\WinMan.Storage.csproj.CoreCompileInputs.cache
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan.Storage\obj\Debug\WinMan.Storage.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan.Storage\obj\Debug\WinMan.Storage.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan.Storage\bin\Debug\WinMan.Storage.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan.Storage\bin\Debug\WinMan.Storage.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan.Storage\obj\Debug\WinMan.Storage.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan.Storage\obj\Debug\WinMan.Storage.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan.Storage\obj\Debug\WinMan.Storage.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan.Storage\obj\Debug\WinMan.Storage.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\Windows Management on Web\Storage\WinMan.Storage.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\Windows Management on Web\Storage\WinMan.Storage.pdb

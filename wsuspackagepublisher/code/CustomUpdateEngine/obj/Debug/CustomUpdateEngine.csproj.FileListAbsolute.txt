@@ -1,0 +1,12 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\CustomUpdateEngine.exe.config
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\CustomUpdateEngine.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\CustomUpdateEngine.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateEngine\obj\Debug\CustomUpdateEngine.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateEngine\obj\Debug\CustomUpdateEngine.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateEngine\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateEngine\obj\Debug\Interop.WindowsInstaller.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateEngine\obj\Debug\CustomUpdateEngine.csproj.ResolveComReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateEngine\obj\Debug\CustomUpdateEngine.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateEngine\obj\Debug\CustomUpdateEngine.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateEngine\obj\Debug\CustomUpdateEngine.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateEngine\obj\Debug\CustomUpdateEngine.pdb

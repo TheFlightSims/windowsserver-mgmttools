@@ -1,0 +1,11 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\dbconvert\sqlanalysercore\Debug\netstandard2.1\SqlAnalyser.Core.deps.json
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\dbconvert\sqlanalysercore\Debug\netstandard2.1\SqlAnalyser.Core.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\dbconvert\sqlanalysercore\Debug\netstandard2.1\SqlAnalyser.Core.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.AssemblyInfoInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.AssemblyInfo.cs
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.pdb

@@ -1,0 +1,12 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WindowsUpdateControlService\WuApiMocks\Debug\net462\WuApiMocks.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WindowsUpdateControlService\WuApiMocks\Debug\net462\WuApiMocks.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuApiMocks\obj\Debug\net462\WuApiMocks.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuApiMocks\obj\Debug\net462\Interop.WUApiLib.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuApiMocks\obj\Debug\net462\WuApiMocks.csproj.ResolveComReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuApiMocks\obj\Debug\net462\WuApiMocks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuApiMocks\obj\Debug\net462\WuApiMocks.AssemblyInfoInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuApiMocks\obj\Debug\net462\WuApiMocks.AssemblyInfo.cs
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuApiMocks\obj\Debug\net462\WuApiMocks.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuApiMocks\obj\Debug\net462\WuApiMocks.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuApiMocks\obj\Debug\net462\WuApiMocks.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuApiMocks\obj\Debug\net462\WuApiMocks.pdb

@@ -1,0 +1,11 @@
+<Project>
+
+  <PropertyGroup>
+    <Product>Windows User Rights Assignment Utility</Product>
+    <Description>Utility for managing user right assignments.</Description>
+    <Copyright>Copyright © Joseph L. Casale 2022</Copyright>
+  </PropertyGroup>
+
+  <Import Project=".\version.props" Condition="Exists('.\version.props')" />
+
+</Project>

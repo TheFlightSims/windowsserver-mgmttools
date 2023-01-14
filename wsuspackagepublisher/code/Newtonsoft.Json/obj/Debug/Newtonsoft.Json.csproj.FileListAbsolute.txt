@@ -1,0 +1,2 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\Newtonsoft.Json\obj\Debug\Newtonsoft.Json.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\Newtonsoft.Json\obj\Debug\Newtonsoft.Json.csproj.CoreCompileInputs.cache

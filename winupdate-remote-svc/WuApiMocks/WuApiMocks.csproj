@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <Authors>Elia Seikritt</Authors>
+    <Product>WuApiMocks</Product>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Copyright>Copyright(C) 2016-2020 Elia Seikritt</Copyright>
+    <BaseOutputPath>..\..\!bin!\WindowsUpdateControlService\WuApiMocks</BaseOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.14.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WUApiLib.dll">
+      <Guid>b596cc9f-56e5-419e-a622-e01bb457431e</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WuDataContract\WuDataContract.csproj" />
+	<ProjectReference Include="..\WindowsUpdateApiController\WindowsUpdateApiController.csproj" />
+  </ItemGroup>
+</Project>

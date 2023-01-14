@@ -1,0 +1,100 @@
+﻿<Window x:Class="WSUSOnlineDescriptions.MainWindow"
+		x:Name="Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:local="clr-namespace:WSUSOnlineDescriptions"
+        Title="WSUS Online Descriptions"
+		Height="500" Width="750"
+		MinHeight="260" MinWidth="100"
+		DataContext="{DynamicResource ViewModel}">
+	<Window.Resources>
+		<local:MainWindowViewModel x:Key="ViewModel" />
+		<Style x:Key="ServerComboBoxStyle" TargetType="ComboBox">
+			<Setter Property="IsEnabled" Value="False" />
+			<Style.Triggers>
+				<DataTrigger Binding="{Binding UnapprovedUpdates.Count}" Value="0">
+					<Setter Property="IsEnabled" Value="True" />
+				</DataTrigger>
+			</Style.Triggers>
+		</Style>
+		<Style x:Key="LanguageComboBoxStyle" TargetType="ComboBox">
+			<Setter Property="IsEnabled" Value="True" />
+			<Style.Triggers>
+				<DataTrigger Binding="{Binding UnapprovedUpdates.Count}" Value="0">
+					<Setter Property="IsEnabled" Value="False" />
+				</DataTrigger>
+			</Style.Triggers>
+		</Style>
+		<Style x:Key="TextBlockWarningStyle" TargetType="TextBlock">
+			<Setter Property="Visibility" Value="Collapsed" />
+			<Style.Triggers>
+				<DataTrigger Binding="{Binding SelectedServerVersion.Name}" Value="Windows Server 2003-2008">
+					<Setter Property="Visibility" Value="Visible" />
+				</DataTrigger>
+			</Style.Triggers>
+		</Style>
+	</Window.Resources>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+		<ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto" />
+					<RowDefinition Height="Auto" />
+					<RowDefinition Height="Auto" />
+					<RowDefinition Height="Auto" />
+					<RowDefinition Height="Auto" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto" />
+					<ColumnDefinition Width="Auto" />
+					<ColumnDefinition />
+				</Grid.ColumnDefinitions>
+				<TextBlock Text="Step 1" FontWeight="Bold" Margin="10" HorizontalAlignment="Center" />
+				<TextBlock Text="Step 2" FontWeight="Bold" Margin="10" Grid.Column="1" HorizontalAlignment="Center" />
+
+				<TextBlock Margin="10,0,10,10" Grid.Row="1" Width="300" TextWrapping="Wrap" HorizontalAlignment="Center">
+					Select the server version your WSUS is running on. This affects the SQL connection string.
+					<LineBreak />
+					<LineBreak />
+					Click the 'Get updates' button to query the KB article numbers of all unapproved updates in the WSUS database. The descriptions are added from the Microsoft Support servers. This may take a while.
+				</TextBlock>
+				<TextBlock Margin="10,0,10,10" Grid.Row="1" Grid.Column="1" Width="300" TextWrapping="Wrap" HorizontalAlignment="Center">
+					If you have more than one update language installed, select the language whose descriptions should be overwritten with the new text.
+					<LineBreak />
+					<LineBreak />
+					If neccessary, edit the update descriptions in the table below. Click the 'Apply descriptions' button to commit the values to the WSUS database.
+				</TextBlock>
+
+				<ComboBox Margin="10,0,10,10" Grid.Row="2" Width="200" ItemsSource="{Binding ServerVersions}" SelectedItem="{Binding SelectedServerVersion}" Style="{StaticResource ServerComboBoxStyle}" />
+				<TextBlock Margin="10,0,10,10" Grid.Row="3" Width="300" Text="Warning: This program has not been tested with this database version. Errors may occur." Foreground="Red" FontWeight="Bold" TextWrapping="Wrap" HorizontalAlignment="Center" Style="{StaticResource TextBlockWarningStyle}" />
+				<Button Margin="10,0,10,10" Width="200" Grid.Row="4" Content="Get updates" Command="{Binding QueryUpdatesCommand}" />
+				<ComboBox Margin="10,0,10,10" Grid.Row="2" Grid.Column="1" Width="200" ItemsSource="{Binding AvailableLanguages}" SelectedItem="{Binding SelectedLanguage}" Style="{StaticResource LanguageComboBoxStyle}" />
+				<Button Margin="10,0,10,10" Width="200" Grid.Row="4" Grid.Column="1" Content="Apply descriptions" Command="{Binding SaveDescriptionsCommand}" />
+			</Grid>
+		</ScrollViewer>
+		<DataGrid Margin="10,0,10,10" Grid.Row="1" MinHeight="100" ItemsSource="{Binding UnapprovedUpdates}" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" AutoGenerateColumns="False">
+			<DataGrid.Columns>
+				<DataGridTextColumn Header="KB number" Binding="{Binding KB}" IsReadOnly="True" />
+				<DataGridTextColumn Header="Update description" Binding="{Binding Description}" Width="600">
+					<DataGridTextColumn.ElementStyle>
+						<Style>
+							<Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+						</Style>
+					</DataGridTextColumn.ElementStyle>
+					<DataGridTextColumn.EditingElementStyle>
+						<Style TargetType="TextBox">
+							<Setter Property="TextWrapping" Value="Wrap" />
+							<Setter Property="AcceptsReturn" Value="True" />
+						</Style>
+					</DataGridTextColumn.EditingElementStyle>
+				</DataGridTextColumn>
+			</DataGrid.Columns>
+		</DataGrid>
+		<ProgressBar Margin="10,0,10,10" Grid.Row="2" Height="20" Maximum="{Binding ProgressMax}" Value="{Binding ProgressValue}" IsIndeterminate="{Binding IsProgressBarIndeterminate}" />
+	</Grid>
+</Window>

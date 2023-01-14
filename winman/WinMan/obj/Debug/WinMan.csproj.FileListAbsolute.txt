@@ -1,0 +1,620 @@
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.exe.config
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.exe
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.pdb
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.dll
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.Hosting.dll
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\Owin.dll
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\System.Web.Http.dll
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\System.Web.Http.Owin.dll
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.Storage.dll
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.Storage.pdb
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.xml
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.Hosting.xml
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\System.Web.Http.xml
+C:\Users\sameh\Source\Repos\WinMan\WinMan\bin\Debug\System.Web.Http.Owin.xml
+C:\Users\sameh\Source\Repos\WinMan\WinMan\obj\Debug\WinMan.csprojResolveAssemblyReference.cache
+C:\Users\sameh\Source\Repos\WinMan\WinMan\obj\Debug\WinMan.csproj.CoreCompileInputs.cache
+C:\Users\sameh\Source\Repos\WinMan\WinMan\obj\Debug\WinMan.exe
+C:\Users\sameh\Source\Repos\WinMan\WinMan\obj\Debug\WinMan.pdb
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\obj\Debug\WinMan.csprojResolveAssemblyReference.cache
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\obj\Debug\WinMan.csproj.CoreCompileInputs.cache
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.exe.config
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.exe
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.pdb
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Microsoft.Owin.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Microsoft.Owin.Hosting.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Owin.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Swashbuckle.Core.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\System.Web.Http.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\System.Web.Http.Owin.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WebActivatorEx.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.Network.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.OS.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.Registry.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.Storage.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.Network.pdb
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.OS.pdb
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.Registry.pdb
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.Storage.pdb
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Microsoft.Owin.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Microsoft.Owin.Hosting.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\System.Web.Http.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\System.Web.Http.Owin.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\obj\Debug\WinMan.exe
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\obj\Debug\WinMan.pdb
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.exe.config
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.exe
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.pdb
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.Hosting.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Owin.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Swashbuckle.Core.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\System.Web.Http.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\System.Web.Http.Owin.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WebActivatorEx.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.Network.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.OS.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.Registry.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.Storage.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.Network.pdb
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.OS.pdb
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.Registry.pdb
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.Storage.pdb
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.Hosting.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\System.Web.Http.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\System.Web.Http.Owin.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\obj\Debug\WinMan.csprojResolveAssemblyReference.cache
+C:\Users\sfako\Source\Repos\WinMan\WinMan\obj\Debug\WinMan.csproj.CoreCompileInputs.cache
+C:\Users\sfako\Source\Repos\WinMan\WinMan\obj\Debug\WinMan.exe
+C:\Users\sfako\Source\Repos\WinMan\WinMan\obj\Debug\WinMan.pdb
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.Process.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.Process.pdb
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\FSharp.Core.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Owin.Compression.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\FSharp.Core.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Owin.Compression.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\default.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.FileSystems.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.StaticFiles.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.FileSystems.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.StaticFiles.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\RazorEngine.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\System.Web.Razor.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\RazorEngine.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\System.Web.Razor.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Views\Home\Index.cshtml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Views\Home\About.cshtml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\index.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\bower.json
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\package.json
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap-social\bootstrap-social.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap-social\bootstrap-social.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables-responsive\dataTables.responsive.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\images\Sorting icons.psd
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\css\font-awesome.css.map
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\fonts\fontawesome-webfont.eot
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\fonts\fontawesome-webfont.ttf
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\fonts\fontawesome-webfont.woff
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\fonts\fontawesome-webfont.woff2
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\fonts\FontAwesome.otf
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\animated.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\bordered-pulled.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\core.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\extras.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\fixed-width.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\font-awesome.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\icons.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\larger.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\list.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\mixins.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\path.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\rotated-flipped.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\screen-reader.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\spinning.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\stacked.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\variables.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\font-awesome.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_animated.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_bordered-pulled.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_core.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_extras.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_fixed-width.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_icons.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_larger.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_list.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_mixins.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_path.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_rotated-flipped.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_screen-reader.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_spinning.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_stacked.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_variables.scss
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\data\flot-data.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\data\morris-data.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\dist\css\sb-admin-2.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\dist\css\sb-admin-2.min.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\dist\js\sb-admin-2.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\dist\js\sb-admin-2.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\gulpfile.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\js\sb-admin-2.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\blank.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\buttons.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\flot.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\forms.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\grid.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\icons.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\index.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\login.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\morris.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\notifications.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\panels-wells.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\tables.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\typography.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap-social\bootstrap-social.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\css\bootstrap.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\css\bootstrap.min.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\js\bootstrap.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\js\bootstrap.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables-plugins\dataTables.bootstrap.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables-plugins\dataTables.bootstrap.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables-plugins\dataTables.bootstrap.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables-plugins\index.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables-responsive\dataTables.responsive.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables-responsive\dataTables.responsive.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.bootstrap.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.bootstrap.min.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.bootstrap4.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.bootstrap4.min.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.foundation.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.foundation.min.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.jqueryui.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.jqueryui.min.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.material.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.material.min.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.semanticui.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.semanticui.min.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.uikit.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.uikit.min.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\jquery.dataTables.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\jquery.dataTables.min.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\jquery.dataTables_themeroller.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\images\favicon.ico
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\images\sort_asc.png
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\images\sort_asc_disabled.png
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\images\sort_both.png
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\images\sort_desc.png
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\images\sort_desc_disabled.png
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.bootstrap.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.bootstrap.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.bootstrap4.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.bootstrap4.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.foundation.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.foundation.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.jqueryui.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.jqueryui.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.material.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.material.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.semanticui.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.semanticui.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.uikit.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.uikit.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\jquery.dataTables.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\jquery.dataTables.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\jquery.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot-tooltip\jquery.flot.tooltip.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot-tooltip\jquery.flot.tooltip.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot-tooltip\jquery.flot.tooltip.source.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\excanvas.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\excanvas.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.colorhelpers.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.canvas.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.categories.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.crosshair.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.errorbars.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.fillbetween.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.image.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.navigate.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.pie.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.resize.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.selection.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.stack.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.symbol.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.threshold.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.time.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\css\font-awesome.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\css\font-awesome.min.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\fonts\fontawesome-webfont.svg
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\jquery\jquery.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\jquery\jquery.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\metisMenu\metisMenu.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\metisMenu\metisMenu.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\metisMenu\metisMenu.min.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\metisMenu\metisMenu.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\morrisjs\morris.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\morrisjs\morris.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\morrisjs\morris.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\raphael\raphael.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\raphael\raphael.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\less\mixins.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\less\sb-admin-2.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\less\variables.less
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Views\Account\Login.cshtml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\js\jquery.rest.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\js\doT.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\js\jquery.loading.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\css\jquery.loading.min.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Views\Common\Template.html
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Views\FileManager\Index.cshtml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\css\jstree\32px.png
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\css\jstree\40px.png
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\css\jstree\style.min.css
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\css\jstree\throbber.gif
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\js\jstree.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\js\jquery-dateFormat.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\js\split.min.js
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\images\vertical.png
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Views\Home\Index.cshtml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Views\Home\About.cshtml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Views\Account\Login.cshtml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Views\Common\Template.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Views\FileManager\Index.cshtml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\bower.json
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\css\jquery.loading.min.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\css\jstree\32px.png
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\css\jstree\40px.png
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\css\jstree\style.min.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\css\jstree\throbber.gif
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\images\vertical.png
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\js\jquery-dateFormat.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\js\doT.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\js\jquery.loading.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\js\jquery.rest.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\js\jstree.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\js\split.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\package.json
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap-social\bootstrap-social.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap-social\bootstrap-social.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables-responsive\dataTables.responsive.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\images\Sorting icons.psd
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\css\font-awesome.css.map
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\fonts\fontawesome-webfont.eot
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\fonts\fontawesome-webfont.ttf
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\fonts\fontawesome-webfont.woff
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\fonts\fontawesome-webfont.woff2
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\fonts\FontAwesome.otf
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\animated.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\bordered-pulled.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\core.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\extras.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\fixed-width.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\font-awesome.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\icons.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\larger.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\list.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\mixins.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\path.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\rotated-flipped.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\screen-reader.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\spinning.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\stacked.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\less\variables.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\font-awesome.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_animated.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_bordered-pulled.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_core.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_extras.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_fixed-width.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_icons.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_larger.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_list.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_mixins.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_path.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_rotated-flipped.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_screen-reader.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_spinning.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_stacked.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\scss\_variables.scss
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\data\flot-data.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\data\morris-data.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\dist\css\sb-admin-2.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\dist\css\sb-admin-2.min.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\dist\js\sb-admin-2.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\dist\js\sb-admin-2.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\gulpfile.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\index.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\js\sb-admin-2.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\blank.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\buttons.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\flot.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\forms.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\grid.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\icons.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\index.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\login.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\morris.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\notifications.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\panels-wells.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\tables.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\pages\typography.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap-social\bootstrap-social.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\css\bootstrap.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\css\bootstrap.min.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\js\bootstrap.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\bootstrap\js\bootstrap.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables-plugins\dataTables.bootstrap.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables-plugins\dataTables.bootstrap.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables-plugins\dataTables.bootstrap.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables-plugins\index.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables-responsive\dataTables.responsive.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables-responsive\dataTables.responsive.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.bootstrap.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.bootstrap.min.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.bootstrap4.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.bootstrap4.min.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.foundation.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.foundation.min.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.jqueryui.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.jqueryui.min.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.material.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.material.min.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.semanticui.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.semanticui.min.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.uikit.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\dataTables.uikit.min.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\jquery.dataTables.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\jquery.dataTables.min.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\css\jquery.dataTables_themeroller.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\images\favicon.ico
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\images\sort_asc.png
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\images\sort_asc_disabled.png
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\images\sort_both.png
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\images\sort_desc.png
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\images\sort_desc_disabled.png
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.bootstrap.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.bootstrap.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.bootstrap4.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.bootstrap4.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.foundation.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.foundation.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.jqueryui.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.jqueryui.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.material.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.material.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.semanticui.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.semanticui.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.uikit.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\dataTables.uikit.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\jquery.dataTables.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\jquery.dataTables.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\datatables\js\jquery.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot-tooltip\jquery.flot.tooltip.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot-tooltip\jquery.flot.tooltip.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot-tooltip\jquery.flot.tooltip.source.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\excanvas.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\excanvas.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.colorhelpers.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.canvas.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.categories.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.crosshair.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.errorbars.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.fillbetween.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.image.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.navigate.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.pie.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.resize.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.selection.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.stack.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.symbol.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.threshold.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.time.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\css\font-awesome.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\css\font-awesome.min.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\font-awesome\fonts\fontawesome-webfont.svg
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\jquery\jquery.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\jquery\jquery.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\metisMenu\metisMenu.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\metisMenu\metisMenu.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\metisMenu\metisMenu.min.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\metisMenu\metisMenu.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\morrisjs\morris.css
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\morrisjs\morris.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\morrisjs\morris.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\raphael\raphael.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\raphael\raphael.min.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\default.html
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\less\mixins.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\less\sb-admin-2.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\less\variables.less
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\FSharp.Core.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Microsoft.Owin.FileSystems.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Microsoft.Owin.StaticFiles.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Owin.Compression.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\RazorEngine.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\System.Web.Razor.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.Process.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.Process.pdb
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\FSharp.Core.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Microsoft.Owin.FileSystems.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Microsoft.Owin.StaticFiles.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Owin.Compression.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\RazorEngine.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\System.Web.Razor.xml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Views\ProcessManager\Index.cshtml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Views\ProcessManager\Index.cshtml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.Utils.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.Utils.pdb
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.Utils.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.Utils.pdb
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.PerformanceCounters.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.PerformanceCounters.pdb
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.spline.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\wwwroot\dashboard\vendor\flot\jquery.flot.spline.js
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.PerformanceCounters.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.PerformanceCounters.pdb
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.Services.dll
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.Services.pdb
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\WinMan.Services.xml
+C:\Users\sameh\documents\visual studio 2017\Projects\WinMan\WinMan\bin\Debug\Views\ServiceManager\Index.cshtml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\Views\ServiceManager\Index.cshtml
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.Services.dll
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.Services.pdb
+C:\Users\sfako\Source\Repos\WinMan\WinMan\bin\Debug\WinMan.Services.xml
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\wwwroot\default.html
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.exe.config
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.exe
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.pdb
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\FSharp.Core.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Microsoft.Owin.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Microsoft.Owin.FileSystems.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Microsoft.Owin.Hosting.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Microsoft.Owin.StaticFiles.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Owin.Compression.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Owin.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Swashbuckle.Core.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\System.Web.Http.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\System.Web.Http.Owin.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WebActivatorEx.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.Network.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.OS.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.PerformanceCounters.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.Process.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.Registry.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.Services.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.Storage.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.Network.pdb
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.OS.pdb
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.PerformanceCounters.pdb
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.Process.pdb
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.Registry.pdb
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.Services.pdb
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.Services.xml
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.Storage.pdb
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\FSharp.Core.xml
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Microsoft.Owin.xml
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Microsoft.Owin.FileSystems.xml
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Microsoft.Owin.Hosting.xml
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Microsoft.Owin.StaticFiles.xml
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\Owin.Compression.xml
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\System.Web.Http.xml
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\System.Web.Http.Owin.xml
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\obj\Debug\WinMan.csprojResolveAssemblyReference.cache
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\obj\Debug\WinMan.csproj.CoreCompileInputs.cache
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\obj\Debug\WinMan.exe
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\obj\Debug\WinMan.pdb
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.Util.dll
+C:\Users\sameh\.jenkins\workspace\WinMan\WinMan\bin\Debug\WinMan.Util.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\wwwroot\default.html
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.exe.config
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\FSharp.Core.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Microsoft.Owin.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Microsoft.Owin.FileSystems.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Microsoft.Owin.Hosting.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Microsoft.Owin.StaticFiles.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Owin.Compression.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Owin.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Swashbuckle.Core.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\System.Web.Http.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\System.Web.Http.Owin.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WebActivatorEx.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.Network.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.OS.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.PerformanceCounters.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.Process.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.Registry.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.Services.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.Storage.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.Util.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.Network.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.OS.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.PerformanceCounters.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.Process.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.Registry.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.Services.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.Services.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.Storage.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\WinMan.Util.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\FSharp.Core.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Microsoft.Owin.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Microsoft.Owin.FileSystems.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Microsoft.Owin.Hosting.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Microsoft.Owin.StaticFiles.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\Owin.Compression.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\System.Web.Http.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\System.Web.Http.Owin.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\obj\Debug\WinMan.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\obj\Debug\WinMan.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\obj\Debug\WinMan.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\obj\Debug\WinMan.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\obj\Debug\WinMan.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winman\WinMan\obj\Debug\WinMan.pdb

@@ -1,0 +1,13 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WindowsUpdateControlService\WindowsUpdateApiController\Debug\net462\WindowsUpdateApiController.dll.config
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WindowsUpdateControlService\WindowsUpdateApiController\Debug\net462\WindowsUpdateApiController.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WindowsUpdateControlService\WindowsUpdateApiController\Debug\net462\WindowsUpdateApiController.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WindowsUpdateApiController\obj\Debug\net462\WindowsUpdateApiController.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WindowsUpdateApiController\obj\Debug\net462\Interop.WUApiLib.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WindowsUpdateApiController\obj\Debug\net462\WindowsUpdateApiController.csproj.ResolveComReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WindowsUpdateApiController\obj\Debug\net462\WindowsUpdateApiController.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WindowsUpdateApiController\obj\Debug\net462\WindowsUpdateApiController.AssemblyInfoInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WindowsUpdateApiController\obj\Debug\net462\WindowsUpdateApiController.AssemblyInfo.cs
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WindowsUpdateApiController\obj\Debug\net462\WindowsUpdateApiController.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WindowsUpdateApiController\obj\Debug\net462\WindowsUpdateApiController.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WindowsUpdateApiController\obj\Debug\net462\WindowsUpdateApiController.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WindowsUpdateApiController\obj\Debug\net462\WindowsUpdateApiController.pdb

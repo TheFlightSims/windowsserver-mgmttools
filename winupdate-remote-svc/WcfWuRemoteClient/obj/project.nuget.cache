@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "A432JLtxTZfkGGGfJgbIrI/eHGcvbS3hxyuVIysuW+fbuga+KsF1JX0HkzgDijc/rcqPap3uoddkVIMbbzHcOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClient\\WcfWuRemoteClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\ccswe.core\\2.1.0\\ccswe.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\log4net\\2.0.10\\log4net.2.0.10.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\system.servicemodel.primitives\\4.7.0\\system.servicemodel.primitives.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

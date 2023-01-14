@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "hrFQv/w043XTnlC+dRSaQyMylpEmBbptWjWgcEYyxrdfJDKKKzCQaia4vLWM2y4SGFFPQTuMi++u2j4mtAkCAQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClientUnitTest\\WcfWuRemoteClientUnitTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\ccswe.core\\2.1.0\\ccswe.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\log4net\\2.0.10\\log4net.2.0.10.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.codecoverage\\16.6.1\\microsoft.codecoverage.16.6.1.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.net.test.sdk\\16.6.1\\microsoft.net.test.sdk.16.6.1.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\moq\\4.14.1\\moq.4.14.1.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\mstest.testadapter\\2.1.1\\mstest.testadapter.2.1.1.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\mstest.testframework\\2.1.1\\mstest.testframework.2.1.1.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\system.servicemodel.primitives\\4.7.0\\system.servicemodel.primitives.4.7.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}

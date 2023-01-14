@@ -1,0 +1,13 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\SUSWatcher\obj\Debug\SUSWatcher.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\SUSWatcher\obj\Debug\SUSWatcher.frmSUSWatch.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\SUSWatcher\obj\Debug\SUSWatcher.Properties.Resources.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\SUSWatcher\obj\Debug\SUSWatcher.csproj.GenerateResource.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\SUSWatcher\obj\Debug\SUSWatcher.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Admin Assitant\SUSWatcher\SUSWatcher.exe.config
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Admin Assitant\SUSWatcher\SUSWatcher.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Admin Assitant\SUSWatcher\SUSWatcher.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Admin Assitant\SUSWatcher\SUSWatcher.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\SUSWatcher\obj\Debug\SUSWatcher.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\SUSWatcher\obj\Debug\SUSWatcher.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\SUSWatcher\obj\Debug\SUSWatcher.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\SUSWatcher\obj\Debug\SUSWatcher.pdb

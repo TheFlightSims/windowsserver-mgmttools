@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Owin.Compression</name></assembly>
+<members>
+<member name="M:Owin.CompressionExtensions.MapCompressionModule(Owin.IAppBuilder,System.String)">
+<summary>
+ You can set a path that is url that will be captured.
+ The subsequent url-path will be mapped to server path.
+ Uses OwinCompression.DefaultCompressionSettings
+</summary>
+</member>
+<member name="M:Owin.CompressionExtensions.MapCompressionModule(Owin.IAppBuilder,System.String,Owin.CompressionSettings)">
+<summary>
+ You can set a path that is url that will be captured.
+ The subsequent url-path will be mapped to server path.
+</summary>
+</member>
+<member name="T:Owin.CompressionSettings">
+<summary>
+ Settings for compression.
+</summary>
+</member>
+<member name="T:Owin.ResponseMode">
+<summary>
+ Do you fetch files or do you encode context.Response.Body?
+</summary>
+</member>
+<member name="T:Owin.SupportedEncodings">
+<summary>
+ Supported compression methods
+</summary>
+</member>
+<member name="M:Owin.OwinCompression.DefaultCompressionSettingsWithPathAndCache(System.String,System.DateTimeOffset)">
+<summary>
+ Default settings with custom path and cache-time. C#-helper method.
+</summary>
+</member>
+<member name="M:Owin.OwinCompression.DefaultCompressionSettingsWithPath(System.String)">
+<summary>
+ Default settings with custom path. No cache time.
+</summary>
+</member>
+<member name="P:Owin.OwinCompression.DefaultCompressionSettings">
+<summary>
+ Default settings for compression.
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "components": [
+    "Microsoft.VisualStudio.Component.Roslyn.Compiler",
+    "Microsoft.Component.MSBuild",
+    "Microsoft.VisualStudio.Component.CoreBuildTools",
+    "Microsoft.VisualStudio.Workload.MSBuildTools",
+    "Microsoft.Net.Component.4.8.SDK",
+    "Microsoft.Net.Component.4.6.1.TargetingPack",
+    "Microsoft.VisualStudio.Component.NuGet.BuildTools",
+    "Microsoft.Net.Component.4.7.2.TargetingPack",
+    "Microsoft.Net.Component.4.TargetingPack",
+    "Microsoft.Net.Component.4.5.TargetingPack",
+    "Microsoft.Net.Component.4.5.1.TargetingPack",
+    "Microsoft.Net.Component.4.5.2.TargetingPack",
+    "Microsoft.Net.Component.4.6.TargetingPack",
+    "Microsoft.VisualStudio.Component.AspNet45",
+    "Microsoft.NetCore.Component.Runtime.3.1",
+    "Microsoft.NetCore.Component.Runtime.5.0",
+    "Microsoft.NetCore.Component.SDK",
+    "Microsoft.Net.Component.3.5.DeveloperTools",
+    "Microsoft.Net.Component.4.6.2.TargetingPack",
+    "Microsoft.Net.Component.4.7.TargetingPack",
+    "Microsoft.Net.Component.4.7.1.TargetingPack",
+    "Microsoft.Net.Component.4.8.TargetingPack",
+    "Microsoft.NetCore.BuildTools.ComponentGroup",
+    "Microsoft.VisualStudio.Workload.NetCoreBuildTools",
+    "Microsoft.Component.NetFX.Native",
+    "Microsoft.Net.Component.4.7.2.SDK",
+    "Microsoft.Net.Core.Component.SDK.3.0"
+  ]
+}

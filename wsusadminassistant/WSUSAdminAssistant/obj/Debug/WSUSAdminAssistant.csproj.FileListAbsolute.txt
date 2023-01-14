@@ -1,0 +1,20 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.frmIgnoreComputerGroups.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.frmComputerGroupRules.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.frmGroupUpdateRules.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.frmCredentials.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.frmDefaultSUS.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.frmMain.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.frmPreferences.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.frmWSUSConfig.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.Properties.Resources.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.csproj.GenerateResource.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Admin Assitant\WSUSAdminAssistant\WSUSAdminAssistant.exe.config
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Admin Assitant\WSUSAdminAssistant\WSUSAdminAssistant.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Admin Assitant\WSUSAdminAssistant\WSUSAdminAssistant.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Admin Assitant\WSUSAdminAssistant\WSUSAdminAssistant.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSAdminAssistant\obj\Debug\WSUSAdminAssistant.pdb

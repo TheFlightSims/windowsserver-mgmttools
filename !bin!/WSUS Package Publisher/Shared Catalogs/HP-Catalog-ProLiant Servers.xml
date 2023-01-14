@@ -1,0 +1,13 @@
+<CatalogSubscription>
+  <IsActive>True</IsActive>
+  <Address>ftp://ftp.hp.com/pub/softlib/software10/COL25555/sy-65640-1</Address>
+  <CheckEvery>1</CheckEvery>
+  <Unit>Weeks</Unit>
+  <LastCheck>01/01/0001 00:00:00</LastCheck>
+  <LastCheckResult>False</LastCheckResult>
+  <CatalogName>ProLiant.cab</CatalogName>
+  <FileCreationDate>01/01/0001 00:00:00</FileCreationDate>
+  <Hash>
+  </Hash>
+  <LastDownloadDate>01/01/0001 00:00:00</LastDownloadDate>
+</CatalogSubscription>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HGM.Hotbird64.Vlmcs;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
@@ -9,8 +10,6 @@ using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Threading;
-using System.Xml;
-using HGM.Hotbird64.Vlmcs;
 
 // ReSharper disable once CheckNamespace
 namespace HGM.Hotbird64.LicenseManager

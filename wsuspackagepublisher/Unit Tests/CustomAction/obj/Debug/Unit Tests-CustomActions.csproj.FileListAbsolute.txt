@@ -1,0 +1,27 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\Unit Tests-CustomAction.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\Unit Tests-CustomAction.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\Chains.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\CustomActions.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\EasyCompany.Controls.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\Ionic.Zip.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\Microsoft.Deployment.Compression.Cab.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\Microsoft.Deployment.Compression.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\NLog.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\NLogConfig.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\Services.Communication.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\Services.Management.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\CustomActions.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\CustomActions.dll.config
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\NLog.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\en\CustomActions.resources.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\bin\Debug\fr\CustomActions.resources.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\obj\Debug\Unit Tests-CustomActions.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\obj\Debug\Unit_Tests_CustomAction.Properties.Resources.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\obj\Debug\Unit Tests-CustomActions.csproj.GenerateResource.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\obj\Debug\Unit Tests-CustomActions.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\obj\Debug\Unit Tests-CustomActions.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\obj\Debug\Unit Tests-CustomAction.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomAction\obj\Debug\Unit Tests-CustomAction.pdb

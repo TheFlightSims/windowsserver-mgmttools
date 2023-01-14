@@ -1,5 +1,7 @@
 ﻿using HGM.Hotbird64.LicenseManager.Contracts;
+using HGM.Hotbird64.LicenseManager.Controls;
 using HGM.Hotbird64.LicenseManager.Extensions;
+using HGM.Hotbird64.LicenseManager.Model;
 using HGM.Hotbird64.Vlmcs;
 using Microsoft.Win32;
 using System;
@@ -21,8 +23,6 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Xml.Schema;
-using HGM.Hotbird64.LicenseManager.Controls;
-using HGM.Hotbird64.LicenseManager.Model;
 
 // ReSharper disable CheckNamespace
 
@@ -1604,7 +1604,7 @@ namespace HGM.Hotbird64.LicenseManager
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        public void NotifyOfPropertyChange([CallerMemberName]string propertyName = null)
+        public void NotifyOfPropertyChange([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

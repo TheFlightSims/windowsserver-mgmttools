@@ -1,0 +1,17 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\CustomUpdateCreator.exe.config
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\CustomUpdateCreator.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\CustomUpdateCreator.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\fr\CustomUpdateCreator.resources.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateCreator\obj\Debug\CustomUpdateCreator.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateCreator\obj\Debug\CustomUpdateCreator.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateCreator\obj\Debug\CustomUpdateCreator.frmCustomUpdateCreator.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateCreator\obj\Debug\CustomUpdateCreator.Localization.CustomUpdateCreatorStrings.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateCreator\obj\Debug\CustomUpdateCreator.Properties.Resources.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateCreator\obj\Debug\CustomUpdateCreator.frmCustomUpdateCreator.fr.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateCreator\obj\Debug\CustomUpdateCreator.Localization.CustomUpdateCreatorStrings.fr.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateCreator\obj\Debug\CustomUpdateCreator.csproj.GenerateResource.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateCreator\obj\Debug\CustomUpdateCreator.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateCreator\obj\Debug\fr\CustomUpdateCreator.resources.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateCreator\obj\Debug\CustomUpdateCreator.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateCreator\obj\Debug\CustomUpdateCreator.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\CustomUpdateCreator\obj\Debug\CustomUpdateCreator.pdb

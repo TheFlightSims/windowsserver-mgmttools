@@ -1,0 +1,469 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WSUSClientManager</name>
+    </assembly>
+    <members>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.frmAbout.components">
+            <summary>
+            Erforderliche Designervariable.
+            </summary>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.frmAbout.Dispose(System.Boolean)">
+            <summary>
+            Verwendete Ressourcen bereinigen.
+            </summary>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.frmAbout.InitializeComponent">
+            <summary>
+            Erforderliche Methode für die Designerunterstützung.
+            Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+            </summary>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.frmMain.HandleError(System.Exception)">
+            <summary>
+            Handles errors and show a message to the user
+            </summary>
+            <param name="ex">The ex.</param>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.frmMain.getErrorMessages(System.Exception)">
+            <summary>
+            Gets the error messages of exception and all inner exceptions.
+            </summary>
+            <param name="ex">The ex.</param>
+            <returns>ErrorMessage</returns>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.frmMain.ShowMessage(System.String)">
+            <summary>
+            Shows a information - message to the user.
+            </summary>
+            <param name="msg">The MSG.</param>
+        </member>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.frmMain.components">
+            <summary>
+            Erforderliche Designervariable.
+            </summary>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.frmMain.Dispose(System.Boolean)">
+            <summary>
+            Verwendete Ressourcen bereinigen.
+            </summary>
+            <param name="disposing">True, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls False.</param>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.frmMain.InitializeComponent">
+            <summary>
+            Erforderliche Methode für die Designerunterstützung.
+            Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+            </summary>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.Program.Main">
+            <summary>
+            Mains this instance.
+            </summary>
+        </member>
+        <member name="T:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.Properties.Resources.WindowsUpdate">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.Update.UpdateInfo">
+            <summary>
+            Informations about the available Update
+            </summary>
+        </member>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.Update.UpdateInfo.Titel">
+            <summary>
+            The UpdateTitle
+            </summary>
+        </member>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.Update.UpdateInfo.Message">
+            <summary>
+            the Update Messageblock
+            </summary>
+        </member>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.Update.UpdateInfo.URL">
+            <summary>
+            A URL for more Information
+            </summary>
+        </member>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.Update.UpdateInfo.Version">
+            <summary>
+            the new VersionID (not the ApplicationVersion)
+            </summary>
+        </member>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.Update.UpdateInfo.HTMLHistory">
+            <summary>
+            a HTML Text with History Informations
+            </summary>
+        </member>
+        <member name="T:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.Update.UpdateManager">
+            <summary>
+            Update Checker for Codeplex - Hosting
+            </summary>
+        </member>
+        <member name="T:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager">
+            <summary>
+            The Manager to Read/Write WSUS Settings on the Client
+            </summary>
+        </member>
+        <member name="T:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWUAUCtlCmd">
+            <summary>
+            Commands for the wuauctl util
+            </summary>
+        </member>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWUAUCtlCmd.ShowSettingsDialog">
+            <summary>
+             zeigt den Einstellungsdialog "Automatische Updates" an
+            </summary>
+        </member>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWUAUCtlCmd.ShowWindowsUpdate">
+            <summary>
+            öffnet die Microsoft Update Webseite bzw. Windows Update in der Systemsteuerung
+            </summary>
+        </member>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWUAUCtlCmd.DemoUI">
+            <summary>
+             Symbols im Systray
+            </summary>
+        </member>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWUAUCtlCmd.reportnow">
+            <summary>
+            sendet bericht zu updates an wsus
+            </summary>
+        </member>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWUAUCtlCmd.detectnow">
+            <summary>
+            prüft sofort auf autoupdates
+            </summary>
+        </member>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWUAUCtlCmd.resetauthorization">
+            <summary>
+            löscht anmeldecookie
+            </summary>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.#ctor">
+            <summary>
+            Create a new Class in ReadOnly - Mode
+            </summary>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.#ctor(System.Boolean)">
+            <summary>
+            Create a new Class in specified Mode
+            </summary>
+            <param name="AllowWrite"><see cref="!:true"/>ReadWrite, <see cref="!:false"/>ReadOnly</param>
+        </member>
+        <member name="T:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWURegKeys">
+            <summary>
+            Reg Folders for WSUS Settings
+            </summary>
+        </member>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWURegKeys.HKLM_WU">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWURegKeys.HKLM_WUAU">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.RegGetValue(Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWURegKeys,System.String)">
+            <summary>
+            get value from reg as string
+            </summary>
+            <param name="folder">The reg folder</param>
+            <param name="Name">value name</param>
+            <returns></returns>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.RegGetValue(Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWURegKeys,System.String,System.Object)">
+            <summary>
+            get value from reg
+            </summary>
+            <param name="folder">The reg folder</param>
+            <param name="Name">value name</param>
+            <param name="Default">default value</param>
+            <returns></returns>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.RegSetValue(Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWURegKeys,System.String,System.String)">
+            <summary>
+            set the value in reg
+            </summary>
+            <param name="folder">Reg Folder</param>
+            <param name="Name">value name</param>
+            <param name="Value">The value</param>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.RegSetValue(Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWURegKeys,System.String,System.Object,Microsoft.Win32.RegistryValueKind)">
+            <summary>
+            set the value in reg
+            </summary>
+            <param name="folder">Reg Folder</param>
+            <param name="Name">value name</param>
+            <param name="Value">The value</param>
+            <param name="ValueKind">Kind of the value.</param>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.backupAllRegKeyValues(System.IO.StringWriter,Microsoft.Win32.RegistryKey)">
+            <summary>
+            makes a backup of all values in this regkey to the stream
+            </summary>
+            <param name="sw">Stream to write in</param>
+            <param name="reg">Key to get the Values</param>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.RegDeleteValue(Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWURegKeys,System.String)">
+            <summary>
+            Deletes a registry key from the registry
+            </summary>
+            <param name="folder">The folder path in the registry</param>
+            <param name="valueName">The name of the value to delete</param>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.WSUSServer">
+            <summary>
+            Gets or sets the WSUS server and Enables AutoUpdates.
+            </summary>
+            <value>The WSUS server.</value>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.WSUSStateServer">
+            <summary>
+            Gets or sets the WSUS state server.
+            </summary>
+            <value>The WSUS state server.</value>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.EnableGroupSettings">
+            <summary>
+            Gets or sets a value indicating whether [enable group settings].
+            </summary>
+            <value><c>true</c> if [enable group settings]; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.ComputergroupName">
+            <summary>
+            Gets or sets the name of the computergroup.
+            </summary>
+            <value>The name of the computergroup.</value>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.DetectionFrequencyEnabled">
+            <summary>
+            Gets or sets a value indicating that the [auto update detection] interval is enabled or not.
+            Range = 0|1
+            1 = Enable detection frequency.
+            0 = Disable custom detection frequency (use default value of 22 hours).
+            </summary>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.DetectionFrequency">
+            <summary>
+            Gets or sets the DetectionFrequency interval.
+            Range = n, where n = time in hours (1–22).
+            Time between detection cycles.
+            </summary>
+            <value>The auto update interval.</value>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.RebootRelaunchTimeoutEnabled">
+            <summary>
+            Gets or sets a value indicating whether [reboot delay enabled].
+            Range = 0|1
+            1 = Enable RebootRelaunchTimeout.
+            0 = Disable custom RebootRelaunchTimeout(use default value of 10 minutes).
+            </summary>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.RebootRelaunchTimeout">
+            <summary>
+            Gets or sets the reboot delay time in minutes.
+            Range = n, where n = time in minutes (1–1,440).
+            Time between prompts for a scheduled restart.
+            </summary>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.RebootWarningTimeoutEnabled">
+            <summary>
+            Range = 0|1
+            1 = Enable RebootWarningTimeout.
+            0 = Disable custom RebootWarningTimeout (use default value of 5 minutes).
+            </summary>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.RebootWarningTimeout">
+            <summary>
+            Range = n, where n = time in minutes (1–30).
+            Length, in minutes, of the restart warning countdown after updates have been installed that have a deadline or scheduled updates
+            </summary>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.RescheduleWaitTimeEnabled">
+            <summary>
+            Range = n, where n = time in minutes (1–60).
+            Time in minutes that Automatic Updates waits at startup before it applies updates from a missed scheduled installation time.
+            This policy applies only to scheduled installations, not to deadlines. Updates with deadlines that have expired should always be installed as soon as possible.
+            </summary>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.RescheduleWaitTime">
+            <summary>
+            Range = n, where n = time in minutes (1–60).
+            Time in minutes that Automatic Updates waits at startup before it applies updates from a missed scheduled installation time.
+            This policy applies only to scheduled installations, not to deadlines. Updates with deadlines that have expired should always be installed as soon as possible.
+            </summary>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.AutoInstallMinorUpdates">
+            <summary>
+            Gets or sets a value indicating whether [auto install minor updates].
+            </summary>
+            <value>
+            	<c>true</c> if [auto install minor updates]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.AllowRebootIfUserLoggedOn">
+            <summary>
+            Gets or sets a value indicating whether [allow reboot if user logged on].
+            </summary>
+            <value>
+            	<c>true</c> if [allow reboot if user logged on]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.AllowNonAdminInstall">
+            <summary>
+            Gets or sets a value indicating whether [allow non admin install].
+            </summary>
+            <value>
+            	<c>true</c> if [allow non admin install]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.ScheduledInstallTime">
+            <summary>
+            Gets or sets the scheduled install time.
+            </summary>
+            <value>The scheduled install time.</value>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.ScheduledInstallDay">
+            <summary>
+            Gets or sets the scheduled install day.
+            </summary>
+            <remarks> 0|1|2|3|4|5|6|7
+            0 = täglich
+            1-7 = Nummer des Wochentags beginnend bei Sonntag
+            </remarks>
+            <value>The scheduled install day.</value>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.DisableWindowsUpdateAccess">
+            <summary>
+            Disables or enables access to Windows Update.
+            Range = 1|0
+            1 = Disables access to Windows Update.
+            0 = Enables access to Windows Update.
+            </summary>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.AcceptTrustedPublisherCerts">
+            <summary>
+            Enables or disables WSUS Server to distribute available signed non-Microsoft updates.
+            Range = 1|0
+            1 = Enabled. The WSUS server distributes available signed non-Microsoft updates.
+            0 = Disabled. The WSUS server does not distribute available signed non-Microsoft updates.
+            </summary>
+        </member>
+        <member name="P:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.AUOptions">
+            <summary>
+            Defines the behavior of Windows Automatic Update
+            Range = 2|3|4|5
+            2 = Notify before download.
+            3 = Automatically download and notify of installation.
+            4 = Automatically download and schedule installation. Only valid if values exist for ScheduledInstallDay and ScheduledInstallTime.
+            5 = Automatic Updates is required and users can configure it.
+            </summary>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.getWSUS_URL(System.String)">
+            <summary>
+            Get the default WSUS URL
+            </summary>
+            <param name="servername">The servername.</param>
+            <returns>http://servername:port</returns>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.getRegKeyName(Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWURegKeys)">
+            <summary>
+            Gets the name of the reg key.
+            </summary>
+            <param name="RegFolder">The reg folder.</param>
+            <returns>Name as String</returns>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.removeHKnn_FromRegKey(System.String)">
+            <summary>
+             Removes the HKLM an the [] from the KeyName
+            </summary>
+            <param name="key">The key.</param>
+            <returns>Name without HKLM_</returns>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.ResetSusClientId">
+            <summary>
+            Resets the SusClientId as described in KB 903262.
+            Deletes 4 values in the registry to achieve that and then calls
+            wuauclt.exe /resetauthorization /detectnow
+            </summary>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.BackupCurrentSettings(System.String)">
+            <summary>
+            Save the current Reg-Settings to a Reg-Export - File
+            </summary>
+            <param name="filename">Filename to write it</param>
+            <exception cref="T:System.Exception">any Exception are forwarded</exception>
+        </member>
+        <member name="F:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.WUSERVICENAME">
+            <summary>
+            name of the windows update service
+            </summary>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.ServiceRestart">
+            <summary>
+            Restarts the windows update service.
+            </summary>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.ServiceStart">
+            <summary>
+            start the update services
+            </summary>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.ServiceStart(System.Boolean)">
+            <summary>
+            Services the start.
+            </summary>
+            <param name="WaitForStarting">if set to <c>true</c> [wait for starting].</param>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.ServiceStop">
+            <summary>
+             stop the update services
+            </summary>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.ServiceStop(System.Boolean)">
+            <summary>
+            Services the stop.
+            </summary>
+            <param name="WaitForStopping">if set to <c>true</c> [wait for stopping].</param>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.RemoveWSUS">
+            <summary>
+            Removes the WSUS-Settings.
+            </summary>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.StartWUAUCtl(Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWUAUCtlCmd)">
+            <summary>
+            Starts the WUAUCTL Util.
+            </summary>
+            <param name="cmd">The command to execute</param>
+            <returns></returns>
+        </member>
+        <member name="M:Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.StartWUAUCtl(Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWUAUCtlCmd,Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.WSUSSettingManager.eWUAUCtlCmd)">
+            <summary>
+            Starts the WUAUCTL Util with two command
+            </summary>
+            <param name="cmd">The command to execute</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

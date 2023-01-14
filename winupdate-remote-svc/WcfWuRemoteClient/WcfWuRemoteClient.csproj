@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net462</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <TargetFramework>net462</TargetFramework>
+    <Version>1.0.3.1</Version>
+    <Authors>Elia Seikritt</Authors>
+    <Product>WcfWuRemoteClient</Product>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Copyright>Copyright(C) 2016-2020 Elia Seikritt</Copyright>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <StartupObject>WcfWuRemoteClient.App</StartupObject>
+    <BaseOutputPath>..\..\!bin!\WindowsUpdateControlService\WcfWuRemoteClient</BaseOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="CCSWE.Core" Version="2.1.0" />
+    <PackageReference Include="log4net" Version="2.0.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WuDataContract\WuDataContract.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\StatusRun.png" />
+    <Resource Include="Images\StatusError.png" />
+    <Resource Include="Images\StatusOK.png" />
+    <Resource Include="Images\Task.png" />
+    <Resource Include="AppIcon.ico" />
+    <Resource Include="Images\ClearCollection.png" />
+    <Resource Include="Images\DeleteFilter.png" />
+    <Resource Include="Images\Filter.png" />
+  </ItemGroup>
+</Project>

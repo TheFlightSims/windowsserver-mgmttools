@@ -1,0 +1,7 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\RegsitryHelperTest.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\RegsitryHelperTest.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\RegsitryHelper\obj\Debug\Unit Tests-RegsitryHelper.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\RegsitryHelper\obj\Debug\Unit Tests-RegsitryHelper.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\RegsitryHelper\obj\Debug\Unit Tests-RegsitryHelper.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\RegsitryHelper\obj\Debug\RegsitryHelperTest.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\RegsitryHelper\obj\Debug\RegsitryHelperTest.pdb

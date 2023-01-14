@@ -1,0 +1,112 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WinMan.Services
+</name>
+</assembly>
+<members>
+<member name="T:WinMan.Services.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:WinMan.Services.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:WinMan.Services.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:WinMan.Services.Models.ControlModel.LastError">
+ <summary>
+ Indicate the handled error if WMIValue value is HandledError
+ </summary>
+ <value>String of ex.ToString()</value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:WinMan.Services.Models.PerformanceModel.Memory">
+ <summary>
+ Private Working Set
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:WinMan.Services.Models.PerformanceModel.PeakMemory">
+ <summary>
+ Peak Memory
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:WinMan.Services.Models.ServiceModel._PathName">
+ <summary>
+ Added as param function in order to fix the error while path contains space
+ </summary>
+</member>
+<member name="P:WinMan.Services.Models.ServiceModel.ServiceType">
+ <summary>
+ Type of the process, OwnProcess ...
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:WinMan.Services.Models.ServiceModel.Status">
+ <summary>
+ Values: OK ..
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:WinMan.Services.Models.ServiceModel.StartName">
+ <summary>
+ Log On As
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:WinMan.Services.Models.ServiceModel.State">
+ <summary>
+ Values: Running, Stopped ...
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:WinMan.Services.Models.ServiceModel.StateView">
+ <summary>
+ Values: Running, Stopped ...
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks>Return empty string is status is Stopped for list view</remarks>
+</member>
+<member name="P:WinMan.Services.Models.ServiceModel.StartMode">
+ <summary>
+ Values: Manual, Auto, Disabled
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:WinMan.Services.Util.GetServiceName(System.String)">
+ <summary>
+ Retrieve Service name from WMI Path
+ Example: \\Computer\root\cimv2:Win32_Service.Name="RpcSs"
+ </summary>
+ <param name="wmiPath">WMI Path</param>
+ <returns>String, service name</returns>
+ <remarks>I think there is another way to get the name, need to consider change this approach</remarks>
+</member>
+</members>
+</doc>

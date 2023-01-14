@@ -1,0 +1,131 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Check IIS", "Check IIS", "{47070227-5F6B-4D80-BFC0-261ABB0B033C}"
+	ProjectSection(SolutionItems) = preProject
+		check-iis\check_iis.sln = check-iis\check_iis.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database Manager", "Database Manager", "{1C5DFB03-137D-4636-8C81-84F593166C14}"
+	ProjectSection(SolutionItems) = preProject
+		database-manager\DatabaseManager.sln = database-manager\DatabaseManager.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hyper-V Backup", "Hyper-V Backup", "{0534D8B0-B2F9-4158-B74B-EBB9719DD1CA}"
+	ProjectSection(SolutionItems) = preProject
+		hyperv-backup\HVBackup.sln = hyperv-backup\HVBackup.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hyper-V Enhanced Session for Linux", "Hyper-V Enhanced Session for Linux", "{95F358EF-F552-4BC2-BDF3-BC87E9606C02}"
+	ProjectSection(SolutionItems) = preProject
+		hyper-v-enhanced-session-linux\install_esm_centos7.sh = hyper-v-enhanced-session-linux\install_esm_centos7.sh
+		hyper-v-enhanced-session-linux\install_esm_fedora29.sh = hyper-v-enhanced-session-linux\install_esm_fedora29.sh
+		hyper-v-enhanced-session-linux\install_esm_fedora30.sh = hyper-v-enhanced-session-linux\install_esm_fedora30.sh
+		hyper-v-enhanced-session-linux\install_esm_fedora31.sh = hyper-v-enhanced-session-linux\install_esm_fedora31.sh
+		hyper-v-enhanced-session-linux\install_esm_fedora36.sh = hyper-v-enhanced-session-linux\install_esm_fedora36.sh
+		hyper-v-enhanced-session-linux\install_esm_fedora3x.sh = hyper-v-enhanced-session-linux\install_esm_fedora3x.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hyper-V Device Passthrough", "Hyper-V Device Passthrough", "{5B2D0647-5F4F-450D-A8AA-DDC72D3A3202}"
+	ProjectSection(SolutionItems) = preProject
+		hyperv-passthrough\hypervpassth.sln = hyperv-passthrough\hypervpassth.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NVIDIA Driver Cleaner", "NVIDIA Driver Cleaner", "{51D71224-5A91-46FB-A274-B7DDF83C0DBD}"
+	ProjectSection(SolutionItems) = preProject
+		nvidia-driver-cleaner\NvidiaCleaner.sln = nvidia-driver-cleaner\NvidiaCleaner.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Port Scanner", "Port Scanner", "{0C277634-934B-4B5A-B982-F051906515CF}"
+	ProjectSection(SolutionItems) = preProject
+		port-scanner\PortScanner.sln = port-scanner\PortScanner.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Remote MSI Manager", "Remote MSI Manager", "{A5B95174-1AE6-4B12-AF7C-1BECAF8ECDBA}"
+	ProjectSection(SolutionItems) = preProject
+		remote-msi-manager\RemoteMsiManager.sln = remote-msi-manager\RemoteMsiManager.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vlmcsd - License Manager", "vlmcsd - License Manager", "{AD5B945C-D5BC-4FB1-BAD3-C27CC9BC2A5B}"
+	ProjectSection(SolutionItems) = preProject
+		vlmcsd-beta\win-gui\LicenseManager.sln = vlmcsd-beta\win-gui\LicenseManager.sln
+		vlmcsd-beta\VisualStudio\vlmcsd.sln = vlmcsd-beta\VisualStudio\vlmcsd.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WinMan", "WinMan", "{79FBD3AE-7D01-4318-954C-3D64607E34C6}"
+	ProjectSection(SolutionItems) = preProject
+		winman\WinMan.sln = winman\WinMan.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "X-Mouse Controls", "X-Mouse Controls", "{00223C54-4029-46F8-AAE6-C2B775C3C238}"
+	ProjectSection(SolutionItems) = preProject
+		xmouse-controls-develop\X-Mouse Controls.sln = xmouse-controls-develop\X-Mouse Controls.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WSUS Admin Assistant", "WSUS Admin Assistant", "{ADAFE54E-9846-4DE7-9766-E16EEAA8AFD5}"
+	ProjectSection(SolutionItems) = preProject
+		wsusadminassistant\WSUSAdminAssistant.sln = wsusadminassistant\WSUSAdminAssistant.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WSUS Online Descriptions", "WSUS Online Descriptions", "{4DCF829B-39D2-4BB4-981C-BC49D9A532F2}"
+	ProjectSection(SolutionItems) = preProject
+		wsusonlinedescriptions\WSUSOnlineDescriptions.sln = wsusonlinedescriptions\WSUSOnlineDescriptions.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WSUS Workgroup Utillities", "WSUS Workgroup Utillities", "{6ACAA565-6113-4695-B9AF-401FC19A5A05}"
+	ProjectSection(SolutionItems) = preProject
+		wsusworkgrouputilities\WSUSWorkgroupUtilitys.sln = wsusworkgrouputilities\WSUSWorkgroupUtilitys.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows Update Control Service", "Windows Update Control Service", "{9EEC3CFF-C21E-4A86-823B-773B9D8737B5}"
+	ProjectSection(SolutionItems) = preProject
+		winupdate-remote-svc\WindowsUpdateControlService.sln = winupdate-remote-svc\WindowsUpdateControlService.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User Rights", "User Rights", "{EDE1080F-BF74-4164-AA76-EC4B909566F2}"
+	ProjectSection(SolutionItems) = preProject
+		user-rights\UserRights.sln = user-rights\UserRights.sln
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sxs Management", "Sxs Management", "{1843AA0A-1684-4990-8B1B-1580C8639C5D}"
+	ProjectSection(SolutionItems) = preProject
+		sxs-mgmt\Start.cmd = sxs-mgmt\Start.cmd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Helper", "_Helper", "{C76AE85B-71DE-4E45-B717-2F62AB9AE23B}"
+	ProjectSection(SolutionItems) = preProject
+		sxs-mgmt\_Helper\cabarc.exe = sxs-mgmt\_Helper\cabarc.exe
+		sxs-mgmt\_Helper\cabdir.exe = sxs-mgmt\_Helper\cabdir.exe
+		sxs-mgmt\_Helper\definitions.cmd = sxs-mgmt\_Helper\definitions.cmd
+		sxs-mgmt\_Helper\nsudocamd64.exe = sxs-mgmt\_Helper\nsudocamd64.exe
+		sxs-mgmt\_Helper\nsudocx86.exe = sxs-mgmt\_Helper\nsudocx86.exe
+		sxs-mgmt\_Helper\SxSExp64.exe = sxs-mgmt\_Helper\SxSExp64.exe
+		sxs-mgmt\_Helper\SxSExpand.exe = sxs-mgmt\_Helper\SxSExpand.exe
+		sxs-mgmt\_Helper\SxSExport.cmd = sxs-mgmt\_Helper\SxSExport.cmd
+		sxs-mgmt\_Helper\SxSExtract.vbs = sxs-mgmt\_Helper\SxSExtract.vbs
+		sxs-mgmt\_Helper\SxSExtract_original.vbs = sxs-mgmt\_Helper\SxSExtract_original.vbs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{4958CEC5-0AF9-4197-9978-DA48A6BE2450}"
+	ProjectSection(SolutionItems) = preProject
+		sxs-mgmt\Samples\ImportList.txt = sxs-mgmt\Samples\ImportList.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WSUS Package Publisher", "WSUS Package Publisher", "{1FB26CBB-0DBB-4E05-B7B9-4DDEAB23362A}"
+	ProjectSection(SolutionItems) = preProject
+		wsuspackagepublisher\code\Wsus Package Publisher\Wsus Package Publisher.sln = wsuspackagepublisher\code\Wsus Package Publisher\Wsus Package Publisher.sln
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C76AE85B-71DE-4E45-B717-2F62AB9AE23B} = {1843AA0A-1684-4990-8B1B-1580C8639C5D}
+		{4958CEC5-0AF9-4197-9978-DA48A6BE2450} = {1843AA0A-1684-4990-8B1B-1580C8639C5D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D457191C-B5F8-4E7F-B289-7AFCEC7B93C5}
+	EndGlobalSection
+EndGlobal

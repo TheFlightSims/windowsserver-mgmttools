@@ -1,0 +1,22 @@
+﻿var processorCategory = PerformanceCounterCategory.GetCategories()
+             .FirstOrDefault(cat => cat.CategoryName == "Processor");
+
+            var countersInCategory = processorCategory.GetCounters("_Total");
+
+            var performanceCounter = countersInCategory.First(cnt => cnt.CounterName == "% Processor Time");
+
+            Console.WriteLine("{0}\t{1} = {2}",
+                performanceCounter.CategoryName, performanceCounter.CounterName, performanceCounter.NextValue());
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("{0}\t{1} = {2}",
+                performanceCounter.CategoryName, performanceCounter.CounterName, performanceCounter.NextValue());
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("{0}\t{1} = {2}",
+                performanceCounter.CategoryName, performanceCounter.CounterName, performanceCounter.NextValue());
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("{0}\t{1} = {2}",
+                performanceCounter.CategoryName, performanceCounter.CounterName, performanceCounter.NextValue());
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("{0}\t{1} = {2}",
+                performanceCounter.CategoryName, performanceCounter.CounterName, performanceCounter.NextValue());
+            System.Threading.Thread.Sleep(1000);

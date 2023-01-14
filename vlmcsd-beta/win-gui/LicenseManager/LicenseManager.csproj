@@ -35,7 +35,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\!bin!\vlmcsd\LicenseManager\Client\</OutputPath>
     <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -396,6 +396,7 @@
     <Resource Include="Data\PKeyConfig\19041-pkeyconfig-csvlk.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\19041-pkeyconfig-downlevel.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\19041-pkeyconfig.xrm-ms.gz" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="pkeyConfig.xsd">
       <SubType>Designer</SubType>
       <LastGenOutput>pkeyConfig.Designer.cs</LastGenOutput>

@@ -1,0 +1,13 @@
+<CatalogSubscription>
+  <IsActive>True</IsActive>
+  <Address>https://fpdownload.adobe.com/get/flashplayer/distribution/win</Address>
+  <CheckEvery>1</CheckEvery>
+  <Unit>Weeks</Unit>
+  <LastCheck>01/01/0001 00:00:00</LastCheck>
+  <LastCheckResult>False</LastCheckResult>
+  <CatalogName>AdobeFlashPlayerCatalog_SCUP.cab</CatalogName>
+  <FileCreationDate>01/01/0001 00:00:00</FileCreationDate>
+  <Hash>
+  </Hash>
+  <LastDownloadDate>01/01/0001 00:00:00</LastDownloadDate>
+</CatalogSubscription>

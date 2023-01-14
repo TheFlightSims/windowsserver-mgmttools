@@ -1,0 +1,10 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WindowsUpdateControlService\WuDataContract\Debug\net462\WuDataContract.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WindowsUpdateControlService\WuDataContract\Debug\net462\WuDataContract.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net462\WuDataContract.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net462\WuDataContract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net462\WuDataContract.AssemblyInfoInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net462\WuDataContract.AssemblyInfo.cs
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net462\WuDataContract.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net462\WuDataContract.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net462\WuDataContract.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net462\WuDataContract.pdb

@@ -1,0 +1,9 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\Microsoft.Deployment.Compression.Cab.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\Microsoft.Deployment.Compression.Cab.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\Microsoft.Deployment.Compression.Cab\obj\Debug\Microsoft.Deployment.Compression.Cab.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\Microsoft.Deployment.Compression.Cab\obj\Debug\Microsoft.Deployment.Compression.Cab.Errors.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\Microsoft.Deployment.Compression.Cab\obj\Debug\Microsoft.Deployment.Compression.Cab.csproj.GenerateResource.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\Microsoft.Deployment.Compression.Cab\obj\Debug\Microsoft.Deployment.Compression.Cab.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\Microsoft.Deployment.Compression.Cab\obj\Debug\Microsoft.Deployment.Compression.Cab.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\Microsoft.Deployment.Compression.Cab\obj\Debug\Microsoft.Deployment.Compression.Cab.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\Microsoft.Deployment.Compression.Cab\obj\Debug\Microsoft.Deployment.Compression.Cab.pdb

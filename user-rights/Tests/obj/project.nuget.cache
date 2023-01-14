@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "FcSMgHYO8T69RK8atqE0eog92/nTAdBVu9kg2ieyUh+iY/B6nkiM4JsSsFtRTsK3HIbOpjQZq/V2cQ+vLkPLbw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\Tests\\Tests.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\meziantou.analyzer\\1.0.748\\meziantou.analyzer.1.0.748.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
+  ],
+  "logs": []
+}

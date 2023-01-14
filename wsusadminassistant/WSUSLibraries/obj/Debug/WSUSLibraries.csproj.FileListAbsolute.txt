@@ -1,0 +1,8 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSLibraries\obj\Debug\WSUSLibraries.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSLibraries\obj\Debug\WSUSLibraries.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Admin Assitant\WSUSLibs\clsWSUS.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Admin Assitant\WSUSLibs\clsWSUS.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Admin Assitant\WSUSLibs\clsWSUS.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSLibraries\obj\Debug\WSUSLibraries.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSLibraries\obj\Debug\clsWSUS.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsusadminassistant\WSUSLibraries\obj\Debug\clsWSUS.pdb

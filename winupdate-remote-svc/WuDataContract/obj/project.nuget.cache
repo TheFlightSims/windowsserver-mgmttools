@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7u6x/2xxZmHWNKJ89o80ti1HU3IYj1RSVuDfnEH2IHOa7pI7iEQtaTdMTUe6vNRvbtmlh2BiVfAQEHZnL3Fq1Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\system.servicemodel.primitives\\4.7.0\\system.servicemodel.primitives.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

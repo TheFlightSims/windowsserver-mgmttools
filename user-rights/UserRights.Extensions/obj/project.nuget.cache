@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "FgDblGufqIq0r2lVhTPYehKdYANtFgpJlc3m2yVvOfFj3DxHGj/ylaf95VprY+EKv1qlxmHI9DBYCmzzHd6chg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\UserRights.Extensions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\meziantou.analyzer\\1.0.748\\meziantou.analyzer.1.0.748.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
+  ],
+  "logs": []
+}

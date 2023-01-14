@@ -1,0 +1,13 @@
+<CatalogSubscription>
+  <IsActive>True</IsActive>
+  <Address>ftp://ftp.hp.com/pub/softlib/software/sms_catalog</Address>
+  <CheckEvery>1</CheckEvery>
+  <Unit>Weeks</Unit>
+  <LastCheck>01/01/0001 00:00:00</LastCheck>
+  <LastCheckResult>False</LastCheckResult>
+  <CatalogName>HpCatalogForSms.latest.cab</CatalogName>
+  <FileCreationDate>01/01/0001 00:00:00</FileCreationDate>
+  <Hash>
+  </Hash>
+  <LastDownloadDate>01/01/0001 00:00:00</LastDownloadDate>
+</CatalogSubscription>

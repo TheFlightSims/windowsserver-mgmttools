@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "VZWIkifhBB4RLri5QfV4bSR77cMqsRCX2iY3Q51mBDG1GS28WniJYRCs5lxWZ1dvmX4oo8rtonJEjXDoQ+02aA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseConverter\\SqlAnalyser.Core\\SqlAnalyser.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\antlr4.runtime.standard\\4.10.1\\antlr4.runtime.standard.4.10.1.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\csvhelper\\13.0.0\\csvhelper.13.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\sqlparsersharp\\2.1.0\\sqlparsersharp.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD4E4567-AF8D-499B-8150-D5C8FC3D4A53}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RemoteMsiManager</RootNamespace>
+    <AssemblyName>RemoteMsiManager</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\!bin!\Remote MSI Manager\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>RemoteMsiManager.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>RemoteMsiManager.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug x64|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug x64\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug x64|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug x64\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug x64|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug x64\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release x64|x86'">
+    <OutputPath>bin\x86\Release x64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release x64|AnyCPU'">
+    <OutputPath>bin\Release x64\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release x64|x64'">
+    <OutputPath>bin\x64\Release x64\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Computer.cs" />
+    <Compile Include="FrmRemoteMsiManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRemoteMsiManager.Designer.cs">
+      <DependentUpon>FrmRemoteMsiManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddRemoteComputer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddRemoteComputer.Designer.cs">
+      <DependentUpon>FrmAddRemoteComputer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInstallProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInstallProduct.Designer.cs">
+      <DependentUpon>FrmInstallProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductProperties.Designer.cs">
+      <DependentUpon>FrmProductProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUninstallProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUninstallProduct.Designer.cs">
+      <DependentUpon>FrmUninstallProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Localization.cs" />
+    <Compile Include="NetUse.cs" />
+    <Compile Include="MsiProduct.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAddRemoteComputer.de.resx">
+      <DependentUpon>FrmAddRemoteComputer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddRemoteComputer.pt.resx">
+      <DependentUpon>FrmAddRemoteComputer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddRemoteComputer.ru.resx">
+      <DependentUpon>FrmAddRemoteComputer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInstallProduct.de.resx">
+      <DependentUpon>FrmInstallProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInstallProduct.en.resx">
+      <DependentUpon>FrmInstallProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInstallProduct.pt.resx">
+      <DependentUpon>FrmInstallProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInstallProduct.ru.resx">
+      <DependentUpon>FrmInstallProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductProperties.de.resx">
+      <DependentUpon>FrmProductProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductProperties.pt.resx">
+      <DependentUpon>FrmProductProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductProperties.ru.resx">
+      <DependentUpon>FrmProductProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRemoteMsiManager.de.resx">
+      <DependentUpon>FrmRemoteMsiManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRemoteMsiManager.en.resx">
+      <DependentUpon>FrmRemoteMsiManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRemoteMsiManager.fr.resx">
+      <DependentUpon>FrmRemoteMsiManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRemoteMsiManager.pt.resx">
+      <DependentUpon>FrmRemoteMsiManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRemoteMsiManager.resx">
+      <DependentUpon>FrmRemoteMsiManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddRemoteComputer.fr.resx">
+      <DependentUpon>FrmAddRemoteComputer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddRemoteComputer.resx">
+      <DependentUpon>FrmAddRemoteComputer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInstallProduct.fr.resx">
+      <DependentUpon>FrmInstallProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInstallProduct.resx">
+      <DependentUpon>FrmInstallProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductProperties.fr.resx">
+      <DependentUpon>FrmProductProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductProperties.resx">
+      <DependentUpon>FrmProductProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRemoteMsiManager.ru.resx">
+      <DependentUpon>FrmRemoteMsiManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUninstallProduct.de.resx">
+      <DependentUpon>FrmUninstallProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUninstallProduct.fr.resx">
+      <DependentUpon>FrmUninstallProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUninstallProduct.pt.resx">
+      <DependentUpon>FrmUninstallProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUninstallProduct.resx">
+      <DependentUpon>FrmUninstallProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUninstallProduct.ru.resx">
+      <DependentUpon>FrmUninstallProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\Resources.de.resx" />
+    <EmbeddedResource Include="Localization\Resources.pt.resx" />
+    <EmbeddedResource Include="Localization\Resources.ru.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\Resources.en.resx" />
+    <EmbeddedResource Include="Localization\Resources.fr.resx" />
+    <None Include=".editorconfig" />
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Install24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uninstall24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HourglassAnimated.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RemoteMsiManager.ico" />
+    <None Include="Resources\Install32x32.png" />
+    <None Include="Resources\AddFile32x32.png" />
+    <None Include="Resources\Browse32x32.png" />
+    <None Include="Resources\DeleteFile32x32.png" />
+    <None Include="Resources\DeleteFolder32x32.png" />
+    <None Include="Resources\AddFolder32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_AssemblyInfoFilename="Properties\AssemblyInfo.cs" BuildVersion_UseGlobalSettings="False" BuildVersion_BuildVersioningStyle="None.None.YearDecadeAndMonthStamp.DayStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_DetectChanges="False" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

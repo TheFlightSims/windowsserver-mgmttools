@@ -121,7 +121,7 @@
     <TargetExt />
     <RemoteCCompileToolExe>gcc</RemoteCCompileToolExe>
     <IncludePath>$(IncludePath);$(ISenseIncludePath);$(ProjectDir)VisualStudio-Linux-Remote\toolchains\gcc5-x86_64-linux-gnu\usr\include</IncludePath>
-    <OutDir>$(SolutionDir)bin\</OutDir>
+    <OutDir>..\..\..\!bin!\vlmcsd\vlmcs-gcc5</OutDir>
     <RemoteLdToolExe>gcc</RemoteLdToolExe>
     <IntDir>$(ProjectDir)vlmcs\obj\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>

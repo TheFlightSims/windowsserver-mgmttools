@@ -1,0 +1,86 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageProjectUrl>https://github.com/victor-wiki/DatabaseManager</PackageProjectUrl>
+    <Description>Database manage tool for: SqlServer, MySql, Oracle and Postgres.</Description>
+    <Authors>victor-wiki</Authors>
+    <Version>2.1.2</Version>
+    <PackageReleaseNotes>add: table record count statistic </PackageReleaseNotes>
+    <Platforms>AnyCPU;x64</Platforms>
+    <AssemblyVersion>2.1.2</AssemblyVersion>
+    <FileVersion>2.1.2</FileVersion>
+    <BaseOutputPath>..\..\..\!bin!\DatabaseManager\GUI\Core</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Config\Template\Function\MySql.txt" />
+    <None Remove="Config\Template\Function\Oracle.txt" />
+    <None Remove="Config\Template\Function\Postgres.txt" />
+    <None Remove="Config\Template\Function\SqlServer.txt" />
+    <None Remove="Config\Template\Procedure\MySql.txt" />
+    <None Remove="Config\Template\Procedure\Oracle.txt" />
+    <None Remove="Config\Template\Procedure\Postgres.txt" />
+    <None Remove="Config\Template\Procedure\SqlServer.txt" />
+    <None Remove="Config\Template\TableTrigger\MySql.txt" />
+    <None Remove="Config\Template\TableTrigger\Oracle.txt" />
+    <None Remove="Config\Template\TableTrigger\Postgres.txt" />
+    <None Remove="Config\Template\TableTrigger\SqlServer.txt" />
+    <None Remove="Config\Template\View\Common.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Config\Template\Function\Oracle.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\Template\Function\MySql.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\Template\Function\Postgres.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\Template\Function\SqlServer.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\Template\Procedure\MySql.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\Template\Procedure\Postgres.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\Template\Procedure\Oracle.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\Template\Procedure\SqlServer.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\Template\TableTrigger\MySql.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\Template\TableTrigger\Oracle.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\Template\TableTrigger\Postgres.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\Template\TableTrigger\SqlServer.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\Template\View\Common.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CompareNETObjects" Version="4.78.0" />
+    <PackageReference Include="Humanizer.Core" Version="2.7.9" />
+    <PackageReference Include="SharpZipLib.NETStandard" Version="1.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DatabaseConverter\DatabaseConverter.Core\DatabaseConverter.Core.csproj" />
+    <ProjectReference Include="..\..\DatabaseInterpreter\DatabaseInterpreter.Core\DatabaseInterpreter.Core.csproj" />
+    <ProjectReference Include="..\..\DatabaseInterpreter\DatabaseInterpreter.Model\DatabaseInterpreter.Model.csproj" />
+  </ItemGroup>
+
+</Project>

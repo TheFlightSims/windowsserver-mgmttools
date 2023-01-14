@@ -1,0 +1,11 @@
+<CatalogSubscription>
+  <IsActive>True</IsActive>
+  <Address>http://armmf.adobe.com/manifest/arm-manifests/win/SCUP</Address>
+  <CheckEvery>1</CheckEvery>
+  <Unit>Weeks</Unit>
+  <LastCheck>28/07/2015 00:00:00</LastCheck>
+  <LastCheckResult>True</LastCheckResult>
+  <CatalogName>AcrobatCatalog-2015.cab</CatalogName>
+  <Hash>42769041b973a9985444b01988650fa2</Hash>
+  <LastDownloadDate>28/07/2015 00:00:00</LastDownloadDate>
+</CatalogSubscription>

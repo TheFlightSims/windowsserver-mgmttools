@@ -1,11 +1,11 @@
-﻿using System;
+﻿using HGM.Hotbird64.Vlmcs;
+using System;
 using System.Globalization;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Data;
 using System.Windows.Markup;
 using System.Windows.Media;
-using HGM.Hotbird64.Vlmcs;
 
 namespace HGM.Hotbird64.LicenseManager
 {
@@ -48,7 +48,7 @@ namespace HGM.Hotbird64.LicenseManager
         }
     }
 
-    public class ValidEpid2Visible:ConverterBase
+    public class ValidEpid2Visible : ConverterBase
     {
         public override object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {

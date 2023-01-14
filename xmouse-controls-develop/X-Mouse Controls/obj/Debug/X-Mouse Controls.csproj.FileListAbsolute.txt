@@ -1,0 +1,21 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\bin\Debug\X-Mouse Controls.exe.config
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\bin\Debug\X-Mouse Controls.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\bin\Debug\X-Mouse Controls.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\bin\Debug\X-Mouse Controls.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\obj\Debug\X-Mouse Controls.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\obj\Debug\App.g.cs
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\obj\Debug\X-Mouse Controls_MarkupCompile.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\obj\Debug\X-Mouse Controls_MarkupCompile.lref
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\obj\Debug\MainWindow.baml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\obj\Debug\X-Mouse Controls.g.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\obj\Debug\XMouseControls.Properties.Resources.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\obj\Debug\X-Mouse Controls.csproj.GenerateResource.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\obj\Debug\X-Mouse Controls.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\obj\Debug\X-Mouse Controls.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\obj\Debug\X-Mouse Controls.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\X-Mouse Control\X-Mouse Controls.exe.config
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\X-Mouse Control\X-Mouse Controls.xml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\X-Mouse Control\X-Mouse Controls.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\X-Mouse Control\X-Mouse Controls.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\xmouse-controls-develop\X-Mouse Controls\obj\Debug\X-Mouse Controls.csproj.SuggestedBindingRedirects.cache

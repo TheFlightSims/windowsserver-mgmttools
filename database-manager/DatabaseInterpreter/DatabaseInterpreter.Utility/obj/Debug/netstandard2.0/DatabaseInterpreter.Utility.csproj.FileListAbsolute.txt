@@ -1,0 +1,11 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\dbinter\utillity\Debug\netstandard2.0\DatabaseInterpreter.Utility.deps.json
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\dbinter\utillity\Debug\netstandard2.0\DatabaseInterpreter.Utility.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\dbinter\utillity\Debug\netstandard2.0\DatabaseInterpreter.Utility.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.0\DatabaseInterpreter.Utility.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.0\DatabaseInterpreter.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.0\DatabaseInterpreter.Utility.AssemblyInfoInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.0\DatabaseInterpreter.Utility.AssemblyInfo.cs
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.0\DatabaseInterpreter.Utility.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.0\DatabaseInterpreter.Utility.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.0\DatabaseInterpreter.Utility.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.0\DatabaseInterpreter.Utility.pdb

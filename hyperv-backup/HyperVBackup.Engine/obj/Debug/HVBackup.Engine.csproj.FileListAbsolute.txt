@@ -1,0 +1,8 @@
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\Hyper-V Backup\NLog.config
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\Hyper-V Backup\HyperVBackUp.Engine.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\Hyper-V Backup\HyperVBackUp.Engine.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HVBackup.Engine.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HVBackup.Engine.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HVBackup.Engine.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HyperVBackUp.Engine.dll
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HyperVBackUp.Engine.pdb

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "nZVQfzvIad5vfIAThp0plfWZCo+Wu0/T0DO4xK6wfLsBYmeRfathkcjKIi0wT7ul/xBOWLzrgkwWZY5frcFc5w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\DatabaseInterpreter.Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
