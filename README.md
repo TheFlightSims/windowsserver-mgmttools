@@ -11,6 +11,7 @@
 - *Remote install for MSI installer*
 - *Passthrough physical device into virtual machine*
 - *Activation services for server*
+
 ...and so much more
 
 For better understanding, you can see the [wiki page](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools/wiki).
@@ -31,8 +32,9 @@ For better understanding, you can see the [wiki page](https://github.com/TheFlig
 To fully edit this repository, download the lastest **[Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)** and **[Visual Studio 2019 build tools](https://visualstudio.microsoft.com/vs/older-downloads/)**. After that, import both **.vsconfig** into **Visual Studio installer**.
 
 Otherwise, you can do other ways:
+ - [Review Wiki Page](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools/wiki)
  - [Submit bugs and feature requests](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools/issues)
--   Review  [source codes](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools)
+ -   Review  [source codes](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools)
 
 *Note that the Visual Studio workload can be really heavy: requires around 20-40Gb for all required libraries*
 
