@@ -34,7 +34,8 @@ To fully edit this repository, download the lastest **[Visual Studio 2022](https
 Otherwise, you can do other ways:
  - [Review Wiki Page](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools/wiki)
  - [Submit bugs and feature requests](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools/issues)
- -   Review  [source codes](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools)
+ - [Review source codes](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools)
+ - [Review and commit pull requests](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools/pulls)
 
 *Note that the Visual Studio workload can be really heavy: requires around 20-40Gb for all required libraries*
 
