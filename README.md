@@ -1,5 +1,6 @@
 
 
+
 ![Windows Server Management Tools - Banner](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools/blob/master/docs_image.png?raw=true)
 # The Repository
 
@@ -23,6 +24,7 @@ For better understanding, you can see the [wiki page](https://github.com/TheFlig
  - **[!bin!](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools/tree/master/!bin!):** store compiled source codes (if the solution source needs to be complied)
  - **[!docs & ref!](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools/tree/master/!docs%20&%20ref!):** store documents and Visual Studio configurations. In this project, we use **Visual Studio 2022 (17.4 LTSC)** to edit the sources codes, and **Visual Studio 2019 build tools** for additional compliers.
  - **[!pub!](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools/tree/master/!pub!):** store complied and published packages. We will update it monthly, if possible.
+ - **[!makevs!](https://github.com/TheFlightSimulationsOfficial/windowsserver-mgmttools/tree/master/!makevs!):** Make Visual Studio offline layout. It is recommeneded to fully editing in this project.
  - **.vs:**: includes Visual Studio source files.
  - **winser-mgmttools.sln:** solution files, contains all required paths for all projects.
  - **The rest of files and folders:** Project files and folders.
