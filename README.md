@@ -1,7 +1,7 @@
 
 
 
-![Windows Server Management Tools - Banner](/blob/master/docs_image.png?raw=true)
+![Windows Server Management Tools - Banner](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/docs_image.png)
 # The Repository
 
 ***This repository presents to you a collection of server management tools for various purposes:***
