@@ -1,7 +1,4 @@
-﻿using HGM.Hotbird64.LicenseManager.Extensions;
-using HGM.Hotbird64.Vlmcs;
-using LicenseManager.Annotations;
-using System;
+﻿using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -14,6 +11,9 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using HGM.Hotbird64.LicenseManager.Extensions;
+using HGM.Hotbird64.Vlmcs;
+using LicenseManager.Annotations;
 
 // ReSharper disable once CheckNamespace
 
@@ -254,7 +254,7 @@ namespace HGM.Hotbird64.LicenseManager
             var response = new KmsResponse();
             HwId hwId;
             var result = 0;
-            var csvlkItem = Csvlks.SingleOrDefault(c => c.Activates.Select(a => a.Guid).Contains(request.KmsID)) ?? Csvlks[KmsLists.AppItemList[request.ID]?.VlmcsdIndex ?? 0];
+            var csvlkItem = Csvlks.SingleOrDefault(c => c.Activates.Select(a => a.Guid).Contains(request.KmsID)) ?? Csvlks[KmsLists.AppItemList[request.ID]?.VlmcsdIndex??0];
             var appItem = KmsLists.AppItemList[request.ApplicationID] ?? KmsLists.AppItemList.SingleOrDefault(a => a.VlmcsdIndex == 0) ?? KmsLists.AppItemList.First();
 
             Dispatcher.Invoke(() =>

@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\vlmcsd-beta\win-gui\LicenseManager\obj\Debug\
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\vlmcsd-beta\win-gui\LicenseManager\obj\Debug\
 HGM.Hotbird64.LicenseManager
 none
 false
 DEBUG
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\vlmcsd-beta\win-gui\LicenseManager\App.xaml
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\vlmcsd-beta\win-gui\LicenseManager\App.xaml
 30-2043382760
 
-60-710550945
+61-1773638560
 16-1056016
 AboutBox.xaml;Controls\RibbonMenuButton.xaml;Controls\WmiPropertyBox.xaml;ExportIds.xaml;Icons\multi\ClientComputer.xaml;Icons\multi\Database.xaml;Icons\multi\DatabaseBrowse.xaml;Icons\multi\Export.xaml;Icons\multi\InstallKey.xaml;Icons\multi\KeyIcon.xaml;Icons\multi\KmsServerIcon.xaml;Icons\multi\MagnifyingGlass.xaml;Icons\multi\Office2013.xaml;Icons\multi\QueryKey.xaml;Icons\multi\QuestionOrange.xaml;Icons\multi\Server.xaml;Icons\multi\Unlock.xaml;Icons\multi\Refresh.xaml;Icons\multi\vs2013.xaml;Icons\multi\Windows.xaml;InstallKmsKeys.xaml;OwnKeyWindow.xaml;ProductBrowser.xaml;ProductKeys.xaml;KmsClientWindow.xaml;MainWindow.xaml;KmsServer.xaml;ConnectForm.xaml;ProductSelector.xaml;ServiceConfiguration.xaml;
 

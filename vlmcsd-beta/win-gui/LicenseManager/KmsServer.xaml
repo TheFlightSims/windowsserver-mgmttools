@@ -39,7 +39,7 @@
                     <RowDefinition />
                 </Grid.RowDefinitions>
 
-                <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource StandardLabel}">KMS TCP Port</Label>
+                <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">KMS Host Port</Label>
                 <TextBox x:Name="TextBoxPort" Text="1688" Grid.Row="0" Grid.Column="1" Style="{StaticResource StandardTextBox}" Background="LightGreen" IsReadOnly="False" TextChanged="TextBoxPort_TextChanged" />
                 <Button x:Name="ButtonStartStop" Content="Start Server" Grid.Row="0" Grid.Column="2" Height="20" Margin="4,0,4,0" Click="Button_StartStop_Click"/>
 
@@ -69,7 +69,7 @@
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
 
-                <Label Grid.Row="7" Grid.Column="0" Style="{StaticResource StandardLabel}">Hardware ID</Label>
+                <Label Grid.Row="7" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">Hardware ID</Label>
                 <TextBox x:Name="TextBoxHwId" Grid.Row="7" Grid.Column="1" Style="{StaticResource StandardTextBox}" IsReadOnly="False" Background="LightGreen" TextChanged="TextBoxHwId_TextChanged" >3A 1C 04 96 00 B6 00 76</TextBox>
 
                 <Label Visibility="{Binding ElementName=ComboBoxTap, Path=Visibility}" IsEnabled="{Binding ElementName=ComboBoxTap, Path=IsEnabled}" Grid.Row="8" Grid.Column="0"
@@ -100,7 +100,7 @@
                     <TextBox Text="7 days, 0 hours, 0 minutes" Margin="5,0,0,0" Grid.Column="1" Style="{StaticResource StandardTextBox}" x:Name="TextBoxVlRenewalParsed" />
                 </Grid>
 
-                <Label Grid.Row="11" Grid.Column="0" Style="{StaticResource StandardLabel}">Activation Retry Interval</Label>
+                <Label Grid.Row="11" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">Activation Retry Interval</Label>
                 <Grid Grid.Row="11" Grid.Column="1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="30*" />
@@ -124,12 +124,12 @@
               ToolTip="If unchecked, clients with unknown KMS IDs or incorrect Application IDs will not be granted activation." ToolTipService.ShowDuration="30000" />
                     <CheckBox x:Name="CheckBoxAllowNonVl" Content="Allow beta and retail KMS IDs" Width="{Binding ElementName=CheckBoxAllowUnknownProducts,Path=Width}" IsChecked="True" IsThreeState="False"
               ToolTip="If unchecked, clients with beta and retail KMS IDs or incorrect Application IDs will not be granted activation." ToolTipService.ShowDuration="30000" />
-                    <CheckBox x:Name="CheckBoxCheckTime" Content="Check client time" Width="{Binding ElementName=CheckBoxAllowUnknownProducts,Path=Width}" IsChecked="false" IsThreeState="False"
-              ToolTip="If checked, clients with a time difference of more than 4 hours will not be granted activation." ToolTipService.ShowDuration="30000" />
+                    <CheckBox x:Name="CheckBoxCheckTime" Content="Check client time" Width="{Binding ElementName=CheckBoxAllowUnknownProducts,Path=Width}" IsChecked="True" IsThreeState="False"
+              ToolTip="If checked, clients with a time difference of more than 4 hours will not be granted activation." ToolTipService.ShowDuration="30000" HorizontalAlignment="Right" />
                     <CheckBox x:Name="CheckBoxPreCharge" Content="Pre-charge server" Width="{Binding ElementName=CheckBoxAllowUnknownProducts,Path=Width}" IsChecked="true" IsThreeState="False"
               ToolTip="If unchecked, the server will not be pre-charged and you need at least 25 Windows clients, 5 Windows servers and/or 5 Office computers for activations to succeed."
               ToolTipService.ShowDuration="30000" ToolTipService.ShowOnDisabled="True" />
-                    <CheckBox Width="200" x:Name="UseTap" Content="Use VPN for fake remote IPv4" Click="UseTap_Click" ToolTipService.ShowDuration="30000"
+                    <CheckBox Width="200" x:Name="UseTap" Content="Use VPN (safe mode) on IPv4" Click="UseTap_Click" ToolTipService.ShowDuration="30000"
               ToolTip="If checked, a compatible VPN device can be used to fake some remote IPv4 addresses which are in fact local addresses. Compatible adapters are Tap-Windows (OpenVPN) and TeamViewer." />
                 </WrapPanel>
 

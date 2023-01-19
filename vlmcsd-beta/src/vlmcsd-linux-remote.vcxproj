@@ -109,14 +109,14 @@
     </SourcePath>
     <RemoteLdToolExe>gcc</RemoteLdToolExe>
     <IncludePath>$(IncludePath);$(SolutionDir)..\src\VisualStudio-Linux-Remote\toolchains\gcc5-x86_64-linux-gnu\usr\include</IncludePath>
-    <IntDir>$(ProjectDir)vlmcsd\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>..\..\..\!bin!\vlmcsd\vlmcsd-core</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>vlmcsd-x64-glibc</TargetName>
     <TargetExt />
     <RemoteCCompileToolExe>gcc</RemoteCCompileToolExe>
     <IncludePath>$(IncludePath);$(SolutionDir)..\src\VisualStudio-Linux-Remote\toolchains\gcc5-x86_64-linux-gnu\usr\include</IncludePath>
-    <OutDir>..\..\..\!bin!\vlmcsd\vlmcsd-gcc5</OutDir>
+    <OutDir>..\..\!bin!\vlmcsd\vlmcsd-core</OutDir>
     <RemoteLdToolExe>gcc</RemoteLdToolExe>
     <IntDir>$(ProjectDir)vlmcsd\obj\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>

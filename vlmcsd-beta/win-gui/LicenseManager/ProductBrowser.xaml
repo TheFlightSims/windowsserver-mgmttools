@@ -56,12 +56,12 @@
               <RowDefinition Height="Auto"/>
               <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <TextBlock Margin="5,5,5,0" TextWrapping="Wrap" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">Type or paste an Extended PID, an SKU GUID or a Product Key in the field below</TextBlock>
+            <TextBlock Margin="5,5,5,0" TextWrapping="Wrap" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">Enter an Extended PID, an SKU GUID or a Product Key</TextBlock>
             <TextBox Visibility="Visible" HorizontalAlignment="Stretch" Margin="5,0,5,5" HorizontalContentAlignment="Center" FontSize="14" Width="Auto" Grid.Column="0" Grid.Row="1"
               x:Name="TextBoxEpidInput" TextChanged="textBox_EpidInput_TextChanged" />
             <PasswordBox Visibility="Collapsed" Background="{Binding ElementName=TextBoxEpidInput, Path=Background}" Margin="5,0,5,5" HorizontalContentAlignment="Center" FontSize="14" Width="Auto" Grid.Column="1" Grid.Row="1"
               x:Name="PassWordBoxEpidInput" PasswordChar="•" PasswordChanged="PassWordBoxEpidInput_PasswordChanged"/>
-            <CheckBox x:Name="CheckBoxHideInput" Margin="0,3,5,5" IsChecked="False" Content="Hide Input" Grid.Column="2" Grid.Row="1" Click="CheckBoxHideInput_Click"/>
+            <CheckBox x:Name="CheckBoxHideInput" Margin="0,3,5,5" IsChecked="False" Content="Hide" Grid.Column="2" Grid.Row="1" Click="CheckBoxHideInput_Click"/>
             <TextBlock x:Name="TextBlockInputErrors" Foreground="Red" TextAlignment="Center" Visibility="Collapsed" Margin="0,2,0,0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
           </Grid>
 
@@ -88,21 +88,21 @@
                 <RowDefinition Height="Auto" />
               </Grid.RowDefinitions>
 
-              <Label Visibility="{Binding ElementName=TextBoxSource, Path=Visibility}" Content="PKeyConfig Source" Grid.Row="0" Grid.Column="0" />
+              <Label Visibility="{Binding ElementName=TextBoxSource, Path=Visibility}" Content="Product Key Applies for " Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" />
               <TextBox Grid.Row="0" Grid.Column="1" Width="Auto" Name="TextBoxSource" Style="{StaticResource StandardTextBox}" />
 
-              <Label Visibility="{Binding ElementName=TextBoxSource, Path=Visibility}"  Content="Product Name" Grid.Row="1" Grid.Column="0" />
+              <Label Visibility="{Binding ElementName=TextBoxSource, Path=Visibility}"  Content="Product Name" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" />
               <TextBox Visibility="{Binding ElementName=TextBoxSource, Path=Visibility}" Grid.Row="1" Grid.Column="1" Width="Auto" Name="TextBoxProductName" Style="{StaticResource StandardTextBox}" Height="Auto"
                 TextWrapping="Wrap" />
 
-              <Label Visibility="{Binding ElementName=TextBoxSource, Path=Visibility}" Content="SKU ID" Grid.Row="2" Grid.Column="0" />
+              <Label Visibility="{Binding ElementName=TextBoxSource, Path=Visibility}" Content="SKU ID" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" />
               <TextBox Visibility="{Binding ElementName=TextBoxSource, Path=Visibility}" Grid.Row="2" Grid.Column="1" Width="Auto" x:Name="TextBoxSkuId" Style="{StaticResource StandardTextBox}" />
 
-              <Label Visibility="{Binding ElementName=TextBoxSource, Path=Visibility}" Content="Edition" Grid.Row="3" Grid.Column="0" />
+              <Label Visibility="{Binding ElementName=TextBoxSource, Path=Visibility}" Content="Edition" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" />
               <TextBox Visibility="{Binding ElementName=TextBoxSource, Path=Visibility}" Grid.Row="3" Grid.Column="1" Width="Auto" x:Name="TextBoxEdition" Style="{StaticResource StandardTextBox}" Height="Auto"
                 TextWrapping="Wrap" />
 
-              <Label Visibility="{Binding ElementName=TextBoxSource, Path=Visibility}" Content="License" Grid.Row="4" Grid.Column="0" />
+              <Label Visibility="{Binding ElementName=TextBoxSource, Path=Visibility}" Content="License" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Left" />
               <TextBox Visibility="{Binding ElementName=TextBoxSource, Path=Visibility}" Grid.Row="4" Grid.Column="1" Width="Auto" x:Name="TextBoxLicense" Style="{StaticResource StandardTextBox}" />
 
               <Label Visibility="{Binding ElementName=TextBoxGvlk, Path=Visibility}" Content="GVLK From Database" Grid.Row="5" Grid.Column="0" />
@@ -118,7 +118,7 @@
               </TextBox>
 
               <Label Visibility="{Binding ElementName=GridEpid, Path=Visibility}" VerticalAlignment="Top" Content="Extended PID" Grid.Row="6"
-                Grid.Column="0" />
+                Grid.Column="0" HorizontalAlignment="Left" />
               <Grid x:Name="GridEpid" VerticalAlignment="Top" Grid.Row="6" Grid.Column="1">
                 <Grid.Resources>
                   <Style TargetType="TextBlock" x:Key="EPidLabels">
@@ -244,7 +244,7 @@
               </Grid>
 
               <Label Content="Complete EPID" Grid.Row="7" Grid.Column="0"
-                     Visibility="{Binding FullEPid, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, Converter={lm:ValidEpid2Visible}}" />
+                     Visibility="{Binding FullEPid, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, Converter={lm:ValidEpid2Visible}}" HorizontalAlignment="Left" />
               <TextBox
                   Margin="0,6,0,3" HorizontalAlignment="Stretch"
                   Grid.Row="7" Grid.Column="1" Width="Auto"
@@ -254,7 +254,7 @@
                   Visibility="{Binding FullEPid, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, Converter={lm:ValidEpid2Visible}}"
                   />
 
-              <Label Visibility="{Binding ElementName=TextBoxPartNumber, Path=Visibility}" Content="Part Number" Grid.Row="9" Grid.Column="0" />
+              <Label Visibility="{Binding ElementName=TextBoxPartNumber, Path=Visibility}" Content="Part Number" Grid.Row="9" Grid.Column="0" HorizontalAlignment="Left" />
               <TextBox Grid.Row="9" Visibility="{Binding ElementName=TextBoxSource, Path=Visibility}" Grid.Column="1" Width="Auto" x:Name="TextBoxPartNumber" Style="{StaticResource StandardTextBox}" />
 
               <Button Height="22" Margin="0,1,0,1" Visibility="Collapsed" x:Name="GenerateButton" Grid.Row="10" Grid.Column="1" Content="_Generate Keys"
@@ -330,7 +330,7 @@
                   </DataGridTextColumn.CellStyle>
                 </DataGridTextColumn>
                 <DataGridTextColumn Header="Part Number" Binding="{Binding PartNumber}" IsReadOnly="True" />
-                <DataGridTextColumn Header="Eula" Binding="{Binding EulaType}" IsReadOnly="True" />
+                <DataGridTextColumn Header="Usage" Binding="{Binding EulaType}" IsReadOnly="True" />
                 <DataGridTextColumn Header="Total Keys Available" Binding="{Binding KeysAvailable}" IsReadOnly="True">
                   <DataGridTextColumn.CellStyle>
                     <Style>
@@ -338,7 +338,7 @@
                     </Style>
                   </DataGridTextColumn.CellStyle>
                 </DataGridTextColumn>
-                <DataGridTemplateColumn Header="Valid" IsReadOnly="True">
+                <DataGridTemplateColumn Header="Still Valid" IsReadOnly="True">
                   <DataGridTemplateColumn.CellTemplate>
                     <DataTemplate>
                       <StackPanel Orientation="Horizontal">
@@ -347,7 +347,7 @@
                     </DataTemplate>
                   </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                  <DataGridTextColumn Header="PkeyConfig File" Binding="{Binding FileName}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Product Key Applies for " Binding="{Binding FileName}" IsReadOnly="True"/>
               </DataGrid.Columns>
             </DataGrid>
           </GroupBox>

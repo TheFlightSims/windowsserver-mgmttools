@@ -1,80 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- This script is made with love by Hotbird64, all Microsoft employees and TheFlightSims community -->
-
-<!--
-<KmsData
-  Version="2.0"                                          // Version of the KmsData file, currently must be 2.0 (required), 
-  Author="Hotbird64"                                     // Enter your name here (required)
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  // Loads the xsi namespace (recommended for syntax checking in an XSD capable XML editor)
-  xsi:noNamespaceSchemaLocation="KmsDataBase.xsd"        // relative or absolute path of the validation file
->
-
-  <WinBuild
-    BuildNumber="9200"                                      // Windows Build Number
-    DisplayName="Windows 8 / Server 2012"                   // A display name for the build number
-    PlatformId="5426"                                       // The "Platform ID" for this build number
-    UseForEpid="true"                                       // Use this build number for EPid generation. Should be true only for RTM builds that can be Windows servers
-    MayBeServer="true"                                      // Should be true for RTM builds that can be Windows servers
-    UsesNDR64="true"                                        // Genuine KMS servers use NDR64 for this build
-  />
-
-  <CsvlkItem
-  >
-    Id="2e7a9ad1-a849-4b56-babe-17d5a29fe4b4"                // SkuId of the CSVLK (required)
-    DisplayName="Windows Server 2019"                        // Friendly name that should be displayed instead of the Guid (required)
-    IsLab="false"                                            // This is a lab CSVLK that also activates retail Windows > 8 (default false)
-    IsPreview="false"                                        // This is a preview (beta, Non-RTM, etc.) CSVLK (default false)
-    GroupId="206"                                            // GroupId for EPid generation. If omitted, this is taken from the pkeyconfig. Use only if you don´t have a pkeyconfig for this CSVLK
-    MinKeyId="551000000"                                     // Minimum key id for EPid generation. If omitted, this is taken from the pkeyconfig. Use only if you don´t have a pkeyconfig for this CSVLK
-    MaxKeyId="570999999"                                     // Maximum key id for EPid generation. If omitted, this is taken from the pkeyconfig. Use only if you don´t have a pkeyconfig for this CSVLK
-    VlmcsdIndex="0"                                          // Export this CsvlkItem with Index 0 to vlmcsd. (optional)
-    IniFileName="Windows"                                    // Name used in vlmcsd.ini to assign specific EPID (required for all CsvlkItems that have VlmcsdIndex=, optional for others)
-    EPid="03612-00206-568-381813-03-1033-14393.0000-2702018" // If you want a specific EPid, use this. Or omit it to generate a suitable default automatically.
-    
-      <Activate
-        KmsItem="58e2134f-8e11-4d17-9cb2-91069c151148"       // List of KmsItems activated by the CSVLK. The KmsItem must be defined under <AppItem><KmsItem Id= ...>
-      />
-    
-</CsvlkItem>
-
-  <AppItem                                                   // Application (Windows, Office 2010 or Office 2013+)
-    Id="{55c92734-d682-4d71-983e-d6ec3f16059f}"              // Guid (required, braces are optional).
-    DisplayName="Windows"                                    // Friendly name that should be displayed instead of the Guid (required) 
-    VlmcsdIndex="0"                                          // VlmcsdIndex of CsvlkItem to use if an unknown KmsItem activates with that AppItem (required)
-    MinActiveClients="50"                                    // Minimum clients that this AppItem should maintain
-  >
-   
-     <KmsItem                                                   // KmsItem aka KMS Counted Id
-       Id="{e1c51358-fe3e-4203-a4a2-3b6b20c9734e}"              // Guid (required, braces are optional).
-       DisplayName="Windows 10 (Retail)"                        // Friendly name that should be displayed instead of the Guid (required) 
-       IsRetail="true"                                          // Indicates that this is a retail product group that can't be activated with a genuine KMS server (optional, default false)
-       IsPreview="false"                                        // Indicates that this a beta/preview product group that can't be activated with a genuine KMS server (optional, default false)
-       DefaultKmsProtocol="6.0"                                 // Default KMS protocol version that the KMS client uses. Must be "4.0", "5.0" or "6.0" (optional, default 6.0)
-       NCountPolicy="25"                                        // Minimum number of active clients required for the activation to succeed (optional, default 25, should be 25 for Windows clients and 5 otherwise)
-       CanMapToDefaultCsvlk="true"                              // This KmsItem can be omitted in vlmcsd export because it maps to VlmcsdIndex 0 (optional, default true)
-     >
-     
-       <SkuItem                                      // VOLUME_KMSCLIENT channel SKU ID (makes no sense to add other SKU IDs than VOLUME_KMSCLIENT channel
-         Id="{58e97c99-f377-4ef1-81d5-4ad5522b5fd8}" // Guid (required, braces are optional).
-         DisplayName="Windows 10 Home"               // Friendly name that should be displayed instead of the Guid (required)
-         Gvlk="XXXXX-XXXXX-XXXXX-XXXXX-H8Q99"        // The GVLK key to enable this VOLUME_KMSCLIENT channel (optional, recommended, no default)
-         IsGeneratedGvlk="false"                     // If true, indicates that this is a generated GVLK (optional, strongly recommended if a generated GVLK is used, default false)
-       />
-       
-   </KmsItem>
- </AppItem>  
-</KmsData>
--->
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <KmsData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.0" Author="Hotbird64" xsi:noNamespaceSchemaLocation="KmsDataBase.xsd">
 
 	<WinBuilds>
-
-		<!-- Windows PC Versions (this can be mixed with Windows Server versions, but don't worry, these things will show normally) -->
-		<WinBuild BuildNumber="103" ReleaseDate="1992-04-06T00:00:00Z" DisplayName="Windows 3.1" PlatformId="55041"/>
+		<WinBuild BuildNumber="103" ReleaseDate="1992-04-06T00:00:00Z" DisplayName="Windows 3.1" PlatformId="55041" />
 		<WinBuild BuildNumber="300" ReleaseDate="1993-11-08T00:00:00Z" DisplayName="Windows for Workgroup 3.11" PlatformId="55041" />
-		<WinBuild BuildNumber="528" ReleaseDate="1992-04-06T00:00:00Z" DisplayName="Windows NT 3.1" PlatformId="55041"/>
-		<WinBuild BuildNumber="807" ReleaseDate="1994-09-21T00:00:00Z" DisplayName="Windows NT 3.5" PlatformId="55041"/>
+		<WinBuild BuildNumber="528" ReleaseDate="1992-04-06T00:00:00Z" DisplayName="Windows NT 3.1" PlatformId="55041" />
+		<WinBuild BuildNumber="807" ReleaseDate="1994-09-21T00:00:00Z" DisplayName="Windows NT 3.5" PlatformId="55041" />
 		<WinBuild BuildNumber="1057" ReleaseDate="1995-05-30T00:00:00Z" DisplayName="Windows NT 3.51" PlatformId="55041" />
 		<WinBuild BuildNumber="1381" ReleaseDate="1996-07-29T00:00:00Z" DisplayName="Windows NT 4.0" PlatformId="55041" />
 		<WinBuild BuildNumber="950" ReleaseDate="1995-08-24T00:00:00Z" DisplayName="Windows 95" PlatformId="55041" />
@@ -105,23 +37,17 @@
 		<WinBuild BuildNumber="19043" ReleaseDate="2021-04-08T00:00:00Z" DisplayName="Windows 10 21H1" PlatformId="3612" UsesNDR64="true" />
 		<WinBuild BuildNumber="19044" ReleaseDate="2021-11-16T00:00:00Z" DisplayName="Windows 10 21H2" PlatformId="3612" UsesNDR64="true" />
 		<WinBuild BuildNumber="20348" ReleaseDate="2021-08-18T00:00:00Z" DisplayName="Windows Server 2022" PlatformId="3612" MayBeServer="true" UseForEpid="true" UsesNDR64="true" />
-		<WinBuild BuildNumber="22000" ReleaseDate="2021-06-24T00:00:00Z" DisplayName="Windows 11 21H2" PlatformId="3612" UsesNDR64="true" MayBeServer="true" />
-		<WinBuild BuildNumber="22610" ReleaseDate="2022-09-21T00:00:00Z" DisplayName="Windows 11 22H2" PlatformId="3612" UsesNDR64="true" MayBeServer="true" />
-		<WinBuild BuildNumber="22621" ReleaseDate="2022-09-21T00:00:00Z" DisplayName="Windows 11 22H2" PlatformId="3612" UsesNDR64="true" MayBeServer="true" />
-		<WinBuild BuildNumber="25247" ReleaseDate="2022-12-01T00:00:00Z" DisplayName="Windows 11 22H2 Preview" PlatformId="3612" UsesNDR64="true" MayBeServer="true" />
-
-		<!-- Windows Server Versions (DO NOT make these duplicated with the descripted Windows PC Versions above. See SDK if exist -->
+		<WinBuild BuildNumber="22000" ReleaseDate="2021-06-24T00:00:00Z" DisplayName="Windows 11 21H2" PlatformId="3612" MayBeServer="true" UsesNDR64="true" />
+		<WinBuild BuildNumber="22610" ReleaseDate="2022-09-21T00:00:00Z" DisplayName="Windows 11 22H2" PlatformId="3612" MayBeServer="true" UsesNDR64="true" />
+		<WinBuild BuildNumber="22621" ReleaseDate="2022-09-21T00:00:00Z" DisplayName="Windows 11 22H2" PlatformId="3612" MayBeServer="true" UsesNDR64="true" />
+		<WinBuild BuildNumber="25247" ReleaseDate="2022-12-01T00:00:00Z" DisplayName="Windows 11 22H2 Preview" PlatformId="3612" MayBeServer="true" UsesNDR64="true" />
 		<WinBuild BuildNumber="25252" ReleaseDate="2022-12-01T19:08:21Z" DisplayName="Windows Server 2022 (22H2) vNext" PlatformId="3612" MayBeServer="true" UsesNDR64="true" />
 		<WinBuild BuildNumber="25246" ReleaseDate="2022-12-01T19:08:21Z" DisplayName="Windows Server 2022 (22H2) vNext" PlatformId="3612" MayBeServer="true" UsesNDR64="true" />
-
-		<!-- Discontinued versions, or known as "minor release" -->
 		<WinBuild BuildNumber="1175" ReleaseDate="1996-07-29T00:00:00Z" DisplayName="Windows NT 4.0" PlatformId="55041" />
 		<WinBuild BuildNumber="999" ReleaseDate="1996-07-29T00:00:00Z" DisplayName="Windows 96" PlatformId="55041" />
 		<WinBuild BuildNumber="5111" ReleaseDate="2001-10-25T00:00:00Z" DisplayName="Windows XP - Beta" PlatformId="55041" />
 		<WinBuild BuildNumber="20279" ReleaseDate="2020-09-22T00:00:00Z" DisplayName="Windows 10X" PlatformId="3612" MayBeServer="true" />
 		<WinBuild BuildNumber="7224" ReleaseDate="2003-03-28T00:00:00Z" DisplayName="Windows Essential Business Server 2008 R2" PlatformId="55041" MayBeServer="true" />
-
-
 	</WinBuilds>
 
 	<CsvlkItems>
@@ -718,7 +644,7 @@
 				<SkuItem DisplayName="Windows 8.1 Embedded Industry Enterprise" Id="cd4e2d9f-5059-4a50-a92d-05d5bb1267c7" Gvlk="FNFKF-PWTVT-9RC8H-32HB2-JB34X" />
 			</KmsItem>
 
-			<KmsItem DisplayName="Windows Preview" Id="5f94a0bb-d5a0-4081-a685-5819418b2fe0" DefaultKmsProtocol="5.0">
+			<KmsItem DisplayName="Windows Preview" Id="5f94a0bb-d5a0-4081-a685-5819418b2fe0" IsPreview="false" DefaultKmsProtocol="5.0">
 				<SkuItem DisplayName="Windows 10 Enterprise Preview" Id="cde952c7-2f96-4d9d-8f2b-2d349f64fc51" Gvlk="2MP7K-98NK8-WPVF3-Q2WDG-VMD98" />
 				<SkuItem DisplayName="Windows 10 Professional Preview" Id="a4383e6b-dada-423d-a43d-f25678429676" Gvlk="MTWNQ-CKDHJ-3HXW9-Q2PFX-WB2HQ" />
 				<SkuItem DisplayName="Windows 10 Professional WMC Preview" Id="cf59a07b-1a2a-4be0-bfe0-423b5823e663" Gvlk="MY4N9-TGH34-4X4VY-8FG2T-RRDPV" />
@@ -785,7 +711,7 @@
 				<SkuItem DisplayName="Windows Server 2016 Standard (Semi-Annual Channel)" Id="61c5ef22-f14f-4553-a824-c4b31e84b100" Gvlk="PTXN8-JFHJM-4WC78-MPCBR-9W4KR" />
 			</KmsItem>
 
-			<KmsItem DisplayName="Windows Server Preview" Id="6d5f5270-31ac-433e-b90a-39892923c657" IsPreview="true" DefaultKmsProtocol="6.0" NCountPolicy="5">
+			<KmsItem DisplayName="Windows Server Preview" Id="6d5f5270-31ac-433e-b90a-39892923c657" DefaultKmsProtocol="6.0" NCountPolicy="5">
 				<SkuItem DisplayName="Windows Server 2016 Datacenter Preview" Id="ba947c44-d19d-4786-b6ae-22770bc94c54" Gvlk="VRDD2-NVGDP-K7QG8-69BR4-TVFHB" />
 			</KmsItem>
 
@@ -845,7 +771,7 @@
 				<SkuItem DisplayName="Office Word 2013" Id="d9f5b1c6-5386-495a-88f9-9ad6b41ac9b3" Gvlk="6Q7VD-NX8JD-WJ2VH-88V73-4GBJ7" />
 			</KmsItem>
 
-			<KmsItem DisplayName="Office 2013 (Pre-Release)" Id="aa4c7968-b9da-4680-92b6-acb25e2f866c" CanMapToDefaultCsvlk="false" DefaultKmsProtocol="5.0" NCountPolicy="5">
+			<KmsItem DisplayName="Office 2013 (Pre-Release)" Id="aa4c7968-b9da-4680-92b6-acb25e2f866c" IsPreview="false" CanMapToDefaultCsvlk="false" DefaultKmsProtocol="5.0" NCountPolicy="5">
 				<SkuItem DisplayName="Office Access 2013 (Pre-Release)" Id="44b538e2-fb34-4732-81e4-644c17d2e746" Gvlk="DJBH8-RGN7Q-836KD-DMP3M-DM9MF" />
 				<SkuItem DisplayName="Office Excel 2013 (Pre-Release)" Id="9373bfa0-97b3-4587-ab73-30934461d55c" Gvlk="Q3BNP-3WXDT-GG8HF-24KMW-HMDBK" />
 				<SkuItem DisplayName="Office Groove 2013 (Pre-Release)" Id="aa286eb4-556f-4eeb-967c-c1b771b7673e" Gvlk="WVCGG-NK4FG-7XKXM-BD4WF-3C624" />
@@ -921,49 +847,38 @@
 				<SkuItem DisplayName="Office Visio LTSC Standard 2021" Id="72fce797-1884-48dd-a860-b2f6a5efd3ca" Gvlk="MJVNY-BYWPY-CWV6J-2RKRT-4M8QG" />
 				<SkuItem DisplayName="Office Word LTSC 2021" Id="abe28aea-625a-43b1-8e30-225eb8fbd9e5" Gvlk="TN8H9-M34D3-Y64V9-TR72V-X79KV" />
 			</KmsItem>
+
 		</AppItem>
 
-
-		<!-- From there, these keys are manually added and cannot be activated by using automated KMS scripting module (e.g. slmgr.vbs). All are required to copy and paste manually -->
-
-		<!-- Microsoft Visual Studio -->
 		<AppItem DisplayName="Microsoft Visual Studio" VlmcsdIndex="4" Id="4546a6aa-ffa5-4b89-8e5f-4c59d79a132e" MinActiveClients="90">
 
-			<!-- Microsoft Visual Studio 2019 -->
 			<KmsItem DisplayName="Microsoft Visual Studio 2019" Id="eff7ed0a-bcc6-4c2f-a3c2-daa8cf922fe3" IsPreview="false" CanMapToDefaultCsvlk="false" DefaultKmsProtocol="6.0" NCountPolicy="5">
-				<SkuItem DisplayName="Microsoft Visual Studio 2019 Professional" Id="561e94aa-8d78-4cb8-beef-3c6d3ee64fee" Gvlk="NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y"  />
-				<SkuItem DisplayName="Microsoft Visual Studio 2019 Enterprise" Id="b21b5d34-e9aa-4884-8cee-6ee921d0021d" Gvlk="BF8Y8-GN2QH-T84XB-QVY3B-RC4DF"  />
+				<SkuItem DisplayName="Microsoft Visual Studio 2019 Professional" Id="561e94aa-8d78-4cb8-beef-3c6d3ee64fee" Gvlk="NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y" />
+				<SkuItem DisplayName="Microsoft Visual Studio 2019 Enterprise" Id="b21b5d34-e9aa-4884-8cee-6ee921d0021d" Gvlk="BF8Y8-GN2QH-T84XB-QVY3B-RC4DF" />
 			</KmsItem>
 
-			<!-- Microsoft Visual Studio 2022 -->
 			<KmsItem DisplayName="Microsoft Visual Studio 2022" Id="e5aaa8eb-afb7-435c-b05a-52f67ab274f0" IsPreview="false" CanMapToDefaultCsvlk="false" DefaultKmsProtocol="6.0" NCountPolicy="5">
-				<SkuItem DisplayName="Microsoft Visual Studio 2022 Professional" Id="99f43543-e651-4d36-a1d5-0cccfcd3197e" Gvlk="TD244-P4NB7-YQ6XK-Y8MMM-YWV2J"  />
-				<SkuItem DisplayName="Microsoft Visual Studio 2022 Enterprise" Id="7c35fadf-55a3-4c29-b88f-a5fa7536fee7" Gvlk="VHF9H-NXBBB-638P6-6JHCY-88JWH"  />
+				<SkuItem DisplayName="Microsoft Visual Studio 2022 Professional" Id="99f43543-e651-4d36-a1d5-0cccfcd3197e" Gvlk="TD244-P4NB7-YQ6XK-Y8MMM-YWV2J" />
+				<SkuItem DisplayName="Microsoft Visual Studio 2022 Enterprise" Id="7c35fadf-55a3-4c29-b88f-a5fa7536fee7" Gvlk="VHF9H-NXBBB-638P6-6JHCY-88JWH" />
 			</KmsItem>
 
 		</AppItem>
 
-		<!-- Microsoft SQL Server -->
 		<AppItem DisplayName="Microsoft SQL Server (Can only be applied manually)" VlmcsdIndex="5" Id="c7a57faa-4db3-46e4-8af6-a17073eff52a" MinActiveClients="999">
 
-
-			<!-- Microsoft SQL Server 2022 -->
-			<KmsItem DisplayName="Microsoft SQL Server 2022" Id="992181e4-1c7c-4e77-bd7f-a733a92ae5eb" IsPreview="true" CanMapToDefaultCsvlk="false" DefaultKmsProtocol="6.0" NCountPolicy="5">
-				<!-- SkuItem DisplayName="Microsoft SQL Server 2022 Evaluation" Id="4631be90-5cf2-4448-a734-48e89f3664a4" Gvlk="00000-00000-00000-00000-00000"  /-->
-				<!--SkuItem DisplayName="Microsoft SQL Server 2022 Express" Id="7d90e77c-e275-4153-807c-c93c68bfa507" Gvlk="11111-00000-00000-00000-00000"  /-->
-				<!-- SkuItem DisplayName="Microsoft SQL Server 2022 Developer" Id="a3a4be0b-7fc9-42ab-a543-bbf17fffa543" Gvlk="22222-00000-00000-00000-00000"  /-->
-				<SkuItem DisplayName="Microsoft SQL Server 2022 Enterprise" Id="a3a4be0b-7fc9-42ab-a543-bbf17fffa543" Gvlk="J4V48-P8MM4-9N3J9-HD97X-DYMRM"  />
+			<KmsItem DisplayName="Microsoft SQL Server 2022" Id="992181e4-1c7c-4e77-bd7f-a733a92ae5eb" CanMapToDefaultCsvlk="false" DefaultKmsProtocol="6.0" NCountPolicy="5">
+				<SkuItem DisplayName="Microsoft SQL Server 2022 Enterprise" Id="a3a4be0b-7fc9-42ab-a543-bbf17fffa543" Gvlk="J4V48-P8MM4-9N3J9-HD97X-DYMRM" />
 			</KmsItem>
 
 		</AppItem>
 
-		<!-- Microsoft SCCM -->
 		<AppItem DisplayName="Microsoft SCCM (Can only be applied manually)" VlmcsdIndex="6" Id="0aaa530a-244d-4995-a624-453047120945" MinActiveClients="999">
-			<KmsItem DisplayName="Microsoft SCCM 2022" Id="584dd428-dfed-4323-8bf4-1f0013e48ffd" IsPreview="false" CanMapToDefaultCsvlk="false" DefaultKmsProtocol="6.0" NCountPolicy="5">
-				<SkuItem DisplayName="Microsoft SCCM 2022 Enterprise" Id="9293d63f-b207-4db1-9ef5-d59f156ea484" Gvlk="BXH69-M62YX-QQD6R-3GPWX-8WMFY"  />
-			</KmsItem>
-		</AppItem>
 
+			<KmsItem DisplayName="Microsoft SCCM 2022" Id="584dd428-dfed-4323-8bf4-1f0013e48ffd" IsPreview="false" CanMapToDefaultCsvlk="false" DefaultKmsProtocol="6.0" NCountPolicy="5">
+				<SkuItem DisplayName="Microsoft SCCM 2022 Enterprise" Id="9293d63f-b207-4db1-9ef5-d59f156ea484" Gvlk="BXH69-M62YX-QQD6R-3GPWX-8WMFY" />
+			</KmsItem>
+
+		</AppItem>
 
 	</AppItems>
 

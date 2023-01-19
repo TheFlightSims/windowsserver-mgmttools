@@ -6,16 +6,14 @@
         >
     <StackPanel Name="TopElement">
         <TextBlock Margin="5,5,5,5" TextWrapping="Wrap">
-            Specifiy a remote computer. This can be a DNS name, a NetBios name,
-            an IP adress (IPv4 or IPv6) or anything else that Windows accepts as
-            a valid computer name. IDN domain names are allowed.
+            Specifiy a remote computer using DNS name, or IP Address
         </TextBlock>
         <Grid Name="MainGrid">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Label Grid.Column="0" Margin="5,5,0,5" Style="{StaticResource StandardLabel}">Computername</Label>
+            <Label Grid.Column="0" Margin="5,5,0,5" Style="{StaticResource StandardLabel}">Computer Name</Label>
             <TextBox Name="TextBoxComputername" Grid.Column="1" Margin="0,5,5,5" Style="{StaticResource StandardTextBox}" IsReadOnly="False" />
         </Grid>
         <CheckBox Name="CheckBoxShowUi" ToolTip="Check this if you do not want to use saved credentials but specify them manually" Margin="5,5,5,5">Change Credentials</CheckBox>

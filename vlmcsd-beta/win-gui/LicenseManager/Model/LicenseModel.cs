@@ -1,6 +1,12 @@
-﻿using HGM.Hotbird64.LicenseManager.Contracts;
-using HGM.Hotbird64.LicenseManager.Extensions;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
 using System.Management;
+using System.Text;
+using System.Threading.Tasks;
+using HGM.Hotbird64.LicenseManager.Contracts;
+using HGM.Hotbird64.LicenseManager.Extensions;
 
 namespace HGM.Hotbird64.LicenseManager.Model
 {

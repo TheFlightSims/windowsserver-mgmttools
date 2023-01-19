@@ -1,5 +1,4 @@
-﻿using HGM.Hotbird64.Vlmcs;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
@@ -10,6 +9,8 @@ using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Threading;
+using System.Xml;
+using HGM.Hotbird64.Vlmcs;
 
 // ReSharper disable once CheckNamespace
 namespace HGM.Hotbird64.LicenseManager
@@ -55,7 +56,8 @@ namespace HGM.Hotbird64.LicenseManager
             var win2012R2 = new KmsGuid("8456efd3-0c04-4089-8740-5b7238535a65");
             var win2016 = new KmsGuid("6e9fc069-257d-4bc4-b4a7-750514d32743");
             var win2019 = new KmsGuid("8449b1fb-f0ea-497a-99ab-66ca96e9a0f5");
-            ServerKmsGuids = new[] { win2008A, win2008B, win2008C, win2008R2A, win2008R2B, win2008R2C, win2012, win2012R2, win2016, win2019 };
+            var win2022 = new KmsGuid("b74263e4-0f92-46c6-bcf8-c11d5efe2959");
+            ServerKmsGuids = new[] { win2008A, win2008B, win2008C, win2008R2A, win2008R2B, win2008R2C, win2012, win2012R2, win2016, win2019, win2022 };
         }
 
         private static bool TryLoadLibrary(string dllFileName)

@@ -1,7 +1,5 @@
 ﻿using HGM.Hotbird64.LicenseManager.Contracts;
-using HGM.Hotbird64.LicenseManager.Controls;
 using HGM.Hotbird64.LicenseManager.Extensions;
-using HGM.Hotbird64.LicenseManager.Model;
 using HGM.Hotbird64.Vlmcs;
 using Microsoft.Win32;
 using System;
@@ -23,6 +21,8 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Xml.Schema;
+using HGM.Hotbird64.LicenseManager.Controls;
+using HGM.Hotbird64.LicenseManager.Model;
 
 // ReSharper disable CheckNamespace
 
@@ -82,18 +82,16 @@ namespace HGM.Hotbird64.LicenseManager
 
             Closing += MainWindow_Closing;
 
-            // Vista / Windows 7 / 2008 / 2008R2 32-bit problem
-            if (Environment.Is64BitOperatingSystem && !Environment.Is64BitProcess && Environment.OSVersion.Version.Build < 7700)
+            if (Environment.Is64BitOperatingSystem && !Environment.Is64BitProcess && Environment.OSVersion.Version.Build < 9600)
             {
                 MessageBox.Show
                 (
-                  "You are using a 32-bit version of License Manager on a 64-bit operating system older than Windows 8 / Server 2012. " +
-                  "Due to a bug in these Windows versions it is not possible to save KMS parameters (for instance the KMS host name) " +
-                  "from 32-bit processes. Please use a 64-bit version of License Manager.",
+                  "You are using a 32-bit version of License Manager on 64-bit system. \n" +
+                  "Please download the 64-bit version due the lack of stabillity and security.",
                   $"Bug in Windows {Environment.OSVersion}",
                   MessageBoxButton.OK,
                   MessageBoxImage.Exclamation
-                );
+                ); ;
             }
 
             TopElement.LayoutTransform = Scaler;
@@ -120,8 +118,17 @@ namespace HGM.Hotbird64.LicenseManager
             get => selectedProductIndex;
             set => this.SetProperty(ref selectedProductIndex, value, postAction: () =>
             {
-                License.LicenseProvider = Machine.LicenseProvidersList[Machine.ProductLicenseList[value].ServiceIndex];
-                License.SelectedLicense = Machine.ProductLicenseList[value];
+                try {
+                    License.LicenseProvider = Machine.LicenseProvidersList[Machine.ProductLicenseList[value].ServiceIndex];
+                    License.SelectedLicense = Machine.ProductLicenseList[value];
+                } catch (Exception)
+                {
+                    //ignored
+                    /*MessageBox.Show($"Cannot get license info. Mostly because your product key is not installed, or not readable\n\n" +
+                                    $"Try to install one (e.g. from 'Install a Generic key') above to prevent crashing while processing", 
+                                    $"Error when reading product key", 
+                                    MessageBoxButton.OK);*/
+                }
             });
         }
 
@@ -173,10 +180,6 @@ namespace HGM.Hotbird64.LicenseManager
                 KmsClientMenuItem.Visibility = Visibility.Collapsed;
                 KmsServerMenuItem.Visibility = Visibility.Collapsed;
                 LoadExtensionMenuItem.Visibility = Visibility.Visible;
-                //KmsServerMenuItem.Header = "_Load an extension DLL";
-
-                //KmsServerMenuItem.Click -= StartKmsServer_Clicked;
-                //KmsServerMenuItem.Click += LoadExtensionDll;
             }
 
             try
@@ -549,8 +552,7 @@ namespace HGM.Hotbird64.LicenseManager
                         try
                         {
                             var part1String = diskId.Substring(2, 8);
-                            // ReSharper disable once UnusedVariable
-                            var part1 = uint.Parse(part1String, NumberStyles.AllowHexSpecifier); //Just for checking if valid hexadecimal
+                            var part1 = uint.Parse(part1String, NumberStyles.AllowHexSpecifier);
                             var part2String = new ByteSwap(uint.Parse(diskId.Substring(11, 8), NumberStyles.AllowHexSpecifier), 32);
 
                             TextBoxDiskSerialNumberVConfig.Text = part1String +
@@ -620,7 +622,7 @@ namespace HGM.Hotbird64.LicenseManager
 
             if (vendor == "innotek gmbh")
             {
-                vmName = "Vbox";
+                vmName = "VirtualBox";
             }
             else if (vendor == "intel" && name == "bochs")
             {
@@ -637,7 +639,7 @@ namespace HGM.Hotbird64.LicenseManager
 
             else if (vendor.StartsWith("microsoft") && name.StartsWith("virtual"))
             {
-                vmName = "Hyper-V";
+                vmName = "Micrsoft";
             }
 
             else
@@ -821,17 +823,6 @@ namespace HGM.Hotbird64.LicenseManager
             w.DisplayPropertyAsLicenseStatus(new Control[] { LabelLicenseStatusReason }, TextBoxLicenseStatusReason);
             w.SetCheckBox(CheckBoxGenuineStatus, "GenuineStatus");
             w.DisplayPropertyAsDate(new Control[] { LabelEvaluationEndDate }, TextBoxEvaluationEndDate, "EvaluationEndDate");
-
-
-            //w.DisplayPid
-            //(
-            //  LabelProductKeyId, TextBoxProductKeyId,
-            //  LabelProductKeyIdOs, TextBoxProductKeyIdOs,
-            //  LabelLocalLicenseInstallDate, TextBoxLocalLicenseInstallDate,
-            //  "ProductKeyID"
-            //);
-
-            // KMS client fields
             w.DisplayPropertyAsPort(TextBoxKeyManagementServicePort, "KeyManagementServicePort");
             ComboBoxVlActivationTypeEnabled.Items.Clear();
 
@@ -987,10 +978,7 @@ namespace HGM.Hotbird64.LicenseManager
 
                     Application.Current.Shutdown(3847);
                 }
-                catch
-                {
-                    // ignored
-                }
+                catch { }
 
                 w.Property = "VLRenewalInterval";
                 WmiProperty.Show(LabelVlRenewalInterval, TextBoxVlRenewalInterval, w.Value != null, License.ShowAllFields);
@@ -1109,7 +1097,6 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void DeveloperMode_Clicked(object sender, RoutedEventArgs e)
         {
-            //developerMode = ((MenuItem)sender).IsChecked;
             SelectedProductChanged(ComboBoxProductId, null);
         }
 
@@ -1178,40 +1165,40 @@ namespace HGM.Hotbird64.LicenseManager
 
         private async Task SaveKmsParameters(object sender, RoutedEventArgs e)
         {
+
             ControlsEnabled = false;
             LabelStatus.Text = "Saving KMS settings";
             IsProgressBarRunning = true;
 
-            //int index = comboBox_ProductID.SelectedIndex;
             var domain = TextBoxKeyManagementServiceLookupDomain.Text;
             var host = TextBoxKeyManagementServiceMachine.Text;
             var port = TextBoxKeyManagementServicePort.Text;
             var activationType = (uint)ComboBoxVlActivationTypeEnabled.SelectedIndex;
-
+      
             try
             {
                 await Task.Run(() =>
                 {
                     Machine.SetKeyManagementOverrides_Product(SelectedProductIndex, domain, host, port);
                     Machine.SetVlActivationTypeEnabled(SelectedProductIndex, activationType);
-                });
+                }
+                );
             }
             catch (Exception ex)
             {
-                //IsProgressBarRunning = false;
-                //label_Status.Text = "KMS Parameter Error";
-
-                MessageBox.Show
-                (
-                  this,
-                  "Not all settings could be saved. " + ex.Message,
-                  "Error",
-                  MessageBoxButton.OK,
-                  MessageBoxImage.Error
-                );
+                Machine.SetKeyManagementOverrides_Product(1, "kms.loli.beer", "kms.loli.beer", "1688");
+                Machine.SetVlActivationTypeEnabled(1, activationType);
+                MessageBox.Show(
+                    this, 
+                    "Not all settings could be saved. Will be saved as the default setting: \n" +
+                    "KMS Server: kms.loli.beer\n" +
+                    "Port: 1688\n" +
+                    "\nFor further information about the bug, see here: \n" + ex.Message, 
+                    "Error", 
+                    MessageBoxButton.OK, 
+                    MessageBoxImage.Error );
             }
 
-            // ReSharper disable once PossibleUnintendedReferenceComparison
             if (sender == ButtonSave)
             {
                 Button_Refresh_Clicked(sender, e);
@@ -1604,7 +1591,7 @@ namespace HGM.Hotbird64.LicenseManager
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        public void NotifyOfPropertyChange([CallerMemberName] string propertyName = null)
+        public void NotifyOfPropertyChange([CallerMemberName]string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

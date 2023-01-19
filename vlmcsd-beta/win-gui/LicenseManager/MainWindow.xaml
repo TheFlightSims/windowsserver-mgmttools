@@ -341,7 +341,7 @@
                                 <Style BasedOn="{StaticResource StandardLabel}" TargetType="Label"/>
                             </Grid.Resources>
 
-                            <Label Grid.Row="0" Grid.Column="0" Content="SKU ID" Visibility="{Binding ElementName=SkuIdBox, Path=Visibility}"/>
+                            <Label Grid.Row="0" Grid.Column="0" Content="SKU ID" Visibility="{Binding ElementName=SkuIdBox, Path=Visibility}" HorizontalAlignment="Left"/>
                             <ctrls:WmiPropertyBox x:Name="SkuIdBox" Grid.Row="0" Grid.Column="1" WmiProperty="{Binding License}" PropertyName="ID" Converter="{co:WmiGuid}">
                                 <ctrls:WmiPropertyBox.CommandBindings>
                                     <CommandBinding Command="{x:Static local:MainWindow.CheckEpid}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed" />
@@ -353,19 +353,19 @@
                                 </ctrls:WmiPropertyBox.ContextMenu>
                             </ctrls:WmiPropertyBox>
 
-                            <Label Grid.Row="1" Grid.Column="0" Content="Application ID" Visibility="{Binding ElementName=AppIdBox, Path=Visibility}"/>
+                            <Label Grid.Row="1" Grid.Column="0" Content="Application ID" Visibility="{Binding ElementName=AppIdBox, Path=Visibility}" HorizontalAlignment="Left"/>
                             <ctrls:WmiPropertyBox x:Name="AppIdBox" Grid.Row="1" Grid.Column="1" WmiProperty="{Binding License}" PropertyName="ApplicationID" Converter="{co:WmiGuid}"/>
 
                             <Label Grid.Row="2" Grid.Column="0" Content="Last Status Change" Visibility="{Binding ElementName=LocalLicenseInstallDateBox, Path=Visibility}"/>
                             <ctrls:WmiPropertyBox x:Name="LocalLicenseInstallDateBox" Grid.Row="2" Grid.Column="1" WmiProperty="{Binding License}" PropertyName="ProductKeyID" Converter="{co:WmiEpidDate}"/>
 
-                            <Label Grid.Row="3" Grid.Column="0" Content="Licensing Service" Visibility="{Binding ElementName=ServiceClassNameBox, Path=Visibility}"/>
+                            <Label Grid.Row="3" Grid.Column="0" Content="Licensing Service" Visibility="{Binding ElementName=ServiceClassNameBox, Path=Visibility}" HorizontalAlignment="Left"/>
                             <ctrls:WmiPropertyBox x:Name="ServiceClassNameBox" Grid.Row="3" Grid.Column="1" WmiProperty="{Binding License}" PropertyName="ID" Converter="{co:WmiLicenseClassName}"/>
 
-                            <Label Grid.Row="4" Grid.Column="0" Content="Phone Installation ID"  Visibility="{Binding ElementName=PhoneInstallationIdBox, Path=Visibility}"/>
+                            <Label Grid.Row="4" Grid.Column="0" Content="Phone Installation ID"  Visibility="{Binding ElementName=PhoneInstallationIdBox, Path=Visibility}" HorizontalAlignment="Left"/>
                             <ctrls:WmiPropertyBox x:Name="PhoneInstallationIdBox" Grid.Row="4" Grid.Column="1" WmiProperty="{Binding License}" PropertyName="OfflineInstallationId" Converter="{co:WmiPhoneInstallationId}"/>
 
-                            <Label Grid.Row="5" Grid.Column="0" Content="Extended PID" Visibility="{Binding ElementName=EpidBox, Path=Visibility}"/>
+                            <Label Grid.Row="5" Grid.Column="0" Content="Extended PID" Visibility="{Binding ElementName=EpidBox, Path=Visibility}" HorizontalAlignment="Left"/>
                             <ctrls:WmiPropertyBox x:Name="EpidBox" Grid.Row="5" Grid.Column="1" WmiProperty="{Binding License}" PropertyName="ProductKeyID" Converter="{co:WmiProperty}">
                                 <ctrls:WmiPropertyBox.CommandBindings>
                                     <CommandBinding Command="{x:Static local:MainWindow.CheckEpid}" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed" />
@@ -377,19 +377,19 @@
                                 </ctrls:WmiPropertyBox.ContextMenu>
                             </ctrls:WmiPropertyBox>
 
-                            <Label Grid.Row="6" Grid.Column="0" Content="Product OS" Visibility="{Binding Visibility, ElementName=OsBox}"/>
+                            <Label Grid.Row="6" Grid.Column="0" Content="Product OS" Visibility="{Binding Visibility, ElementName=OsBox}" HorizontalAlignment="Left"/>
                             <ctrls:WmiPropertyBox x:Name="OsBox" Grid.Row="6" Grid.Column="1" WmiProperty="{Binding License}" PropertyName="ProductKeyID" Converter="{co:WmiEpidOs}"/>
 
-                            <Label Grid.Row="7" Grid.Column="0" Content="Partial Product Key" Visibility="{Binding Visibility, ElementName=PartialProductKeyBox}"/>
+                            <Label Grid.Row="7" Grid.Column="0" Content="Partial Product Key" Visibility="{Binding Visibility, ElementName=PartialProductKeyBox}" HorizontalAlignment="Left"/>
                             <ctrls:WmiPropertyBox x:Name="PartialProductKeyBox" Grid.Row="7" Grid.Column="1" WmiProperty="{Binding License}" PropertyName="PartialProductKey" Converter="{co:WmiPropertyAddLicenseType}"/>
 
-                            <Label Name="LabelLicenseStatusReason" Grid.Row="8" Grid.Column="0" Style="{StaticResource StandardLabel}" Content="License Status" />
+                            <Label Name="LabelLicenseStatusReason" Grid.Row="8" Grid.Column="0" Style="{StaticResource StandardLabel}" Content="License Status" HorizontalAlignment="Left"/>
                             <TextBox Name="TextBoxLicenseStatusReason" Grid.Row="8" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
 
-                            <Label Name="LabelGracePeriodRemaining" Grid.Row="9" Grid.Column="0" Style="{StaticResource StandardLabel}" Content="Current Status Remains" />
+                            <Label Name="LabelGracePeriodRemaining" Grid.Row="9" Grid.Column="0" Style="{StaticResource StandardLabel}" Content="Current Status Remains" HorizontalAlignment="Left"/>
                             <TextBox Name="TextBoxGracePeriodRemaining" Grid.Row="9" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
 
-                            <Label Name="LabelEvaluationEndDate" Grid.Row="10" Grid.Column="0" Style="{StaticResource StandardLabel}" Content="License Expires" />
+                            <Label Name="LabelEvaluationEndDate" Grid.Row="10" Grid.Column="0" Style="{StaticResource StandardLabel}" Content="License Expires" HorizontalAlignment="Left"/>
                             <TextBox Name="TextBoxEvaluationEndDate" Grid.Row="10" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
 
                             <StackPanel Grid.Row="11" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Width="Auto" Margin="0,0,5,0">
@@ -421,11 +421,9 @@
                                 <RowDefinition />
                             </Grid.RowDefinitions>
 
-                            <Label Name="LabelKeyManagementServiceLookupDomain" Grid.Row="0" Grid.Column="0" Style="{StaticResource StandardLabel}">Domain for KMS Detection</Label>
-                            <TextBox Name="TextBoxKeyManagementServiceLookupDomain" Grid.Row="0" Grid.Column="1" Style="{StaticResource StandardTextBox}" IsReadOnly="False"
-                  TextChanged="KmsParameters_TextChanged" />
-
-                            <Label Name="LabelDiscoveredKeyManagementServiceMachineName" Grid.Row="1" Grid.Column="0" Style="{StaticResource StandardLabel}">Hostname:Port (Detected)</Label>
+                            <Label Name="LabelKeyManagementServiceLookupDomain" Grid.Row="0" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">Detected KMS Domain</Label>
+                            <TextBox Name="TextBoxKeyManagementServiceLookupDomain" Grid.Row="0" Grid.Column="1" Style="{StaticResource StandardTextBox}" IsReadOnly="False" TextChanged="KmsParameters_TextChanged" />
+                            <Label Name="LabelDiscoveredKeyManagementServiceMachineName" Grid.Row="1" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">Detected KMS Server</Label>
                             <Grid Grid.Row="1" Grid.Column="1">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*" />
@@ -437,7 +435,7 @@
                                 <TextBox Name="TextBoxDiscoveredKeyManagementServiceMachinePort" Grid.Column="2" Style="{StaticResource StandardTextBox}" />
                             </Grid>
 
-                            <Label Name="LabelKeyManagementServiceMachine" Grid.Row="2" Grid.Column="0" Style="{StaticResource StandardLabel}">Hostname:Port (Override)</Label>
+                            <Label Name="LabelKeyManagementServiceMachine" Grid.Row="2" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">Override KMS Host data</Label>
                             <Grid Grid.Row="2" Grid.Column="1">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*" />
@@ -451,10 +449,10 @@
                     TextChanged="KmsParameters_TextChanged" />
                             </Grid>
 
-                            <Label Name="LabelDiscoveredKeyManagementServiceMachineIpAddress" Grid.Row="3" Grid.Column="0" Style="{StaticResource StandardLabel}">IP of Last Activation</Label>
+                            <Label Name="LabelDiscoveredKeyManagementServiceMachineIpAddress" Grid.Row="3" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">Last Activation IP</Label>
                             <TextBox Name="TextBoxDiscoveredKeyManagementServiceMachineIpAddress" Grid.Row="3" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
 
-                            <Label Name="LabelKeyManagementServiceProductKeyId" Grid.Row="4" Grid.Column="0" Style="{StaticResource StandardLabel}">Host Extended PID</Label>
+                            <Label Name="LabelKeyManagementServiceProductKeyId" Grid.Row="4" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">Host Extended PID</Label>
                             <TextBox Name="TextBoxKeyManagementServiceProductKeyId" Grid.Row="4" Grid.Column="1" Style="{StaticResource StandardTextBox}"
                   MouseDoubleClick="textBox_Epid_MouseDoubleClick">
                                 <TextBox.CommandBindings>
@@ -468,17 +466,17 @@
                                 </TextBox.ContextMenu>
                             </TextBox>
 
-                            <Label Name="LabelKmsOs" Grid.Row="5" Grid.Column="0" Style="{StaticResource StandardLabel}">KMS Host OS</Label>
+                            <Label Name="LabelKmsOs" Grid.Row="5" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">KMS Host OS</Label>
                             <TextBox Name="TextBoxKmsOs" Grid.Row="5" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
 
-                            <Label Name="LabelKmsActivationDate" Grid.Row="6" Grid.Column="0" Style="{StaticResource StandardLabel}">KMS Host Activation Date</Label>
+                            <Label Name="LabelKmsActivationDate" Grid.Row="6" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">KMS Host Activation Date</Label>
                             <TextBox Name="TexBoxKmsActivationDate" Grid.Row="6" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
 
-                            <Label IsEnabled="{Binding ElementName=TextBoxCsvlk, Path=IsEnabled}" Visibility="{Binding ElementName=TextBoxCsvlk, Path=Visibility}" Grid.Row="7" Grid.Column="0" Style="{StaticResource StandardLabel}">KMS Host CSVLK Name</Label>
+                            <Label IsEnabled="{Binding ElementName=TextBoxCsvlk, Path=IsEnabled}" Visibility="{Binding ElementName=TextBoxCsvlk, Path=Visibility}" Grid.Row="7" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">KMS Host CSVLK Name</Label>
                             <TextBox ToolTipService.ShowDuration="30000" Name="TextBoxCsvlk" Grid.Row="7" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
 
                             <Label Visibility="{Binding ElementName=DataGrid, Path=Visibility}" Margin="0,5,0,5" ToolTip="{Binding ElementName=DataGrid, Path=ToolTip}"
-                  Style="{StaticResource StandardLabel}" Grid.Column="0" Grid.Row="8" Content="Valid KMS IDs" VerticalAlignment="Top" />
+                  Style="{StaticResource StandardLabel}" Grid.Column="0" Grid.Row="8" Content="Valid KMS IDs" VerticalAlignment="Top" HorizontalAlignment="Left"/>
 
                             <DataGrid HorizontalScrollBarVisibility="Auto" ColumnWidth="Auto" Margin="0,5,0,5" x:Name="DataGrid" GridLinesVisibility="Horizontal" LoadingRow="DataGrid_LoadingRow"
                   HorizontalGridLinesBrush="LightGray" VerticalGridLinesBrush="LightGray" AutoGenerateColumns="False" Grid.Row="8" Grid.Column="1" Width="Auto"
@@ -493,13 +491,13 @@
                                 </DataGrid.Columns>
                             </DataGrid>
 
-                            <Label Name="LabelVlRenewalInterval" Grid.Row="9" Grid.Column="0" Style="{StaticResource StandardLabel}">Activation Renewal Interval</Label>
+                            <Label Name="LabelVlRenewalInterval" Grid.Row="9" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">Activation Renewal Interval</Label>
                             <TextBox Name="TextBoxVlRenewalInterval" Grid.Row="9" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
 
-                            <Label Name="LabelVlActivationInterval" Grid.Row="10" Grid.Column="0" Style="{StaticResource StandardLabel}">Activation Retry Interval</Label>
+                            <Label Name="LabelVlActivationInterval" Grid.Row="10" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">Activation Retry Interval</Label>
                             <TextBox Name="TextBoxVlActivationInterval" Grid.Row="10" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
 
-                            <Label Name="LabelVlActivationTypeEnabled" Grid.Row="11" Grid.Column="0" Style="{StaticResource StandardLabel}">Activation Method</Label>
+                            <Label Name="LabelVlActivationTypeEnabled" Grid.Row="11" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">Activation Method</Label>
                             <Grid Grid.Row="11" Grid.Column="1">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*" />
@@ -602,47 +600,47 @@
                                 <RowDefinition />
                                 <RowDefinition />
                             </Grid.RowDefinitions>
-                            <Label Name="LabelHardwareVendor" HorizontalContentAlignment="Right" Grid.Row="0" Grid.Column="0">Hardware/VM Vendor</Label>
+                            <Label Name="LabelHardwareVendor" HorizontalContentAlignment="Right" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left">Hardware/VM Vendor</Label>
                             <TextBox Name="TextBoxHardwareVendor" Grid.Row="0" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelHardwareName" HorizontalContentAlignment="Right" Grid.Row="1" Grid.Column="0">Hardware/VM Name</Label>
+                            <Label Name="LabelHardwareName" HorizontalContentAlignment="Right" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left">Hardware/VM Name</Label>
                             <TextBox Name="TextBoxHardwareName" Grid.Row="1" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelOsCaption" Grid.Row="2" HorizontalContentAlignment="Right" Grid.Column="0">OS Name</Label>
+                            <Label Name="LabelOsCaption" Grid.Row="2" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">OS Name</Label>
                             <TextBox Name="TextBoxOsCaption" Grid.Row="2" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelOsInstallDate" Grid.Row="3" HorizontalContentAlignment="Right" Grid.Column="0">OS Install Date</Label>
+                            <Label Name="LabelOsInstallDate" Grid.Row="3" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">OS Install Date</Label>
                             <TextBox Name="TextBoxOsInstallDate" Grid.Row="3" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelOsLocalDateTime" Grid.Row="4" HorizontalContentAlignment="Right" Grid.Column="0">OS Current Time</Label>
+                            <Label Name="LabelOsLocalDateTime" Grid.Row="4" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">OS Current Time</Label>
                             <TextBox Name="TextBoxOsLocalDateTime" Grid.Row="4" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelOsLanguage" Grid.Row="5" HorizontalContentAlignment="Right" Grid.Column="0">OS Language</Label>
+                            <Label Name="LabelOsLanguage" Grid.Row="5" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">OS Language</Label>
                             <TextBox Name="TextBoxOsLanguage" Grid.Row="5" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelOsLocale" Grid.Row="6" HorizontalContentAlignment="Right" Grid.Column="0">OS System Locale</Label>
+                            <Label Name="LabelOsLocale" Grid.Row="6" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">System Locale</Label>
                             <TextBox Name="TextBoxOsLocale" Grid.Row="6" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelCsIdentifyingNumber" Grid.Row="7" HorizontalContentAlignment="Right" Grid.Column="0">System Serial #</Label>
+                            <Label Name="LabelCsIdentifyingNumber" Grid.Row="7" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">System Serial #</Label>
                             <TextBox Name="TextBoxCsIdentifyingNumber" Grid.Row="7" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelChassisManufacturer" Grid.Row="8" HorizontalContentAlignment="Right" Grid.Column="0">Chassis Manufacturer #</Label>
+                            <Label Name="LabelChassisManufacturer" Grid.Row="8" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">Chassis Manufacturer #</Label>
                             <TextBox Name="TextBoxChassisManufacturer" Grid.Row="8" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelChassisSerialNumber" Grid.Row="9" HorizontalContentAlignment="Right" Grid.Column="0">Chassis Serial #</Label>
+                            <Label Name="LabelChassisSerialNumber" Grid.Row="9" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">Chassis Serial #</Label>
                             <TextBox Name="TextBoxChassisSerialNumber" Grid.Row="9" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelChassisSmbiosAssetTag" Grid.Row="10" HorizontalContentAlignment="Right" Grid.Column="0">Chassis Asset Tag</Label>
+                            <Label Name="LabelChassisSmbiosAssetTag" Grid.Row="10" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">Chassis Asset Tag</Label>
                             <TextBox Name="TextBoxChassisSmbiosAssetTag" Grid.Row="10" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelMbManufacturer" Grid.Row="11" HorizontalContentAlignment="Right" Grid.Column="0">Board Manufacturer</Label>
+                            <Label Name="LabelMbManufacturer" Grid.Row="11" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">Board Manufacturer</Label>
                             <TextBox Name="TextBoxMbManufacturer" Grid.Row="11" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelMbProduct" Grid.Row="12" HorizontalContentAlignment="Right" Grid.Column="0">Board Name</Label>
+                            <Label Name="LabelMbProduct" Grid.Row="12" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">Board Name</Label>
                             <TextBox Name="TextBoxMbProduct" Grid.Row="12" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelMbVersion" Grid.Row="13" HorizontalContentAlignment="Right" Grid.Column="0">Board Version</Label>
+                            <Label Name="LabelMbVersion" Grid.Row="13" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">Board Version</Label>
                             <TextBox Name="TextBoxMbVersion" Grid.Row="13" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelMbSerialNumber" Grid.Row="14" HorizontalContentAlignment="Right" Grid.Column="0">Board Serial #</Label>
+                            <Label Name="LabelMbSerialNumber" Grid.Row="14" HorizontalContentAlignment="Right" Grid.Column="0"  HorizontalAlignment="Left">Board Serial #</Label>
                             <TextBox Name="TextBoxMbSerialNumber" Grid.Row="14" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelBiosSerialNumber" Grid.Row="15" HorizontalContentAlignment="Right" Grid.Column="0">BIOS Serial #</Label>
+                            <Label Name="LabelBiosSerialNumber" Grid.Row="15" HorizontalContentAlignment="Right" Grid.Column="0"  HorizontalAlignment="Left">BIOS Serial #</Label>
                             <TextBox Name="TextBoxBiosSerialNumber" Grid.Row="15" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelCsUuid" Grid.Row="16" HorizontalContentAlignment="Right" Grid.Column="0">UUID (Microsoft)</Label>
+                            <Label Name="LabelCsUuid" Grid.Row="16" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">UUID (Microsoft)</Label>
                             <TextBox Name="TextBoxCsUuid" Grid.Row="16" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelCsUuidVConfig" Grid.Row="17" HorizontalContentAlignment="Right" Grid.Column="0">UUID (config)</Label>
+                            <Label Name="LabelCsUuidVConfig" Grid.Row="17" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">UUID (config)</Label>
                             <TextBox Name="TextBoxCsUuidVConfig" Grid.Row="17" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelDiskSerialNumber" Grid.Row="18" HorizontalContentAlignment="Right" Grid.Column="0">OS Disk Serial</Label>
+                            <Label Name="LabelDiskSerialNumber" Grid.Row="18" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">OS Disk Serial</Label>
                             <TextBox Name="TextBoxDiskSerialNumber" Grid.Row="18" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelDiskSerialNumberVConfig" Grid.Row="19" HorizontalContentAlignment="Right" Grid.Column="0">OS Disk (config)</Label>
+                            <Label Name="LabelDiskSerialNumberVConfig" Grid.Row="19" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">OS Disk (config)</Label>
                             <TextBox Name="TextBoxDiskSerialNumberVConfig" Grid.Row="19" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
-                            <Label Name="LabelNic" Grid.Row="20" HorizontalContentAlignment="Right" Grid.Column="0">Mac Addresses</Label>
+                            <Label Name="LabelNic" Grid.Row="20" HorizontalContentAlignment="Right" Grid.Column="0" HorizontalAlignment="Left">MAC Addresses</Label>
                             <ComboBox Name="ComboBoxNic" VerticalAlignment="Center" Grid.Row="20" Grid.Column="1" IsReadOnly="True" />
                         </Grid>
                     </GroupBox>

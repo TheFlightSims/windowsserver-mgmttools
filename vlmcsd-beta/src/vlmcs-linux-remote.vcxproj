@@ -115,13 +115,14 @@
     <RemoteLdToolExe>gcc</RemoteLdToolExe>
     <IncludePath>$(IncludePath);$(ISenseIncludePath);$(ProjectDir)VisualStudio-Linux-Remote\toolchains\gcc5-x86_64-linux-gnu\usr\include</IncludePath>
     <IntDir>$(ProjectDir)vlmcs\obj\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>..\..\..\!bin!\vlmcsd\vlmcsd-core</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>vlmcs-x64-glibc</TargetName>
     <TargetExt />
     <RemoteCCompileToolExe>gcc</RemoteCCompileToolExe>
     <IncludePath>$(IncludePath);$(ISenseIncludePath);$(ProjectDir)VisualStudio-Linux-Remote\toolchains\gcc5-x86_64-linux-gnu\usr\include</IncludePath>
-    <OutDir>..\..\..\!bin!\vlmcsd\vlmcs-gcc5</OutDir>
+    <OutDir>..\..\!bin!\vlmcsd\vlmcsd-core</OutDir>
     <RemoteLdToolExe>gcc</RemoteLdToolExe>
     <IntDir>$(ProjectDir)vlmcs\obj\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>

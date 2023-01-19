@@ -34,35 +34,35 @@
                 <GroupBox Name="GroupBoxHost" Grid.Column="0" Margin="5,5,5,5" Header="KMS Host Statistics">
                     <WrapPanel>
                         <DockPanel Width="160">
-                            <Label Name="LabelRequiredClientCount" Width="120" HorizontalContentAlignment="Right" >Minimum Clients</Label>
+                            <Label Name="LabelRequiredClientCount" Width="120" HorizontalAlignment="Left" >Minimum Clients</Label>
                             <TextBox Name="TextBoxRequiredClientCount" Style="{StaticResource StandardTextBox}"/>
                         </DockPanel>
                         <DockPanel Width="160">
-                            <Label Name="LabelKeyManagementServiceCurrentCount" Width="120" HorizontalContentAlignment="Right" >Current Clients</Label>
+                            <Label Name="LabelKeyManagementServiceCurrentCount" Width="120" HorizontalAlignment="Left" >Current Clients</Label>
                             <TextBox Style="{StaticResource StandardTextBox}" Name="TextBoxKeyManagementServiceCurrentCount"/>
                         </DockPanel>
                         <DockPanel Width="160">
-                            <Label Name="LabelKeyManagementServiceTotalRequests" Width="120" HorizontalContentAlignment="Right" >Total Requests</Label>
+                            <Label Name="LabelKeyManagementServiceTotalRequests" Width="120" HorizontalAlignment="Left" >Total Requests</Label>
                             <TextBox Name="TextBoxKeyManagementServiceTotalRequests" Style="{StaticResource StandardTextBox}"/>
                         </DockPanel>
                         <DockPanel Width="160">
-                            <Label Name="LabelKeyManagementServiceFailedRequests" Width="120" HorizontalContentAlignment="Right" >Failed Requests</Label>
+                            <Label Name="LabelKeyManagementServiceFailedRequests" Width="120" HorizontalAlignment="Left" >Failed Requests</Label>
                             <TextBox Name="TextBoxKeyManagementServiceFailedRequests" Style="{StaticResource StandardTextBox}"/>
                         </DockPanel>
                         <DockPanel Width="160">
-                            <Label Name="LabelKeyManagementServiceUnlicensedRequests" Width="120" HorizontalContentAlignment="Right" >Unlicensed</Label>
+                            <Label Name="LabelKeyManagementServiceUnlicensedRequests" Width="120" HorizontalAlignment="Left" >Unlicensed</Label>
                             <TextBox Name="TextBoxKeyManagementServiceUnlicensedRequests" Style="{StaticResource StandardTextBox}"/>
                         </DockPanel>
                         <DockPanel Width="160">
-                            <Label Name="LabelKeyManagementServiceOobGraceRequests" Width="120" HorizontalContentAlignment="Right" >OOB Grace</Label>
+                            <Label Name="LabelKeyManagementServiceOobGraceRequests" Width="120" HorizontalAlignment="Left" >OOB Grace</Label>
                             <TextBox Name="TextBoxKeyManagementServiceOobGraceRequests" Style="{StaticResource StandardTextBox}"/>
                         </DockPanel>
                         <DockPanel Width="160">
-                            <Label Name="LabelKeyManagementServiceOotGraceRequests" Width="120" HorizontalContentAlignment="Right" >OOT Grace</Label>
+                            <Label Name="LabelKeyManagementServiceOotGraceRequests" Width="120" HorizontalAlignment="Left" >OOT Grace</Label>
                             <TextBox Name="TextBoxKeyManagementServiceOotGraceRequests" Style="{StaticResource StandardTextBox}"/>
                         </DockPanel>
                         <DockPanel Width="160">
-                            <Label Name="LabelKeyManagementServiceNonGenuineGraceRequests" Width="120" HorizontalContentAlignment="Right" >Non-Genuine Grace</Label>
+                            <Label Name="LabelKeyManagementServiceNonGenuineGraceRequests" Width="120" HorizontalAlignment="Left" >Non-Genuine Grace</Label>
                             <TextBox Name="TextBoxKeyManagementServiceNonGenuineGraceRequests" Style="{StaticResource StandardTextBox}"/>
                         </DockPanel>
                         <!--DockPanel Width="160">
@@ -70,11 +70,11 @@
                             <TextBox Name="textBox_ExtendedGrace" Style="{StaticResource StandardTextBox}"/>
                         </-->
                         <DockPanel Width="160">
-                            <Label Name="LabelKeyManagementServiceNotificationRequests" Width="120" HorizontalContentAlignment="Right" >Notification</Label>
+                            <Label Name="LabelKeyManagementServiceNotificationRequests" Width="120" HorizontalAlignment="Left" >Notification</Label>
                             <TextBox Name="TextBoxKeyManagementServiceNotificationRequests" Style="{StaticResource StandardTextBox}"/>
                         </DockPanel>
                         <DockPanel Width="160">
-                            <Label Name="LabelKeyManagementServiceLicensedRequests" Width="120" HorizontalContentAlignment="Right" >Licensed</Label>
+                            <Label Name="LabelKeyManagementServiceLicensedRequests" Width="120" HorizontalAlignment="Left" >Licensed</Label>
                             <TextBox Name="TextBoxKeyManagementServiceLicensedRequests" Style="{StaticResource StandardTextBox}"/>
                         </DockPanel>
                     </WrapPanel>
@@ -95,22 +95,22 @@
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
 
-                            <Label Name="LabelIsKeyManagementServiceMachine" Grid.Row="0" Grid.Column="0"  Style="{StaticResource StandardLabel}">KMS Server Status</Label>
+                            <Label Name="LabelIsKeyManagementServiceMachine" Grid.Row="0" Grid.Column="0"  Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">KMS Server Status</Label>
                             <TextBox Name="TextBoxIsKeyManagementServiceMachine" Grid.Row="0" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
 
-                            <Label Grid.Row="1" Grid.Column="0"  Style="{StaticResource StandardLabel}">KMS Server Listening Port</Label>
+                            <Label Grid.Row="1" Grid.Column="0"  Style="{StaticResource StandardLabel}" HorizontalAlignment="Left">KMS Server Listening Port</Label>
                             <TextBox TextChanged="KmsParameter_TextChanged_ReloadRequired" Name="TextBoxKeyManagementServiceListeningPort" Grid.Row="1" Grid.Column="1" Style="{StaticResource StandardTextBox}" IsReadOnly="False" />
 
-                            <Label Name="LabelVlActivationInterval" Grid.Row="2" Grid.Column="0"  Style="{StaticResource StandardLabel}">Client Activation Interval (minutes)</Label>
+                            <Label x:Name="LabelVlActivationInterval" Grid.Row="2" Grid.Column="0"  Style="{StaticResource StandardLabel}" Content="Client Activation Interval (min)" HorizontalContentAlignment="Left" HorizontalAlignment="Left"/>
                             <TextBox TextChanged="KmsParameter_TextChanged_ReloadRequired" Name="TextBoxVlActivationInterval" Grid.Row="2" Grid.Column="1" Style="{StaticResource StandardTextBox}" IsReadOnly="False" />
 
-                            <Label Name="LabelVlRenewalInterval" Grid.Row="3" Grid.Column="0"  Style="{StaticResource StandardLabel}">License Renewal Interval (minutes)</Label>
+                            <Label x:Name="LabelVlRenewalInterval" Grid.Row="3" Grid.Column="0"  Style="{StaticResource StandardLabel}" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Content="License Renewal Interval (min)"/>
                             <TextBox TextChanged="KmsParameter_TextChanged_ReloadRequired"  Name="TextBoxVlRenewalInterval" Grid.Row="3" Grid.Column="1" Style="{StaticResource StandardTextBox}" IsReadOnly="False" />
 
                             <CheckBox Click="KmsParameters_TextChanged" Name="CheckBoxKeyManagementServiceDnsPublishing" Margin="0,15,0,0" Grid.Row="4" Grid.ColumnSpan="2"
                                       Grid.Column="0">Enable automatic DNS publishing</CheckBox>
                             <CheckBox Click="KmsParameters_TextChanged" Name="CheckBoxKeyManagementServiceLowPriority" Grid.Row="5" Grid.ColumnSpan="2"
-                                      Grid.Column="0" UseLayoutRounding="False" >Run the KMS server with low priority</CheckBox>
+                                      Grid.Column="0" UseLayoutRounding="False" >KMS server with low priority</CheckBox>
 
                         </Grid>
                     </StackPanel>
@@ -134,13 +134,13 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Label Name="LabelClientMachineId" Grid.Row="0" Grid.Column="0" Style="{StaticResource StandardLabel}">Client Machine Id</Label>
-                    <TextBox Name="TextBoxClientMachineId" Grid.Row="0" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
+                    <Label Name="LabelClientMachineId" Grid.Row="0" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalContentAlignment="Left" HorizontalAlignment="Left">Client Machine Id</Label>
+                    <TextBox Name="TextBoxClientMachineID" Grid.Row="0" Grid.Column="1" Style="{StaticResource StandardTextBox}" />
 
-                    <Label Name="LabelKeyManagementServiceLookupDomain" Grid.Row="1" Grid.Column="0" Style="{StaticResource StandardLabel}">Domain for KMS Detection</Label>
+                    <Label Name="LabelKeyManagementServiceLookupDomain" Grid.Row="1" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalContentAlignment="Left" HorizontalAlignment="Left">Detected KMS Domain</Label>
                     <TextBox Name="TextBoxKeyManagementServiceLookupDomain" Grid.Row="1" Grid.Column="1" Style="{StaticResource StandardTextBox}" IsReadOnly="False" TextChanged="KmsParameters_TextChanged"/>
 
-                    <Label Name="LabelDiscoveredKeyManagementServiceMachineName" Grid.Row="2" Grid.Column="0" Style="{StaticResource StandardLabel}">Hostname:Port (Detected)</Label>
+                    <Label Name="LabelDiscoveredKeyManagementServiceMachineName" Grid.Row="2" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalContentAlignment="Left" HorizontalAlignment="Left">Detected Host</Label>
                     <Grid Grid.Row="2" Grid.Column="1">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
@@ -152,7 +152,7 @@
                         <TextBox Name="TextBoxDiscoveredKeyManagementServiceMachinePort" Grid.Column="2" Style="{StaticResource StandardTextBox}"/>
                     </Grid>
 
-                    <Label Name="LabelKeyManagementServiceMachine" Grid.Row="3" Grid.Column="0" Style="{StaticResource StandardLabel}">Hostname:Port (Override)</Label>
+                    <Label Name="LabelKeyManagementServiceMachine" Grid.Row="3" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalContentAlignment="Left" HorizontalAlignment="Left">Override KMS Host</Label>
                     <Grid Grid.Row="3" Grid.Column="1">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
@@ -164,14 +164,14 @@
                         <TextBox Name ="TextBoxKeyManagementServicePort" Grid.Column="2" Style="{StaticResource StandardTextBox}" IsReadOnly="False" TextChanged="KmsParameters_TextChanged"/>
                     </Grid>
 
-                    <Label Name="LabelDiscoveredKeyManagementServiceMachineIpAddress" Grid.Row="4" Grid.Column="0" Style="{StaticResource StandardLabel}">IP of Last Activation</Label>
+                    <Label Name="LabelDiscoveredKeyManagementServiceMachineIpAddress" Grid.Row="4" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalContentAlignment="Left" HorizontalAlignment="Left">IP of Last Activation</Label>
                     <TextBox Name="TextBoxDiscoveredKeyManagementServiceMachineIpAddress" Grid.Row="4" Grid.Column="1" Style="{StaticResource StandardTextBox}"/>
 
-                    <Label Name="LabelRemainingWindowsReArmCount" Grid.Row="5" Grid.Column="0" Style="{StaticResource StandardLabel}">Rearms Remaining</Label>
+                    <Label Name="LabelRemainingWindowsReArmCount" Grid.Row="5" Grid.Column="0" Style="{StaticResource StandardLabel}" HorizontalContentAlignment="Left" HorizontalAlignment="Left">Rearms Remaining</Label>
                     <TextBox Name="TextBoxRemainingWindowsReArmCount" Grid.Row="5" Grid.Column="1" Style="{StaticResource StandardTextBox}"/>
 
                     <CheckBox Name="CheckBoxKeyManagementServiceHostCaching" Click="KmsParameters_TextChanged" Grid.ColumnSpan="2"
-                              Grid.Column="0" Margin="0,15,0,0" Grid.Row="6">Enable Caching of KMS host IP address (uncheck only if you have problems finding your KMS host)</CheckBox>
+                              Grid.Column="0" Margin="0,15,0,0" Grid.Row="6">Enable KMS host IP cache</CheckBox>
 
                 </Grid>
             </GroupBox>

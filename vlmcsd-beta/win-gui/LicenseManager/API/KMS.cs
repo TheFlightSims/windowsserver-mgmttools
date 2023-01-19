@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Linq;
-using System.Net.Sockets;
-using System.Runtime.InteropServices;
 using System.Text;
+using System.Collections.Generic;
+using System.Collections;
+using System.Diagnostics.CodeAnalysis;
+using System.Net.Sockets;
+using System.Net;
 
 // ReSharper disable once CheckNamespace
 namespace HGM.Hotbird64.Vlmcs
@@ -492,9 +495,9 @@ namespace HGM.Hotbird64.Vlmcs
         private static extern int BindRpc32
         (
           IntPtr socket,
-          [MarshalAs(UnmanagedType.I1)] bool useMultiplexedRpc,
-          [MarshalAs(UnmanagedType.I1)] bool useNdr64,
-          [MarshalAs(UnmanagedType.I1)] bool useBtfn,
+          [MarshalAs(UnmanagedType.I1)]bool useMultiplexedRpc,
+          [MarshalAs(UnmanagedType.I1)]bool useNdr64,
+          [MarshalAs(UnmanagedType.I1)]bool useBtfn,
           ref RpcDiag rpcDiag
         );
 
@@ -503,9 +506,9 @@ namespace HGM.Hotbird64.Vlmcs
         private static extern int BindRpc64
         (
           IntPtr socket,
-          [MarshalAs(UnmanagedType.I1)] bool useMultiplexedRpc,
-          [MarshalAs(UnmanagedType.I1)] bool useNdr64,
-          [MarshalAs(UnmanagedType.I1)] bool useBtfn,
+          [MarshalAs(UnmanagedType.I1)]bool useMultiplexedRpc,
+          [MarshalAs(UnmanagedType.I1)]bool useNdr64,
+          [MarshalAs(UnmanagedType.I1)]bool useBtfn,
           ref RpcDiag rpcDiag
         );
 

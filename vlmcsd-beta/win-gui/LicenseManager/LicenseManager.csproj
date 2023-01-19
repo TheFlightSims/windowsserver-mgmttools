@@ -34,7 +34,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>..\..\..\!bin!\vlmcsd\LicenseManager\Client\</OutputPath>
     <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -201,6 +201,11 @@
       <DependentUpon>ProductSelector.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="PropertyChangeBase.cs" />
     <Compile Include="ScalableWindow.cs" />
     <Compile Include="ProductKeys.xaml.cs">
@@ -365,6 +370,7 @@
     </Resource>
     <Resource Include="Data\PKeyConfig\pkconfig-vs2015.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\pkconfig_office14.xrm-ms.gz" />
+    <Resource Include="Data\PKeyConfig\pkconfig_office15pre.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\pkconfig_office15.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\pkconfig_Office15KMSHost.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\pkconfig_vista.xrm-ms.gz" />
@@ -380,7 +386,7 @@
     <Resource Include="Data\PKeyConfig\pkconfig_winNext.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\pkconfig_winPosReady7.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\pkconfig_winThinPC.xrm-ms.gz" />
-    <Resource Include="Data\PKeyConfig\pkeyconfig-win81Update.xrm-ms.gz" />
+    <Resource Include="Data\PKeyConfig\pkconfig_win8.1Update.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\pkconfig_win8-csvlk.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\pkconfig-vs2010.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\pkconfig-vs2013.xrm-ms.gz" />
@@ -388,14 +394,16 @@
     <Resource Include="Data\PKeyConfig\pkconfig-vs2017.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\16299-pkeyconfig-csvlk.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\16299-pkeyconfig.xrm-ms.gz" />
-    <Resource Include="Data\PKeyConfig\pkeyconfig-office-client15.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\pkeyconfig-office.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\pkeyconfig-office-kmshost.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\pkconfig-vs2019.xrm-ms.gz" />
+    <Resource Include="Data\PKeyConfig\pkconfig-vs2022.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\18362-pkeyconfig.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\19041-pkeyconfig-csvlk.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\19041-pkeyconfig-downlevel.xrm-ms.gz" />
     <Resource Include="Data\PKeyConfig\19041-pkeyconfig.xrm-ms.gz" />
+    <Resource Include="Data\PKeyConfig\22621-pkeyconfig-csvlk.xrm-ms.gz" />
+    <Resource Include="Data\PKeyConfig\22621-pkeyconfig.xrm-ms.gz" />
     <None Include="ClassDiagram1.cd" />
     <None Include="pkeyConfig.xsd">
       <SubType>Designer</SubType>
@@ -455,6 +463,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="KmsDataBase.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

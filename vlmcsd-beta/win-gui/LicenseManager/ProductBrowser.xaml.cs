@@ -1,8 +1,4 @@
-﻿using HGM.Hotbird64.LicenseManager.Contracts;
-using HGM.Hotbird64.LicenseManager.Extensions;
-using HGM.Hotbird64.Vlmcs;
-using LicenseManager.Annotations;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -21,6 +17,10 @@ using System.Windows.Media;
 using System.Windows.Threading;
 using System.Xml;
 using System.Xml.Serialization;
+using HGM.Hotbird64.LicenseManager.Contracts;
+using HGM.Hotbird64.LicenseManager.Extensions;
+using HGM.Hotbird64.Vlmcs;
+using LicenseManager.Annotations;
 
 // ReSharper disable once CheckNamespace
 namespace HGM.Hotbird64.LicenseManager
@@ -110,30 +110,33 @@ namespace HGM.Hotbird64.LicenseManager
 
         public static IList<PKeyConfigFile> PKeyConfigFiles = new List<PKeyConfigFile>
         {
-            new PKeyConfigFile {BaseFileName="pkeyconfig-office-kmshost", DisplayName="Office 2016/2019 KMS Host"},
-            new PKeyConfigFile {BaseFileName="pkeyconfig-office-client15", DisplayName="Office 2013"},
-            new PKeyConfigFile {BaseFileName="pkeyconfig-office", DisplayName="Office 2016/2019"},
-            new PKeyConfigFile {BaseFileName="19041-pkeyconfig-csvlk", DisplayName="Windows 10 19041 / Server 2019 KMS Host"},
-            new PKeyConfigFile {BaseFileName="19041-pkeyconfig", DisplayName="Windows 10 19041 / Server 2019"},
-            new PKeyConfigFile {BaseFileName="18362-pkeyconfig", DisplayName="Windows 10 18362 / Server 2019"},
-            new PKeyConfigFile {BaseFileName="16299-pkeyconfig-csvlk", DisplayName="Windows 10 16299 / Server 2016 KMS Host"},
-            new PKeyConfigFile {BaseFileName="16299-pkeyconfig", DisplayName="Windows 10 16299 / Server 2016"},
+            new PKeyConfigFile {BaseFileName="22621-pkeyconfig-csvlk", DisplayName="Windows 11 22621 / Server 2022 KMS Host" },
+            new PKeyConfigFile {BaseFileName="22621-pkeyconfig", DisplayName="Windows 11 22621 / Server 2022" },
+            new PKeyConfigFile {BaseFileName="pkeyconfig-office-kmshost", DisplayName="Office 2016/2019/2021 KMS Host" },
+            new PKeyConfigFile {BaseFileName="pkeyconfig-office", DisplayName="Office 2016/2019/2021" },
+            new PKeyConfigFile {BaseFileName="19041-pkeyconfig-csvlk", DisplayName="Windows 10 19041 / Server 2019 KMS Host" },
+            new PKeyConfigFile {BaseFileName="19041-pkeyconfig", DisplayName="Windows 10 19041 / Server 2019" },
+            new PKeyConfigFile {BaseFileName="18362-pkeyconfig", DisplayName="Windows 10 18362 / Server 2019" },
+            new PKeyConfigFile {BaseFileName="16299-pkeyconfig-csvlk", DisplayName="Windows 10 16299 / Server 2016 KMS Host" },
+            new PKeyConfigFile {BaseFileName="16299-pkeyconfig", DisplayName="Windows 10 16299 / Server 2016" },
             new PKeyConfigFile {BaseFileName="pkconfig_win10_anniversary", DisplayName="Windows 10 Pre-Release / Server Next" },
             new PKeyConfigFile {BaseFileName="pkconfig_win10_anniversary-csvlk", DisplayName="Windows 10 Pre-Release / Server Next KMS Host" },
             new PKeyConfigFile {BaseFileName="pkconfig_win10", DisplayName="Windows 10 10586 / Server 2012 R2" },
             new PKeyConfigFile {BaseFileName="pkconfig_win10-csvlk", DisplayName="Windows 10 10586 / Server 2012 R2 KMS Host" },
-            new PKeyConfigFile {BaseFileName="pkeyconfig-win81Update", DisplayName="Windows 8.1" },
+            new PKeyConfigFile {BaseFileName="pkconfig_win8.1Update", DisplayName="Windows 8.1" },
             new PKeyConfigFile {BaseFileName="pkconfig_win8.1-csvlk", DisplayName="Windows 8.1 / Server 2012 R2 KMS Host" },
             new PKeyConfigFile {BaseFileName="pkconfig_win8", DisplayName="Windows 8 / Server 2012" },
             new PKeyConfigFile {BaseFileName="pkconfig_win8-csvlk", DisplayName="Windows 8 / Server 2012 KMS Host" },
             new PKeyConfigFile {BaseFileName="pkconfig_winemb8", DisplayName="Windows 8 Embedded" },
             new PKeyConfigFile {BaseFileName="pkconfig_win7", DisplayName="Windows 7 / Server 2008 R2", IsOldKeyFormat=true },
-            new PKeyConfigFile {BaseFileName="pkconfig_winThinPC", DisplayName="Windows Thin PC", IsOldKeyFormat=true },
+            new PKeyConfigFile {BaseFileName="pkconfig_winThinPC", DisplayName="Windows 7 Thin PC", IsOldKeyFormat=true },
             new PKeyConfigFile {BaseFileName="pkconfig_winPosReady7", DisplayName="Windows 7 POS Ready", IsOldKeyFormat=true },
             new PKeyConfigFile {BaseFileName="pkconfig_vista", DisplayName="Windows Vista / Server 2008", IsOldKeyFormat=true },
             new PKeyConfigFile {BaseFileName="pkconfig_Office15KMSHost", DisplayName="Office 2013 KMS Host" },
-            new PKeyConfigFile {BaseFileName="pkconfig_office15", DisplayName="Office 2013 Preview" },
+            new PKeyConfigFile {BaseFileName="pkconfig_office15", DisplayName="Office 2013" },
+            new PKeyConfigFile {BaseFileName="pkconfig_office15pre", DisplayName="Office 2013 Preview" },
             new PKeyConfigFile {BaseFileName="pkconfig_office14", DisplayName="Office 2010", IsOldKeyFormat=true },
+            new PKeyConfigFile {BaseFileName="pkconfig-vs2022", DisplayName="Visual Studio 2022" },
             new PKeyConfigFile {BaseFileName="pkconfig-vs2019", DisplayName="Visual Studio 2019" },
             new PKeyConfigFile {BaseFileName="pkconfig-vs2017", DisplayName="Visual Studio 2017" },
             new PKeyConfigFile {BaseFileName="pkconfig-vs2015", DisplayName="Visual Studio 2015" },
@@ -319,7 +322,7 @@ namespace HGM.Hotbird64.LicenseManager
         }
 
         [NotifyPropertyChangedInvocator]
-        public void NotifyOfPropertyChange([CallerMemberName] string propertyName = null)
+        public void NotifyOfPropertyChange([CallerMemberName]string propertyName = null)
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
         private void OnMainWindowStatusChange(object sender, BusyEventArgs e)
@@ -454,7 +457,7 @@ namespace HGM.Hotbird64.LicenseManager
 
                 Parallel.ForEach(pKeyConfig.Items.OfType<ProductKeyConfigurationKeyRanges>().Single().KeyRange, keyRange =>
                 {
-                    keyRange.FileName = pKeyConfigFile.DisplayName;
+                        keyRange.FileName = pKeyConfigFile.DisplayName;
                 });
 
                 return pKeyConfig;

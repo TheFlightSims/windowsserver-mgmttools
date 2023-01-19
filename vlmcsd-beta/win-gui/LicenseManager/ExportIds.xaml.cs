@@ -1,7 +1,4 @@
-﻿using HGM.Hotbird64.LicenseManager.Extensions;
-using HGM.Hotbird64.Vlmcs;
-using Microsoft.Win32;
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
@@ -12,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Xml;
 using System.Xml.Serialization;
+using HGM.Hotbird64.LicenseManager.Extensions;
+using HGM.Hotbird64.Vlmcs;
+using Microsoft.Win32;
 
 // ReSharper disable once CheckNamespace
 namespace HGM.Hotbird64.LicenseManager

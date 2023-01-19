@@ -1,0 +1,27 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v150\Platforms\x64\PlatformToolsets\v141_xp\Toolset.targets(38,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v150\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  crypto.c
+  crypto_windows.c
+  endian.c
+  helpers.c
+  kms.c
+  kmsdata.c
+  network.c
+  ntservice.c
+  output.c
+  rpc.c
+  shared_globals.c
+  vlmcsd.c
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\vlmcsd-beta\src\ntservice.c(39): warning C4100: 'argv_unused': unreferenced formal parameter
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\vlmcsd-beta\src\ntservice.c(39): warning C4100: 'argc_unused': unreferenced formal parameter
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\vlmcsd-beta\src\rpc.c(247): warning C4100: 'sock_unused': unreferenced formal parameter
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\vlmcsd-beta\src\rpc.c(247): warning C4100: 'RpcAssocGroup_unused': unreferenced formal parameter
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\vlmcsd-beta\src\rpc.c(409): warning C4100: 'Ndr64Ctx_unused': unreferenced formal parameter
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\vlmcsd-beta\src\rpc.c(409): warning C4100: 'NdrCtx_unused': unreferenced formal parameter
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\vlmcsd-beta\src\rpc.c(432): warning C4100: 'ipstr_unused': unreferenced formal parameter
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\vlmcsd-beta\src\kms.c(581): warning C4100: 'ipstr_unused': unreferenced formal parameter
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\vlmcsd-beta\src\kms.c(845): warning C4189: 'xxx_unused': local variable is initialized but not referenced
+  wingetopt.c
+  wintap.c
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\vlmcsd-beta\src\wintap.c(274): warning C4100: 'data_unused': unreferenced formal parameter
+  vlmcsd.vcxproj -> C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\vlmcsd-beta\VisualStudio\vlmcsd\..\..\..\!bin!\vlmcsd\vlmcsd-core\vlmcsd-Windows.exe

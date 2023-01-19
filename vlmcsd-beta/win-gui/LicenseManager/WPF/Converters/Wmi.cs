@@ -1,7 +1,7 @@
-﻿using HGM.Hotbird64.LicenseManager.Contracts;
-using System;
+﻿using System;
 using System.Globalization;
 using System.Management;
+using HGM.Hotbird64.LicenseManager.Contracts;
 
 namespace HGM.Hotbird64.LicenseManager.WPF.Converters
 {

@@ -20,7 +20,7 @@
     </DockPanel>
 
     <StackPanel Margin="5,5,5,5" Grid.Row="1">
-      <TextBlock TextWrapping="Wrap" Foreground="Red" Visibility="Collapsed" Name="TextBlockGenerated">Warning! This key is user-generated and cannot be used to acquire a Windows Genuine Ticket.</TextBlock>
+      <TextBlock TextWrapping="Wrap" Foreground="Red" Visibility="Collapsed" Name="TextBlockGenerated">WARNING! This key is user-generated keys and may cannot be used to activate</TextBlock>
       <TextBlock TextWrapping="Wrap" Margin="0,7,0,2">Product Key</TextBlock>
       <TextBox x:Name="GvlkKey" Text="{Binding ElementName=ProductTree, Path=SelectedItem.(lm:ProductKeys.ToolTip)}" Style="{StaticResource StandardTextBox}" />
 
@@ -29,29 +29,7 @@
         <Button Margin="5,5,0,5" MinWidth="70" IsCancel="True" Click="CancelButton_Clicked">Cancel</Button>
       </WrapPanel>
 
-      <TextBlock Margin="0,5,0,0" TextAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap">Please check for updated or additional Product Keys at Microsoft Technet</TextBlock>
-      <WrapPanel HorizontalAlignment="Center">
-
-        <TextBlock TextAlignment="Center" Margin="15,0,15,0" FontSize="11">
-                <Hyperlink Foreground="Blue" NavigateUri="https://docs.microsoft.com/en-us/windows-server/get-started/kmsclientkeys" RequestNavigate="Hyperlink_RequestNavigate">Windows</Hyperlink>
-        </TextBlock>
-
-        <TextBlock TextAlignment="Center" Margin="15,0,15,0" FontSize="11">
-                <Hyperlink Foreground="Blue" NavigateUri="http://technet.microsoft.com/en-us/library/ee624355(v=office.14).aspx#section2_3"
-              RequestNavigate="Hyperlink_RequestNavigate">Office2010</Hyperlink>
-        </TextBlock>
-
-          <TextBlock TextAlignment="Center" Margin="15,0,15,0" FontSize="11">
-              <Hyperlink Foreground="Blue" NavigateUri="http://technet.microsoft.com/en-us/library/dn385360.aspx" RequestNavigate="Hyperlink_RequestNavigate">Office2013</Hyperlink>
-          </TextBlock>
-
-          <TextBlock TextAlignment="Center" Margin="15,0,15,0" FontSize="11">
-              <Hyperlink Foreground="Blue" NavigateUri="https://docs.microsoft.com/en-us/DeployOffice/vlactivation/gvlks" RequestNavigate="Hyperlink_RequestNavigate">Office2016/2019</Hyperlink>
-          </TextBlock>
-
-      </WrapPanel>
-
-    </StackPanel>
+        </StackPanel>
   </Grid>
 
 </lm:ScalableWindow>

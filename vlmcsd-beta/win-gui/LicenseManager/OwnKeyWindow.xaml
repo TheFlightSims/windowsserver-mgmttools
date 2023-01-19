@@ -41,8 +41,8 @@
           <DataGridTextColumn ElementStyle="{StaticResource GridStyle}" Header="Install Date" Binding="{Binding DisplayDate}" SortDirection="Ascending"
               SortMemberPath="InstallDate" IsReadOnly="True" />
           <DataGridTextColumn ElementStyle="{StaticResource GridStyle}" Header="Product Name" Binding="{Binding ProductName}" IsReadOnly="True" />
-          <DataGridTextColumn ElementStyle="{StaticResource GridStyle}" Header="Key From Digital Product Id 3" Binding="{Binding Id3}" IsReadOnly="True" />
-          <DataGridTextColumn ElementStyle="{StaticResource GridStyle}" Header="Key From Digital Product Id 4" Binding="{Binding Id4}" IsReadOnly="True" />
+          <DataGridTextColumn ElementStyle="{StaticResource GridStyle}" Header="Digital Product 3rd ID Key" Binding="{Binding Id3}" IsReadOnly="True" />
+          <DataGridTextColumn ElementStyle="{StaticResource GridStyle}" Header="Digital Product 4th ID Key" Binding="{Binding Id4}" IsReadOnly="True" />
 
         </DataGrid.Columns>
       </DataGrid>

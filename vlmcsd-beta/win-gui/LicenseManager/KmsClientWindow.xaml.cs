@@ -1,7 +1,4 @@
-﻿using HGM.Hotbird64.LicenseManager.Extensions;
-using HGM.Hotbird64.Vlmcs;
-using LicenseManager.Annotations;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -19,8 +16,9 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
-
-// ReSharper disable once CheckNamespace
+using HGM.Hotbird64.LicenseManager.Extensions;
+using HGM.Hotbird64.Vlmcs;
+using LicenseManager.Annotations;
 
 namespace HGM.Hotbird64.LicenseManager
 {
@@ -63,9 +61,6 @@ namespace HGM.Hotbird64.LicenseManager
         public override string ToString() => DisplayName;
     }
 
-    /// <summary>
-    /// Interaction logic for KmsClient.xaml
-    /// </summary>
     [SuppressMessage("ReSharper", "AssignNullToNotNullAttribute")]
     public partial class KmsClientWindow : INotifyPropertyChanged
     {
