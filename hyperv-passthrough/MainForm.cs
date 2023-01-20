@@ -1,7 +1,4 @@
-﻿/* 
- Adding required libraries
- */
-using Microsoft.Management.Infrastructure;
+﻿using Microsoft.Management.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,29 +9,27 @@ using DeviceData = System.Tuple<Microsoft.HyperV.PowerShell.VirtualMachine, Micr
 namespace DiscreteDeviceAssigner
 {
     public partial class MainForm : Form
-    { 
+    {
+        private DialogResult messchk;
+
         public MainForm()
         {
             InitializeComponent();
         }
 
-        //Update virtual machine and device display
         private void UpdateVM()
         {
             listView1.Groups.Clear();
             listView1.Items.Clear();
 
-            //Get the list of virtual machines
             var vms = PowerShellWrapper.GetVM();
             var groups = new List<ListViewGroup>();
-            //Display VM name and its state
             foreach (var vm in vms)
             {
                 ListViewGroup group = new ListViewGroup("[State: " + vm.State + "] " + vm.Name);
                 groups.Add(group);
             }
 
-            //Get the list of devices under each virtual machine
             var lviss = new List<ListViewItem>[vms.Count];
             _ = Parallel.For(0, vms.Count, (int i) =>
             {
@@ -46,8 +41,6 @@ namespace DiscreteDeviceAssigner
                 {
                     var dev = PowerShellWrapper.GetPnpDevice(dd.InstanceID);
                     string name = dd.Name;
-
-                    //Filter any Plug-n-Play hardware is already mounted into the VM
                     string clas = dev.CimInstanceProperties["PnpClass"] != null ? dev.CimInstanceProperties["PnpClass"].Value as string : null;
                     
                     lvis.Add(new ListViewItem(new string[] { name != null ? name : "", clas != null ? clas : "", dd.LocationPath }, group)
@@ -61,7 +54,6 @@ namespace DiscreteDeviceAssigner
                 });
             });
 
-            //Refresh List
             listView1.BeginUpdate();
             foreach (ListViewGroup group in groups)
             {
@@ -77,14 +69,12 @@ namespace DiscreteDeviceAssigner
             listView1.EndUpdate();
         }
 
-        //Loading event
         private async void Form1_Load(object sender, EventArgs e)
         {
             await Task.Delay(1);
             UpdateVM();
         }
 
-        //Right - click the menu
         private void listView1_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -99,7 +89,6 @@ namespace DiscreteDeviceAssigner
             }
         }
 
-        //Right-click the menu to call out event
         private void contextMenuStrip_Opening(object sender, CancelEventArgs e)
         {
             DeviceData data = contextMenuStrip.Tag as DeviceData;
@@ -116,7 +105,6 @@ namespace DiscreteDeviceAssigner
             uint lowMMIO = 0;
             try
             {
-                //This sentence will be inexplicable
                 lowMMIO = data.Item1.LowMemoryMappedIoSpace;
             }
             catch { }
@@ -125,7 +113,6 @@ namespace DiscreteDeviceAssigner
             GCCTtoolStripMenuItem.Checked = data.Item1.GuestControlledCacheTypes;
         }
 
-        //Add device
         private void 添加设备ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeviceData data = contextMenuStrip.Tag as DeviceData;
@@ -134,24 +121,45 @@ namespace DiscreteDeviceAssigner
             {
                 string name = dev.CimInstanceProperties["Name"] != null ? dev.CimInstanceProperties["Name"].Value as string : null;
                 if (name == null) name = "";
-                //Display confirm dialog box
-                if (MessageBox.Show("Add this device: " + name + " to this following virtual machine: " + data.Item1.Name, "Confirm?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                messchk = MessageBox.Show("Add this device: " + name + " to this following virtual machine: " + data.Item1.Name, "Confirm?", MessageBoxButtons.YesNo);
+                if (messchk == DialogResult.Yes)
                 {
-                    try
+                    if (Convert.ToString(dev.CimInstanceProperties["PnpClass"]).Contains("Display") == true)
                     {
-                        PowerShellWrapper.AddVMAssignableDevice(data.Item1, dev);
+                        if (MessageBox.Show($"The selected device is the GPU. Do you want to pass through it via shared GPU partition mode?", $"Advanced GPU partition mode", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                        {
+                            try
+                            {
+                                MessageBox.Show($"Note: If you have more than one GPU, the Hyper-V will automatic choose one of your GPUs. The device you choose may not be pass through. \n" +
+                                                $"If you want to pass through the specific, go to Device Manager, then disable all other device while leaving the device you want to pass through \n\n" +
+                                                $"Sorry for that, this application is still under development.", $"Note", MessageBoxButtons.OK);
+                                PowerShellWrapper.GpuPartitioning(data.Item1, dev);
+                            }
+                            catch (Exception ex) { 
+                                MessageBox.Show(ex.Message, "Error"); 
+                            }
+                            UpdateVM();
+                        }
                     }
-                    //Display an error if none of action can happen
-                    catch (Exception ex)
-                    {   
-                        MessageBox.Show(ex.Message, "Error");
+                    else
+                    {
+                        try { 
+                            PowerShellWrapper.AddVMAssignableDevice(data.Item1, dev); 
+                        }
+                        catch (Exception ex) { 
+                            if (Convert.ToString(data.Item1.State).Contains("Running") == true)
+                            {
+                                MessageBox.Show($"You need to turn off the virtual machine first. \n" +
+                                    $"The specific virtual machine is running.", $"Error", MessageBoxButtons.OK);
+                            }
+                            MessageBox.Show(ex.Message, "Error");
+                        }
+                        UpdateVM();
                     }
-                    UpdateVM();
                 }
             }
         }
 
-        //Removal device from specific virtual machine
         private void 移除设备ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeviceData data = contextMenuStrip.Tag as DeviceData;
@@ -280,6 +288,13 @@ namespace DiscreteDeviceAssigner
         private void highMemoryMappedIoSpaceToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void removegpupass_Click(object sender, EventArgs e)
+        {
+            DeviceData data = contextMenuStrip.Tag as DeviceData;
+            CimInstance dev = new PnpDeviceForm().GetResult();
+            PowerShellWrapper.RemoveGpuPartitioning(data.Item1, dev);
         }
     }
 }

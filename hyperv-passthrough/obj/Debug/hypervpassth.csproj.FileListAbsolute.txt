@@ -27,3 +27,16 @@ C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hy
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\hypervpassth.csproj.CopyComplete
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\Hyper-V Passthrough Device.exe
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\Hyper-V Passthrough Device.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\!bin!\Hyper-V Device Passthrough\Hyper-V Passthrough Device.exe.config
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\!bin!\Hyper-V Device Passthrough\Hyper-V Passthrough Device.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\!bin!\Hyper-V Device Passthrough\Hyper-V Passthrough Device.pdb
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\hyperv-passthrough\obj\Debug\hypervpassth.csproj.AssemblyReference.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\hyperv-passthrough\obj\Debug\hypervpassth.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\hyperv-passthrough\obj\Debug\DiscreteDeviceAssigner.MainForm.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\hyperv-passthrough\obj\Debug\DiscreteDeviceAssigner.PnpDeviceForm.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\hyperv-passthrough\obj\Debug\HyperVpassthroughdev.Properties.Resources.resources
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\hyperv-passthrough\obj\Debug\hypervpassth.csproj.GenerateResource.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\hyperv-passthrough\obj\Debug\hypervpassth.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\hyperv-passthrough\obj\Debug\hypervpassth.csproj.CopyComplete
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\hyperv-passthrough\obj\Debug\Hyper-V Passthrough Device.exe
+C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools-private\hyperv-passthrough\obj\Debug\Hyper-V Passthrough Device.pdb

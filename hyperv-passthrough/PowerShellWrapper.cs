@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.Management.Automation;
 using System.Management.Automation.Runspaces;
 
+
 namespace DiscreteDeviceAssigner
 {
     class PowerShellWrapper
@@ -123,6 +124,21 @@ namespace DiscreteDeviceAssigner
                 RunScript("Enable-PnpDevice -InstanceId \"" + device.InstanceID + "\" -Confirm:$false");
             }
             catch { }
+        }
+
+        public static void GpuPartitioning(VirtualMachine vm, CimInstance device)
+        {
+            RunScript("Add-VMGpuPartitionAdapter -VMName \"" + vm.Name + "\"");
+            RunScript("Set-VMGpuPartitionAdapter -MinPartitionVRAM 80000000 -MaxPartitionVRAM 100000000 " +
+                "-OptimalPartitionVRAM 100000000 -MinPartitionEncode 80000000 -MaxPartitionEncode 100000000 " +
+                "-OptimalPartitionEncode 100000000 -MinPartitionDecode 80000000 -MaxPartitionDecode 100000000 " +
+                "-OptimalPartitionDecode 100000000 -MinPartitionCompute 80000000 -MaxPartitionCompute 100000000 " +
+                "-OptimalPartitionCompute 100000000 -VMName \"" + vm.Name + "\"");
+        }
+
+        public static void RemoveGpuPartitioning(VirtualMachine vm, CimInstance device)
+        {
+            RunScript("Remove-VMGpuPartitionAdapter -VMName \"" + vm.Name + "\"");
         }
 
         public static void AddVMAssignableDevice(VirtualMachine vm, CimInstance device)

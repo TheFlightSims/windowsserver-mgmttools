@@ -2,15 +2,7 @@
 {
     partial class MainForm
     {
-        /// <summary>
-        /// 必需的设计器变量。
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// 清理所有正在使用的资源。
-        /// </summary>
-        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -19,13 +11,6 @@
             }
             base.Dispose(disposing);
         }
-
-        #region Windows 窗体设计器生成的代码
-
-        /// <summary>
-        /// 设计器支持所需的方法 - 不要修改
-        /// 使用代码编辑器修改此方法的内容。
-        /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -49,19 +34,21 @@
             this.复制地址toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.刷新列表toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removegpupass = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView1
             // 
+            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listView1.CheckBoxes = true;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderDevice,
             this.columnHeaderClass,
             this.columnHeaderLocation});
             this.listView1.FullRowSelect = true;
             this.listView1.HideSelection = false;
-            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
             this.listView1.UseCompatibleStateImageBehavior = false;
@@ -104,7 +91,8 @@
             this.highMemoryMappedIoSpaceToolStripMenuItem,
             this.HMMIOtoolStripTextBox,
             this.toolStripSeparator5,
-            this.GCCTtoolStripMenuItem});
+            this.GCCTtoolStripMenuItem,
+            this.removegpupass});
             this.其它toolStripMenuItem.Name = "其它toolStripMenuItem";
             resources.ApplyResources(this.其它toolStripMenuItem, "其它toolStripMenuItem");
             this.其它toolStripMenuItem.Click += new System.EventHandler(this.其它toolStripMenuItem_Click);
@@ -184,9 +172,14 @@
             resources.ApplyResources(this.刷新列表toolStripMenuItem, "刷新列表toolStripMenuItem");
             this.刷新列表toolStripMenuItem.Click += new System.EventHandler(this.刷新列表ToolStripMenuItem_Click);
             // 
+            // removegpupass
+            // 
+            this.removegpupass.Name = "removegpupass";
+            resources.ApplyResources(this.removegpupass, "removegpupass");
+            this.removegpupass.Click += new System.EventHandler(this.removegpupass_Click);
+            // 
             // MainForm
             // 
-            this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
@@ -202,8 +195,6 @@
             this.ResumeLayout(false);
 
         }
-
-        #endregion
 
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeaderDevice;
@@ -224,6 +215,7 @@
         private System.Windows.Forms.ToolStripTextBox HMMIOtoolStripTextBox;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem GCCTtoolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem removegpupass;
     }
 }
 
