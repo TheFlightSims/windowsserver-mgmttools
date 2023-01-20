@@ -7,10 +7,9 @@ GO
 
 SELECT * 
 	FROM [vadb].[base].[ProductKey]
-	ORDER BY KeyDescription DESC;
 
 SELECT KeyDescription, COUNT(KeyDescription)
 	FROM [vadb].[base].[ProductKey]
 	GROUP BY KeyDescription
-	HAVING COUNT(KeyDescription) > 1
+	HAVING COUNT(KeyDescription) > 0
 	ORDER BY COUNT(KeyDescription) DESC;
