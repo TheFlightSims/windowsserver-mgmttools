@@ -1,7 +1,0 @@
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\Unit Tests-CustomUpdateCreator.dll
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\Unit Tests-CustomUpdateCreator.pdb
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomUpdateCreator\obj\Debug\Unit Tests-CustomUpdateCreator.csproj.AssemblyReference.cache
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomUpdateCreator\obj\Debug\Unit Tests-CustomUpdateCreator.csproj.CoreCompileInputs.cache
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomUpdateCreator\obj\Debug\Unit Tests-CustomUpdateCreator.csproj.CopyComplete
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomUpdateCreator\obj\Debug\Unit Tests-CustomUpdateCreator.dll
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\Unit Tests\CustomUpdateCreator\obj\Debug\Unit Tests-CustomUpdateCreator.pdb

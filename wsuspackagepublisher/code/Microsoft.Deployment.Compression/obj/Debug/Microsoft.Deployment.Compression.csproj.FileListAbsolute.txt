@@ -1,7 +1,0 @@
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\Microsoft.Deployment.Compression.dll
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\Microsoft.Deployment.Compression.pdb
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\Microsoft.Deployment.Compression\obj\Debug\Microsoft.Deployment.Compression.csproj.AssemblyReference.cache
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\Microsoft.Deployment.Compression\obj\Debug\Microsoft.Deployment.Compression.csproj.CoreCompileInputs.cache
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\Microsoft.Deployment.Compression\obj\Debug\Microsoft.Deployment.Compression.csproj.CopyComplete
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\Microsoft.Deployment.Compression\obj\Debug\Microsoft.Deployment.Compression.dll
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\Microsoft.Deployment.Compression\obj\Debug\Microsoft.Deployment.Compression.pdb

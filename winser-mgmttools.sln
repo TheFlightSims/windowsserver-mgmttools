@@ -112,11 +112,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{4958
 		sxs-mgmt\Samples\ImportList.txt = sxs-mgmt\Samples\ImportList.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WSUS Package Publisher", "WSUS Package Publisher", "{1FB26CBB-0DBB-4E05-B7B9-4DDEAB23362A}"
-	ProjectSection(SolutionItems) = preProject
-		wsuspackagepublisher\code\Wsus Package Publisher\Wsus Package Publisher.sln = wsuspackagepublisher\code\Wsus Package Publisher\Wsus Package Publisher.sln
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

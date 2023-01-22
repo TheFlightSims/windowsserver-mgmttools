@@ -1,9 +1,0 @@
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\!bin!\WSUS Package Publisher\WPP.Wsus.dll
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\!bin!\WSUS Package Publisher\WPP.Wsus.pdb
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\WPP.Wsus.dll
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUS Package Publisher\WPP.Wsus.pdb
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\WsusAD Comparator\WPP.Wsus\obj\Debug\WPP.Wsus.csproj.AssemblyReference.cache
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\WsusAD Comparator\WPP.Wsus\obj\Debug\WPP.Wsus.csproj.CoreCompileInputs.cache
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\WsusAD Comparator\WPP.Wsus\obj\Debug\WPP.Wsus.csproj.CopyComplete
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\WsusAD Comparator\WPP.Wsus\obj\Debug\WPP.Wsus.dll
-C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\wsuspackagepublisher\code\WsusAD Comparator\WPP.Wsus\obj\Debug\WPP.Wsus.pdb
