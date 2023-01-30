@@ -1,0 +1,137 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows10.0.17763": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net6.0-windows10.0.17763": [
+      "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers >= 0.3.246501"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Deployment\\DeploymentToolkit.Deployment.csproj",
+      "projectName": "DeploymentToolkit.Deployment",
+      "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Deployment\\DeploymentToolkit.Deployment.csproj",
+      "packagesPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Deployment\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Administrator.THEFLIGHTSIMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows10.0.17763.0"
+      ],
+      "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows10.0.17763": {
+          "targetAlias": "net6.0-windows10.0.17763.0",
+          "projectReferences": {
+            "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Actions\\DeploymentToolkit.Actions.csproj": {
+              "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Actions\\DeploymentToolkit.Actions.csproj"
+            },
+            "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.DeploymentEnvironment\\DeploymentToolkit.DeploymentEnvironment.csproj": {
+              "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.DeploymentEnvironment\\DeploymentToolkit.DeploymentEnvironment.csproj"
+            },
+            "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Environment\\DeploymentToolkit.ToolkitEnvironment.csproj": {
+              "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Environment\\DeploymentToolkit.ToolkitEnvironment.csproj"
+            },
+            "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Installer\\DeploymentToolkit.Installer.csproj": {
+              "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Installer\\DeploymentToolkit.Installer.csproj"
+            },
+            "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Messaging\\DeploymentToolkit.Messaging.csproj": {
+              "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Messaging\\DeploymentToolkit.Messaging.csproj"
+            },
+            "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Modals\\DeploymentToolkit.Modals.csproj": {
+              "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Modals\\DeploymentToolkit.Modals.csproj"
+            },
+            "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Restart\\DeploymentToolkit.Restart.csproj": {
+              "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Restart\\DeploymentToolkit.Restart.csproj"
+            },
+            "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Scripting\\DeploymentToolkit.Scripting.csproj": {
+              "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Scripting\\DeploymentToolkit.Scripting.csproj"
+            },
+            "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Unblocker\\DeploymentToolkit.Unblocker.csproj": {
+              "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Unblocker\\DeploymentToolkit.Unblocker.csproj"
+            },
+            "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Uninstaller\\DeploymentToolkit.Uninstaller.csproj": {
+              "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Uninstaller\\DeploymentToolkit.Uninstaller.csproj"
+            },
+            "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Util\\DeploymentToolkit.Util.csproj": {
+              "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Util\\DeploymentToolkit.Util.csproj"
+            },
+            "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\DeploymentToolkit.Blocker\\DeploymentToolkit.Blocker.csproj": {
+              "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\DeploymentToolkit.Blocker\\DeploymentToolkit.Blocker.csproj"
+            },
+            "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\DeploymentToolkit.Debugger\\DeploymentToolkit.Debugger.csproj": {
+              "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\DeploymentToolkit.Debugger\\DeploymentToolkit.Debugger.csproj"
+            },
+            "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\DeploymentToolkit.Logging\\DeploymentToolkit.Logging.csproj": {
+              "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\DeploymentToolkit.Logging\\DeploymentToolkit.Logging.csproj"
+            },
+            "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\DeploymentToolkit.TrayApp\\DeploymentToolkit.TrayApp.csproj": {
+              "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\DeploymentToolkit.TrayApp\\DeploymentToolkit.TrayApp.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows10.0.17763": {
+        "targetAlias": "net6.0-windows10.0.17763.0",
+        "dependencies": {
+          "Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[0.3.246501, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.Windows.SDK.NET.Ref",
+            "version": "[10.0.17763.28, 10.0.17763.28]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.Windows.SDK.NET.Ref": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

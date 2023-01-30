@@ -356,7 +356,7 @@
                             <Label Grid.Row="1" Grid.Column="0" Content="Application ID" Visibility="{Binding ElementName=AppIdBox, Path=Visibility}" HorizontalAlignment="Left"/>
                             <ctrls:WmiPropertyBox x:Name="AppIdBox" Grid.Row="1" Grid.Column="1" WmiProperty="{Binding License}" PropertyName="ApplicationID" Converter="{co:WmiGuid}"/>
 
-                            <Label Grid.Row="2" Grid.Column="0" Content="Last Status Change" Visibility="{Binding ElementName=LocalLicenseInstallDateBox, Path=Visibility}"/>
+                            <Label Grid.Row="2" Grid.Column="0" Content="Last Status Change" Visibility="{Binding ElementName=LocalLicenseInstallDateBox, Path=Visibility}" HorizontalAlignment="Left"/>
                             <ctrls:WmiPropertyBox x:Name="LocalLicenseInstallDateBox" Grid.Row="2" Grid.Column="1" WmiProperty="{Binding License}" PropertyName="ProductKeyID" Converter="{co:WmiEpidDate}"/>
 
                             <Label Grid.Row="3" Grid.Column="0" Content="Licensing Service" Visibility="{Binding ElementName=ServiceClassNameBox, Path=Visibility}" HorizontalAlignment="Left"/>

@@ -1,0 +1,890 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-2.1.0",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Dependency Analysis",
+          "semanticVersion": "0.3.246501",
+          "informationUri": "https://docs.microsoft.com/en-us/dotnet/core/porting/upgrade-assistant-overview",
+          "rules": [
+            {
+              "id": "UA101",
+              "fullDescription": {
+                "text": "Dependency Analysis"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Deployment/DeploymentToolkit.Deployment.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Installer/DeploymentToolkit.Installer.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Installer.MSI/DeploymentToolkit.Installer.MSI.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.TrayApp/DeploymentToolkit.TrayApp.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.Windows.Compatibility, Version=5.0.2 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.TrayApp/DeploymentToolkit.TrayApp.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Modals/DeploymentToolkit.Modals.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Debugger/DeploymentToolkit.Debugger.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Reference to System.Configuration needs to be deleted "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Logging/DeploymentToolkit.Logging.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Reference to System.ServiceModel needs to be deleted "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Logging/DeploymentToolkit.Logging.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package System.Configuration.ConfigurationManager, Version=5.0.0 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Logging/DeploymentToolkit.Logging.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package System.ServiceModel.Primitives, Version=4.8.1 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Logging/DeploymentToolkit.Logging.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package System.ServiceModel.Http, Version=4.8.1 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Logging/DeploymentToolkit.Logging.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package System.ServiceModel.Duplex, Version=4.8.1 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Logging/DeploymentToolkit.Logging.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package System.ServiceModel.NetTcp, Version=4.8.1 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Logging/DeploymentToolkit.Logging.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package System.ServiceModel.Security, Version=4.8.1 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Logging/DeploymentToolkit.Logging.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package System.ServiceModel.Federation, Version=4.8.1 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Logging/DeploymentToolkit.Logging.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Logging/DeploymentToolkit.Logging.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Messaging/DeploymentToolkit.Messaging.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.Windows.Compatibility, Version=5.0.2 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Messaging/DeploymentToolkit.Messaging.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Environment/DeploymentToolkit.ToolkitEnvironment.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Scripting/DeploymentToolkit.Scripting.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Scripting.Tests/DeploymentToolkit.Scripting.Tests.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Actions/DeploymentToolkit.Actions.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.DeploymentEnvironment/DeploymentToolkit.DeploymentEnvironment.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Installer.Executable/DeploymentToolkit.Installer.Executable.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Uninstaller/DeploymentToolkit.Uninstaller.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Uninstaller.Executable/DeploymentToolkit.Uninstaller.Executable.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Uninstaller.MSI/DeploymentToolkit.Uninstaller.MSI.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Registry/DeploymentToolkit.Registry.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.RegistryTests/DeploymentToolkit.RegistryTests.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.RegistryWrapper/DeploymentToolkit.RegistryWrapper.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.ToolkitEnvironmentTests/DeploymentToolkit.ToolkitEnvironmentTests.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Util/DeploymentToolkit.Util.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Restart/DeploymentToolkit.Restart.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Unblocker/DeploymentToolkit.Unblocker.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Blocker/DeploymentToolkit.Blocker.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.Windows.Compatibility, Version=5.0.2 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Blocker/DeploymentToolkit.Blocker.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA101",
+          "message": {
+            "text": "Package Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.3.246501 needs to be added "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.ActionsTests/DeploymentToolkit.ActionsTests.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        }
+      ],
+      "columnKind": "utf16CodeUnits"
+    },
+    {
+      "tool": {
+        "driver": {
+          "name": "API Upgradability",
+          "semanticVersion": "0.3.246501",
+          "informationUri": "https://docs.microsoft.com/en-us/dotnet/core/porting/upgrade-assistant-overview",
+          "rules": [
+            {
+              "id": "UA0013_P",
+              "fullDescription": {
+                "text": "Replace usage of System.Windows.Forms.MenuItem"
+              }
+            },
+            {
+              "id": "UA0013_L",
+              "fullDescription": {
+                "text": "Replace usage of System.Windows.Forms.ContextMenu"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "UA0013_P",
+          "message": {
+            "text": "Windows Forms Deprecated controls : MenuItem needs to be replaced with ToolStripMenuItem. For more details see - https://docs.microsoft.com/en-us/dotnet/core/compatibility/winforms#removed-controls"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.TrayApp/Program.cs"
+                },
+                "region": {
+                  "startLine": 35
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA0013_P",
+          "message": {
+            "text": "Windows Forms Deprecated controls : MenuItem needs to be replaced with ToolStripMenuItem. For more details see - https://docs.microsoft.com/en-us/dotnet/core/compatibility/winforms#removed-controls"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.TrayApp/Program.cs"
+                },
+                "region": {
+                  "startLine": 34
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA0013_L",
+          "message": {
+            "text": "Windows Forms Deprecated controls : ContextMenu needs to be replaced with ContextMenuStrip. For more details see - https://docs.microsoft.com/en-us/dotnet/core/compatibility/winforms#removed-controls"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.TrayApp/Program.cs"
+                },
+                "region": {
+                  "startLine": 134
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA0013_P",
+          "message": {
+            "text": "Windows Forms Deprecated controls : MenuItem needs to be replaced with ToolStripMenuItem. For more details see - https://docs.microsoft.com/en-us/dotnet/core/compatibility/winforms#removed-controls"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.TrayApp/Program.cs"
+                },
+                "region": {
+                  "startLine": 139
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA0013_P",
+          "message": {
+            "text": "Windows Forms Deprecated controls : MenuItem needs to be replaced with ToolStripMenuItem. For more details see - https://docs.microsoft.com/en-us/dotnet/core/compatibility/winforms#removed-controls"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.TrayApp/Program.cs"
+                },
+                "region": {
+                  "startLine": 153
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA0013_P",
+          "message": {
+            "text": "Windows Forms Deprecated controls : MenuItem needs to be replaced with ToolStripMenuItem. For more details see - https://docs.microsoft.com/en-us/dotnet/core/compatibility/winforms#removed-controls"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.TrayApp/Program.cs"
+                },
+                "region": {
+                  "startLine": 165
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA0013_P",
+          "message": {
+            "text": "Windows Forms Deprecated controls : MenuItem needs to be replaced with ToolStripMenuItem. For more details see - https://docs.microsoft.com/en-us/dotnet/core/compatibility/winforms#removed-controls"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.TrayApp/Program.cs"
+                },
+                "region": {
+                  "startLine": 180
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA0013_P",
+          "message": {
+            "text": "Windows Forms Deprecated controls : MenuItem needs to be replaced with ToolStripMenuItem. For more details see - https://docs.microsoft.com/en-us/dotnet/core/compatibility/winforms#removed-controls"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.TrayApp/Program.cs"
+                },
+                "region": {
+                  "startLine": 207
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA0013_P",
+          "message": {
+            "text": "Windows Forms Deprecated controls : MenuItem needs to be replaced with ToolStripMenuItem. For more details see - https://docs.microsoft.com/en-us/dotnet/core/compatibility/winforms#removed-controls"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.TrayApp/Program.cs"
+                },
+                "region": {
+                  "startLine": 220
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "columnKind": "utf16CodeUnits"
+    },
+    {
+      "tool": {
+        "driver": {
+          "name": "Component Analysis",
+          "semanticVersion": "0.3.246501",
+          "informationUri": "https://docs.microsoft.com/en-us/dotnet/core/porting/upgrade-assistant-overview",
+          "rules": [
+            {
+              "id": "UA102",
+              "fullDescription": {
+                "text": "Component Analysis"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "UA102",
+          "message": {
+            "text": "Default font in Windows Forms has been changed from Microsoft Sans Serif to Seg Segoe UI, in order to change the default font use the API - Application.SetDefaultFont(Font font). For more details see here - https://devblogs.microsoft.com/dotnet/whats-new-in-windows-forms-in-net-6-0-preview-5/#application-wide-default-font"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.TrayApp/DeploymentToolkit.TrayApp.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA102",
+          "message": {
+            "text": "Default font in Windows Forms has been changed from Microsoft Sans Serif to Seg Segoe UI, in order to change the default font use the API - Application.SetDefaultFont(Font font). For more details see here - https://devblogs.microsoft.com/dotnet/whats-new-in-windows-forms-in-net-6-0-preview-5/#application-wide-default-font"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Deployment/DeploymentToolkit.Messaging/DeploymentToolkit.Messaging.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "UA102",
+          "message": {
+            "text": "Default font in Windows Forms has been changed from Microsoft Sans Serif to Seg Segoe UI, in order to change the default font use the API - Application.SetDefaultFont(Font font). For more details see here - https://devblogs.microsoft.com/dotnet/whats-new-in-windows-forms-in-net-6-0-preview-5/#application-wide-default-font"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///F:/002_Development/DeploymentToolkit/DeploymentToolkit.Blocker/DeploymentToolkit.Blocker.csproj"
+                },
+                "region": {}
+              }
+            }
+          ]
+        }
+      ],
+      "columnKind": "utf16CodeUnits"
+    }
+  ]
+}

@@ -10,7 +10,6 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml;
 
-// ReSharper disable once CheckNamespace
 namespace HGM.Hotbird64.Vlmcs
 {
 
@@ -163,20 +162,6 @@ namespace HGM.Hotbird64.Vlmcs
 		  ref DigitalProductId3 digitalProductId3,
 		  ref DigitalProductId4 digitalProductId4
 		);
-
-		//[DllImport("pidgenx.dll", CallingConvention = CallingConvention.Winapi, CharSet = CharSet.Unicode, ExactSpelling = true, SetLastError = false)]
-		//[SuppressMessage("ReSharper", "UnusedMember.Local")]
-		//private static extern uint PidGenX2
-		//(
-		//  string key,
-		//  string fileName,
-		//  string pidStart,
-		//  IntPtr oemId,
-		//  IntPtr unknown,
-		//  out DigitalProductId2 digitalProductId2,
-		//  ref DigitalProductId3 digitalProductId3,
-		//  ref DigitalProductId4 digitalProductId4
-		//);
 
 		internal static unsafe byte[] GetBytes(byte* b, int len)
 		{

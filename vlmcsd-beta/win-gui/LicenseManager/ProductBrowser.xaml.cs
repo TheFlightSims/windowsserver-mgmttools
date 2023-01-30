@@ -68,22 +68,6 @@ namespace HGM.Hotbird64.LicenseManager
             internal set => tempFileName = value;
         }
 
-        //public override bool Equals(object obj)
-        //{
-        //    if (!(obj is PKeyConfigFile other))
-        //    {
-        //        return false;
-        //    }
-
-        //    return BaseFileName == other.BaseFileName;
-        //}
-
-        //public override int GetHashCode()
-        //{
-        //    // ReSharper disable once NonReadonlyMemberInGetHashCode
-        //    return BaseFileName.GetHashCode();
-        //}
-
         public override string ToString() => DisplayName;
     }
 

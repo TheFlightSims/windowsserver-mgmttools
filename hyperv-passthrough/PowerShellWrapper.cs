@@ -129,11 +129,11 @@ namespace DiscreteDeviceAssigner
         public static void GpuPartitioning(VirtualMachine vm, CimInstance device)
         {
             RunScript("Add-VMGpuPartitionAdapter -VMName \"" + vm.Name + "\"");
-            RunScript("Set-VMGpuPartitionAdapter -MinPartitionVRAM 80000000 -MaxPartitionVRAM 100000000 " +
-                "-OptimalPartitionVRAM 100000000 -MinPartitionEncode 80000000 -MaxPartitionEncode 100000000 " +
-                "-OptimalPartitionEncode 100000000 -MinPartitionDecode 80000000 -MaxPartitionDecode 100000000 " +
-                "-OptimalPartitionDecode 100000000 -MinPartitionCompute 80000000 -MaxPartitionCompute 100000000 " +
-                "-OptimalPartitionCompute 100000000 -VMName \"" + vm.Name + "\"");
+            RunScript("Set-VMGpuPartitionAdapter -MinPartitionVRAM 8000000 -MaxPartitionVRAM 10000000 " +
+                "-OptimalPartitionVRAM 10000000 -MinPartitionEncode 8000000 -MaxPartitionEncode 10000000 " +
+                "-OptimalPartitionEncode 10000000 -MinPartitionDecode 8000000 -MaxPartitionDecode 10000000 " +
+                "-OptimalPartitionDecode 10000000 -MinPartitionCompute 8000000 -MaxPartitionCompute 10000000 " +
+                "-OptimalPartitionCompute 10000000 -VMName \"" + vm.Name + "\"");
         }
 
         public static void RemoveGpuPartitioning(VirtualMachine vm, CimInstance device)

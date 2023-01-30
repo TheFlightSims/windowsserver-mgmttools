@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "qO3IWYiccv0DzM1i686IqbrsMZY8HEGVdFkIC1s18a0cHSPoDDkjlY7B66lAvJtifk2+znQkTP+dXDLsawMxIQ==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Messaging\\DeploymentToolkit.Messaging.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'System.Data.SqlClient.4.8.1' from 'https://api.nuget.org/v3-flatcontainer/system.data.sqlclient/4.8.1/system.data.sqlclient.4.8.1.nupkg'.\r\nThe download of 'https://api.nuget.org/v3-flatcontainer/system.data.sqlclient/4.8.1/system.data.sqlclient.4.8.1.nupkg' timed out because no data was received for 60000ms.\r\n  Exception of type 'System.TimeoutException' was thrown."
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Newtonsoft.Json.12.0.1' from 'https://api.nuget.org/v3-flatcontainer/newtonsoft.json/12.0.1/newtonsoft.json.12.0.1.nupkg'.\r\nThe download of 'https://api.nuget.org/v3-flatcontainer/newtonsoft.json/12.0.1/newtonsoft.json.12.0.1.nupkg' timed out because no data was received for 60000ms.\r\n  Exception of type 'System.TimeoutException' was thrown."
+    }
+  ]
+}

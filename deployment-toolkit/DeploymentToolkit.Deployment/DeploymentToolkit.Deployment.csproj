@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows10.0.17763.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <Deterministic>false</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\DeploymentToolkit.Installer\Source\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog">
+      <HintPath>..\..\DeploymentToolkit.Logging\bin\Debug\NLog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DeploymentToolkit.Blocker\DeploymentToolkit.Blocker.csproj" />
+    <ProjectReference Include="..\..\DeploymentToolkit.Debugger\DeploymentToolkit.Debugger.csproj" />
+    <ProjectReference Include="..\..\DeploymentToolkit.Logging\DeploymentToolkit.Logging.csproj" />
+    <ProjectReference Include="..\..\DeploymentToolkit.TrayApp\DeploymentToolkit.TrayApp.csproj" />
+    <ProjectReference Include="..\DeploymentToolkit.Actions\DeploymentToolkit.Actions.csproj" />
+    <ProjectReference Include="..\DeploymentToolkit.DeploymentEnvironment\DeploymentToolkit.DeploymentEnvironment.csproj" />
+    <ProjectReference Include="..\DeploymentToolkit.Environment\DeploymentToolkit.ToolkitEnvironment.csproj" />
+    <ProjectReference Include="..\DeploymentToolkit.Messaging\DeploymentToolkit.Messaging.csproj" />
+    <ProjectReference Include="..\DeploymentToolkit.Modals\DeploymentToolkit.Modals.csproj" />
+    <ProjectReference Include="..\DeploymentToolkit.Restart\DeploymentToolkit.Restart.csproj" />
+    <ProjectReference Include="..\DeploymentToolkit.Scripting\DeploymentToolkit.Scripting.csproj" />
+    <ProjectReference Include="..\DeploymentToolkit.Unblocker\DeploymentToolkit.Unblocker.csproj" />
+    <ProjectReference Include="..\DeploymentToolkit.Util\DeploymentToolkit.Util.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.3.246501">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

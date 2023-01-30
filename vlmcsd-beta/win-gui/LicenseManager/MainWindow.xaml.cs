@@ -123,11 +123,7 @@ namespace HGM.Hotbird64.LicenseManager
                     License.SelectedLicense = Machine.ProductLicenseList[value];
                 } catch (Exception)
                 {
-                    //ignored
-                    /*MessageBox.Show($"Cannot get license info. Mostly because your product key is not installed, or not readable\n\n" +
-                                    $"Try to install one (e.g. from 'Install a Generic key') above to prevent crashing while processing", 
-                                    $"Error when reading product key", 
-                                    MessageBoxButton.OK);*/
+                    //ignored because of the useless of that
                 }
             });
         }
