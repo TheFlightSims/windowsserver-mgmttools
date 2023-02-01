@@ -1,6 +1,7 @@
 
 
 
+
 ![Windows Server Management Tools - Banner](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/docs_image.png?raw=true)
 # The Repository
 
@@ -71,5 +72,5 @@ This repo uses [**GNU GPL 3.0**](https://www.gnu.org/licenses/gpl-3.0.en.html) a
 |Windows Update Services|Yes|[Windows Update Remote Service](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/winupdate-remote-svc)|@[EliaSaSe](https://github.com/EliaSaSe), @[dependabot[bot]](https://github.com/apps/dependabot), @[florianknecht](https://github.com/florianknecht), @[tinogruse](https://github.com/tinogruse), TheFlightSims staff|https://github.com/EliaSaSe/windows-update-remote-service|
 |Windows Update Services|Yes|[WSUS Admin Assisstant](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/wsusadminassistant)|@[rjch-au](https://github.com/rjch-au), TheFlightSims staff|https://github.com/rjch-au/WSUSAdminAssistant|
 |Windows Update Services|Yes|[WSUS Online Descriptions](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/wsusonlinedescriptions)|@[Physikbuddha](https://github.com/Physikbuddha), TheFlightSims staff|https://github.com/Physikbuddha/wsus-online-descriptions|
-S|Windows Update Services|Yes|[WSUS Workgroup Utilities](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/wsusworkgrouputilities)|@[blndev](https://github.com/blndev/), TheFlightSims staff|https://github.com/blndev/wsusworkgroup|
+Windows Update Services|Yes|[WSUS Workgroup Utilities](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/wsusworkgrouputilities)|@[blndev](https://github.com/blndev/), TheFlightSims staff|https://github.com/blndev/wsusworkgroup|
 |Computer Management|Yes|[XMouse Control](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/xmouse-controls-develop)|@[joelpurra](https://github.com/joelpurra), TheFlightSims staff|https://github.com/joelpurra/xmouse-controls|
