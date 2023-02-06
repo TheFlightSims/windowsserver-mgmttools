@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "zxhXGlx3EyZl7IEWabGR2ozQWBHbvQ2ZTFRkmkU3BWmJWoZEOLTY57fqny7wwZh/L3i3JlA3xKAX1w/slWMvYA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\deployment-toolkit\\DeploymentToolkit.Modals\\DeploymentToolkit.Modals.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.dotnet.upgradeassistant.extensions.default.analyzers\\0.3.246501\\microsoft.dotnet.upgradeassistant.extensions.default.analyzers.0.3.246501.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512",
+    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.17763.28\\microsoft.windows.sdk.net.ref.10.0.17763.28.nupkg.sha512"
+  ],
+  "logs": []
+}

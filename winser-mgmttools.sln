@@ -112,16 +112,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{4958
 		sxs-mgmt\Samples\ImportList.txt = sxs-mgmt\Samples\ImportList.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SCCM App Creator", "SCCM App Creator", "{EF01B985-8A67-4417-AA58-48B7C55F0B42}"
-	ProjectSection(SolutionItems) = preProject
-		sccm-app-creator\CM App Creator.sln = sccm-app-creator\CM App Creator.sln
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DISM++", "DISM++", "{90F5BB32-C21A-4137-9A04-34C38AD79F86}"
-	ProjectSection(SolutionItems) = preProject
-		DISM++\Languages.sln = DISM++\Languages.sln
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment Toolkit", "Deployment Toolkit", "{5D8FE0BA-DEFF-43D4-BB67-44A34D4870E3}"
 	ProjectSection(SolutionItems) = preProject
 		deployment-toolkit\DeploymentToolkit.sln = deployment-toolkit\DeploymentToolkit.sln
