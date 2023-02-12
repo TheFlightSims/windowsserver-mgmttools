@@ -1,4 +1,5 @@
 
+
 ![Windows Server Management Tools - Banner](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/docs_image.png?raw=true)
 # The Repository
 
@@ -60,6 +61,7 @@ This repo uses [**GNU GPL 3.0**](https://www.gnu.org/licenses/gpl-3.0.en.html) a
 |VM Management|Yes|[Hyper-V Enhanced Session for Linux](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/hyper-v-enhanced-session-linux)|@[secana](https://github.com/secana), TheFlightSims staff|https://github.com/secana/EnhancedSessionMode|
 |VM Management|Yes|[Hyper-V Passthrough Device](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/hyperv-passthrough)|@[chanket](https://github.com/chanket), TheFlightSims staff|https://github.com/chanket/DDA|
 |Computer Management|Yes|[NVIDIA Driver Cleaner](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/nvidia-driver-cleaner)|@[ataberkylmz](https://github.com/ataberkylmz), TheFlightSims staff|https://github.com/ataberkylmz/NvidiaDriverCleaner|
+|Debugging|Yes|[PDB Downloader](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/PDB-Downloader)|@[rajkumar-rangaraj](https://github.com/rajkumar-rangaraj), TheFlightSims staff|https://github.com/rajkumar-rangaraj/PDB-Downloader
 |Computer Management|Yes|[Port Scanner](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/port-scanner)|@[IceMoonHSV](https://github.com/IceMoonHSV), TheFlightSims staff|https://github.com/IceMoonHSV/PortScanner|
 |All|Yes|[Powershel Admin Scripts](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/poweshell-adminscript)|@[wikijm](https://github.com/wikijm), @[ashish](https://github.com/ashishknitcs), TheFlightSims staff|https://github.com/wikijm/PowerShell-AdminScripts|
 |Computer Management|Yes|[Remote MSI Manager](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/remote-msi-manager)|@[DCourtel](https://github.com/DCourtel), TheFlightSims staff|https://github.com/DCourtel/Remote_MSI_Manager|

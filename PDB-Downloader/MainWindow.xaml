@@ -1,0 +1,81 @@
+﻿<Window x:Class="SymbolFetch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SymbolFetch"
+        mc:Ignorable="d"
+        Title="PDB Downloader" Height="374" Width="436"
+        ResizeMode="CanMinimize">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary 
+                  Source="Resources/StaticResources.xaml">
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+              CornerRadius="5,5,0,0" Margin="-1,0,-1,0" MouseLeftButtonDown="DragWindow"/>
+
+            <StackPanel Name="stackPanelMain" Margin="0,10,0,0" Grid.RowSpan="2">
+                <StackPanel.Background>
+                    <LinearGradientBrush>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <!--Button x:Name="downall" Click="downall_Click" Width="142" Content="Download all PDBs" HorizontalAlignment="Center" Margin="0,0,0,10"/-->
+                <Button x:Name="btnopenFile" Click="btnopenFile_Click" Width="142" Content="Open DLL or EXE file(s)" HorizontalAlignment="Center"/>
+                <ListBox x:Name="lstFiles" Visibility="Hidden" Height="70" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                <Label Height="25" x:Name="lblStatus" Margin="5,0" VerticalContentAlignment="Center" Content="Status:"/>
+                <Label Height="25" x:Name="lblFileSize" Margin="5,0" VerticalContentAlignment="Center" Content="File size:"/>
+                <Label Height="26" x:Name="lblSavingTo" VerticalContentAlignment="Center">
+                    <Button Style="{StaticResource HyperlinkLikeButton}" x:Name="btnPath" Click="btnPath_Click"/>
+                </Label>
+
+
+
+
+                <GroupBox Header="Total progress"  x:Name="gbTotalProgress" Margin="5,0" Width="408">
+                    <StackPanel x:Name="stackPanel1">
+                        <ProgressBar Height="23" x:Name="pBarTotalProgress" Margin="5,3,5,0" VerticalAlignment="Top" Value="0"/>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="File progress" x:Name="gbFileProgress" Margin="5,0" Width="408">
+                    <StackPanel x:Name="stackPanel2">
+                        <ProgressBar Height="23" x:Name="pBarFileProgress" Margin="5,3,5,0" VerticalAlignment="Top" Value="0"/>
+                    </StackPanel>
+                </GroupBox>
+                <Border x:Name="border1" Height="36" BorderBrush="DarkBlue">
+                    <StackPanel x:Name="stackPanel4" Orientation="Vertical" Height="45">
+                        <StackPanel x:Name="stackPanel3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5">
+                            <Button Height="23" x:Name="btnStart" Width="75" Click="btnStart_Click" Content="Start"/>
+                            <Button Height="23" x:Name="btnPause" Width="75" Margin="5,0,0,0" IsEnabled="False" Click="btnPause_Click" Content="Pause"/>
+                            <Button Height="23" x:Name="btnResume" Width="75" Margin="5,0,0,0" IsEnabled="False" Click="btnResume_Click" Content="Resume"/>
+                            <!--<Button Height="23" Name="btnStop" Width="75" Margin="5,0,0,0" IsEnabled="False" Click="btnStop_Click" Visibility="Hidden">Stop</Button>-->
+
+                        </StackPanel>
+                        <StackPanel x:Name="stackPanel5" Orientation="Horizontal" HorizontalAlignment="Center" Visibility="Hidden">
+                            <CheckBox Height="16" x:Name="cbUseProgress" Width="166" Checked="cbUseProgress_Checked" IsChecked="True" Content="Calculate the total progress"/>
+                            <CheckBox Height="16" IsChecked="True" x:Name="cbDeleteCompletedFiles" Width="254" Margin="5,0,0,0" Checked="cbDeleteCompletedFiles_Checked" Content="Delete complete downloads when cancelled"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+            <!--<Button HorizontalAlignment="Right" Margin="0,3,2,4" Name="btnClose" Width="24" Click="btnClose_Click">X</Button>-->
+
+        </Grid>
+
+    </Grid>
+</Window>
