@@ -112,11 +112,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{4958
 		sxs-mgmt\Samples\ImportList.txt = sxs-mgmt\Samples\ImportList.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment Toolkit", "Deployment Toolkit", "{5D8FE0BA-DEFF-43D4-BB67-44A34D4870E3}"
-	ProjectSection(SolutionItems) = preProject
-		deployment-toolkit\DeploymentToolkit.sln = deployment-toolkit\DeploymentToolkit.sln
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,3 +1,4 @@
+
 ![Windows Server Management Tools - Banner](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/docs_image.png?raw=true)
 # The Repository
 
@@ -55,7 +56,6 @@ This repo uses [**GNU GPL 3.0**](https://www.gnu.org/licenses/gpl-3.0.en.html) a
 |Computer Management|Yes|[DISM++](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/DISM++)|@[Chuyu Team](https://github.com/Chuyu-Team)|https://github.com/Chuyu-Team/Dism-Multi-language
 |IIS Management|Yes|[Check IIS](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/check-iis)|@[TheFlyingCorpse](https://github.com/TheFlyingCorpse), TheFlightSims staff|https://github.com/TheFlyingCorpse/check_iis
 |Database Management|Yes|[Database Manager](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/database-manager)|@[dependabot[bot]](https://github.com/apps/dependabot), @[victor-wiki](https://github.com/victor-wiki), TheFlightSims staff|https://github.com/victor-wiki/DatabaseManager|
-|Computer Management|Yes|[Deployment Toolkit](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/deployment-toolkit)|@[DeploymentToolkit](https://github.com/deploymenttoolkit), TheFlightSims staff|https://github.com/deploymenttoolkit/Deployment
 |VM Management|Yes|[Hyper-V Backup](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/hyperv-backup)|@[pablopioli](https://github.com/pablopioli), @[schtritoff](https://github.com/schtritoff), TheFlightSims staff|https://github.com/ColiseoSoftware/hypervbackup|
 |VM Management|Yes|[Hyper-V Enhanced Session for Linux](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/hyper-v-enhanced-session-linux)|@[secana](https://github.com/secana), TheFlightSims staff|https://github.com/secana/EnhancedSessionMode|
 |VM Management|Yes|[Hyper-V Passthrough Device](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/hyperv-passthrough)|@[chanket](https://github.com/chanket), TheFlightSims staff|https://github.com/chanket/DDA|
