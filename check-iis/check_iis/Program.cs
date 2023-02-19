@@ -10,7 +10,7 @@ using System.Linq;
 
 namespace MonitoringPluginsForWindows
 {
-    public class check_iis
+    public class Check_iis
     {
         private static readonly List<string> listPerfData = new List<string>();
         private static readonly List<string> listSiteOutput = new List<string>();
@@ -220,11 +220,17 @@ namespace MonitoringPluginsForWindows
                 .Callback(value => do_debug = value)
                 .WithDescription("\t\tSwitch to to get maximum verbosity (for debugging)")
                 .SetDefault(false);
-
-            _ = p.Setup<bool>('M', "perfdata-mbytes")
-                .Callback(value => do_perfdata_mbytes = value)
-                .WithDescription("\tArgument used to specify use of Megabytes rather than bytes in perfdata output")
-                .SetDefault(false);
+            try
+            {
+                _ = p.Setup<bool>('M', "perfdata-mbytes")
+                    .Callback(value => do_perfdata_mbytes = value)
+                    .WithDescription("\tArgument used to specify use of Megabytes rather than bytes in perfdata output")
+                    .SetDefault(false);
+            }
+            catch (Exception)
+            {
+                _ = false;
+            }
 
             _ = p.SetupHelp("?", "help")
                 .Callback(text => Console.WriteLine(text))

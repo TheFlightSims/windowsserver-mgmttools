@@ -1,11 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "nZVQfzvIad5vfIAThp0plfWZCo+Wu0/T0DO4xK6wfLsBYmeRfathkcjKIi0wT7ul/xBOWLzrgkwWZY5frcFc5w==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\DatabaseInterpreter.Model.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
-  ],
-  "logs": []
+  "dgSpecHash": "CX7oNnnlZmVE7DZMQZfUrqLBPlwznbVjReJ/ekAuFWYyhEwqQdtfxWOZCyzmYH1nmpXG8ZCoI9X0foddf2kBXQ==",
+  "success": false,
+  "projectFilePath": "D:\\#source-code\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\DatabaseInterpreter.Model.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package NETStandard.Library with version (>= 2.0.3)\r\n  - Found 3 version(s) in Microsoft Visual Studio Offline Packages [ Nearest version: 2.0.0 ]\r\n  - Found 0 version(s) in C:\\Program Files\\dotnet\\library-packs",
+      "libraryId": "NETStandard.Library",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }

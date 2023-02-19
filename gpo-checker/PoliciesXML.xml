@@ -1,0 +1,1356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Policies>
+  <Policy-Summary number="11">
+    <Header>
+      User Account Hardening
+    </Header>
+    <Base-Text>
+		These policies generally deal with security to prevent hackers from bypassing your device security and gaining access to your sensitive data (e.g., passwords, your bio) in the domain computers
+	</Base-Text>
+    <Vuln>
+		Follow the guidance in the following pages to secure yourself against these vulnerabilities.
+	</Vuln>
+    <Not-Vuln>
+		Currently, there are no detected vulnerabilities with your account security. The search is not guaranteed to be exhaustive that threats may still exist, just not the most serious ones are known. You can skip this section below.
+	</Not-Vuln>
+    <Vulnerabilities>
+      <Vulnerability position="0">
+        Currently, any user can connect with their work laptop to a public network with no permissions, leaving them (potentially with secure data) vulnerable to attackers on the same network.
+      </Vulnerability>
+      <Vulnerability position="1">
+        When entering their password, a user can press the password reveal button to display it in plain sight to anyone who can see, memorize (or write down) and use it later.
+      </Vulnerability>
+      <Vulnerability position="4">
+		  Any computer with Cortana with no significant security updates can be at risk of leaking passwords. Also, other potential unknown vulnerabilities with Cortana will be available to them.
+	  </Vulnerability>
+    </Vulnerabilities>
+    <Policies>
+      <Policy name="Require domain users to elevate when setting a network's location" default="2" recommended="1">
+        <Guidance>
+			This policy locates at "Computer Configuration > Policies > Administrative Templates > Network > Network Connections > Require domain users to elevate when setting a network’s location."
+			This policy affects all users in the domain when changing the firewall behavior and prevents users from attackers who are trying to get access to the device when connected to the unsecured network.
+		</Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+			  This policy is disabled. In general, this is less secure for data, and this policy should be enabled. See guidance for a more in-depth explanation, however.
+		  </Threshold>
+          <Threshold threshold="1-1">
+            This policy is enabled. In general, this is the more secure option for data. There is a more in-depth explanation of why and why not to enable this in the guidance.
+          </Threshold>
+          <Threshold threshold="2-2">
+			  This policy has not been configured and defaults to disabled. In general, this is less secure for data, and this policy should be enabled. See guidance for a more in-depth explanation, however.
+		  </Threshold>
+        </Advice>
+      </Policy>
+
+      <Policy name="Do not display the password reveal button" default="2" recommended="1">
+        <Guidance>
+			This policy locates at "Computer Configuration > Policies > Administrative Templates > Windows Components > Credential User Interface > Do not display the password reveal button."
+			This policy prevents users from displaying their password in plain text (rather than starred out) in input boxes.
+		</Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, allowing users to show their password on their screen in plain text where it can be seen and used by anyone nearby. It is recommended to enable this policy.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, so users cannot show their password field in plain text, which is the more secure option.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting has not been configured and, by default, is disabled, allowing users to show their password on their screen in plain text where it can be seen and used by anyone nearby. It is recommended to enable this policy.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Prevent the usage of OneDrive for file storage" default="2" recommended="1">
+        <Guidance>
+			This policy locates at  "Computer Configuration > Policies > Administrative Templates > Windows Components > OneDrive > Prevent the usage of OneDrive for file storage."
+			This policy lets you prevent apps and features from working with files on OneDrive.
+		</Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, meaning that OneDrive is allowed and, by default, used. This increases vulnerabilities and allows easier access with stolen credentials. This setting should be enabled.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, meaning that OneDrive is completely disallowed. This is more secure, though it does not block other file-sharing systems, which is a move that should be considered.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured and, by default, disabled, meaning that OneDrive is allowed and, by default, used. This increases vulnerabilities and allows easier access with stolen credentials. This setting should be enabled.
+          </Threshold>
+        </Advice>
+      </Policy>
+
+      <Policy name="Do not sync" default="2" recommended="1">
+        <Guidance>
+			This policy locates at "Computer Configuration > Administrative Templates > Windows Components > Sync your settings > Do not sync."
+			This disallows your users from automatically syncing their devices with online storage.
+		</Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, so if a file-sharing system is used, it will always be up to date, regardless of the data sensitivity, giving an attacker easier access to it.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, meaning that even if a file-sharing system (not recommended) is used, data from users will not necessarily be stored there, allowing them to only store necessary data there and to avoid leaving sensitive data in an easier-to-attack-location.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured and, by default, disabled, so if a file-sharing system is used, it will always be up to date, regardless of the data sensitivity, giving an attacker easier access to it.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Allow Cortana" default="2" recommended="0">
+        <Guidance>
+This setting can be found under Computer Configuration > Administrative Templates > Windows Components > Search > Allow Cortana.
+Cortana is not particularly necessary for any user, let alone a user in a company setting. And while it adds little or no value, it has/has had vulnerabilities with it that could allow attackers some way into your network.
+Also, even if the vulnerabilities have been patched, not all users will have updated their windows version, so those vulnerabilities may still exist on some devices.
+Because of this, it is recommended to disable Cortana on devices in the company - from a security point of view, Cortana is nothing but a vulnerability.
+Disabling Cortana still allows the user to search normally, so there really is no disadvantage to disabling it.
+Note that Cortana, and by extension, this setting is only available on Windows 10, so does not need to be configured on other operating systems.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, and it is recommended to keep it this way.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, which is not the recommended state, as it opens up potential vulnerabilities in Cortana. It is recommended to disable this.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured. If you are not on windows 10, this setting can be safely ignored. If you are, it is strongly recommended to explicitly disable this due to potential vulnerabilities.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <!--Windows 10 exclusive?-->
+      <Policy name="Don't search the web or display web results in Search" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Administrative Templates > Windows Components > Search > Don’t search the web or display web results in the search.
+This policy setting allows you to control whether or not Search can perform queries on the web over metered connections and if the web results are displayed in search.
+Windows 10 introduced a new feature where desktop searches made also search the internet (by default - it can be turned off by individual users). The utility of this seems to be minimal, as a search on a search engine of your choice (not necessarily being as this is restricted to) would give the same effect.
+If a user was to search their computer for something sensitive, such as a keyword or a password, the internet is also searched, sending out those keywords where they could theoretically be seen. Even if the data is not sensitive itself, it could make that user a more attractive target (if, say, searching for company-passwords.txt).
+Realistically disabling this policy arguably has no downside, as it increases the effectiveness of searches in addition to improving security. Enabling this will also disable Cortana, which is another security improvement.
+This is a windows 10 only feature, so on other operating systems, this does not need to be configured.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, which means the web is searched in addition to the system. This will decrease search speed and search effectiveness and also opens up potential vulnerabilities. It is recommended to enable this setting.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, so the web is not searched when a search is done in the file system. So anything sensitive that is searched for will not be sent over potentially less secure channels to the internet.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured and, by default, disabled unless you are not on windows 10, in which case this can be safely ignored. If you are on windows ten, this means the web is searched in addition to the system. This will decrease search speed and search effectiveness and also opens up potential vulnerabilities. It is recommended to enable this setting.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <!--Windows 10 exclusive?-->
+      <Policy name="Turn off the Store application" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Administrative Templates > Windows Components > Store > Turn off the Store application.
+Denies or allows access to the Store application.
+The windows store has, in the past, been known to have several vulnerabilities in it, as well as hosting malware, fake apps, and more.
+While most of the known issues have been patched and multiple security features put in place, it is not fully secure, and it only takes a single user to download a particularly nasty version of an app for the system to risk being compromised.
+Generally, most applications that would be needed off the windows store can be found elsewhere and downloaded in a safer, more reliable way.
+Note that the windows store, and by extension, this setting is only available on Windows 10, so does not need to be configured on other operating systems.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, allowing potentially insecure use of the windows store that could result very easily in malware being downloaded onto the user's device and, by extension, into the network. It is recommended to enable this setting.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, so the user cannot use the windows store to download potentially unsafe apps and instead has to go through the usual security measures to download applications. Make sure these are up to date too.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured and, by default, disabled, allowing potentially insecure use of the windows store that could result very easily in malware being downloaded onto the user's device and, by extension, into the network. It is recommended to enable this, assuming you are on windows 10.
+          </Threshold>
+        </Advice>
+      </Policy>
+
+      <Policy name="Screen saver timeout" default="2" recommended="1">
+        <Guidance>
+This setting can be found under User Configuration > Administrative Templates > Control Panel > Personalization > Screen saver timeout.
+Specifies how much user idle time must elapse before the screen saver is launched.
+When configured, this idle time can be set from a minimum of 1 second to a maximum of 86,400 seconds, or 24 hours. If set to zero, the screen saver will not be started.
+When not configured, whatever wait time is set on the client through the Screen Saver dialog in the Personalization or Display Control Panel is used. The default is 15 minutes.
+The setting given here determines how long a user can leave their screen unlocked. If this value is too long or not set at all 
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, allowing users to leave their screen unlocked for theoretically unlimited time. Naturally, this is insecure, as it completely bypasses all security except physical and network, allowing anyone who can gain physical access complete access to the device. If the user is an administrator, this could result in massive amounts of data being taken. The recommended time is 10 minutes.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, so the user cannot set their screen saver timeout themselves, locking their screen automatically after the given time, helping to stop unauthorized physical access. Ensure this time is set to a short enough value. The recommended value is 10 minutes.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured. By default, users can choose their own screen saver time, defaulting to 15 minutes. The recommended time is 10 minutes, so this is not terrible, but as they can change it, they could choose to leave their screen unlocked for any amount of time, leading to massive potential breaches if an attacker can gain physical access.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Turn off picture password sign-in" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Administrative Templates > System > Logon > Turn off picture password sign-in
+This policy setting allows you to control whether a domain user can sign in using a picture password.
+Picture passwords are an additional security feature that has been added to windows, in addition to a regular text password. While the picture password itself may not be inherently more vulnerable than a regular password (though it would be much weaker than a very strong password with good lockout policies), there are security issues present.
+You have 5 attempts to get the picture password by default, after which you have to use your regular text password. Considering most users will not make an entirely random pattern, there are only a limited number of patterns that would be considered with most pictures. With an entire office to try, an attacker has a reasonably good chance of getting into at least one system.
+As a theoretical point, users who use picture passwords may begin to neglect their textual passwords, not changing them or making them weaker than otherwise, as they do not consider them their primary security. Also, since they do not use it regularly, it will be harder to remember over time, so when they do need it, they are more likely to reset it, and when they reset it, it is more likely to be to a simple password.
+This is mostly independent of passwords, so even with perfect password security, this could also give an extra way in. From a security perspective, this feature gives no benefits while opening up a potential security risk. Because of this, it is recommended to enable this feature.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, allowing users to activate a picture password, giving attackers an essentially free attack attempt to get into the user's device. It is recommended to enable this feature, which will completely disable picture passwords.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, disallowing users from activating picture passwords and making their accounts more secure as a result.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured and, by default, disabled, allowing users to activate picture passwords, giving attackers an essentially free attack attempt to get into the user's device. It is recommended to enable this feature, which will completely disable picture passwords.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <!--Windows 10 exclusive?-->
+      <Policy name="Use a hardware security device" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Administrative Templates > Windows Components > Windows Hello for Business > Use a hardware security device.
+A Trusted Platform Module (TPM) provides additional security benefits over software because data stored within it cannot be used on other devices.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, so a TPM is not required to use Windows Hello for Business. If you do not use TPM or Windows Hello for Business, this setting does not have much use, so it can safely be disabled. Otherwise, you are recommended to enable it.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, so a TPM is required to use Windows Hello for Business. Assuming you use both, this is the ideal setting; if you do not, it is probably safest not to configure it (though the safest option is to use TPM and enable it).
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured, so a TPM is not required to use Windows Hello for Business. If you do not use TPM or Windows Hello for Business, this setting does not have much use, so it can safely be left. Otherwise, you are recommended to enable it (and either way are recommended to have TPM). This is a windows 10 only feature, so if you do not have windows 10, this can be ignored.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <!--Windows 10 exclusive?-->
+      <Policy name="Summary" default="0" recommended="0" recommendedColour="Black">
+        <Guidance></Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+In general, these policies maximize security at the cost of reducing user experience. In general, most of these services are unlikely to be needed (e.g., Cortana); however, in cases where keeping data backed up is important, it may not be that harmful to sync data, though it would still be advantageous to store sync data on a case by case basis.
+          </Threshold>
+        </Advice>
+      </Policy>
+    </Policies>
+  </Policy-Summary>
+  <!--User authentication-->
+  <Policy-Summary number="10">
+    <Header>
+      User Authentication
+    </Header>
+    <Base-Text>
+      These policies generally deal with login policies and how easy it is to access a user's account/device. If remote access is allowed, or if a physical device is taken, regardless of any network connections, weak policies here give the potential for attackers to break into a system by figuring out, guessing, or cracking user passwords.
+    </Base-Text>
+    <Vuln>
+      Currently, there are vulnerabilities with your user authentication policies. Follow the guidance in the following pages to secure yourself against these vulnerabilities.
+    </Vuln>
+    <Not-Vuln>
+      Currently, there are no detected vulnerabilities with your user authentication policies. The search is not guaranteed to be exhaustive, so some vulnerabilities may still exist, just not the most serious ones that are currently known. While it is recommended to look at the policies you have set to understand why they are important, you can skip this section below.
+    </Not-Vuln>
+    <Vulnerabilities>
+      <Vulnerability position="2">
+        Users can currently set short passwords. While it is possible some users will choose longer passwords, it is inevitable some will opt for the shortest password possible (or possibly even no password), leaving a huge vulnerability to guessing and brute force tactics.
+      </Vulnerability>
+      <Vulnerability position="4">
+        You do not require your users to make their passwords complex. Realistically this means many users will make simple passwords using only, for example, lowercase letters. Typically this will consist of or contain common dictionary words. So a common attack tactic will be to try common dictionary words, in what is known as a dictionary attack, which will make these passwords as secure as very short passwords.
+      </Vulnerability>
+      <Vulnerability position="7">
+        Your lockout policy is unsafe. Either you have no lockout policy/allow too many attempts for it to matter - in which case your login page/system will be vulnerable to a brute force attack, or you allow too few attempts, which means users will be more likely to make shorter passwords, which will have a similar effect.
+      </Vulnerability>
+    </Vulnerabilities>
+    <Policies>
+
+
+  <!--Authentication policy-->
+  <Policy name="MinimumPasswordAge" default="0" recommended="2">
+    <Guidance>
+      This setting can be found under Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Password Policy > Minimum password age.
+This value can be set between 0 and 998. It is strongly recommended to set this to greater than 0. The recommended value for this is 5.
+The best value depends on the use case, however. If a domain admin is hard to access, this value should be set lower so that a compromised password can be changed with minimal delay.
+Smaller minimum password age values should be counteracted with a high password history value, so passwords take longer to repeat.
+In theory, the ideal value for this should be 0, as users should always be able to change passwords if necessary. However, users should also never be able to reuse old passwords, so putting in a buffer to help stop this is helpful. Even a value of 1 day is most likely sufficient to deter any attempts at reusing a password.
+    </Guidance>
+    <Advice>
+      <Threshold threshold="0-0">
+        Your minimum password age is 0. This allows users to cycle through passwords to return to a previous password so they can continue using an old insecure password. Consider changing this value to 1 so users must create new passwords.
+      </Threshold>
+      <Threshold threshold="6-999">
+        Your minimum password age is %NUM% days. This prevents users from changing their passwords very often. Consider shortening this time (But keeping it above 0) for added security
+      </Threshold>
+      <Threshold threshold="1-5">
+        Your minimum password age is %NUM% days. This will allow users to change passwords frequently without cycling to reuse old passwords often enough to be insecure.
+      </Threshold>
+    </Advice>
+  </Policy>
+
+  <Policy name="MaximumPasswordAge" default="0" recommended="2">
+    <Guidance>
+      This setting can be found under Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Password Policy > Maximum password age.
+This value can be set between 0 and 999. It is strongly recommended to set this to greater than 0, and less than 300. The recommended value for this is 60.
+    </Guidance>
+    <Advice>
+      <Threshold threshold="0-20">
+        Your maximum password age is %NUM% days. This means your users will have to change their password too frequently and will encourage them to use insecure easy-to-guess passwords and/or store them in easy-to-access areas. Consider increasing this value.
+      </Threshold>
+      <Threshold threshold="150-999">
+        Your maximum password age is %NUM% days. This allows your users to keep passwords for a very long time, increasing the chances they will be compromised and used before being changed. Consider decreasing this value.
+      </Threshold>
+      <Threshold threshold="21-149">
+        Your maximum password age is %NUM% days. This should make your users change their password frequently enough without frustrating them and encouraging them to be insecure.
+      </Threshold>
+    </Advice>
+  </Policy>
+
+  <Policy name="MinimumPasswordLength" default="0" recommended="2">
+    <Guidance>
+      This setting can be found under Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Password Policy > Minimum password length.
+This value can be set between 0 and 14. It is strongly recommended to set this value to greater than 0. The recommended value for maximum security is 14.
+This value should absolutely never be set to 0, as that allows anyone access with just a username (admin or root could potentially compromise your entire network).
+Longer passwords definitely give greater security, and good lockout policies can stop most password-based attacks. 
+However, if encrypted passwords are compromised, a password length of at least 10-12 characters is necessary to reasonably defeat attacks on otherwise strong passwords.
+    </Guidance>
+    <Advice>
+      <Threshold threshold="0-0">
+        You do not require your users to have passwords. This is incredibly unsafe and allows potential attackers easy access to your systems and data.
+      </Threshold>
+      <Threshold threshold="1-9">
+        Your minimum password length is %NUM%. This is quite a short password for your users, and while it offers some security, it could be quite easily cracked by a determined attacker. Consider making this value higher to force your users to have longer, harder-to-crack passwords.
+      </Threshold>
+      <Threshold threshold="10-14">
+        Your minimum password length is %NUM%. While this is a long enough password to be hard to crack, you should still make sure your other password policies are strong enough as well.
+      </Threshold>
+    </Advice>
+  </Policy>
+
+  <Policy name="PasswordHistorySize" default="24" recommended="2">
+    <Guidance>
+      This setting can be found under Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Password Policy > Enforce password history.
+This value can be set between 0 and 24. It is strongly recommended to set this to greater than 0. The recommended value for this is 24.
+Generally, unless the minimum/maximum password age is set particularly short, this value does not need to be quite this high.
+However, it is important to ensure that this value is set high enough in consideration of other settings. With a password being changed monthly, it would not be surprising for a user to cycle around 4-5 passwords. This way, the same password could be in use years later, making the process of changing passwords far less secure.
+    </Guidance>
+    <Advice>
+      <Threshold threshold="0-0">
+        You allow your users to reuse passwords as often as they like. Many users will opt to reuse the same password repeatedly, meaning if they are compromised, there will be a way into your system for a very long time.
+      </Threshold>
+      <Threshold threshold="1-5">
+        You remember %NUM% passwords. While this does force users to change passwords, there are few enough that simple variations can be used. A longer history would help to force users to make different passwords.
+      </Threshold>
+      <Threshold threshold="6-24">
+        You remember %NUM% passwords. Users will likely have to come up with new passwords; however, this will only be effective in conjunction with a long enough minimum password age.
+      </Threshold>
+    </Advice>
+  </Policy>
+
+  <Policy name="PasswordComplexity" default="1" recommended="1">
+    <Guidance>
+      This setting can be found under Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Password Policy > Password must meet complexity requirements.
+This value can be set to either Enabled or Disabled. It is strongly recommended to set this to Enabled.
+This is an incredibly simple setting that will protect against very simple passwords being used, such as passwords, and the more complex passwords will be harder to recycle (e.g., password, password1, password123).
+This also adds in a default six-character minimum; however, it is recommended to have a higher minimum length anyway.
+    </Guidance>
+    <Advice>
+      <Threshold threshold="0-0">
+        Your password complexity settings are disabled. This allows users to create incredibly simple passwords that can be easily guessed or cracked.
+      </Threshold>
+      <Threshold threshold="1-1">
+        Your password complexity settings are enabled. This makes sure users cannot create passwords that are too simple. Ensure other settings are similarly secure for strong and secure passwords that protect your system.
+      </Threshold>
+    </Advice>
+  </Policy>
+
+  <Policy name="ClearTextPassword" default="0" recommended="0">
+    <Guidance>
+      This setting can be found under Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Password Policy > Store passwords using reversible encryption.
+This value can be set to either Enabled or Disabled. It is strongly recommended to set this to Disabled unless the passwords need to be accessed by the system.
+If the passwords do need to be accessed, it is still recommended to set this setting to Disabled and only Enable it on a case-by-case basis on individual devices.
+This setting, if enabled, stores passwords in a way that makes them retrievable. This means they are far easier to crack and, indeed, are described as being 'essentially the same as storing plaintext versions.'
+So this setting should never be enabled unless absolutely necessary, and even then is strongly recommended to be done on a case-by-case basis.
+    </Guidance>
+    <Advice>
+      <Threshold threshold="0-0">
+        Reversible encryption storage is disabled. This means the passwords are stored with irreversible encryption, and so is the more secure option.
+      </Threshold>
+      <Threshold threshold="1-1">
+        Reversible encryption storage is enabled. This is the less secure option and is hardly more secure than storing in plain text. Any breach will leak usable passwords. Unless this is a necessary feature, consider disabling this for security.
+      </Threshold>
+    </Advice>
+  </Policy>
+
+  <Policy name="Summary" default="0" recommended="0" recommendedColour="Black">
+    <Guidance></Guidance>
+    <Advice>
+      <Threshold threshold="0-0">
+Unfortunately, user-generated passwords are inherently weak against targeted attacks, and word lists are used to narrow down the likely phrases along with rules to predict how users will use special characters, capital letters, and numbers, which greatly narrows down the expected possibilities to check.
+Despite this, each requirement does help; enabling complexity forces searches to try many more possibilities than the expected all lowercase passwords otherwise, and longer passwords will always take more time to break. Using these policies correctly will ensure passwords are very hard to guess, and any stolen or intercepted hashes take an infeasible amount of time to crack - long enough to discover a breach and change passwords.
+The most direct approach - entering passwords into the login field - is likely to fail if tried manually. If tried systematically with lots of guesses, this is known as a brute force attack.
+When brute force attacks are performed, a huge number of passwords are attempted very quickly. If the attacker has no direction, millions of passwords may be attempted before a match is found. So a very effective technique to block this is account locking and throttling, which restricts the number of attempts made in a given timeframe, which can be set in the following policies.
+      </Threshold>
+    </Advice>
+  </Policy>
+
+  <Policy name="LockoutBadCount" default="0" recommended="3">
+    <Guidance>
+      This setting can be found under Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy > Account lockout threshold.
+This lockout policy is one of the most important tools in stopping brute-force attacks. Increases in computing power and connectivity can increase the number of passwords tried per time period, but with only a certain number allowed, this puts a bottleneck on brute-force attacks, making them infeasible on long passwords with potentially very little effort on the user's part.
+Generally, 10 is a good number of attempts to give your user, as that should give them plenty of attempts to access their account. If more than 10 attempts are needed, it is quite unlikely to be a legitimate access attempt and should be flagged to check anyway.
+If an account gets locked out by this policy, it should be looked into, and if the attempt looks suspicious, the password on the account should be changed.
+    </Guidance>
+    <Advice>
+      <Threshold threshold="0-0">
+        There is currently no lockout policy. This means attackers can make essentially unlimited attempts to log in, giving them a good chance to find at least one valid password. Consider enabling lockout to prevent this.
+      </Threshold>
+      <Threshold threshold="1-3">
+        You allow %NUM% attempts at getting the correct password. Typos are not uncommon, and you will see a large number of users being locked out, which in addition to lowering productivity, will encourage users to use easier passwords. Assuming the password policy is secure, you can allow more attempts without compromising security.
+      </Threshold>
+      <Threshold threshold="15-999">
+        You allow %NUM% attempts at getting the correct password. This is a lot of attempts and far more than any user should need. Attackers will benefit by being able to try quite a large number of common passwords, especially if you don't have a strong password policy. Consider reducing the number of allowed attempts
+      </Threshold>
+      <Threshold threshold="4-14">
+        You allow %NUM% attempts at getting the correct password. This should give plenty of attempts for the user without giving any serious security concerns. However, make sure your password policy is strong so that attackers can't easily guess some passwords in these few attempts.
+      </Threshold>
+    </Advice>
+  </Policy>
+
+  <Policy name="LockoutDuration" default="0" recommended="1">
+    <Guidance>
+      This setting can be found under Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy > Account lockout duration.
+      The lockout duration is not massively important, as an attack is likely to be either a known password, very few isolated attempts taken from other sources or a massive number of brute force attacks. As long as not too many attempts are allowed per lockout (e.g., 10), even a single-minute lockout would still make it secure enough to repel most brute-force attacks.
+      With a short lockout duration and a low number of attempts, this is similar to throttling, a similarly effective tool, which is also recommended but not offered as a group policy by windows (currently).
+      This duration should not be too long except in circumstances where it is known to be necessary, for example, to coordinate a response to an attack. In this case, an administrator would have to unlock their account if a user typed the wrong password too many times.
+    </Guidance>
+    <Advice>
+      <Threshold threshold="0-0">
+        There is no lockout policy, so there is also no lockout duration.
+      </Threshold>
+      <Threshold threshold="1-60">
+        Your lockout duration is %NUM% minutes. While this gives multiple attempts to an attacker, for instance, overnight, with few enough attempts given per lockout, this is not a problem.
+      </Threshold>
+      <Threshold threshold="61-99999">
+        Your lockout duration is %NUM% minutes. This will keep attackers from making too many attempts at any given time; however, if an administrator is not easy to access, this could leave users locked out of their accounts for a very long time.
+      </Threshold>
+    </Advice>
+  </Policy>
+
+  <Policy name="ResetLockoutCount" default="0" recommended="1">
+    <Guidance>
+      This setting can be found under Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Account Lockout Policy > Reset account lockout counter after.
+      Depending on how lockout is used, this setting is potentially redundant. If there is a short lockout duration to throttle the login attempts, this should be set to the same value, as the strategy is to give only a certain number of attempts in a given time, and this setting being lower would undermine that.
+      Regardless of the intent, this value should not be very different from the lockout duration; otherwise, you give attackers extra attempts to attack, while in general, it's very unlikely legitimate users will take advantage of it.
+    </Guidance>
+    <Advice>
+      <Threshold threshold="0-0">
+        There is no lockout policy, so there is also no reset interval.
+      </Threshold>
+      <Threshold threshold="1-60">
+        Your lockout counter reset time is %NUM% minutes. This setting is only an issue if many attempts are given per lockout or if this is far longer than the lockout setting. While this value should not be visible or known to an attacker if figured out, that could be used to circumvent a longer lockout time. Make sure this value is not too different from the lockout duration.
+      </Threshold>
+      <Threshold threshold="61-99999">
+        Your lockout counter reset time is %NUM% minutes. This, in particular, is not an issue; however, it means your lockout duration is potentially long enough to keep a user locked out for too long. In addition, make sure this value is not too different from the lockout duration; otherwise, it can be used to circumvent the lockout time if figured out.
+      </Threshold>
+    </Advice>
+  </Policy>
+    </Policies>
+  </Policy-Summary>
+  <!--Windows 10 exclusive?
+  <Policy name="Use a hardware security device" default="2" recommended="1">
+    <Guidance>
+      This setting can be found under Computer Configuration > Administrative Templates > Windows Components > Windows Hello for Business > Use a hardware security device.
+      A Trusted Platform Module (TPM) provides additional security benefits over software because data stored within it cannot be used on other devices.
+      If you enable this policy setting, only devices with a usable TPM may provision Windows Hello for Business.
+      If you disable or do not configure this policy setting, the TPM is still preferred, but all devices may provision Windows Hello for Business using software if the TPM is non-functional or unavailable.
+    </Guidance>
+    <Advice>
+      <Threshold threshold="0-0"></Threshold>
+    </Advice>
+  </Policy>-->
+  <Policy-Summary number="11">
+    <Header>
+      System Hardening
+    </Header>
+    <Base-Text>
+      These policies deal with connections to and from the user's device and how easy it will be to connect devices, both physically and through the network. In addition, this also controls how much data is sent to windows for diagnostics
+    </Base-Text>
+    <Vuln>
+      Currently, there are vulnerabilities in your system security. Follow the guidance in the following pages to secure yourself against these vulnerabilities.
+    </Vuln>
+    <Not-Vuln>
+      Currently, there are no detected vulnerabilities with your system security. The search is not guaranteed to be exhaustive, so some vulnerabilities may still exist, just not the most serious ones that are currently known. While it is recommended to look at the policies you have set to understand why they are important, you can skip this section below.
+    </Not-Vuln>
+    <Vulnerabilities>
+      <Vulnerability position="3">
+        Your users may currently be vulnerable to several known hardware exploits that use very simple-looking media. Also, certain apple devices may be vulnerable to 2-way complete access - where a plugged-in media can access all files on the main device.
+      </Vulnerability>
+      <Vulnerability position="4">
+        Windows do not automatically update, so given how infrequently an average user will attempt to update, this could leave vulnerabilities that have been found and patched open for exploitation on user devices for a long time.
+      </Vulnerability>
+    </Vulnerabilities>
+    <Policies>
+      <Policy name="Allow Telemetry" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > Data Collection and Preview Builds > Allow Telemetry.
+This setting controls aspects of data sharing with Windows. If this policy is enabled or just not configured, Windows will be able to send data off (how much depends on the setting). 
+While Windows does have its own data protection policies, and in general, any sent data should be anonymized and not contain any file content, however, it may do, so it's safest to disable it.
+It can only be fully disabled in Windows Enterprise (set to 0 - Security); otherwise, it will have to be set to 1 - Basic. There are other ways to disable it, but they are likely not officially supported by Windows.
+Note that this is a Windows 10-only option.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, so users can set their own telemetry settings. In general, it is slightly more secure to disable it by setting it to 0 - Security or 1 - Basic if not on Windows Enterprise.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, so users cannot set their own telemetry settings. Ensure this is set to 0 - Secure if on Windows Enterprise, or 1 - Basic otherwise.
+          </Threshold>
+          <Threshold threshold="2-2">
+This setting is not configured, so users can set their own telemetry settings. In general, it is slightly more secure to disable it by setting it to 0 - Security or 1 - Basic if not on Windows Enterprise.
+This is a Windows 10-only option, so other systems can be ignored safely.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Disable Windows Error Reporting" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > Windows Error Reporting > Disable Windows Error Reporting.
+Similar to the previous policy, this dictates if Windows can send data from your device for the purpose of debugging, improvement, etc. While only troubleshooting data should be sent, some file data may also be sent, and so for maximum security, it is safest to disable this by enabling this setting.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, so troubleshooting data - and possibly some file data - is sent to windows. It is recommended to enable this so that this data is not sent.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, so no troubleshooting data is sent, which is the recommended option.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured, so troubleshooting data - and possibly some file data - is sent to windows. It is recommended to enable this so that this data is not sent.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Prevent installation of devices that match any of these device IDs" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > System > Device installation> Device Installation Restrictions > Prevent installation of devices that match these device IDs.
+In this setting, you should enable, and then press show, and add PCI\CC_0C0A to the list. The "Also apply to matching devices that are already installed" box should be unticked.
+Essentially this setting blocks a known exploit using physical hardware devices that can connect directly to the data stores bypassing the CPU and operating system. This setting blocks this for windows 8 and server 2012 and should be enabled.
+However, if this setting is enabled, it will disable certain non-malicious hardware on some ports, so this policy should be tested carefully before being updated on all devices.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, so a known hardware exploit to get to the stored data could possibly be used. It is recommended to enable this setting and follow the given guidelines.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, so assuming the guidance has been followed correctly, the known exploit will not work on Windows 8 and Server 2012. Make sure this does not affect any other existing hardware or software before rolling it out, and then ensure the next policy (which continues this) is correctly configured.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured, so known hardware exploits to get to the stored data could possibly be used. It is recommended to enable this setting and follow the given guidelines.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Prevent installation of devices using drivers that match these device setup classes" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > System > Device installation> Device Installation Restrictions > Prevent installation of drivers matching these device setup classes.
+This setting is a continuation of the previous setting in part and goes some way towards patching known hardware issues that may bypass any other security features in place.
+You should enable this setting, press show, and then add the following guides: {d48179be-ec20-11d1-b6b8-00c04fa372a7},{7ebefbc0-3200-11d2-b4c2-00a0C9697d07},{c06ff265-ae09-48f0-812c-16753d7cba83},{6bdd1fc1-810f-11d0-bec7-08002be2092f}.
+In addition, the "Also apply to matching devices that are already installed" box should be unticked.
+Ensure, before these group policy changes are rolled out fully, this is thoroughly tested to ensure this does not cause hardware or software issues.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, so known hardware exploits to get to the stored data are possible to use. It is recommended to enable this setting and follow the given guidelines.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, so assuming the guidance has been followed properly, the known exploits should not work. Make sure this does not affect any other existing hardware or software before rolling it out.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured, so known hardware exploits to get to the stored data are possible to use. It is recommended to enable this setting and follow the given guidelines.
+          </Threshold>
+        </Advice>
+      </Policy>
+
+      <Policy name="Turn off Automatic Download and Install of updates" default="2" recommended="0">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > Store > Turn off Automatic Download and Install of updates.
+This setting simply ensures that updates will be automatically installed on Windows devices. Since new updates introduce patches to fix newly discovered exploits and security issues, it is best to have the updates happen as soon as possible.
+While users can manually search for updates, it is unlikely this will be done as often or in as good a time as an automatic update. Also, any critical updates will be installed immediately, leaving less time to be exploited.
+Also, disabling this removes the burden of updating from the user. So it is recommended to disable this.
+Note that this particular policy is Windows 10 only, so it cannot be configured for other operating systems and on older servers.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, which ensures updates are downloaded and installed automatically. This is the recommended setting.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, which means updates are not downloaded and installed automatically, which increases user burden and leaves more time before discovered exploits are patched for them to be used against the device. It is recommended to disable this.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured. By default, it will be disabled, and updates will happen automatically. However, the user has the option to disable automatic updates. This would be less secure, so it is recommended to explicitly disable this setting.
+If you are not on Windows 10, this setting cannot be configured. However, this setting can be ignored. It is recommended to upgrade to the latest appropriate version of Windows.
+          </Threshold>
+        </Advice>
+      </Policy>
+
+      <Policy name="Block launching Windows Store apps with Windows Runtime API access from hosted content." default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > App runtime > Block launching Windows Store apps with Windows Runtime API access from hosted content.
+Windows Runtime API is a very powerful tool that gives a developer much power over a system running their app. As a consequence, it gives the same power to an attacker who has published their application on the store.
+Using this, and given even a single run app on a network, an attacker can use a wide range of tools to attack the device their app is installed on. It is hard to predict what they will do, however, so it is recommended to block all apps using this if possible.
+Since Windows Store is Windows 10 exclusive, naturally, this policy is unavailable for non-Windows 10 operating systems. It is still recommended to upgrade to the latest version of Windows.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, which allows apps to be downloaded and run from the Windows Store, which could give a potential attacker a large amount of control over the device. It is recommended to enable this setting.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, limiting the control an attacker could potentially have from an app downloaded and run from the Windows Store.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured. By default, it will be disabled, which allows apps to be downloaded and run from the Windows Store, which could give a potential attacker a large amount of control over the device. It is recommended to enable this setting. 
+If you do not have windows 10 you cannot and should not enable this policy and can safely ignore this.
+          </Threshold>
+        </Advice>
+      </Policy>
+
+      <Policy name="Proxy definitions are authoritative" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Network > Network Isolation > Proxy definitions are authoritative.
+Effectively this setting decides whether the proxies the user can use are restricted to the ones you allow or if their device can connect to any proxy.
+In general, you want to be able to at least blacklist proxies that are known to be insecure, and preferably only whitelist proxies you need and know are secure.
+Of course, enabling this setting needs to be coupled with enabling any necessary proxies to ensure the network continues working. This is a policy that should be extensively tested before being used.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, which allows users to use any Proxy. This is potentially less secure, and instead, it would be safer to disallow most proxies and only allow ones you know to be secure and necessary.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, limiting the proxies the user can use to the ones you allow. Ensure they are set up correctly - that any necessary proxies are allowed - and that this setting is tested properly before being fully rolled out.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured and, by default, disabled, which allows users to use any Proxy. This is potentially less secure, and instead, it would be safer to disallow most proxies and only allow ones you know to be secure and necessary.
+          </Threshold>
+        </Advice>
+      </Policy>
+
+      <Policy name="Subnet definitions are authoritative" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Network > Network Isolation > Subnet definitions are authoritative.
+By only allowing certain subnets in this policy, the user can only connect privately to these subnets. All other subnets will be untrusted.
+Similar to the previous policy, it is best to disallow all subnets by default and whitelist trusted subnets you know to be secure.
+And when enabled, the correct subnets need to be whitelisted and the network tested before the policy is fully rolled out.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, which allows users to use any subnet privately. This is potentially less secure, and instead, it would be safer to disallow most subnets and only allow ones you know to be secure and necessary.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, limiting the subnets the user can use privately to ones you allow. Ensure they are set up correctly - that any necessary subnets are allowed - and that this setting is tested properly before being fully rolled out.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured and, by default, disabled, which allows users to use any subnet privately. This is potentially less secure, and instead, it would be safer to disallow most subnets and only allow ones you know to be secure and necessary.
+          </Threshold>
+        </Advice>
+      </Policy>
+
+      <Policy name="Windows To Go Default Startup Options" default="2" recommended="0">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > Portable Operating System > Windows To Go Default Startup Options.
+This setting determines whether windows to go will run on the device from USB. In general, anything that allows device access without a login is not particularly secure to allow, and Windows To Go is no exception.
+While in the Windows environment, the computer files are hidden, this can quite easily be changed to access these files. There is less availability than a fully logged-in device, but it is still less secure than no access.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, so Windows To Go cannot be used without the device user specifically allowing it. For this policy, this is the most secure option.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, allowing Windows To Go to be booted from a USB device. While device files should be hidden, some can be found quite easily, so it is safest to disable this policy.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured and, by default, will be unpredictable, as local administrators can activate or deactivate this on their devices, potentially allowing Windows To Go to be booted from a USB device. While device files should be hidden, some can be found quite easily, so it is safest to disable this policy.
+          </Threshold>
+        </Advice>
+      </Policy>
+
+      <Policy name="Block Non-Admins from Safe Mode" default="0" recommended="0">
+        <Guidance></Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+There is one other policy, found under "Computer Configuration > Preferences > Windows Settings > Registry" and then Add a new item, action Replace, Hive: HKEY_LOCAL_MACHINE, Key Path: SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system, Value name: SafeModeBlockNonAdmins, Value type: REG_DWORD, Value data: 1
+This simply stops non-admins from starting up the device in safe mode. This is the safest option as a safe mode can potentially give the user more control over the device than they should have.
+It is important to ensure that, should safe mode be needed, an administrator will be available before this policy is set.
+          </Threshold>
+        </Advice>
+      </Policy>
+
+      <Policy name="Summary" default="0" recommended="0" recommendedColour="Black">
+        <Guidance></Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+These policies will help to secure your network against more physical hardware threats. However, unlike some of the more purely beneficial policies, like lockout and password, these policies may not be viable due to specific hardware use. 
+If you use hardware or software on your network that is incompatible with these policies, then, of course, you cannot enable them. The long-term optimal security method would be to remove and replace all incompatible hardware, and however, if certain hardware is required, some policies can be left - sacrificing some security for usability.
+As mentioned earlier, Windows To Go is not the only boot medium that can compromise some files. To better control insertable media, go to "Computer Configuration > Administrative Templates > System > Removable Storage Access." Here you can control permissions for insertable media. Make sure to leave enough media allowed for all devices to boot.
+More detailed information on how to allow and disallow media and devices can be found online, though these will go beyond just group policies in many cases.
+          </Threshold>
+        </Advice>
+      </Policy>
+      
+    </Policies>
+  </Policy-Summary>
+
+  <Policy-Summary number="5">
+    <Header>
+      Windows Defender configuration
+    </Header>
+    <Base-Text>
+      If you use Windows Defender, the following policies are for configuring the included security features. If you do not use Windows Defender, these policies can be safely skipped.
+    </Base-Text>
+    <Vuln>
+      Currently, there are vulnerabilities with your Windows Defender. Follow the guidance in the following pages to secure yourself against these vulnerabilities.
+    </Vuln>
+    <Not-Vuln>
+      Currently, there are no detected vulnerabilities with your Windows Defender. The search is not guaranteed to be exhaustive, so some vulnerabilities may still exist, just not the most serious ones that are currently known. While it is recommended to look at the policies you have set to understand why they are important, you can skip this section below.
+    </Not-Vuln>
+    <Vulnerabilities>
+      <Vulnerability position="1">
+        Block, at first sight, is not enabled, so files will not be checked by Windows before being run. This also only works with the correct application of other policies in this section.
+      </Vulnerability>
+      <Vulnerability position="3">
+        Your real-time protection is not configured well, and so it is possible, without specific user intervention, a malicious program, file, etc., will be downloaded and run.
+      </Vulnerability>
+    </Vulnerabilities>
+    <Policies>
+      <Policy name="Join Microsoft MAPS" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > Windows Defender Antivirus > MAPS > Join Microsoft MAPS.
+Microsoft MAPS itself is available on earlier versions of Windows; however, the policies that require Microsoft MAPS to be enabled are exclusive to Windows 10. This policy may be enabled - it sends diagnostic data to windows in case of issues. However, by itself is not a significant security concern.
+If you are on Windows 10, this should be enabled to some degree so that other, more secure policies can be used. When enabled, it can be set to either Basic or Advanced. Advanced sends more data to Windows, so Basic is most likely more secure, but it should not send anything sensitive like file contents, so Advanced is not particularly insecure.
+Since data will be sent to Microsoft, consider the sensitivity of your data before enabling this to any degree.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, which, if Windows Defender is not being used or if the operating system is below Windows 10, is fine. Otherwise, this setting should be enabled and set to either Basic or Advanced (depending on the needs of the network).
+          </Threshold>
+          <Threshold threshold="1-1">
+            Thus setting is enabled, which is the secure option if on Windows 10 and using Windows Defender, and not an issue otherwise.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured, which, if Windows Defender is not being used or if the operating system is below Windows 10, is fine. Otherwise, this setting should be enabled and set to either Basic or Advanced (depending on the needs of the network).
+          </Threshold>
+        </Advice>
+      </Policy>
+
+      <Policy name="Configure the 'Block at First Sight' feature" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > Windows Defender Antivirus > MAPS > Configure the 'Block at First Sight.
+This setting is a useful tool to check executable files that are downloaded before they are running. It sends them to the Microsoft back-end and checks them with several techniques, and compares them against already known whitelisted and blacklisted files.
+The check is thorough, and if it determines a file to be dangerous, it does not allow it to be run. This policy only works if Join Microsoft MAPS and Send file samples when further analysis is required are enabled, and Real-time protection is not disabled. It is recommended to follow these and enable this policy.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, which prevents Windows from screening files before allowing them to be run. It is much more secure to enable this and the other recommended policies in this section so that this policy can function.
+          </Threshold>
+          <Threshold threshold="1-1">
+            Thus setting is enabled, which means if the other policies in this section are correctly implemented, Microsoft will check potentially harmful files when they are downloaded before they can be used and block any that are likely to be dangerous.
+          </Threshold>
+          <Threshold threshold="2-2">
+This setting is not configured, which prevents Windows from screening files before allowing them to be run. It is much more secure to enable this and the other recommended policies in this section so that this policy can function.
+This policy is Windows 10 only and so cannot be set otherwise. This is an example of a security feature unavailable outside of Windows 10.
+          </Threshold>
+        </Advice>
+      </Policy>
+
+      <Policy name="Send file samples when further analysis is required" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > Windows Defender Antivirus > MAPS > Send file samples when further analysis is required.
+This is another policy that needs to be configured and enabled for the 'Block at first sight' feature to function correctly. This simply configured how MAPS data is sent to Microsoft. The options are:
+Always prompt - I will make sure only chosen data will be sent after prompting; however, it will probably be no more secure than sending automatically and will annoy the user.
+Send safe samples automatically - Sends data deemed safe with no prompt or interruption to the user. The recommended option.
+Never send - Completely disables all policies in MAPS including 'Block at first sight' by not sending any data. Not recommended.
+Send all samples automatically - Sends data with no prompt to the user but potentially sends data that shouldn't be sent.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, which prevents the previous policies from working. It is recommended to enable this and set it to 'Send safe samples automatically.'
+          </Threshold>
+          <Threshold threshold="1-1">
+            Thus setting is enabled, which should allow the previous policies to work, unless it has been set to 'Never send'. It is recommended to set it to 'Send safe samples automatically'.
+          </Threshold>
+          <Threshold threshold="2-2">
+This setting is not configured, which prevents the previous policies from working. It is recommended to enable this and set it to 'Send safe samples automatically.'
+Unless you are not on Windows 10, in which case the previous policies cannot be set at all.
+          </Threshold>
+        </Advice>
+      </Policy>
+
+      <Policy name="Turn off real-time protection" default="2" recommended="0">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > Windows Defender Antivirus > Real-time Protection > Turn off real-time protection.
+This policy, assuming the use of Windows Defender, should absolutely not be enabled. For Windows 10 users, it disables the 'Block at first sight' feature, and for all devices turns off constant protection against security threats, giving the user a prompt when malware and other security threats are detected.
+The only time this should be enabled is if there is another trusted antivirus and antimalware software in place, AND Windows Defender is likely to interfere with some software. Otherwise, this policy should be explicitly disabled in order to prevent individual users from disabling Windows Defender themselves.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, which ensures Windows Defender can run properly and allows the 'Block at first sight' feature to work.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, which prevents Windows Defender from functioning fully, and turns off the 'Block at first sight' feature. It is strongly recommended to disable this policy.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured, allowing users to enable it, which prevents Windows Defender from functioning fully, and would turn off the 'Block at first sight' feature. It is strongly recommended to disable this policy.
+          </Threshold>
+        </Advice>
+      </Policy>
+
+      <Policy name="Configure Windows SmartScreen" default="2" recommended="1">
+        <Guidance>
+This policy can find this setting under Computer Configuration > Policies > Administrative Templates > Windows Components > File Explorer > Configure Windows SmartScreen.
+Windows SmartScreen is a built-in feature that warns users before running unrecognized files from the internet. If this is activated, Microsoft will receive some anonymized information about the files and programs run. Disabling this policy for devices with highly sensitive data may be safer.
+Users and local administrators cannot configure Windows SmartScreen by enabling this policy. Otherwise, it can be configured by local administrators.
+Enabling gives three options: 
+Require approval from an administrator before running downloaded unknown software - Only allows unrecognized files to be run with administrator authorization (probably best for general security).
+Give the user a warning before running downloaded unknown software - If the file is unrecognized, the user is warned but allowed to run anyway (not particularly useful as most will click through it).
+Turn off SmartScreen: Sends no data to Microsoft but also offers no blocking of files known to be malicious (best for privacy).
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, so local administrators can configure Windows SmartScreen themselves, choosing to enable or disable it. If you want to control these configurations, you should enable this policy.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, meaning the Windows SmartScreen is unchangeable by local admins and base users. With this setting enabled, you can choose if SmartScreen is turned on or off for all users.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured, so local administrators can configure Windows SmartScreen themselves, choosing to enable or disable it. If you want to control these configurations, you should enable this policy.
+          </Threshold>
+        </Advice>
+      </Policy>
+    </Policies>
+  </Policy-Summary>
+
+  <Policy-Summary number="5">
+    <Header>
+      AppLocker configuration
+    </Header>
+    <Base-Text>
+AppLocker is a built-in tool that allows you to block certain applications, files, and scripts on all devices. Alternatively, you can disable all by default and only allow certain applications you know you need.
+The apps and files to allow are completely variable depending on needs, so the advice given here will be partial. 
+Five rules are available: Executable, Windows Installer, Script, Packaged app, and DLL. DLL rules are displayed separately and have a warning with them. Ensure you set appropriate DLL rules that don't compromise the systems.
+To find these rules go to Computer Configuration > Policies > Windows Settings > Security Settings > Application Controls > AppLocker
+When here, go to Configure Rule Enforcement, and click on Configure rule enforcement. If you are using DLL rules, go to the advanced tab, tick 'Enable the DLL rule collection,' and press Apply. Return to the Enforcement tab.
+In the Enforcement tab, tick Configured on all the rules you want to use. They should default to Enforce regulations. If they have not, change them to this.
+In the next few sections, there will be some information and advice for the individual rules.
+    </Base-Text>
+    <Vuln>
+    </Vuln>
+    <Not-Vuln>
+    </Not-Vuln>
+    <Vulnerabilities>
+      <Vulnerability position="1">
+      </Vulnerability>
+    </Vulnerabilities>
+    <Policies>
+      <Policy name="Executable Rules" default="0" recommended="1" nonRecommendedColour="Orange">
+        <Guidance></Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+Exceptions are added by right-clicking on the rule, clicking properties, going to the exceptions tab, and setting the dropdown to the bracketed option.
+First, generate the default rules so system files can run normally.
+Allow Everyone: All files located in the Windows Defender\Platform folder -
+%OSDrive%\ProgramData\Microsoft\Windows Defender\Platform\*
+Allow Everyone: All files located in the Program Files folder - with exceptions
+Exception: (Path) %PROGRAMFILES%\Windows Kits\*\Debuggers\*
+Allow Everyone: All files located in the Windows folder - with exceptions
+Exception: (Path) %SYSTEM32%\com\dmp\*
+Exception: (Path) %SYSTEM32%\FxsTmp\*
+Exception: (Path) %SYSTEM32%\Spool\drivers\color\*
+Exception: (Path) %SYSTEM32%\Spool\PRINTERS\*
+Exception: (Path) %SYSTEM32%\Spool\SERVERS\*
+Exception: (Path) %SYSTEM32%\Tasks\*
+Exception: (Path) %SYSTEM32%\microsoft\crypto\rsa\machinekeys\*
+Exception: (Path) %WINDIR%\tasks\*
+Exception: (Path) %WINDIR%\temp\*
+Exception: (Path) %WINDIR%\tracing\*
+Exception: (Path) %WINDIR%\registration\crmlog\*
+Exception: (Path) %WINDIR%\servicing\packages\*
+Exception: (Path) %WINDIR%\servicing\sessions\*
+Exception: (Publisher) %SYSTEM32%\WMIC.exe,*
+Exception: (Publisher) %SYSTEM32%\cmstp.exe,*
+Exception: (Publisher) %SYSTEM32%\mshta.exe,*
+Exception: (Publisher) %SYSTEM32%\PresentationHost.exe,*
+Exception: (Publisher) %SYSTEM32%\windbg.exe,*
+Exception: (Publisher) %SYSTEM32%\cipher.exe,*
+Exception: (Publisher) %Microsoft.NET%\Framework64\*\IEExec.exe
+Exception: (Publisher) %Microsoft.NET%\Framework64\*\InstallUtil.exe
+Exception: (Publisher) %Microsoft.NET%\Framework\*\regsvcs.exe
+Exception: (Publisher) %Microsoft.NET%\Framework\*\msbuild.exe
+Exception: (Publisher) %Microsoft.NET%\Framework\*\regasm.exe
+Allow Administrators: All files
+          </Threshold>
+          <Threshold threshold="1-1">
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Windows Installer Rules" default="0" recommended="0" recommendedColour="Orange">
+        <Guidance></Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+Exceptions are added by right-clicking on the rule, clicking properties, going to the exceptions tab, and setting the dropdown to the bracketed option.
+First, generate the default rules so system files can run normally.
+Allow Administrators: All Windows Installer files
+Allow Everyone: %WINDIR%\Installer\*
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Script Rules" default="0" recommended="0" recommendedColour="Orange">
+        <Guidance></Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+Exceptions are added by right-clicking on the rule, clicking properties, going to the exceptions tab, and setting the dropdown to the bracketed option.
+First, generate the default rules so system files can run normally.
+Allow Everyone: All Scripts located in the Program Files folder
+Allow Everyone: All Scripts located in the Windows folder - with exceptions
+Exception: (Path) %SYSTEM32%\com\dmp\*
+Exception: (Path) %SYSTEM32%\FxsTmp\*
+Exception: (Path) %SYSTEM32%\Spool\drivers\color\*
+Exception: (Path) %SYSTEM32%\Spool\PRINTERS\*
+Exception: (Path) %SYSTEM32%\Spool\SERVERS\*
+Exception: (Path) %SYSTEM32%\Tasks\*
+Exception: (Path) %WINDIR%\registration\crmlog\*
+Exception: (Path) %WINDIR%\tasks\*
+Exception: (Path) %WINDIR%\temp\*
+Exception: (Path) %WINDIR%\tracing\*
+Exception: (Path) %WINDIR%\servicing\packages\*
+Exception: (Path) %WINDIR%\servicing\sessions\*
+Exception: (Path) %SYSTEM32%\microsoft\crypto\rsa\machinekeys\*
+Allow Administrators: All scripts
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Packaged app Rules" default="0" recommended="0" recommendedColour="Orange">
+        <Guidance></Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+Exceptions are added by right-clicking on the rule, clicking properties, going to the exceptions tab, and setting the dropdown to the bracketed option.
+First, generate the default rules so system files can run normally.
+Allow Everyone: All signed packaged apps
+Exception: (Publisher) Microsoft.Get started
+Exception: (Publisher) Microsoft.MicrosoftOfficeHub
+Exception: (Publisher) Microsoft.SkypeApp
+Exception: (Publisher) Microsoft.WindowsFeedback
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="DLL Rules" default="0" recommended="0" recommendedColour="Orange">
+        <Guidance></Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+Exceptions are added by right-clicking on the rule, clicking properties, going to the exceptions tab, and setting the dropdown to the bracketed option.
+First, generate the default rules so system files can run normally.
+Allow Everyone: All DLLs located in the Windows Defender\Platform folder -
+%OSDrive%\ProgramData\Microsoft\Windows Defender\Platform\*
+Allow Everyone: All DLLs located in the Program Files folder
+Allow Everyone: All DLLs located in the Windows folder - with exceptions
+Exception: (Path) %SYSTEM32%\com\dmp\*
+Exception: (Path) %SYSTEM32%\FxsTmp\*
+Exception: (Path) %SYSTEM32%\Spool\drivers\color\*
+Exception: (Path) %SYSTEM32%\Spool\PRINTERS\*
+Exception: (Path) %SYSTEM32%\Spool\SERVERS\*
+Exception: (Path) %SYSTEM32%\Tasks\*
+Exception: (Path) %SYSTEM32%\microsoft\crypto\rsa\machinekeys\*
+Exception: (Path) %WINDIR%\registration\crmlog\*
+Exception: (Path) %WINDIR%\tasks\*
+Exception: (Path) %WINDIR%\temp\*
+Exception: (Path) %WINDIR%\tracing\*
+Exception: (Path) %WINDIR%\servicing\packages\*
+Exception: (Path) %WINDIR%\servicing\sessions\*
+Allow Administrators: All DLLs
+          </Threshold>
+        </Advice>
+      </Policy>
+      
+    </Policies>
+  </Policy-Summary>
+
+  <Policy-Summary number="7">
+    <Header>
+      BitLocker Configuration
+    </Header>
+    <Base-Text>
+BitLocker is a built-in encryption tool that encrypts the storage of devices when not in use. If a device is stolen, lost, or decommissioned inappropriately, an attacker could access the (potentially sensitive) data with no authorization - for example, by simply moving the hard drive to another computer.
+    </Base-Text>
+    <Vuln>
+    </Vuln>
+    <Not-Vuln>
+    </Not-Vuln>
+    <Vulnerabilities>
+      <Vulnerability position="1">
+      </Vulnerability>
+    </Vulnerabilities>
+    <Policies>
+      <Policy name="Enforce drive encryption type on operating system drives" default="2" recommended="1">
+        <Guidance>
+          This policy can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > BitLocker Drive Encryption > Operating System Drives > Enforce drive encryption type on operating system drives.
+This setting determines how BitLocker will encrypt the data or allows the user to choose. The choices are either Full Encryption (all data) or Used Space Only encryption (only encrypts data in use).
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled so that users can choose their encryption settings. BitLocker will encrypt any operational data, but if the user decides to use the faster 'Used Space Only encryption,' then any data that BitLocker wiped from the device before the user started using it will be left in unused storage unencrypted. The recommended action is to enable this policy and choose 'Full Encryption.'
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled will give you three options: the default - which allows the user to choose the same as disabling; used Space Only encryption - which can leave some previously deleted files available to recover unencrypted, or Full Encryption, which encrypts all data, even if it is not in use. In general, Full Encryption is recommended.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured so that users can choose their encryption settings. BitLocker will encrypt any operational data, but if the user decides to use the faster 'Used Space Only encryption,' any data that BitLocker wiped from the device before the user started using it will be left unused storage unencrypted. The recommended action is to enable this policy and choose 'Full Encryption.'
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Require additional authentication at startup" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > BitLocker Drive Encryption > Operating System Drives > Require additional authentication at startup.
+This setting gives extra options to configure BitLocker securely. This offers different options for authentication when turning on the device.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, making BitLocker much easier to decrypt, especially with a user's normal login credentials. By enabling this, you can force users to create their BitLocker more securely, protecting their data further.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, giving you various options to make a user's BitLocker more secure. Even with this configured, it is best to review the choices you have set. Check guidance for a more in-depth evaluation of this policy.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured, making BitLocker much easier to decrypt, especially with a user's normal login credentials. By enabling this, you can force users to make their BitLocker more secure, protecting their data further.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="PIN configuration" default="0" recommended="0" recommendedColour="Black">
+        <Guidance></Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            If PINs are required (which they should be), then the following settings will allow you to configure how BitLocker can set the PINs, similar to password settings (though less extensive). These should be set to ensure PINs are more secure and harder to brute force.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Allow enhanced PINs for startup" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > BitLocker Drive Encryption > Operating System Drives > Allow enhanced PINs for a startup.
+This policy is similar to password complexity because it allows upper case, lower case, numbers, and special characters.
+However, this policy only allows them instead of requiring them and disabling all characters except numerals.
+Because of this, there is no reason to leave this unconfigured or disable it, as that is not allowing users to be more secure.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, so PINs have to be numerical. These are easier to crack than more complex PINs, so this setting should allow the user to have more complex PINs.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting enables users to make complex PINs that are harder to crack. However, this does not force them; they can still use numerical PINs. So this is the more secure option without compromising user experience.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured, so PINs have to be numerical. These are easier to crack than more complex PINs, so this setting should allow the user to have more complex PINs.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Configure minimum PIN length for startup" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > BitLocker Drive Encryption > Operating System Drives > Configure minimum PIN length for the startup.
+This policy is similar to the minimum password length for fairly obvious reasons.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled so that PINs can be of any length between 4 and 20. Realistically this is not massively insecure as BitLocker only allows a limited number of attempts, making even a four-digit password unlikely to be cracked; however, longer PINs will reduce the chances further, for example, in the case where multiple devices are lost/stolen.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting enables you to set a minimum PIN length for all users. A value for this cannot easily be recommended, as it depends on the importance of the data, the storage of recovery PINs, and other security measures.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured so that PINs can be of any length between 4 and 20. Realistically this is not massively insecure as BitLocker only allows a limited number of attempts, making even a four-digit password unlikely to be cracked; however, longer PINs will reduce the chances further, for example, in the case where multiple devices are lost/stolen.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Configure use of passwords for operating system drives" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > BitLocker Drive Encryption > Operating System Drives > Configure the use of passwords for operating system drives.
+This policy applies if a password instead of a PIN is used, for example, when a TPM is unavailable.
+The options given are password length complexity. Here the advice (while the actual value depends on circumstance) is the same as for the main device password, i.e., the minimum length of 12 complexity enabled.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, allowing basic passwords to be used so hackers can crack them more easily. These passwords should not be used if a TPM is installed, so that this policy may be irrelevant. If these passwords are likely to be used, TPM should be enabled in this policy, and the guidance followed.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting allows you to set requirements for passwords that will be used without a TPM. Ensure you configure the options according to the guidance.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured, allowing basic passwords to be used that can be cracked more easily. These passwords should not be used if a TPM is installed so that this policy may be irrelevant. If these passwords are likely to be used, this policy should be enabled, and the guidance followed.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Summary" default="0" recommended="0" recommendedColour="Black">
+        <Guidance>
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+Without setting up BitLocker, if a device is lost, an attacker breaks into an office and copies the contents of a hard drive, or if a device is decommissioned without properly wiping data, it is quite easy to recover any amount of sensitive data from it.
+With BitLocker, a TPM, a strong PIN, and a USB security key, the only way to retrieve data without a very high-level specialized attack (which is highly unlikely and impossible to fully protect against) is to steal the entire device, the USB key along with it AND find the PIN or recovery key (as a good PIN is incredibly difficult to brute-force).
+This would be incredibly obvious (stealing an entire device), relies on the key being nearby, and requires the PIN being written down and easily accessible, or a much more complex hardware attack such as a keylogger.
+Utilizing BitLocker can seriously hinder a physical attempt to steal data, changing it from an easy, covert copy to a multiple-access, obvious, complex attack that still relies on luck. Moreover, lost or decommissioned devices without a PIN stored unencrypted on them are effectively unrecoverable by anyone who finds them.
+Other possible policies can be used in the Operating System Drives folder, as well as in Computer Configuration > Administrative Templates > System > Trusted Platform Module Services
+While having some effect, these are optional for good security but can be used if you wish to change lockout policies.
+          </Threshold>
+        </Advice>
+      </Policy>
+    </Policies>
+  </Policy-Summary>
+  
+  <Policy-Summary number="2">
+    <Header>
+      Windows Defender Exploit Guard configuration
+    </Header>
+    <Base-Text>
+Windows Defender Exploit Guard is another built-in security tool you can configure and use. There are four features advertised as part of Exploit Guard, and all but the first require Windows Defender Antivirus:
+Exploit protection - works with antivirus software to apply to exploit mitigation to the apps your users use.
+Attack surface reduction rules - use intelligent rules to help stop Office, script, and email-based exploits.
+    </Base-Text>
+    <Vuln>
+    </Vuln>
+    <Not-Vuln>
+    </Not-Vuln>
+    <Vulnerabilities>
+      <Vulnerability position="1">
+      </Vulnerability>
+    </Vulnerabilities>
+    <Policies>
+      <Policy name="Controlled folder access" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > Windows Defender Antivirus > Windows Defender Exploit Guard > Controlled folder access.
+This setting determines what folders can be accessed by files that have been determined malicious or suspicious.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, so any malicious files discovered by Windows are only blocked from accessing protected Windows system files means they can still access most, if not all, personal and company (including sensitive) files. This setting is strongly recommended to be enabled and the mode set to Block.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, allowing you control over what files can be accessed by files that have been determined malicious or suspicious. It is strongly recommended to ensure this policy Mode is set to Block so that these files cannot access personal and other sensitive files.
+          </Threshold>
+          <Threshold threshold="2-2">
+This setting is not configured, so any malicious files discovered by Windows are only blocked from accessing protected Windows system files. This means they can still access most, if not all, personal and company (including sensitive) files. This setting is strongly recommended to be enabled and the mode set to Block.
+As with the remainder of Windows Defender Exploit Guard, this is Windows 10 only and can be ignored otherwise. It is still strongly recommended to update to the latest version of Windows.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Use a common set of exploit protection settings" default="2" recommended="1">
+        <Guidance>
+This setting can be found under Computer Configuration > Policies > Administrative Templates > Windows Components > Windows Defender Exploit Guard > Use a common set of exploit protection settings.
+This setting is simply for importing the settings configured elsewhere (Windows Defender Security Center application or exported from EMET) as an XML file and then uploaded here.
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, so to upload an XML with the configuration, this setting must first be enabled.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled so that you can upload an XML with the configuration using this setting.
+          </Threshold>
+          <Threshold threshold="2-2">
+This setting is not configured, so to upload an XML with the configuration, this setting must first be enabled.
+If you are not on Windows 10, this setting cannot be configured with the entirety of Windows Defender Exploit Guard. It is still strongly recommended to update to the latest version of Windows.
+          </Threshold>
+        </Advice>
+      </Policy>
+    </Policies>
+  </Policy-Summary>
+  
+  <Policy-Summary number="1">
+    <Header>
+      Windows Defender Device Guard configuration
+    </Header>
+    <Base-Text>
+Windows Defender Device Guard is another tool Windows supplies which includes Windows Defender Application Control (WDAC), allowing admins to restrict user devices to only running digitally signed applications.
+Administrators can choose to allow certain unsigned but trusted applications. However, these apply to all users, including administrators, so for split privileges, this should be used in conjunction with AppLocker.
+The Microsoft website provides guidance on how to create a WDAC policy and deploy it. Before fully rolling it out to all users, this should be thoroughly tested, guidance for which can also be found on the Microsoft website.
+      
+Do note that this entire policy is Windows 10 only. AppLocker can generally be used as an alternative, though it may only be as effective or reliable in some cases.
+This is a particular instance in which not having an upgrade to Windows 10 causes security vulnerabilities, and the number will continue to grow as more fall out of support.
+    </Base-Text>
+    <Vuln>
+    </Vuln>
+    <Not-Vuln>
+    </Not-Vuln>
+    <Vulnerabilities>
+      <Vulnerability position="1">
+      </Vulnerability>
+    </Vulnerabilities>
+    <Policies>
+      <Policy name="Turn On Virtualization Based Security" default="2" recommended="1">
+        <Guidance>
+            Virtualization-based security is located at "Computer Configuration > Policies > Administrative Templates > System > Device Guard > Turn On Virtualisation Based Security."
+            This setting helps to guard against malicious software being loaded into the Windows kernel. This setting should be enabled, and the following options should be set:
+            Platform Security should be set to Secure Boot and DMA Protection
+            Virtualization Based Protection of Code Integrity should be set to Enabled with UEFI Lock
+            Require UEFI Memory Attributes Table should be set to True (However, this can only be set with UEFI 2.6+)
+            Credential Guard Configuration should be set to Enabled with UEFI Lock
+        </Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            This setting is disabled, so the Windows kernel is vulnerable to malicious software being downloaded. This setting should be enabled, and the options set as given in the guidance.
+          </Threshold>
+          <Threshold threshold="1-1">
+            This setting is enabled, so to protect the Windows kernel against malicious software, follow the options in the guidance.
+          </Threshold>
+          <Threshold threshold="2-2">
+            This setting is not configured, so the Windows kernel is vulnerable to malicious software being downloaded. This setting should be enabled, and the options set as given in the guidance.
+            If you are not on Windows 10, this setting cannot be configured with the entirety of Windows Defender Device Guard. It is still strongly recommended to update to the latest version of Windows.
+          </Threshold>
+        </Advice>
+      </Policy>
+    </Policies>
+  </Policy-Summary>
+  <Policy-Summary number="7">
+    <Header>
+      Windows Defender Firewall configuration
+    </Header>
+    <Base-Text>
+        The built-in Windows Defender Firewall is a powerful tool to defend against threats and always-on-VPN configuration.
+        The following configuration will: 
+            Force the firewall to be enabled on all devices, on Domain, Private, and Public networks.
+            Block all Inbound connections that were not initiated by the device.
+            Block all outbound connections when connected to a public or private network, with some exceptions for basic functionality.
+            Allow all outbound connections when connected to the domain network.
+            Configure an always-on VPN.
+    </Base-Text>
+    <Vuln>
+    </Vuln>
+    <Not-Vuln>
+    </Not-Vuln>
+    <Vulnerabilities>
+      <Vulnerability position="1">
+      </Vulnerability>
+    </Vulnerabilities>
+    <Policies>
+      <Policy name="Domain Profile" default="2" recommended="1" >
+        <Guidance>
+			This setting can be found under "Computer Configuration > Policies > Windows Settings > Security Settings > Windows Firewall with Advanced Security."
+			In the overview tab, you must configure the firewall as these states:
+			For domain and private connection: allow both inbound and outbound
+			For public connection: Only allow outbound; inbound is blocked
+		</Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            Windows Firewall is disabled on Domain Networks. This means if an attacker is on your network, Windows Firewall is completely disallowed from giving any protection. This should be enabled to allow Windows Firewall to protect your devices and the guidance followed.
+          </Threshold>
+          <Threshold threshold="1-1">
+            Windows Firewall is enabled on Domain Networks. This means users cannot disable the firewall, which is active against threats. Follow the guidance to ensure it defends effectively and that users cannot change any internal options.
+          </Threshold>
+          <Threshold threshold="2-2">
+            Windows Firewall is not configured on Domain Networks. This means that if an attacker is on your network, the ability of Windows Firewall to protect your devices completely depends upon users choosing the correct policies. To allow Windows Firewall to protect your devices more comprehensively, this should be enabled - removing the responsibility from users - and the guidelines followed.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Domain Profile - Apply local firewall rules" default="2" recommended="0">
+        <Guidance>
+			Firewall Policies locate in "Computer Configuration > Policies > Windows Settings > Security Settings > Windows Firewall with Advanced Security."
+			In the overview tab, select Windows Firewall Properties, and go to the Private Profile tab. Then click on Customize in Settings.
+			In Customize Settings, go to Rule merging, and set the "Apply local firewall" to "No." This policy prevents local Administrators from overriding these Firewall policies and connecting insecurely to the public network
+		</Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            Apply local firewall rules is set to No on Domain Networks. This means local administrators cannot override the (hopefully) secure firewall policies to open up security holes in your network.
+          </Threshold>
+          <Threshold threshold="1-1">
+            Apply local firewall rules is set to Yes on Domain Networks. This means local administrators can override the firewall policies and open up security vulnerabilities. To disallow this, this setting should be set to No. The location can be found in the guidance.
+          </Threshold>
+          <Threshold threshold="2-2">
+            Apply local firewall rules is set to Not configured and by default Yes on Domain Networks. This means local administrators can override the firewall policies and open up security vulnerabilities. To disallow this, this setting should be set to No. The location can be found in the guidance.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Private Profile" default="2" recommended="0">
+        <Guidance>
+			This setting can be found under "Computer Configuration > Policies > Windows Settings > Security Settings > Windows Firewall with Advanced Security."
+			In the overview tab, you must configure the firewall as these states:
+			For domain and private connection: allow both inbound and outbound
+			For public connection: Only allow outbound; inbound is blocked
+		</Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            Windows Firewall is disabled on Private Networks. If a user removes a device (such as a laptop) from the workplace and connects to a private network, Windows Firewall cannot defend against any security threats that may be on that network. This should be enabled to allow Windows Firewall to protect your devices and the guidance followed.
+          </Threshold>
+          <Threshold threshold="1-1">
+            Windows Firewall is enabled on Private Networks. This means users cannot disable the firewall, which is active against threats. Follow the guidance to ensure it defends effectively and that users cannot change any internal options.
+          </Threshold>
+          <Threshold threshold="2-2">
+            Windows Firewall is not configured on Private Networks. If a user removes a device (such as a laptop) from the workplace and connects to a private network, Windows Firewall cannot defend against any security threats that may be on that network unless the user has set/left the correct policies. This should be enabled to allow Windows Firewall to protect your devices without the risk otherwise, and the guidance followed.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Private Profile - Apply local firewall rules" default="2" recommended="0">
+        <Guidance>
+			Firewall Policies locate in "Computer Configuration > Policies > Windows Settings > Security Settings > Windows Firewall with Advanced Security."
+			In the overview tab, select Windows Firewall Properties, and go to the Private Profile tab. Then click on Customize in Settings.
+			In Customize Settings, go to Rule merging, and set the "Apply local firewall" to "No." This policy prevents local Administrators from overriding these Firewall policies and connecting insecurely to the public network
+		</Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            Apply local firewall rules is set to No on Private Networks. This means local administrators cannot override the (hopefully) secure firewall policies to open up security holes in their devices when on another private network.
+          </Threshold>
+          <Threshold threshold="1-1">
+            Apply local firewall rules is set to Yes on Private Networks. This means local administrators can override the firewall policies and open security vulnerabilities. To disallow this, this setting should be set to No. The location can be found in the guidance.
+          </Threshold>
+          <Threshold threshold="2-2">
+            Apply local firewall rules is set to Not configured and by default Yes on Private Networks. This means local administrators can override the firewall policies and open security vulnerabilities. To disallow this, this setting should be set to No. The location can be found in the guidance.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Public Profile" default="2" recommended="0">
+        <Guidance>
+			This setting can be found under "Computer Configuration > Policies > Windows Settings > Security Settings > Windows Firewall with Advanced Security."
+			In the overview tab, you must configure the firewall as these states:
+			For domain and private connection: allow both inbound and outbound
+			For public connection: Only allow outbound; inbound is blocked
+		</Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            Windows Firewall is disabled on Public Networks. If a user removes a device (such as a laptop) from the workplace and connects to a public network, Windows Firewall cannot defend against any security threats from anyone who connects to this network, including any potential attacker. This should be enabled to allow Windows Firewall to protect your devices and the guidance followed.
+          </Threshold>
+          <Threshold threshold="1-1">
+            Windows Firewall is enabled on Public Networks. This means users cannot disable the firewall, which is active against threats. Follow the guidance to ensure it defends effectively and that users cannot change any internal options.
+          </Threshold>
+          <Threshold threshold="2-2">
+            Windows Firewall is not configured on Public Networks. Suppose a user removes a device (such as a laptop) from the workplace and connects to a public network. In that case, Windows Firewall cannot defend against any security threats from anyone who connects to this network, including any potential attacker, without the user choosing/allowing the correct policies. To remove this responsibility from users, this should be enabled, and the guidance followed.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Public Profile - Apply local firewall rules" default="2" recommended="0">
+        <Guidance>
+			Firewall Policies locate in "Computer Configuration > Policies > Windows Settings > Security Settings > Windows Firewall with Advanced Security."
+			In the overview tab, select Windows Firewall Properties, and go to the Public Profile tab. Then click on Customize in Settings.
+			In Customize Settings, go to Rule merging, and set the "Apply local firewall" to "No." This policy prevents local Administrators from overriding these Firewall policies and connecting insecurely to the public network
+		</Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+            Apply local firewall rules is set to No on Public Networks. This means local administrators cannot override the (hopefully) secure firewall policies to open up security holes in their devices when on a public network.
+          </Threshold>
+          <Threshold threshold="1-1">
+            Apply local firewall rules is set to Yes on Public Networks. This means local administrators can override the firewall policies and open security vulnerabilities. To disallow this, this setting should be set to No. The location can be found in the guidance.
+          </Threshold>
+          <Threshold threshold="2-2">
+            Apply local firewall rules is set to Not configured and by default Yes on Public Networks. This means local administrators can override the firewall policies and open security vulnerabilities. To disallow this, this setting should be set to No. The location can be found in the guidance.
+          </Threshold>
+        </Advice>
+      </Policy>
+      <Policy name="Outbound rules" default="0" recommended="1" nonRecommendedColour="Orange">
+        <Guidance></Guidance>
+        <Advice>
+          <Threshold threshold="0-0">
+			  Outlined here are instructions to set up outbound rules that allow users to use private and public networks to some limited degree while compromising security as little as possible. You can configure the firewall in "Computer Configuration > Policies > Windows Settings > Security Settings > Windows Firewall with Advanced Security."
+
+			  Rule: Allow outbound DHCP for clients to obtain IP Addresses.
+			  Allow port 67 and port 68 locally (on both UDP and TCP) while leaving everything else as default, or you can use DHCP Predefined configurations.
+
+			  Rule: Allow outbound DNS for clients to resolve DNS queries.
+			  Allow port 53 locally on UDP and TCP while leaving everything else as default, or you can use DNS Predefined configurations.
+
+			  Rule: Allow outbound Kerberos to ensure authentication to connect to the internet is properly.
+			  To enable this, ensure all your Windows clients are compatible with Kerberos. By default, Windows will automatically enable this feature.
+
+			  Rule: Allow outbound LDAP.
+			  Allow port 389 locally on UDP and TCP while leaving everything else as default, or you can use LDAP/Active Directory Domain Services Predefined configurations.
+
+			  Rule: Allow outbound NCSI probe.
+			  To enable this, ensure all your Windows clients are compatible with this feature. By default, Windows will automatically enable this feature.
+		  </Threshold>
+          <Threshold threshold="1-1"></Threshold>
+        </Advice>
+      </Policy>
+    </Policies>
+  </Policy-Summary>
+</Policies>

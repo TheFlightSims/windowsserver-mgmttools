@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Policies>
+  <Policy name="MinimumPasswordAge" recommended="3">
+    <Description>
+      Minimum Password age
+    </Description>
+    <Header>
+      Password can be changed after:
+    </Header>
+    <Unit>
+      day(s)
+    </Unit>
+    <Ranges>
+      <Threshold threshold="0-0" colour="red">
+        Allowing unrestricted password changes is risky, so this should be increased.
+      </Threshold>
+      <Threshold threshold="11-999" colour="red">
+        This value is too high to add any benefit and instead serves only to prevent compromised passwords being changed.
+      </Threshold>
+      <Threshold threshold="6-10" colour="orange">
+        This value is okay, however may be slightly too high.
+      </Threshold>
+      <Threshold threshold="1-5" colour="green">
+        This is a good, secure value.
+      </Threshold>
+    </Ranges>
+  </Policy>
+  <Policy name="MaximumPasswordAge" recommended="40">
+    <Description>
+      Maximum Password age
+    </Description>
+    <Header>
+      Password will expire in:
+    </Header>
+    <Unit>
+      day(s)
+    </Unit>
+    <Ranges>
+      <Threshold threshold="0-0" colour="red">
+        Passwords never expiring will leave the system more vulnerable with time. This should be set to something.
+      </Threshold>
+      <Threshold threshold="1-10" colour="red">
+        This will make passwords be changed far too frequently.
+      </Threshold>
+      <Threshold threshold="121-999" colour="red">
+        This leaves passwords unchanged for long enough that if compromised they will almost certainly be used before a change is enforced.
+      </Threshold>
+      <Threshold threshold="11-20" colour="orange">
+        This will have passwords changed too frequently.
+      </Threshold>
+      <Threshold threshold="61-120" colour="orange">
+        This leaves quite a large interval for attackers to use passwords they find.
+      </Threshold>
+      <Threshold threshold="21-60" colour="green">
+        This will ensure passwords are changed frequently enough.
+      </Threshold>
+    </Ranges>
+  </Policy>
+  <Policy name="MinimumPasswordLength" recommended="12">
+    <Description>
+      Minimum password length
+    </Description>
+    <Header>
+      Password must be at least:
+    </Header>
+    <Unit>
+      characters
+    </Unit>
+    <Ranges>
+      <Threshold threshold="0-0" colour="red">
+        Having no passwords is an easily exploitable vulnerability, taking no work whatsoever to crack. It is strongly recommended to make passwords compulsary.
+      </Threshold>
+      <Threshold threshold="1-6" colour="red">
+        Currently passwords of this length can be cracked very easily. It is recommended to increase this value.
+      </Threshold>
+      <Threshold threshold="7-10" colour="orange">
+        While reasonably long, these passwords are able to be cracked with some effort.
+      </Threshold>
+      <Threshold threshold="11-14" colour="green">
+        Passwords of this length should be sufficiently hard to crack.
+      </Threshold>
+    </Ranges>
+  </Policy>
+  <Policy name="PasswordHistorySize" recommended="24">
+    <Description>
+      Enforce password history
+    </Description>
+    <Header>
+      Keep password history for:
+    </Header>
+    <Unit>
+      passwords remembered
+    </Unit>
+    <Ranges>
+      <Threshold threshold="0-0" colour="red">
+        With this users can change their passwords back to the previous password, completely negating the security from changing passwords.
+      </Threshold>
+      <Threshold threshold="1-5" colour="red">
+        Many users will try to cycle through several similar passwords, and in this case will be able to do so quite easily. It is recommended to increase this value.
+      </Threshold>
+      <Threshold threshold="6-11" colour="orange">
+        While unlikely, some users will still reuse passwords after this many iterations.
+      </Threshold>
+      <Threshold threshold="12-24" colour="green">
+        Genereally this should ensure passwords are very infrequently reused.
+      </Threshold>
+    </Ranges>
+  </Policy>
+  <Policy name="MinimumPasswordLength" recommended="12">
+    <Description>
+      Minimum password length
+    </Description>
+    <Header>
+      Password must be at least:
+    </Header>
+    <Unit>
+      characters
+    </Unit>
+    <Ranges>
+      <Threshold threshold="0-0" colour="red">
+        Having no passwords is an easily exploitable vulnerability, taking no work whatsoever to crack. It is strongly recommended to make passwords compulsary.
+      </Threshold>
+      <Threshold threshold="1-6" colour="red">
+        Currently passwords of this length can be cracked very easily. It is recommended to increase this value.
+      </Threshold>
+      <Threshold threshold="7-10" colour="orange">
+        While reasonably long, these passwords are able to be cracked with some effort.
+      </Threshold>
+      <Threshold threshold="11-14" colour="green">
+        Passwords of this length should be sufficiently hard to crack.
+      </Threshold>
+    </Ranges>
+  </Policy>
+  
+  <Policy name="PasswordComplexity" recommended="1">
+    <Description>
+      Password must meet complexity requirements
+    </Description>
+    <Header>
+    </Header>
+    <Unit>
+    </Unit>
+    <Ranges>
+      <Threshold threshold="0-0" colour="red">
+        This allows users to make incredibly simple passwords, which can easily be guessed or cracked.
+      </Threshold>
+      <Threshold threshold="1-1" colour="green">
+        This will ensure users have passwords with some complexity, making them harder to guess or crack.
+      </Threshold>
+    </Ranges>
+  </Policy>
+
+  <Policy name="PasswordComplexity" recommended="1">
+    <Description>
+      Store passwords using reversible encryption
+    </Description>
+    <Header>
+    </Header>
+    <Unit>
+    </Unit>
+    <Ranges>
+      <Threshold threshold="0-0" colour="green">
+        This ensures passwords are stored using irreversible hashes, which means if leaked, passwords will be much harder to recover.
+      </Threshold>
+      <Threshold threshold="1-1" colour="orange">
+        This is about as secure as storing passwords in plain text, and should only be done if absolutely necessary.
+      </Threshold>
+    </Ranges>
+  </Policy>
+</Policies>

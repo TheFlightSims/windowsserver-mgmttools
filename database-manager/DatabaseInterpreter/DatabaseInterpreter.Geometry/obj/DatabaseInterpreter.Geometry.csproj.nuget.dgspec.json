@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Geometry\\DatabaseInterpreter.Geometry.csproj": {}
+    "D:\\#source-code\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Geometry\\DatabaseInterpreter.Geometry.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Geometry\\DatabaseInterpreter.Geometry.csproj": {
+    "D:\\#source-code\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Geometry\\DatabaseInterpreter.Geometry.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Geometry\\DatabaseInterpreter.Geometry.csproj",
+        "projectUniqueName": "D:\\#source-code\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Geometry\\DatabaseInterpreter.Geometry.csproj",
         "projectName": "DatabaseInterpreter.Geometry",
-        "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Geometry\\DatabaseInterpreter.Geometry.csproj",
-        "packagesPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Geometry\\obj\\",
+        "projectPath": "D:\\#source-code\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Geometry\\DatabaseInterpreter.Geometry.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\#source-code\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Geometry\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator.THEFLIGHTSIMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,8 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {}
         },
         "frameworks": {
           "netstandard2.1": {
@@ -78,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

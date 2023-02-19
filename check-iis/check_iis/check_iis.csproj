@@ -9,7 +9,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MonitoringPluginsForWindows</RootNamespace>
-    <AssemblyName>check_iis</AssemblyName>
+    <AssemblyName>Check IIS</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -27,13 +27,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
-    <DocumentationFile>..\..\!bin!\Check IIS\check_iis.xml</DocumentationFile>
+    <DocumentationFile>..\..\!bin!\Check IIS\Check IIS.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\!bin!\Check IIS\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -80,7 +80,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>MonitoringPluginsForWindows.check_iis</StartupObject>
+    <StartupObject>MonitoringPluginsForWindows.Check_iis</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>icon.ico</ApplicationIcon>
@@ -279,7 +279,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppPool.cs" />
-    <Compile Include="icinga2clr.cs" />
+    <Compile Include="ServiceState.cs" />
     <Compile Include="IcingaSerializer.cs" />
     <Compile Include="IISInventory.cs" />
     <Compile Include="Program.cs" />
@@ -288,6 +288,9 @@
     <Compile Include="WebSite.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>

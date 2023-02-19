@@ -1,17 +1,36 @@
 {
   "version": 2,
-  "dgSpecHash": "gakO4/EU1Uz9z0Yt9ArKFTQHRRWxWBkBLfLyS8aIlDdiMXbJfikM4ABJ8OJD1/EYh6p+y4/HXk4UYBQmJUascw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Utility\\DatabaseInterpreter.Utility.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\csvhelper\\13.0.0\\csvhelper.13.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512"
-  ],
-  "logs": []
+  "dgSpecHash": "Jk2kWTys+I4Eq+G8+q7m3pXIZvWzIYTWFHiD8plIWPOFi2eMxf8IJQBLp953XAh2Qd0ZF5TMv6rRCsSjvok0VA==",
+  "success": false,
+  "projectFilePath": "D:\\#source-code\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Utility\\DatabaseInterpreter.Utility.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package NETStandard.Library with version (>= 2.0.3)\r\n  - Found 3 version(s) in Microsoft Visual Studio Offline Packages [ Nearest version: 2.0.0 ]\r\n  - Found 0 version(s) in C:\\Program Files\\dotnet\\library-packs",
+      "libraryId": "NETStandard.Library",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Unable to find package Newtonsoft.Json with version (>= 13.0.2)\r\n  - Found 1 version(s) in Microsoft Visual Studio Offline Packages [ Nearest version: 9.0.1 ]\r\n  - Found 0 version(s) in C:\\Program Files\\dotnet\\library-packs",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package CsvHelper. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "libraryId": "CsvHelper",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }

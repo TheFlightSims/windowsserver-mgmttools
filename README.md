@@ -1,5 +1,3 @@
-
-
 ![Windows Server Management Tools - Banner](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/docs_image.png?raw=true)
 # The Repository
 
@@ -16,6 +14,12 @@
 
 For better understanding, you can see the [wiki page](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki).
 
+# Use and install
+***To run and using applications in this project, make sure your computer is install these features:***
+ - dotNET 2.1, dotNET 3.5, dotNET 4.8. These are built-in features, and can be enabled on Windows 7 SP1 and later
+ - Modern applications require .NET 6.0.11 and .NET 7.0. You can download [here](https://dotnet.microsoft.com/en-us/download)
+ - Visual C++ 2015 and all versions later. You can download [here](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+
 
 # The Files and Folders
 
@@ -31,7 +35,7 @@ For better understanding, you can see the [wiki page](https://github.com/TheFlig
 # Contributing & Feedback
 
 ## Contributing
-To fully edit this repository, download the lastest **[Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)** and **[Visual Studio 2019 build tools](https://visualstudio.microsoft.com/vs/older-downloads/)**. After that, import both **.vsconfig** into **Visual Studio installer**.
+To fully edit this repository, run to download all layout for the Visual Studio 2022 that located in **[!makevs!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!makevs!):**.
 
 Otherwise, you can do other ways:
  - [Review Wiki Page](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki)
@@ -68,9 +72,10 @@ This repo uses [**GNU GPL 3.0**](https://www.gnu.org/licenses/gpl-3.0.en.html) a
 |Computer Management|Yes|[SxS Management](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/sxs-mgmt)| Aunty Mel|https://pastebin.com/raw/9iuAqJSn|
 |Security|Yes|[User Rights](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/user-rights)|@[jcasale](https://github.com/jcasale), TheFlightSims staff|https://github.com/jcasale/UserRights|
 |Volume Activation|Yes|[vlmcsd beta](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/vlmcsd-beta)|@[Wind4](https://github.com/Wind4/vlmcsd), @[kkkgo](https://github.com/kkkgo), @[HarukaMa](https://github.com/HarukaMa), Hotbird64, Nang, TheFlightSims staff|https://github.com/kkkgo/vlmcsd|
+|Group Policy|Yes|[GPO Checker](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/gpo-checker)|@[georgeatgrayson](https://github.com/georgeatgrayson), TheFlightSims staff|https://github.com/georgeatgrayson/Windows-GPO-Security-Checker|
 |Computer Management|Yes|[Windows Management on Web](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/winman)|@[fakoua](https://github.com/fakoua), @[fossabot](https://github.com/fossabot), @[ImgBotApp](https://github.com/ImgBotApp), TheFlightSims staff|https://github.com/fakoua/WinMan|
 |Windows Update Services|Yes|[Windows Update Remote Service](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/winupdate-remote-svc)|@[EliaSaSe](https://github.com/EliaSaSe), @[dependabot[bot]](https://github.com/apps/dependabot), @[florianknecht](https://github.com/florianknecht), @[tinogruse](https://github.com/tinogruse), TheFlightSims staff|https://github.com/EliaSaSe/windows-update-remote-service|
 |Windows Update Services|Yes|[WSUS Admin Assisstant](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/wsusadminassistant)|@[rjch-au](https://github.com/rjch-au), TheFlightSims staff|https://github.com/rjch-au/WSUSAdminAssistant|
 |Windows Update Services|Yes|[WSUS Online Descriptions](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/wsusonlinedescriptions)|@[Physikbuddha](https://github.com/Physikbuddha), TheFlightSims staff|https://github.com/Physikbuddha/wsus-online-descriptions|
-Windows Update Services|Yes|[WSUS Workgroup Utilities](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/wsusworkgrouputilities)|@[blndev](https://github.com/blndev/), TheFlightSims staff|https://github.com/blndev/wsusworkgroup|
+|Windows Update Services|Yes|[WSUS Workgroup Utilities](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/wsusworkgrouputilities)|@[blndev](https://github.com/blndev/), TheFlightSims staff|https://github.com/blndev/wsusworkgroup|
 |Computer Management|Yes|[XMouse Control](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/xmouse-controls-develop)|@[joelpurra](https://github.com/joelpurra), TheFlightSims staff|https://github.com/joelpurra/xmouse-controls|

@@ -117,6 +117,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PDB Downloader", "PDB Downl
 		PDB-Downloader\PDB-Downloader.sln = PDB-Downloader\PDB-Downloader.sln
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Group Policy Checker", "Group Policy Checker", "{AA23841C-E480-4291-8BB6-E1525327271E}"
+	ProjectSection(SolutionItems) = preProject
+		Windows-GPO-Security-Checker\GPOChecker.sln = Windows-GPO-Security-Checker\GPOChecker.sln
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
