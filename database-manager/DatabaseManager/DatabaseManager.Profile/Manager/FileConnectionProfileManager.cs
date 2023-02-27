@@ -47,7 +47,7 @@ namespace DatabaseManager.Profile
                     string id = filter?.Id;
                     string database = filter?.Database;
 
-                    Dictionary<string, object> para = new Dictionary<string, object>();                   
+                    Dictionary<string, object> para = new Dictionary<string, object>();
 
                     if (!string.IsNullOrEmpty(dbType))
                     {
@@ -89,15 +89,15 @@ namespace DatabaseManager.Profile
             if (ExistsProfileDataFile() && info != null)
             {
                 FileConnectionProfileInfo oldProfile = null;
-                
-                if(!string.IsNullOrEmpty(info.Id))
+
+                if (!string.IsNullOrEmpty(info.Id))
                 {
                     oldProfile = await GetProfileById(info.Id);
                 }
-                else if(!string.IsNullOrEmpty(info.Database))
+                else if (!string.IsNullOrEmpty(info.Database))
                 {
                     oldProfile = await GetProfileByDatabase(info.DatabaseType, info.Database);
-                }                 
+                }
 
                 string password = info.Password;
 

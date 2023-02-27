@@ -22,24 +22,24 @@ namespace DatabaseManager.Core
 
         public override string ToString()
         {
-            return string.Join(" AND ", this.conditions.Select(item=> $"({this.GetConditionItemValue(item)})" ));
+            return string.Join(" AND ", this.conditions.Select(item => $"({this.GetConditionItemValue(item)})"));
         }
 
         private string GetConditionItemValue(QueryConditionItem item)
         {
             string typeConvert = "";
 
-            if(item.NeedQuoted)
+            if (item.NeedQuoted)
             {
-                if(this.DatabaseType == DatabaseType.Postgres)
+                if (this.DatabaseType == DatabaseType.Postgres)
                 {
                     typeConvert = "::CHARACTER VARYING ";
                 }
             }
 
-            string value = $"{ this.QuotationLeftChar}{item.ColumnName}{ this.QuotationRightChar}{typeConvert}{ item.ToString()}";
+            string value = $"{this.QuotationLeftChar}{item.ColumnName}{this.QuotationRightChar}{typeConvert}{item.ToString()}";
 
-            return value;            
+            return value;
         }
     }
 }

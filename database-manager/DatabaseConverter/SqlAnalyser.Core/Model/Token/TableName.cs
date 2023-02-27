@@ -5,7 +5,7 @@ namespace SqlAnalyser.Model
 {
     public class TableName : NameToken
     {
-        public override TokenType Type => TokenType.TableName;       
+        public override TokenType Type => TokenType.TableName;
 
         public TableName(string symbol) : base(symbol)
         {

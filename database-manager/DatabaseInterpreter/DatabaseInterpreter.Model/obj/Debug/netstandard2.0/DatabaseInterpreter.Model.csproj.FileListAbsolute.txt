@@ -8,3 +8,13 @@ C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\da
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Model\obj\Debug\netstandard2.0\DatabaseInterpreter.Model.csproj.CoreCompileInputs.cache
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Model\obj\Debug\netstandard2.0\DatabaseInterpreter.Model.dll
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Model\obj\Debug\netstandard2.0\DatabaseInterpreter.Model.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\dbinter\model\Debug\netstandard2.0\DatabaseInterpreter.Model.deps.json
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\dbinter\model\Debug\netstandard2.0\DatabaseInterpreter.Model.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\dbinter\model\Debug\netstandard2.0\DatabaseInterpreter.Model.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Model\obj\Debug\netstandard2.0\DatabaseInterpreter.Model.csproj.AssemblyReference.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Model\obj\Debug\netstandard2.0\DatabaseInterpreter.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Model\obj\Debug\netstandard2.0\DatabaseInterpreter.Model.AssemblyInfoInputs.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Model\obj\Debug\netstandard2.0\DatabaseInterpreter.Model.AssemblyInfo.cs
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Model\obj\Debug\netstandard2.0\DatabaseInterpreter.Model.csproj.CoreCompileInputs.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Model\obj\Debug\netstandard2.0\DatabaseInterpreter.Model.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Model\obj\Debug\netstandard2.0\DatabaseInterpreter.Model.pdb

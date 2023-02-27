@@ -1,7 +1,6 @@
 ﻿using Antlr4.Runtime;
 using Antlr4.Runtime.Tree;
 using System;
-using System.IO;
 
 namespace SqlAnalyser.Model
 {
@@ -13,7 +12,7 @@ namespace SqlAnalyser.Model
 
         public bool HasAs { get; set; }
 
-        protected TokenInfo alias;      
+        protected TokenInfo alias;
 
         public TokenInfo Alias
         {
@@ -26,15 +25,15 @@ namespace SqlAnalyser.Model
                 if (value != null)
                 {
                     Type type = this.GetType();
-                    
-                    if(type == typeof(TableName))
+
+                    if (type == typeof(TableName))
                     {
                         value.Type = TokenType.TableAlias;
                     }
-                    else if(type == typeof(ColumnName))
+                    else if (type == typeof(ColumnName))
                     {
                         value.Type = TokenType.ColumnAlias;
-                    }                   
+                    }
                 }
 
                 this.alias = value;
@@ -58,7 +57,7 @@ namespace SqlAnalyser.Model
         {
             get
             {
-                if(this.alias == null)
+                if (this.alias == null)
                 {
                     return this.Symbol;
                 }

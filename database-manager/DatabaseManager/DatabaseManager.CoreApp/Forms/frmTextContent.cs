@@ -1,11 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System;
 using System.Drawing;
-using System.Text;
-using System.Web;
 using System.Windows.Forms;
 
 namespace DatabaseManager
@@ -31,7 +25,7 @@ namespace DatabaseManager
             this.Text = title;
             this.txtContent.Text = content;
 
-            if(isError)
+            if (isError)
             {
                 this.txtContent.ForeColor = Color.Red;
             }

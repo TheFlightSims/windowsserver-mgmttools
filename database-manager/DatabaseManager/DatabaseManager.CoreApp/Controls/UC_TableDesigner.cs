@@ -55,12 +55,12 @@ namespace DatabaseManager.Controls
 
             if (!ManagerUtil.SupportComment(this.displayInfo.DatabaseType))
             {
-                if(this.lblComment.Visible)
+                if (this.lblComment.Visible)
                 {
                     this.lblComment.Visible = this.txtTableComment.Visible = false;
                     this.tabControl1.Top -= (this.txtTableComment.Height + 10);
                     this.tabControl1.Height += this.txtTableComment.Height + 10;
-                }                
+                }
             }
 
             DbInterpreter dbInterpreter = this.GetDbInterpreter();

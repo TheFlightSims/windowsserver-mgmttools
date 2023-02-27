@@ -1,6 +1,4 @@
-﻿using DatabaseManager.Model;
-
-namespace DatabaseManager.Model
+﻿namespace DatabaseManager.Model
 {
     public interface IDbObjContentDisplayer
     {

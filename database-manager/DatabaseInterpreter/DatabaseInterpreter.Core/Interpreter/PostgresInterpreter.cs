@@ -1088,7 +1088,7 @@ namespace DatabaseInterpreter.Core
             }
             else
             {
-                string dataType = this.ParseDataType(column);               
+                string dataType = this.ParseDataType(column);
                 bool isIdentity = this.Option.TableScriptsGenerateOption.GenerateIdentity && column.IsIdentity;
                 bool allowIdentity = this.AllowIdentity(column);
 

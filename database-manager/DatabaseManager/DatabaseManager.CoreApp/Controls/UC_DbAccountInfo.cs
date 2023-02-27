@@ -1,14 +1,12 @@
 ﻿using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Model;
-using DatabaseManager.Profile;
-using DatabaseManager.Core;
 using DatabaseManager.Model;
+using DatabaseManager.Profile;
 using System;
 using System.Data.Common;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DatabaseManager.Data;
 
 namespace DatabaseManager.Controls
 {
@@ -22,7 +20,7 @@ namespace DatabaseManager.Controls
 
         public bool RememberPassword => this.chkRememberPassword.Checked;
 
-        public TestDbConnectHandler OnTestConnect;         
+        public TestDbConnectHandler OnTestConnect;
 
         public UC_DbAccountInfo()
         {
@@ -85,12 +83,12 @@ namespace DatabaseManager.Controls
             }
             else
             {
-                if(!string.IsNullOrEmpty(password))
+                if (!string.IsNullOrEmpty(password))
                 {
                     this.txtPassword.Text = password;
-                }  
-                
-                if(!string.IsNullOrEmpty(info.Password))
+                }
+
+                if (!string.IsNullOrEmpty(info.Password))
                 {
                     this.chkRememberPassword.Checked = true;
                 }
@@ -173,10 +171,10 @@ namespace DatabaseManager.Controls
                 UserId = this.txtUserId.Text.Trim(),
                 Password = this.txtPassword.Text.Trim(),
                 IsDba = this.chkAsDba.Checked,
-                UseSsl = this.chkUseSsl.Checked                
+                UseSsl = this.chkUseSsl.Checked
             };
 
-            if(!string.IsNullOrEmpty(this.serverVersion))
+            if (!string.IsNullOrEmpty(this.serverVersion))
             {
                 connectionInfo.ServerVersion = this.serverVersion;
             }

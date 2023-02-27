@@ -13,7 +13,6 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
 
 namespace DatabaseManager
 {
@@ -660,7 +659,7 @@ namespace DatabaseManager
 
         private void SetControlStateByMode()
         {
-            if(this.configCheckboxes == null)
+            if (this.configCheckboxes == null)
             {
                 return;
             }
@@ -673,7 +672,7 @@ namespace DatabaseManager
             var schemaOnlyCheckboxes = this.configCheckboxes.Where(item => item.Tag?.ToString() == "Schema");
             var dataOnlyCheckboxes = this.configCheckboxes.Where(item => item.Tag?.ToString() == "Data");
 
-            foreach(var checkbox in schemaOnlyCheckboxes)
+            foreach (var checkbox in schemaOnlyCheckboxes)
             {
                 checkbox.Enabled = !dataOnly;
             }
@@ -683,14 +682,14 @@ namespace DatabaseManager
                 checkbox.Enabled = !schemaOnly;
             }
 
-            if(schemaOnly || dataOnly)
+            if (schemaOnly || dataOnly)
             {
                 this.UncheckIfNotEnable();
             }
             else
             {
-                this.chkCreateSchemaIfNotExists.Checked = true;                
-                
+                this.chkCreateSchemaIfNotExists.Checked = true;
+
                 this.chkGenerateIdentity.Checked = true;
                 this.chkGenerateComment.Checked = true;
                 this.chkComputeColumn.Checked = true;
@@ -704,7 +703,7 @@ namespace DatabaseManager
 
         private void UncheckIfNotEnable()
         {
-            foreach(var checkbox in this.configCheckboxes)
+            foreach (var checkbox in this.configCheckboxes)
             {
                 if (!checkbox.Enabled)
                 {

@@ -8,7 +8,7 @@ namespace SqlAnalyser.Core
 
         public override SqlRuleAnalyser RuleAnalyser => this.ruleAnalyser;
 
-        public TSqlAnalyser(string content):base(content)
+        public TSqlAnalyser(string content) : base(content)
         {
             this.ruleAnalyser = new TSqlRuleAnalyser(content);
         }
@@ -41,6 +41,6 @@ namespace SqlAnalyser.Core
         public override AnalyseResult AnalyseTrigger()
         {
             return this.ruleAnalyser.AnalyseTrigger();
-        }           
+        }
     }
 }

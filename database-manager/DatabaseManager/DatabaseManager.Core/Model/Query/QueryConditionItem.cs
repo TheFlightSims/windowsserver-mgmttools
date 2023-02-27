@@ -1,11 +1,7 @@
-﻿using System;
+﻿using DatabaseManager.Helper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using DatabaseInterpreter.Core;
-using DatabaseInterpreter.Utility;
-using DatabaseManager.Helper;
 
 namespace DatabaseManager.Model
 {

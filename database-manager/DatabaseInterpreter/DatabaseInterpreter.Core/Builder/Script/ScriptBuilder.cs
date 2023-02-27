@@ -1,10 +1,8 @@
 ﻿using DatabaseInterpreter.Model;
-using System;
+using DatabaseInterpreter.Utility;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
 using System.Text.RegularExpressions;
-using DatabaseInterpreter.Utility;
 
 namespace DatabaseInterpreter.Core
 {
@@ -36,8 +34,8 @@ namespace DatabaseInterpreter.Core
         }
 
         public override string ToString()
-        {           
-            string script = string.Join("", this.scripts.Select(item => item.Content)).Trim() ;
+        {
+            string script = string.Join("", this.scripts.Select(item => item.Content)).Trim();
 
             return this.FormatScript ? this.Format(script) : script;
         }

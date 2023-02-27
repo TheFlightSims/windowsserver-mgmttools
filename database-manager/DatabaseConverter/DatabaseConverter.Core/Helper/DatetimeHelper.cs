@@ -70,7 +70,7 @@ namespace DatabaseConverter.Core
                 {
                     var target = mapping.Items.FirstOrDefault(item => item.DbType == targetDbType.ToString());
 
-                    if(target == null || !target.Formal)
+                    if (target == null || !target.Formal)
                     {
                         return mapping.Name;
                     }
@@ -81,7 +81,7 @@ namespace DatabaseConverter.Core
                 }
             }
 
-            return unit;            
+            return unit;
         }
 
         private static bool IsDateUnitMatched(DatabaseType dbType, DateUnitMappingItem mappingItem, string unit)
@@ -134,7 +134,7 @@ namespace DatabaseConverter.Core
                     break;
                 case "SECOND":
                     format = "S";
-                    break;               
+                    break;
                 case "DAYOFYEAR":
                     format = "j";
                     break;

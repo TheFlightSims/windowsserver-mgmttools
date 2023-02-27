@@ -327,7 +327,7 @@ namespace DatabaseInterpreter.Core
 
         private NpgsqlDbType? GetMappedDataType(string dataType)
         {
-            if(dataType!=null && dataTypeMappings.ContainsKey(dataType))
+            if (dataType != null && dataTypeMappings.ContainsKey(dataType))
             {
                 return dataTypeMappings[dataType];
             }

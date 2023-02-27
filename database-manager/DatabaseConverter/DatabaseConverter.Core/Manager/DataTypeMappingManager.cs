@@ -24,7 +24,7 @@ namespace DatabaseConverter.Core
 
             string dataTypeMappingFilePath = Path.Combine(ConfigRootFolder, $"DataTypeMapping/{sourceDatabaseType}2{targetDatabaseType}.xml");
 
-            if(!File.Exists(dataTypeMappingFilePath))
+            if (!File.Exists(dataTypeMappingFilePath))
             {
                 throw new Exception($"No such file:{dataTypeMappingFilePath}");
             }
@@ -54,15 +54,15 @@ namespace DatabaseConverter.Core
         {
             DataTypeMappingTarget target = new DataTypeMappingTarget(element);
 
-            if(!string.IsNullOrEmpty(target.Args))
+            if (!string.IsNullOrEmpty(target.Args))
             {
                 string[] items = target.Args.Split(',');
 
-                foreach(string item in items)
+                foreach (string item in items)
                 {
                     string[] nvs = item.Split(':');
 
-                    DataTypeMappingArgument arg = new DataTypeMappingArgument() { Name=nvs[0], Value=nvs[1] };
+                    DataTypeMappingArgument arg = new DataTypeMappingArgument() { Name = nvs[0], Value = nvs[1] };
 
                     target.Arguments.Add(arg);
                 }

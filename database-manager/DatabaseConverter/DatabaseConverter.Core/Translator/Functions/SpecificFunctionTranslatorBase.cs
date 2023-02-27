@@ -9,12 +9,12 @@ namespace DatabaseConverter.Core.Functions
         protected FunctionSpecification TargetSpecification;
         public DatabaseType SourceDbType { get; set; }
         public DatabaseType TargetDbType { get; set; }
-        public SpecificFunctionTranslatorBase(FunctionSpecification sourceSpecification, FunctionSpecification targetSpecification) 
+        public SpecificFunctionTranslatorBase(FunctionSpecification sourceSpecification, FunctionSpecification targetSpecification)
         {
             this.SourceSpecification = sourceSpecification;
             this.TargetSpecification = targetSpecification;
         }
 
-        public abstract string Translate(FunctionFormula formula);        
+        public abstract string Translate(FunctionFormula formula);
     }
 }

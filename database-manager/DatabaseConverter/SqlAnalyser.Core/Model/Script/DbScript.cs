@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace SqlAnalyser.Model
+﻿namespace SqlAnalyser.Model
 {
     public class DbScript
     {

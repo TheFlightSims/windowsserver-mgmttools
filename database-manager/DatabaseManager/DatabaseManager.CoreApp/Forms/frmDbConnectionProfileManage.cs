@@ -2,10 +2,6 @@
 using DatabaseManager.Profile;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -35,7 +31,7 @@ namespace DatabaseManager.Forms
 
         private void InitControls()
         {
-            this.dgvDbConnectionProfile.AutoGenerateColumns = false;          
+            this.dgvDbConnectionProfile.AutoGenerateColumns = false;
 
             this.LoadProfiles();
         }
@@ -52,7 +48,7 @@ namespace DatabaseManager.Forms
             }
 
             this.dgvDbConnectionProfile.Tag = profiles;
-        }        
+        }
 
         private async void btnDelete_Click(object sender, EventArgs e)
         {
@@ -80,10 +76,10 @@ namespace DatabaseManager.Forms
 
                 bool success = await this.DeleteConnections(ids);
 
-                if(success)
+                if (success)
                 {
                     rowIndexes.ForEach(item => { this.dgvDbConnectionProfile.Rows.RemoveAt(item); });
-                }               
+                }
             }
         }
 
@@ -113,10 +109,10 @@ namespace DatabaseManager.Forms
 
                 bool success = await this.DeleteConnections(ids);
 
-                if(success)
+                if (success)
                 {
                     this.dgvDbConnectionProfile.Rows.Clear();
-                }                
+                }
             }
         }
 

@@ -1,5 +1,4 @@
-﻿using DatabaseInterpreter.Model;
-using DatabaseInterpreter.Utility;
+﻿using DatabaseInterpreter.Utility;
 using SqlAnalyser.Model;
 using System;
 using System.Collections.Generic;
@@ -8,7 +7,7 @@ using System.Text;
 
 namespace SqlAnalyser.Core
 {
-    public class StatementScriptBuilder:IDisposable
+    public class StatementScriptBuilder : IDisposable
     {
         private StringBuilder builder = new StringBuilder();
         internal int Level = 0;
@@ -353,7 +352,7 @@ namespace SqlAnalyser.Core
             this.AppendLine($"{unpivotItem.ValueColumnName}");
             this.AppendLine($"FOR {unpivotItem.ForColumnName} IN ({(string.Join(",", unpivotItem.InColumnNames.Select(item => $"{item}")))})");
             this.AppendLine(")");
-        }     
+        }
 
         protected bool HasAssignVariableColumn(SelectStatement statement)
         {
@@ -409,8 +408,8 @@ namespace SqlAnalyser.Core
                         break;
                     case ConstraintType.UniqueIndex:
                         definition = "UNIQUE";
-                        
-                        if(!isForColumn)
+
+                        if (!isForColumn)
                         {
                             definition += $"({string.Join(",", constraint.ColumnNames)})";
                         }
@@ -446,7 +445,7 @@ namespace SqlAnalyser.Core
 
                 }
 
-                if(this is MySqlStatementScriptBuilder && isForColumn)
+                if (this is MySqlStatementScriptBuilder && isForColumn)
                 {
                     sb.Append($" {definition}");
                 }
@@ -457,12 +456,12 @@ namespace SqlAnalyser.Core
                     if (hasName && isForColumn)
                     {
                         sb.Append($" {definition}");
-                    }  
+                    }
                     else
                     {
-                        sb.Append($"{(hasName? "CONSTRAINT":"")} {(!hasName?"":$"{name} ")}{definition}".Trim());
+                        sb.Append($"{(hasName ? "CONSTRAINT" : "")} {(!hasName ? "" : $"{name} ")}{definition}".Trim());
                     }
-                }                
+                }
 
                 if (i < constaints.Count - 1)
                 {
@@ -473,7 +472,7 @@ namespace SqlAnalyser.Core
             }
 
             return sb.ToString();
-        }       
+        }
 
         public void Dispose()
         {

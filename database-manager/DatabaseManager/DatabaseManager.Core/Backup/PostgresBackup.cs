@@ -17,7 +17,7 @@ namespace DatabaseManager.Core
 
         public override string Backup()
         {
-            if(this.Setting==null)
+            if (this.Setting == null)
             {
                 throw new ArgumentException($"There is no backup setting for Postgres.");
             }
@@ -56,9 +56,9 @@ namespace DatabaseManager.Core
 
             string dumpFilePath = Path.Combine(Path.GetDirectoryName(this.Setting.ClientToolFilePath), "pg_dump.exe");
 
-            string result = ProcessHelper.RunExe(dumpFilePath, cmdArgs, new string[] { "exit" });           
-            
-            if(!string.IsNullOrEmpty(result))
+            string result = ProcessHelper.RunExe(dumpFilePath, cmdArgs, new string[] { "exit" });
+
+            if (!string.IsNullOrEmpty(result))
             {
                 throw new Exception(result);
             }

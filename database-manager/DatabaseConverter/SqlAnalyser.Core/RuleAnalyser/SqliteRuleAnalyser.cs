@@ -868,7 +868,7 @@ namespace SqlAnalyser.Core
                             if (constraintInfo.Type == ConstraintType.Check)
                             {
                                 constraintInfo.Definition = new TokenInfo(expr);
-                            }                           
+                            }
                         }
                         else if (child is Foreign_key_clauseContext fk)
                         {

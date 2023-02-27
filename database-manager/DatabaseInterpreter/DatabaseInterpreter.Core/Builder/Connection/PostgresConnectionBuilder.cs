@@ -7,14 +7,14 @@ namespace DatabaseInterpreter.Core
     {
         public string BuildConntionString(ConnectionInfo connectionInfo)
         {
-            string server = connectionInfo.Server;          
+            string server = connectionInfo.Server;
             string port = connectionInfo.Port;
             int timeout = DbInterpreter.Setting.CommandTimeout;
 
             if (string.IsNullOrEmpty(port))
             {
                 port = PostgresInterpreter.DEFAULT_PORT.ToString();
-            }          
+            }
 
             StringBuilder sb = new StringBuilder($"Host={server};Port={port};Database={connectionInfo.Database};CommandTimeout={timeout};");
 

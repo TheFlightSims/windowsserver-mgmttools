@@ -1,7 +1,7 @@
-﻿namespace  DatabaseInterpreter.Core
+﻿namespace DatabaseInterpreter.Core
 {
     public class PostgresProvider : IDbProvider
     {
-        public string ProviderName => "Npgsql";           
+        public string ProviderName => "Npgsql";
     }
 }

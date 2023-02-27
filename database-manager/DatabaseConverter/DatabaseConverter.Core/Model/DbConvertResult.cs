@@ -11,8 +11,8 @@ namespace DatabaseConverter.Model
 
     public enum DbConvertResultInfoType
     {
-        Information=0,
-        Warnning=1,
-        Error=2
+        Information = 0,
+        Warnning = 1,
+        Error = 2
     }
 }

@@ -7,8 +7,24 @@
     <AssemblyVersion>2.0.0</AssemblyVersion>
     <FileVersion>2.0.0</FileVersion>
     <PackageReleaseNotes>use sqlite store profile data instead of json files.</PackageReleaseNotes>
-    <PackageProjectUrl>https://github.com/victor-wiki/DatabaseManager</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/TheFlightSims/windowsserver-mgmttools</PackageProjectUrl>
     <BaseOutputPath>..\..\..\!bin!\DatabaseManager\GUI\Profile</BaseOutputPath>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>TheFlightSims (ft. victor-wiki)</Authors>
+    <Company>TheFlightSims</Company>
+    <RepositoryUrl>https://github.com/TheFlightSims/windowsserver-mgmttools</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <AnalysisLevel>latest</AnalysisLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Optimize>True</Optimize>
   </PropertyGroup>
 
   <ItemGroup>

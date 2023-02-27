@@ -2,6 +2,6 @@
 {
     public class TruncateStatement : Statement
     {
-        public TableName TableName { get; set; }       
+        public TableName TableName { get; set; }
     }
 }

@@ -8,3 +8,13 @@ C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hy
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HVBackup.Console.csproj.CopyComplete
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HyperVBackup.exe
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HyperVBackup.pdb
+D:\#source-code\windowsserver-mgmttools\!bin!\Hyper-V Backup\NLog.config
+D:\#source-code\windowsserver-mgmttools\!bin!\Hyper-V Backup\HyperVBackup.exe.config
+D:\#source-code\windowsserver-mgmttools\!bin!\Hyper-V Backup\HyperVBackup.exe
+D:\#source-code\windowsserver-mgmttools\!bin!\Hyper-V Backup\HyperVBackup.pdb
+D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HVBackup.Console.csproj.AssemblyReference.cache
+D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HVBackup.Console.csproj.SuggestedBindingRedirects.cache
+D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HVBackup.Console.csproj.CoreCompileInputs.cache
+D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HVBackup.Console.csproj.CopyComplete
+D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HyperVBackup.exe
+D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HyperVBackup.pdb

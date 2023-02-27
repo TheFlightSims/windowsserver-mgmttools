@@ -17,7 +17,7 @@ namespace DatabaseManager.Model
         public string FilePath { get; set; }
         public ScriptAction ScriptAction;
         public List<RoutineParameter> ScriptParameters;
-        public bool IsTranlatedScript { get; set; }       
+        public bool IsTranlatedScript { get; set; }
     }
 
     public enum DatabaseObjectDisplayType

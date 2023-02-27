@@ -22,3 +22,12 @@ D:\#source-code\windowsserver-mgmttools\Windows-GPO-Security-Checker\obj\Debug\G
 D:\#source-code\windowsserver-mgmttools\Windows-GPO-Security-Checker\obj\Debug\GPOChecker.csproj.CoreCompileInputs.cache
 D:\#source-code\windowsserver-mgmttools\Windows-GPO-Security-Checker\obj\Debug\GPO Checker.exe
 D:\#source-code\windowsserver-mgmttools\Windows-GPO-Security-Checker\obj\Debug\GPO Checker.pdb
+D:\#source-code\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.csproj.AssemblyReference.cache
+D:\#source-code\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.csproj.SuggestedBindingRedirects.cache
+D:\#source-code\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.GPOChecker.resources
+D:\#source-code\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.Properties.Resources.resources
+D:\#source-code\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.Update.resources
+D:\#source-code\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.csproj.GenerateResource.cache
+D:\#source-code\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.csproj.CoreCompileInputs.cache
+D:\#source-code\windowsserver-mgmttools\gpo-checker\obj\Debug\GPO Checker.exe
+D:\#source-code\windowsserver-mgmttools\gpo-checker\obj\Debug\GPO Checker.pdb

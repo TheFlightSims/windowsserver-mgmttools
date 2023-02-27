@@ -9,7 +9,7 @@ namespace DatabaseInterpreter.Utility
     {
         public static string IV { get; set; } = "1234567812345678";
         public static string Key { get; set; } = "FA5DEAAB-5171-405A-9CED-E2C6DED6";
-        
+
         public static string Encrypt(string plainText)
         {
             byte[] data = Encrypt(plainText, Encoding.UTF8.GetBytes(Key), Encoding.UTF8.GetBytes(IV));

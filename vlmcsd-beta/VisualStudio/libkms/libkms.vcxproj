@@ -109,7 +109,7 @@
     <GenerateManifest>false</GenerateManifest>
     <TargetName>$(ProjectName)64</TargetName>
     <TargetExt>.dll</TargetExt>
-    <OutDir>..\..\..\!bin!\vlmcsd\vlmcsd-core</OutDir>
+    <OutDir>..\..\..\!bin!\vlmcsd</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <GenerateManifest>false</GenerateManifest>

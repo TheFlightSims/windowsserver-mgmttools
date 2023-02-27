@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DatabaseManager.Model
+﻿namespace DatabaseManager.Model
 {
     public enum AuthenticationType
     {

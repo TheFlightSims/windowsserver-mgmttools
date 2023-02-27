@@ -98,17 +98,17 @@ namespace DatabaseManager
 
             this.DialogResult = DialogResult.OK;
 
-            if(SettingManager.Setting.RememberPasswordDuringSession)
+            if (SettingManager.Setting.RememberPasswordDuringSession)
             {
                 DataStore.SetAccountProfileInfo(accountProfileInfo);
-            }           
+            }
 
             this.Close();
         }
 
         private AccountProfileInfo GetAccountProfileInfo()
         {
-            ConnectionInfo connectionInfo = this.ucAccountInfo.GetConnectionInfo();           
+            ConnectionInfo connectionInfo = this.ucAccountInfo.GetConnectionInfo();
 
             AccountProfileInfo accountProfileInfo = new AccountProfileInfo() { DatabaseType = this.DatabaseType.ToString() };
 

@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using DatabaseInterpreter.Core;
+﻿using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Model;
 using DatabaseInterpreter.Utility;
 using DatabaseManager.Model;
+using System.IO;
 
 namespace DatabaseManager.Core
 {
@@ -21,19 +18,19 @@ namespace DatabaseManager.Core
             this.dbInterpreter = dbInterpreter;
         }
 
-        public string GetTemplateContent(DatabaseObjectType databaseObjectType, ScriptAction scriptAction, DatabaseObject databaseObject)           
+        public string GetTemplateContent(DatabaseObjectType databaseObjectType, ScriptAction scriptAction, DatabaseObject databaseObject)
         {
             string scriptTypeName = databaseObjectType.ToString();
             string scriptTypeFolder = Path.Combine(TemplateFolder, scriptTypeName);
 
             string scriptTemplateFilePath = Path.Combine(scriptTypeFolder, this.dbInterpreter.DatabaseType.ToString() + commonTemplateFileExtension);
 
-            if(!File.Exists(scriptTemplateFilePath))
+            if (!File.Exists(scriptTemplateFilePath))
             {
                 scriptTemplateFilePath = Path.Combine(scriptTypeFolder, commonTemplateFileName + commonTemplateFileExtension);
             }
-            
-            if(!File.Exists(scriptTemplateFilePath))
+
+            if (!File.Exists(scriptTemplateFilePath))
             {
                 return string.Empty;
             }
@@ -52,13 +49,13 @@ namespace DatabaseManager.Core
             string name = this.dbInterpreter.DatabaseType == DatabaseType.SqlServer ? this.dbInterpreter.GetQuotedDbObjectNameWithSchema(databaseObject?.Schema, nameTemplate)
                 : this.dbInterpreter.GetQuotedString(nameTemplate);
 
-            string tableName = databaseObjectType == DatabaseObjectType.Trigger && databaseObject!=null ? this.dbInterpreter.GetQuotedDbObjectNameWithSchema(databaseObject)
+            string tableName = databaseObjectType == DatabaseObjectType.Trigger && databaseObject != null ? this.dbInterpreter.GetQuotedDbObjectNameWithSchema(databaseObject)
                             : this.dbInterpreter.GetQuotedString($"TABLE_NAME");
 
 
             templateContent = templateContent.Replace("$ACTION$", scriptAction.ToString())
                 .Replace("$NAME$", name)
-                .Replace("$TABLE_NAME$", tableName);           
+                .Replace("$TABLE_NAME$", tableName);
 
             return templateContent;
         }

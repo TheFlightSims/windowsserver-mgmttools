@@ -61,8 +61,9 @@
             this.dgvDatabases.RowHeadersWidth = 20;
             this.dgvDatabases.RowTemplate.Height = 23;
             this.dgvDatabases.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDatabases.Size = new System.Drawing.Size(616, 413);
+            this.dgvDatabases.Size = new System.Drawing.Size(616, 364);
             this.dgvDatabases.TabIndex = 21;
+            this.dgvDatabases.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatabases_CellContentClick);
             // 
             // colId
             // 
@@ -89,10 +90,10 @@
             // btnDelete
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnDelete.Location = new System.Drawing.Point(316, 423);
+            this.btnDelete.Location = new System.Drawing.Point(316, 373);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(88, 33);
+            this.btnDelete.Size = new System.Drawing.Size(88, 29);
             this.btnDelete.TabIndex = 24;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -101,10 +102,10 @@
             // btnClear
             // 
             this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnClear.Location = new System.Drawing.Point(420, 423);
+            this.btnClear.Location = new System.Drawing.Point(420, 373);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(88, 33);
+            this.btnClear.Size = new System.Drawing.Size(88, 29);
             this.btnClear.TabIndex = 25;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -113,10 +114,10 @@
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.Location = new System.Drawing.Point(524, 423);
+            this.btnClose.Location = new System.Drawing.Point(524, 373);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(88, 33);
+            this.btnClose.Size = new System.Drawing.Size(88, 29);
             this.btnClose.TabIndex = 26;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -125,10 +126,10 @@
             // btnRefresh
             // 
             this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnRefresh.Location = new System.Drawing.Point(4, 423);
+            this.btnRefresh.Location = new System.Drawing.Point(4, 373);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(88, 33);
+            this.btnRefresh.Size = new System.Drawing.Size(88, 29);
             this.btnRefresh.TabIndex = 27;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -137,10 +138,10 @@
             // btnVisible
             // 
             this.btnVisible.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnVisible.Location = new System.Drawing.Point(212, 423);
+            this.btnVisible.Location = new System.Drawing.Point(212, 373);
             this.btnVisible.Margin = new System.Windows.Forms.Padding(4);
             this.btnVisible.Name = "btnVisible";
-            this.btnVisible.Size = new System.Drawing.Size(88, 33);
+            this.btnVisible.Size = new System.Drawing.Size(88, 29);
             this.btnVisible.TabIndex = 28;
             this.btnVisible.Text = "Visibile";
             this.btnVisible.UseVisualStyleBackColor = true;
@@ -149,10 +150,10 @@
             // btnInVisible
             // 
             this.btnInVisible.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnInVisible.Location = new System.Drawing.Point(108, 423);
+            this.btnInVisible.Location = new System.Drawing.Point(108, 373);
             this.btnInVisible.Margin = new System.Windows.Forms.Padding(4);
             this.btnInVisible.Name = "btnInVisible";
-            this.btnInVisible.Size = new System.Drawing.Size(88, 33);
+            this.btnInVisible.Size = new System.Drawing.Size(88, 29);
             this.btnInVisible.TabIndex = 29;
             this.btnInVisible.Text = "Invisible";
             this.btnInVisible.UseVisualStyleBackColor = true;
@@ -160,9 +161,9 @@
             // 
             // frmDatabaseVisibility
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 465);
+            this.ClientSize = new System.Drawing.Size(619, 410);
             this.Controls.Add(this.btnInVisible);
             this.Controls.Add(this.btnVisible);
             this.Controls.Add(this.btnRefresh);

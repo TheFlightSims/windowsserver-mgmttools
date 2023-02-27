@@ -38,3 +38,17 @@ C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!b
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.pdb
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.exe.CodeAnalysisLog.xml
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.exe.lastcodeanalysissucceeded
+D:\#source-code\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.exe.config
+D:\#source-code\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.xml
+D:\#source-code\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.exe
+D:\#source-code\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.pdb
+D:\#source-code\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.exe.CodeAnalysisLog.xml
+D:\#source-code\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.exe.lastcodeanalysissucceeded
+D:\#source-code\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.csproj.AssemblyReference.cache
+D:\#source-code\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.csproj.SuggestedBindingRedirects.cache
+D:\#source-code\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.MainForm.resources
+D:\#source-code\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.Properties.Resources.resources
+D:\#source-code\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.csproj.GenerateResource.cache
+D:\#source-code\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.csproj.CoreCompileInputs.cache
+D:\#source-code\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\Nvidia Cleaner.exe
+D:\#source-code\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\Nvidia Cleaner.pdb

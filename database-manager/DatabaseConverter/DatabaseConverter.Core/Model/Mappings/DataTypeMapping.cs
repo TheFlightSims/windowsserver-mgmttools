@@ -1,5 +1,4 @@
-﻿using DatabaseInterpreter.Core;
-using DatabaseInterpreter.Utility;
+﻿using DatabaseInterpreter.Utility;
 using System.Collections.Generic;
 using System.Xml.Linq;
 
@@ -45,7 +44,7 @@ namespace DatabaseConverter.Model
             this.Precision = target.Attribute("precision")?.Value;
             this.Scale = target.Attribute("scale")?.Value;
             this.Substitute = target.Attribute("substitute")?.Value;
-            this.Args = target.Attribute("args")?.Value;            
+            this.Args = target.Attribute("args")?.Value;
         }
     }
 
@@ -56,21 +55,21 @@ namespace DatabaseConverter.Model
     }
 
     public class DataTypeMappingSpecial
-    {               
+    {
         public string Name { get; set; }
         public string Value { get; set; }
         public string Type { get; set; }
         public string TargetMaxLength { get; set; }
-        public string Substitute { get; set; }       
+        public string Substitute { get; set; }
         public bool NoLength { get; set; }
         public string Precison { get; set; }
         public string Scale { get; set; }
 
         public DataTypeMappingSpecial() { }
         public DataTypeMappingSpecial(XElement element)
-        {            
+        {
             this.Name = element.Attribute("name")?.Value;
-            this.Value = element.Attribute("value")?.Value;          
+            this.Value = element.Attribute("value")?.Value;
             this.Type = element.Attribute("type")?.Value;
             this.TargetMaxLength = element.Attribute("targetMaxLength")?.Value;
             this.Substitute = element.Attribute("substitute")?.Value;

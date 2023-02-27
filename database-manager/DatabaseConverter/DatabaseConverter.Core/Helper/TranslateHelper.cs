@@ -1,19 +1,14 @@
 ﻿using DatabaseConverter.Core.Model;
-using DatabaseConverter.Model;
 using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Model;
 using DatabaseInterpreter.Utility;
-using Newtonsoft.Json.Linq;
 using SqlAnalyser.Core;
 using SqlAnalyser.Model;
-using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading;
-using TSQL.Tokens;
 
 namespace DatabaseConverter.Core
 {
@@ -217,7 +212,7 @@ namespace DatabaseConverter.Core
             {
                 sqlAnalyser = new PostgreSqlAnalyser(content);
             }
-            else if(databaseType == DatabaseType.Sqlite)
+            else if (databaseType == DatabaseType.Sqlite)
             {
                 sqlAnalyser = new SqliteAnalyser(content);
             }
@@ -245,7 +240,7 @@ namespace DatabaseConverter.Core
             {
                 factory = new PostgreSqlScriptBuildFactory();
             }
-            else if(databaseType == DatabaseType.Sqlite)
+            else if (databaseType == DatabaseType.Sqlite)
             {
                 factory = new SqliteScriptBuildFactory();
             }
@@ -289,7 +284,7 @@ namespace DatabaseConverter.Core
 
         public static bool NeedConvertConcatChar(List<string> databaseTypes, DatabaseType databaseType)
         {
-            return databaseTypes.Count == 0 ||  databaseTypes.Any(item => item == databaseType.ToString());
+            return databaseTypes.Count == 0 || databaseTypes.Any(item => item == databaseType.ToString());
         }
 
         public static bool IsValidName(string name, char[] trimChars)

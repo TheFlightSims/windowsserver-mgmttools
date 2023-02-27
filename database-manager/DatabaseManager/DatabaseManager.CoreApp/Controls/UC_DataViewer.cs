@@ -8,7 +8,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
@@ -83,7 +82,7 @@ namespace DatabaseManager.Controls
             {
                 bool isForView = false;
 
-                if(dbObject is View)
+                if (dbObject is View)
                 {
                     dbObject = ObjectHelper.CloneObject<Table>(dbObject);
 

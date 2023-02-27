@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DatabaseInterpreter.Model
+﻿namespace DatabaseInterpreter.Model
 {
     public class Script
     {

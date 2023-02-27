@@ -9,6 +9,6 @@
         public string ObjectName { get; set; }
         public string RefObjectCatalog { get; set; }
         public string RefObjectSchema { get; set; }
-        public string RefObjectName { get; set; }       
+        public string RefObjectName { get; set; }
     }
 }

@@ -9,7 +9,7 @@ using System.Text;
 
 namespace SqlAnalyser.Core
 {
-    public class PostgreSqlScriptBuildFactory:ScriptBuildFactory
+    public class PostgreSqlScriptBuildFactory : ScriptBuildFactory
     {
         public override DatabaseType DatabaseType => DatabaseType.Postgres;
 
@@ -59,7 +59,7 @@ namespace SqlAnalyser.Core
                     result.BodyStartIndex += sbDeclare.Length;
                     result.BodyStopIndex += sbDeclare.Length;
                 }
-            }    
+            }
         }
 
         public override ScriptBuildResult GenerateRoutineScripts(RoutineScript script)

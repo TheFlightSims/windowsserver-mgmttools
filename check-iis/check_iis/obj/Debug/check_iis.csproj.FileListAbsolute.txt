@@ -10,13 +10,13 @@ C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!b
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\check-iis\check_iis\obj\Debug\check_iis.csproj.Fody.CopyLocal.cache
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\check-iis\check_iis\obj\Debug\check_iis.csproj.Fody.RuntimeCopyLocal.cache
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\check-iis\check_iis\obj\Debug\check_iis.csproj.CopyComplete
-D:\#source-code\windowsserver-mgmttools\check-iis\check_iis\obj\Debug\check_iis.csproj.AssemblyReference.cache
-D:\#source-code\windowsserver-mgmttools\check-iis\check_iis\obj\Debug\check_iis.csproj.SuggestedBindingRedirects.cache
-D:\#source-code\windowsserver-mgmttools\check-iis\check_iis\obj\Debug\check_iis.csproj.CoreCompileInputs.cache
 D:\#source-code\windowsserver-mgmttools\!bin!\Check IIS\Check IIS.exe.config
 D:\#source-code\windowsserver-mgmttools\!bin!\Check IIS\Check IIS.xml
 D:\#source-code\windowsserver-mgmttools\!bin!\Check IIS\Check IIS.exe
 D:\#source-code\windowsserver-mgmttools\!bin!\Check IIS\Check IIS.pdb
+D:\#source-code\windowsserver-mgmttools\check-iis\check_iis\obj\Debug\check_iis.csproj.AssemblyReference.cache
+D:\#source-code\windowsserver-mgmttools\check-iis\check_iis\obj\Debug\check_iis.csproj.SuggestedBindingRedirects.cache
+D:\#source-code\windowsserver-mgmttools\check-iis\check_iis\obj\Debug\check_iis.csproj.CoreCompileInputs.cache
 D:\#source-code\windowsserver-mgmttools\check-iis\check_iis\obj\Debug\check_iis.csproj.Fody.CopyLocal.cache
 D:\#source-code\windowsserver-mgmttools\check-iis\check_iis\obj\Debug\check_iis.csproj.Fody.RuntimeCopyLocal.cache
 D:\#source-code\windowsserver-mgmttools\check-iis\check_iis\obj\Debug\check_iis.csproj.CopyComplete

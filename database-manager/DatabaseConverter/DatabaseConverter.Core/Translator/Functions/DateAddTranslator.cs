@@ -15,7 +15,7 @@ namespace DatabaseConverter.Core.Functions
         {
             string expression = formula.Expression;
             string delimiter = this.SourceSpecification.Delimiter ?? ",";
-            var args = formula.GetArgs(delimiter);           
+            var args = formula.GetArgs(delimiter);
 
             DateAdd? dateAdd = default(DateAdd?);
 
@@ -51,7 +51,7 @@ namespace DatabaseConverter.Core.Functions
                 }
                 else if (this.TargetDbType == DatabaseType.Postgres)
                 {
-                    string dataType = isStringValue? (isTimestampStr ? "::TIMESTAMP" : "::DATE"):"";
+                    string dataType = isStringValue ? (isTimestampStr ? "::TIMESTAMP" : "::DATE") : "";
 
                     string strDate = $"{date}{dataType}"; ;
 
@@ -63,30 +63,30 @@ namespace DatabaseConverter.Core.Functions
 
                     if (isStringValue)
                     {
-                        date = DatetimeHelper.GetOracleUniformDatetimeString(date, isTimestampStr);                       
+                        date = DatetimeHelper.GetOracleUniformDatetimeString(date, isTimestampStr);
                     }
 
                     string dataType = isStringValue ? (isTimestampStr ? "TIMESTAMP" : "DATE") : "";
 
                     string strDate = $"{dataType}{date}";
 
-                    newExpression = $"{strDate} + INTERVAL '{intervalNumber}' {unit}";                   
+                    newExpression = $"{strDate} + INTERVAL '{intervalNumber}' {unit}";
                 }
-                else if(this.TargetDbType == DatabaseType.Sqlite)
+                else if (this.TargetDbType == DatabaseType.Sqlite)
                 {
-                    if(unit == "WEEK")
+                    if (unit == "WEEK")
                     {
-                        intervalNumber = intervalNumber.StartsWith("-")?  "-7":"7";
+                        intervalNumber = intervalNumber.StartsWith("-") ? "-7" : "7";
                         unit = "DAY";
                     }
 
-                    string function = isStringValue ? (isTimestampStr ? "DATETIME" : "DATE") : "";                    
+                    string function = isStringValue ? (isTimestampStr ? "DATETIME" : "DATE") : "";
 
                     newExpression = $"{function}({date}, '{intervalNumber} {unit}')";
                 }
             }
 
             return newExpression;
-        }        
+        }
     }
 }

@@ -1,18 +1,14 @@
-﻿using BrightIdeasSoftware;
-using DatabaseInterpreter.Core;
+﻿using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Model;
 using DatabaseInterpreter.Utility;
 using DatabaseManager.Data;
-using DatabaseManager.Helper;
 using DatabaseManager.Model;
 using DatabaseManager.Profile;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -180,10 +176,10 @@ namespace DatabaseManager.Forms
 
                 bool success = await this.DeleteRecords(ids);
 
-                if(success)
+                if (success)
                 {
                     rowIndexes.ForEach(item => { this.dgvDatabases.Rows.RemoveAt(item); });
-                }                
+                }
             }
         }
 
@@ -213,10 +209,10 @@ namespace DatabaseManager.Forms
 
                 bool success = await this.DeleteRecords(ids);
 
-                if(success)
+                if (success)
                 {
                     this.dgvDatabases.Rows.Clear();
-                }                
+                }
             }
         }
 
@@ -265,6 +261,11 @@ namespace DatabaseManager.Forms
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgvDatabases_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

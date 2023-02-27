@@ -1,13 +1,11 @@
-﻿using System;
+﻿using DatabaseInterpreter.Model;
 using System.Collections.Generic;
-using System.Text;
-using DatabaseInterpreter.Model;
 
 namespace DatabaseManager.Model
 {
     public class TableDiagnoseResult
-    {        
-        public List<TableDiagnoseResultDetail> Details { get; set; } = new List<TableDiagnoseResultDetail>();      
+    {
+        public List<TableDiagnoseResultDetail> Details { get; set; } = new List<TableDiagnoseResultDetail>();
     }
 
     public class TableDiagnoseResultDetail

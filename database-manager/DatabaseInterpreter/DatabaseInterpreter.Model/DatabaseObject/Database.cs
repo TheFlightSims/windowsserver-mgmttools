@@ -1,7 +1,7 @@
 ﻿namespace DatabaseInterpreter.Model
 {
-    public class Database: DatabaseObject
+    public class Database : DatabaseObject
     {
-        
+
     }
 }

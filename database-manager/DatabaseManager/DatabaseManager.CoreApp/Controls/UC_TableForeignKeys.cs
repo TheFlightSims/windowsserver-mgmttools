@@ -1,16 +1,12 @@
-﻿using System;
+﻿using DatabaseInterpreter.Model;
+using DatabaseManager.Core;
+using DatabaseManager.Helper;
+using DatabaseManager.Model;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DatabaseManager.Helper;
-using DatabaseInterpreter.Model;
-using DatabaseManager.Model;
-using DatabaseManager.Core;
 
 namespace DatabaseManager.Controls
 {
@@ -53,7 +49,7 @@ namespace DatabaseManager.Controls
                     this.colComment.Visible = false;
                     this.colKeyName.Width += 100;
                     this.colColumns.Width += 100;
-                }               
+                }
             }
 
             List<Table> sortedTables = new List<Table>();
@@ -112,7 +108,7 @@ namespace DatabaseManager.Controls
                 string referenceTableName = this.GetReferenceTableDisplayName(table);
 
                 var tableDisplayInfo = this.tableDisplayInfos.FirstOrDefault(item => item.DisplayName == referenceTableName);
-  
+
                 row.Cells[this.colReferenceTable.Name].Value = referenceTableName;
                 row.Cells[this.colReferenceTable.Name].Tag = tableDisplayInfo.Table;
 
@@ -286,19 +282,19 @@ namespace DatabaseManager.Controls
 
             if (e.ColumnIndex == this.colReferenceTable.Index)
             {
-                Table referenceTable = row.Cells[this.colReferenceTable.Name].Value as Table ;
+                Table referenceTable = row.Cells[this.colReferenceTable.Name].Value as Table;
 
                 string keyName = DataGridViewHelper.GetCellStringValue(row, this.colKeyName.Name);
 
                 if (referenceTable != null)
                 {
-                    if(string.IsNullOrEmpty(keyName))
+                    if (string.IsNullOrEmpty(keyName))
                     {
                         row.Cells[this.colKeyName.Name].Value = IndexManager.GetForeignKeyDefaultName(this.Table.Name, referenceTable.Name);
-                    }                    
+                    }
 
                     row.Cells[this.colReferenceTable.Name].Tag = referenceTable;
-                }               
+                }
             }
         }
 
@@ -336,7 +332,7 @@ namespace DatabaseManager.Controls
             {
                 this.OnGenerateChangeScripts();
             }
-        }       
+        }
     }
 
     public class TableDisplayInfo

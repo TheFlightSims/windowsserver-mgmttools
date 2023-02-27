@@ -18,7 +18,7 @@ namespace DatabaseManager.Model
         public string Comment { get; set; }
 
         public TableIndexExtraPropertyInfo ExtraPropertyInfo { get; set; }
-    }  
+    }
 
     public class TableIndexExtraPropertyInfo
     {

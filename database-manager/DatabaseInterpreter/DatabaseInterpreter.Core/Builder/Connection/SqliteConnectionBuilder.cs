@@ -8,7 +8,7 @@ namespace DatabaseInterpreter.Core
         public string BuildConntionString(ConnectionInfo connectionInfo)
         {
             StringBuilder sb = new StringBuilder($"Data Source={connectionInfo.Database};Password={connectionInfo.Password};Mode=ReadWriteCreate;");
-            
+
             return sb.ToString();
         }
     }

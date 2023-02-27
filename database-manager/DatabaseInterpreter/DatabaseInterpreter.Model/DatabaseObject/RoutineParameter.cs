@@ -9,5 +9,5 @@
         public int? Precision { get; set; }
         public int? Scale { get; set; }
         public bool IsOutput { get; set; }
-    } 
+    }
 }

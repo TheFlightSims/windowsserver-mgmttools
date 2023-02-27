@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace DatabaseConverter.Model
 {
@@ -19,8 +17,8 @@ namespace DatabaseConverter.Model
     }
 
     public enum FunctionArgumentItemDetailType
-    { 
-        Text,      
+    {
+        Text,
         Whitespace
     }
 }

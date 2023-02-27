@@ -3,5 +3,5 @@
     public class DeclareTableStatement : Statement
     {
         public TableInfo TableInfo { get; set; }
-    }   
+    }
 }

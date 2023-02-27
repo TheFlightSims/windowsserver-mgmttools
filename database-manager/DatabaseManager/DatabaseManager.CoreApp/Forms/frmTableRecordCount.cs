@@ -1,11 +1,10 @@
-﻿using System;
-using System.Data;
-using System.Windows.Forms;
+﻿using DatabaseInterpreter.Utility;
 using DatabaseManager.Model;
-using DatabaseInterpreter.Model;
-using DatabaseInterpreter.Utility;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace DatabaseManager
 {
@@ -24,18 +23,18 @@ namespace DatabaseManager
 
         public void LoadData(IEnumerable<TableRecordCount> records)
         {
-            foreach (TableRecordCount item in records.OrderByDescending(item=>item.RecordCount))
+            foreach (TableRecordCount item in records.OrderByDescending(item => item.RecordCount))
             {
                 int rowIndex = this.dgvResult.Rows.Add();
 
                 DataGridViewRow row = this.dgvResult.Rows[rowIndex];
 
                 row.Cells[this.colTableName.Name].Value = item.TableName;
-                row.Cells[this.colRecordCount.Name].Value = item.RecordCount;               
+                row.Cells[this.colRecordCount.Name].Value = item.RecordCount;
 
                 row.Tag = item;
             }
-        }      
+        }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -80,7 +79,7 @@ namespace DatabaseManager
         private void dgvResult_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
             this.dgvResult.ClearSelection();
-        }      
+        }
 
         private void tsmiSave_Click(object sender, EventArgs e)
         {

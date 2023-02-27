@@ -17,7 +17,7 @@ namespace DatabaseManager.Core
 
         public override string Backup()
         {
-            if(this.Setting==null)
+            if (this.Setting == null)
             {
                 throw new ArgumentException($"There is no backup setting for Oracle.");
             }
@@ -52,19 +52,19 @@ namespace DatabaseManager.Core
 
             string connectArgs = "";
 
-            if(this.ConnectionInfo.IntegratedSecurity)
+            if (this.ConnectionInfo.IntegratedSecurity)
             {
                 connectArgs = "/";
             }
             else
             {
-                connectArgs = $"{this.ConnectionInfo.UserId}/{this.ConnectionInfo.Password}@{server}:{port}/{serviceName} OWNER={this.ConnectionInfo.UserId}";       
+                connectArgs = $"{this.ConnectionInfo.UserId}/{this.ConnectionInfo.Password}@{server}:{port}/{serviceName} OWNER={this.ConnectionInfo.UserId}";
             }
 
             if (this.ConnectionInfo.IsDba)
             {
                 connectArgs += " AS SYSDBA";
-            }            
+            }
 
             string cmdArgs = $"-L -S {connectArgs} FULL=Y DIRECT=Y";
 

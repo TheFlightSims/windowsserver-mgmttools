@@ -1,5 +1,4 @@
-﻿using DatabaseInterpreter.Core;
-using DatabaseInterpreter.Model;
+﻿using DatabaseInterpreter.Model;
 using DatabaseInterpreter.Utility;
 using DatabaseManager.Controls;
 using DatabaseManager.Core;
@@ -7,11 +6,9 @@ using DatabaseManager.Forms;
 using DatabaseManager.Helper;
 using DatabaseManager.Model;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DatabaseManager
@@ -28,7 +25,7 @@ namespace DatabaseManager
             this.InitControls();
 
             TreeView.CheckForIllegalCrossThreadCalls = false;
-            TextBox.CheckForIllegalCrossThreadCalls = false;            
+            TextBox.CheckForIllegalCrossThreadCalls = false;
 
             FeedbackHelper.EnableLog = SettingManager.Setting.EnableLog;
             LogHelper.LogType = SettingManager.Setting.LogType;
@@ -72,13 +69,13 @@ namespace DatabaseManager
 
                 this.txtMessage.Text = info.Message;
                 this.txtMessage.BackColor = this.BackColor;
-                this.txtMessage.ForeColor = Color.Red;       
+                this.txtMessage.ForeColor = Color.Red;
             }
             else
             {
                 this.txtMessage.Text = info.Message;
             }
-            
+
         }
 
         private void tsmiSetting_Click(object sender, EventArgs e)
@@ -258,7 +255,7 @@ namespace DatabaseManager
         private void txtMessage_MouseHover(object sender, EventArgs e)
         {
             this.toolTip1.SetToolTip(this.txtMessage, this.txtMessage.Text);
-        }       
+        }
 
         private void tsBtnTranslateScript_Click(object sender, EventArgs e)
         {
@@ -276,6 +273,16 @@ namespace DatabaseManager
         {
             frmImageViewer imgViewer = new frmImageViewer();
             imgViewer.Show();
+        }
+
+        private void navigator_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ucContent_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

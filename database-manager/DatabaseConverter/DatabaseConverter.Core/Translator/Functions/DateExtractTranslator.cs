@@ -1,7 +1,6 @@
 ﻿using DatabaseConverter.Core.Model.Functions;
 using DatabaseConverter.Model;
 using DatabaseInterpreter.Model;
-using DatabaseInterpreter.Utility;
 
 namespace DatabaseConverter.Core.Functions
 {
@@ -23,7 +22,7 @@ namespace DatabaseConverter.Core.Functions
 
             if (this.SourceDbType == DatabaseType.SqlServer)
             {
-                dateExtract = new DateExtract() { Unit = args[0], Date = args[1]};
+                dateExtract = new DateExtract() { Unit = args[0], Date = args[1] };
             }
             else if (this.SourceDbType == DatabaseType.MySql)
             {
@@ -44,6 +43,6 @@ namespace DatabaseConverter.Core.Functions
             }
 
             return newExpression;
-        }        
+        }
     }
 }

@@ -233,7 +233,7 @@ namespace DatabaseInterpreter.Core
 
             bool supportComputeColumn = this.IsSupportComputeColumn();
 
-            string computeExp = !supportComputeColumn ? "NULL":$"REPLACE(REPLACE(REPLACE(C.GENERATION_EXPRESSION,'\\\\',''),(SELECT CONCAT('_',DEFAULT_CHARACTER_SET_NAME) FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = \"INFORMATION_SCHEMA\"),''),\r\n                        (SELECT CONCAT('_',DEFAULT_CHARACTER_SET_NAME) FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = '{this.ConnectionInfo.Database}'),'')";
+            string computeExp = !supportComputeColumn ? "NULL" : $"REPLACE(REPLACE(REPLACE(C.GENERATION_EXPRESSION,'\\\\',''),(SELECT CONCAT('_',DEFAULT_CHARACTER_SET_NAME) FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = \"INFORMATION_SCHEMA\"),''),\r\n                        (SELECT CONCAT('_',DEFAULT_CHARACTER_SET_NAME) FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = '{this.ConnectionInfo.Database}'),'')";
             string detailColums = (isForView || isSimpleMode) ? "" : $@",COLUMN_DEFAULT AS `DefaultValue`,COLUMN_COMMENT AS `Comment`, {computeExp} AS `ComputeExp`";
 
             string joinTable = !isForView ? "JOIN INFORMATION_SCHEMA.`TABLES` AS T ON T.`TABLE_NAME`= C.`TABLE_NAME` AND T.TABLE_TYPE='BASE TABLE' AND T.TABLE_SCHEMA=C.TABLE_SCHEMA" :
@@ -424,7 +424,7 @@ namespace DatabaseInterpreter.Core
         {
             bool isLowDbVersion = this.IsLowDbVersion(this.GetDbVersion(), "8.0.16");
 
-            if(isLowDbVersion)
+            if (isLowDbVersion)
             {
                 return String.Empty;
             }

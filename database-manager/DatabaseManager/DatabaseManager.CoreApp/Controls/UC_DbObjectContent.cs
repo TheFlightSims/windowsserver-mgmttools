@@ -3,7 +3,6 @@ using DatabaseInterpreter.Utility;
 using DatabaseManager.Core;
 using DatabaseManager.Helper;
 using DatabaseManager.Model;
-using SqlAnalyser.Model;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -555,7 +554,7 @@ namespace DatabaseManager.Controls
                     {
                         string schema = info.Schema ?? dbObject.Schema;
 
-                        if(!string.IsNullOrEmpty(schema))
+                        if (!string.IsNullOrEmpty(schema))
                         {
                             name = $"{schema}.{dbObject.Name}";
                         }

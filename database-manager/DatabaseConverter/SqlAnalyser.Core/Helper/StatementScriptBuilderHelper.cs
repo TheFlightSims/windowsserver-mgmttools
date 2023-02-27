@@ -123,7 +123,7 @@ namespace SqlAnalyser.Core
                 sb.AppendLine($"FROM {fromTables}");
 
                 buildWhere();
-            };                   
+            };
 
             if (builder is TSqlStatementScriptBuilder || builder is SqliteStatementScriptBuilder)
             {

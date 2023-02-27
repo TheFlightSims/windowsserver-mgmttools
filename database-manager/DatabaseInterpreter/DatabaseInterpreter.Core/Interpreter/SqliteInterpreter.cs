@@ -193,12 +193,12 @@ namespace DatabaseInterpreter.Core
         {
             if (filter?.TableNames == null)
             {
-                if(filter == null)
+                if (filter == null)
                 {
                     filter = new SchemaInfoFilter();
-                }               
+                }
 
-                filter.TableNames= (await this.GetTableNamesAsync());
+                filter.TableNames = (await this.GetTableNamesAsync());
             }
 
             var columns = await base.GetDbObjectsAsync<TableColumn>(dbConnection, this.GetSqlForTableColumns(filter));
@@ -212,7 +212,7 @@ namespace DatabaseInterpreter.Core
 
             string[] tableNames = filter?.TableNames;
 
-            if(tableNames!=null)
+            if (tableNames != null)
             {
                 for (int i = 0; i < tableNames.Length; i++)
                 {
@@ -232,8 +232,8 @@ namespace DatabaseInterpreter.Core
                                 dflt_value AS DefaultValue, pk AS IsPrimaryKey, cid AS ""Order""
                                 FROM PRAGMA_TABLE_INFO('{tableName}')");
                 }
-            }        
-            
+            }
+
             return sb.Content;
         }
         #endregion
@@ -435,7 +435,7 @@ namespace DatabaseInterpreter.Core
                     filter = new SchemaInfoFilter();
                 }
 
-                filter = new SchemaInfoFilter() { TableNames =  await GetTableNamesAsync() };
+                filter = new SchemaInfoFilter() { TableNames = await GetTableNamesAsync() };
             }
 
             List<TableForeignKeyItem> foreignKeyItems = await base.GetDbObjectsAsync<TableForeignKeyItem>(dbConnection, this.GetSqlForForeignKeys(filter, isFilterForReferenced));
@@ -496,9 +496,9 @@ namespace DatabaseInterpreter.Core
 
             items.ForEach(item =>
             {
-                if(item.Type == null)
+                if (item.Type == null)
                 {
-                    if(item.IsUnique)
+                    if (item.IsUnique)
                     {
                         item.Type = "Unique";
                     }
@@ -854,7 +854,7 @@ namespace DatabaseInterpreter.Core
                 bool matched = false;
                 int index = -1;
 
-                if (dbObjectType == DatabaseObjectType.PrimaryKey && (index= this.FindIndexInList(columnItems, "PRIMARY")) > 0)
+                if (dbObjectType == DatabaseObjectType.PrimaryKey && (index = this.FindIndexInList(columnItems, "PRIMARY")) > 0)
                 {
                     matched = true;
                 }

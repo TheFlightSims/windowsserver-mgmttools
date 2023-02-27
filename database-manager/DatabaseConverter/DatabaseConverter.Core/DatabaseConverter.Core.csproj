@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>victor-wiki</Authors>
     <Company>victor-wiki</Company>
-    <PackageProjectUrl>https://github.com/victor-wiki/DatabaseManager</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/TheFlightSims/windowsserver-mgmttools</PackageProjectUrl>
     <Description>Convert or translate database objects and data between SqlServer, MySql, Oracle and Postgres.</Description>
     <Version>2.1.3</Version>
     <Platforms>AnyCPU;x64</Platforms>
@@ -14,14 +14,18 @@
     <PackageReleaseNotes>optimize: function translator</PackageReleaseNotes>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
     <BaseOutputPath>..\..\..\!bin!\DatabaseManager\dbconvert\core</BaseOutputPath>
+    <IncludeSymbols>True</IncludeSymbols>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+    <UserSecretsId>1957be56-1ac2-4301-b01c-23038ecbb957</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <Optimize>False</Optimize>
+    <Optimize>True</Optimize>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <Optimize>False</Optimize>
+    <Optimize>True</Optimize>
   </PropertyGroup>
 
   <ItemGroup>
@@ -87,9 +91,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CoreCLR-NCalc" Version="2.2.70" />
+    <PackageReference Include="CoreCLR-NCalc" Version="2.2.110" />
     <PackageReference Include="PoorMansTSqlFormatterRedux" Version="1.0.3" />
-    <PackageReference Include="TSQL.Parser" Version="2.5.0" />
+    <PackageReference Include="TSQL.Parser" Version="2.6.0" />
   </ItemGroup>
 
   <ItemGroup>

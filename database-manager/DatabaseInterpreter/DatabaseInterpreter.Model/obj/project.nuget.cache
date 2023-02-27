@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CX7oNnnlZmVE7DZMQZfUrqLBPlwznbVjReJ/ekAuFWYyhEwqQdtfxWOZCyzmYH1nmpXG8ZCoI9X0foddf2kBXQ==",
-  "success": false,
+  "dgSpecHash": "7OKFc+Gy0ROSpcTIDjqwjWB/NLVLcBa/kK+KF+G16pwSPWt8I6XyN2DRb/f8ZeKmC4KdYUAnbHs54XfgxrXI6w==",
+  "success": true,
   "projectFilePath": "D:\\#source-code\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\DatabaseInterpreter.Model.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1102",
-      "level": "Error",
-      "message": "Unable to find package NETStandard.Library with version (>= 2.0.3)\r\n  - Found 3 version(s) in Microsoft Visual Studio Offline Packages [ Nearest version: 2.0.0 ]\r\n  - Found 0 version(s) in C:\\Program Files\\dotnet\\library-packs",
-      "libraryId": "NETStandard.Library",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  "logs": []
 }

@@ -8,7 +8,7 @@ namespace DatabaseInterpreter.Core
         {
             DbScriptGenerator dbScriptGenerator = null;
 
-            switch(dbInterpreter.DatabaseType)
+            switch (dbInterpreter.DatabaseType)
             {
                 case DatabaseType.SqlServer:
                     dbScriptGenerator = new SqlServerScriptGenerator(dbInterpreter);

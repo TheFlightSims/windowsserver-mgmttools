@@ -21,20 +21,15 @@
             this.columnHeaderLocation = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.其它toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lowMemoryMappedIoSpaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.LMMIOtoolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.highMemoryMappedIoSpaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.HMMIOtoolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.GCCTtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removegpupass = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeMemoryLocationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.添加设备ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.移除设备ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.复制地址toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.刷新列表toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.removegpupass = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,55 +75,16 @@
             this.刷新列表toolStripMenuItem});
             this.contextMenuStrip.Name = "contextMenuStrip";
             resources.ApplyResources(this.contextMenuStrip, "contextMenuStrip");
-            this.contextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip_Opening);
             // 
             // 其它toolStripMenuItem
             // 
             this.其它toolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lowMemoryMappedIoSpaceToolStripMenuItem,
-            this.LMMIOtoolStripTextBox,
-            this.toolStripSeparator4,
-            this.highMemoryMappedIoSpaceToolStripMenuItem,
-            this.HMMIOtoolStripTextBox,
-            this.toolStripSeparator5,
             this.GCCTtoolStripMenuItem,
-            this.removegpupass});
+            this.removegpupass,
+            this.changeMemoryLocationToolStripMenuItem});
             this.其它toolStripMenuItem.Name = "其它toolStripMenuItem";
             resources.ApplyResources(this.其它toolStripMenuItem, "其它toolStripMenuItem");
             this.其它toolStripMenuItem.Click += new System.EventHandler(this.其它toolStripMenuItem_Click);
-            // 
-            // lowMemoryMappedIoSpaceToolStripMenuItem
-            // 
-            resources.ApplyResources(this.lowMemoryMappedIoSpaceToolStripMenuItem, "lowMemoryMappedIoSpaceToolStripMenuItem");
-            this.lowMemoryMappedIoSpaceToolStripMenuItem.Name = "lowMemoryMappedIoSpaceToolStripMenuItem";
-            // 
-            // LMMIOtoolStripTextBox
-            // 
-            resources.ApplyResources(this.LMMIOtoolStripTextBox, "LMMIOtoolStripTextBox");
-            this.LMMIOtoolStripTextBox.Name = "LMMIOtoolStripTextBox";
-            this.LMMIOtoolStripTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LMMIOtoolStripTextBox_KeyDown);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            resources.ApplyResources(this.toolStripSeparator4, "toolStripSeparator4");
-            // 
-            // highMemoryMappedIoSpaceToolStripMenuItem
-            // 
-            resources.ApplyResources(this.highMemoryMappedIoSpaceToolStripMenuItem, "highMemoryMappedIoSpaceToolStripMenuItem");
-            this.highMemoryMappedIoSpaceToolStripMenuItem.Name = "highMemoryMappedIoSpaceToolStripMenuItem";
-            this.highMemoryMappedIoSpaceToolStripMenuItem.Click += new System.EventHandler(this.highMemoryMappedIoSpaceToolStripMenuItem_Click);
-            // 
-            // HMMIOtoolStripTextBox
-            // 
-            resources.ApplyResources(this.HMMIOtoolStripTextBox, "HMMIOtoolStripTextBox");
-            this.HMMIOtoolStripTextBox.Name = "HMMIOtoolStripTextBox";
-            this.HMMIOtoolStripTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HMMIOtoolStripTextBox_KeyDown);
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
             // 
             // GCCTtoolStripMenuItem
             // 
@@ -137,6 +93,18 @@
             this.GCCTtoolStripMenuItem.Name = "GCCTtoolStripMenuItem";
             resources.ApplyResources(this.GCCTtoolStripMenuItem, "GCCTtoolStripMenuItem");
             this.GCCTtoolStripMenuItem.Click += new System.EventHandler(this.GCCTtoolStripMenuItem_Click);
+            // 
+            // removegpupass
+            // 
+            this.removegpupass.Name = "removegpupass";
+            resources.ApplyResources(this.removegpupass, "removegpupass");
+            this.removegpupass.Click += new System.EventHandler(this.removegpupass_Click);
+            // 
+            // changeMemoryLocationToolStripMenuItem
+            // 
+            this.changeMemoryLocationToolStripMenuItem.Name = "changeMemoryLocationToolStripMenuItem";
+            resources.ApplyResources(this.changeMemoryLocationToolStripMenuItem, "changeMemoryLocationToolStripMenuItem");
+            this.changeMemoryLocationToolStripMenuItem.Click += new System.EventHandler(this.memchangeloc);
             // 
             // toolStripSeparator2
             // 
@@ -172,12 +140,6 @@
             resources.ApplyResources(this.刷新列表toolStripMenuItem, "刷新列表toolStripMenuItem");
             this.刷新列表toolStripMenuItem.Click += new System.EventHandler(this.刷新列表ToolStripMenuItem_Click);
             // 
-            // removegpupass
-            // 
-            this.removegpupass.Name = "removegpupass";
-            resources.ApplyResources(this.removegpupass, "removegpupass");
-            this.removegpupass.Click += new System.EventHandler(this.removegpupass_Click);
-            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -208,14 +170,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem 复制地址toolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 其它toolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lowMemoryMappedIoSpaceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripTextBox LMMIOtoolStripTextBox;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripMenuItem highMemoryMappedIoSpaceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripTextBox HMMIOtoolStripTextBox;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem GCCTtoolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removegpupass;
+        private System.Windows.Forms.ToolStripMenuItem changeMemoryLocationToolStripMenuItem;
     }
 }
 

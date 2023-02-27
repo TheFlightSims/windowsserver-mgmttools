@@ -703,7 +703,7 @@ namespace DatabaseInterpreter.Core
         #region Routine Script Usage
         public override Task<List<RoutineScriptUsage>> GetRoutineScriptUsages(SchemaInfoFilter filter = null, bool isFilterForReferenced = false, bool includeViewTableUsages = false)
         {
-            return base.GetDbObjectUsagesAsync<RoutineScriptUsage>(this.GetSqlForRountineScriptUsages(filter, isFilterForReferenced,includeViewTableUsages));
+            return base.GetDbObjectUsagesAsync<RoutineScriptUsage>(this.GetSqlForRountineScriptUsages(filter, isFilterForReferenced, includeViewTableUsages));
         }
 
         public override Task<List<RoutineScriptUsage>> GetRoutineScriptUsages(DbConnection dbConnection, SchemaInfoFilter filter = null, bool isFilterForReferenced = false, bool includeViewTableUsages = false)
@@ -723,15 +723,15 @@ namespace DatabaseInterpreter.Core
                         WHERE d.REFERENCED_OWNER NOT IN('SYS','PUBLIC')
                         AND UPPER({owner})=UPPER('{this.GetSchemaBySchemaFilter(filter)}')");
 
-            if(!includeViewTableUsages)
+            if (!includeViewTableUsages)
             {
                 sb.Append("AND NOT (d.TYPE= 'VIEW' AND d.REFERENCED_TYPE='TABLE') AND NOT (d.TYPE= 'VIEW' AND d.REFERENCED_TYPE='VIEW')");
             }
 
-            string typeColumn = !isFilterForReferenced ? "TYPE": "REFERENCED_TYPE";
+            string typeColumn = !isFilterForReferenced ? "TYPE" : "REFERENCED_TYPE";
             string nameColumn = !isFilterForReferenced ? "NAME" : "REFERENCED_NAME";
             string typeName = null;
-            string[] filterNames = null;            
+            string[] filterNames = null;
 
             if (filter?.DatabaseObjectType == DatabaseObjectType.Procedure)
             {
@@ -741,7 +741,7 @@ namespace DatabaseInterpreter.Core
             else if (filter?.DatabaseObjectType == DatabaseObjectType.Function)
             {
                 typeName = "FUNCTION";
-                filterNames = filter?.FunctionNames;               
+                filterNames = filter?.FunctionNames;
             }
             else if (filter?.DatabaseObjectType == DatabaseObjectType.View)
             {
@@ -756,7 +756,7 @@ namespace DatabaseInterpreter.Core
 
             if (typeName != null)
             {
-                sb.Append($"AND d.{typeColumn} ='{typeName}'");               
+                sb.Append($"AND d.{typeColumn} ='{typeName}'");
             }
 
             sb.Append(this.GetFilterNamesCondition(filter, filterNames, $"d.{nameColumn}"));
@@ -960,7 +960,7 @@ namespace DatabaseInterpreter.Core
         public override Task<long> GetTableRecordCountAsync(DbConnection connection, Table table, string whereClause = "")
         {
             return this.GetRecordCount(table, connection, whereClause);
-        }       
+        }
 
         private Task<long> GetRecordCount(DatabaseObject dbObject, DbConnection connection, string whereClause = "")
         {

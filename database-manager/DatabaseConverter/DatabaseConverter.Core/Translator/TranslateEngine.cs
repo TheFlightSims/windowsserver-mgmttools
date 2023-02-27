@@ -5,7 +5,6 @@ using DatabaseInterpreter.Model;
 using DatabaseInterpreter.Utility;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace DatabaseConverter.Core
 {
@@ -22,7 +21,7 @@ namespace DatabaseConverter.Core
         public const DatabaseObjectType SupportDatabaseObjectType = DatabaseObjectType.Column | DatabaseObjectType.Constraint |
                                                                     DatabaseObjectType.View | DatabaseObjectType.Function | DatabaseObjectType.Procedure |
                                                                     DatabaseObjectType.Trigger | DatabaseObjectType.Sequence | DatabaseObjectType.Type;
-        
+
         public List<TranslateResult> TranslateResults { get; private set; } = new List<TranslateResult>();
 
         public bool ContinueWhenErrorOccurs { get; set; }
@@ -121,11 +120,11 @@ namespace DatabaseConverter.Core
         {
             ScriptTranslator<T> translator = new ScriptTranslator<T>(sourceInterpreter, this.targetInterpreter, dbObjects) { ContinueWhenErrorOccurs = this.ContinueWhenErrorOccurs };
             translator.Option = this.option;
-            translator.UserDefinedTypes = this.UserDefinedTypes;      
+            translator.UserDefinedTypes = this.UserDefinedTypes;
             translator.Subscribe(this.observer);
 
             return translator;
-        }  
+        }
 
         public void Subscribe(IObserver<FeedbackInfo> observer)
         {

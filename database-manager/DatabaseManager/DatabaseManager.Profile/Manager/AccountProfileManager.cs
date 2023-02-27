@@ -80,7 +80,7 @@ namespace DatabaseManager.Profile
                     {
                         sb.Append($"AND IntegratedSecurity={ValueHelper.BooleanToInteger(integratedSecurity)}");
                     }
-                    else if(userId != null)
+                    else if (userId != null)
                     {
                         sb.Append($"AND UserId=@UserId");
 
@@ -246,7 +246,7 @@ namespace DatabaseManager.Profile
 
         public static async Task<bool> Delete(IEnumerable<string> ids)
         {
-            if(!ValidateIds(ids))
+            if (!ValidateIds(ids))
             {
                 return false;
             }
@@ -279,7 +279,7 @@ namespace DatabaseManager.Profile
             }
 
             return false;
-        }        
+        }
     }
 
     internal class SaveResultInfo

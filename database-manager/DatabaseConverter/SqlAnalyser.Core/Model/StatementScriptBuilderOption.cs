@@ -6,7 +6,7 @@ namespace SqlAnalyser.Model
     public class StatementScriptBuilderOption
     {
         internal bool NotBuildDeclareStatement { get; set; }
-        internal bool CollectDeclareStatement { get; set;}
+        internal bool CollectDeclareStatement { get; set; }
         public bool OutputRemindInformation { get; set; }
         internal List<Type> CollectSpecialStatementTypes { get; set; } = new List<Type>();
     }

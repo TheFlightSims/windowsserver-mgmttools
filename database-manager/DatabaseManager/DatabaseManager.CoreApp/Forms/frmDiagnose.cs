@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DatabaseManager.Model;
-using DatabaseManager.Core;
+﻿using DatabaseInterpreter.Model;
 using DatabaseInterpreter.Utility;
-using DatabaseInterpreter.Model;
+using DatabaseManager.Core;
 using DatabaseManager.Forms;
+using DatabaseManager.Model;
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace DatabaseManager
 {
@@ -127,7 +121,7 @@ namespace DatabaseManager
         {
             ScriptDiagnoseType diagnoseType = ScriptDiagnoseType.None;
 
-            if(this.rbViewColumnAliasWithoutQuotationChar.Checked)
+            if (this.rbViewColumnAliasWithoutQuotationChar.Checked)
             {
                 diagnoseType = ScriptDiagnoseType.ViewColumnAliasWithoutQuotationChar;
             }
@@ -178,6 +172,11 @@ namespace DatabaseManager
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void rbNotNullWithEmpty_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

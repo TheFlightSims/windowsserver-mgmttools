@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using DatabaseInterpreter.Model;
+﻿using DatabaseInterpreter.Model;
 
 namespace SqlAnalyser.Model
 {

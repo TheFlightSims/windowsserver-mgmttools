@@ -8,7 +8,7 @@ using System.IO;
 namespace DatabaseInterpreter.Utility
 {
     public class DataTableHelper
-    {       
+    {
         public static DataTable GetChangedDataTable(DataTable dataTable, Dictionary<int, DataTableColumnChangeInfo> changedColumns, Dictionary<(int RowIndex, int ColumnIndex), dynamic> changedValues)
         {
             DataTable dtChanged = dataTable.Clone();

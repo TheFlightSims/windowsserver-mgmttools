@@ -45,11 +45,11 @@ namespace DatabaseInterpreter.Core
             {
                 factory = NpgsqlFactory.Instance;
             }
-            else if(lowerProviderName.Contains("sqlite"))
+            else if (lowerProviderName.Contains("sqlite"))
             {
                 factory = SqliteFactory.Instance;
             }
-           
+
             DbConnection connection = factory.CreateConnection();
 
             if (connection != null)

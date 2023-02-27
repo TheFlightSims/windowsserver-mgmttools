@@ -94,7 +94,7 @@ namespace DatabaseManager.Controls
             int selectedCount = this.dgvData.GetCellCount(DataGridViewElementStates.Selected);
             this.tsmiCopy.Visible = selectedCount > 1;
             this.tsmiCopyWithHeader.Visible = selectedCount > 1;
-            this.tsmiViewGeometry.Visible = selectedCount ==1 && DataGridViewHelper.IsGeometryValue(this.dgvData);
+            this.tsmiViewGeometry.Visible = selectedCount == 1 && DataGridViewHelper.IsGeometryValue(this.dgvData);
             this.tsmiCopyContent.Visible = selectedCount == 1;
             this.tsmiShowContent.Visible = selectedCount == 1;
         }

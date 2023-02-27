@@ -4,13 +4,13 @@ namespace DatabaseInterpreter.Model
 {
     public class DbInterpreterOption
     {
-        public bool SortObjectsByReference { get; set; } = false;       
+        public bool SortObjectsByReference { get; set; } = false;
         public int? DataGenerateThreshold { get; set; } = 10000000;
         public int InQueryItemLimitCount { get; set; } = 2000;
         public bool RemoveEmoji { get; set; }
         public bool TreatBytesAsNullForReading { get; set; }
         public bool TreatBytesAsNullForExecuting { get; set; }
-        public bool TreatBytesAsHexStringForFile { get; set; }     
+        public bool TreatBytesAsHexStringForFile { get; set; }
         public bool ExcludeGeometryForData { get; set; }
         public bool ExcludeIdentityForData { get; set; }
         public bool ShowTextForGeometry { get; set; }
@@ -48,5 +48,5 @@ namespace DatabaseInterpreter.Model
     {
         Details = 0,
         Simple = 1
-    }   
+    }
 }

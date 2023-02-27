@@ -1,20 +1,17 @@
-﻿using DatabaseInterpreter.Core;
+﻿using DatabaseConverter.Core;
+using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Model;
 using DatabaseInterpreter.Utility;
 using DatabaseManager.Model;
+using SqlAnalyser.Core;
+using SqlAnalyser.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
-using System.Text;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Linq;
-using SqlAnalyser.Core;
-using DatabaseConverter.Core;
-using SqlAnalyser.Model;
-using System.Runtime.InteropServices;
-using Oracle.ManagedDataAccess.Client;
 
 namespace DatabaseManager.Core
 {

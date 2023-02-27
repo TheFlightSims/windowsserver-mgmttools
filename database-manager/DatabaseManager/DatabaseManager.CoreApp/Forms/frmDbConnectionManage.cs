@@ -1,18 +1,13 @@
 ﻿using DatabaseInterpreter.Core;
-using DatabaseManager.Profile;
-using DatabaseManager.Helper;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using DatabaseInterpreter.Model;
 using DatabaseManager.Forms;
-using DatabaseManager.Model;
+using DatabaseManager.Helper;
+using DatabaseManager.Profile;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DatabaseManager
 {
@@ -33,7 +28,7 @@ namespace DatabaseManager
         public frmDbConnectionManage(DatabaseType databaseType)
         {
             InitializeComponent();
-            this.DatabaseType = databaseType;            
+            this.DatabaseType = databaseType;
         }
 
         private void frmDbConnectionManage_Load(object sender, EventArgs e)
@@ -65,7 +60,7 @@ namespace DatabaseManager
                 this.colProfiles.Visible = false;
                 this.colDatabaseVisibility.Visible = false;
                 this.dgvDbConnection.AutoResizeColumnHeadersHeight();
-                this.Width -= (this.colProfiles.Width + this.colDatabaseVisibility.Width -10);
+                this.Width -= (this.colProfiles.Width + this.colDatabaseVisibility.Width - 10);
             }
 
             this.LoadDbTypes();
@@ -156,10 +151,10 @@ namespace DatabaseManager
 
                 bool success = await this.DeleteConnections(ids);
 
-                if(success)
+                if (success)
                 {
                     rowIndexes.ForEach(item => { this.dgvDbConnection.Rows.RemoveAt(item); });
-                }                
+                }
             }
         }
 
@@ -184,10 +179,10 @@ namespace DatabaseManager
 
                 bool success = await this.DeleteConnections(ids);
 
-                if(success)
+                if (success)
                 {
                     this.dgvDbConnection.Rows.Clear();
-                }               
+                }
             }
         }
 
@@ -237,7 +232,7 @@ namespace DatabaseManager
             this.colUserName.Visible = !isFileConnection;
             this.colName.Visible = isFileConnection;
             this.colDatabase.Visible = isFileConnection;
-            this.colProfiles.Visible =!this.IsForSelecting && !isFileConnection;
+            this.colProfiles.Visible = !this.IsForSelecting && !isFileConnection;
 
             DatabaseType dbType = ManagerUtil.GetDatabaseType(this.cboDbType.Text);
 
@@ -266,7 +261,7 @@ namespace DatabaseManager
 
             foreach (AccountProfileInfo profile in profiles)
             {
-                this.dgvDbConnection.Rows.Add(profile.Id, profile.Server, profile.Port, profile.IntegratedSecurity, profile.UserId,  null, null, this.actionButtonText, this.actionButtonText);
+                this.dgvDbConnection.Rows.Add(profile.Id, profile.Server, profile.Port, profile.IntegratedSecurity, profile.UserId, null, null, this.actionButtonText, this.actionButtonText);
             }
 
             this.dgvDbConnection.Tag = profiles;
@@ -442,7 +437,7 @@ namespace DatabaseManager
 
             var row = DataGridViewHelper.GetCurrentRow(this.dgvDbConnection);
 
-            if(row == null)
+            if (row == null)
             {
                 return;
             }
@@ -455,11 +450,11 @@ namespace DatabaseManager
 
                 form.ShowDialog();
             }
-            else if(e.ColumnIndex == this.colDatabaseVisibility.Index)
+            else if (e.ColumnIndex == this.colDatabaseVisibility.Index)
             {
                 frmDatabaseVisibility form = new frmDatabaseVisibility(id);
 
-                var profile = (this.dgvDbConnection.Tag as IEnumerable<AccountProfileInfo>).FirstOrDefault(item=>item.Id == id);
+                var profile = (this.dgvDbConnection.Tag as IEnumerable<AccountProfileInfo>).FirstOrDefault(item => item.Id == id);
 
                 form.AccountProfileInfo = profile;
                 form.DatabaseType = ManagerUtil.GetDatabaseType(this.cboDbType.Text);

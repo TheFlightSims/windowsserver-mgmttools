@@ -6,11 +6,7 @@ using SqlAnalyser.Core;
 using SqlAnalyser.Model;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text.RegularExpressions;
-using static TSqlParser;
 
 namespace DatabaseConverter.Core
 {
@@ -147,7 +143,7 @@ namespace DatabaseConverter.Core
                                         }
                                     }
                                 }
-                            } 
+                            }
                             #endregion
 
                             noParenthesess = targetFuncSpec.NoParenthesess;
@@ -195,8 +191,8 @@ namespace DatabaseConverter.Core
             }
 
             return value;
-        }   
-        
+        }
+
         public static List<FunctionFormula> GetFunctionFormulas(DbInterpreter dbInterpreter, string value, bool extractChildren = true)
         {
             value = StringHelper.GetBalanceParenthesisTrimedValue(value);

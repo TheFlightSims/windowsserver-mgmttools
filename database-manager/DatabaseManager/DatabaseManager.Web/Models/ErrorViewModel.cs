@@ -1,5 +1,3 @@
-using System;
-
 namespace DatabaseManager.Web.Models
 {
     public class ErrorViewModel

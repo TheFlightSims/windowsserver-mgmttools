@@ -4,13 +4,7 @@ using DatabaseInterpreter.Utility;
 using DatabaseManager.Core;
 using DatabaseManager.Helper;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -56,7 +50,7 @@ namespace DatabaseManager
 
             string defaultOutputFolder = SettingManager.Setting.ScriptsDefaultOutputFolder;
 
-            if(!string.IsNullOrEmpty(defaultOutputFolder))
+            if (!string.IsNullOrEmpty(defaultOutputFolder))
             {
                 this.txtOutputFolder.Text = defaultOutputFolder;
             }
@@ -100,7 +94,7 @@ namespace DatabaseManager
                 }
 
                 if (!this.dbConnectionProfile.ValidateProfile())
-                {                   
+                {
                     return;
                 }
 
@@ -224,7 +218,7 @@ namespace DatabaseManager
                 this.isBusy = false;
 
                 string filePath = Path.GetFullPath(dbScriptGenerator.GetScriptOutputFilePath(mode));
-                string tip = string.IsNullOrEmpty(this.txtOutputFolder.Text)? ($", the file path is:{Environment.NewLine}{filePath}"):"";
+                string tip = string.IsNullOrEmpty(this.txtOutputFolder.Text) ? ($", the file path is:{Environment.NewLine}{filePath}") : "";
 
                 MessageBox.Show($"Scripts have been generated{tip}", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

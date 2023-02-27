@@ -46,10 +46,10 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(109, 217);
+            this.btnStart.Location = new System.Drawing.Point(109, 191);
             this.btnStart.Margin = new System.Windows.Forms.Padding(4);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(88, 33);
+            this.btnStart.Size = new System.Drawing.Size(88, 29);
             this.btnStart.TabIndex = 3;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -57,10 +57,10 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(216, 217);
+            this.btnClose.Location = new System.Drawing.Point(216, 191);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(88, 33);
+            this.btnClose.Size = new System.Drawing.Size(88, 29);
             this.btnClose.TabIndex = 4;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -69,9 +69,9 @@
             // rbNameNotMatchForScript
             // 
             this.rbNameNotMatchForScript.AutoSize = true;
-            this.rbNameNotMatchForScript.Location = new System.Drawing.Point(9, 7);
+            this.rbNameNotMatchForScript.Location = new System.Drawing.Point(9, 6);
             this.rbNameNotMatchForScript.Name = "rbNameNotMatchForScript";
-            this.rbNameNotMatchForScript.Size = new System.Drawing.Size(370, 21);
+            this.rbNameNotMatchForScript.Size = new System.Drawing.Size(338, 19);
             this.rbNameNotMatchForScript.TabIndex = 0;
             this.rbNameNotMatchForScript.Text = "Object names in script don\'t matched with they are defined";
             this.rbNameNotMatchForScript.UseVisualStyleBackColor = true;
@@ -79,35 +79,36 @@
             // rbSelfReferenceSame
             // 
             this.rbSelfReferenceSame.AutoSize = true;
-            this.rbSelfReferenceSame.Location = new System.Drawing.Point(7, 64);
+            this.rbSelfReferenceSame.Location = new System.Drawing.Point(7, 56);
             this.rbSelfReferenceSame.Margin = new System.Windows.Forms.Padding(4);
             this.rbSelfReferenceSame.Name = "rbSelfReferenceSame";
-            this.rbSelfReferenceSame.Size = new System.Drawing.Size(196, 21);
+            this.rbSelfReferenceSame.Size = new System.Drawing.Size(176, 19);
             this.rbSelfReferenceSame.TabIndex = 1;
-            this.rbSelfReferenceSame.Text = "table self refer to same value";
+            this.rbSelfReferenceSame.Text = "Table self refer to same value";
             this.rbSelfReferenceSame.UseVisualStyleBackColor = true;
             // 
             // rbWithLeadingOrTrailingWhitespace
             // 
             this.rbWithLeadingOrTrailingWhitespace.AutoSize = true;
-            this.rbWithLeadingOrTrailingWhitespace.Location = new System.Drawing.Point(7, 36);
+            this.rbWithLeadingOrTrailingWhitespace.Location = new System.Drawing.Point(7, 32);
             this.rbWithLeadingOrTrailingWhitespace.Margin = new System.Windows.Forms.Padding(4);
             this.rbWithLeadingOrTrailingWhitespace.Name = "rbWithLeadingOrTrailingWhitespace";
-            this.rbWithLeadingOrTrailingWhitespace.Size = new System.Drawing.Size(225, 21);
+            this.rbWithLeadingOrTrailingWhitespace.Size = new System.Drawing.Size(208, 19);
             this.rbWithLeadingOrTrailingWhitespace.TabIndex = 5;
-            this.rbWithLeadingOrTrailingWhitespace.Text = "with leading or trailing whitespace";
+            this.rbWithLeadingOrTrailingWhitespace.Text = "With leading or trailing whitespace";
             this.rbWithLeadingOrTrailingWhitespace.UseVisualStyleBackColor = true;
             // 
             // rbNotNullWithEmpty
             // 
             this.rbNotNullWithEmpty.AutoSize = true;
-            this.rbNotNullWithEmpty.Location = new System.Drawing.Point(7, 7);
+            this.rbNotNullWithEmpty.Location = new System.Drawing.Point(7, 6);
             this.rbNotNullWithEmpty.Margin = new System.Windows.Forms.Padding(4);
             this.rbNotNullWithEmpty.Name = "rbNotNullWithEmpty";
-            this.rbNotNullWithEmpty.Size = new System.Drawing.Size(199, 21);
+            this.rbNotNullWithEmpty.Size = new System.Drawing.Size(188, 19);
             this.rbNotNullWithEmpty.TabIndex = 0;
-            this.rbNotNullWithEmpty.Text = "not null field with empty value";
+            this.rbNotNullWithEmpty.Text = "Not null field with empty value";
             this.rbNotNullWithEmpty.UseVisualStyleBackColor = true;
+            this.rbNotNullWithEmpty.CheckedChanged += new System.EventHandler(this.rbNotNullWithEmpty_CheckedChanged);
             // 
             // tabControl
             // 
@@ -116,7 +117,7 @@
             this.tabControl.Location = new System.Drawing.Point(6, 3);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(396, 206);
+            this.tabControl.Size = new System.Drawing.Size(396, 182);
             this.tabControl.TabIndex = 8;
             // 
             // tabForTable
@@ -125,10 +126,10 @@
             this.tabForTable.Controls.Add(this.rbNotNullWithEmpty);
             this.tabForTable.Controls.Add(this.rbWithLeadingOrTrailingWhitespace);
             this.tabForTable.Controls.Add(this.rbSelfReferenceSame);
-            this.tabForTable.Location = new System.Drawing.Point(4, 26);
+            this.tabForTable.Location = new System.Drawing.Point(4, 24);
             this.tabForTable.Name = "tabForTable";
             this.tabForTable.Padding = new System.Windows.Forms.Padding(3);
-            this.tabForTable.Size = new System.Drawing.Size(388, 176);
+            this.tabForTable.Size = new System.Drawing.Size(388, 154);
             this.tabForTable.TabIndex = 0;
             this.tabForTable.Text = "For Table";
             // 
@@ -137,28 +138,28 @@
             this.tabForScript.BackColor = System.Drawing.SystemColors.Control;
             this.tabForScript.Controls.Add(this.rbViewColumnAliasWithoutQuotationChar);
             this.tabForScript.Controls.Add(this.rbNameNotMatchForScript);
-            this.tabForScript.Location = new System.Drawing.Point(4, 26);
+            this.tabForScript.Location = new System.Drawing.Point(4, 24);
             this.tabForScript.Name = "tabForScript";
             this.tabForScript.Padding = new System.Windows.Forms.Padding(3);
-            this.tabForScript.Size = new System.Drawing.Size(388, 176);
+            this.tabForScript.Size = new System.Drawing.Size(388, 154);
             this.tabForScript.TabIndex = 1;
             this.tabForScript.Text = "For Script";
             // 
             // rbViewColumnAliasWithoutQuotationChar
             // 
             this.rbViewColumnAliasWithoutQuotationChar.AutoSize = true;
-            this.rbViewColumnAliasWithoutQuotationChar.Location = new System.Drawing.Point(9, 32);
+            this.rbViewColumnAliasWithoutQuotationChar.Location = new System.Drawing.Point(9, 28);
             this.rbViewColumnAliasWithoutQuotationChar.Name = "rbViewColumnAliasWithoutQuotationChar";
-            this.rbViewColumnAliasWithoutQuotationChar.Size = new System.Drawing.Size(277, 21);
+            this.rbViewColumnAliasWithoutQuotationChar.Size = new System.Drawing.Size(254, 19);
             this.rbViewColumnAliasWithoutQuotationChar.TabIndex = 1;
             this.rbViewColumnAliasWithoutQuotationChar.Text = "Column alias of view has no quotation char";
             this.rbViewColumnAliasWithoutQuotationChar.UseVisualStyleBackColor = true;
             // 
             // frmDiagnose
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(408, 261);
+            this.ClientSize = new System.Drawing.Size(408, 230);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnStart);

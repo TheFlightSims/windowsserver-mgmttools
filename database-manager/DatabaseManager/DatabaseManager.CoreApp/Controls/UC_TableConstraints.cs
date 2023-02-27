@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DatabaseInterpreter.Model;
-using DatabaseManager.Model;
+﻿using DatabaseInterpreter.Model;
 using DatabaseManager.Helper;
+using DatabaseManager.Model;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace DatabaseManager.Controls
 {
@@ -29,7 +24,7 @@ namespace DatabaseManager.Controls
 
         public UC_TableConstraints()
         {
-            InitializeComponent();          
+            InitializeComponent();
         }
 
         private void UC_TableConstraints_Load(object sender, EventArgs e)
@@ -47,7 +42,7 @@ namespace DatabaseManager.Controls
                 this.colComment.Visible = false;
             }
 
-            if(this.DatabaseType == DatabaseType.Sqlite)
+            if (this.DatabaseType == DatabaseType.Sqlite)
             {
                 this.colColumnName.Visible = true;
             }
@@ -214,7 +209,7 @@ namespace DatabaseManager.Controls
             if (e.ColumnIndex == this.colColumnName.Index)
             {
                 DataGridViewRow row = this.dgvConstraints.Rows[e.RowIndex];
-                DataGridViewCell cell = row.Cells[this.colColumnName.Name];           
+                DataGridViewCell cell = row.Cells[this.colColumnName.Name];
 
                 TableConstraintDesignerInfo designerInfo = row.Tag as TableConstraintDesignerInfo;
 

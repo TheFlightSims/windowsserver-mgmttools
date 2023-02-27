@@ -60,9 +60,10 @@
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnOK.Location = new System.Drawing.Point(284, 287);
+            this.btnOK.Location = new System.Drawing.Point(331, 359);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(70, 22);
+            this.btnOK.Size = new System.Drawing.Size(82, 28);
             this.btnOK.TabIndex = 12;
             this.btnOK.Text = "OK";
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -70,9 +71,11 @@
             // gbRange
             // 
             this.gbRange.Controls.Add(this.panelRange);
-            this.gbRange.Location = new System.Drawing.Point(12, 105);
+            this.gbRange.Location = new System.Drawing.Point(14, 131);
+            this.gbRange.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbRange.Name = "gbRange";
-            this.gbRange.Size = new System.Drawing.Size(417, 56);
+            this.gbRange.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbRange.Size = new System.Drawing.Size(486, 70);
             this.gbRange.TabIndex = 10;
             this.gbRange.TabStop = false;
             // 
@@ -83,17 +86,19 @@
             this.panelRange.Controls.Add(this.txtFrom);
             this.panelRange.Controls.Add(this.txtTo);
             this.panelRange.Enabled = false;
-            this.panelRange.Location = new System.Drawing.Point(11, 20);
+            this.panelRange.Location = new System.Drawing.Point(13, 25);
+            this.panelRange.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelRange.Name = "panelRange";
-            this.panelRange.Size = new System.Drawing.Size(405, 30);
+            this.panelRange.Size = new System.Drawing.Size(472, 38);
             this.panelRange.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 9);
+            this.label2.Location = new System.Drawing.Point(7, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 12);
+            this.label2.Size = new System.Drawing.Size(52, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Between";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -101,33 +106,37 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(213, 9);
+            this.label3.Location = new System.Drawing.Point(248, 11);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(23, 12);
+            this.label3.Size = new System.Drawing.Size(27, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "and";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtFrom
             // 
-            this.txtFrom.Location = new System.Drawing.Point(66, 6);
+            this.txtFrom.Location = new System.Drawing.Point(77, 8);
+            this.txtFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFrom.Name = "txtFrom";
-            this.txtFrom.Size = new System.Drawing.Size(141, 21);
+            this.txtFrom.Size = new System.Drawing.Size(164, 23);
             this.txtFrom.TabIndex = 1;
             // 
             // txtTo
             // 
-            this.txtTo.Location = new System.Drawing.Point(242, 6);
+            this.txtTo.Location = new System.Drawing.Point(282, 8);
+            this.txtTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTo.Name = "txtTo";
-            this.txtTo.Size = new System.Drawing.Size(157, 21);
+            this.txtTo.Size = new System.Drawing.Size(182, 23);
             this.txtTo.TabIndex = 3;
             // 
             // rbRange
             // 
             this.rbRange.AutoSize = true;
-            this.rbRange.Location = new System.Drawing.Point(17, 87);
+            this.rbRange.Location = new System.Drawing.Point(20, 109);
+            this.rbRange.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbRange.Name = "rbRange";
-            this.rbRange.Size = new System.Drawing.Size(125, 16);
+            this.rbRange.Size = new System.Drawing.Size(103, 19);
             this.rbRange.TabIndex = 4;
             this.rbRange.TabStop = true;
             this.rbRange.Text = "Interval criteria";
@@ -139,9 +148,10 @@
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnCancel.Location = new System.Drawing.Point(360, 287);
+            this.btnCancel.Location = new System.Drawing.Point(420, 359);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(70, 22);
+            this.btnCancel.Size = new System.Drawing.Size(82, 28);
             this.btnCancel.TabIndex = 13;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -150,9 +160,10 @@
             // 
             this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnClear.Location = new System.Drawing.Point(22, 287);
+            this.btnClear.Location = new System.Drawing.Point(26, 359);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(70, 22);
+            this.btnClear.Size = new System.Drawing.Size(82, 28);
             this.btnClear.TabIndex = 11;
             this.btnClear.Text = "Clear";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -160,9 +171,11 @@
             // gbSeries
             // 
             this.gbSeries.Controls.Add(this.panelSeries);
-            this.gbSeries.Location = new System.Drawing.Point(12, 195);
+            this.gbSeries.Location = new System.Drawing.Point(14, 244);
+            this.gbSeries.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbSeries.Name = "gbSeries";
-            this.gbSeries.Size = new System.Drawing.Size(417, 56);
+            this.gbSeries.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbSeries.Size = new System.Drawing.Size(486, 70);
             this.gbSeries.TabIndex = 14;
             this.gbSeries.TabStop = false;
             // 
@@ -170,24 +183,28 @@
             // 
             this.panelSeries.Controls.Add(this.txtValues);
             this.panelSeries.Enabled = false;
-            this.panelSeries.Location = new System.Drawing.Point(11, 20);
+            this.panelSeries.Location = new System.Drawing.Point(13, 25);
+            this.panelSeries.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelSeries.Name = "panelSeries";
-            this.panelSeries.Size = new System.Drawing.Size(405, 30);
+            this.panelSeries.Size = new System.Drawing.Size(472, 38);
             this.panelSeries.TabIndex = 3;
             // 
             // txtValues
             // 
-            this.txtValues.Location = new System.Drawing.Point(5, 6);
+            this.txtValues.Location = new System.Drawing.Point(6, 8);
+            this.txtValues.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtValues.Name = "txtValues";
-            this.txtValues.Size = new System.Drawing.Size(394, 21);
+            this.txtValues.Size = new System.Drawing.Size(459, 23);
             this.txtValues.TabIndex = 1;
             // 
             // gbSingle
             // 
             this.gbSingle.Controls.Add(this.panelSingle);
-            this.gbSingle.Location = new System.Drawing.Point(12, 20);
+            this.gbSingle.Location = new System.Drawing.Point(14, 25);
+            this.gbSingle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbSingle.Name = "gbSingle";
-            this.gbSingle.Size = new System.Drawing.Size(417, 56);
+            this.gbSingle.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbSingle.Size = new System.Drawing.Size(486, 70);
             this.gbSingle.TabIndex = 8;
             this.gbSingle.TabStop = false;
             // 
@@ -195,16 +212,18 @@
             // 
             this.panelSingle.Controls.Add(this.txtValue);
             this.panelSingle.Controls.Add(this.cboOperator);
-            this.panelSingle.Location = new System.Drawing.Point(6, 20);
+            this.panelSingle.Location = new System.Drawing.Point(7, 24);
+            this.panelSingle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelSingle.Name = "panelSingle";
-            this.panelSingle.Size = new System.Drawing.Size(410, 27);
+            this.panelSingle.Size = new System.Drawing.Size(478, 38);
             this.panelSingle.TabIndex = 3;
             // 
             // txtValue
             // 
-            this.txtValue.Location = new System.Drawing.Point(72, 3);
+            this.txtValue.Location = new System.Drawing.Point(84, 4);
+            this.txtValue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtValue.Name = "txtValue";
-            this.txtValue.Size = new System.Drawing.Size(333, 21);
+            this.txtValue.Size = new System.Drawing.Size(388, 23);
             this.txtValue.TabIndex = 1;
             // 
             // cboOperator
@@ -219,18 +238,20 @@
             "<>",
             "LIKE",
             "NOT LIKE"});
-            this.cboOperator.Location = new System.Drawing.Point(10, 3);
+            this.cboOperator.Location = new System.Drawing.Point(12, 4);
+            this.cboOperator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboOperator.Name = "cboOperator";
-            this.cboOperator.Size = new System.Drawing.Size(56, 20);
+            this.cboOperator.Size = new System.Drawing.Size(65, 23);
             this.cboOperator.TabIndex = 0;
             // 
             // rbSingle
             // 
             this.rbSingle.AutoSize = true;
             this.rbSingle.Checked = true;
-            this.rbSingle.Location = new System.Drawing.Point(17, 6);
+            this.rbSingle.Location = new System.Drawing.Point(20, 8);
+            this.rbSingle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbSingle.Name = "rbSingle";
-            this.rbSingle.Size = new System.Drawing.Size(149, 16);
+            this.rbSingle.Size = new System.Drawing.Size(127, 19);
             this.rbSingle.TabIndex = 2;
             this.rbSingle.TabStop = true;
             this.rbSingle.Text = "Single value criteria";
@@ -240,9 +261,10 @@
             // rbSeries
             // 
             this.rbSeries.AutoSize = true;
-            this.rbSeries.Location = new System.Drawing.Point(17, 183);
+            this.rbSeries.Location = new System.Drawing.Point(20, 229);
+            this.rbSeries.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbSeries.Name = "rbSeries";
-            this.rbSeries.Size = new System.Drawing.Size(59, 16);
+            this.rbSeries.Size = new System.Drawing.Size(55, 19);
             this.rbSeries.TabIndex = 15;
             this.rbSeries.TabStop = true;
             this.rbSeries.Text = "Series";
@@ -250,9 +272,9 @@
             // 
             // frmDataFilterCondition
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(436, 328);
+            this.ClientSize = new System.Drawing.Size(509, 410);
             this.Controls.Add(this.rbSeries);
             this.Controls.Add(this.gbSeries);
             this.Controls.Add(this.rbRange);
@@ -262,6 +284,7 @@
             this.Controls.Add(this.gbRange);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnClear);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "frmDataFilterCondition";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -154,10 +154,12 @@ namespace GPOChecker
                                     var name = GetChildByName(pol, "q" + i.ToString() + ":Name");
                                     var state = GetChildByName(pol, "q" + i.ToString() + ":State");
                                     if (name != null && state != null)
-                                    {
+                                    { 
+                                        /*
                                         if (state.InnerText == "Enabled")
                                         {
-                                            Policies1.Add(pol.ChildNodes[0].InnerText, 1);
+                                            try { Policies1.Add(pol.ChildNodes[0].InnerText, 0); }
+                                            catch (Exception) { }
                                         }
                                         else if (state.InnerText == "Disabled")
                                         {
@@ -165,8 +167,10 @@ namespace GPOChecker
                                         }
                                         else
                                         {
-                                            Policies1.Add(pol.ChildNodes[0].InnerText, 2);
-                                        }
+                                        */
+                                        //Policies1.Add(pol.ChildNodes[0].InnerText, 2);
+                                        //}
+                                        
                                     }
                                 }
                             }

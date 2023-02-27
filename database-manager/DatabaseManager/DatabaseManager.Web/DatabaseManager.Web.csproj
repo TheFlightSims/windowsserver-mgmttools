@@ -1,12 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <FileVersion>1.0.0</FileVersion>
     <Version>1.0.1</Version>
     <PackageReleaseNotes>use TranslateResult as return type; use async method</PackageReleaseNotes>
     <BaseOutputPath>..\..\..\!bin!\DatabaseManager\GUI\Web</BaseOutputPath>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Authors>TheFlightSims (ft. victor-wiki)</Authors>
+    <Company>TheFlightSims</Company>
+    <PackageProjectUrl>https://github.com/TheFlightSims/windowsserver-mgmttools</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TheFlightSims/windowsserver-mgmttools</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
   </PropertyGroup>
 
   <ItemGroup>

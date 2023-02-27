@@ -1,7 +1,7 @@
-﻿namespace  DatabaseInterpreter.Core
+﻿namespace DatabaseInterpreter.Core
 {
-    public class SqliteProvider:IDbProvider
+    public class SqliteProvider : IDbProvider
     {
-        public string ProviderName => "Microsoft.Data.Sqlite";           
+        public string ProviderName => "Microsoft.Data.Sqlite";
     }
 }

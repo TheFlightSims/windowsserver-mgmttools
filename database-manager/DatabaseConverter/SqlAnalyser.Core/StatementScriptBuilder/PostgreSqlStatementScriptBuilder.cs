@@ -4,7 +4,6 @@ using SqlAnalyser.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http.Headers;
 using System.Text;
 
 namespace SqlAnalyser.Core
@@ -393,7 +392,7 @@ namespace SqlAnalyser.Core
                     isReverse = loop.LoopCursorInfo.IsReverse;
                     iteratorName = loop.LoopCursorInfo.IteratorName.Symbol;
 
-                    if(loop.LoopCursorInfo.IsIntegerIterate)
+                    if (loop.LoopCursorInfo.IsIntegerIterate)
                     {
                         isIntegerIterate = true;
 
@@ -413,7 +412,7 @@ namespace SqlAnalyser.Core
                             this.AppendLine($"{iteratorName}:={loop.LoopCursorInfo.StopValue};");
                             this.AppendLine($"WHILE {iteratorName}>={loop.LoopCursorInfo.StartValue} LOOP");
                         }
-                    }                    
+                    }
                 }
                 else
                 {

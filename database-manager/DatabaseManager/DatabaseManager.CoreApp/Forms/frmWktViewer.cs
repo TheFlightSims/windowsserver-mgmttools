@@ -576,17 +576,17 @@ namespace DatabaseManager
             PointF centerRelativePoint = new PointF(centerRelativeX, centerRelativeY);
             PointF centerAbsolutePoint = new PointF(centerRelativePoint.X + minPointX, centerRelativePoint.Y + minPointY);
 
-            if(isNear180X)
+            if (isNear180X)
             {
-                if(centerAbsolutePoint.X + 180 >180)
+                if (centerAbsolutePoint.X + 180 > 180)
                 {
                     centerAbsolutePoint.X -= 180;
                 }
                 else
-                { 
+                {
                     centerAbsolutePoint.X += 180;
                 }
-            }                
+            }
 
             float translateX = (centerAbsolutePoint.X > 0 ? -1 : 1) * Math.Abs(centerAbsolutePoint.X) * scale + viewport.MaxX;
             float translateY = (centerAbsolutePoint.Y > 0 ? -1 : 1) * Math.Abs(centerAbsolutePoint.Y) * scale + viewport.MaxY;

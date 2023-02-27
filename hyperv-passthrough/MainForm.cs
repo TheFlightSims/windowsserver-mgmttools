@@ -1,10 +1,10 @@
 ﻿using Microsoft.Management.Infrastructure;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DeviceData = System.Tuple<Microsoft.HyperV.PowerShell.VirtualMachine, Microsoft.HyperV.PowerShell.VMAssignedDevice>;
+using HyperVpassthroughdev;
 
 namespace DiscreteDeviceAssigner
 {
@@ -42,7 +42,7 @@ namespace DiscreteDeviceAssigner
                     var dev = PowerShellWrapper.GetPnpDevice(dd.InstanceID);
                     string name = dd.Name;
                     string clas = dev.CimInstanceProperties["PnpClass"] != null ? dev.CimInstanceProperties["PnpClass"].Value as string : null;
-                    
+
                     lvis.Add(new ListViewItem(new string[] { name != null ? name : "", clas != null ? clas : "", dd.LocationPath }, group)
                     {
                         Tag = new DeviceData(vm, dd),
@@ -89,30 +89,6 @@ namespace DiscreteDeviceAssigner
             }
         }
 
-        private void contextMenuStrip_Opening(object sender, CancelEventArgs e)
-        {
-            DeviceData data = contextMenuStrip.Tag as DeviceData;
-            if (data.Item2 == null)
-            {
-                移除设备ToolStripMenuItem.Enabled = false;
-                复制地址toolStripMenuItem.Enabled = false;
-            }
-            else
-            {
-                移除设备ToolStripMenuItem.Enabled = true;
-                复制地址toolStripMenuItem.Enabled = true;
-            }
-            uint lowMMIO = 0;
-            try
-            {
-                lowMMIO = data.Item1.LowMemoryMappedIoSpace;
-            }
-            catch { }
-            LMMIOtoolStripTextBox.Text = (lowMMIO / 1024 / 1024).ToString();
-            HMMIOtoolStripTextBox.Text = (data.Item1.HighMemoryMappedIoSpace / 1024 / 1024).ToString();
-            GCCTtoolStripMenuItem.Checked = data.Item1.GuestControlledCacheTypes;
-        }
-
         private void 添加设备ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeviceData data = contextMenuStrip.Tag as DeviceData;
@@ -133,20 +109,23 @@ namespace DiscreteDeviceAssigner
                                 MessageBox.Show($"Note: If you have more than one GPU, the Hyper-V will automatic choose one of your GPUs. The device you choose may not be pass through. \n" +
                                                 $"If you want to pass through the specific, go to Device Manager, then disable all other device while leaving the device you want to pass through \n\n" +
                                                 $"Sorry for that, this application is still under development.", $"Note", MessageBoxButtons.OK);
-                                PowerShellWrapper.GpuPartitioning(data.Item1, dev);
+                                PowerShellWrapper.GpuPartitioning(data.Item1);
                             }
-                            catch (Exception ex) { 
-                                MessageBox.Show(ex.Message, "Error"); 
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message, "Error");
                             }
                             UpdateVM();
                         }
                     }
                     else
                     {
-                        try { 
-                            PowerShellWrapper.AddVMAssignableDevice(data.Item1, dev); 
+                        try
+                        {
+                            PowerShellWrapper.AddVMAssignableDevice(data.Item1, dev);
                         }
-                        catch (Exception ex) { 
+                        catch (Exception ex)
+                        {
                             if (Convert.ToString(data.Item1.State).Contains("Running") == true)
                             {
                                 MessageBox.Show($"You need to turn off the virtual machine first. \n" +
@@ -204,77 +183,6 @@ namespace DiscreteDeviceAssigner
             }
         }
 
-        //HighMemoryMappedIoSpace
-        private void HMMIOtoolStripTextBox_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                DeviceData data = contextMenuStrip.Tag as DeviceData;
-                ulong mb;
-                if (ulong.TryParse(HMMIOtoolStripTextBox.Text, out mb))
-                {
-                    var vm = data.Item1;
-                    ulong bytes = mb * 1024 * 1024;
-                    if (bytes != vm.HighMemoryMappedIoSpace && bytes != 0)
-                    {
-                        try
-                        {
-                            PowerShellWrapper.SetHighMemoryMappedIoSpace(vm, bytes);
-                            //Success
-                            contextMenuStrip.Close();
-                            return;
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.Message, "Error");
-                        }
-                    }
-                }
-
-                //Failed
-                HMMIOtoolStripTextBox.Text = (data.Item1.HighMemoryMappedIoSpace / 1024 / 1024).ToString();
-            }
-        }
-
-        //LowMemoryMappedIoSpace
-        private void LMMIOtoolStripTextBox_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                DeviceData data = contextMenuStrip.Tag as DeviceData;
-                uint mb;
-                if (uint.TryParse(LMMIOtoolStripTextBox.Text, out mb))
-                {
-                    var vm = data.Item1;
-                    uint bytes = mb * 1024 * 1024;
-                    uint lowMMIO = 0;
-                    try
-                    {
-                        //This sentence will be inexplicable
-                        lowMMIO = data.Item1.LowMemoryMappedIoSpace;
-                    }
-                    catch { }
-                    if ((lowMMIO == 0 || bytes != lowMMIO) && bytes != 0)
-                    {
-                        try
-                        {
-                            PowerShellWrapper.SetLowMemoryMappedIoSpace(vm, bytes);
-                            //Success
-                            contextMenuStrip.Close();
-                            return;
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.Message, "Error");
-                        }
-                    }
-                }
-
-                //Failed
-                LMMIOtoolStripTextBox.Text = (data.Item1.LowMemoryMappedIoSpace / 1024 / 1024).ToString();
-            }
-        }
-
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -285,16 +193,18 @@ namespace DiscreteDeviceAssigner
 
         }
 
-        private void highMemoryMappedIoSpaceToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void removegpupass_Click(object sender, EventArgs e)
         {
             DeviceData data = contextMenuStrip.Tag as DeviceData;
-            CimInstance dev = new PnpDeviceForm().GetResult();
-            PowerShellWrapper.RemoveGpuPartitioning(data.Item1, dev);
+            PowerShellWrapper.RemoveGpuPartitioning(data.Item1);
+        }
+
+        private void memchangeloc(object sender, EventArgs e)
+        {
+            DeviceData data = contextMenuStrip.Tag as DeviceData;
+            UInt32 MemorySet = new SetMemory().ReturnResult();
+            PowerShellWrapper.SetLowMemoryMappedIoSpace(data.Item1);
+            PowerShellWrapper.SetHighMemoryMappedIoSpace(data.Item1, MemorySet * 1024 * 1024);
         }
     }
 }

@@ -6,6 +6,6 @@ namespace SqlAnalyser.Model
     {
         public bool IsExecuteSql { get; set; }
         public TokenInfo Name { get; set; }
-        public List<CallParameter> Parameters { get; set; } = new List<CallParameter>();       
+        public List<CallParameter> Parameters { get; set; } = new List<CallParameter>();
     }
 }

@@ -4,7 +4,6 @@ using DatabaseConverter.Profile;
 using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Model;
 using DatabaseInterpreter.Utility;
-using Npgsql.Internal;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -308,7 +307,7 @@ namespace DatabaseConverter.Core
 
             await Task.Run(() => translateEngine.Translate(translateDbObjectType));
 
-            result.TranslateResults = translateEngine.TranslateResults;            
+            result.TranslateResults = translateEngine.TranslateResults;
 
             #endregion
 
@@ -528,7 +527,7 @@ namespace DatabaseConverter.Core
 
                 #region Data sync
 
-                if(!schemaModeOnly)
+                if (!schemaModeOnly)
                 {
                     await this.SyncData(sourceInterpreter, targetInterpreter, dbConnection, sourceSchemaInfo, targetSchemaInfo, targetDbScriptGenerator, result);
                 }

@@ -7,9 +7,37 @@
     <FileVersion>2.1.4</FileVersion>
     <Version>2.1.4</Version>
     <PackageReleaseNotes>bug fix: not detect mysql version for compute column and check constraint</PackageReleaseNotes>
-    <PackageProjectUrl>https://github.com/victor-wiki/DatabaseManager</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/TheFlightSims/windowsserver-mgmttools</PackageProjectUrl>
     <Description>Retrieve database objects and generate scripts of them for SqlServer, MySql, Oracle, Postgres and SQLite.</Description>
     <BaseOutputPath>..\..\..\!bin!\DatabaseManager\dbinter\core</BaseOutputPath>
+    <Nullable>warnings</Nullable>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Authors>TheFlightSims (ft. Victor-wiki)</Authors>
+    <Company>TheFlightSims</Company>
+    <RepositoryUrl>https://github.com/TheFlightSims/windowsserver-mgmttools</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackAsTool>False</PackAsTool>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Optimize>True</Optimize>
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <WarningLevel>5</WarningLevel>
   </PropertyGroup>
 
   <ItemGroup>

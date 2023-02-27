@@ -101,12 +101,12 @@ namespace DiscreteDeviceAssigner
             }
         }
 
-        public static void SetLowMemoryMappedIoSpace(VirtualMachine vm, uint bytes)
+        public static void SetLowMemoryMappedIoSpace(VirtualMachine vm)
         {
-            RunScript("Set-VM \"" + vm.Name + "\" -LowMemoryMappedIoSpace " + bytes);
+            RunScript("Set-VM \"" + vm.Name + "\" -LowMemoryMappedIoSpace " + Convert.ToInt32("512") * 1024 * 1024);
         }
 
-        public static void SetHighMemoryMappedIoSpace(VirtualMachine vm, ulong bytes)
+        public static void SetHighMemoryMappedIoSpace(VirtualMachine vm, uint bytes)
         {
             RunScript("Set-VM \"" + vm.Name + "\" -HighMemoryMappedIoSpace " + bytes);
         }
@@ -126,7 +126,7 @@ namespace DiscreteDeviceAssigner
             catch { }
         }
 
-        public static void GpuPartitioning(VirtualMachine vm, CimInstance device)
+        public static void GpuPartitioning(VirtualMachine vm)
         {
             RunScript("Add-VMGpuPartitionAdapter -VMName \"" + vm.Name + "\"");
             RunScript("Set-VMGpuPartitionAdapter -MinPartitionVRAM 8000000 -MaxPartitionVRAM 10000000 " +
@@ -136,7 +136,7 @@ namespace DiscreteDeviceAssigner
                 "-OptimalPartitionCompute 10000000 -VMName \"" + vm.Name + "\"");
         }
 
-        public static void RemoveGpuPartitioning(VirtualMachine vm, CimInstance device)
+        public static void RemoveGpuPartitioning(VirtualMachine vm)
         {
             RunScript("Remove-VMGpuPartitionAdapter -VMName \"" + vm.Name + "\"");
         }

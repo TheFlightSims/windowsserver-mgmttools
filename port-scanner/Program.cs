@@ -16,20 +16,22 @@ namespace Scanner
         {
             string usageString = @"
 Syntax for Scanner:
-    scanner.exe [arg1] [arg2] [arg3] ...
+    scanner.exe hosts=[DNS name or IP Address, using comma to seperate computer IDs] ports=[each ports, reconfigured port] [timeout=] [outfile=]
 Argument Keys:
     hosts   - Required. Comma separated list of hosts. This can be computer name or IP address.
     ports   - Required. Comma separated list of ports, or one of the following reconfigured port lists:
                 admin - 135, 139, 445, 3389, 5985, 5986
                 web - 21, 23, 25, 80, 443, 8080
                 top20 - 21, 22, 23, 25, 53, 80, 110, 111, 135, 139, 143, 443, 445, 993, 995, 1723, 3306, 3389, 5900, 8080
+                server-common - 7, 9, 13, 17, 19, 25, 42, 80, 88, 110, 111, 119, 135, 149, 389, 443, 445, 465, 563, 587, 636, 
+                                808, 993, 995, 1433, 1688, 1801, 3268, 3269, 3387, 3388, 3389, 4044, 6516, 6881, 8391, 8443, 8530, 8531, 9389
     timeout - Optional. Length of time in milliseconds for scanner to wait for a response. EX: 5000 = 5 seconds.
                 Note: Lowest value is 500 milliseconds which it will default to if no value is given.
     outfile - Optional. File to write results out to on disk. Writes to current folder if none provided. Slows scanning.
                 If no file is specified, output will be written to the console.​
 Example Usage:​
-        scanner.exe hosts=127.0.0.1,google.com ports=21,22,23 timeout=5000
-        scanner.exe hosts=127.0.0.1 ports=admin";
+        PortScanner.exe hosts=127.0.0.1,google.com ports=21,22,23 timeout=5000
+        PortScanner.exe hosts=127.0.0.1 ports=admin";
             Console.WriteLine(usageString);
         }
 
@@ -90,6 +92,12 @@ Example Usage:​
                         {
                             Console.WriteLine("[+] The following ports will be scanned: 21, 22, 23, 25, 53, 80, 110, 111, 135, 139, 143, 443, 445, 993, 995, 1723, 3306, 3389, 5900, 8080. \n");
                             results["ports"] = new object[] { 21, 22, 23, 25, 53, 80, 110, 111, 135, 139, 143, 443, 445, 993, 995, 1723, 3306, 3389, 5900, 8080 };
+                        }
+                        else if (parts[1] == "server-common")
+                        {
+                            Console.WriteLine("[+] The following ports will be scanned: 7, 9, 13, 17, 19, 25, 42, 80, 88, 110, 111, 119, 135, 149, 389, 443, 445, 465, 563, 587, 636, 808, 993, " +
+                                "995, 1433, 1688, 1801, 3268, 3269, 3387, 3388, 3389, 4044, 6516, 6881, 8391, 8443, 8530, 8531, 9389 \n");
+                            results["ports"] = new object[] { 7, 9, 13, 17, 19, 25, 42, 80, 88, 110, 111, 119, 135, 149, 389, 443, 445, 465, 563, 587, 636, 808, 993, 995, 1433, 1688, 1801, 3268, 3269, 3387, 3388, 3389, 4044, 6516, 6881, 8391, 8443, 8530, 8531, 9389 };
                         }
                         else
                         {

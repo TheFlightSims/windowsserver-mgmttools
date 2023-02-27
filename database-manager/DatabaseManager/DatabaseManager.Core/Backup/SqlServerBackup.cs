@@ -16,10 +16,10 @@ namespace DatabaseManager.Core
 
         public override string Backup()
         {
-            if(this.Setting==null)
+            if (this.Setting == null)
             {
                 throw new ArgumentException($"There is no backup setting for SqlServer.");
-            }                
+            }
 
             string fileNameWithoutExt = this.ConnectionInfo.Database + "_" + DateTime.Now.ToString("yyyyMMddHHmmss");
             string fileName = fileNameWithoutExt + ".bak";

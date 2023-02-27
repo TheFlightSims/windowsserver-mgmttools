@@ -1,5 +1,4 @@
-﻿using DatabaseConverter.Core;
-using DatabaseConverter.Model;
+﻿using DatabaseConverter.Model;
 using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Model;
 using DatabaseInterpreter.Utility;
@@ -11,7 +10,6 @@ using DatabaseManager.Profile;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.IO.Packaging;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -57,7 +55,7 @@ namespace DatabaseManager.Controls
 
             bool isFileConnection = ManagerUtil.IsFileConnection(dbType);
 
-            if(!isFileConnection && dbType != DatabaseType.Oracle)
+            if (!isFileConnection && dbType != DatabaseType.Oracle)
             {
                 AccountProfileInfo profileInfo = await AccountProfileManager.GetProfile(dbType.ToString(), connectionInfo.Server, connectionInfo.Port, connectionInfo.IntegratedSecurity, connectionInfo.UserId);
 
@@ -65,7 +63,7 @@ namespace DatabaseManager.Controls
                 {
                     visibilities = await DatabaseVisibilityManager.GetVisibilities(profileInfo.Id);
                 }
-            }            
+            }
 
             foreach (Database database in databases)
             {
@@ -1031,7 +1029,7 @@ namespace DatabaseManager.Controls
 
             var node = this.GetSelectedNode();
 
-            if(node == null || node.Tag == null)
+            if (node == null || node.Tag == null)
             {
                 return;
             }
@@ -1046,13 +1044,13 @@ namespace DatabaseManager.Controls
                 {
                     var dbInterpreter = DbInterpreterHelper.GetDbInterpreter(dbType, new ConnectionInfo(), new DbInterpreterOption());
 
-                    if(dbInterpreter.SupportDbObjectType.HasFlag(dbObjectType))
+                    if (dbInterpreter.SupportDbObjectType.HasFlag(dbObjectType))
                     {
                         ToolStripMenuItem item = new ToolStripMenuItem(dbType.ToString());
                         item.Click += TranslateItem_Click;
 
                         this.tsmiTranslate.DropDownItems.Add(item);
-                    }                    
+                    }
                 }
             }
         }
@@ -1465,7 +1463,7 @@ namespace DatabaseManager.Controls
 
             IEnumerable<TableRecordCount> records = await statistic.CountTableRecords();
 
-            frmTableRecordCount form = new frmTableRecordCount();            
+            frmTableRecordCount form = new frmTableRecordCount();
 
             form.LoadData(records);
 

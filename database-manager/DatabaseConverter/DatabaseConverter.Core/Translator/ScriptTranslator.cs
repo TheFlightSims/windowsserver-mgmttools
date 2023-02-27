@@ -24,7 +24,7 @@ namespace DatabaseConverter.Core
 
         public ScriptTranslator(DbInterpreter sourceDbInterpreter, DbInterpreter targetDbInterpreter, IEnumerable<T> scripts) : base(sourceDbInterpreter, targetDbInterpreter)
         {
-            this.scripts = scripts;            
+            this.scripts = scripts;
         }
 
         public override void Translate()
@@ -54,7 +54,7 @@ namespace DatabaseConverter.Core
                     break;
                 }
 
-                if(string.IsNullOrEmpty(dbObj.Definition))
+                if (string.IsNullOrEmpty(dbObj.Definition))
                 {
                     continue;
                 }
@@ -83,10 +83,10 @@ namespace DatabaseConverter.Core
             if (total > 1)
             {
                 this.FeedbackInfo($"Translated {total} script(s): {successCount} succeeded, {(total - successCount)} failed.");
-            }            
+            }
         }
 
-        private TranslateResult TranslateScript(ScriptDbObject dbObj,  bool isPartial = false)
+        private TranslateResult TranslateScript(ScriptDbObject dbObj, bool isPartial = false)
         {
             TranslateResult translateResult = new TranslateResult() { DbObjectType = DbObjectHelper.GetDatabaseObjectType(dbObj), DbObjectSchema = dbObj.Schema, DbObjectName = dbObj.Name };
 
@@ -125,7 +125,7 @@ namespace DatabaseConverter.Core
                 string originalDefinition = dbObj.Definition;
                 AnalyseResult anlyseResult = null;
 
-                SqlAnalyserBase sqlAnalyser = this.GetSqlAnalyser(this.sourceDbInterpreter.DatabaseType, originalDefinition);               
+                SqlAnalyserBase sqlAnalyser = this.GetSqlAnalyser(this.sourceDbInterpreter.DatabaseType, originalDefinition);
 
                 if (!isPartial)
                 {
@@ -375,7 +375,7 @@ namespace DatabaseConverter.Core
             sqlAnalyser.RuleAnalyser.Option.ParseTokenChildren = true;
             sqlAnalyser.RuleAnalyser.Option.ExtractFunctions = true;
             sqlAnalyser.RuleAnalyser.Option.ExtractFunctionChildren = false;
-            sqlAnalyser.RuleAnalyser.Option.IsCommonScript = this.IsCommonScript;            
+            sqlAnalyser.RuleAnalyser.Option.IsCommonScript = this.IsCommonScript;
 
             return sqlAnalyser;
         }

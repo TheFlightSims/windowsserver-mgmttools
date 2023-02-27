@@ -272,10 +272,10 @@ namespace DatabaseManager.Core
 
             sb.Append($"{action}{(string.IsNullOrEmpty(action) ? "" : " ")}{routineName}");
 
-            if(!isSqlServerProcedure)
+            if (!isSqlServerProcedure)
             {
                 sb.Append("(");
-            }           
+            }
 
             sb.AppendLine();
 
@@ -284,10 +284,10 @@ namespace DatabaseManager.Core
                 sb.AppendLine(String.Join(" ," + Environment.NewLine, parameters.Select(item => this.GetRoutineParameterItem(item, isFunction))));
             }
 
-            if(!isSqlServerProcedure)
+            if (!isSqlServerProcedure)
             {
                 sb.AppendLine(")");
-            }           
+            }
 
             if (isFunction && !isTableFunction && databaseType == DatabaseType.Oracle)
             {

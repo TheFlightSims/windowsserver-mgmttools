@@ -1,0 +1,320 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tests.Application</name>
+    </assembly>
+    <members>
+        <member name="T:Tests.Application.AdminOnlyFactAttribute">
+            <summary>
+            Represents a test fact that signals the runner to skip the test for non administrative users.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.AdminOnlyFactAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tests.Application.AdminOnlyFactAttribute"/> class.
+            </summary>
+        </member>
+        <member name="T:Tests.Application.LsaUserRightsConnectTests">
+            <summary>
+            Represents tests for <see cref="T:UserRights.Application.LsaUserRights"/> connection functionality.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsConnectTests.MultipleConnectionsThrowsException">
+            <summary>
+            Tests that only a single connection to the local security authority is allowed.
+            </summary>
+        </member>
+        <member name="T:Tests.Application.LsaUserRightsDisposeTests">
+            <summary>
+            Represents tests for <see cref="T:UserRights.Application.LsaUserRights"/> disposal functionality.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsDisposeTests.CanBeDisposedMultipleTimes">
+            <summary>
+            Tests whether dispose can be successfully called multiple times.
+            </summary>
+        </member>
+        <member name="T:Tests.Application.LsaUserRightsGetPrincipalsTests">
+            <summary>
+            Represents tests for <see cref="T:UserRights.Application.LsaUserRights"/> list functionality.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsGetPrincipalsTests.GetPrincipalsShouldWork">
+            <summary>
+            Tests listing all the principals assigned to all privileges.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsGetPrincipalsTests.GetPrincipalsSinglePrivilegeShouldWork">
+            <summary>
+            Tests listing the principals assigned to a single privilege.
+            </summary>
+            <remarks>
+            We assume the BUILTIN\Administrators group is granted the SeTakeOwnershipPrivilege privilege.
+            </remarks>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsGetPrincipalsTests.GetPrincipalsWithoutConnectingThrowsException">
+            <summary>
+            Tests listing all the principals assigned to all privileges without connecting throws an exception.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsGetPrincipalsTests.GetPrincipalsSinglePrivilegeWithoutConnectingThrowsException">
+            <summary>
+            Tests listing the principals assigned to a single privilege without connecting throws an exception.
+            </summary>
+        </member>
+        <member name="T:Tests.Application.LsaUserRightsGrantPrivilegeTests">
+            <summary>
+            Represents tests for <see cref="T:UserRights.Application.LsaUserRights"/> grant functionality.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsGrantPrivilegeTests.GrantPrivilegeShouldWork">
+            <summary>
+            Tests granting a privilege.
+            </summary>
+            <remarks>
+            We assume the BUILTIN\Users group is not granted the SeMachineAccountPrivilege privilege.
+            </remarks>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsGrantPrivilegeTests.GrantPrivilegeWithoutConnectingThrowsException">
+            <summary>
+            Tests granting a privilege without connecting throws an exception.
+            </summary>
+        </member>
+        <member name="T:Tests.Application.LsaUserRightsRevokePrivilegeTests">
+            <summary>
+            Represents tests for <see cref="T:UserRights.Application.LsaUserRights"/> revoke functionality.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsRevokePrivilegeTests.RevokePrivilegeShouldWork">
+            <summary>
+            Tests revoking a privilege.
+            </summary>
+            <remarks>
+            We assume the BUILTIN\Backup Operators is granted the SeBackupPrivilege privilege.
+            </remarks>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsRevokePrivilegeTests.RevokePrivilegeWithoutConnectingThrowsException">
+            <summary>
+            Tests revoking a privilege without connecting throws an exception.
+            </summary>
+        </member>
+        <member name="T:Tests.Application.LsaUserRightsTestBase">
+            <summary>
+            Represents the test base for <see cref="T:UserRights.Application.LsaUserRights"/> application.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsTestBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tests.Application.LsaUserRightsTestBase"/> class.
+            </summary>
+        </member>
+        <member name="P:Tests.Application.LsaUserRightsTestBase.InitialState">
+            <summary>
+            Gets the initial state of user rights assignments before they are modified through test execution.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsTestBase.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsTestBase.Dispose(System.Boolean)">
+            <summary>
+            Releases resources when they are no longer required.
+            </summary>
+            <param name="disposing">A value indicating whether the method call comes from a dispose method (its value is <c>true</c>) or from a finalizer (its value is <c>false</c>).</param>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsTestBase.GetCurrentState">
+            <summary>
+            Gets the current state of the security database.
+            </summary>
+            <returns>A map of privilege to security identifiers.</returns>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsTestBase.CreateRestoreTemplate(System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Collections.Generic.IReadOnlyCollection{System.Security.Principal.SecurityIdentifier}})">
+            <summary>
+            Creates an updated restore template.
+            </summary>
+            <param name="workingDirectory">The path to a directory where the backup files exist.</param>
+            <param name="stateBackup">The map of privilege to security identifiers for the backup configuration file.</param>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsTestBase.CreateSecurityDatabaseBackup(System.String)">
+            <summary>
+            Creates a backup of the security database.
+            </summary>
+            <param name="workingDirectory">The path to a directory where the backup files will be created.</param>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsTestBase.CreateTempDirectory">
+            <summary>
+            Creates a temporary directory.
+            </summary>
+            <returns>The temporary directory info instance.</returns>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsTestBase.ReadSecurityDatabaseBackup(System.String)">
+            <summary>
+            Reads a backup of the security database.
+            </summary>
+            <param name="workingDirectory">The path to a directory where the backup files exist.</param>
+            <returns>A map of privilege to security identifiers.</returns>
+        </member>
+        <member name="M:Tests.Application.LsaUserRightsTestBase.RestoreSecurityDatabaseBackup(System.String)">
+            <summary>
+            Restores a backup of the security database.
+            </summary>
+            <param name="workingDirectory">The path to a directory where the backup files exist.</param>
+        </member>
+        <member name="T:Tests.Application.UserRightsManagerListTests">
+            <summary>
+            Represents tests for <see cref="T:UserRights.Application.IUserRightsManager"/> list functionality.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerListTests.InvalidArgumentsThrowsException">
+            <summary>
+            Verifies invalid arguments throw an instance of <see cref="T:System.ArgumentException"/>.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerListTests.SerializingToCsvShouldWork">
+            <summary>
+            Verifies listing user rights and serializing the output to a CSV.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerListTests.SerializingToJsonShouldWork">
+            <summary>
+            Verifies listing user rights and serializing the output to a JSON.
+            </summary>
+        </member>
+        <member name="T:Tests.Application.UserRightsManagerPrincipalTests">
+            <summary>
+            Represents tests for <see cref="T:UserRights.Application.IUserRightsManager"/> modify principal functionality.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrincipalTests.InvalidArguments">
+            <summary>
+            Generates invalid method arguments for the <see cref="M:UserRights.Application.IUserRightsManager.ModifyPrincipal(UserRights.Application.IUserRights,System.String,System.String[],System.String[],System.Boolean,System.Boolean,System.Boolean)"/> method.
+            </summary>
+            <returns>A sequence of method arguments.</returns>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrincipalTests.GrantAndRevokeOthersShouldWork">
+            <summary>
+            Verifies a granting a privilege to a principal and revoking their other privileges is successful and does not modify other assignments.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrincipalTests.GrantAndRevokeShouldWork">
+            <summary>
+            Verifies a single grant with a single revoke is successful and does not modify other assignments.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrincipalTests.GrantShouldWork">
+            <summary>
+            Verifies a single grant is successful and does not modify other assignments.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrincipalTests.InvalidArgumentsThrowsException(UserRights.Application.IUserRights,System.String,System.String[],System.String[],System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Verifies invalid arguments throw an instance of <see cref="T:System.ArgumentException"/>.
+            </summary>
+            <param name="policy">A connection to the local security authority.</param>
+            <param name="principal">The principal to modify.</param>
+            <param name="grants">The privileges to grant to the principal.</param>
+            <param name="revocations">The privileges to revoke from the principal.</param>
+            <param name="revokeAll">Revokes all privileges from the principal.</param>
+            <param name="revokeOthers">Revokes all privileges from the principal excluding those being granted.</param>
+            <param name="dryRun">Enables dry-run mode.</param>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrincipalTests.RevokeAllShouldWork">
+            <summary>
+            Verifies a revoking all privileges for a principal is successful and does not modify other assignments.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrincipalTests.RevokeShouldWork">
+            <summary>
+            Verifies a single revocation is successful and does not modify other assignments.
+            </summary>
+        </member>
+        <member name="T:Tests.Application.UserRightsManagerPrivilegeTests">
+            <summary>
+            Represents integration tests for modify privilege functionality.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrivilegeTests.InvalidArguments">
+            <summary>
+            Generates invalid method arguments for the <see cref="M:UserRights.Application.IUserRightsManager.ModifyPrivilege(UserRights.Application.IUserRights,System.String,System.String[],System.String[],System.Boolean,System.Boolean,System.Text.RegularExpressions.Regex,System.Boolean)"/> method.
+            </summary>
+            <returns>A sequence of method arguments.</returns>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrivilegeTests.GrantAndRevokeOthersShouldWork">
+            <summary>
+            Verifies granting a principal to a privilege and revoking its other principals is successful and does not modify other assignments.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrivilegeTests.GrantAndRevokeShouldWork">
+            <summary>
+            Verifies a single grant with a single revoke is successful and does not modify other assignments.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrivilegeTests.GrantAndRevokePatternShouldWork">
+            <summary>
+            Verifies granting a principal to a privilege and revoking all principals matching a pattern is successful and does not modify other assignments.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrivilegeTests.GrantShouldWork">
+            <summary>
+            Verifies a single grant is successful and does not modify other assignments.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrivilegeTests.InvalidArgumentsThrowsException(UserRights.Application.IUserRights,System.String,System.String[],System.String[],System.Boolean,System.Boolean,System.Text.RegularExpressions.Regex,System.Boolean)">
+            <summary>
+            Verifies invalid arguments throw an instance of <see cref="T:System.ArgumentException"/>.
+            </summary>
+            <param name="policy">A connection to the local security authority.</param>
+            <param name="privilege">The privilege to modify.</param>
+            <param name="grants">The principals to grant the privilege to.</param>
+            <param name="revocations">The principals to revoke the privilege from.</param>
+            <param name="revokeAll">Revokes all principals from the privilege.</param>
+            <param name="revokeOthers">Revokes all principals from the privilege excluding those being granted.</param>
+            <param name="revokePattern">Revokes all principals whose SID matches the regular expression excluding those being granted.</param>
+            <param name="dryRun">Enables dry-run mode.</param>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrivilegeTests.RevokeAllShouldWork">
+            <summary>
+            Verifies revoking all principals for a privilege is successful and does not modify other assignments.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrivilegeTests.RevokeShouldWork">
+            <summary>
+            Verifies a single revocation is successful and does not modify other assignments.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerPrivilegeTests.RevokePatternForAllButBuiltinAndVirtualShouldWork">
+            <summary>
+            Verifies revoking all non builtin and virtual principals from a privilege is successful.
+            </summary>
+        </member>
+        <member name="T:Tests.Application.UserRightsManagerTestBase">
+            <summary>
+            Represents the test base for <see cref="T:UserRights.Application.UserRightsManager"/> application.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerTestBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tests.Application.UserRightsManagerTestBase"/> class.
+            </summary>
+        </member>
+        <member name="P:Tests.Application.UserRightsManagerTestBase.ServiceCollection">
+            <summary>
+            Gets the service collection.
+            </summary>
+        </member>
+        <member name="P:Tests.Application.UserRightsManagerTestBase.ServiceProvider">
+            <summary>
+            Gets the service provider.
+            </summary>
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerTestBase.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="M:Tests.Application.UserRightsManagerTestBase.Dispose(System.Boolean)">
+            <summary>
+            Releases resources when they are no longer required.
+            </summary>
+            <param name="disposing">A value indicating whether the method call comes from a dispose method (its value is <c>true</c>) or from a finalizer (its value is <c>false</c>).</param>
+        </member>
+    </members>
+</doc>

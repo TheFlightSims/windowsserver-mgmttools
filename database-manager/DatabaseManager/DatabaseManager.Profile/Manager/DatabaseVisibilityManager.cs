@@ -57,7 +57,7 @@ namespace DatabaseManager.Profile
                 var oldRecords = await GetVisibilities(accountId);
 
                 List<DatabaseVisibilityInfo> inserts = new List<DatabaseVisibilityInfo>();
-                List<DatabaseVisibilityInfo> updates = new List<DatabaseVisibilityInfo>();           
+                List<DatabaseVisibilityInfo> updates = new List<DatabaseVisibilityInfo>();
 
                 foreach (var oldRecord in oldRecords)
                 {
@@ -69,7 +69,7 @@ namespace DatabaseManager.Profile
                         {
                             updates.Add(record);
                         }
-                    }                    
+                    }
                 }
 
                 foreach (var visibility in visibilities)
@@ -85,9 +85,9 @@ namespace DatabaseManager.Profile
                     await connection.OpenAsync();
 
                     var trans = await connection.BeginTransactionAsync();
-        
+
                     SqlBuilder sbUpdate = new SqlBuilder();
-                    SqlBuilder sbInsert = new SqlBuilder();                   
+                    SqlBuilder sbInsert = new SqlBuilder();
 
                     if (updates.Count > 0)
                     {
@@ -115,7 +115,7 @@ namespace DatabaseManager.Profile
                         }
                     }
 
-                    int count = 0;                   
+                    int count = 0;
 
                     if (updates.Count > 0)
                     {

@@ -99,7 +99,7 @@ namespace SqlAnalyser.Model
         UserVariableName, //for mysql
         CursorName,
         ConstraintName,
-        DataType,   
+        DataType,
         TableAlias,
         ColumnAlias,
         IfCondition, //not include query
@@ -117,5 +117,5 @@ namespace SqlAnalyser.Model
         Subquery,
         FunctionCall,
         StringLiteral
-    }   
+    }
 }

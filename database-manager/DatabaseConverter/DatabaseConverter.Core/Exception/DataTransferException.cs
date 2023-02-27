@@ -3,7 +3,7 @@ using System;
 
 namespace DatabaseConverter.Core
 {
-    public class DataTransferException: ConvertException
+    public class DataTransferException : ConvertException
     {
         public override string ObjectType => nameof(Table);
 

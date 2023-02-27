@@ -8,7 +8,7 @@ namespace DatabaseInterpreter.Core
 
         public string CustomMessage { get; internal set; }
 
-        public bool HasRollbackedTransaction { get; internal set;  }     
+        public bool HasRollbackedTransaction { get; internal set; }
 
         public DbCommandException(Exception ex)
         {

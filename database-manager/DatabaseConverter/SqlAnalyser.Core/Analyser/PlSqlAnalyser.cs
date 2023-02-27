@@ -5,10 +5,10 @@ namespace SqlAnalyser.Core
     public class PlSqlAnalyser : SqlAnalyserBase
     {
         private PlSqlRuleAnalyser ruleAnalyser = null;
- 
+
         public override SqlRuleAnalyser RuleAnalyser => this.ruleAnalyser;
 
-        public PlSqlAnalyser(string content):base(content)
+        public PlSqlAnalyser(string content) : base(content)
         {
             this.ruleAnalyser = new PlSqlRuleAnalyser(content);
         }
@@ -41,6 +41,6 @@ namespace SqlAnalyser.Core
         public override AnalyseResult AnalyseTrigger()
         {
             return this.ruleAnalyser.AnalyseTrigger();
-        }        
+        }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace DatabaseConverter.Model
 {
@@ -8,7 +7,7 @@ namespace DatabaseConverter.Model
     {
         private string _name;
         private string _body;
-        private string _expression; 
+        private string _expression;
 
         public bool HasParentheses => this._expression?.Contains("(") == true;
 

@@ -11,6 +11,6 @@ namespace DatabaseInterpreter.Model
     public class TablePrimaryKeyItem : TableColumnChild
     {
         public bool IsDesc { get; set; }
-        public bool Clustered { get; set; } = true;          
+        public bool Clustered { get; set; } = true;
     }
 }

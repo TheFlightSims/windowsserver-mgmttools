@@ -1,7 +1,5 @@
 ﻿using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Model;
-using DatabaseInterpreter.Utility;
-using DatabaseManager.Controls;
 //using DatabaseManager.Controls.Model;
 using DatabaseManager.Core;
 using DatabaseManager.Helper;
@@ -9,7 +7,6 @@ using DatabaseManager.Model;
 using DatabaseManager.Profile;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq;
 using System.Windows.Forms;
 

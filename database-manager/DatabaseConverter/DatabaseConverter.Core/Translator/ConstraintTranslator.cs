@@ -10,12 +10,12 @@ namespace DatabaseConverter.Core
     public class ConstraintTranslator : DbObjectTokenTranslator
     {
         private List<TableConstraint> constraints;
-        private IEnumerable<DataTypeSpecification> sourceDataTypeSpecifications;       
+        private IEnumerable<DataTypeSpecification> sourceDataTypeSpecifications;
 
         internal List<TableColumn> TableCoumns { get; set; }
         public ConstraintTranslator(DbInterpreter sourceDbInterpreter, DbInterpreter targetDbInterpreter, List<TableConstraint> constraints) : base(sourceDbInterpreter, targetDbInterpreter)
         {
-            this.constraints = constraints;          
+            this.constraints = constraints;
         }
 
         public override void Translate()
@@ -32,7 +32,7 @@ namespace DatabaseConverter.Core
 
             this.FeedbackInfo("Begin to translate constraints.");
 
-            this.LoadMappings();           
+            this.LoadMappings();
 
             List<TableConstraint> invalidConstraints = new List<TableConstraint>();
 
@@ -63,7 +63,7 @@ namespace DatabaseConverter.Core
 
                             string newValue = null;
 
-                            if (this.targetDbInterpreter.DatabaseType == DatabaseType.Oracle || this.targetDbInterpreter.DatabaseType== DatabaseType.MySql)
+                            if (this.targetDbInterpreter.DatabaseType == DatabaseType.Oracle || this.targetDbInterpreter.DatabaseType == DatabaseType.MySql)
                             {
                                 newValue = $"REGEXP_LIKE({items[0]},{items[2]})";
                             }
@@ -138,7 +138,7 @@ namespace DatabaseConverter.Core
 
                     if (constraint.Definition.Contains("::")) //datatype convert operator
                     {
-                        this.LoadSourceDataTypeSpecifications();                      
+                        this.LoadSourceDataTypeSpecifications();
 
                         constraint.Definition = TranslateHelper.RemovePostgresDataTypeConvertExpression(constraint.Definition, this.sourceDataTypeSpecifications, this.targetDbInterpreter.QuotationLeftChar, this.targetDbInterpreter.QuotationRightChar);
                     }
@@ -147,7 +147,7 @@ namespace DatabaseConverter.Core
                     {
                         //example:  ((((([Shelf]) ~ similar_to_escape('(A-Za-z)')) OR (([Shelf]) = 'N/A')))),
                         //to match (([Shelf]) ~ similar_to_escape('(A-Za-z)'))
-                        string likeExp = $@"(([(][\w\{this.targetDbInterpreter.QuotationLeftChar}\{this.targetDbInterpreter.QuotationRightChar}]+[)])[\s][~][\s](similar_to_escape)([(]['][(].+[)]['][)]))"; 
+                        string likeExp = $@"(([(][\w\{this.targetDbInterpreter.QuotationLeftChar}\{this.targetDbInterpreter.QuotationRightChar}]+[)])[\s][~][\s](similar_to_escape)([(]['][(].+[)]['][)]))";
 
                         MatchCollection matches = Regex.Matches(constraint.Definition, likeExp, RegexOptions.IgnoreCase);
 
@@ -178,7 +178,7 @@ namespace DatabaseConverter.Core
                             }
                         }
                     }
-                }               
+                }
             }
 
             this.constraints.RemoveAll(item => invalidConstraints.Contains(item));

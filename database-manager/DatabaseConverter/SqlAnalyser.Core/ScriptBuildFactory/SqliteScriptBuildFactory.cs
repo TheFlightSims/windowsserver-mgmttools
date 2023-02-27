@@ -18,9 +18,9 @@ namespace SqlAnalyser.Core
             StringBuilder sb = new StringBuilder();
 
             string time = (script.Time == TriggerTime.INSTEAD_OF) ? "INSTEAD OF" : script.Time.ToString();
-            TriggerEvent @event =  script.Events.FirstOrDefault();
+            TriggerEvent @event = script.Events.FirstOrDefault();
             string columnNames = @event == TriggerEvent.UPDATE ? $" {string.Join(",", script.ColumnNames)}" : "";
-            string strEvent = @event == TriggerEvent.UPDATE ? "UPDATE OF" : @event.ToString();           
+            string strEvent = @event == TriggerEvent.UPDATE ? "UPDATE OF" : @event.ToString();
 
             sb.AppendLine($"CREATE TRIGGER {script.Name}");
             sb.AppendLine($"{time} {strEvent}{columnNames} ON {script.TableName} FOR EACH ROW");

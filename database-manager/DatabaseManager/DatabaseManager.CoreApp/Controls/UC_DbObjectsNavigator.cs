@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DatabaseManager.Helper;
-using DatabaseManager.Profile;
-using DatabaseInterpreter.Utility;
-using DatabaseManager.Model;
-using DatabaseInterpreter.Core;
-using DatabaseManager.Core;
+﻿using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Model;
+using DatabaseInterpreter.Utility;
+using DatabaseManager.Core;
 using DatabaseManager.Data;
 using DatabaseManager.Forms;
+using DatabaseManager.Helper;
+using DatabaseManager.Model;
+using DatabaseManager.Profile;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace DatabaseManager.Controls
 {
@@ -96,14 +92,14 @@ namespace DatabaseManager.Controls
             {
                 DatabaseType databaseType = ManagerUtil.GetDatabaseType(this.cboDbType.Text);
 
-                if(!ManagerUtil.IsFileConnection(databaseType))
+                if (!ManagerUtil.IsFileConnection(databaseType))
                 {
                     this.LoadAccounts();
                 }
                 else
                 {
                     this.LoadFileConnections();
-                }                
+                }
             }
         }
 
@@ -179,7 +175,7 @@ namespace DatabaseManager.Controls
             {
                 DatabaseType dbType = ManagerUtil.GetDatabaseType(databaseType);
 
-                if(!ManagerUtil.IsFileConnection(dbType))
+                if (!ManagerUtil.IsFileConnection(dbType))
                 {
                     frmAccountInfo form = new frmAccountInfo(dbType);
                     DialogResult result = form.ShowDialog();
@@ -224,12 +220,12 @@ namespace DatabaseManager.Controls
 
             ConnectionInfo connectionInfo = new ConnectionInfo();
 
-            AccountProfileInfo accountProfileInfo=null;
+            AccountProfileInfo accountProfileInfo = null;
             FileConnectionProfileInfo fileConnectionProfileInfo = null;
 
             if (selectedItem is AccountProfileInfo)
             {
-                accountProfileInfo= selectedItem as AccountProfileInfo;
+                accountProfileInfo = selectedItem as AccountProfileInfo;
 
                 if (!accountProfileInfo.IntegratedSecurity && string.IsNullOrEmpty(accountProfileInfo.Password))
                 {
@@ -252,9 +248,9 @@ namespace DatabaseManager.Controls
 
                 ObjectHelper.CopyProperties(accountProfileInfo, connectionInfo);
             }
-            else if(selectedItem is FileConnectionProfileInfo)
+            else if (selectedItem is FileConnectionProfileInfo)
             {
-                fileConnectionProfileInfo= selectedItem as FileConnectionProfileInfo;
+                fileConnectionProfileInfo = selectedItem as FileConnectionProfileInfo;
 
                 if (fileConnectionProfileInfo.HasPassword && string.IsNullOrEmpty(fileConnectionProfileInfo.Password))
                 {
@@ -276,7 +272,7 @@ namespace DatabaseManager.Controls
                 }
 
                 ObjectHelper.CopyProperties(fileConnectionProfileInfo, connectionInfo);
-            }            
+            }
 
             this.btnConnect.Enabled = false;
 
@@ -294,7 +290,7 @@ namespace DatabaseManager.Controls
                     {
                         DataStore.SetFileConnectionProfileInfo(fileConnectionProfileInfo);
                     }
-                }               
+                }
             }
             catch (Exception ex)
             {
@@ -306,11 +302,11 @@ namespace DatabaseManager.Controls
 
                 MessageBox.Show("Error:" + message);
 
-                if (accountProfileInfo!=null && !this.SetConnectionInfo(accountProfileInfo))
+                if (accountProfileInfo != null && !this.SetConnectionInfo(accountProfileInfo))
                 {
                     return;
                 }
-                else if(fileConnectionProfileInfo!=null && !this.SetFileConnectionInfo(fileConnectionProfileInfo))
+                else if (fileConnectionProfileInfo != null && !this.SetFileConnectionInfo(fileConnectionProfileInfo))
                 {
                     return;
                 }
@@ -336,7 +332,7 @@ namespace DatabaseManager.Controls
                 AccountProfileInfo profileInfo = frmAccountInfo.AccountProfileInfo;
 
                 ObjectHelper.CopyProperties(profileInfo, (this.cboAccount.SelectedItem as AccountProfileInfo));
-                this.cboAccount.Text = profileInfo.Description;                
+                this.cboAccount.Text = profileInfo.Description;
 
                 return true;
             }

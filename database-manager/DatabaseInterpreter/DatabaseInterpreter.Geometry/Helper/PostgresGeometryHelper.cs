@@ -2,10 +2,8 @@
 using MySqlConnector;
 using NetTopologySuite.Geometries;
 using System;
-using System.Collections.Generic;
 using System.Data.SqlTypes;
 using System.Linq;
-using System.Net.NetworkInformation;
 using PgGeom = NetTopologySuite.Geometries;
 
 namespace DatabaseInterpreter.Geometry

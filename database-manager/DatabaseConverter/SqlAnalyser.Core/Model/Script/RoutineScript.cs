@@ -11,5 +11,5 @@ namespace SqlAnalyser.Model
         public List<Parameter> Parameters { get; set; } = new List<Parameter>();
 
         public TableInfo ReturnTable { get; set; }
-    }   
+    }
 }

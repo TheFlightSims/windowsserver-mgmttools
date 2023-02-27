@@ -1,12 +1,8 @@
 ﻿using DatabaseConverter.Core.Model;
-using DatabaseConverter.Model;
 using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Utility;
-using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Xml.Linq;
 
 namespace DatabaseConverter.Core
@@ -38,7 +34,7 @@ namespace DatabaseConverter.Core
 
             var elements = doc.Root.Elements("mapping");
 
-            foreach(var element in elements)
+            foreach (var element in elements)
             {
                 DateUnitMapping mapping = new DateUnitMapping();
 
@@ -46,7 +42,7 @@ namespace DatabaseConverter.Core
 
                 var items = element.Elements();
 
-                foreach(var item in items)
+                foreach (var item in items)
                 {
                     DateUnitMappingItem mappingItem = new DateUnitMappingItem();
 

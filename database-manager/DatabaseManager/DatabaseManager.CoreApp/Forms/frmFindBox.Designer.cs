@@ -39,7 +39,7 @@
             // 
             // txtWord
             // 
-            this.txtWord.Location = new System.Drawing.Point(12, 10);
+            this.txtWord.Location = new System.Drawing.Point(12, 9);
             this.txtWord.Name = "txtWord";
             this.txtWord.Size = new System.Drawing.Size(191, 23);
             this.txtWord.TabIndex = 0;
@@ -47,9 +47,9 @@
             // 
             // btnFind
             // 
-            this.btnFind.Location = new System.Drawing.Point(210, 9);
+            this.btnFind.Location = new System.Drawing.Point(210, 8);
             this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(75, 25);
+            this.btnFind.Size = new System.Drawing.Size(75, 22);
             this.btnFind.TabIndex = 1;
             this.btnFind.Text = "Find";
             this.btnFind.UseVisualStyleBackColor = true;
@@ -58,9 +58,9 @@
             // chkMatchCase
             // 
             this.chkMatchCase.AutoSize = true;
-            this.chkMatchCase.Location = new System.Drawing.Point(4, 3);
+            this.chkMatchCase.Location = new System.Drawing.Point(0, 1);
             this.chkMatchCase.Name = "chkMatchCase";
-            this.chkMatchCase.Size = new System.Drawing.Size(93, 21);
+            this.chkMatchCase.Size = new System.Drawing.Size(86, 19);
             this.chkMatchCase.TabIndex = 2;
             this.chkMatchCase.Text = "Match case";
             this.chkMatchCase.UseVisualStyleBackColor = true;
@@ -68,9 +68,9 @@
             // chkMatchWholeWord
             // 
             this.chkMatchWholeWord.AutoSize = true;
-            this.chkMatchWholeWord.Location = new System.Drawing.Point(125, 3);
+            this.chkMatchWholeWord.Location = new System.Drawing.Point(145, 1);
             this.chkMatchWholeWord.Name = "chkMatchWholeWord";
-            this.chkMatchWholeWord.Size = new System.Drawing.Size(135, 21);
+            this.chkMatchWholeWord.Size = new System.Drawing.Size(125, 19);
             this.chkMatchWholeWord.TabIndex = 3;
             this.chkMatchWholeWord.Text = "Match whole word";
             this.chkMatchWholeWord.UseVisualStyleBackColor = true;
@@ -79,16 +79,16 @@
             // 
             this.optionsPanel.Controls.Add(this.chkMatchWholeWord);
             this.optionsPanel.Controls.Add(this.chkMatchCase);
-            this.optionsPanel.Location = new System.Drawing.Point(12, 38);
+            this.optionsPanel.Location = new System.Drawing.Point(12, 34);
             this.optionsPanel.Name = "optionsPanel";
-            this.optionsPanel.Size = new System.Drawing.Size(273, 23);
+            this.optionsPanel.Size = new System.Drawing.Size(273, 20);
             this.optionsPanel.TabIndex = 4;
             // 
             // frmFindBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(297, 62);
+            this.ClientSize = new System.Drawing.Size(297, 55);
             this.Controls.Add(this.optionsPanel);
             this.Controls.Add(this.btnFind);
             this.Controls.Add(this.txtWord);

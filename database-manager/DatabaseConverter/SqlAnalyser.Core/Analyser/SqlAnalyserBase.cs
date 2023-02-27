@@ -7,7 +7,7 @@ namespace SqlAnalyser.Core
     public abstract class SqlAnalyserBase
     {
         public string Content { get; set; }
-        public abstract SqlRuleAnalyser RuleAnalyser { get; }      
+        public abstract SqlRuleAnalyser RuleAnalyser { get; }
 
         public abstract SqlSyntaxError Validate();
         public abstract AnalyseResult AnalyseCommon();
@@ -54,6 +54,6 @@ namespace SqlAnalyser.Core
             }
 
             return result;
-        }      
+        }
     }
 }

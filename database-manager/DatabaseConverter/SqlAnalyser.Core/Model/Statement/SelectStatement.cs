@@ -4,7 +4,7 @@ namespace SqlAnalyser.Model
 {
     public class SelectStatement : Statement
     {
-        public List<ColumnName> Columns { get; set; } = new List<ColumnName>();    
+        public List<ColumnName> Columns { get; set; } = new List<ColumnName>();
         public List<TokenInfo> Intos { get; set; }
         public TableName TableName { get; set; }
         public TokenInfo Where { get; set; }
@@ -39,18 +39,18 @@ namespace SqlAnalyser.Model
     {
         private TokenInfo _alias;
         public TableName TableName { get; set; }
-        public TokenInfo Alias 
+        public TokenInfo Alias
         {
             get { return _alias; }
-            set 
+            set
             {
                 this._alias = value;
 
-                if(value!=null)
+                if (value != null)
                 {
                     this._alias.Type = TokenType.TableAlias;
                 }
-            }        
+            }
         }
         public SelectStatement SubSelectStatement { get; set; }
         public List<JoinItem> JoinItems { get; set; } = new List<JoinItem>();

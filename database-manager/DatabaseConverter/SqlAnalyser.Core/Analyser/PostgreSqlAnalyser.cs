@@ -8,7 +8,7 @@ namespace SqlAnalyser.Core
 
         public override SqlRuleAnalyser RuleAnalyser => this.ruleAnalyser;
 
-        public PostgreSqlAnalyser(string content):base(content)
+        public PostgreSqlAnalyser(string content) : base(content)
         {
             this.ruleAnalyser = new PostgreSqlRuleAnalyser(content);
         }

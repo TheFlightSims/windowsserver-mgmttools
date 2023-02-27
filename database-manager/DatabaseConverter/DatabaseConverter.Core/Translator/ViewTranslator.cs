@@ -9,15 +9,15 @@ using System.Text.RegularExpressions;
 
 namespace DatabaseConverter.Core
 {
-    public class ViewTranslator: DbObjectTokenTranslator
+    public class ViewTranslator : DbObjectTokenTranslator
     {
-        private List<View> views;     
-       
-        private string targetSchemaName;              
+        private List<View> views;
 
-        public ViewTranslator(DbInterpreter sourceDbInterpreter, DbInterpreter targetDbInterpreter, List<View> views, string targetSchemaName = null): base(sourceDbInterpreter, targetDbInterpreter)
+        private string targetSchemaName;
+
+        public ViewTranslator(DbInterpreter sourceDbInterpreter, DbInterpreter targetDbInterpreter, List<View> views, string targetSchemaName = null) : base(sourceDbInterpreter, targetDbInterpreter)
         {
-            this.views = views;           
+            this.views = views;
             this.targetSchemaName = targetSchemaName;
         }
 
@@ -50,7 +50,7 @@ namespace DatabaseConverter.Core
             foreach (View view in views)
             {
                 try
-                {                    
+                {
                     string viewNameWithQuotation = $"{targetDbInterpreter.QuotationLeftChar}{view.Name}{targetDbInterpreter.QuotationRightChar}";
 
                     string definition = view.Definition;
@@ -66,10 +66,10 @@ namespace DatabaseConverter.Core
                     StringBuilder sb = new StringBuilder();
 
                     string[] lines = definition.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
-                    
-                    foreach(string line in lines)
+
+                    foreach (string line in lines)
                     {
-                        if(line.StartsWith(this.sourceDbInterpreter.CommentString))
+                        if (line.StartsWith(this.sourceDbInterpreter.CommentString))
                         {
                             continue;
                         }
@@ -81,7 +81,7 @@ namespace DatabaseConverter.Core
 
                     string createClause = this.targetDbInterpreter.DatabaseType == DatabaseType.Oracle ? "CREATE OR REPLACE" : "CREATE";
 
-                    string createAsClause = $"{createClause} VIEW {(string.IsNullOrEmpty(targetSchemaName)? "": targetSchemaName + "." )}{viewNameWithQuotation} AS ";
+                    string createAsClause = $"{createClause} VIEW {(string.IsNullOrEmpty(targetSchemaName) ? "" : targetSchemaName + ".")}{viewNameWithQuotation} AS ";
 
                     if (!definition.Trim().ToLower().StartsWith("create"))
                     {
@@ -119,9 +119,9 @@ namespace DatabaseConverter.Core
                     else
                     {
                         this.FeedbackError(ExceptionHelper.GetExceptionDetails(ex), this.ContinueWhenErrorOccurs);
-                    }                   
+                    }
                 }
-            }           
+            }
         }
 
         public override string ParseDefinition(string definition)
@@ -154,7 +154,7 @@ namespace DatabaseConverter.Core
                             if (joinRegex.IsMatch(line))
                             {
                                 string leftStr = line.Substring(line.ToLower().LastIndexOf("join") + 4);
-                                
+
                                 if (!onRegex.IsMatch(line) && !wordRegex.IsMatch(leftStr))
                                 {
                                     hasChanged = true;
@@ -176,10 +176,10 @@ namespace DatabaseConverter.Core
             {
                 FeedbackInfo info = new FeedbackInfo() { InfoType = FeedbackInfoType.Error, Message = ExceptionHelper.GetExceptionDetails(ex), Owner = this };
                 FeedbackHelper.Feedback(info);
-            } 
+            }
             #endregion
 
             return definition.Trim();
-        }             
+        }
     }
 }

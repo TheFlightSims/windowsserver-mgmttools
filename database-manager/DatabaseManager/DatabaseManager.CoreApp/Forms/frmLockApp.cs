@@ -1,13 +1,6 @@
-﻿using DatabaseInterpreter.Utility;
-using DatabaseManager.Core;
-using DatabaseManager.Data;
+﻿using DatabaseManager.Data;
 using DatabaseManager.Profile;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -118,10 +111,10 @@ namespace DatabaseManager
 
                 Application.Exit();
             }
-        }      
+        }
         private void txtPassword_KeyUp(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 this.LockOrUnlock();
             }

@@ -1,15 +1,13 @@
 ﻿using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Model;
-using DatabaseManager.Profile;
 using DatabaseInterpreter.Utility;
 using DatabaseManager.Core;
+using DatabaseManager.Data;
+using DatabaseManager.Profile;
 using System;
 using System.Collections.Generic;
-using System.Data.Common;
 using System.Linq;
 using System.Windows.Forms;
-using DatabaseManager.Data;
-using System.Threading.Tasks;
 
 namespace DatabaseManager
 {
@@ -188,7 +186,7 @@ namespace DatabaseManager
                     Database = this.ConnectionInfo.Database,
                     IntegratedSecurity = this.InvokeRequired,
                     UserId = this.ConnectionInfo.UserId,
-                    Password =this.ConnectionInfo.Password,
+                    Password = this.ConnectionInfo.Password,
                     IsDba = this.ConnectionInfo.IsDba,
                     UseSsl = this.ConnectionInfo.UseSsl
                 };
@@ -273,6 +271,11 @@ namespace DatabaseManager
             {
                 this.PopulateDatabases();
             }
+        }
+
+        private void ucDbAccountInfo_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

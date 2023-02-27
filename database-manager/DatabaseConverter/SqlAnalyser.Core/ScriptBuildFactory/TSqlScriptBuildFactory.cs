@@ -8,7 +8,7 @@ using System.Text;
 
 namespace SqlAnalyser.Core
 {
-    public class TSqlScriptBuildFactory:ScriptBuildFactory
+    public class TSqlScriptBuildFactory : ScriptBuildFactory
     {
         public override DatabaseType DatabaseType => DatabaseType.SqlServer;
 

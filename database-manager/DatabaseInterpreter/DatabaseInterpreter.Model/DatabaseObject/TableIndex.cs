@@ -10,11 +10,11 @@ namespace DatabaseInterpreter.Model
         public string Type { get; set; }
 
         public List<IndexColumn> Columns { get; set; } = new List<IndexColumn>();
-    }   
+    }
 
     public class IndexColumn : SimpleColumn
-    {       
-        public bool IsDesc { get; set; }     
+    {
+        public bool IsDesc { get; set; }
     }
 
     public class TableIndexItem : TableColumnChild

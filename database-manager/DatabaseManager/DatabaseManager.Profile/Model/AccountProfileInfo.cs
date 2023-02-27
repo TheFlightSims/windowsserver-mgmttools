@@ -1,5 +1,4 @@
 ﻿using DatabaseInterpreter.Model;
-using System;
 
 namespace DatabaseManager.Profile
 {
@@ -8,7 +7,7 @@ namespace DatabaseManager.Profile
         public string Id { get; set; }
 
         public string DatabaseType { get; set; }
-      
+
         public string Description
         {
             get

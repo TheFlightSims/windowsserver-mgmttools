@@ -1,6 +1,4 @@
-﻿using Antlr.Runtime.Tree;
-using Antlr4.Runtime.Misc;
-using DatabaseConverter.Model;
+﻿using DatabaseConverter.Model;
 using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Model;
 using DatabaseInterpreter.Utility;
@@ -195,7 +193,7 @@ namespace DatabaseConverter.Core
                             if (name == "maxLength")
                             {
                                 matched = this.IsSpecialMaxLengthMatched(special, dataTypeInfo);
-                            } 
+                            }
                             else if (name == "precisionScale")
                             {
                                 matched = this.IsSpecialPrecisionAndScaleMatched(special, dataTypeInfo);
@@ -203,7 +201,7 @@ namespace DatabaseConverter.Core
                             else if (name.Contains("precision") || name.Contains("scale"))
                             {
                                 matched = this.IsSpecialPrecisionOrScaleMatched(special, dataTypeInfo);
-                            }                           
+                            }
                             else if (name == "expression")
                             {
                                 matched = this.IsSpecialExpressionMatched(special, originalDataType);
@@ -212,7 +210,7 @@ namespace DatabaseConverter.Core
                             {
                                 matched = dataTypeInfo.IsIdentity;
                             }
-                            
+
 
                             if (matched)
                             {
@@ -282,12 +280,12 @@ namespace DatabaseConverter.Core
 
                                 if (hasDefaultValues)
                                 {
-                                    if(args == "precision,scale" && defaultValues.Length == 2)
+                                    if (args == "precision,scale" && defaultValues.Length == 2)
                                     {
                                         dataTypeInfo.Precision = int.Parse(defaultValues[0]);
                                         dataTypeInfo.Scale = int.Parse(defaultValues[1]);
                                     }
-                                    else if(args == "scale" && defaultValues.Length == 1)
+                                    else if (args == "scale" && defaultValues.Length == 1)
                                     {
                                         dataTypeInfo.Scale = int.Parse(defaultValues[0]);
                                     }
@@ -438,9 +436,9 @@ namespace DatabaseConverter.Core
             string precision = special.Precison;
             string scale = special.Scale;
 
-            
-            if((precision == "isNullOrZero" && this.IsNullOrZero(dataTypeInfo.Precision))
-               &&(scale == "isNullOrZero" && this.IsNullOrZero(dataTypeInfo.Scale)))
+
+            if ((precision == "isNullOrZero" && this.IsNullOrZero(dataTypeInfo.Precision))
+               && (scale == "isNullOrZero" && this.IsNullOrZero(dataTypeInfo.Scale)))
             {
                 return true;
             }

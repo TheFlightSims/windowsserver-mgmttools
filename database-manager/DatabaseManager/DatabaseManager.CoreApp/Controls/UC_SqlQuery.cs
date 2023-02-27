@@ -1,16 +1,16 @@
 ﻿using DatabaseInterpreter.Core;
+using DatabaseInterpreter.Model;
 using DatabaseInterpreter.Utility;
 using DatabaseManager.Core;
+using DatabaseManager.Data;
 using DatabaseManager.Helper;
 using DatabaseManager.Model;
 using System;
 using System.Data;
-using System.IO;
-using System.Windows.Forms;
-using DatabaseInterpreter.Model;
-using DatabaseManager.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace DatabaseManager.Controls
 {
@@ -97,7 +97,7 @@ namespace DatabaseManager.Controls
 
             if (!string.IsNullOrEmpty(displayInfo.Content))
             {
-                this.Editor.AppendText(displayInfo.Content);                
+                this.Editor.AppendText(displayInfo.Content);
             }
             else if (File.Exists(displayInfo.FilePath))
             {
@@ -117,10 +117,10 @@ namespace DatabaseManager.Controls
                     return;
                 }
 
-                if(SettingManager.Setting.EnableEditorIntellisence)
+                if (SettingManager.Setting.EnableEditorIntellisence)
                 {
                     this.SetupIntellisence();
-                }               
+                }
             }
 
             this.originalText = this.Editor.Text;
@@ -137,7 +137,7 @@ namespace DatabaseManager.Controls
         {
             if (this.CheckConnection())
             {
-                DbInterpreter dbInterpreter = this.GetDbInterpreter();               
+                DbInterpreter dbInterpreter = this.GetDbInterpreter();
 
                 this.queryEditor.DbInterpreter = dbInterpreter;
 
@@ -348,7 +348,7 @@ namespace DatabaseManager.Controls
 
         internal void DisposeResources()
         {
-            if(this.queryEditor!=null)
+            if (this.queryEditor != null)
             {
                 this.queryEditor.DisposeResources();
             }

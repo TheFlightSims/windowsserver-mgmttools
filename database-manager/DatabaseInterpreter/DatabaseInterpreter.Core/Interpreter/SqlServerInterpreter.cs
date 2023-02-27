@@ -348,7 +348,7 @@ namespace DatabaseInterpreter.Core
             bool isSimpleMode = this.IsObjectFectchSimpleMode();
             string commentColumn = isSimpleMode ? "" : ("," + (includePrimaryKey ? "ISNULL(ext.value,ext2.value)" : "ext.value")) + " AS [Comment]";
             string commentJoin = isSimpleMode ? "" : "LEFT JOIN sys.extended_properties ext on i.object_id=ext.major_id AND i.index_id= ext.minor_id AND ext.class_desc='INDEX' AND ext.name='MS_Description'";
-            string tableOrViewName = filter?.IsForView != true ? "tables":"views";
+            string tableOrViewName = filter?.IsForView != true ? "tables" : "views";
 
             if (!isSimpleMode && includePrimaryKey)
             {
@@ -1027,7 +1027,7 @@ namespace DatabaseInterpreter.Core
             {
                 string dataType = this.ParseDataType(column);
 
-                string identityClause = (this.Option.TableScriptsGenerateOption.GenerateIdentity && column.IsIdentity && column.IsRequired ? $"IDENTITY({table.IdentitySeed??1},{table.IdentityIncrement??1})" : "");
+                string identityClause = (this.Option.TableScriptsGenerateOption.GenerateIdentity && column.IsIdentity && column.IsRequired ? $"IDENTITY({table.IdentitySeed ?? 1},{table.IdentityIncrement ?? 1})" : "");
                 string requireClause = (column.IsRequired ? "NOT NULL" : "NULL");
                 string scriptComment = string.IsNullOrEmpty(column.ScriptComment) ? "" : $"/*{column.ScriptComment}*/";
 

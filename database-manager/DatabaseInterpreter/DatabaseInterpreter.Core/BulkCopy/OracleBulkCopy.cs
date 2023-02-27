@@ -2,7 +2,6 @@
  * This file refers to: https://github.com/TylerHaigh/OracleBulkCopy/blob/master/OracleBulkCopy.Standard/OracleBulkCopy.cs
  * 
 ***/
-using DatabaseInterpreter.Geometry;
 using Oracle.ManagedDataAccess.Client;
 using Oracle.ManagedDataAccess.Types;
 using System;
@@ -40,7 +39,7 @@ namespace DatabaseInterpreter.Core
         public OracleBulkCopy(OracleConnection connection, OracleTransaction transation = null)
         {
             this._connection = connection;
-            this._externalTransaction = transation;            
+            this._externalTransaction = transation;
         }
 
         private string _destinationTableName;
@@ -229,17 +228,17 @@ namespace DatabaseInterpreter.Core
                 param.OracleDbType = dbType;
                 param.Value = paramDataArray;
 
-                if(c.DataType.CustomAttributes!=null)
+                if (c.DataType.CustomAttributes != null)
                 {
-                    foreach(var customAttrType in c.DataType.CustomAttributes)
+                    foreach (var customAttrType in c.DataType.CustomAttributes)
                     {
-                        if(customAttrType.AttributeType == typeof(OracleCustomTypeMappingAttribute))
+                        if (customAttrType.AttributeType == typeof(OracleCustomTypeMappingAttribute))
                         {
                             param.UdtTypeName = customAttrType.ConstructorArguments.FirstOrDefault().ToString();
                             break;
                         }
                     }
-                }                
+                }
 
                 parameters.Add(param);
             }

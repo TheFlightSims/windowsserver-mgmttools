@@ -7,7 +7,7 @@ using System.Text;
 
 namespace SqlAnalyser.Core
 {
-    public class MySqlScriptBuildFactory:ScriptBuildFactory
+    public class MySqlScriptBuildFactory : ScriptBuildFactory
     {
         public override DatabaseType DatabaseType => DatabaseType.MySql;
 
@@ -93,7 +93,7 @@ namespace SqlAnalyser.Core
                 {
                     result.BodyStartIndex += sbDeclare.Length;
                     result.BodyStopIndex += sbDeclare.Length;
-                }                
+                }
             }
 
             if (this.StatementBuilder.SpecialStatements.Any(item => item.GetType() == typeof(LeaveStatement)))

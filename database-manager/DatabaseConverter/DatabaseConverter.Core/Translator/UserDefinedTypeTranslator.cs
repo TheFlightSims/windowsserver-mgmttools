@@ -26,7 +26,7 @@ namespace DatabaseConverter.Core
 
             foreach (UserDefinedType udt in this.userDefinedTypes)
             {
-                foreach(UserDefinedTypeAttribute attr in udt.Attributes)
+                foreach (UserDefinedTypeAttribute attr in udt.Attributes)
                 {
                     DataTypeInfo dataTypeInfo = new DataTypeInfo()
                     {
@@ -42,10 +42,10 @@ namespace DatabaseConverter.Core
                     attr.MaxLength = dataTypeInfo.MaxLength;
                     attr.Precision = dataTypeInfo.Precision;
                     attr.Scale = dataTypeInfo.Scale;
-                }              
+                }
             }
 
             this.FeedbackInfo("End translate user defined types.");
-        }       
+        }
     }
 }

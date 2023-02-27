@@ -105,7 +105,7 @@ namespace DatabaseConverter.Core
             else
             {
                 seqenceName = this.GetTrimedName(sequencePart);
-            }           
+            }
 
             string mappedSchema = this.GetMappedSchema(schema);
 

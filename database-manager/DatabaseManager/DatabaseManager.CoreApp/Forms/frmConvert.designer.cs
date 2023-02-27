@@ -90,10 +90,10 @@ namespace DatabaseManager
             // 
             this.btnSaveMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSaveMessage.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveMessage.Image")));
-            this.btnSaveMessage.Location = new System.Drawing.Point(863, 40);
+            this.btnSaveMessage.Location = new System.Drawing.Point(863, 35);
             this.btnSaveMessage.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveMessage.Name = "btnSaveMessage";
-            this.btnSaveMessage.Size = new System.Drawing.Size(31, 28);
+            this.btnSaveMessage.Size = new System.Drawing.Size(31, 25);
             this.btnSaveMessage.TabIndex = 9;
             this.toolTip1.SetToolTip(this.btnSaveMessage, "Save message");
             this.btnSaveMessage.UseVisualStyleBackColor = true;
@@ -103,10 +103,10 @@ namespace DatabaseManager
             // 
             this.btnCopyMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCopyMessage.Image = ((System.Drawing.Image)(resources.GetObject("btnCopyMessage.Image")));
-            this.btnCopyMessage.Location = new System.Drawing.Point(862, 10);
+            this.btnCopyMessage.Location = new System.Drawing.Point(862, 9);
             this.btnCopyMessage.Margin = new System.Windows.Forms.Padding(4);
             this.btnCopyMessage.Name = "btnCopyMessage";
-            this.btnCopyMessage.Size = new System.Drawing.Size(31, 28);
+            this.btnCopyMessage.Size = new System.Drawing.Size(31, 25);
             this.btnCopyMessage.TabIndex = 8;
             this.toolTip1.SetToolTip(this.btnCopyMessage, "Copy message to clipboard");
             this.btnCopyMessage.UseVisualStyleBackColor = true;
@@ -123,7 +123,7 @@ namespace DatabaseManager
             this.txtMessage.Name = "txtMessage";
             this.txtMessage.ReadOnly = true;
             this.txtMessage.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.txtMessage.Size = new System.Drawing.Size(852, 69);
+            this.txtMessage.Size = new System.Drawing.Size(852, 61);
             this.txtMessage.TabIndex = 0;
             this.txtMessage.Text = "";
             this.txtMessage.MouseUp += new System.Windows.Forms.MouseEventHandler(this.txtMessage_MouseUp);
@@ -133,7 +133,7 @@ namespace DatabaseManager
             this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer1.Location = new System.Drawing.Point(1, 7);
+            this.splitContainer1.Location = new System.Drawing.Point(1, 6);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -152,8 +152,8 @@ namespace DatabaseManager
             this.splitContainer1.Panel2.Controls.Add(this.btnSaveMessage);
             this.splitContainer1.Panel2.Controls.Add(this.txtMessage);
             this.splitContainer1.Panel2.Controls.Add(this.btnCopyMessage);
-            this.splitContainer1.Size = new System.Drawing.Size(898, 700);
-            this.splitContainer1.SplitterDistance = 526;
+            this.splitContainer1.Size = new System.Drawing.Size(898, 618);
+            this.splitContainer1.SplitterDistance = 464;
             this.splitContainer1.TabIndex = 21;
             // 
             // splitContainer2
@@ -161,7 +161,7 @@ namespace DatabaseManager
             this.splitContainer2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer2.Location = new System.Drawing.Point(4, 63);
+            this.splitContainer2.Location = new System.Drawing.Point(4, 56);
             this.splitContainer2.Name = "splitContainer2";
             // 
             // splitContainer2.Panel1
@@ -171,7 +171,7 @@ namespace DatabaseManager
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.gbConfiguration);
-            this.splitContainer2.Size = new System.Drawing.Size(882, 411);
+            this.splitContainer2.Size = new System.Drawing.Size(882, 363);
             this.splitContainer2.SplitterDistance = 294;
             this.splitContainer2.TabIndex = 39;
             // 
@@ -179,9 +179,9 @@ namespace DatabaseManager
             // 
             this.tvDbObjects.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tvDbObjects.Location = new System.Drawing.Point(0, 0);
-            this.tvDbObjects.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tvDbObjects.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tvDbObjects.Name = "tvDbObjects";
-            this.tvDbObjects.Size = new System.Drawing.Size(294, 411);
+            this.tvDbObjects.Size = new System.Drawing.Size(294, 363);
             this.tvDbObjects.TabIndex = 38;
             // 
             // gbConfiguration
@@ -214,7 +214,7 @@ namespace DatabaseManager
             this.gbConfiguration.Margin = new System.Windows.Forms.Padding(4);
             this.gbConfiguration.Name = "gbConfiguration";
             this.gbConfiguration.Padding = new System.Windows.Forms.Padding(4);
-            this.gbConfiguration.Size = new System.Drawing.Size(584, 411);
+            this.gbConfiguration.Size = new System.Drawing.Size(584, 363);
             this.gbConfiguration.TabIndex = 21;
             this.gbConfiguration.TabStop = false;
             this.gbConfiguration.Text = "Configuration";
@@ -227,9 +227,9 @@ namespace DatabaseManager
             "Schema",
             "Data",
             "Schema & Data"});
-            this.cboMode.Location = new System.Drawing.Point(139, 24);
+            this.cboMode.Location = new System.Drawing.Point(139, 21);
             this.cboMode.Name = "cboMode";
-            this.cboMode.Size = new System.Drawing.Size(121, 25);
+            this.cboMode.Size = new System.Drawing.Size(121, 23);
             this.cboMode.TabIndex = 64;
             this.cboMode.SelectedIndexChanged += new System.EventHandler(this.cboMode_SelectedIndexChanged);
             // 
@@ -238,10 +238,10 @@ namespace DatabaseManager
             this.chkNcharToDoubleChar.Checked = true;
             this.chkNcharToDoubleChar.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkNcharToDoubleChar.Enabled = false;
-            this.chkNcharToDoubleChar.Location = new System.Drawing.Point(11, 270);
+            this.chkNcharToDoubleChar.Location = new System.Drawing.Point(11, 238);
             this.chkNcharToDoubleChar.Margin = new System.Windows.Forms.Padding(4);
             this.chkNcharToDoubleChar.Name = "chkNcharToDoubleChar";
-            this.chkNcharToDoubleChar.Size = new System.Drawing.Size(302, 21);
+            this.chkNcharToDoubleChar.Size = new System.Drawing.Size(302, 19);
             this.chkNcharToDoubleChar.TabIndex = 63;
             this.chkNcharToDoubleChar.Tag = "Schema";
             this.chkNcharToDoubleChar.Text = "One nchar to two chars for data type";
@@ -250,9 +250,9 @@ namespace DatabaseManager
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DatabaseManager.Resources.Info16;
-            this.pictureBox1.Location = new System.Drawing.Point(445, 300);
+            this.pictureBox1.Location = new System.Drawing.Point(445, 265);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(17, 19);
+            this.pictureBox1.Size = new System.Drawing.Size(17, 17);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 62;
             this.pictureBox1.TabStop = false;
@@ -263,10 +263,10 @@ namespace DatabaseManager
             this.chkCreateSchemaIfNotExists.AutoSize = true;
             this.chkCreateSchemaIfNotExists.Checked = true;
             this.chkCreateSchemaIfNotExists.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkCreateSchemaIfNotExists.Location = new System.Drawing.Point(246, 61);
+            this.chkCreateSchemaIfNotExists.Location = new System.Drawing.Point(275, 53);
             this.chkCreateSchemaIfNotExists.Margin = new System.Windows.Forms.Padding(4);
             this.chkCreateSchemaIfNotExists.Name = "chkCreateSchemaIfNotExists";
-            this.chkCreateSchemaIfNotExists.Size = new System.Drawing.Size(183, 21);
+            this.chkCreateSchemaIfNotExists.Size = new System.Drawing.Size(167, 19);
             this.chkCreateSchemaIfNotExists.TabIndex = 61;
             this.chkCreateSchemaIfNotExists.Tag = "Schema";
             this.chkCreateSchemaIfNotExists.Text = "Create schema if not exists";
@@ -275,10 +275,10 @@ namespace DatabaseManager
             // chkExcludeGeometryForData
             // 
             this.chkExcludeGeometryForData.AutoSize = true;
-            this.chkExcludeGeometryForData.Location = new System.Drawing.Point(293, 181);
+            this.chkExcludeGeometryForData.Location = new System.Drawing.Point(293, 160);
             this.chkExcludeGeometryForData.Margin = new System.Windows.Forms.Padding(4);
             this.chkExcludeGeometryForData.Name = "chkExcludeGeometryForData";
-            this.chkExcludeGeometryForData.Size = new System.Drawing.Size(156, 21);
+            this.chkExcludeGeometryForData.Size = new System.Drawing.Size(140, 19);
             this.chkExcludeGeometryForData.TabIndex = 60;
             this.chkExcludeGeometryForData.Tag = "Data";
             this.chkExcludeGeometryForData.Text = "Ignore geometry data";
@@ -287,9 +287,9 @@ namespace DatabaseManager
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DatabaseManager.Resources.Info16;
-            this.pictureBox2.Location = new System.Drawing.Point(214, 61);
+            this.pictureBox2.Location = new System.Drawing.Point(243, 54);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(17, 19);
+            this.pictureBox2.Size = new System.Drawing.Size(17, 17);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 59;
             this.pictureBox2.TabStop = false;
@@ -297,10 +297,10 @@ namespace DatabaseManager
             // 
             // btnSetSchemaMappings
             // 
-            this.btnSetSchemaMappings.Location = new System.Drawing.Point(138, 58);
+            this.btnSetSchemaMappings.Location = new System.Drawing.Point(138, 51);
             this.btnSetSchemaMappings.Margin = new System.Windows.Forms.Padding(4);
             this.btnSetSchemaMappings.Name = "btnSetSchemaMappings";
-            this.btnSetSchemaMappings.Size = new System.Drawing.Size(67, 25);
+            this.btnSetSchemaMappings.Size = new System.Drawing.Size(98, 22);
             this.btnSetSchemaMappings.TabIndex = 58;
             this.btnSetSchemaMappings.Text = "Set";
             this.btnSetSchemaMappings.UseVisualStyleBackColor = true;
@@ -311,10 +311,10 @@ namespace DatabaseManager
             this.chkGenerateComment.AutoSize = true;
             this.chkGenerateComment.Checked = true;
             this.chkGenerateComment.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkGenerateComment.Location = new System.Drawing.Point(165, 241);
+            this.chkGenerateComment.Location = new System.Drawing.Point(165, 213);
             this.chkGenerateComment.Margin = new System.Windows.Forms.Padding(4);
             this.chkGenerateComment.Name = "chkGenerateComment";
-            this.chkGenerateComment.Size = new System.Drawing.Size(138, 21);
+            this.chkGenerateComment.Size = new System.Drawing.Size(128, 19);
             this.chkGenerateComment.TabIndex = 57;
             this.chkGenerateComment.Tag = "Schema";
             this.chkGenerateComment.Text = "Generate comment";
@@ -323,10 +323,10 @@ namespace DatabaseManager
             // chkTreatBytesAsNull
             // 
             this.chkTreatBytesAsNull.AutoSize = true;
-            this.chkTreatBytesAsNull.Location = new System.Drawing.Point(11, 181);
+            this.chkTreatBytesAsNull.Location = new System.Drawing.Point(11, 160);
             this.chkTreatBytesAsNull.Margin = new System.Windows.Forms.Padding(4);
             this.chkTreatBytesAsNull.Name = "chkTreatBytesAsNull";
-            this.chkTreatBytesAsNull.Size = new System.Drawing.Size(263, 21);
+            this.chkTreatBytesAsNull.Size = new System.Drawing.Size(232, 19);
             this.chkTreatBytesAsNull.TabIndex = 55;
             this.chkTreatBytesAsNull.Tag = "Data";
             this.chkTreatBytesAsNull.Text = "Treat bytes data as null for data transfer";
@@ -336,10 +336,10 @@ namespace DatabaseManager
             // 
             this.chkOnlyCommentComputeExpression.AutoSize = true;
             this.chkOnlyCommentComputeExpression.Enabled = false;
-            this.chkOnlyCommentComputeExpression.Location = new System.Drawing.Point(293, 212);
+            this.chkOnlyCommentComputeExpression.Location = new System.Drawing.Point(293, 187);
             this.chkOnlyCommentComputeExpression.Margin = new System.Windows.Forms.Padding(4);
             this.chkOnlyCommentComputeExpression.Name = "chkOnlyCommentComputeExpression";
-            this.chkOnlyCommentComputeExpression.Size = new System.Drawing.Size(228, 21);
+            this.chkOnlyCommentComputeExpression.Size = new System.Drawing.Size(210, 19);
             this.chkOnlyCommentComputeExpression.TabIndex = 22;
             this.chkOnlyCommentComputeExpression.Tag = "Schema";
             this.chkOnlyCommentComputeExpression.Text = "Only comment expression in script";
@@ -350,10 +350,10 @@ namespace DatabaseManager
             this.chkComputeColumn.AutoSize = true;
             this.chkComputeColumn.Checked = true;
             this.chkComputeColumn.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkComputeColumn.Location = new System.Drawing.Point(11, 211);
+            this.chkComputeColumn.Location = new System.Drawing.Point(11, 186);
             this.chkComputeColumn.Margin = new System.Windows.Forms.Padding(4);
             this.chkComputeColumn.Name = "chkComputeColumn";
-            this.chkComputeColumn.Size = new System.Drawing.Size(249, 21);
+            this.chkComputeColumn.Size = new System.Drawing.Size(230, 19);
             this.chkComputeColumn.TabIndex = 18;
             this.chkComputeColumn.Tag = "Schema";
             this.chkComputeColumn.Text = "Convert compute column\'s expression";
@@ -363,10 +363,10 @@ namespace DatabaseManager
             // chkContinueWhenErrorOccurs
             // 
             this.chkContinueWhenErrorOccurs.AutoSize = true;
-            this.chkContinueWhenErrorOccurs.Location = new System.Drawing.Point(11, 300);
+            this.chkContinueWhenErrorOccurs.Location = new System.Drawing.Point(11, 265);
             this.chkContinueWhenErrorOccurs.Margin = new System.Windows.Forms.Padding(4);
             this.chkContinueWhenErrorOccurs.Name = "chkContinueWhenErrorOccurs";
-            this.chkContinueWhenErrorOccurs.Size = new System.Drawing.Size(429, 21);
+            this.chkContinueWhenErrorOccurs.Size = new System.Drawing.Size(390, 19);
             this.chkContinueWhenErrorOccurs.TabIndex = 17;
             this.chkContinueWhenErrorOccurs.Tag = "Schema";
             this.chkContinueWhenErrorOccurs.Text = "Continue when error occurs for function, procedure, trigger and view";
@@ -377,10 +377,10 @@ namespace DatabaseManager
             this.chkUseTransaction.AutoSize = true;
             this.chkUseTransaction.Checked = true;
             this.chkUseTransaction.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkUseTransaction.Location = new System.Drawing.Point(11, 120);
+            this.chkUseTransaction.Location = new System.Drawing.Point(11, 106);
             this.chkUseTransaction.Margin = new System.Windows.Forms.Padding(4);
             this.chkUseTransaction.Name = "chkUseTransaction";
-            this.chkUseTransaction.Size = new System.Drawing.Size(117, 21);
+            this.chkUseTransaction.Size = new System.Drawing.Size(107, 19);
             this.chkUseTransaction.TabIndex = 16;
             this.chkUseTransaction.Text = "Use transaction";
             this.chkUseTransaction.UseVisualStyleBackColor = true;
@@ -390,10 +390,10 @@ namespace DatabaseManager
             this.chkBulkCopy.AutoSize = true;
             this.chkBulkCopy.Checked = true;
             this.chkBulkCopy.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkBulkCopy.Location = new System.Drawing.Point(11, 152);
+            this.chkBulkCopy.Location = new System.Drawing.Point(11, 134);
             this.chkBulkCopy.Margin = new System.Windows.Forms.Padding(4);
             this.chkBulkCopy.Name = "chkBulkCopy";
-            this.chkBulkCopy.Size = new System.Drawing.Size(190, 21);
+            this.chkBulkCopy.Size = new System.Drawing.Size(171, 19);
             this.chkBulkCopy.TabIndex = 15;
             this.chkBulkCopy.Tag = "Data";
             this.chkBulkCopy.Text = "Use BulkCopy to insert data";
@@ -404,10 +404,10 @@ namespace DatabaseManager
             this.chkGenerateIdentity.AutoSize = true;
             this.chkGenerateIdentity.Checked = true;
             this.chkGenerateIdentity.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkGenerateIdentity.Location = new System.Drawing.Point(11, 240);
+            this.chkGenerateIdentity.Location = new System.Drawing.Point(11, 212);
             this.chkGenerateIdentity.Margin = new System.Windows.Forms.Padding(4);
             this.chkGenerateIdentity.Name = "chkGenerateIdentity";
-            this.chkGenerateIdentity.Size = new System.Drawing.Size(126, 21);
+            this.chkGenerateIdentity.Size = new System.Drawing.Size(116, 19);
             this.chkGenerateIdentity.TabIndex = 14;
             this.chkGenerateIdentity.Tag = "Schema";
             this.chkGenerateIdentity.Text = "Generate identity";
@@ -416,20 +416,20 @@ namespace DatabaseManager
             // lblDbSchemaMappings
             // 
             this.lblDbSchemaMappings.AutoSize = true;
-            this.lblDbSchemaMappings.Location = new System.Drawing.Point(8, 61);
+            this.lblDbSchemaMappings.Location = new System.Drawing.Point(8, 54);
             this.lblDbSchemaMappings.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDbSchemaMappings.Name = "lblDbSchemaMappings";
-            this.lblDbSchemaMappings.Size = new System.Drawing.Size(118, 17);
+            this.lblDbSchemaMappings.Size = new System.Drawing.Size(108, 15);
             this.lblDbSchemaMappings.TabIndex = 9;
             this.lblDbSchemaMappings.Text = "Schema mappings:";
             // 
             // chkGenerateSourceScripts
             // 
             this.chkGenerateSourceScripts.AutoSize = true;
-            this.chkGenerateSourceScripts.Location = new System.Drawing.Point(183, 330);
+            this.chkGenerateSourceScripts.Location = new System.Drawing.Point(183, 291);
             this.chkGenerateSourceScripts.Margin = new System.Windows.Forms.Padding(4);
             this.chkGenerateSourceScripts.Name = "chkGenerateSourceScripts";
-            this.chkGenerateSourceScripts.Size = new System.Drawing.Size(269, 21);
+            this.chkGenerateSourceScripts.Size = new System.Drawing.Size(241, 19);
             this.chkGenerateSourceScripts.TabIndex = 8;
             this.chkGenerateSourceScripts.Text = "Output scripts of source database as well";
             this.chkGenerateSourceScripts.UseVisualStyleBackColor = true;
@@ -439,10 +439,10 @@ namespace DatabaseManager
             this.chkExecuteOnTarget.AutoSize = true;
             this.chkExecuteOnTarget.Checked = true;
             this.chkExecuteOnTarget.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkExecuteOnTarget.Location = new System.Drawing.Point(11, 89);
+            this.chkExecuteOnTarget.Location = new System.Drawing.Point(11, 79);
             this.chkExecuteOnTarget.Margin = new System.Windows.Forms.Padding(4);
             this.chkExecuteOnTarget.Name = "chkExecuteOnTarget";
-            this.chkExecuteOnTarget.Size = new System.Drawing.Size(229, 21);
+            this.chkExecuteOnTarget.Size = new System.Drawing.Size(205, 19);
             this.chkExecuteOnTarget.TabIndex = 7;
             this.chkExecuteOnTarget.Text = "Execute scripts on target database";
             this.chkExecuteOnTarget.UseVisualStyleBackColor = true;
@@ -450,19 +450,19 @@ namespace DatabaseManager
             // lblOutputFolder
             // 
             this.lblOutputFolder.AutoSize = true;
-            this.lblOutputFolder.Location = new System.Drawing.Point(9, 366);
+            this.lblOutputFolder.Location = new System.Drawing.Point(9, 323);
             this.lblOutputFolder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOutputFolder.Name = "lblOutputFolder";
-            this.lblOutputFolder.Size = new System.Drawing.Size(131, 17);
+            this.lblOutputFolder.Size = new System.Drawing.Size(118, 15);
             this.lblOutputFolder.TabIndex = 6;
             this.lblOutputFolder.Text = "Scripts output folder:";
             // 
             // btnOutputFolder
             // 
-            this.btnOutputFolder.Location = new System.Drawing.Point(431, 363);
+            this.btnOutputFolder.Location = new System.Drawing.Point(431, 320);
             this.btnOutputFolder.Margin = new System.Windows.Forms.Padding(4);
             this.btnOutputFolder.Name = "btnOutputFolder";
-            this.btnOutputFolder.Size = new System.Drawing.Size(42, 24);
+            this.btnOutputFolder.Size = new System.Drawing.Size(42, 21);
             this.btnOutputFolder.TabIndex = 4;
             this.btnOutputFolder.Text = "...";
             this.btnOutputFolder.UseVisualStyleBackColor = true;
@@ -470,7 +470,7 @@ namespace DatabaseManager
             // 
             // txtOutputFolder
             // 
-            this.txtOutputFolder.Location = new System.Drawing.Point(150, 364);
+            this.txtOutputFolder.Location = new System.Drawing.Point(150, 321);
             this.txtOutputFolder.Margin = new System.Windows.Forms.Padding(4);
             this.txtOutputFolder.Name = "txtOutputFolder";
             this.txtOutputFolder.Size = new System.Drawing.Size(277, 23);
@@ -479,20 +479,20 @@ namespace DatabaseManager
             // lblScriptsMode
             // 
             this.lblScriptsMode.AutoSize = true;
-            this.lblScriptsMode.Location = new System.Drawing.Point(8, 27);
+            this.lblScriptsMode.Location = new System.Drawing.Point(8, 24);
             this.lblScriptsMode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblScriptsMode.Name = "lblScriptsMode";
-            this.lblScriptsMode.Size = new System.Drawing.Size(129, 17);
+            this.lblScriptsMode.Size = new System.Drawing.Size(116, 15);
             this.lblScriptsMode.TabIndex = 1;
             this.lblScriptsMode.Text = "Mode of conversion:";
             // 
             // chkOutputScripts
             // 
             this.chkOutputScripts.AutoSize = true;
-            this.chkOutputScripts.Location = new System.Drawing.Point(11, 329);
+            this.chkOutputScripts.Location = new System.Drawing.Point(11, 290);
             this.chkOutputScripts.Margin = new System.Windows.Forms.Padding(4);
             this.chkOutputScripts.Name = "chkOutputScripts";
-            this.chkOutputScripts.Size = new System.Drawing.Size(146, 21);
+            this.chkOutputScripts.Size = new System.Drawing.Size(134, 19);
             this.chkOutputScripts.TabIndex = 0;
             this.chkOutputScripts.Text = "Output scripts to file";
             this.chkOutputScripts.UseVisualStyleBackColor = true;
@@ -504,10 +504,10 @@ namespace DatabaseManager
             | System.Windows.Forms.AnchorStyles.Right)));
             this.targetDbProfile.DatabaseType = DatabaseInterpreter.Model.DatabaseType.Unknown;
             this.targetDbProfile.EnableDatabaseType = true;
-            this.targetDbProfile.Location = new System.Drawing.Point(13, 31);
+            this.targetDbProfile.Location = new System.Drawing.Point(13, 27);
             this.targetDbProfile.Margin = new System.Windows.Forms.Padding(0);
             this.targetDbProfile.Name = "targetDbProfile";
-            this.targetDbProfile.Size = new System.Drawing.Size(792, 29);
+            this.targetDbProfile.Size = new System.Drawing.Size(792, 26);
             this.targetDbProfile.TabIndex = 37;
             this.targetDbProfile.Title = "Target:";
             this.targetDbProfile.OnSelectedChanged += new DatabaseManager.Controls.SelectedChangeHandler(this.targetDbProfile_OnSelectedChanged);
@@ -521,7 +521,7 @@ namespace DatabaseManager
             this.sourceDbProfile.Location = new System.Drawing.Point(13, 1);
             this.sourceDbProfile.Margin = new System.Windows.Forms.Padding(0);
             this.sourceDbProfile.Name = "sourceDbProfile";
-            this.sourceDbProfile.Size = new System.Drawing.Size(792, 28);
+            this.sourceDbProfile.Size = new System.Drawing.Size(792, 25);
             this.sourceDbProfile.TabIndex = 36;
             this.sourceDbProfile.Title = "Source:";
             this.sourceDbProfile.OnSelectedChanged += new DatabaseManager.Controls.SelectedChangeHandler(this.sourceDbProfile_OnSelectedChanged);
@@ -533,7 +533,7 @@ namespace DatabaseManager
             this.btnFetch.Location = new System.Drawing.Point(806, 3);
             this.btnFetch.Margin = new System.Windows.Forms.Padding(4);
             this.btnFetch.Name = "btnFetch";
-            this.btnFetch.Size = new System.Drawing.Size(83, 54);
+            this.btnFetch.Size = new System.Drawing.Size(83, 48);
             this.btnFetch.TabIndex = 35;
             this.btnFetch.Text = "Fetch";
             this.btnFetch.UseVisualStyleBackColor = true;
@@ -543,10 +543,10 @@ namespace DatabaseManager
             // 
             this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnCancel.Enabled = false;
-            this.btnCancel.Location = new System.Drawing.Point(479, 484);
+            this.btnCancel.Location = new System.Drawing.Point(479, 427);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(88, 33);
+            this.btnCancel.Size = new System.Drawing.Size(88, 29);
             this.btnCancel.TabIndex = 22;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -556,10 +556,10 @@ namespace DatabaseManager
             // 
             this.btnExecute.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnExecute.Enabled = false;
-            this.btnExecute.Location = new System.Drawing.Point(366, 484);
+            this.btnExecute.Location = new System.Drawing.Point(366, 427);
             this.btnExecute.Margin = new System.Windows.Forms.Padding(4);
             this.btnExecute.Name = "btnExecute";
-            this.btnExecute.Size = new System.Drawing.Size(88, 33);
+            this.btnExecute.Size = new System.Drawing.Size(88, 29);
             this.btnExecute.TabIndex = 21;
             this.btnExecute.Text = "Execute";
             this.btnExecute.UseVisualStyleBackColor = true;
@@ -570,20 +570,20 @@ namespace DatabaseManager
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiCopySelection});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(162, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 26);
             // 
             // tsmiCopySelection
             // 
             this.tsmiCopySelection.Name = "tsmiCopySelection";
-            this.tsmiCopySelection.Size = new System.Drawing.Size(161, 22);
+            this.tsmiCopySelection.Size = new System.Drawing.Size(152, 22);
             this.tsmiCopySelection.Text = "Copy selection";
             this.tsmiCopySelection.Click += new System.EventHandler(this.tsmiCopySelection_Click);
             // 
             // frmConvert
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(899, 611);
+            this.ClientSize = new System.Drawing.Size(899, 539);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);

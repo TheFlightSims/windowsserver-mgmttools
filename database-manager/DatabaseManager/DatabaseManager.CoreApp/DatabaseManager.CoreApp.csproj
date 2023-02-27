@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <RootNamespace>DatabaseManager</RootNamespace>
-    <Authors>victor-wiki</Authors>
+    <Authors>TheFlightSims (ft. victor-wiki)</Authors>
     <Description>Database manage tool for: SqlServer, MySql, Oracle, Postgres and SQLite.</Description>
-    <PackageProjectUrl>https://github.com/victor-wiki/DatabaseManager</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/TheFlightSims/windowsserver-mgmttools</PackageProjectUrl>
     <Version>2.1.2</Version>
     <ApplicationIcon>Resources\_dbManager.ico</ApplicationIcon>
     <PackageReleaseNotes>add: table record count statistic </PackageReleaseNotes>
@@ -15,6 +15,34 @@
     <AssemblyVersion>2.1.2</AssemblyVersion>
     <FileVersion>2.1.2</FileVersion>
     <BaseOutputPath>..\..\..\!bin!\DatabaseManager\GUI\CoreApp</BaseOutputPath>
+    <UseWPF>True</UseWPF>
+    <Nullable>warnings</Nullable>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Company>TheFlightSims</Company>
+    <RepositoryUrl>https://github.com/TheFlightSims/windowsserver-mgmttools</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <AnalysisLevel>latest-all</AnalysisLevel>
+    <SignAssembly>True</SignAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Optimize>True</Optimize>
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <WarningLevel>5</WarningLevel>
   </PropertyGroup>
 	
   <ItemGroup>

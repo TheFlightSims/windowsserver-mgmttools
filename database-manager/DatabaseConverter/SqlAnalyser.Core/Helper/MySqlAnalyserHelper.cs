@@ -9,7 +9,7 @@ namespace SqlAnalyser.Core
     {
         public static void RearrangeStatements(List<Statement> statements)
         {
-            FetchCursorStatement fetchCursorStatement = null;          
+            FetchCursorStatement fetchCursorStatement = null;
 
             List<FetchCursorStatement> statementsNeedToRemove = new List<FetchCursorStatement>();
 
@@ -35,7 +35,7 @@ namespace SqlAnalyser.Core
                         @while.Statements.Insert(0, fs);
 
                         @while.Statements.RemoveAt(index + 1);
-                    }                    
+                    }
                 }
             }
 
@@ -48,11 +48,11 @@ namespace SqlAnalyser.Core
             {
                 return UserVariableDataType.String;
             }
-            else if(int.TryParse(value, out _))
+            else if (int.TryParse(value, out _))
             {
                 return UserVariableDataType.Integer;
             }
-            else if(decimal.TryParse(value, out _))
+            else if (decimal.TryParse(value, out _))
             {
                 return UserVariableDataType.Decimal;
             }

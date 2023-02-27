@@ -1,12 +1,10 @@
 ﻿using DatabaseInterpreter.Model;
 using DatabaseInterpreter.Utility;
-using Newtonsoft.Json;
 using SqlAnalyser.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 
 namespace SqlAnalyser.Core
 {
@@ -132,7 +130,7 @@ namespace SqlAnalyser.Core
                             else if (fromItem.TableName != null)
                             {
                                 this.Append($"{fromItem.TableName.NameWithAlias}");
-                            }                           
+                            }
                         }
 
                         i++;
@@ -302,18 +300,18 @@ namespace SqlAnalyser.Core
                 bool isIntegerIterate = false;
                 string iteratorName = null;
 
-                if(loop.Type != LoopType.FOR)
+                if (loop.Type != LoopType.FOR)
                 {
                     this.AppendLine($"WHILE {loop.Condition}");
                 }
-                else if(loop.LoopCursorInfo != null)
+                else if (loop.LoopCursorInfo != null)
                 {
                     isForLoop = true;
                     isReverse = loop.LoopCursorInfo.IsReverse;
 
-                    iteratorName = "@"+ loop.LoopCursorInfo.IteratorName.Symbol;
+                    iteratorName = "@" + loop.LoopCursorInfo.IteratorName.Symbol;
 
-                    if(loop.LoopCursorInfo.IsIntegerIterate)
+                    if (loop.LoopCursorInfo.IsIntegerIterate)
                     {
                         isIntegerIterate = true;
                         this.AppendLine($"DECLARE {iteratorName} INT;");
@@ -328,16 +326,16 @@ namespace SqlAnalyser.Core
                             this.AppendLine($"SET {iteratorName}={loop.LoopCursorInfo.StopValue};");
                             this.AppendLine($"WHILE {iteratorName}>={loop.LoopCursorInfo.StartValue}");
                         }
-                    }                   
+                    }
                 }
 
                 this.AppendLine("BEGIN");
 
                 this.AppendChildStatements(loop.Statements, true);
 
-                if(isForLoop && isIntegerIterate)
+                if (isForLoop && isIntegerIterate)
                 {
-                    this.AppendLine($"SET {iteratorName}= {iteratorName}{(isReverse? "-":"+")}1;");
+                    this.AppendLine($"SET {iteratorName}= {iteratorName}{(isReverse ? "-" : "+")}1;");
                 }
 
                 this.AppendLine("END");
@@ -734,7 +732,7 @@ namespace SqlAnalyser.Core
             bool hasColumns = table.Columns.Count > 0;
             bool hasSelect = table.SelectStatement != null;
 
-            if(hasColumns)
+            if (hasColumns)
             {
                 sb.AppendLine($"CREATE TABLE {tableName}(");
 
@@ -751,16 +749,16 @@ namespace SqlAnalyser.Core
 
                     bool isComputeExp = column.IsComputed;
 
-                    if(isComputeExp)
+                    if (isComputeExp)
                     {
                         sb.Append($"{name} AS ({column.ComputeExp}){seperator}");
                     }
                     else
                     {
-                        string identity = column.IsIdentity ? $" IDENTITY({table.IdentitySeed??1},{table.IdentityIncrement??1})" : "";
+                        string identity = column.IsIdentity ? $" IDENTITY({table.IdentitySeed ?? 1},{table.IdentityIncrement ?? 1})" : "";
                         string defaultValue = string.IsNullOrEmpty(column.DefaultValue?.Symbol) ? "" : $" DEFAULT {StringHelper.GetParenthesisedString(column.DefaultValue.Symbol)}";
                         string constraint = this.GetConstriants(column.Constraints, true);
-                        string strConstraint = string.IsNullOrEmpty(constraint) ? "" : $" {constraint}";                       
+                        string strConstraint = string.IsNullOrEmpty(constraint) ? "" : $" {constraint}";
 
                         sb.AppendLine($"{name} {column.DataType}{identity}{require}{defaultValue}{strConstraint}{seperator}");
                     }

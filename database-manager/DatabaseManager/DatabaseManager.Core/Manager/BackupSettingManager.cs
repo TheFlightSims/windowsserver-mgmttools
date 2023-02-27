@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using DatabaseInterpreter.Core;
+﻿using DatabaseInterpreter.Core;
 using DatabaseManager.Model;
 using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.IO;
 
 namespace DatabaseManager.Core
 {
     public class BackupSettingManager : ConfigManager
     {
         static BackupSettingManager()
-        {           
+        {
         }
 
         public static string ConfigFilePath
@@ -26,14 +24,14 @@ namespace DatabaseManager.Core
         {
             if (File.Exists(ConfigFilePath))
             {
-                return  (List<BackupSetting>)JsonConvert.DeserializeObject(File.ReadAllText(ConfigFilePath), typeof(List<BackupSetting>));
+                return (List<BackupSetting>)JsonConvert.DeserializeObject(File.ReadAllText(ConfigFilePath), typeof(List<BackupSetting>));
             }
 
             return new List<BackupSetting>();
         }
 
         public static void SaveConfig(List<BackupSetting> settings)
-        {           
+        {
             string content = JsonConvert.SerializeObject(settings, Formatting.Indented);
 
             File.WriteAllText(ConfigFilePath, content);

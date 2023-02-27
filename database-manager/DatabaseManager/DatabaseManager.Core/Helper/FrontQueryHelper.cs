@@ -1,7 +1,5 @@
 ﻿using DatabaseInterpreter.Utility;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Text.RegularExpressions;
 
 namespace DatabaseManager.Helper
@@ -14,14 +12,14 @@ namespace DatabaseManager.Helper
 
             if (type == typeof(char) ||
                type == typeof(string) ||
-               type == typeof(Guid) ||               
+               type == typeof(Guid) ||
                typeName == "SqlHierarchyId" ||
                DataTypeHelper.IsDateOrTimeType(typeName) ||
                DataTypeHelper.IsGeometryType(typeName)
                )
             {
                 return true;
-            }           
+            }
 
             return false;
         }

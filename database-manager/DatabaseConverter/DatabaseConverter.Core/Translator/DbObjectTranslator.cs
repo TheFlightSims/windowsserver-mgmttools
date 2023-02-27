@@ -14,7 +14,7 @@ using System.Text.RegularExpressions;
 
 namespace DatabaseConverter.Core
 {
-    public abstract class DbObjectTranslator:IDisposable
+    public abstract class DbObjectTranslator : IDisposable
     {
         private IObserver<FeedbackInfo> observer;
         protected string sourceSchemaName;
@@ -163,7 +163,7 @@ namespace DatabaseConverter.Core
             else if (upperTypeName == "NUMBER")
             {
                 return "DOUBLE";
-            }            
+            }
             else if (DataTypeHelper.IsCharType(dataTypeName) || upperTypeName.Contains("TEXT"))
             {
                 return "CHAR";
@@ -212,8 +212,8 @@ namespace DatabaseConverter.Core
                 VariableMapping sourceVariable = mapping.FirstOrDefault(item => item.DbType == this.sourceDbInterpreter.DatabaseType.ToString());
                 VariableMapping targetVariable = mapping.FirstOrDefault(item => item.DbType == this.targetDbInterpreter.DatabaseType.ToString());
 
-                if (sourceVariable != null && !string.IsNullOrEmpty(sourceVariable.Variable) 
-                    && targetVariable!= null && targetVariable.Variable != null && !string.IsNullOrEmpty(targetVariable.Variable)
+                if (sourceVariable != null && !string.IsNullOrEmpty(sourceVariable.Variable)
+                    && targetVariable != null && targetVariable.Variable != null && !string.IsNullOrEmpty(targetVariable.Variable)
                    )
                 {
                     script = ReplaceValue(script, sourceVariable.Variable, targetVariable.Variable);
@@ -308,7 +308,7 @@ namespace DatabaseConverter.Core
                             case "UNIT":
                             case "'UNIT'":
 
-                                newArg = DatetimeHelper.GetMappedUnit(sourceDbType, targetDbType, oldArg);                                
+                                newArg = DatetimeHelper.GetMappedUnit(sourceDbType, targetDbType, oldArg);
 
                                 break;
                         }
@@ -361,7 +361,7 @@ namespace DatabaseConverter.Core
 
                         string content = tai.Content;
                         string trimedContent = getTrimedContent(content);
-                   
+
                         var sourceItem = sourceArgItems.FirstOrDefault(item => getTrimedContent(item.Content) == trimedContent);
 
                         if (sourceItem != null)
@@ -375,7 +375,7 @@ namespace DatabaseConverter.Core
                                     value = getTrimedContent(value);
                                 }
 
-                                if(content.StartsWith('\''))
+                                if (content.StartsWith('\''))
                                 {
                                     sbArgs.Append('\'');
                                 }
@@ -385,7 +385,7 @@ namespace DatabaseConverter.Core
                                 if (content.EndsWith('\''))
                                 {
                                     sbArgs.Append('\'');
-                                }                                
+                                }
                             }
                             else
                             {
@@ -429,13 +429,13 @@ namespace DatabaseConverter.Core
                         else if (content == "START")
                         {
                             sbArgs.Append("0");
-                        }                        
+                        }
                         else if (tai.Details.Count > 0)
                         {
                             foreach (FunctionArgumentItemDetailInfo detail in tai.Details)
                             {
                                 string dc = detail.Content;
-                                string trimedDc = getTrimedContent(dc);                   
+                                string trimedDc = getTrimedContent(dc);
 
                                 var si = sourceArgItems.FirstOrDefault(item => getTrimedContent(item.Content) == trimedDc);
 
@@ -523,8 +523,8 @@ namespace DatabaseConverter.Core
                                 }
                             }
 
-                            expression = expression.Replace(sourceItem.Content, value);                            
-                        }                       
+                            expression = expression.Replace(sourceItem.Content, value);
+                        }
 
                         newExpression = expression;
                     }
@@ -565,7 +565,7 @@ namespace DatabaseConverter.Core
 
         private Dictionary<string, string> GetFunctionStringDictionary(string content)
         {
-            Dictionary<string, string> dict = new Dictionary<string, string>();            
+            Dictionary<string, string> dict = new Dictionary<string, string>();
 
             if (!string.IsNullOrEmpty(content))
             {

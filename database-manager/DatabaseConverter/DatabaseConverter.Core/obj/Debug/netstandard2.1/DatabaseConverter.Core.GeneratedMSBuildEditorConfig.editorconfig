@@ -1,3 +1,11 @@
 is_global = true
+build_property.TargetFramework = netstandard2.1
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DatabaseConverter.Core
 build_property.ProjectDir = D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseConverter\DatabaseConverter.Core\

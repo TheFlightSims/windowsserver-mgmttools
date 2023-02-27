@@ -11,11 +11,9 @@ using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
 
 namespace DatabaseManager.Controls
 {
@@ -334,7 +332,7 @@ namespace DatabaseManager.Controls
 
         private bool IsWordInQuotationChar(SqlWordToken token)
         {
-            if(token == null)
+            if (token == null)
             {
                 return false;
             }

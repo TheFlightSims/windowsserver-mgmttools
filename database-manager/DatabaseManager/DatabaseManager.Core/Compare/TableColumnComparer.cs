@@ -2,9 +2,6 @@
 using KellermanSoftware.CompareNetObjects;
 using KellermanSoftware.CompareNetObjects.TypeComparers;
 using System;
-using System.Collections.Generic;
-using System.Text;
-using static Npgsql.Replication.PgOutput.Messages.RelationMessage;
 using Utility = DatabaseInterpreter.Utility;
 
 namespace DatabaseManager.Core

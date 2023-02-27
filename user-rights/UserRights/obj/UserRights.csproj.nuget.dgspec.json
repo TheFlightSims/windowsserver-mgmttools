@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights\\UserRights.csproj": {}
+    "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights\\UserRights.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\UserRights.Application.csproj": {
+    "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\UserRights.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\UserRights.Application.csproj",
+        "projectUniqueName": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\UserRights.Application.csproj",
         "projectName": "UserRights.Application",
-        "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\UserRights.Application.csproj",
-        "packagesPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\obj\\",
+        "projectPath": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\UserRights.Application.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator.THEFLIGHTSIMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\UserRights.Extensions.csproj": {
-                "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\UserRights.Extensions.csproj"
+              "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\UserRights.Extensions.csproj": {
+                "projectPath": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\UserRights.Extensions.csproj"
               }
             }
           }
@@ -87,24 +86,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Cli\\UserRights.Cli.csproj": {
+    "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Cli\\UserRights.Cli.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Cli\\UserRights.Cli.csproj",
+        "projectUniqueName": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Cli\\UserRights.Cli.csproj",
         "projectName": "UserRights.Cli",
-        "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Cli\\UserRights.Cli.csproj",
-        "packagesPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Cli\\obj\\",
+        "projectPath": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Cli\\UserRights.Cli.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Cli\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator.THEFLIGHTSIMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -113,18 +112,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\UserRights.Application.csproj": {
-                "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\UserRights.Application.csproj"
+              "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\UserRights.Application.csproj": {
+                "projectPath": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\UserRights.Application.csproj"
               },
-              "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\UserRights.Extensions.csproj": {
-                "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\UserRights.Extensions.csproj"
+              "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\UserRights.Extensions.csproj": {
+                "projectPath": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\UserRights.Extensions.csproj"
               }
             }
           }
@@ -176,24 +174,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\UserRights.Extensions.csproj": {
+    "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\UserRights.Extensions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\UserRights.Extensions.csproj",
+        "projectUniqueName": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\UserRights.Extensions.csproj",
         "projectName": "UserRights.Extensions",
-        "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\UserRights.Extensions.csproj",
-        "packagesPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\obj\\",
+        "projectPath": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\UserRights.Extensions.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Extensions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator.THEFLIGHTSIMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -202,7 +200,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -254,24 +251,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights\\UserRights.csproj": {
+    "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights\\UserRights.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights\\UserRights.csproj",
+        "projectUniqueName": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights\\UserRights.csproj",
         "projectName": "UserRights",
-        "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights\\UserRights.csproj",
-        "packagesPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights\\obj\\",
+        "projectPath": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights\\UserRights.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator.THEFLIGHTSIMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -280,18 +277,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\UserRights.Application.csproj": {
-                "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\UserRights.Application.csproj"
+              "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\UserRights.Application.csproj": {
+                "projectPath": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Application\\UserRights.Application.csproj"
               },
-              "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Cli\\UserRights.Cli.csproj": {
-                "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\UserRights.Cli\\UserRights.Cli.csproj"
+              "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Cli\\UserRights.Cli.csproj": {
+                "projectPath": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\UserRights.Cli\\UserRights.Cli.csproj"
               }
             }
           }
@@ -375,7 +371,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

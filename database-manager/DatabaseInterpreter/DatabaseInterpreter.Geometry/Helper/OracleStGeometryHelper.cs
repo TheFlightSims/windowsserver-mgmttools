@@ -1,6 +1,5 @@
 ﻿using Microsoft.SqlServer.Types;
 using MySqlConnector;
-using System.Data.SqlTypes;
 using PgGeom = NetTopologySuite.Geometries;
 
 namespace DatabaseInterpreter.Geometry

@@ -6,7 +6,7 @@ namespace DatabaseInterpreter.Geometry
     {
         public static string ToInvariantString(decimal? value)
         {
-            if(value == null)
+            if (value == null)
             {
                 return string.Empty;
             }

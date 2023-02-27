@@ -6,7 +6,7 @@ namespace DatabaseConverter.Model
 {
     public class DbConveterInfo
     {
-        public DbInterpreter DbInterpreter { get; set; }      
+        public DbInterpreter DbInterpreter { get; set; }
 
         public Dictionary<string, string> TableNameMappings = new Dictionary<string, string>();
 

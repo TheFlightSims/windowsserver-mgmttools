@@ -15,5 +15,5 @@ namespace SqlAnalyser.Model
         public SelectStatement SelectStatement { get; set; }
 
         public bool HasTableConstraints => this.Constraints != null && this.Constraints.Count > 0;
-    }   
+    }
 }

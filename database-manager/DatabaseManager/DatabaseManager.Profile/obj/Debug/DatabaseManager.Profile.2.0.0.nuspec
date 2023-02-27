@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DatabaseManager.Profile</id>
+    <version>2.0.0</version>
+    <authors>TheFlightSims (ft. victor-wiki)</authors>
+    <projectUrl>https://github.com/TheFlightSims/windowsserver-mgmttools</projectUrl>
+    <description>Package Description</description>
+    <releaseNotes>use sqlite store profile data instead of json files.</releaseNotes>
+    <repository type="git" url="https://github.com/TheFlightSims/windowsserver-mgmttools" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="DatabaseInterpreter.Core" version="2.1.4" exclude="Build,Analyzers" />
+        <dependency id="DatabaseInterpreter.Model" version="2.1.0" exclude="Build,Analyzers" />
+        <dependency id="DatabaseInterpreter.Utility" version="2.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\#source-code\windowsserver-mgmttools\!bin!\DatabaseManager\GUI\Profile\Debug\netstandard2.1\DatabaseManager.Profile.dll" target="lib\netstandard2.1\DatabaseManager.Profile.dll" />
+  </files>
+</package>

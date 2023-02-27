@@ -11,7 +11,7 @@
     {
         public TokenInfo IteratorName { get; set; }
         public TokenInfo StartValue { get; set; }
-        public TokenInfo StopValue { get; set; }  
+        public TokenInfo StopValue { get; set; }
         public bool IsReverse { get; set; }
         public bool IsIntegerIterate { get; set; }
         public SelectStatement SelectStatement { get; set; }

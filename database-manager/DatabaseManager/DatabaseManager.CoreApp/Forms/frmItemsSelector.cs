@@ -1,13 +1,7 @@
-﻿using DatabaseInterpreter.Model;
-using DatabaseManager.Helper;
+﻿using DatabaseManager.Helper;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DatabaseManager
@@ -17,7 +11,7 @@ namespace DatabaseManager
         private bool isChecking = false;
         private List<CheckItemInfo> items;
         public bool Required { get; set; } = true;
-   
+
         public List<CheckItemInfo> CheckedItem { get; set; } = new List<CheckItemInfo>();
 
         public frmItemsSelector(List<CheckItemInfo> items)
@@ -36,17 +30,17 @@ namespace DatabaseManager
 
         private void frmItemsSelector_Load(object sender, EventArgs e)
         {
-            this.InitControls();           
+            this.InitControls();
         }
 
         private void InitControls()
         {
-            foreach(CheckItemInfo item in this.items)
+            foreach (CheckItemInfo item in this.items)
             {
                 this.chkItems.Items.Add(item.Name, item.Checked);
             }
 
-            if(this.items.All(item=> item.Checked))
+            if (this.items.All(item => item.Checked))
             {
                 this.chkSelectAll.Checked = true;
             }
@@ -58,12 +52,12 @@ namespace DatabaseManager
             {
                 MessageBox.Show("Please select a item.");
                 return;
-            }       
+            }
 
             foreach (var item in this.chkItems.CheckedItems)
             {
                 this.CheckedItem.Add(new CheckItemInfo() { Name = item.ToString(), Checked = true });
-            }                     
+            }
 
             this.DialogResult = DialogResult.OK;
 
@@ -82,14 +76,14 @@ namespace DatabaseManager
 
         private void CheckItems(bool @checked)
         {
-            if(!this.isChecking)
+            if (!this.isChecking)
             {
                 for (int i = 0; i < this.chkItems.Items.Count; i++)
                 {
                     this.chkItems.SetItemChecked(i, @checked);
                 }
-            }           
-        }       
+            }
+        }
 
         private void chkItems_MouseUp(object sender, MouseEventArgs e)
         {
@@ -107,7 +101,7 @@ namespace DatabaseManager
             this.chkSelectAll.Checked = this.chkItems.CheckedItems.Count == this.chkItems.Items.Count;
             this.isChecking = false;
         }
-    }  
+    }
 
-  
+
 }

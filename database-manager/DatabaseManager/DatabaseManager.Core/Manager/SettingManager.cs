@@ -14,7 +14,7 @@ namespace DatabaseManager.Core
         static SettingManager()
         {
             LoadConfig();
-        }       
+        }
 
         public static string ConfigFilePath
         {

@@ -92,7 +92,7 @@ namespace DatabaseInterpreter.Geometry
             if (this.text != null)
             {
                 return this.text;
-            }           
+            }
 
             if (this.Point != null && this.ElemInfo == null && this.Ordinates == null) //point
             {

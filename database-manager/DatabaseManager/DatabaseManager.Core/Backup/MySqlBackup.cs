@@ -17,7 +17,7 @@ namespace DatabaseManager.Core
 
         public override string Backup()
         {
-            if(this.Setting==null)
+            if (this.Setting == null)
             {
                 throw new ArgumentException($"There is no backup setting for MySql.");
             }
@@ -54,7 +54,7 @@ namespace DatabaseManager.Core
             string skipQuotationNames = SettingManager.Setting.DbObjectNameMode == DbObjectNameMode.WithoutQuotation ? "--skip-quote-names" : "";
 
             string cmdArgs = $"--quick --default-character-set={charset} {skipQuotationNames} --lock-tables --force --host={server}  --port={port} --user={userId} --password={password} {database} -r \"{saveFilePath}\"";
-               
+
             ProcessHelper.RunExe(this.Setting.ClientToolFilePath, cmdArgs);
 
             string zipFilePath = Path.Combine(saveFolder, fileNameWithoutExt + ".zip");

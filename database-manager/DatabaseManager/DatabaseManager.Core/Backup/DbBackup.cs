@@ -38,7 +38,7 @@ namespace DatabaseManager.Core
 
             return saveFolder;
         }
-       
+
         protected virtual string ZipFile(string backupFilePath, string zipFilePath)
         {
             if (File.Exists(backupFilePath))
@@ -50,7 +50,7 @@ namespace DatabaseManager.Core
                     File.Delete(backupFilePath);
 
                     backupFilePath = zipFilePath;
-                }              
+                }
             }
 
             return backupFilePath;
@@ -58,7 +58,7 @@ namespace DatabaseManager.Core
 
         public static DbBackup GetInstance(DatabaseType databaseType)
         {
-            if(databaseType == DatabaseType.SqlServer)
+            if (databaseType == DatabaseType.SqlServer)
             {
                 return new SqlServerBackup();
             }
@@ -70,7 +70,7 @@ namespace DatabaseManager.Core
             {
                 return new MySqlBackup();
             }
-            else if(databaseType == DatabaseType.Postgres)
+            else if (databaseType == DatabaseType.Postgres)
             {
                 return new PostgresBackup();
             }

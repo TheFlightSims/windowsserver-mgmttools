@@ -6,7 +6,7 @@ namespace DatabaseInterpreter.Geometry
 {
     [OracleCustomTypeMapping("MDSYS.ST_GEOMETRY")]
     public class StGeometry : OracleCustomTypeBase<StGeometry>
-    {        
+    {
         [OracleObjectMappingAttribute("GEOM")]
         public SdoGeometry Geom { get; set; }
 
@@ -32,7 +32,7 @@ namespace DatabaseInterpreter.Geometry
                 throw new NullReferenceException("Cannot write Well-Known Text: geometry was null");
             }
 
-            StringBuilder sb = new StringBuilder();           
+            StringBuilder sb = new StringBuilder();
 
             if (this.Geom != null)
             {

@@ -37,5 +37,5 @@ namespace DatabaseInterpreter.Utility
                 File.AppendAllLines(filePath, new string[] { content });
             }
         }
-    }    
+    }
 }

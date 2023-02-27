@@ -19,7 +19,7 @@ namespace DatabaseManager.Profile
 
                     PersonalSetting setting = (await connection.QueryAsync<PersonalSetting>(sql))?.FirstOrDefault();
 
-                    if(setting!=null && !string.IsNullOrEmpty(setting.LockPassword))
+                    if (setting != null && !string.IsNullOrEmpty(setting.LockPassword))
                     {
                         setting.LockPassword = AesHelper.Decrypt(setting.LockPassword);
                     }

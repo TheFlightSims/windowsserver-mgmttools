@@ -1,21 +1,18 @@
-﻿using System;
+﻿using DatabaseInterpreter.Core;
+using DatabaseInterpreter.Model;
+using DatabaseInterpreter.Utility;
+using DatabaseManager.Core;
+using DatabaseManager.Data;
+using DatabaseManager.Forms;
+using DatabaseManager.Helper;
+using DatabaseManager.Profile;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DatabaseManager.Profile;
-using DatabaseManager.Helper;
-using DatabaseInterpreter.Core;
-using DatabaseInterpreter.Model;
-using DatabaseManager.Data;
-using DatabaseManager.Core;
-using DatabaseManager.Forms;
-using System.Collections.Immutable;
-using DatabaseInterpreter.Utility;
 
 namespace DatabaseManager.Controls
 {
@@ -171,13 +168,13 @@ namespace DatabaseManager.Controls
                 }
 
                 this.cboDbProfile.Items.Clear();
-                
+
                 this.isDataBinding = true;
 
                 this.cboDbProfile.DisplayMember = displayMember;
                 this.cboDbProfile.ValueMember = valueMember;
 
-                foreach(dynamic profile in profiles)
+                foreach (dynamic profile in profiles)
                 {
                     this.cboDbProfile.Items.Add(profile);
                 }

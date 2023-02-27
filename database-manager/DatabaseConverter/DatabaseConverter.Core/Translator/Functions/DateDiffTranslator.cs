@@ -208,16 +208,16 @@ namespace DatabaseConverter.Core.Functions
                 {
                     Func<string, string> getDiffValue = (multiplier) =>
                     {
-                        string value = $"(JULIANDAY({date1})-JULIANDAY({date2}))"; 
+                        string value = $"(JULIANDAY({date1})-JULIANDAY({date2}))";
 
-                        if(unit== "YEAR")
+                        if (unit == "YEAR")
                         {
                             return $"FLOOR(ROUND({value}{multiplier},2))";
                         }
                         else
                         {
                             return $"ROUND({value}{multiplier})";
-                        }                        
+                        }
                     };
 
                     switch (unit)
@@ -237,10 +237,10 @@ namespace DatabaseConverter.Core.Functions
                         case "HOUR":
                             newExpression = getDiffValue("*24");
                             break;
-                        case "MINUTE":                           
+                        case "MINUTE":
                             newExpression = getDiffValue("24*60");
                             break;
-                        case "SECOND":                            
+                        case "SECOND":
                             newExpression = getDiffValue("24*60*60");
                             break;
                     }

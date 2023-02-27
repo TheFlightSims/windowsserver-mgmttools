@@ -29,11 +29,11 @@ namespace DatabaseInterpreter.Utility
 
                 string logContent = $"{prefix}{info.Message}";
 
-                if((LogHelper.LogType.HasFlag(LogType.Info) && info.InfoType == FeedbackInfoType.Info)                   )
+                if ((LogHelper.LogType.HasFlag(LogType.Info) && info.InfoType == FeedbackInfoType.Info))
                 {
                     LogHelper.LogInfo(logContent);
-                }            
-                else if(LogHelper.LogType.HasFlag(LogType.Error) && info.InfoType == FeedbackInfoType.Error)
+                }
+                else if (LogHelper.LogType.HasFlag(LogType.Error) && info.InfoType == FeedbackInfoType.Error)
                 {
                     LogHelper.LogError(logContent);
                 }

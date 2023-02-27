@@ -6,3 +6,11 @@ C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hy
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HVBackup.Engine.csproj.CopyComplete
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HyperVBackUp.Engine.dll
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HyperVBackUp.Engine.pdb
+D:\#source-code\windowsserver-mgmttools\!bin!\Hyper-V Backup\NLog.config
+D:\#source-code\windowsserver-mgmttools\!bin!\Hyper-V Backup\HyperVBackUp.Engine.dll
+D:\#source-code\windowsserver-mgmttools\!bin!\Hyper-V Backup\HyperVBackUp.Engine.pdb
+D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HVBackup.Engine.csproj.AssemblyReference.cache
+D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HVBackup.Engine.csproj.CoreCompileInputs.cache
+D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HVBackup.Engine.csproj.CopyComplete
+D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HyperVBackUp.Engine.dll
+D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HyperVBackUp.Engine.pdb

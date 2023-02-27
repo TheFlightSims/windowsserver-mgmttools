@@ -1,12 +1,11 @@
-﻿using System;
+﻿using DatabaseInterpreter.Model;
 using System.Collections.Generic;
-using DatabaseInterpreter.Model;
 
 
 namespace DatabaseManager.Model
 {
     public class DbDifference
-    {               
+    {
         public string Type { get; set; }
         public DbDifference Parent { get; set; }
         public string ParentType { get; set; }
@@ -19,7 +18,7 @@ namespace DatabaseManager.Model
         public string SourceName => this.Source?.Name;
         public string TargetName => this.Target?.Name;
 
-        public DbDifferenceType DifferenceType { get; set; }          
+        public DbDifferenceType DifferenceType { get; set; }
 
         public List<DbDifference> SubDifferences { get; set; } = new List<DbDifference>();
     }

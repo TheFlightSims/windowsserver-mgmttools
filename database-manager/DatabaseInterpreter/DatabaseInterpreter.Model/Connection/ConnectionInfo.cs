@@ -1,6 +1,4 @@
-﻿using DatabaseInterpreter.Model;
-
-namespace DatabaseInterpreter.Model
+﻿namespace DatabaseInterpreter.Model
 {
     public class ConnectionInfo : DatabaseAccountInfo
     {

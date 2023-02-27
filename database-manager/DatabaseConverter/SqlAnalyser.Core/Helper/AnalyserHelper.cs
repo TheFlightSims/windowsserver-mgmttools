@@ -5,8 +5,6 @@ using SqlAnalyser.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Security.Principal;
 using System.Text.RegularExpressions;
 
 namespace SqlAnalyser.Core
@@ -167,20 +165,20 @@ namespace SqlAnalyser.Core
 
         public static TokenInfo GetIntoTableName(SelectStatement statement)
         {
-            if(statement.Intos == null || statement.Intos.Count ==0)
+            if (statement.Intos == null || statement.Intos.Count == 0)
             {
                 return null;
             }
 
             return statement.Intos.FirstOrDefault(item => item.Type == TokenType.TableName);
         }
-        
+
         public static string GetUserVariableDataType(DatabaseType databaseType, UserVariableDataType dataType)
         {
-            switch(databaseType)
+            switch (databaseType)
             {
                 case DatabaseType.SqlServer:
-                    switch(dataType)
+                    switch (dataType)
                     {
                         case UserVariableDataType.String:
                             return "VARCHAR(MAX)";
@@ -211,7 +209,7 @@ namespace SqlAnalyser.Core
                         case UserVariableDataType.Decimal:
                             return "FLOAT";
                     }
-                    break;              
+                    break;
             }
 
             return String.Empty;

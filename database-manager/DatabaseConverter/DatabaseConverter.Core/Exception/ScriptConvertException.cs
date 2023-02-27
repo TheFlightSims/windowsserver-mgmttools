@@ -1,5 +1,4 @@
-﻿using DatabaseInterpreter.Model;
-using System;
+﻿using System;
 
 namespace DatabaseConverter.Core
 {

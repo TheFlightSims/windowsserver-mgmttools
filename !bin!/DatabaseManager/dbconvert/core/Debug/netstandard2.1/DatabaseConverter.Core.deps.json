@@ -9,13 +9,13 @@
     ".NETStandard,Version=v2.1/": {
       "DatabaseConverter.Core/2.1.3": {
         "dependencies": {
-          "CoreCLR-NCalc": "2.2.70",
+          "CoreCLR-NCalc": "2.2.110",
           "DatabaseInterpreter.Core": "2.1.4",
           "DatabaseInterpreter.Model": "2.1.0",
           "DatabaseInterpreter.Utility": "2.1.0",
           "PoorMansTSqlFormatterRedux": "1.0.3",
           "SqlAnalyser.Core": "2.1.2",
-          "TSQL.Parser": "2.5.0"
+          "TSQL.Parser": "2.6.0"
         },
         "runtime": {
           "DatabaseConverter.Core.dll": {}
@@ -63,7 +63,7 @@
           }
         }
       },
-      "CoreCLR-NCalc/2.2.70": {
+      "CoreCLR-NCalc/2.2.110": {
         "runtime": {
           "lib/netstandard2.0/NCalc.dll": {
             "assemblyVersion": "3.5.0.2",
@@ -1666,11 +1666,11 @@
           }
         }
       },
-      "TSQL.Parser/2.5.0": {
+      "TSQL.Parser/2.6.0": {
         "runtime": {
           "lib/netstandard2.0/TSQL_Parser.dll": {
-            "assemblyVersion": "2.5.0.0",
-            "fileVersion": "2.5.0.0"
+            "assemblyVersion": "2.6.0.0",
+            "fileVersion": "2.6.0.0"
           }
         }
       },
@@ -1759,12 +1759,12 @@
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
     },
-    "CoreCLR-NCalc/2.2.70": {
+    "CoreCLR-NCalc/2.2.110": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/ZOzuf9SyLZV3tkL2/6iiltMaTjDDmt8Gu3BpTcaRvik1VIjRiqe/5Kz2X6Sub0jhYrO4MHFIXexjLbYUQfrZg==",
-      "path": "coreclr-ncalc/2.2.70",
-      "hashPath": "coreclr-ncalc.2.2.70.nupkg.sha512"
+      "sha512": "sha512-t7Dq3mHKJhNcGz8LM0bmF9DZKjnhnbEKsnjXkg0fZ6BLFaK9j7Bmzd3VrQsCVJBbvbrOIjF17hYFdLtpmxX+og==",
+      "path": "coreclr-ncalc/2.2.110",
+      "hashPath": "coreclr-ncalc.2.2.110.nupkg.sha512"
     },
     "CsvHelper/15.0.1": {
       "type": "package",
@@ -2739,12 +2739,12 @@
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
     },
-    "TSQL.Parser/2.5.0": {
+    "TSQL.Parser/2.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FelUslmEjKtGyRoDY8HOS/b1crLGHEMihT6tefiNuCYkJUtKWaNmEc8jlAyBwSE7eLpal4vmFWzTZiauTRrWIw==",
-      "path": "tsql.parser/2.5.0",
-      "hashPath": "tsql.parser.2.5.0.nupkg.sha512"
+      "sha512": "sha512-s0LswRU/uKKhD6WQo8lBFJUNMqdPtC+UQmmcTHSTS5ik4q1gH2XP8l4zAZw9C4yi+8PAh69DE3AJyWSSNizjjg==",
+      "path": "tsql.parser/2.6.0",
+      "hashPath": "tsql.parser.2.6.0.nupkg.sha512"
     },
     "DatabaseInterpreter.Core/2.1.4": {
       "type": "project",

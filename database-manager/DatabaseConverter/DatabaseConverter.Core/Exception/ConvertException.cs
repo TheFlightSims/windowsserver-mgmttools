@@ -10,7 +10,7 @@ namespace DatabaseConverter.Core
 
         public ConvertException(Exception ex)
         {
-            this.BaseException = ex;            
+            this.BaseException = ex;
         }
 
         public string SourceServer { get; set; }
@@ -31,9 +31,9 @@ namespace DatabaseConverter.Core
 
                 sb.AppendLine($"ObjectType:{this.ObjectType}");
                 sb.AppendLine($"SourceServer:{this.SourceServer}");
-                sb.AppendLine( $"SourceDatabase:{this.SourceDatabase}");
+                sb.AppendLine($"SourceDatabase:{this.SourceDatabase}");
 
-                if(!string.IsNullOrEmpty(this.SourceObject))
+                if (!string.IsNullOrEmpty(this.SourceObject))
                 {
                     sb.AppendLine($"SourceObject:{this.SourceObject}");
                 }
@@ -41,12 +41,12 @@ namespace DatabaseConverter.Core
                 sb.AppendLine($"TargetServer:{this.TargetServer}");
                 sb.AppendLine($"TargetDatabase:{this.TargetDatabase}");
 
-                if(!string.IsNullOrEmpty(this.TargetObject))
+                if (!string.IsNullOrEmpty(this.TargetObject))
                 {
                     sb.AppendLine($"TargetObject:{this.TargetObject}");
                 }
 
-                if(!string.IsNullOrEmpty(BaseException?.StackTrace))
+                if (!string.IsNullOrEmpty(BaseException?.StackTrace))
                 {
                     sb.AppendLine(BaseException?.StackTrace);
                 }
@@ -54,5 +54,5 @@ namespace DatabaseConverter.Core
                 return sb.ToString();
             }
         }
-    }    
+    }
 }

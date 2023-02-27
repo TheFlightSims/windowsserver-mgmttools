@@ -1,10 +1,7 @@
 ﻿using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Model;
 using DatabaseManager.Model;
-using SqlAnalyser.Model;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
@@ -31,36 +28,36 @@ namespace DatabaseManager.Core
 
             int i = 0;
 
-            foreach(var result in results)
+            foreach (var result in results)
             {
                 ScriptGenerator scriptGenerator = new ScriptGenerator(dbInterpreter);
 
                 string script = (await scriptGenerator.Generate(result.DbObject, ScriptAction.ALTER)).Script;
 
-                if(string.IsNullOrEmpty(script))
+                if (string.IsNullOrEmpty(script))
                 {
                     continue;
                 }
 
                 string definition = result.DbObject.Definition;
 
-                foreach(var detail in result.Details)
+                foreach (var detail in result.Details)
                 {
                     script = this.ReplaceDefinition(script, detail.InvalidName, detail.Name);
                     definition = this.ReplaceDefinition(definition, detail.InvalidName, detail.Name);
 
-                    if(scriptDiagnoseType == ScriptDiagnoseType.ViewColumnAliasWithoutQuotationChar)
+                    if (scriptDiagnoseType == ScriptDiagnoseType.ViewColumnAliasWithoutQuotationChar)
                     {
                         script = this.ReplaceDuplicateQuotationChar(script, detail.Name);
                         definition = this.ReplaceDuplicateQuotationChar(definition, detail.Name);
                     }
-                }              
+                }
 
-                if(result.DbObject is View)
+                if (result.DbObject is View)
                 {
                     scripts.Add(new AlterDbObjectScript<View>(script));
                 }
-                else if(result.DbObject is Procedure)
+                else if (result.DbObject is Procedure)
                 {
                     scripts.Add(new AlterDbObjectScript<Procedure>(script));
                 }
@@ -100,6 +97,6 @@ namespace DatabaseManager.Core
         private string ReplaceDefinition(string definition, string oldValue, string newValue)
         {
             return Regex.Replace(definition, $@"\b{oldValue}\b", newValue, RegexOptions.Multiline);
-        }        
+        }
     }
 }

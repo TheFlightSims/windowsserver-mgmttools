@@ -4,9 +4,7 @@ using SqlAnalyser.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
-using static Antlr4.Runtime.Atn.SemanticContext;
 
 namespace SqlAnalyser.Core
 {
@@ -440,13 +438,13 @@ namespace SqlAnalyser.Core
                 {
                     this.AppendLine("LOOP");
                 }
-                else if(loop.Type == LoopType.FOR)
+                else if (loop.Type == LoopType.FOR)
                 {
                     var loopCursor = loop.LoopCursorInfo;
 
                     this.Append($"FOR {loopCursor.IteratorName} IN ");
 
-                    if(loopCursor.IsIntegerIterate)
+                    if (loopCursor.IsIntegerIterate)
                     {
                         this.Append($"{(loopCursor.IsReverse ? "REVERSE" : "")} {loopCursor.StartValue}..{loopCursor.StopValue}");
                     }

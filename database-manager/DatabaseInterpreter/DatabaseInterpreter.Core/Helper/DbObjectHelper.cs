@@ -73,7 +73,7 @@ namespace DatabaseInterpreter.Core
             if (typeName == nameof(UserDefinedType))
             {
                 return DatabaseObjectType.Type;
-            }            
+            }
             else
             {
                 if (Enum.TryParse(typeof(DatabaseObjectType), typeName, out _))

@@ -1,7 +1,7 @@
 ﻿namespace DatabaseInterpreter.Model
 {
-    public class SpliterScript:Script
+    public class SpliterScript : Script
     {
-        public SpliterScript(string script) : base(script) { }        
+        public SpliterScript(string script) : base(script) { }
     }
 }

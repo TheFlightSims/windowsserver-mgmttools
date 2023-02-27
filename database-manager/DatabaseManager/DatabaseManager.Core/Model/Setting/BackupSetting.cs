@@ -1,6 +1,4 @@
-﻿using DatabaseInterpreter.Model;
-
-namespace DatabaseManager.Model
+﻿namespace DatabaseManager.Model
 {
     public class BackupSetting
     {

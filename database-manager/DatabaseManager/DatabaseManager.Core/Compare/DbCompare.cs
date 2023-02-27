@@ -9,12 +9,12 @@ namespace DatabaseManager.Core
     public class DbCompare
     {
         private SchemaInfo sourceShemaInfo;
-        private SchemaInfo targetSchemaInfo;    
+        private SchemaInfo targetSchemaInfo;
 
         public DbCompare(SchemaInfo sourceShemaInfo, SchemaInfo targetSchemaInfo)
         {
             this.sourceShemaInfo = sourceShemaInfo;
-            this.targetSchemaInfo = targetSchemaInfo;           
+            this.targetSchemaInfo = targetSchemaInfo;
         }
 
         public List<DbDifference> Compare()
@@ -64,7 +64,7 @@ namespace DatabaseManager.Core
 
                         var triggerDifferences = this.CompareDatabaseObjects<TableTrigger>("Trigger", DatabaseObjectType.Trigger, sourceTriggers, targetTriggers);
 
-                        foreach(var triggerDiff in triggerDifferences)
+                        foreach (var triggerDiff in triggerDifferences)
                         {
                             triggerDiff.ParentName = target.Name;
                         }
@@ -100,7 +100,7 @@ namespace DatabaseManager.Core
                         #endregion
 
                         #region Constraint
-                        IEnumerable<TableConstraint> sourceConstraints= this.sourceShemaInfo.TableConstraints.Where(item => item.Schema == source.Schema && item.TableName == source.Name);
+                        IEnumerable<TableConstraint> sourceConstraints = this.sourceShemaInfo.TableConstraints.Where(item => item.Schema == source.Schema && item.TableName == source.Name);
                         IEnumerable<TableConstraint> targetConstraints = this.targetSchemaInfo.TableConstraints.Where(item => item.Schema == target.Schema && item.TableName == source.Name);
 
                         var constraintDifferences = this.CompareTableChildren<TableConstraint>("Constraint", DatabaseObjectType.Constraint, sourceConstraints, targetConstraints);
@@ -130,7 +130,7 @@ namespace DatabaseManager.Core
                 }
             }
             #endregion
-           
+
             differences.AddRange(this.CompareDatabaseObjects<View>(nameof(View), DatabaseObjectType.View, this.sourceShemaInfo.Views, targetSchemaInfo.Views));
             differences.AddRange(this.CompareDatabaseObjects<Function>(nameof(Function), DatabaseObjectType.Function, this.sourceShemaInfo.Functions, targetSchemaInfo.Functions));
             differences.AddRange(this.CompareDatabaseObjects<Procedure>(nameof(Procedure), DatabaseObjectType.Procedure, this.sourceShemaInfo.Procedures, targetSchemaInfo.Procedures));

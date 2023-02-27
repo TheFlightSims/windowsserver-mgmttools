@@ -150,7 +150,7 @@ namespace DatabaseManager.Helper
             {
                 string text = (alwaysShowSchema || !isUniqueDbSchema) ? $"{dbObj.Schema}.{dbObj.Name}" : dbObj.Name;
 
-                string imgKeyName = typeof(T).Name;              
+                string imgKeyName = typeof(T).Name;
 
                 if (dbObj is Function func)
                 {
@@ -160,8 +160,8 @@ namespace DatabaseManager.Helper
                     }
                 }
 
-                TreeNode node = CreateTreeNode(dbObj.Name, text, imgKeyName);               
-                node.Tag = dbObj;                
+                TreeNode node = CreateTreeNode(dbObj.Name, text, imgKeyName);
+                node.Tag = dbObj;
 
                 yield return node;
             }

@@ -25,7 +25,7 @@ namespace DatabaseInterpreter.Geometry
 
             if (geom != null)
             {
-                PostgresGeometryHelper.ReverseCoordinates(geom);               
+                PostgresGeometryHelper.ReverseCoordinates(geom);
             }
 
             return geom;
@@ -221,7 +221,7 @@ namespace DatabaseInterpreter.Geometry
                 var point = geography.STPointN(i);
 
                 list.Add(point.Long.Value);
-                list.Add(point.Lat.Value);                
+                list.Add(point.Lat.Value);
 
                 if (geography.HasZ)
                 {

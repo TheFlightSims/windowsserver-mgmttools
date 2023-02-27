@@ -1,13 +1,8 @@
-﻿using DatabaseConverter.Core;
-using DatabaseInterpreter.Model;
+﻿using DatabaseInterpreter.Model;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DatabaseManager
@@ -194,9 +189,9 @@ namespace DatabaseManager
         {
             this.ClearControls();
 
-            foreach(var sourceSchema in this.SourceSchemas)
+            foreach (var sourceSchema in this.SourceSchemas)
             {
-                if(this.TargetSchemas.Any(item=> item==sourceSchema))
+                if (this.TargetSchemas.Any(item => item == sourceSchema))
                 {
                     ComboBox sourceCombo = this.CreateCombobox(this.panelSourceSchema, this.SourceSchemas, sourceSchema);
 
@@ -205,7 +200,7 @@ namespace DatabaseManager
                     ComboBox targetCombo = this.CreateCombobox(this.panelTargetSchema, this.TargetSchemas, sourceSchema);
 
                     this.panelTargetSchema.Controls.Add(targetCombo);
-                }               
+                }
             }
 
             this.CreatePlaceholder();

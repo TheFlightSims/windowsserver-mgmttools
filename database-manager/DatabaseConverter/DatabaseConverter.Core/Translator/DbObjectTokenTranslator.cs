@@ -21,7 +21,7 @@ namespace DatabaseConverter.Core
 
         public override void Translate()
         {
-            
+
         }
 
         public virtual string ParseDefinition(string definition)
@@ -57,7 +57,7 @@ namespace DatabaseConverter.Core
 
                 switch (token.Type)
                 {
-                    case TSQLTokenType.SystemIdentifier:                      
+                    case TSQLTokenType.SystemIdentifier:
                     case TSQLTokenType.Identifier:
 
                         if (sourceFuncSpecs.Any(item => item.Name == text.ToUpper()))
@@ -108,7 +108,7 @@ namespace DatabaseConverter.Core
                         }
                     }
                 }
-            }         
+            }
 
             return newDefinition;
         }

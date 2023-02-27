@@ -15,3 +15,20 @@ C:\Users\Administrator\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\o
 C:\Users\Administrator\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDB-Downloader.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDBDownloader.exe
 C:\Users\Administrator\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDBDownloader.pdb
+D:\#source-code\windowsserver-mgmttools\!bin!\PDB Downloader\PDBDownloader.exe.config
+D:\#source-code\windowsserver-mgmttools\!bin!\PDB Downloader\PDBDownloader.exe
+D:\#source-code\windowsserver-mgmttools\!bin!\PDB Downloader\PDBDownloader.pdb
+D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDB-Downloader.csproj.AssemblyReference.cache
+D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDB-Downloader.csproj.SuggestedBindingRedirects.cache
+D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\MainWindow.g.cs
+D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\App.g.cs
+D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDBDownloader_MarkupCompile.cache
+D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDBDownloader_MarkupCompile.lref
+D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\MainWindow.baml
+D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\Resources\StaticResources.baml
+D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDBDownloader.g.resources
+D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\SymbolFetch.Properties.Resources.resources
+D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDB-Downloader.csproj.GenerateResource.cache
+D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDB-Downloader.csproj.CoreCompileInputs.cache
+D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDBDownloader.exe
+D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDBDownloader.pdb

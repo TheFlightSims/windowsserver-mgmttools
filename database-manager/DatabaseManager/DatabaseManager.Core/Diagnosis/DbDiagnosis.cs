@@ -1,5 +1,4 @@
-﻿using Antlr4.Runtime.Dfa;
-using DatabaseConverter.Core;
+﻿using DatabaseConverter.Core;
 using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Model;
 using DatabaseInterpreter.Utility;
@@ -8,7 +7,6 @@ using SqlAnalyser.Core;
 using SqlAnalyser.Model;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Data.Common;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -224,7 +222,7 @@ namespace DatabaseManager.Core
             {
                 return new PostgresDiagnosis(connectionInfo);
             }
-            else if(databaseType == DatabaseType.Sqlite)
+            else if (databaseType == DatabaseType.Sqlite)
             {
                 return new SqliteDiagnosis(connectionInfo);
             }
@@ -336,7 +334,7 @@ namespace DatabaseManager.Core
 
         private List<ScriptDiagnoseResult> HandleColumnAliasWithoutQuotationChar(DbInterpreter interpreter, List<View> views)
         {
-            List<ScriptDiagnoseResult> results = new List<ScriptDiagnoseResult>();           
+            List<ScriptDiagnoseResult> results = new List<ScriptDiagnoseResult>();
 
             this.Feedback("Begin to analyse column alias...");
 

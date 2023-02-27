@@ -1,4 +1,4 @@
-﻿namespace  DatabaseInterpreter.Core
+﻿namespace DatabaseInterpreter.Core
 {
     public interface IDbProvider
     {

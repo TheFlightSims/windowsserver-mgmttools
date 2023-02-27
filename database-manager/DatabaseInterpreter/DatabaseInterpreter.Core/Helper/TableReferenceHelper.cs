@@ -26,7 +26,7 @@ namespace DatabaseInterpreter.Core
             IEnumerable<string> foreignTableNames = tableForeignKeys.Select(item => item.TableName);
 
             IEnumerable<string> notReferencedTableNames = tableNames.Where(item => !primaryTableNames.Contains(item) && !foreignTableNames.Contains(item)).OrderBy(item => item);
-            
+
             sortedTableNames.AddRange(notReferencedTableNames);
 
             IEnumerable<string> topReferencedTableNames = GetTopReferencedTableNames(tableForeignKeys);
@@ -48,13 +48,13 @@ namespace DatabaseInterpreter.Core
 
             IEnumerable<string> selfReferencedTableNames = tableForeignKeys.Where(item => item.TableName == item.ReferencedTableName)
                                                            .Select(item => item.TableName).OrderBy(item => item);
-            
+
             sortedTableNames.AddRange(selfReferencedTableNames.Where(item => !sortedTableNames.Contains(item)));
 
             return sortedTableNames;
         }
 
-        private static List<string> GetSortedTableNames(List<string>tableNames, List<TableForeignKey> tableForeignKeys)
+        private static List<string> GetSortedTableNames(List<string> tableNames, List<TableForeignKey> tableForeignKeys)
         {
             List<string> sortedTableNames = new List<string>();
 
@@ -63,7 +63,7 @@ namespace DatabaseInterpreter.Core
                 string tableName = tableNames[i];
 
                 IEnumerable<TableForeignKey> foreignKeys = tableForeignKeys.Where(item => item.TableName == tableName && item.TableName != item.ReferencedTableName);
-                               
+
                 if (foreignKeys.Any())
                 {
                     foreach (TableForeignKey foreignKey in foreignKeys)
@@ -72,7 +72,7 @@ namespace DatabaseInterpreter.Core
 
                         if (referencedTableIndex >= 0 && referencedTableIndex > i)
                         {
-                            sortedTableNames.Add(foreignKey.ReferencedTableName);                          
+                            sortedTableNames.Add(foreignKey.ReferencedTableName);
                         }
                     }
                 }
@@ -89,7 +89,7 @@ namespace DatabaseInterpreter.Core
                 string tableName = sortedTableNames[i];
 
                 IEnumerable<TableForeignKey> foreignKeys = tableForeignKeys.Where(item => item.TableName == tableName && item.TableName != item.ReferencedTableName);
-                               
+
                 if (foreignKeys.Any())
                 {
                     foreach (TableForeignKey foreignKey in foreignKeys)
@@ -122,7 +122,7 @@ namespace DatabaseInterpreter.Core
             tableNames.AddRange(foreignTableNames);
 
             IEnumerable<string> childForeignTableNames = tableForeignKeys.Where(item => foreignTableNames.Contains(item.ReferencedTableName)).Select(item => item.TableName);
-            
+
             if (childForeignTableNames.Count() > 0)
             {
                 List<string> childNames = foreignTableNames.SelectMany(item => GetForeignTables(item, tableForeignKeys, sortedTableNames)).ToList();
@@ -155,7 +155,7 @@ namespace DatabaseInterpreter.Core
                 }
             }
 
-            return tables.OrderBy(item => item.Order).ToList(); 
+            return tables.OrderBy(item => item.Order).ToList();
         }
     }
 }

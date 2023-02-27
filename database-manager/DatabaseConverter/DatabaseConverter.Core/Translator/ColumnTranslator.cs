@@ -76,7 +76,7 @@ namespace DatabaseConverter.Core
                     {
                         TranslateHelper.TranslateTableColumnDataType(this.dataTypeTranslator, column);
                     }
-                }                
+                }
 
                 if (!dataModeOnly)
                 {

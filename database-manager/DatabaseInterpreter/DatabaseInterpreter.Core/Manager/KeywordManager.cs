@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace DatabaseInterpreter.Core
 {
-    public class KeywordManager: ConfigManager
+    public class KeywordManager : ConfigManager
     {
         public static readonly string KeywordFolder = Path.Combine(ConfigRootFolder, "Keyword");
 

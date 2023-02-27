@@ -165,48 +165,6 @@
   <metadata name="contextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>21, 18</value>
   </metadata>
-  <data name="lowMemoryMappedIoSpaceToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lowMemoryMappedIoSpaceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 22</value>
-  </data>
-  <data name="lowMemoryMappedIoSpaceToolStripMenuItem.Text" xml:space="preserve">
-    <value>Max Allocated Memory</value>
-  </data>
-  <data name="LMMIOtoolStripTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="LMMIOtoolStripTextBox.MaxLength" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="LMMIOtoolStripTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
-  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>225, 6</value>
-  </data>
-  <data name="highMemoryMappedIoSpaceToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="highMemoryMappedIoSpaceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 22</value>
-  </data>
-  <data name="highMemoryMappedIoSpaceToolStripMenuItem.Text" xml:space="preserve">
-    <value>Min Allocated Memory</value>
-  </data>
-  <data name="HMMIOtoolStripTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="HMMIOtoolStripTextBox.MaxLength" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="HMMIOtoolStripTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
-  <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>225, 6</value>
-  </data>
   <data name="GCCTtoolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>228, 22</value>
   </data>
@@ -218,6 +176,12 @@
   </data>
   <data name="removegpupass.Text" xml:space="preserve">
     <value>Remove GPU Passed through</value>
+  </data>
+  <data name="changeMemoryLocationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 22</value>
+  </data>
+  <data name="changeMemoryLocationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Change Memory Location</value>
   </data>
   <data name="其它toolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 22</value>
@@ -668,46 +632,22 @@
   <data name="&gt;&gt;其它toolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lowMemoryMappedIoSpaceToolStripMenuItem.Name" xml:space="preserve">
-    <value>lowMemoryMappedIoSpaceToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;lowMemoryMappedIoSpaceToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LMMIOtoolStripTextBox.Name" xml:space="preserve">
-    <value>LMMIOtoolStripTextBox</value>
-  </data>
-  <data name="&gt;&gt;LMMIOtoolStripTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator4.Name" xml:space="preserve">
-    <value>toolStripSeparator4</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;highMemoryMappedIoSpaceToolStripMenuItem.Name" xml:space="preserve">
-    <value>highMemoryMappedIoSpaceToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;highMemoryMappedIoSpaceToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HMMIOtoolStripTextBox.Name" xml:space="preserve">
-    <value>HMMIOtoolStripTextBox</value>
-  </data>
-  <data name="&gt;&gt;HMMIOtoolStripTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator5.Name" xml:space="preserve">
-    <value>toolStripSeparator5</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;GCCTtoolStripMenuItem.Name" xml:space="preserve">
     <value>GCCTtoolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;GCCTtoolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removegpupass.Name" xml:space="preserve">
+    <value>removegpupass</value>
+  </data>
+  <data name="&gt;&gt;removegpupass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;changeMemoryLocationToolStripMenuItem.Name" xml:space="preserve">
+    <value>changeMemoryLocationToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;changeMemoryLocationToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
@@ -744,12 +684,6 @@
     <value>刷新列表toolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;刷新列表toolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;removegpupass.Name" xml:space="preserve">
-    <value>removegpupass</value>
-  </data>
-  <data name="&gt;&gt;removegpupass.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

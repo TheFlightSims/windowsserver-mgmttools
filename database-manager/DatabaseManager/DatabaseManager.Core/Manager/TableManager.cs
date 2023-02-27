@@ -760,10 +760,10 @@ namespace DatabaseManager.Core
                     return false;
                 }
 
-                if(!string.IsNullOrEmpty(column.Name) && !columnNames.Contains(column.Name))
+                if (!string.IsNullOrEmpty(column.Name) && !columnNames.Contains(column.Name))
                 {
                     columnNames.Add(column.Name);
-                }               
+                }
             }
             #endregion
 
@@ -802,7 +802,7 @@ namespace DatabaseManager.Core
                         }
                     }
 
-                    if(!string.IsNullOrEmpty(index.Name) && !indexNames.Contains(index.Name))
+                    if (!string.IsNullOrEmpty(index.Name) && !indexNames.Contains(index.Name))
                     {
                         indexNames.Add(index.Name);
                     }

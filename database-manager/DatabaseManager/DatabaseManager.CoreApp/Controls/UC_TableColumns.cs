@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DatabaseManager.Helper;
+﻿using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Model;
-using DatabaseInterpreter.Core;
-using DatabaseManager.Model;
 using DatabaseInterpreter.Utility;
+using DatabaseManager.Helper;
+using DatabaseManager.Model;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace DatabaseManager.Controls
 {
@@ -43,13 +40,13 @@ namespace DatabaseManager.Controls
         {
             if (!ManagerUtil.SupportComment(this.DatabaseType))
             {
-                if(this.colComment.Visible)
+                if (this.colComment.Visible)
                 {
                     this.colComment.Visible = false;
                     this.colColumnName.Width += 50;
                     this.colDataType.Width += 50;
                     this.colDefaultValue.Width += 50;
-                }                
+                }
             }
 
             this.LoadDataTypes();
@@ -602,7 +599,7 @@ namespace DatabaseManager.Controls
 
                 if (cell != null && cell.IsInEditMode && cell.EditedFormattedValue != cell.Value)
                 {
-                    cell.Value = cell.EditedFormattedValue;                    
+                    cell.Value = cell.EditedFormattedValue;
                 }
             }
         }

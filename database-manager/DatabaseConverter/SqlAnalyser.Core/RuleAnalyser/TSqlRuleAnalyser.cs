@@ -1,15 +1,12 @@
 ﻿using Antlr4.Runtime;
-using Antlr4.Runtime.Misc;
 using Antlr4.Runtime.Tree;
 using DatabaseInterpreter.Model;
 using DatabaseInterpreter.Utility;
-using Newtonsoft.Json.Linq;
 using SqlAnalyser.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Xml.Linq;
 using static TSqlParser;
 
 namespace SqlAnalyser.Core
@@ -841,7 +838,7 @@ namespace SqlAnalyser.Core
                     #region handle alias
                     var ts = tableSoure.table_source_item_joined()?.table_source_item();
                     var derivedTable = ts?.derived_table();
-                    var derivedTableAlias = ts?.as_table_alias()?.table_alias();                   
+                    var derivedTableAlias = ts?.as_table_alias()?.table_alias();
 
                     if (derivedTable != null && derivedTableAlias != null)
                     {
@@ -864,7 +861,7 @@ namespace SqlAnalyser.Core
                                     break;
                                 }
                             }
-                        }                       
+                        }
                     }
                     #endregion
 

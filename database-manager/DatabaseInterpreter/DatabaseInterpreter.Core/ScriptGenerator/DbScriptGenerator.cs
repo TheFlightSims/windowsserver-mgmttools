@@ -1117,7 +1117,7 @@ namespace DatabaseInterpreter.Core
                 }
             };
 
-            foreach(var item in option.Items)
+            foreach (var item in option.Items)
             {
                 if (!string.IsNullOrEmpty(item))
                 {
@@ -1128,7 +1128,7 @@ namespace DatabaseInterpreter.Core
                         appendValue(subItem);
                     }
                 }
-            }       
+            }
 
             return sb.ToString();
         }

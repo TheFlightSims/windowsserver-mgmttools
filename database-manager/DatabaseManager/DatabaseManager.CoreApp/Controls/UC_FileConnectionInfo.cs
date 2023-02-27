@@ -1,15 +1,8 @@
 ﻿using DatabaseInterpreter.Core;
 using DatabaseInterpreter.Model;
-using DatabaseManager.Model;
 using DatabaseManager.Profile;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.Common;
-using System.Drawing;
-using System.IO;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -34,7 +27,7 @@ namespace DatabaseManager.Controls
 
         public void LoadData(FileConnectionProfileInfo info, string password = null)
         {
-            this.txtFilePath.Text = info.Database;           
+            this.txtFilePath.Text = info.Database;
             this.databaseVersion = info.DatabaseVersion;
 
             if (!string.IsNullOrEmpty(password))
@@ -43,7 +36,7 @@ namespace DatabaseManager.Controls
                 this.chkRememberPassword.Checked = true;
 
                 this.txtPassword.Text = password;
-            }            
+            }
         }
 
         private void btnBrowserFile_Click(object sender, EventArgs e)
@@ -52,14 +45,14 @@ namespace DatabaseManager.Controls
 
             DialogResult result = this.openFileDialog1.ShowDialog();
 
-            if(result == DialogResult.OK)
+            if (result == DialogResult.OK)
             {
                 this.txtFilePath.Text = this.openFileDialog1.FileName;
 
-                if(this.OnFileSelect!=null)
+                if (this.OnFileSelect != null)
                 {
                     this.OnFileSelect(sender, e);
-                }                
+                }
             }
         }
 
@@ -75,12 +68,12 @@ namespace DatabaseManager.Controls
                 MessageBox.Show("File path can't be empty.");
                 return false;
             }
-         
+
             if (this.chkHasPassword.Checked && string.IsNullOrEmpty(this.txtPassword.Text.Trim()))
             {
                 MessageBox.Show("Password can't be empty.");
                 return false;
-            }            
+            }
 
             return true;
         }
@@ -129,10 +122,10 @@ namespace DatabaseManager.Controls
 
             string password = this.txtPassword.Text.Trim();
 
-            if(this.chkHasPassword.Checked && !string.IsNullOrEmpty(password))
+            if (this.chkHasPassword.Checked && !string.IsNullOrEmpty(password))
             {
                 connectionInfo.Password = password;
-            }           
+            }
 
             if (!string.IsNullOrEmpty(this.databaseVersion))
             {
@@ -149,11 +142,11 @@ namespace DatabaseManager.Controls
             this.txtPassword.Enabled = @checked;
             this.chkRememberPassword.Enabled = @checked;
 
-            if(!@checked)
+            if (!@checked)
             {
                 this.txtPassword.Text = "";
                 this.chkRememberPassword.Checked = false;
-            }            
+            }
         }
     }
 }

@@ -9,7 +9,7 @@ namespace DatabaseInterpreter.Core
     public class CreateTableOptionManager : ConfigManager
     {
         public const char OptionValueItemsSeperator = ';';
-        
+
         private static Dictionary<DatabaseType, CreateTableOption> dictCreateTableOption;
 
         public static CreateTableOption GetCreateTableOption(DatabaseType databaseType)
@@ -32,7 +32,7 @@ namespace DatabaseInterpreter.Core
 
             option.Items = root.Elements("item").Select(item => item.Value).ToList();
 
-            if(dictCreateTableOption ==null)
+            if (dictCreateTableOption == null)
             {
                 dictCreateTableOption = new Dictionary<DatabaseType, CreateTableOption>();
             }
@@ -40,6 +40,6 @@ namespace DatabaseInterpreter.Core
             dictCreateTableOption.Add(databaseType, option);
 
             return option;
-        }       
+        }
     }
 }

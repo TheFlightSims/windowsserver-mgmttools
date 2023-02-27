@@ -1,10 +1,8 @@
-﻿using DatabaseInterpreter.Model;
-using DatabaseInterpreter.Utility;
+﻿using DatabaseInterpreter.Utility;
 using SqlAnalyser.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace SqlAnalyser.Core
@@ -304,11 +302,11 @@ namespace SqlAnalyser.Core
                         }
                         else if (loop.LoopCursorInfo != null)
                         {
-                            isForLoop=true;
+                            isForLoop = true;
                             isReverse = loop.LoopCursorInfo.IsReverse;
                             iteratorName = loop.LoopCursorInfo.IteratorName.Symbol;
 
-                            if(loop.LoopCursorInfo.IsIntegerIterate)
+                            if (loop.LoopCursorInfo.IsIntegerIterate)
                             {
                                 isIntegerIterate = true;
 

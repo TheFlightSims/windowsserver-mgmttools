@@ -95,7 +95,7 @@
             // 
             this.tsmiSetting.Image = global::DatabaseManager.Resources.Config;
             this.tsmiSetting.Name = "tsmiSetting";
-            this.tsmiSetting.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSetting.Size = new System.Drawing.Size(153, 22);
             this.tsmiSetting.Text = "Setting";
             this.tsmiSetting.Click += new System.EventHandler(this.tsmiSetting_Click);
             // 
@@ -103,7 +103,7 @@
             // 
             this.tsmiDbConnection.Image = ((System.Drawing.Image)(resources.GetObject("tsmiDbConnection.Image")));
             this.tsmiDbConnection.Name = "tsmiDbConnection";
-            this.tsmiDbConnection.Size = new System.Drawing.Size(180, 22);
+            this.tsmiDbConnection.Size = new System.Drawing.Size(153, 22);
             this.tsmiDbConnection.Text = "Connection";
             this.tsmiDbConnection.Click += new System.EventHandler(this.tsmiDbConnection_Click);
             // 
@@ -111,7 +111,7 @@
             // 
             this.tsmiBackupSetting.Image = ((System.Drawing.Image)(resources.GetObject("tsmiBackupSetting.Image")));
             this.tsmiBackupSetting.Name = "tsmiBackupSetting";
-            this.tsmiBackupSetting.Size = new System.Drawing.Size(180, 22);
+            this.tsmiBackupSetting.Size = new System.Drawing.Size(153, 22);
             this.tsmiBackupSetting.Text = "Backup Setting";
             this.tsmiBackupSetting.Click += new System.EventHandler(this.tsmiBackupSetting_Click);
             // 
@@ -119,7 +119,7 @@
             // 
             this.tsmiLock.Image = global::DatabaseManager.Resources.Lock;
             this.tsmiLock.Name = "tsmiLock";
-            this.tsmiLock.Size = new System.Drawing.Size(180, 22);
+            this.tsmiLock.Size = new System.Drawing.Size(153, 22);
             this.tsmiLock.Text = "Lock";
             this.tsmiLock.Click += new System.EventHandler(this.tsmiLock_Click);
             // 
@@ -137,7 +137,7 @@
             // 
             this.tsmiWktView.Image = global::DatabaseManager.Resources.Polygon;
             this.tsmiWktView.Name = "tsmiWktView";
-            this.tsmiWktView.Size = new System.Drawing.Size(180, 22);
+            this.tsmiWktView.Size = new System.Drawing.Size(145, 22);
             this.tsmiWktView.Text = "WKT Viewer";
             this.tsmiWktView.Click += new System.EventHandler(this.tsmiWktView_Click);
             // 
@@ -145,7 +145,7 @@
             // 
             this.tsmiImageViewer.Image = global::DatabaseManager.Resources.Image;
             this.tsmiImageViewer.Name = "tsmiImageViewer";
-            this.tsmiImageViewer.Size = new System.Drawing.Size(180, 22);
+            this.tsmiImageViewer.Size = new System.Drawing.Size(145, 22);
             this.tsmiImageViewer.Text = "Image Viewer";
             this.tsmiImageViewer.Click += new System.EventHandler(this.tsmiImageViewer_Click);
             // 
@@ -166,7 +166,7 @@
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.White;
             this.splitContainer1.Panel2.Controls.Add(this.panelContent);
-            this.splitContainer1.Size = new System.Drawing.Size(917, 437);
+            this.splitContainer1.Size = new System.Drawing.Size(917, 453);
             this.splitContainer1.SplitterDistance = 175;
             this.splitContainer1.TabIndex = 8;
             // 
@@ -176,10 +176,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.navigator.Location = new System.Drawing.Point(0, 17);
-            this.navigator.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.navigator.Margin = new System.Windows.Forms.Padding(5);
             this.navigator.Name = "navigator";
-            this.navigator.Size = new System.Drawing.Size(175, 420);
+            this.navigator.Size = new System.Drawing.Size(175, 436);
             this.navigator.TabIndex = 0;
+            this.navigator.Load += new System.EventHandler(this.navigator_Load);
             // 
             // panelContent
             // 
@@ -188,19 +189,21 @@
             this.panelContent.Location = new System.Drawing.Point(0, 0);
             this.panelContent.Margin = new System.Windows.Forms.Padding(4);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(738, 437);
+            this.panelContent.Size = new System.Drawing.Size(738, 453);
             this.panelContent.TabIndex = 0;
             // 
             // ucContent
             // 
+            this.ucContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ucContent.BackColor = System.Drawing.SystemColors.Control;
-            this.ucContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucContent.Location = new System.Drawing.Point(0, 0);
-            this.ucContent.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ucContent.Location = new System.Drawing.Point(0, 17);
+            this.ucContent.Margin = new System.Windows.Forms.Padding(0);
             this.ucContent.Name = "ucContent";
-            this.ucContent.Size = new System.Drawing.Size(738, 437);
+            this.ucContent.Size = new System.Drawing.Size(738, 439);
             this.ucContent.TabIndex = 0;
-            this.ucContent.Visible = false;
+            this.ucContent.Load += new System.EventHandler(this.ucContent_Load);
             // 
             // toolStrip1
             // 
@@ -328,7 +331,7 @@
             this.txtMessage.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMessage.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txtMessage.ForeColor = System.Drawing.Color.Black;
-            this.txtMessage.Location = new System.Drawing.Point(0, 495);
+            this.txtMessage.Location = new System.Drawing.Point(0, 511);
             this.txtMessage.Margin = new System.Windows.Forms.Padding(4);
             this.txtMessage.Name = "txtMessage";
             this.txtMessage.ReadOnly = true;
@@ -346,7 +349,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(917, 511);
+            this.ClientSize = new System.Drawing.Size(917, 527);
             this.Controls.Add(this.txtMessage);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.splitContainer1);

@@ -38,9 +38,9 @@
             // 
             // btnLock
             // 
-            this.btnLock.Location = new System.Drawing.Point(115, 68);
+            this.btnLock.Location = new System.Drawing.Point(115, 60);
             this.btnLock.Name = "btnLock";
-            this.btnLock.Size = new System.Drawing.Size(75, 30);
+            this.btnLock.Size = new System.Drawing.Size(75, 26);
             this.btnLock.TabIndex = 0;
             this.btnLock.Text = "Lock";
             this.btnLock.UseVisualStyleBackColor = true;
@@ -49,15 +49,15 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(37, 29);
+            this.lblPassword.Location = new System.Drawing.Point(37, 26);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(67, 17);
+            this.lblPassword.Size = new System.Drawing.Size(60, 15);
             this.lblPassword.TabIndex = 2;
             this.lblPassword.Text = "Password:";
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(115, 26);
+            this.txtPassword.Location = new System.Drawing.Point(115, 23);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -67,9 +67,9 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(215, 68);
+            this.btnExit.Location = new System.Drawing.Point(215, 60);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 30);
+            this.btnExit.Size = new System.Drawing.Size(75, 26);
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "Cancel";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -79,18 +79,18 @@
             // 
             this.lblMessage.AutoSize = true;
             this.lblMessage.ForeColor = System.Drawing.Color.Red;
-            this.lblMessage.Location = new System.Drawing.Point(8, 113);
+            this.lblMessage.Location = new System.Drawing.Point(24, 95);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(398, 17);
+            this.lblMessage.Size = new System.Drawing.Size(354, 15);
             this.lblMessage.TabIndex = 8;
             this.lblMessage.Text = "The application has been locked, please enter password to unlock.";
             this.lblMessage.Visible = false;
             // 
             // frmLockApp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(405, 135);
+            this.ClientSize = new System.Drawing.Size(405, 119);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.txtPassword);

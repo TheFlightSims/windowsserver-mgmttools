@@ -1,9 +1,9 @@
-﻿using System;
+﻿using DatabaseInterpreter.Model;
+using DatabaseInterpreter.Utility;
+using DatabaseManager.Model;
+using System;
 using System.Data;
 using System.Windows.Forms;
-using DatabaseManager.Model;
-using DatabaseInterpreter.Model;
-using DatabaseInterpreter.Utility;
 
 namespace DatabaseManager
 {

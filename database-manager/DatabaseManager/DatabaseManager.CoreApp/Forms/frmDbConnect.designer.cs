@@ -42,10 +42,10 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(144, 387);
+            this.btnConfirm.Location = new System.Drawing.Point(144, 341);
             this.btnConfirm.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(88, 33);
+            this.btnConfirm.Size = new System.Drawing.Size(88, 29);
             this.btnConfirm.TabIndex = 9;
             this.btnConfirm.Text = "OK";
             this.btnConfirm.UseVisualStyleBackColor = true;
@@ -54,10 +54,10 @@
             // lblDatabase
             // 
             this.lblDatabase.AutoSize = true;
-            this.lblDatabase.Location = new System.Drawing.Point(16, 295);
+            this.lblDatabase.Location = new System.Drawing.Point(16, 260);
             this.lblDatabase.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDatabase.Name = "lblDatabase";
-            this.lblDatabase.Size = new System.Drawing.Size(66, 17);
+            this.lblDatabase.Size = new System.Drawing.Size(58, 15);
             this.lblDatabase.TabIndex = 11;
             this.lblDatabase.Text = "Database:";
             // 
@@ -68,10 +68,10 @@
             this.cboDatabase.DropDownHeight = 200;
             this.cboDatabase.FormattingEnabled = true;
             this.cboDatabase.IntegralHeight = false;
-            this.cboDatabase.Location = new System.Drawing.Point(144, 290);
+            this.cboDatabase.Location = new System.Drawing.Point(144, 256);
             this.cboDatabase.Margin = new System.Windows.Forms.Padding(4);
             this.cboDatabase.Name = "cboDatabase";
-            this.cboDatabase.Size = new System.Drawing.Size(193, 25);
+            this.cboDatabase.Size = new System.Drawing.Size(193, 23);
             this.cboDatabase.TabIndex = 7;
             this.cboDatabase.SelectedIndexChanged += new System.EventHandler(this.cboDatabase_SelectedIndexChanged);
             this.cboDatabase.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cboDatabase_MouseClick);
@@ -79,16 +79,16 @@
             // lblProfileName
             // 
             this.lblProfileName.AutoSize = true;
-            this.lblProfileName.Location = new System.Drawing.Point(16, 337);
+            this.lblProfileName.Location = new System.Drawing.Point(16, 297);
             this.lblProfileName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProfileName.Name = "lblProfileName";
-            this.lblProfileName.Size = new System.Drawing.Size(84, 17);
+            this.lblProfileName.Size = new System.Drawing.Size(77, 15);
             this.lblProfileName.TabIndex = 16;
             this.lblProfileName.Text = "Profile name:";
             // 
             // txtProfileName
             // 
-            this.txtProfileName.Location = new System.Drawing.Point(143, 333);
+            this.txtProfileName.Location = new System.Drawing.Point(143, 294);
             this.txtProfileName.Margin = new System.Windows.Forms.Padding(4);
             this.txtProfileName.Name = "txtProfileName";
             this.txtProfileName.Size = new System.Drawing.Size(193, 23);
@@ -96,10 +96,10 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(250, 387);
+            this.btnCancel.Location = new System.Drawing.Point(250, 341);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(88, 33);
+            this.btnCancel.Size = new System.Drawing.Size(88, 29);
             this.btnCancel.TabIndex = 17;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -108,10 +108,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 23);
+            this.label2.Location = new System.Drawing.Point(19, 20);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
+            this.label2.Size = new System.Drawing.Size(41, 15);
             this.label2.TabIndex = 19;
             this.label2.Text = "Mode:";
             // 
@@ -119,10 +119,10 @@
             // 
             this.rbInput.AutoSize = true;
             this.rbInput.Checked = true;
-            this.rbInput.Location = new System.Drawing.Point(142, 21);
+            this.rbInput.Location = new System.Drawing.Point(142, 19);
             this.rbInput.Margin = new System.Windows.Forms.Padding(4);
             this.rbInput.Name = "rbInput";
-            this.rbInput.Size = new System.Drawing.Size(56, 21);
+            this.rbInput.Size = new System.Drawing.Size(53, 19);
             this.rbInput.TabIndex = 20;
             this.rbInput.TabStop = true;
             this.rbInput.Text = "Input";
@@ -131,10 +131,10 @@
             // rbChoose
             // 
             this.rbChoose.AutoSize = true;
-            this.rbChoose.Location = new System.Drawing.Point(265, 21);
+            this.rbChoose.Location = new System.Drawing.Point(265, 19);
             this.rbChoose.Margin = new System.Windows.Forms.Padding(4);
             this.rbChoose.Name = "rbChoose";
-            this.rbChoose.Size = new System.Drawing.Size(70, 21);
+            this.rbChoose.Size = new System.Drawing.Size(65, 19);
             this.rbChoose.TabIndex = 21;
             this.rbChoose.Text = "Choose";
             this.rbChoose.UseVisualStyleBackColor = true;
@@ -143,17 +143,18 @@
             // ucDbAccountInfo
             // 
             this.ucDbAccountInfo.DatabaseType = DatabaseInterpreter.Model.DatabaseType.SqlServer;
-            this.ucDbAccountInfo.Location = new System.Drawing.Point(6, 52);
-            this.ucDbAccountInfo.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.ucDbAccountInfo.Location = new System.Drawing.Point(6, 46);
+            this.ucDbAccountInfo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ucDbAccountInfo.Name = "ucDbAccountInfo";
-            this.ucDbAccountInfo.Size = new System.Drawing.Size(435, 230);
+            this.ucDbAccountInfo.Size = new System.Drawing.Size(435, 203);
             this.ucDbAccountInfo.TabIndex = 1;
+            this.ucDbAccountInfo.Load += new System.EventHandler(this.ucDbAccountInfo_Load);
             // 
             // frmDbConnect
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(455, 435);
+            this.ClientSize = new System.Drawing.Size(455, 384);
             this.Controls.Add(this.rbChoose);
             this.Controls.Add(this.rbInput);
             this.Controls.Add(this.label2);

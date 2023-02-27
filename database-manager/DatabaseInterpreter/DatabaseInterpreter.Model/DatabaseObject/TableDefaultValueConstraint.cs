@@ -1,7 +1,7 @@
 ﻿namespace DatabaseInterpreter.Model
 {
-    public class TableDefaultValueConstraint: TableColumnChild
-    {        
-        
+    public class TableDefaultValueConstraint : TableColumnChild
+    {
+
     }
 }

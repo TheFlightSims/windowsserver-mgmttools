@@ -35,7 +35,7 @@ namespace DatabaseManager.Core
                 option.RemoveCarriagRreturnChar = removeCarriagRreturnChar;
                 option.ConvertConcatChar = TranslateHelper.NeedConvertConcatChar(SettingManager.Setting.ConvertConcatCharTargetDatabases, targetDbType);
 
-                dbConverter.Subscribe(this.observer);               
+                dbConverter.Subscribe(this.observer);
 
                 DbConvertResult result = await dbConverter.Translate(dbObject);
 
@@ -75,8 +75,8 @@ namespace DatabaseManager.Core
             {
                 scriptDbObjects = this.ConvertScriptDbObject<TableTrigger>(script);
                 translator = this.GetScriptTranslator<TableTrigger>(scriptDbObjects, sourceDbInterpreter, targetDbInterpreter);
-            }           
-            else 
+            }
+            else
             {
                 scriptDbObjects = new List<ScriptDbObject>() { new ScriptDbObject() { Definition = script } };
 
@@ -101,7 +101,7 @@ namespace DatabaseManager.Core
                 List<TranslateResult> results = translator.TranslateResults;
 
                 result = results.FirstOrDefault();
-            }              
+            }
 
             return result;
         }
@@ -116,7 +116,7 @@ namespace DatabaseManager.Core
             list.Add(t);
 
             return list;
-        }        
+        }
 
         private ScriptTranslator<T> GetScriptTranslator<T>(IEnumerable<T> dbObjects, DbInterpreter sourceDbInterpreter, DbInterpreter targetDbInterpreter) where T : ScriptDbObject
         {
@@ -126,7 +126,7 @@ namespace DatabaseManager.Core
             translator.AutoMakeupSchemaName = false;
 
             return translator;
-        }      
+        }
 
         public void Subscribe(IObserver<FeedbackInfo> observer)
         {

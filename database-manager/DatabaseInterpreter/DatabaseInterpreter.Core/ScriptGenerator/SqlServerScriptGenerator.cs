@@ -21,10 +21,10 @@ namespace DatabaseInterpreter.Core
             #region User Defined Type            
             foreach (UserDefinedType userDefinedType in schemaInfo.UserDefinedTypes)
             {
-                this.FeedbackInfo(OperationState.Begin, userDefinedType);                
+                this.FeedbackInfo(OperationState.Begin, userDefinedType);
 
                 sb.AppendLine(this.CreateUserDefinedType(userDefinedType));
-                sb.AppendLine(new SpliterScript(this.scriptsDelimiter));                
+                sb.AppendLine(new SpliterScript(this.scriptsDelimiter));
 
                 this.FeedbackInfo(OperationState.End, userDefinedType);
             }
@@ -33,9 +33,9 @@ namespace DatabaseInterpreter.Core
             #region Sequence          
             foreach (Sequence sequence in schemaInfo.Sequences)
             {
-                this.FeedbackInfo(OperationState.Begin, sequence);                
+                this.FeedbackInfo(OperationState.Begin, sequence);
 
-                sb.AppendLine(this.CreateSequence(sequence));                           
+                sb.AppendLine(this.CreateSequence(sequence));
 
                 this.FeedbackInfo(OperationState.End, sequence);
             }
@@ -137,7 +137,7 @@ namespace DatabaseInterpreter.Core
 
         public override Script AddTableColumn(Table table, TableColumn column)
         {
-            return new CreateDbObjectScript<TableColumn>($"ALTER TABLE {this.GetQuotedDbObjectNameWithSchema(table)} ADD { this.dbInterpreter.ParseColumn(table, column)}");
+            return new CreateDbObjectScript<TableColumn>($"ALTER TABLE {this.GetQuotedDbObjectNameWithSchema(table)} ADD {this.dbInterpreter.ParseColumn(table, column)}");
         }
 
         public override Script RenameTableColumn(Table table, TableColumn column, string newName)
@@ -167,7 +167,7 @@ namespace DatabaseInterpreter.Core
 
         public override Script AddPrimaryKey(TablePrimaryKey primaryKey)
         {
-            string pkName = string.IsNullOrEmpty(primaryKey.Name)? this.GetQuotedString($"PK_{primaryKey.TableName}"): this.GetQuotedString(primaryKey.Name);
+            string pkName = string.IsNullOrEmpty(primaryKey.Name) ? this.GetQuotedString($"PK_{primaryKey.TableName}") : this.GetQuotedString(primaryKey.Name);
 
             string script =
 $@"ALTER TABLE {this.GetQuotedFullTableName(primaryKey)} ADD CONSTRAINT
@@ -187,15 +187,15 @@ $@"ALTER TABLE {this.GetQuotedFullTableName(primaryKey)} ADD CONSTRAINT
         public override Script AddForeignKey(TableForeignKey foreignKey)
         {
             string quotedTableName = this.GetQuotedFullTableName(foreignKey);
-            string fkName = string.IsNullOrEmpty(foreignKey.Name)? this.GetQuotedString($"FK_{foreignKey.TableName}_{foreignKey.ReferencedTableName}"): this.GetQuotedString(foreignKey.Name);
+            string fkName = string.IsNullOrEmpty(foreignKey.Name) ? this.GetQuotedString($"FK_{foreignKey.TableName}_{foreignKey.ReferencedTableName}") : this.GetQuotedString(foreignKey.Name);
 
-            string columnNames = string.Join(",", foreignKey.Columns.Select(item => $"{ this.GetQuotedString(item.ColumnName)}"));
-            string referencedColumnName = string.Join(",", foreignKey.Columns.Select(item => $"{ this.GetQuotedString(item.ReferencedColumnName)}"));
+            string columnNames = string.Join(",", foreignKey.Columns.Select(item => $"{this.GetQuotedString(item.ColumnName)}"));
+            string referencedColumnName = string.Join(",", foreignKey.Columns.Select(item => $"{this.GetQuotedString(item.ReferencedColumnName)}"));
 
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine(
-$@"ALTER TABLE {quotedTableName} WITH CHECK ADD CONSTRAINT { fkName } FOREIGN KEY({columnNames})
+$@"ALTER TABLE {quotedTableName} WITH CHECK ADD CONSTRAINT {fkName} FOREIGN KEY({columnNames})
 REFERENCES {this.GetQuotedDbObjectNameWithSchema(foreignKey.ReferencedSchema, foreignKey.ReferencedTableName)} ({referencedColumnName})");
 
             if (foreignKey.UpdateCascade)
@@ -220,7 +220,7 @@ REFERENCES {this.GetQuotedDbObjectNameWithSchema(foreignKey.ReferencedSchema, fo
 
         public override Script AddIndex(TableIndex index)
         {
-            string columnNames = string.Join(",", index.Columns.Select(item => $"{this.GetQuotedString(item.ColumnName)}{(item.IsDesc?" DESC":"")}"));
+            string columnNames = string.Join(",", index.Columns.Select(item => $"{this.GetQuotedString(item.ColumnName)}{(item.IsDesc ? " DESC" : "")}"));
 
             string unique = index.IsUnique ? "UNIQUE" : "";
             string clustered = index.Clustered ? "CLUSTERED" : "NONCLUSTERED";
@@ -290,13 +290,13 @@ REFERENCES {this.GetQuotedDbObjectNameWithSchema(foreignKey.ReferencedSchema, fo
 
         public override Script SetIdentityEnabled(TableColumn column, bool enabled)
         {
-            return new AlterDbObjectScript<Table>($"SET IDENTITY_INSERT { this.GetQuotedFullTableName(column) } {(enabled ? "OFF" : "ON")}");
+            return new AlterDbObjectScript<Table>($"SET IDENTITY_INSERT {this.GetQuotedFullTableName(column)} {(enabled ? "OFF" : "ON")}");
         }
 
         #endregion
 
         #region Database Operation
-        public override Script CreateSchema(DatabaseSchema schema) 
+        public override Script CreateSchema(DatabaseSchema schema)
         {
             string script = $"CREATE SCHEMA {this.GetQuotedString(schema.Name)};";
 
@@ -337,7 +337,7 @@ CREATE TABLE {quotedTableName}(
             #endregion
 
             #region Comment
-            if(this.option.TableScriptsGenerateOption.GenerateComment)
+            if (this.option.TableScriptsGenerateOption.GenerateComment)
             {
                 if (!string.IsNullOrEmpty(table.Comment))
                 {
@@ -348,7 +348,7 @@ CREATE TABLE {quotedTableName}(
                 {
                     sb.AppendLine(this.SetTableColumnComment(table, column, true));
                 }
-            }            
+            }
             #endregion
 
             #region Default Value
@@ -358,11 +358,11 @@ CREATE TABLE {quotedTableName}(
 
                 foreach (TableColumn column in defaultValueColumns)
                 {
-                    if(ValueHelper.IsSequenceNextVal(column.DefaultValue))
+                    if (ValueHelper.IsSequenceNextVal(column.DefaultValue))
                     {
                         continue;
                     }
-                    else if(column.DefaultValue.ToUpper().TrimStart().StartsWith("CREATE DEFAULT"))
+                    else if (column.DefaultValue.ToUpper().TrimStart().StartsWith("CREATE DEFAULT"))
                     {
                         continue;
                     }
@@ -449,14 +449,14 @@ CREATE TABLE {quotedTableName}(
 
         public override Script CreateSequence(Sequence sequence)
         {
-            string script = 
+            string script =
 $@"CREATE SEQUENCE {this.GetQuotedDbObjectNameWithSchema(sequence)} AS {sequence.DataType} 
 START WITH {sequence.StartValue}
 INCREMENT BY {sequence.Increment}
 MINVALUE {(long)sequence.MinValue}
 MAXVALUE {(long)sequence.MaxValue}
-{(sequence.Cycled? "CYCLE" : "")}
-{(sequence.UseCache? "CACHE":"")}{(sequence.CacheSize>0? $" {sequence.CacheSize}" : "")};";
+{(sequence.Cycled ? "CYCLE" : "")}
+{(sequence.UseCache ? "CACHE" : "")}{(sequence.CacheSize > 0 ? $" {sequence.CacheSize}" : "")};";
 
             return new CreateDbObjectScript<Sequence>(script);
         }
