@@ -1,3 +1,4 @@
+
 ![Windows Server Management Tools - Banner](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/docs_image.png?raw=true)
 # The Repository
 
@@ -9,8 +10,7 @@
 - *Remote install for MSI installer*
 - *Passthrough physical device into virtual machine*
 - *Activation services for server*
-
-...and so much more
+- Manage updates for servers and clients
 
 For better understanding, you can see the [wiki page](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki).
 
