@@ -31,3 +31,16 @@ D:\#source-code\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.csproj.
 D:\#source-code\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.csproj.CoreCompileInputs.cache
 D:\#source-code\windowsserver-mgmttools\gpo-checker\obj\Debug\GPO Checker.exe
 D:\#source-code\windowsserver-mgmttools\gpo-checker\obj\Debug\GPO Checker.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\Group Policy Checker\GPO Checker.exe.config
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\Group Policy Checker\GPO Checker.exe
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\Group Policy Checker\GPO Checker.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.csproj.AssemblyReference.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.csproj.SuggestedBindingRedirects.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.GPOChecker.resources
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.Properties.Resources.resources
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.Update.resources
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.csproj.GenerateResource.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.csproj.CoreCompileInputs.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\gpo-checker\obj\Debug\GPOChecker.csproj.CopyComplete
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\gpo-checker\obj\Debug\GPO Checker.exe
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\gpo-checker\obj\Debug\GPO Checker.pdb

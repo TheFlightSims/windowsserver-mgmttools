@@ -1,0 +1,10 @@
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\WindowsUpdateControlService\WuDataContract\Debug\net48\WuDataContract.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\WindowsUpdateControlService\WuDataContract\Debug\net48\WuDataContract.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net48\WuDataContract.csproj.AssemblyReference.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net48\WuDataContract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net48\WuDataContract.AssemblyInfoInputs.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net48\WuDataContract.AssemblyInfo.cs
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net48\WuDataContract.csproj.CoreCompileInputs.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net48\WuDataContract.csproj.CopyComplete
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net48\WuDataContract.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContract\obj\Debug\net48\WuDataContract.pdb

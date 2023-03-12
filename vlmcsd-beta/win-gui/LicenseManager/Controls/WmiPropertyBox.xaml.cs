@@ -1,13 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using HGM.Hotbird64.LicenseManager.Contracts;
 using System.ComponentModel;
 using System.Globalization;
-using System.Management;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
 using System.Windows.Input;
-using HGM.Hotbird64.LicenseManager.Contracts;
-using HGM.Hotbird64.LicenseManager.WPF.Converters;
 
 namespace HGM.Hotbird64.LicenseManager.Controls
 {
@@ -51,7 +47,7 @@ namespace HGM.Hotbird64.LicenseManager.Controls
             {
                 if (ContextMenu == null)
                 {
-                    Box.ContextMenu=new ContextMenu();
+                    Box.ContextMenu = new ContextMenu();
                 }
                 else
                 {
@@ -59,8 +55,8 @@ namespace HGM.Hotbird64.LicenseManager.Controls
                     ContextMenu = null;
                 }
 
-                Box.ContextMenu.Items.Add(new MenuItem {Command = ApplicationCommands.Copy});
-                Box.ContextMenu.Items.Add(new MenuItem {Command = ApplicationCommands.SelectAll});
+                Box.ContextMenu.Items.Add(new MenuItem { Command = ApplicationCommands.Copy });
+                Box.ContextMenu.Items.Add(new MenuItem { Command = ApplicationCommands.SelectAll });
             };
         }
 

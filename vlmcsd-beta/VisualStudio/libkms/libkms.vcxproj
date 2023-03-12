@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2A0FC04D-C3C0-43E2-8812-53AE901C5395}</ProjectGuid>
     <RootNamespace>vlmcsdmulti-Windows</RootNamespace>
-    <ProjectName>libkms-Windows</ProjectName>
     <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+    <ProjectName>libkms-Windows</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -60,7 +60,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v141_xp</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -100,7 +100,7 @@
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>..\..\..\!bin!\vlmcsd\vlmcsd-core</OutDir>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
     <TargetName>libkms64</TargetName>
     <GenerateManifest>false</GenerateManifest>
     <TargetExt>.dll</TargetExt>
@@ -110,6 +110,7 @@
     <TargetName>$(ProjectName)64</TargetName>
     <TargetExt>.dll</TargetExt>
     <OutDir>..\..\..\!bin!\vlmcsd</OutDir>
+    <IntDir>..\..\..\!bin!\vlmcsd</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <GenerateManifest>false</GenerateManifest>

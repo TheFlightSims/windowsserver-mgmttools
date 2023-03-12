@@ -86,7 +86,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>B79E6A9335DD430F69809DCA93C295216540EAFC</ManifestCertificateThumbprint>
@@ -120,6 +120,9 @@
     </ApplicationDefinition>
     <Compile Include="AboutBox.xaml.cs">
       <DependentUpon>AboutBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActivateByPhone.xaml.cs">
+      <DependentUpon>ActivateByPhone.xaml</DependentUpon>
     </Compile>
     <Compile Include="API\BinaryProductKey.cs" />
     <Compile Include="API\KmsDataBase.cs" />
@@ -238,6 +241,10 @@
     <Compile Include="WPF\Converters\ConverterBase.cs" />
     <Compile Include="WPF\Converters\Wmi.cs" />
     <Page Include="AboutBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ActivateByPhone.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

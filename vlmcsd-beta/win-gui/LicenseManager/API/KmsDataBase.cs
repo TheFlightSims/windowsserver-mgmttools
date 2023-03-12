@@ -1,10 +1,10 @@
-﻿using System.Collections.Concurrent;
-using System.Collections.ObjectModel;
-using System.Runtime.CompilerServices;
-using HGM.Hotbird64.LicenseManager;
+﻿using HGM.Hotbird64.LicenseManager;
 using HGM.Hotbird64.LicenseManager.Contracts;
 using HGM.Hotbird64.LicenseManager.Extensions;
 using LicenseManager.Annotations;
+using System.Collections.Concurrent;
+using System.Collections.ObjectModel;
+using System.Runtime.CompilerServices;
 
 // ReSharper disable PartialTypeWithSinglePart
 

@@ -48,159 +48,168 @@ namespace GPOChecker
         {
             if (State == 0)
             {
-                var guid = new Guid("31B2F340-016D-11D2-945F-00C04FB984F9");
-                var domain = new GPDomain(System.Net.NetworkInformation.IPGlobalProperties.GetIPGlobalProperties().DomainName);
-                Gpo = domain.GetGpo(guid);
-                var gpoReport = Gpo.GenerateReport(ReportType.Xml);
-                XmlDocument doc = new XmlDocument();
-                doc.LoadXml(gpoReport);
-
-                List<XmlNode> extensionData = new List<XmlNode>();
-                XmlNode extIter = GetChildByName(GetChildByName(doc.LastChild, "Computer"), "ExtensionData");
-                while (extIter != null)
+                try 
                 {
-                    if (extIter.Name == "ExtensionData")
-                    {
-                        extensionData.Add(extIter);
-                    }
-                    extIter = extIter.NextSibling;
-                }
+                    var domain = new GPDomain(System.Net.NetworkInformation.IPGlobalProperties.GetIPGlobalProperties().DomainName);
+                    var guid = new Guid("31B2F340-016D-11D2-945F-00C04FB984F9");
+                    Gpo = domain.GetGpo(guid);
+                    var gpoReport = Gpo.GenerateReport(ReportType.Xml);
+                    XmlDocument doc = new XmlDocument();
+                    doc.LoadXml(gpoReport);
 
-                extIter = GetChildByName(GetChildByName(doc.LastChild, "User"), "ExtensionData");
-                while (extIter != null)
-                {
-                    if (extIter.Name == "ExtensionData")
+                    List<XmlNode> extensionData = new List<XmlNode>();
+                    XmlNode extIter = GetChildByName(GetChildByName(doc.LastChild, "Computer"), "ExtensionData");
+                    while (extIter != null)
                     {
-                        extensionData.Add(extIter);
-                    }
-                    extIter = extIter.NextSibling;
-                }
-
-                var i = 2;
-                foreach (XmlNode data in extensionData)
-                {
-                    XmlNode extensions = data.FirstChild;
-                    if (data == extensionData[0])
-                    {
-                        foreach (XmlNode pol in extensions)
+                        if (extIter.Name == "ExtensionData")
                         {
-                            if (pol.Name == "q1:Account")
-                            {
-                                var name = GetChildByName(pol, "q1:Name");
-                                var num = GetChildByName(pol, "q1:SettingNumber");
-                                var tf = GetChildByName(pol, "q1:SettingBoolean");
-                                if (name != null && num != null)
-                                {
-                                    Policies1.Add(pol.ChildNodes[0].InnerText, Int32.Parse(pol.ChildNodes[1].InnerText));
-                                }
-                                if (name != null && tf != null)
-                                {
-                                    if (tf.InnerText == "true")
-                                    {
-                                        Policies1.Add(pol.ChildNodes[0].InnerText, 1);
-                                    }
-                                    else
-                                    {
-                                        Policies1.Add(pol.ChildNodes[0].InnerText, 0);
-                                    }
-                                }
-                            }
+                            extensionData.Add(extIter);
                         }
+                        extIter = extIter.NextSibling;
                     }
-                    else
-                    {
-                        if (GetChildByName(data, "Name") != null && GetChildByName(data, "Name").InnerText == "Windows Firewall")
-                        {
-                            //Special case as the firewall is displayed differently
 
+                    extIter = GetChildByName(GetChildByName(doc.LastChild, "User"), "ExtensionData");
+                    while (extIter != null)
+                    {
+                        if (extIter.Name == "ExtensionData")
+                        {
+                            extensionData.Add(extIter);
+                        }
+                        extIter = extIter.NextSibling;
+                    }
+
+                    var i = 2;
+                    foreach (XmlNode data in extensionData)
+                    {
+                        XmlNode extensions = data.FirstChild;
+                        if (data == extensionData[0])
+                        {
                             foreach (XmlNode pol in extensions)
                             {
-                                if (pol.Name == "q" + i + ":DomainProfile")
+                                if (pol.Name == "q1:Account")
                                 {
-                                    var lpm = GetChildByName(pol, "q" + i + ":AllowLocalPolicyMerge");
-                                    var lpmState = (lpm == null) ? 2 : (lpm.InnerText == "true") ? 1 : 0;
-                                    Policies1.Add("Domain Profile - Apply local firewall rules", lpmState);
-                                    var efw = GetChildByName(pol, "q" + i + ":EnableFirewall");
-                                    var efwState = (efw == null) ? 2 : (efw.InnerText == "true") ? 1 : 0;
-                                    Policies1.Add("Domain Profile", efwState);
-                                }
-                                else if (pol.Name == "q" + i + ":PrivateProfile")
-                                {
-                                    var lpm = GetChildByName(pol, "q" + i + ":AllowLocalPolicyMerge");
-                                    var lpmState = (lpm == null) ? 2 : (lpm.InnerText == "true") ? 1 : 0;
-                                    Policies1.Add("Private Profile - Apply local firewall rules", lpmState);
-                                    var efw = GetChildByName(pol, "q" + i + ":EnableFirewall");
-                                    var efwState = (efw == null) ? 2 : (efw.InnerText == "true") ? 1 : 0;
-                                    Policies1.Add("Private Profile", efwState);
-                                }
-                                else if (pol.Name == "q5:PublicProfile")
-                                {
-                                    var lpm = GetChildByName(pol, "q" + i + ":AllowLocalPolicyMerge");
-                                    var lpmState = (lpm == null) ? 2 : (lpm.InnerText == "true") ? 1 : 0;
-                                    Policies1.Add("Public Profile - Apply local firewall rules", lpmState);
-                                    var efw = GetChildByName(pol, "q" + i + ":EnableFirewall");
-                                    var efwState = (efw == null) ? 2 : (efw.InnerText == "true") ? 1 : 0;
-                                    Policies1.Add("Public Profile", efwState);
-
+                                    var name = GetChildByName(pol, "q1:Name");
+                                    var num = GetChildByName(pol, "q1:SettingNumber");
+                                    var tf = GetChildByName(pol, "q1:SettingBoolean");
+                                    if (name != null && num != null)
+                                    {
+                                        Policies1.Add(pol.ChildNodes[0].InnerText, Int32.Parse(pol.ChildNodes[1].InnerText));
+                                    }
+                                    if (name != null && tf != null)
+                                    {
+                                        if (tf.InnerText == "true")
+                                        {
+                                            Policies1.Add(pol.ChildNodes[0].InnerText, 1);
+                                        }
+                                        else
+                                        {
+                                            Policies1.Add(pol.ChildNodes[0].InnerText, 0);
+                                        }
+                                    }
                                 }
                             }
                         }
                         else
                         {
-                            foreach (XmlNode pol in extensions)
+                            if (GetChildByName(data, "Name") != null && GetChildByName(data, "Name").InnerText == "Windows Firewall")
                             {
-                                if (pol.Name == "q" + i.ToString() + ":Policy")
+                                //Special case as the firewall is displayed differently
+
+                                foreach (XmlNode pol in extensions)
                                 {
-                                    var name = GetChildByName(pol, "q" + i.ToString() + ":Name");
-                                    var state = GetChildByName(pol, "q" + i.ToString() + ":State");
-                                    if (name != null && state != null)
-                                    { 
-                                        /*
-                                        if (state.InnerText == "Enabled")
-                                        {
-                                            try { Policies1.Add(pol.ChildNodes[0].InnerText, 0); }
-                                            catch (Exception) { }
-                                        }
-                                        else if (state.InnerText == "Disabled")
-                                        {
-                                            Policies1.Add(pol.ChildNodes[0].InnerText, 0);
-                                        }
-                                        else
-                                        {
-                                        */
-                                        //Policies1.Add(pol.ChildNodes[0].InnerText, 2);
-                                        //}
-                                        
+                                    if (pol.Name == "q" + i + ":DomainProfile")
+                                    {
+                                        var lpm = GetChildByName(pol, "q" + i + ":AllowLocalPolicyMerge");
+                                        var lpmState = (lpm == null) ? 2 : (lpm.InnerText == "true") ? 1 : 0;
+                                        Policies1.Add("Domain Profile - Apply local firewall rules", lpmState);
+                                        var efw = GetChildByName(pol, "q" + i + ":EnableFirewall");
+                                        var efwState = (efw == null) ? 2 : (efw.InnerText == "true") ? 1 : 0;
+                                        Policies1.Add("Domain Profile", efwState);
+                                    }
+                                    else if (pol.Name == "q" + i + ":PrivateProfile")
+                                    {
+                                        var lpm = GetChildByName(pol, "q" + i + ":AllowLocalPolicyMerge");
+                                        var lpmState = (lpm == null) ? 2 : (lpm.InnerText == "true") ? 1 : 0;
+                                        Policies1.Add("Private Profile - Apply local firewall rules", lpmState);
+                                        var efw = GetChildByName(pol, "q" + i + ":EnableFirewall");
+                                        var efwState = (efw == null) ? 2 : (efw.InnerText == "true") ? 1 : 0;
+                                        Policies1.Add("Private Profile", efwState);
+                                    }
+                                    else if (pol.Name == "q5:PublicProfile")
+                                    {
+                                        var lpm = GetChildByName(pol, "q" + i + ":AllowLocalPolicyMerge");
+                                        var lpmState = (lpm == null) ? 2 : (lpm.InnerText == "true") ? 1 : 0;
+                                        Policies1.Add("Public Profile - Apply local firewall rules", lpmState);
+                                        var efw = GetChildByName(pol, "q" + i + ":EnableFirewall");
+                                        var efwState = (efw == null) ? 2 : (efw.InnerText == "true") ? 1 : 0;
+                                        Policies1.Add("Public Profile", efwState);
+
                                     }
                                 }
                             }
+                            else
+                            {
+                                foreach (XmlNode pol in extensions)
+                                {
+                                    if (pol.Name == "q" + i.ToString() + ":Policy")
+                                    {
+                                        var name = GetChildByName(pol, "q" + i.ToString() + ":Name");
+                                        var state = GetChildByName(pol, "q" + i.ToString() + ":State");
+                                        if (name != null && state != null)
+                                        {
+                                            /*
+                                            if (state.InnerText == "Enabled")
+                                            {
+                                                try { Policies1.Add(pol.ChildNodes[0].InnerText, 0); }
+                                                catch (Exception) { }
+                                            }
+                                            else if (state.InnerText == "Disabled")
+                                            {
+                                                Policies1.Add(pol.ChildNodes[0].InnerText, 0);
+                                            }
+                                            else
+                                            {
+                                            */
+                                            //Policies1.Add(pol.ChildNodes[0].InnerText, 2);
+                                            //}
+
+                                        }
+                                    }
+                                }
+                            }
+                            i++;
                         }
-                        i++;
                     }
-                }
 
-                XmlDocument policies = new XmlDocument();
-                Assembly assembly = Assembly.GetExecutingAssembly();
-                _ = assembly.GetManifestResourceNames();
-                Stream stream = assembly.GetManifestResourceStream("GPOChecker.PoliciesXML.xml");
-                policies.Load(stream);
+                    XmlDocument policies = new XmlDocument();
+                    Assembly assembly = Assembly.GetExecutingAssembly();
+                    _ = assembly.GetManifestResourceNames();
+                    Stream stream = assembly.GetManifestResourceStream("GPOChecker.PoliciesXML.xml");
+                    policies.Load(stream);
 
-                XmlNode p = policies.ChildNodes[1].ChildNodes[0];
+                    XmlNode p = policies.ChildNodes[1].ChildNodes[0];
 
-                while (p != null)
-                {
-                    if (p.NodeType.ToString() == "Element")
+                    while (p != null)
                     {
-                        Pols.Add(new PolicySection(p));
+                        if (p.NodeType.ToString() == "Element")
+                        {
+                            Pols.Add(new PolicySection(p));
+                        }
+                        p = p.NextSibling;
                     }
-                    p = p.NextSibling;
+
+                    State = 1;
+                    GuidanceButton.Visible = true;
+                    MarkAsDone.Visible = true;
+                    NextButton.Text = "Next >>";
+                    this.Text = Pols[Section].Name;
+
                 }
-                
-                State = 1;
-                GuidanceButton.Visible = true;
-                MarkAsDone.Visible = true;
-                NextButton.Text = "Next >>";
-                this.Text = Pols[Section].Name;
+                catch (Exception)
+                {
+                    MessageBox.Show($"Your computer is not joined into the domain, nor the domain cannot be contacted.", $"Error", MessageBoxButtons.OK);
+                }
+
             }
 
             if (State == 1)

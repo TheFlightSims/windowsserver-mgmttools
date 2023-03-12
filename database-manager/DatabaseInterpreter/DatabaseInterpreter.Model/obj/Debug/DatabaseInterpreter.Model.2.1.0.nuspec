@@ -14,6 +14,6 @@ add "ColumnName" for "TableConstraint"</releaseNotes>
     </dependencies>
   </metadata>
   <files>
-    <file src="D:\#source-code\windowsserver-mgmttools\!bin!\DatabaseManager\dbinter\model\Debug\netstandard2.1\DatabaseInterpreter.Model.dll" target="lib\netstandard2.1\DatabaseInterpreter.Model.dll" />
+    <file src="C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\dbinter\model\Debug\netstandard2.1\DatabaseInterpreter.Model.dll" target="lib\netstandard2.1\DatabaseInterpreter.Model.dll" />
   </files>
 </package>

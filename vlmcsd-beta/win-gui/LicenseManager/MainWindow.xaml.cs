@@ -1,5 +1,7 @@
 ﻿using HGM.Hotbird64.LicenseManager.Contracts;
+using HGM.Hotbird64.LicenseManager.Controls;
 using HGM.Hotbird64.LicenseManager.Extensions;
+using HGM.Hotbird64.LicenseManager.Model;
 using HGM.Hotbird64.Vlmcs;
 using Microsoft.Win32;
 using System;
@@ -21,10 +23,7 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Xml.Schema;
-using HGM.Hotbird64.LicenseManager.Controls;
-using HGM.Hotbird64.LicenseManager.Model;
 
-// ReSharper disable CheckNamespace
 
 namespace HGM.Hotbird64.LicenseManager
 {
@@ -118,10 +117,12 @@ namespace HGM.Hotbird64.LicenseManager
             get => selectedProductIndex;
             set => this.SetProperty(ref selectedProductIndex, value, postAction: () =>
             {
-                try {
+                try
+                {
                     License.LicenseProvider = Machine.LicenseProvidersList[Machine.ProductLicenseList[value].ServiceIndex];
                     License.SelectedLicense = Machine.ProductLicenseList[value];
-                } catch (Exception)
+                }
+                catch (Exception)
                 {
                     //ignored because of the useless of that
                 }
@@ -263,6 +264,12 @@ namespace HGM.Hotbird64.LicenseManager
             {
                 ComboBoxProductId.SelectedIndex = 0;
             }
+        }
+
+        private void PhoneActivation_Click(object sender, RoutedEventArgs e)
+        {
+            var ActivateByPhone = new ActivateByPhone(this);
+            ActivateByPhone.Show();
         }
 
         internal async void Button_Refresh_Clicked(object sender, RoutedEventArgs e)
@@ -665,13 +672,11 @@ namespace HGM.Hotbird64.LicenseManager
 
             try
             {
-                // ReSharper disable PossibleNullReferenceException
                 var part1 = uint.Parse(biosInfo.Uuid.Substring(0, 8), NumberStyles.AllowHexSpecifier);
                 var part2 = ushort.Parse(biosInfo.Uuid.Substring(9, 4), NumberStyles.AllowHexSpecifier);
                 var part3 = ushort.Parse(biosInfo.Uuid.Substring(14, 4), NumberStyles.AllowHexSpecifier);
                 var part4 = ushort.Parse(biosInfo.Uuid.Substring(19, 4), NumberStyles.AllowHexSpecifier);
                 var part5 = ulong.Parse(biosInfo.Uuid.Substring(24, 12), NumberStyles.AllowHexSpecifier);
-                // ReSharper restore PossibleNullReferenceException
 
                 if (new[] { "Vbox", "QEMU", "Parallels" }.Contains(vmName))
                 {
@@ -1170,7 +1175,7 @@ namespace HGM.Hotbird64.LicenseManager
             var host = TextBoxKeyManagementServiceMachine.Text;
             var port = TextBoxKeyManagementServicePort.Text;
             var activationType = (uint)ComboBoxVlActivationTypeEnabled.SelectedIndex;
-      
+
             try
             {
                 await Task.Run(() =>
@@ -1185,14 +1190,14 @@ namespace HGM.Hotbird64.LicenseManager
                 Machine.SetKeyManagementOverrides_Product(1, "kms.loli.beer", "kms.loli.beer", "1688");
                 Machine.SetVlActivationTypeEnabled(1, activationType);
                 MessageBox.Show(
-                    this, 
+                    this,
                     "Not all settings could be saved. Will be saved as the default setting: \n" +
                     "KMS Server: kms.loli.beer\n" +
                     "Port: 1688\n" +
-                    "\nFor further information about the bug, see here: \n" + ex.Message, 
-                    "Error", 
-                    MessageBoxButton.OK, 
-                    MessageBoxImage.Error );
+                    "\nFor further information about the bug, see here: \n" + ex.Message,
+                    "Error",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
             }
 
             if (sender == ButtonSave)
@@ -1573,8 +1578,6 @@ namespace HGM.Hotbird64.LicenseManager
                 ValidateNames = true,
                 Title = "Load a Custom KMS Database"
             };
-
-            // ReSharper disable once PossibleInvalidOperationException
             if (!dialog.ShowDialog().Value)
             {
                 return;
@@ -1587,7 +1590,7 @@ namespace HGM.Hotbird64.LicenseManager
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        public void NotifyOfPropertyChange([CallerMemberName]string propertyName = null)
+        public void NotifyOfPropertyChange([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

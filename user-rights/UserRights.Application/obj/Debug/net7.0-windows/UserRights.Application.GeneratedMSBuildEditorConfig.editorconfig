@@ -1,6 +1,4 @@
 is_global = true
-build_property.CsWin32InputMetadataPaths = C:\Users\Administrator\.nuget\packages\microsoft.windows.sdk.win32metadata\39.0.18-preview\buildTransitive\..\Windows.Win32.winmd
-build_property.CsWin32InputDocPaths = C:\Users\Administrator\.nuget\packages\microsoft.windows.sdk.win32docs\0.1.12-alpha\buildTransitive\..\apidocs.msgpack
 build_property.TargetFramework = net7.0-windows
 build_property.TargetPlatformMinVersion = 7.0
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -10,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UserRights.Application
-build_property.ProjectDir = D:\#source-code\windowsserver-mgmttools\user-rights\UserRights.Application\
+build_property.ProjectDir = C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\user-rights\UserRights.Application\

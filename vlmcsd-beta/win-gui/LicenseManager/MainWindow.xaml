@@ -50,6 +50,7 @@
                                 <icons:Unlock Width="16"/>
                             </MenuItem.Icon>
                         </MenuItem>
+                        <MenuItem x:Name="PhoneActivation" Header="Activate By Phone (Windows only)" Click="PhoneActivation_Click" />
                         <MenuItem x:Name="MenuItemUninstallKey" Header="_Uninstall Product Key" Click="MenuItemUninstallKey_Click" />
                         <MenuItem x:Name="MenuItemBrowseDatabase" Header="_Browse Database" Click="MenuItem_Browse_Click"
                                   ToolTip="Opens a Window that lets you browse the entire Pkeyconfig database"

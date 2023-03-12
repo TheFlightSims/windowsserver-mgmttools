@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UserRights.Cli
-build_property.ProjectDir = D:\#source-code\windowsserver-mgmttools\user-rights\UserRights.Cli\
+build_property.ProjectDir = C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\user-rights\UserRights.Cli\

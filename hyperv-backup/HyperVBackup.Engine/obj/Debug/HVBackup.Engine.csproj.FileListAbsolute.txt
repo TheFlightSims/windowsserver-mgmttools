@@ -14,3 +14,11 @@ D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\De
 D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HVBackup.Engine.csproj.CopyComplete
 D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HyperVBackUp.Engine.dll
 D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HyperVBackUp.Engine.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\Hyper-V Backup\NLog.config
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\Hyper-V Backup\HyperVBackUp.Engine.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\Hyper-V Backup\HyperVBackUp.Engine.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HVBackup.Engine.csproj.AssemblyReference.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HVBackup.Engine.csproj.CoreCompileInputs.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HVBackup.Engine.csproj.CopyComplete
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HyperVBackUp.Engine.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Engine\obj\Debug\HyperVBackUp.Engine.pdb

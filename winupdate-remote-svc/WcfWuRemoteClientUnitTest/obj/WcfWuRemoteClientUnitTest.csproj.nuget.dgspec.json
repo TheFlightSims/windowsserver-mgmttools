@@ -1,28 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClientUnitTest\\WcfWuRemoteClientUnitTest.csproj": {}
+    "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClientUnitTest\\WcfWuRemoteClientUnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClientUnitTest\\WcfWuRemoteClientUnitTest.csproj": {
+    "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClientUnitTest\\WcfWuRemoteClientUnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClientUnitTest\\WcfWuRemoteClientUnitTest.csproj",
+        "projectUniqueName": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClientUnitTest\\WcfWuRemoteClientUnitTest.csproj",
         "projectName": "WcfWuRemoteClientUnitTest",
-        "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClientUnitTest\\WcfWuRemoteClientUnitTest.csproj",
-        "packagesPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClientUnitTest\\obj\\",
+        "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClientUnitTest\\WcfWuRemoteClientUnitTest.csproj",
+        "packagesPath": "C:\\Users\\takineko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClientUnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator.THEFLIGHTSIMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\takineko\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net462"
+          "net48"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,20 +30,20 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net462": {
-            "targetAlias": "net462",
+          "net48": {
+            "targetAlias": "net48",
             "projectReferences": {
-              "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClient\\WcfWuRemoteClient.csproj": {
-                "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClient\\WcfWuRemoteClient.csproj"
+              "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClient\\WcfWuRemoteClient.csproj": {
+                "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClient\\WcfWuRemoteClient.csproj"
               },
-              "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\WindowsUpdateApiController.csproj": {
-                "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\WindowsUpdateApiController.csproj"
+              "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\WindowsUpdateApiController.csproj": {
+                "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\WindowsUpdateApiController.csproj"
               },
-              "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuApiMocks\\WuApiMocks.csproj": {
-                "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuApiMocks\\WuApiMocks.csproj"
+              "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuApiMocks\\WuApiMocks.csproj": {
+                "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuApiMocks\\WuApiMocks.csproj"
               },
-              "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj": {
-                "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj"
+              "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj": {
+                "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj"
               }
             }
           }
@@ -55,8 +55,8 @@
         }
       },
       "frameworks": {
-        "net462": {
-          "targetAlias": "net462",
+        "net48": {
+          "targetAlias": "net48",
           "dependencies": {
             "MSTest.TestAdapter": {
               "target": "Package",
@@ -75,29 +75,29 @@
               "version": "[4.14.1, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClient\\WcfWuRemoteClient.csproj": {
+    "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClient\\WcfWuRemoteClient.csproj": {
       "version": "1.0.3.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClient\\WcfWuRemoteClient.csproj",
+        "projectUniqueName": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClient\\WcfWuRemoteClient.csproj",
         "projectName": "WcfWuRemoteClient",
-        "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClient\\WcfWuRemoteClient.csproj",
-        "packagesPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClient\\obj\\",
+        "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClient\\WcfWuRemoteClient.csproj",
+        "packagesPath": "C:\\Users\\takineko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WcfWuRemoteClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator.THEFLIGHTSIMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\takineko\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net462"
+          "net48"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -105,11 +105,11 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net462": {
-            "targetAlias": "net462",
+          "net48": {
+            "targetAlias": "net48",
             "projectReferences": {
-              "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj": {
-                "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj"
+              "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj": {
+                "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj"
               }
             }
           }
@@ -121,8 +121,8 @@
         }
       },
       "frameworks": {
-        "net462": {
-          "targetAlias": "net462",
+        "net48": {
+          "targetAlias": "net48",
           "dependencies": {
             "CCSWE.Core": {
               "target": "Package",
@@ -133,7 +133,7 @@
               "version": "[2.0.10, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -142,25 +142,25 @@
         }
       }
     },
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\WindowsUpdateApiController.csproj": {
+    "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\WindowsUpdateApiController.csproj": {
       "version": "1.0.1.14",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\WindowsUpdateApiController.csproj",
+        "projectUniqueName": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\WindowsUpdateApiController.csproj",
         "projectName": "WindowsUpdateApiController",
-        "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\WindowsUpdateApiController.csproj",
-        "packagesPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\obj\\",
+        "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\WindowsUpdateApiController.csproj",
+        "packagesPath": "C:\\Users\\takineko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator.THEFLIGHTSIMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\takineko\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net462"
+          "net48"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -168,11 +168,11 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net462": {
-            "targetAlias": "net462",
+          "net48": {
+            "targetAlias": "net48",
             "projectReferences": {
-              "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj": {
-                "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj"
+              "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj": {
+                "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj"
               }
             }
           }
@@ -184,37 +184,37 @@
         }
       },
       "frameworks": {
-        "net462": {
-          "targetAlias": "net462",
+        "net48": {
+          "targetAlias": "net48",
           "dependencies": {
             "log4net": {
               "target": "Package",
               "version": "[2.0.10, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuApiMocks\\WuApiMocks.csproj": {
+    "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuApiMocks\\WuApiMocks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuApiMocks\\WuApiMocks.csproj",
+        "projectUniqueName": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuApiMocks\\WuApiMocks.csproj",
         "projectName": "WuApiMocks",
-        "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuApiMocks\\WuApiMocks.csproj",
-        "packagesPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuApiMocks\\obj\\",
+        "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuApiMocks\\WuApiMocks.csproj",
+        "packagesPath": "C:\\Users\\takineko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuApiMocks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator.THEFLIGHTSIMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\takineko\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net462"
+          "net48"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -222,14 +222,14 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net462": {
-            "targetAlias": "net462",
+          "net48": {
+            "targetAlias": "net48",
             "projectReferences": {
-              "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\WindowsUpdateApiController.csproj": {
-                "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\WindowsUpdateApiController.csproj"
+              "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\WindowsUpdateApiController.csproj": {
+                "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WindowsUpdateApiController\\WindowsUpdateApiController.csproj"
               },
-              "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj": {
-                "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj"
+              "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj": {
+                "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj"
               }
             }
           }
@@ -241,37 +241,37 @@
         }
       },
       "frameworks": {
-        "net462": {
-          "targetAlias": "net462",
+        "net48": {
+          "targetAlias": "net48",
           "dependencies": {
             "Moq": {
               "target": "Package",
               "version": "[4.14.1, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj": {
+    "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj": {
       "version": "1.2.1.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj",
+        "projectUniqueName": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj",
         "projectName": "WuDataContract",
-        "projectPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj",
-        "packagesPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\obj\\",
+        "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\WuDataContract.csproj",
+        "packagesPath": "C:\\Users\\takineko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator.THEFLIGHTSIMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\takineko\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net462"
+          "net48"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -279,8 +279,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net462": {
-            "targetAlias": "net462",
+          "net48": {
+            "targetAlias": "net48",
             "projectReferences": {}
           }
         },
@@ -291,15 +291,15 @@
         }
       },
       "frameworks": {
-        "net462": {
-          "targetAlias": "net462",
+        "net48": {
+          "targetAlias": "net48",
           "dependencies": {
             "System.ServiceModel.Primitives": {
               "target": "Package",
               "version": "[4.7.0, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

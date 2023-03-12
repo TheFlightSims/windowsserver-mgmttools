@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>net48</TargetFramework>
     <Authors>Elia Seikritt</Authors>
     <Product>WuDataContractUnitTest</Product>
     <NeutralLanguage>en</NeutralLanguage>
     <Copyright>Copyright(C) 2016-2020 Elia Seikritt</Copyright>
+    <BaseOutputPath>..\..\!bin!\WindowsUpdateControlService\WcfWuRemoteClient</BaseOutputPath>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />

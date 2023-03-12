@@ -1,2 +1,0 @@
-C:\Users\sameh\source\repos\WinMan\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
-C:\Users\sameh\.jenkins\workspace\WinMan\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

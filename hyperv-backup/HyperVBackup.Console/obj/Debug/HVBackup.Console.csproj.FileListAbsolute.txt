@@ -18,3 +18,13 @@ D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\D
 D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HVBackup.Console.csproj.CopyComplete
 D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HyperVBackup.exe
 D:\#source-code\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HyperVBackup.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\Hyper-V Backup\NLog.config
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\Hyper-V Backup\HyperVBackup.exe.config
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\Hyper-V Backup\HyperVBackup.exe
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\Hyper-V Backup\HyperVBackup.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HVBackup.Console.csproj.AssemblyReference.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HVBackup.Console.csproj.SuggestedBindingRedirects.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HVBackup.Console.csproj.CoreCompileInputs.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HVBackup.Console.csproj.CopyComplete
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HyperVBackup.exe
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\hyperv-backup\HyperVBackup.Console\obj\Debug\HyperVBackup.pdb

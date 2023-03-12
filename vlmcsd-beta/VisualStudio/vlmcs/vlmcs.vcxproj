@@ -98,13 +98,14 @@
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>..\..\..\!bin!\vlmcsd\vlmcsd-core</OutDir>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
     <TargetName>vlmcs-Windows-x64</TargetName>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <GenerateManifest>false</GenerateManifest>
-    <OutDir>..\..\..\!bin!\vlmcsd</OutDir>
+    <OutDir>..\..\..\!bin!\vlmcsd-linux</OutDir>
+    <IntDir>..\..\..\!bin!\vlmcsd-linux</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <GenerateManifest>false</GenerateManifest>

@@ -28,7 +28,7 @@
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="D:\#source-code\windowsserver-mgmttools\!bin!\DatabaseManager\GUI\CoreApp\Debug\net7.0-windows\DatabaseManager.CoreApp.runtimeconfig.json" target="lib\net7.0-windows7.0\DatabaseManager.CoreApp.runtimeconfig.json" />
-    <file src="D:\#source-code\windowsserver-mgmttools\!bin!\DatabaseManager\GUI\CoreApp\Debug\net7.0-windows\DatabaseManager.CoreApp.dll" target="lib\net7.0-windows7.0\DatabaseManager.CoreApp.dll" />
+    <file src="C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\GUI\CoreApp\Debug\net7.0-windows\DatabaseManager.CoreApp.runtimeconfig.json" target="lib\net7.0-windows7.0\DatabaseManager.CoreApp.runtimeconfig.json" />
+    <file src="C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\GUI\CoreApp\Debug\net7.0-windows\DatabaseManager.CoreApp.dll" target="lib\net7.0-windows7.0\DatabaseManager.CoreApp.dll" />
   </files>
 </package>

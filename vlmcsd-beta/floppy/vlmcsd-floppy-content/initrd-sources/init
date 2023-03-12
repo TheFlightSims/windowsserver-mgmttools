@@ -1,0 +1,339 @@
+#!/bin/bash
+
+get_kernel_command_line_parameter()
+{
+  while [ "$1" != "" ]; do
+    eval $(echo -n $(cat /proc/cmdline) | awk "match(\$0, /$1=\\S*\\s/) { printf \"%s\", substr(\$0, RSTART, RLENGTH - 1) }")
+    shift
+  done
+}
+
+export PATH=/bin
+export HOME=/
+export LOGNAME=root
+export USER=root
+
+/bin/busybox --install -s /bin
+mount -t proc none /proc
+mount -t devtmpfs none /dev
+mkdir /dev/pts
+mkdir /dev/shm
+chmod 1777 /dev/shm
+mount -t devpts none /dev/pts
+mount -t sysfs none /sys
+
+sysctl -w net.ipv6.conf.eth0.accept_dad=0 >/dev/null
+sysctl -w net.ipv6.conf.default.accept_dad=0 >/dev/null
+ifconfig eth0 up
+ifconfig lo up
+ifconfig lo 127.0.0.1
+
+sysctl -w net.ipv6.conf.eth0.use_tempaddr=2 >/dev/null
+
+chmod 644 /init
+
+for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
+  setfont /usr/share/fonts/lat9-16.psf -C /dev/tty$i
+done
+
+[ "$KBD" != "" ] && k $KBD
+
+setconsole /dev/tty1
+
+REGEX_IPV4_CIDR='/^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\/([0-9]|[1-2][0-9]|3[0-2]))$/'
+REGEX_IPV4='/^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/'
+REGEX_HOSTNAME='/^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$/'
+
+HOST_NAME=$(echo $HOST_NAME | awk $REGEX_HOSTNAME )
+[ "$HOST_NAME" == "" ] && hostname vlmcsd
+[ "$HOST_NAME" == "" ] || hostname $HOST_NAME
+
+[ "$ROOT_PASSWORD" == "" ] && ROOT_PASSWORD=vlmcsd
+[ "$USER_PASSWORD" == "" ] && USER_PASSWORD=vlmcsd
+[ "$GUEST_PASSWORD" == "" ] && GUEST_PASSWORD=vlmcsd
+[ "$USER_NAME" == "" ] && USER_NAME=hotbird64
+
+sed -e "s/hotbird64:/$USER_NAME:/g" /etc/passwd >/etc/passwd2
+mv -f /etc/passwd2 /etc/passwd
+rm -f /etc/passwd-
+[ "$USER_NAME" != "hotbird64" ] && mv /home/hotbird64 /home/$USER_NAME
+
+echo "%s %r %v (%l)" > /etc/issue
+vlmcsd -V | head -n 1 >> /etc/issue
+echo "Created by Hotbird64" >> /etc/issue
+echo "" >> /etc/issue 
+
+if [ "$WINDOWS" != "" ]; then
+  epid_line="Windows = $WINDOWS"
+  [ "$HWID" != "" ] && epid_line="$epid_line / $HWID"
+  echo "$epid_line" >> /etc/vlmcsd.ini
+fi
+
+if [ "$OFFICE2010" != "" ]; then
+  epid_line="Office2010 = $OFFICE2010"
+  [ "$HWID" != "" ] && epid_line="$epid_line / $HWID"
+  echo "$epid_line" >> /etc/vlmcsd.ini
+fi
+
+if [ "$OFFICE2013" != "" ]; then
+  epid_line="Office2013 = $OFFICE2013"
+  [ "$HWID" != "" ] && epid_line="$epid_line / $HWID"
+  echo "$epid_line" >> /etc/vlmcsd.ini
+fi
+
+if [ "$OFFICE2016" != "" ]; then
+  epid_line="Office2016 = $OFFICE2016"
+  [ "$HWID" != "" ] && epid_line="$epid_line / $HWID"
+  echo "$epid_line" >> /etc/vlmcsd.ini
+fi
+
+if [ "$OFFICE2019" != "" ]; then
+  epid_line="Office2019 = $OFFICE2019"
+  [ "$HWID" != "" ] && epid_line="$epid_line / $HWID"
+  echo "$epid_line" >> /etc/vlmcsd.ini
+fi
+
+if [ "$WINCHINAGOV" != "" ]; then
+  epid_line="WinChinaGov = $WINCHINAGOV"
+  [ "$HWID" != "" ] && epid_line="$epid_line / $HWID"
+  echo "$epid_line" >> /etc/vlmcsd.ini
+fi
+
+unset epid_line
+
+echo " ======================================================== "
+echo "|                  VLMCSD Floppy-disk                    |"
+echo "|              TheFlightSims (ft. Hotbird64)             |"
+echo "|                  Contribute more on                    |"
+echo "|    github.com/TheFlightSims/windowsserver-mgmttols     |"
+echo " ======================================================== "
+echo -e "\n"
+
+echo " ======================================================== "
+echo "|             List of users you can sign into            |"
+echo " -------------------------------------------------------- "
+echo "|             Username        |          Password        |"
+echo "|              root           |           vlmcsd         |"
+echo "|              guest          |           vlmcsd         |"
+echo " ======================================================== "
+echo -e "\n"
+echo -e "$ROOT_PASSWORD\n$ROOT_PASSWORD" | passwd root >/dev/null 2>&1
+echo -e "$GUEST_PASSWORD\n$GUEST_PASSWORD" | passwd guest >/dev/null 2>&1
+
+unset ROOT_PASSWORD GUEST_PASSWORD
+chmod 400 /proc/cmdline
+
+/bin/getty.sh 2 &
+/bin/getty.sh 3 &
+/bin/getty.sh 4 &
+/bin/getty.sh 5 &
+/bin/getty.sh 6 &
+
+IPV4_ADDRESS_SAVE=$IPV4_ADDRESS
+IPV4_GATEWAY_SAVE=$IPV4_GATEWAY
+IPV4_DNS1_SAVE=$IPV4_DNS1
+IPV4_DNS2_SAVE=$IPV4_DNS2
+NTP_SERVER_SAVE=$NTP_SERVER
+HOST_NAME_SAVE=$HOST_NAME
+
+if [ "$IPV4_CONFIG" != "DHCP" ] && [ "$IPV4_CONFIG" != "STATIC" ]; then
+  echo "WARNING: wrong/missing boot parameter 'IPV4_CONFIG=$IPV4_CONFIG'."
+  echo "Enter configuration manually..."
+  KEY="m"
+else
+  echo -e "Press m to enter IPv4 & timezone configuration \nPress t to start configure timezone configuration only \nPress s to enter pre-vlmcsd-service shell."
+  read -s -t10 -n1 KEY
+
+  if [ "$KEY" == "s" ]; then
+    export HOME=/root
+    chvt 9
+    getty -n -l /bin/loginshell 38400 tty9
+    chvt 1
+    export HOME=/
+  fi
+fi
+
+echo ""
+
+if [ "$KEY" == "m" ] || [ "$KEY" == "t" ] || [ "$TZ" == "" ]; then
+  read -p "Timezone (e.g.: PST8PDT, M3.2.0, M11.1.0 or JST-9, UTC2, UTC-7. Default: UTC0): " TZ
+  [ "$TZ" == "" ] && TZ=UTC0
+  DUMMY=$(echo "")
+fi
+
+if [ "$TZ" != "" ]; then
+  export TZ
+  echo $TZ > /etc/timezone
+fi
+
+if [ "$KEY" != "m" ]; then
+  IPV4_ADDRESS=$(echo $IPV4_ADDRESS | awk $REGEX_IPV4_CIDR )
+  [ "$IPV4_GATEWAY" == "NONE" ] || IPV4_GATEWAY=$(echo $IPV4_GATEWAY | awk $REGEX_IPV4 )
+  [ "$IPV4_DNS1" == "NONE" ] || IPV4_DNS1=$(echo $IPV4_DNS1 | awk $REGEX_IPV4 )
+  [ "$IPV4_DNS2" == "NONE" ] || IPV4_DNS2=$(echo $IPV4_DNS2 | awk $REGEX_IPV4 )
+  HOST_NAME=$(echo $HOST_NAME | awk $REGEX_HOSTNAME )
+
+  if [ "$NTP_SERVER" != "NONE" ]; then
+    NTP_SERVER_TEMP1=$(echo $NTP_SERVER | awk $REGEX_IPV4 )
+    [ "$NTP_SERVER_TEMP1" == "" ] || NTP_SERVER="$NTP_SERVER_TEMP1"
+    [ "$NTP_SERVER_TEMP1" == "" ] && NTP_SERVER=$(echo $NTP_SERVER | awk $REGEX_HOSTNAME )
+  fi
+else
+  unset IPV4_ADDRESS IPV4_GATEWAY IPV4_DNS1 IPV4_DNS2 NTP_SERVER HOST_NAME
+fi
+
+if [ "$KEY" != "m" ] && [ "$IPV4_CONFIG" == "STATIC" ]; then
+  [ "$IPV4_ADDRESS" == "" ] && echo "WARNING: wrong/missing boot parameter 'IPV4_ADDRESS=$IPV4_ADDRESS_SAVE'."
+  [ "$IPV4_GATEWAY" == "" ] && echo "WARNING: wrong/missing boot parameter 'IPV4_GATEWAY=$IPV4_GATEWAY_SAVE'."
+  [ "$IPV4_DNS1" == "" ] && echo "WARNING: wrong/missing boot parameter 'IPV4_DNS1=$IPV4_DNS1_SAVE'."
+  [ "$IPV4_DNS2" == "" ] && echo "WARNING: wrong/missing boot parameter 'IPV4_DNS2=$IPV4_DNS2_SAVE'."
+  [ "$NTP_SERVER" == "" ] && echo "WARNING: wrong/missing boot parameter 'NTP_SERVER=$NTP_SERVER_SAVE'."
+  [ "$HOST_NAME" == "" ] && echo "WARNING: wrong/missing boot parameter 'HOST_NAME=$HOST_NAME_SAVE'."
+  echo ""
+fi
+
+if [ "$KEY" == "m" ] || [ "$IPV4_CONFIG" != "DHCP" ]; then
+
+  while [ "$IPV4_ADDRESS" == "" ]; do
+    read -p "<IPv4 address>/<mask> in CIDR format (example: 192.168.0.123/24): " IPV4_ADDRESS
+    IPV4_ADDRESS=$(echo $IPV4_ADDRESS | awk $REGEX_IPV4_CIDR )
+    [ "$IPV4_ADDRESS" == "" ] && echo -e '\007ERROR: Incorrect input'
+  done
+
+  while [ "$IPV4_GATEWAY" == "" ]; do
+    read -p "<IPv4 address> of gateway (example: 192.168.0.1, NONE for none) : " IPV4_GATEWAY_INPUT
+    [ "$IPV4_GATEWAY_INPUT" != "NONE" ] && IPV4_GATEWAY=$(echo $IPV4_GATEWAY_INPUT | awk $REGEX_IPV4 )
+    if [ "$IPV4_GATEWAY_INPUT" == "NONE" ]; then IPV4_GATEWAY="NONE"; DUMMY=$(echo ""); fi
+    [ "$IPV4_GATEWAY" == "" ] && echo -e '\007ERROR: Incorrect input'
+  done
+
+  while [ "$IPV4_DNS1" == "" ]; do
+    read -p "<IPv4 address> of DNS server 1 (default: 8.8.8.8, NONE for none): " IPV4_DNS1
+    [ "$IPV4_DNS1" == "" ] && IPV4_DNS1="8.8.8.8"
+    [ "$IPV4_DNS1" == "NONE" ] || IPV4_DNS1=$(echo $IPV4_DNS1 | awk $REGEX_IPV4 )
+    [ "$IPV4_DNS1" == "NONE" ] && DUMMY=$(echo "")
+    [ "$IPV4_DNS1" == "" ] && echo -e '\007ERROR: Incorrect input'
+  done
+
+  while [ "$IPV4_DNS2" == "" ]; do
+    [ "$IPV4_DNS1" == "8.8.8.8" ] || read -p "<IPv4 address> of DNS server 2 (e.g. 8.8.4.4, empty for none)   : " IPV4_DNS2_INPUT
+    [ "$IPV4_DNS1" == "8.8.8.8" ] && read -p "<IPv4 address> of DNS server 2 (default 8.8.4.4)                : " IPV4_DNS2_INPUT
+
+    if [ "$IPV4_DNS2_INPUT" != "" ]; then
+      IPV4_DNS2=$(echo $IPV4_DNS2_INPUT | awk $REGEX_IPV4 )
+    else
+      IPV4_DNS2="NONE"
+      [ "$IPV4_DNS1" == "8.8.8.8" ] && IPV4_DNS2="8.8.4.4"
+      DUMMY=$(echo "")
+    fi
+    [ "$IPV4_DNS2" == "" ] && echo -e '\007ERROR: Incorrect input'
+  done
+
+  while [ "$NTP_SERVER" == "" ]; do
+    read -p "NTP (time) server (default pool.ntp.org, NONE for none)         : " NTP_SERVER_INPUT
+    if [ "$NTP_SERVER_INPUT" == "" ]; then NTP_SERVER="pool.ntp.org"; DUMMY=$(echo ""); fi
+    if [ "$NTP_SERVER_INPUT" == "NONE" ]; then NTP_SERVER="NONE"; DUMMY=$(echo ""); fi
+    [ "$NTP_SERVER" == "" ] && NTP_SERVER=$(echo $NTP_SERVER_INPUT | awk $REGEX_IPV4 )
+    [ "$NTP_SERVER" == "" ] && NTP_SERVER=$(echo $NTP_SERVER_INPUT | awk $REGEX_HOSTNAME )
+    [ "$NTP_SERVER" == "" ] && echo -e '\007ERROR: Incorrect input'
+  done
+
+  while [ "$HOST_NAME" == "" ]; do
+    read -p "Host name (default vlmcsd)                                      : " HOST_NAME
+    [ "$HOST_NAME" == "" ] && HOST_NAME="vlmcsd"
+    HOST_NAME=$(echo $HOST_NAME | awk $REGEX_HOSTNAME )
+    [ "$HOST_NAME" == "" ] && echo -e '\007ERROR: Incorrect input'
+  done
+
+  ip -4 addr add $IPV4_ADDRESS dev eth0
+  eval $(ipcalc -bs $IPV4_ADDRESS)
+  ifconfig eth0 broadcast $BROADCAST
+
+  [ "$IPV4_GATEWAY" != "NONE" ] && route add -net default netmask 0.0.0.0 gw $IPV4_GATEWAY dev eth0 #ip -4 route add default dev eth0 via $IPV4_GATEWAY
+
+  rm -f /etc/resolv.conf
+  [ "$IPV4_DNS1" != "NONE" ] && echo "nameserver" $IPV4_DNS1 >> /etc/resolv.conf
+  [ "$IPV4_DNS2" != "NONE" ] && echo "nameserver" $IPV4_DNS2 >> /etc/resolv.conf
+
+  hostname $HOST_NAME
+  [ "$NTP_SERVER" != "NONE" ] && echo "server $NTP_SERVER" > /etc/ntp.conf
+else
+  [ "$NTP_SERVER" == "" ] && NTP_SERVER="pool.ntp.org"
+  [ "$NTP_SERVER" != "NONE" ] && echo "server $NTP_SERVER" > /etc/ntp.conf
+
+  echo "Acquiring IPv4 address via DHCPv4"
+  udhcpc -T 4 -t 5 -b
+fi
+
+if [ "$NTP_SERVER" != "NONE" ]; then
+  if [  -s /etc/ntp.conf ]; then
+    echo "Acquiring time from" $(cat /etc/ntp.conf | cut -d ' ' -f2)
+    ntpd -g
+  else
+    echo "Acquiring time from $NTP_SERVER"
+    ntpd -g -p $NTP_SERVER
+  fi
+fi
+
+echo ""
+echo "IPv4 address:" `ip addr show dev eth0 | sed -nr 's/.*inet ([^ ]+).*/\1/p'`
+ifconfig eth0 |  awk '/inet6/{print "IPv6 address: " $3}'
+echo ""
+
+[ "$INETD" == "" ] && INETD="Y"
+
+if [ "$INETD" == "Y" ]; then
+  echo -e "telnet and ftp are enabled\n"
+  inetd
+fi
+
+echo -e "\nClient check time is enabled. If the time difference on the client is more than 4 hours, the activation is refused.\n"
+echo -e "vlmcsd log file stores at /var/log/vlmcsd.log.\nYou can edit the vlmcsd configuration at /etc/vlmcsd.ini to re-design the log file location"
+echo -e "\nPress ALT-F2 to ALT-F6 to login locally or ALT-F8 for menu\n"
+
+if [ "$(echo $LISTEN | awk '/^PRIVATE(:([0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])){0,1}$/')" != "" ]; then
+  inport=$(echo $LISTEN | cut -d: -f2)
+  [ "$inport" == "PRIVATE" ] && port="1688"
+  [ "$inport" == "PRIVATE" ] || port="$inport"
+  ipv4list=$(ip -4 addr show | sed -nr 's|.*inet ([^ ]+).*/[0-9]*.*|\1|p')
+  ipv6list=$(ip -6 addr show | sed -nr 's/[\s ]*inet6 ([^ ]+)[0-9a-f:]*\/[0-9]* scope .*/\1/p')
+
+  for ip in $ipv4list; do
+    eval $(ipcalc -n $ip/16)
+    [ "$NETWORK" == "192.168.0.0" ] && echo "Listen = [$ip]:$port" >> /etc/vlmcsd.ini
+    [ "$NETWORK" == "169.254.0.0" ] && echo "Listen = [$ip]:$port" >> /etc/vlmcsd.ini
+    
+    eval $(ipcalc -n $ip/12)
+    [ "$NETWORK" == "172.16.0.0" ] && echo "Listen = [$ip]:$port" >> /etc/vlmcsd.ini
+
+    eval $(ipcalc -n $ip/8)
+    [ "$NETWORK" == "10.0.0.0" ] && echo "Listen = [$ip]:$port" >> /etc/vlmcsd.ini
+    [ "$NETWORK" == "127.0.0.0" ] && echo "Listen = [$ip]:$port" >> /etc/vlmcsd.ini
+  done
+  
+  for ip in $ipv6list; do
+    if [ "$(echo $ip | awk '/^[23][0-9a-f]{3}:[0-9a-f:]*$/')" == "" ]; then
+      [ "$(echo $ip | awk '/^fe[89ab][0-9a-f]:.*$/')" == "" ] && echo "Listen = [$ip]:$port" >> /etc/vlmcsd.ini
+      [ "$(echo $ip | awk '/^fe[89ab][0-9a-f]:.*$/')" == "" ] || echo "Listen = [$ip%2]:$port" >> /etc/vlmcsd.ini 
+    fi
+  done
+
+else
+  if [ "$LISTEN" != "" ]; then
+    for i in $(echo $LISTEN | sed -e 's/,/ /g'); do
+      echo "Listen = $i" >> /etc/vlmcsd.ini
+    done
+  fi
+fi
+
+if [ "$VLMCSD_EXTRA_ARGS" != "" ]; then
+  extra_args=$(echo $VLMCSD_EXTRA_ARGS | sed -e 's/,/ /g')
+fi
+
+/bin/vlmcsd -e -i /etc/vlmcsd.ini $extra_args
+/bin/menu </dev/tty8 >/dev/tty8 2>&1
+
+while /bin/true
+do
+  sleep 86400
+done
