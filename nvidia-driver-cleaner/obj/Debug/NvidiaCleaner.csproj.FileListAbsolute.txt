@@ -52,3 +52,17 @@ D:\#source-code\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCl
 D:\#source-code\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.csproj.CoreCompileInputs.cache
 D:\#source-code\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\Nvidia Cleaner.exe
 D:\#source-code\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\Nvidia Cleaner.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.exe.config
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.xml
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.exe
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.exe.CodeAnalysisLog.xml
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.exe.lastcodeanalysissucceeded
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.csproj.AssemblyReference.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.csproj.SuggestedBindingRedirects.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.MainForm.resources
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.Properties.Resources.resources
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.csproj.GenerateResource.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.csproj.CoreCompileInputs.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\Nvidia Cleaner.exe
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\Nvidia Cleaner.pdb

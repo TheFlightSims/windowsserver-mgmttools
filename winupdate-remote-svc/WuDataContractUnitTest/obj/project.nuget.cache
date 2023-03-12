@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "whW9CHzyEN3NZys2+6auQ1R4BguqAiQOn7PXxskpuBktdNRH7e5+LEJYLvKRuKA0JEQhKOaZsxJ6MvR+DM2dlg==",
+  "dgSpecHash": "4mswrIa1CIC20PPthB3zO65zwbvGObWNHCrrh+n06aDxP/eG6CFW1HcW0DKJka9OaWZ1UlCLWHXWxQMStq6quw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator.THEFLIGHTSIMS\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContractUnitTest\\WuDataContractUnitTest.csproj",
+  "projectFilePath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\winupdate-remote-svc\\WuDataContractUnitTest\\WuDataContractUnitTest.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.codecoverage\\16.6.1\\microsoft.codecoverage.16.6.1.nupkg.sha512",
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\microsoft.net.test.sdk\\16.6.1\\microsoft.net.test.sdk.16.6.1.nupkg.sha512",
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\mstest.testadapter\\2.1.1\\mstest.testadapter.2.1.1.nupkg.sha512",
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\mstest.testframework\\2.1.1\\mstest.testframework.2.1.1.nupkg.sha512",
-    "C:\\Users\\Administrator.THEFLIGHTSIMS\\.nuget\\packages\\system.servicemodel.primitives\\4.7.0\\system.servicemodel.primitives.4.7.0.nupkg.sha512"
+    "C:\\Users\\takineko\\.nuget\\packages\\microsoft.codecoverage\\16.6.1\\microsoft.codecoverage.16.6.1.nupkg.sha512",
+    "C:\\Users\\takineko\\.nuget\\packages\\microsoft.net.test.sdk\\16.6.1\\microsoft.net.test.sdk.16.6.1.nupkg.sha512",
+    "C:\\Users\\takineko\\.nuget\\packages\\mstest.testadapter\\2.1.1\\mstest.testadapter.2.1.1.nupkg.sha512",
+    "C:\\Users\\takineko\\.nuget\\packages\\mstest.testframework\\2.1.1\\mstest.testframework.2.1.1.nupkg.sha512",
+    "C:\\Users\\takineko\\.nuget\\packages\\system.servicemodel.primitives\\4.7.0\\system.servicemodel.primitives.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

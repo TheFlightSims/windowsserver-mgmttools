@@ -78,7 +78,7 @@
     <ApplicationIcon>main.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>CF6508D9022AAAC708EC6656F6282AC76ECF98AB</ManifestCertificateThumbprint>

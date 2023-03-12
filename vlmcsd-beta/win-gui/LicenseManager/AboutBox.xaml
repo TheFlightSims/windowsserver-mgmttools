@@ -4,19 +4,19 @@
                    Title="About License Manager" Height="Auto"
                    Width="Auto" ResizeMode="NoResize" SizeToContent="WidthAndHeight"
 >
-  <Window.Resources>
-    <Style x:Key="AboutBoxLabel" TargetType="Label">
-      <Setter Property="Margin" Value="0,3,0,3" />
-    </Style>
-  </Window.Resources>
-  <Grid Name="TopElement">
-    <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="140" />
-      <ColumnDefinition Width="400" />
-    </Grid.ColumnDefinitions>
+    <Window.Resources>
+        <Style x:Key="AboutBoxLabel" TargetType="Label">
+            <Setter Property="Margin" Value="0,3,0,3" />
+        </Style>
+    </Window.Resources>
+    <Grid Name="TopElement">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140" />
+            <ColumnDefinition Width="400" />
+        </Grid.ColumnDefinitions>
         <StackPanel Grid.ColumnSpan="2" Margin="10,0,0,0">
-      <!--Label Name="LabelProduct" Style="{StaticResource AboutBoxLabel}" /-->
-        <TextBlock Name="TextBoxDescription" Margin="5,5,10,5" TextWrapping="Wrap">
+            <!--Label Name="LabelProduct" Style="{StaticResource AboutBoxLabel}" /-->
+            <TextBlock Name="TextBoxDescription" Margin="5,5,10,5" TextWrapping="Wrap">
             License Manager (64-bit), by Hotbird64 and TheFlightSims. Currently under support.
             <LineBreak /> <LineBreak />
             Copyright (C) 2012 - 2023
@@ -27,11 +27,11 @@
             <LineBreak /> <LineBreak />
             DO NOT use this tool as a one-click activation and other illegal uses. 
             <LineBreak /> <LineBreak />
-        </TextBlock>
+            </TextBlock>
             <Label Name="LabelVersion" Style="{StaticResource AboutBoxLabel}" />
             <Button Margin="0,0,10,10" IsDefault="True" HorizontalAlignment="Right" Name="ButtonOk" Width="Auto" Click="button_Ok_Click">
                 <TextBlock Margin="20,2,20,2">Close</TextBlock>
-      </Button>
-    </StackPanel>
-  </Grid>
+            </Button>
+        </StackPanel>
+    </Grid>
 </lm:ScalableWindow>

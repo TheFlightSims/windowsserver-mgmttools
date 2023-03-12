@@ -32,3 +32,20 @@ D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDB-Downloader.
 D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDB-Downloader.csproj.CoreCompileInputs.cache
 D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDBDownloader.exe
 D:\#source-code\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDBDownloader.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\PDB Downloader\PDBDownloader.exe.config
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\PDB Downloader\PDBDownloader.exe
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\PDB Downloader\PDBDownloader.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDB-Downloader.csproj.AssemblyReference.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDB-Downloader.csproj.SuggestedBindingRedirects.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\MainWindow.g.cs
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\App.g.cs
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDBDownloader_MarkupCompile.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDBDownloader_MarkupCompile.lref
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\MainWindow.baml
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\Resources\StaticResources.baml
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDBDownloader.g.resources
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\SymbolFetch.Properties.Resources.resources
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDB-Downloader.csproj.GenerateResource.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDB-Downloader.csproj.CoreCompileInputs.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDBDownloader.exe
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\PDBDownloader.pdb

@@ -1,22 +1,22 @@
-﻿using System.Windows;
-using System.Reflection;
+﻿using System.Reflection;
+using System.Windows;
 
 // ReSharper disable once CheckNamespace
 namespace HGM.Hotbird64.LicenseManager
 {
-  public partial class AboutBox
-  {
-    public AboutBox(MainWindow mainWindow) : base(mainWindow)
+    public partial class AboutBox
     {
-      InitializeComponent();
-      TopElement.LayoutTransform = Scaler;
-      var version = Assembly.GetCallingAssembly().GetName().Version;
-      LabelVersion.Content = "Version " + version.ToString(3) + (version.MinorRevision < 16384 ? $" Beta {version.MinorRevision}": "") + "revision 1";
-    }
+        public AboutBox(MainWindow mainWindow) : base(mainWindow)
+        {
+            InitializeComponent();
+            TopElement.LayoutTransform = Scaler;
+            var version = Assembly.GetCallingAssembly().GetName().Version;
+            LabelVersion.Content = "Version " + version.ToString(3) + (version.MinorRevision < 2300 ? $" Beta {version.MinorRevision}" : "");
+        }
 
-    private void button_Ok_Click(object sender, RoutedEventArgs e)
-    {
-      DialogResult = true;
+        private void button_Ok_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = true;
+        }
     }
-  }
 }

@@ -17,6 +17,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="D:\#source-code\windowsserver-mgmttools\!bin!\DatabaseManager\GUI\Profile\Debug\netstandard2.1\DatabaseManager.Profile.dll" target="lib\netstandard2.1\DatabaseManager.Profile.dll" />
+    <file src="C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\GUI\Profile\Debug\netstandard2.1\DatabaseManager.Profile.dll" target="lib\netstandard2.1\DatabaseManager.Profile.dll" />
   </files>
 </package>

@@ -1,0 +1,14 @@
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\WindowsUpdateControlService\WcfWuRemoteClient\Debug\net48\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\WindowsUpdateControlService\WcfWuRemoteClient\Debug\net48\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\WindowsUpdateControlService\WcfWuRemoteClient\Debug\net48\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\WindowsUpdateControlService\WcfWuRemoteClient\Debug\net48\WuDataContractUnitTest.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\WindowsUpdateControlService\WcfWuRemoteClient\Debug\net48\WuDataContractUnitTest.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContractUnitTest\obj\Debug\net48\WuDataContractUnitTest.csproj.AssemblyReference.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContractUnitTest\obj\Debug\net48\WuDataContractUnitTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContractUnitTest\obj\Debug\net48\WuDataContractUnitTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContractUnitTest\obj\Debug\net48\WuDataContractUnitTest.AssemblyInfoInputs.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContractUnitTest\obj\Debug\net48\WuDataContractUnitTest.AssemblyInfo.cs
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContractUnitTest\obj\Debug\net48\WuDataContractUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContractUnitTest\obj\Debug\net48\WuDataContractUnitTest.csproj.CopyComplete
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContractUnitTest\obj\Debug\net48\WuDataContractUnitTest.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\winupdate-remote-svc\WuDataContractUnitTest\obj\Debug\net48\WuDataContractUnitTest.pdb

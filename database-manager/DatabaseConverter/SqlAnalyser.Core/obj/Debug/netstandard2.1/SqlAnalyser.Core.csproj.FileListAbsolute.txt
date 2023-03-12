@@ -33,3 +33,5 @@ D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAn
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\refint\SqlAnalyser.Core.dll
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.pdb
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\ref\SqlAnalyser.Core.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\refint\SqlAnalyser.Core.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\ref\SqlAnalyser.Core.dll

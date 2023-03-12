@@ -204,3 +204,5 @@ D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseManager\Databas
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseManager\DatabaseManager.Core\obj\Debug\netstandard2.1\refint\DatabaseManager.Core.dll
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseManager\DatabaseManager.Core\obj\Debug\netstandard2.1\DatabaseManager.Core.pdb
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseManager\DatabaseManager.Core\obj\Debug\netstandard2.1\ref\DatabaseManager.Core.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseManager\DatabaseManager.Core\obj\Debug\netstandard2.1\refint\DatabaseManager.Core.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseManager\DatabaseManager.Core\obj\Debug\netstandard2.1\ref\DatabaseManager.Core.dll

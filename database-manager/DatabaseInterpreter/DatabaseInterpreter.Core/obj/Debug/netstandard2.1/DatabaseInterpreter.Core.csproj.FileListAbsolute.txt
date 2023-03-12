@@ -95,3 +95,7 @@ D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\Dat
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Core\obj\Debug\netstandard2.1\DatabaseInterpreter.Core.xml
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Core\obj\Debug\netstandard2.1\DatabaseInterpreter.Core.pdb
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Core\obj\Debug\netstandard2.1\ref\DatabaseInterpreter.Core.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\dbinter\core\Debug\netstandard2.1\DatabaseInterpreter.Core.xml
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Core\obj\Debug\netstandard2.1\refint\DatabaseInterpreter.Core.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Core\obj\Debug\netstandard2.1\DatabaseInterpreter.Core.xml
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Core\obj\Debug\netstandard2.1\ref\DatabaseInterpreter.Core.dll

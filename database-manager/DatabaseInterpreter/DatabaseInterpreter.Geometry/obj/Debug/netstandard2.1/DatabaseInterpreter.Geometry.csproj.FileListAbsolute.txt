@@ -30,3 +30,5 @@ D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\Dat
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Geometry\obj\Debug\netstandard2.1\refint\DatabaseInterpreter.Geometry.dll
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Geometry\obj\Debug\netstandard2.1\DatabaseInterpreter.Geometry.pdb
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Geometry\obj\Debug\netstandard2.1\ref\DatabaseInterpreter.Geometry.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Geometry\obj\Debug\netstandard2.1\refint\DatabaseInterpreter.Geometry.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Geometry\obj\Debug\netstandard2.1\ref\DatabaseInterpreter.Geometry.dll

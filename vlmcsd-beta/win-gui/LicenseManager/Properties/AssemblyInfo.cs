@@ -6,12 +6,12 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("License Manager")]
-[assembly: AssemblyDescription("GUI front-end for Software Licensing Services")]
+[assembly: AssemblyDescription("TheFlightSims (ft. Hotbird64 & nang)")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Hotbird64 HGM")]
+[assembly: AssemblyCompany("TheFlightSims")]
 [assembly: AssemblyProduct("License Manager")]
-[assembly: AssemblyCopyright("Copyright © 2012 - 2019")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright © 2012 - 2023")]
+[assembly: AssemblyTrademark("TheFlightSims")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -30,12 +30,12 @@ using System.Windows;
 
 
 [assembly: ThemeInfo(
-	ResourceDictionaryLocation.None, //where theme specific resource dictionaries are located
-	//(used if a resource is not found in the page, 
-	// or application resource dictionaries)
-	ResourceDictionaryLocation.SourceAssembly //where the generic resource dictionary is located
-	//(used if a resource is not found in the page, 
-	// app, or any theme specific resource dictionaries)
+    ResourceDictionaryLocation.None, //where theme specific resource dictionaries are located
+                                     //(used if a resource is not found in the page, 
+                                     // or application resource dictionaries)
+    ResourceDictionaryLocation.SourceAssembly //where the generic resource dictionary is located
+                                              //(used if a resource is not found in the page, 
+                                              // app, or any theme specific resource dictionaries)
 )]
 
 
@@ -49,5 +49,5 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("5.1.0.16385")]
-[assembly: AssemblyFileVersion("5.1.0.16385")]
+[assembly: AssemblyVersion("5.5.0.2300")]
+[assembly: AssemblyFileVersion("5.5.0.2300")]

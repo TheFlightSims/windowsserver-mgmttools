@@ -15,3 +15,16 @@ C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!b
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUSClientSettings\WSUSClientManager.xml
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUSClientSettings\WSUSClientManager.exe
 C:\Users\Administrator.THEFLIGHTSIMS\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUSClientSettings\WSUSClientManager.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUSClientSettings\WSUSClientManager.exe.config
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUSClientSettings\WSUSClientManager.xml
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUSClientSettings\WSUSClientManager.exe
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\WSUSClientSettings\WSUSClientManager.pdb
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\wsusworkgrouputilities\ClientSettingManager\obj\Debug\ClientSettingManager.csproj.AssemblyReference.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\wsusworkgrouputilities\ClientSettingManager\obj\Debug\ClientSettingManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\wsusworkgrouputilities\ClientSettingManager\obj\Debug\Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.frmAbout.resources
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\wsusworkgrouputilities\ClientSettingManager\obj\Debug\Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.frmMain.resources
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\wsusworkgrouputilities\ClientSettingManager\obj\Debug\Codeplex.DBedarf.WSUS.Workgroup.ClientSettingManager.Properties.Resources.resources
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\wsusworkgrouputilities\ClientSettingManager\obj\Debug\ClientSettingManager.csproj.GenerateResource.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\wsusworkgrouputilities\ClientSettingManager\obj\Debug\ClientSettingManager.csproj.CoreCompileInputs.cache
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\wsusworkgrouputilities\ClientSettingManager\obj\Debug\WSUSClientManager.exe
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\wsusworkgrouputilities\ClientSettingManager\obj\Debug\WSUSClientManager.pdb

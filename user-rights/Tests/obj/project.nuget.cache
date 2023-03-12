@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "v0tr6ffPcTLoquKQwvCXgqP72jWLTbzldj7dq+YBv/ft0OAhI0QFJAAJrwNgDZlrJqTTuFF7E5DPJoxUicwcPQ==",
+  "dgSpecHash": "2GpfVl6WjZwJaTGXM62ceWeF/obRe4UJGlCmHEKWcFH1598/1U5eUPZJCfP4iTE8JyUBzBNH1EUcdayBlogo+A==",
   "success": true,
-  "projectFilePath": "D:\\#source-code\\windowsserver-mgmttools\\user-rights\\Tests\\Tests.csproj",
+  "projectFilePath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\user-rights\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Administrator\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\meziantou.analyzer\\1.0.748\\meziantou.analyzer.1.0.748.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
+    "C:\\Users\\takineko\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
+    "C:\\Users\\takineko\\.nuget\\packages\\meziantou.analyzer\\1.0.748\\meziantou.analyzer.1.0.748.nupkg.sha512",
+    "C:\\Users\\takineko\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\takineko\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\takineko\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\takineko\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\takineko\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\takineko\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\takineko\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
   ],
   "logs": []
 }

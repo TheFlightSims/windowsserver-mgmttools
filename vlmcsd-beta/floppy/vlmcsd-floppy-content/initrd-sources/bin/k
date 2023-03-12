@@ -1,0 +1,34 @@
+#!/bin/bash
+
+usage()
+{
+  echo -e "\nUsage:\n\n $0 <keyboard-code>\n\n   loads keyboard mapping <keyboard-code>\n" >&2
+  show_codes
+}
+
+show_codes()
+{
+  echo "The following keyboard codes are supported:"
+  echo $(ls -1 /usr/share/kmap | cut -d. -f1)
+  echo ""
+}
+
+if [ $(id -u) != 0 ]; then
+  echo "Must be root to load a keymap" >&2
+  exit 1
+fi
+
+if [ "$1" == "" ] || [ "$2" != "" ] ; then
+  usage
+  exit 2
+fi
+
+filename="/usr/share/kmap/$1.kmap"
+
+if [ ! -f $filename ]; then
+  echo -e "\nNo keyboard mapping available for $1\n" >&2
+  show_codes
+  exit 3
+fi
+
+loadkmap < $filename

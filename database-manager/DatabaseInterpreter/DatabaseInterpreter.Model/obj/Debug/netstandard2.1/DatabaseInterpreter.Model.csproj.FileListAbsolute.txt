@@ -20,3 +20,5 @@ D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\Dat
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Model\obj\Debug\netstandard2.1\refint\DatabaseInterpreter.Model.dll
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Model\obj\Debug\netstandard2.1\DatabaseInterpreter.Model.pdb
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Model\obj\Debug\netstandard2.1\ref\DatabaseInterpreter.Model.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Model\obj\Debug\netstandard2.1\refint\DatabaseInterpreter.Model.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Model\obj\Debug\netstandard2.1\ref\DatabaseInterpreter.Model.dll

@@ -22,3 +22,5 @@ D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\Dat
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\refint\DatabaseInterpreter.Utility.dll
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\DatabaseInterpreter.Utility.pdb
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\ref\DatabaseInterpreter.Utility.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\refint\DatabaseInterpreter.Utility.dll
+C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\ref\DatabaseInterpreter.Utility.dll
