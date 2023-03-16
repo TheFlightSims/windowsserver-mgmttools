@@ -12,11 +12,11 @@
 | Waldemar Brodkorb | Original developer of VLMCSD |
 | Denys Vlasenko | Original developer of VLMCSD |
 | H. Peter Anvin | Original developer of VLMCSD |
-| Hotbird64 | Original developer of VLMCSD, License Manager, VLMCSD on Floppy, VLMCSD on WSL |
-| [Wind4](https://github.com/Wind4/vlmcsd) | Contributor of VLMCSD |
+| Hotbird64 | Original developer of VLMCSD, License Manager, VLMCSD on Floppy, VLMCSD on WSL, VLMCSD Database |
+| [Wind4](https://github.com/Wind4/vlmcsd) | Contributor of VLMCSD Database |
 | [kkkgo](https://github.com/kkkgo) | Contributor of VLMCSD |
 | [HarukaMa](https://github.com/HarukaMa) | Contributor of VLMCSD, VLMCSD on Floppy |
-| Nang | Contributor of VLMCSD database
+| Nang | Contributor of VLMCSD database |
 | @[takineko](https://github.com/takineko-tfs) | Contributor of VLMCSD, License Manager, VLMCSD on Floppy, VLMCSD on WSL, VLMCSD Database |
 
 ## The Files and Folders
