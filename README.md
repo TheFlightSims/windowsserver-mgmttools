@@ -58,7 +58,6 @@ This repo uses [**GNU GPL 3.0**](https://www.gnu.org/licenses/gpl-3.0.en.html) a
 ## Original Contributors
 |Usage|Name|Contributors|Folks from|
 |--|--|--|--|
-|Computer Management|[DISM++](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/DISM++)|@[Chuyu Team](https://github.com/Chuyu-Team)|https://github.com/Chuyu-Team/Dism-Multi-language
 |IIS Management|[Check IIS](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/check-iis)|@[TheFlyingCorpse](https://github.com/TheFlyingCorpse), TheFlightSims staff|https://github.com/TheFlyingCorpse/check_iis
 |Database Management|[Database Manager](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/database-manager)|@[dependabot[bot]](https://github.com/apps/dependabot), @[victor-wiki](https://github.com/victor-wiki), TheFlightSims staff|https://github.com/victor-wiki/DatabaseManager|
 |VM Management|[Hyper-V Backup](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/hyperv-backup)|@[pablopioli](https://github.com/pablopioli), @[schtritoff](https://github.com/schtritoff), TheFlightSims staff|https://github.com/ColiseoSoftware/hypervbackup|
