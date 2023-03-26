@@ -80,7 +80,7 @@ namespace HGM.Hotbird64.LicenseManager.Controls
 
         private static void WmiPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            var self = (WmiPropertyBox)d;
+            WmiPropertyBox self = (WmiPropertyBox)d;
 
             if (e.Property.Name == nameof(WmiProperty))
             {

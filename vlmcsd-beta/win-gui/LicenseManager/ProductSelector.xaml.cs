@@ -17,18 +17,18 @@ namespace HGM.Hotbird64.LicenseManager
             InitializeComponent();
             TopElement.LayoutTransform = Scaler;
 
-            foreach (var product in KmsLists.AppItemList)
+            foreach (AppItem product in KmsLists.AppItemList)
             {
-                var appitem = new TreeViewItem { Header = product };
+                TreeViewItem appitem = new TreeViewItem { Header = product };
                 ProductTree.Items.Add(appitem);
 
-                foreach (var kmsProduct in KmsLists.KmsItemList.Where(k => k.App == product))
+                foreach (KmsItem kmsProduct in KmsLists.KmsItemList.Where(k => k.App == product))
                 {
-                    var kmsItem = new TreeViewItem { Header = kmsProduct };
+                    TreeViewItem kmsItem = new TreeViewItem { Header = kmsProduct };
 
-                    foreach (var skuProduct in KmsLists.SkuItemList.Where(p => p.KmsItem == kmsProduct).OrderBy(p => p.DisplayName))
+                    foreach (SkuItem skuProduct in KmsLists.SkuItemList.Where(p => p.KmsItem == kmsProduct).OrderBy(p => p.DisplayName))
                     {
-                        var skuItem = new TreeViewItem { Header = skuProduct };
+                        TreeViewItem skuItem = new TreeViewItem { Header = skuProduct };
                         kmsItem.Items.Add(skuItem);
                     }
 

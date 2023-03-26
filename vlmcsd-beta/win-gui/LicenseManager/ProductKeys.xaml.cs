@@ -30,9 +30,9 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void AddKeysToTreeViewItem(TreeViewItem treeViewItem, IEnumerable<ProductKey> keys)
         {
-            foreach (var key in keys)
+            foreach (ProductKey key in keys)
             {
-                var keyItem = new TreeViewItem { Header = key, ToolTip = key.Key };
+                TreeViewItem keyItem = new TreeViewItem { Header = key, ToolTip = key.Key };
                 treeViewItem.Items.Add(keyItem);
             }
         }
@@ -47,7 +47,7 @@ namespace HGM.Hotbird64.LicenseManager
 
             Loaded += (s, e) => Icon = this.GenerateImage(new Icons.InstallKey(), 16, 16);
 
-            var treeViewItem = new TreeViewItem { Header = "Store license keys" };
+            TreeViewItem treeViewItem = new TreeViewItem { Header = "Store license keys" };
             ProductTree.Items.Add(treeViewItem);
             AddKeysToTreeViewItem(treeViewItem, ProductKeyList.Where(k => k.KeyType == KeyType.StoreLicense));
 
@@ -58,14 +58,14 @@ namespace HGM.Hotbird64.LicenseManager
             treeViewItem = new TreeViewItem { Header = "Genuine GVLKs" };
             ProductTree.Items.Add(treeViewItem);
 
-            foreach (var app in KmsLists.AppItemList)
+            foreach (AppItem app in KmsLists.AppItemList)
             {
-                var appitem = new TreeViewItem { Header = app };
+                TreeViewItem appitem = new TreeViewItem { Header = app };
                 treeViewItem.Items.Add(appitem);
 
-                foreach (var kmsId in app.KmsItems.OrderBy(k => k.DisplayName))
+                foreach (KmsItem kmsId in app.KmsItems.OrderBy(k => k.DisplayName))
                 {
-                    var kmsItem = new TreeViewItem { Header = kmsId };
+                    TreeViewItem kmsItem = new TreeViewItem { Header = kmsId };
                     AddKeysToTreeViewItem(kmsItem, kmsId.SkuItems.Where(s => !s.IsGeneratedGvlk && s.Gvlk != null).OrderBy(s => s.DisplayName).Select(s => new ProductKey(s.ToString(), s.Gvlk, s.IsGeneratedGvlk ? KeyType.GvlkGenerated : KeyType.Gvlk)));
 
                     if (kmsId == winBetaGuid)
@@ -81,7 +81,7 @@ namespace HGM.Hotbird64.LicenseManager
             {
                 InstallButton.IsEnabled = ((TreeViewItem)eventArgs.NewValue).ToolTip is string;
 
-                var key = ((TreeViewItem)eventArgs.NewValue).Header as ProductKey;
+                ProductKey key = ((TreeViewItem)eventArgs.NewValue).Header as ProductKey;
 
                 if (key != null)
                 {
@@ -96,7 +96,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void TreeViewItem_DoubleClick(object sender, MouseButtonEventArgs args)
         {
-            var treeViewItem = ProductTree.SelectedItem as TreeViewItem;
+            TreeViewItem treeViewItem = ProductTree.SelectedItem as TreeViewItem;
             if (treeViewItem == null || !treeViewItem.HasHeader || !(treeViewItem.ToolTip is string)) return;
             AnalyzeButton_Click(null, null);
         }

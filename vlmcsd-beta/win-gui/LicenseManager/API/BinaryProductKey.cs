@@ -171,9 +171,9 @@ namespace HGM.Hotbird64.Vlmcs
 
         public static unsafe explicit operator uint[](BinaryProductKey binaryKey)
         {
-            var result = new uint[4];
+            uint[] result = new uint[4];
 
-            for (var i = 0; i < 4; i++)
+            for (int i = 0; i < 4; i++)
             {
                 result[i] = binaryKey.u32[i];
             }
@@ -183,10 +183,10 @@ namespace HGM.Hotbird64.Vlmcs
 
         public static unsafe explicit operator byte[](BinaryProductKey binaryKey)
         {
-            var b = (byte*)&binaryKey;
-            var result = new byte[16];
+            byte* b = (byte*)&binaryKey;
+            byte[] result = new byte[16];
 
-            for (var i = 0; i < 16; i++)
+            for (int i = 0; i < 16; i++)
             {
                 result[i] = b[i];
             }
@@ -217,13 +217,13 @@ namespace HGM.Hotbird64.Vlmcs
 
         private static unsafe ushort Crc32(BinaryProductKey key)
         {
-            var hash = ~0U;
+            uint hash = ~0U;
 
             key.Uint64High &= 0x6007fffffffff;
 
             for (byte i = 0; i < 16; ++i)
             {
-                var index = ((hash >> 24) ^ key.u8[i]) & 0xff;
+                uint index = ((hash >> 24) ^ key.u8[i]) & 0xff;
                 hash = (hash << 8) ^ Crc32Table[index];
             }
             return (ushort)(~hash & 0x3ff);
@@ -233,18 +233,18 @@ namespace HGM.Hotbird64.Vlmcs
         {
             if ((binaryKey.Uint64Low | binaryKey.Uint64High) == 0) return "(none)";
 
-            var binaryCodedBase24Key = new byte[25];
-            var keyBuilder = new StringBuilder(32);
-            var isNewKey = binaryKey.IsNewKey;
+            byte[] binaryCodedBase24Key = new byte[25];
+            StringBuilder keyBuilder = new StringBuilder(32);
+            bool isNewKey = binaryKey.IsNewKey;
             binaryKey.Uint64High &= 0x7ffffffffffff;
 
-            for (var i = 24; i >= 0; i--)
+            for (int i = 24; i >= 0; i--)
             {
                 unchecked
                 {
                     ulong current = 0;
 
-                    for (var j = 3; j >= 0; j--)
+                    for (int j = 3; j >= 0; j--)
                     {
                         current = (current << 32) | binaryKey.u32[j];
                         binaryKey.u32[j] = (uint)(current / 24);
@@ -255,7 +255,7 @@ namespace HGM.Hotbird64.Vlmcs
                 }
             }
 
-            for (var i = (byte)(isNewKey ? 1 : 0); i < 25; i++)
+            for (byte i = (byte)(isNewKey ? 1 : 0); i < 25; i++)
             {
                 if (isNewKey && i - 1 == binaryCodedBase24Key[0]) keyBuilder.Append('N');
                 keyBuilder.Append(Base24[binaryCodedBase24Key[i]]);
@@ -269,9 +269,9 @@ namespace HGM.Hotbird64.Vlmcs
         public static unsafe explicit operator BinaryProductKey(string key)
         {
             int i;
-            var originalKey = key;
+            string originalKey = key;
             key = key.ToUpperInvariant();
-            var isNewKey = key.Contains('N');
+            bool isNewKey = key.Contains('N');
 
             if (key == null) throw new ArgumentNullException(nameof(key), "The key must not be null");
 
@@ -282,7 +282,7 @@ namespace HGM.Hotbird64.Vlmcs
 
             while ((i = key.IndexOf('-')) >= 0) key = key.Remove(i, 1);
 
-            var binaryKey = new BinaryProductKey();
+            BinaryProductKey binaryKey = new BinaryProductKey();
 
             for (i = 0; i < 25; i++)
             {
@@ -298,7 +298,7 @@ namespace HGM.Hotbird64.Vlmcs
                     current = Base24.IndexOf(key[i - (isNewKey ? 1 : 0)]);
                 }
 
-                for (var j = 0; j < 4; j++)
+                for (int j = 0; j < 4; j++)
                 {
                     current += 24L * binaryKey.u32[j];
                     binaryKey.u32[j] = unchecked((uint)current);
@@ -328,7 +328,7 @@ namespace HGM.Hotbird64.Vlmcs
 
             if (obj is IEnumerable<byte> bytes)
             {
-                var byteArray = bytes as byte[] ?? bytes.ToArray();
+                byte[] byteArray = bytes as byte[] ?? bytes.ToArray();
                 return byteArray.Length == 16 && ((BinaryProductKey)byteArray).Equals(this);
             }
 
@@ -355,7 +355,7 @@ namespace HGM.Hotbird64.Vlmcs
 
         public static string GetFirstEpidPart()
         {
-            var osBuild = Environment.OSVersion.Version.Build;
+            int osBuild = Environment.OSVersion.Version.Build;
             return $"{KmsLists.GetPlatformId(osBuild):D5}";
         }
 

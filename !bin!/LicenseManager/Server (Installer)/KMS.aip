@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="19.1" version="19.1" Modules="enterprise" RootPath="." Language="en" Id="{9C0E5B03-DE5B-43E6-BB65-5ACF3FCB16D0}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_CURRENT_YEAR" Value="2023" ValueLocId="-"/>
+    <ROW Property="AI_PACKAGING_TOOL" Value="Advanced Installer 19.7 build b6fe2030" ValueLocId="-"/>
+    <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_DOTNET_VERSION;AI_DETECTED_WINDOWS_POWERSHELL_VERSION"/>
+    <ROW Property="AI_PREREQ_REPAIR_ENABLED" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="AI_REQUIRED_DOTNET_DISPLAY" MultiBuildValue="DefaultBuild:4.8" ValueLocId="-"/>
+    <ROW Property="AI_REQUIRED_DOTNET_VERSION" MultiBuildValue="DefaultBuild:4.8" ValueLocId="-"/>
+    <ROW Property="AI_REQUIRED_WINDOWS_POWERSHELL_DISPLAY" MultiBuildValue="DefaultBuild:Windows PowerShell 5.1" ValueLocId="-"/>
+    <ROW Property="AI_REQUIRED_WINDOWS_POWERSHELL_VERSION" MultiBuildValue="DefaultBuild:5.1" ValueLocId="-"/>
+    <ROW Property="AI_ThemeStyle" Value="aero" MultiBuildValue="DefaultBuild:classic" MsiKey="AI_ThemeStyle"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This program is made for educatinal use only. DO NOT use it for commercial, or illegal use. Copyright (C) TheFlightSims (feat. Hotbird64)" ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="https://github.com/TheFlightSims/windowsserver-mgmttools/issues"/>
+    <ROW Property="ARPHELPLINK" Value="https://github.com/TheFlightSims/windowsserver-mgmttools/issues"/>
+    <ROW Property="ARPPRODUCTICON" Value="LicenseManager.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="https://github.com/TheFlightSims/windowsserver-mgmttools/issues"/>
+    <ROW Property="AiLicenseAgreementLink" Value="https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/LICENSE" Type="4"/>
+    <ROW Property="IAgree" Value="No" Type="4"/>
+    <ROW Property="Manufacturer" Value="TheFlightSims"/>
+    <ROW Property="MsiLogging" MultiBuildValue="DefaultBuild:vp"/>
+    <ROW Property="ProductCode" Value="1033:{6C112665-1DB9-4B1B-9BD9-A1085B953E04} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="License Manager"/>
+    <ROW Property="ProductVersion" Value="5.5.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{81A153CB-A55C-4A54-A6E7-DA6ABD2CEBE9}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT" MultiBuildValue="DefaultBuild:Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNTDisplay" MultiBuildValue="DefaultBuild:32-bit Windows versions" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="LicenseManager_Dir" Directory_Parent="APPDIR" DefaultDir="LICENS~1|License Manager"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{CF2E2207-D801-4D14-9D29-336CDB6D5A0A}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="D5D54AFFAD641D2B30BF3F03FA9D51C" ComponentId="{9F20F486-A647-40BD-B1E5-E56D9BB21D8D}" Directory_="APPDIR" Attributes="260" KeyPath="D5D54AFFAD641D2B30BF3F03FA9D51C" Options="2"/>
+    <ROW Component="LicenseManager.exe" ComponentId="{FE17DA2E-0BA3-425D-8326-34B854B15FF0}" Directory_="LicenseManager_Dir" Attributes="0" KeyPath="LicenseManager.exe"/>
+    <ROW Component="Path" ComponentId="{7C9F592B-DB35-4C72-B5E0-AE1B054E59F3}" Directory_="APPDIR" Attributes="260" KeyPath="Path_1"/>
+    <ROW Component="Version" ComponentId="{37E7D832-D694-4BDD-AC76-CC1C59B18A9F}" Directory_="APPDIR" Attributes="260" KeyPath="Version_1"/>
+    <ROW Component="cpl.applet_1" ComponentId="{FA90232E-2CB5-4E6E-B740-68EC97B8B918}" Directory_="APPDIR" Attributes="0" KeyPath="cpl.applet"/>
+    <ROW Component="libkms32.dll" ComponentId="{D0EB50F7-0340-4D12-9E37-9F444BEBF198}" Directory_="LicenseManager_Dir" Attributes="0" KeyPath="libkms32.dll"/>
+    <ROW Component="libkms64.dll" ComponentId="{A61DC358-CC32-45C2-ABCA-D4D4C7F7E84B}" Directory_="LicenseManager_Dir" Attributes="256" KeyPath="libkms64.dll"/>
+    <ROW Component="vlmcs.exe" ComponentId="{14BDB5A8-E780-4EBC-B1C1-07DC13640771}" Directory_="LicenseManager_Dir" Attributes="256" KeyPath="vlmcs.exe"/>
+    <ROW Component="vlmcsd.exe" ComponentId="{80BA7D1D-495D-4E25-AF23-2CAF6BB79FCF}" Directory_="LicenseManager_Dir" Attributes="256" KeyPath="vlmcsd.exe"/>
+    <ROW Component="vlmcsd.ini" ComponentId="{322E5577-3E6D-4156-B447-BB4538B1109C}" Directory_="LicenseManager_Dir" Attributes="0" KeyPath="vlmcsd.ini" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="D5D54AFFAD641D2B30BF3F03FA9D51C" Title="MSXML 4.0 Parser SP3" Description="MSXML 4.0 Parser SP3" Display="3" Level="1" Attributes="0"/>
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="libkms64.dll" Component_="libkms64.dll" FileName="libkms64.dll" Attributes="0" SourcePath="files\libkms64.dll" SelfReg="false"/>
+    <ROW File="vlmcsd.ini" Component_="vlmcsd.ini" FileName="vlmcsd.ini" Attributes="0" SourcePath="files\vlmcsd.ini" SelfReg="false"/>
+    <ROW File="vlmcsd.kmd" Component_="vlmcsd.ini" FileName="vlmcsd.kmd" Attributes="0" SourcePath="files\vlmcsd.kmd" SelfReg="false"/>
+    <ROW File="KmsDataBase.xml" Component_="vlmcsd.ini" FileName="KMSDAT~1.XML|KmsDataBase.xml" Attributes="0" SourcePath="files\KmsDataBase.xml" SelfReg="false"/>
+    <ROW File="KmsDataBase.xsd" Component_="vlmcsd.ini" FileName="KMSDAT~1.XSD|KmsDataBase.xsd" Attributes="0" SourcePath="files\KmsDataBase.xsd" SelfReg="false"/>
+    <ROW File="LicenseManager.exe" Component_="LicenseManager.exe" FileName="LICENS~1.EXE|LicenseManager.exe" Attributes="0" SourcePath="files\LicenseManager.exe" SelfReg="false"/>
+    <ROW File="vlmcs.exe" Component_="vlmcs.exe" FileName="vlmcs.exe" Attributes="0" SourcePath="files\vlmcs.exe" SelfReg="false"/>
+    <ROW File="vlmcsd.exe" Component_="vlmcsd.exe" FileName="vlmcsd.exe" Attributes="0" SourcePath="files\vlmcsd.exe" SelfReg="false"/>
+    <ROW File="libkms32.dll" Component_="libkms32.dll" FileName="libkms32.dll" Attributes="0" SourcePath="files\libkms32.dll" SelfReg="false"/>
+    <ROW File="cpl.applet" Component_="cpl.applet_1" FileName="CPL~1.APP|cpl.applet" Attributes="0" SourcePath="&lt;AI_TEMPLATES&gt;cpl.applet" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_DetectSoftware" Sequence="151"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="." PackageFileName="LicenseManager" Languages="en" InstallationType="4" ExtUI="true" UseLargeSchema="true" MsiPackageType="x64" UACExecutionLevel="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.CPLAppletComponent">
+    <ROW CPLApplet="cpl" CPLAppletStub="cpl.applet" Guid="{5C06E14C-6182-4CA3-8E2A-3D62C48745CE}" Caption="License Manager" Description="License Manager (on Control Panel)" Target="[#LicenseManager.exe]" IconPath="[#LicenseManager.exe]" Category="5" Registration="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
+    <ROW SignerDescription="[|ProductName]" SignOptions="0" SignTool="0" UseSha256="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FirewallExceptionComponent">
+    <ROW FirewallException="KeyVolumeManagementServer" Direction="1" DisplayName="Key Volume Management Server" Enabled="1" Scope="*" Condition="((?vlmcsd.exe=2) AND ($vlmcsd.exe=3))" Profiles="7" AppPath="[#vlmcsd.exe]" Port="1688" Protocol="TCP"/>
+    <ROW FirewallException="KeyVolumeManagementService" Direction="2" DisplayName="Key Volume Management Service" Enabled="1" Scope="*" Condition="((?vlmcsd.exe=2) AND ($vlmcsd.exe=3))" Profiles="7" AppPath="[#vlmcsd.exe]" Port="1688" Protocol="TCP"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="InstallDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\InstallDlg.aip"/>
+    <ROW Fragment="LicenseAgreementDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\LicenseAgreementDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="PreparePrereqDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\PreparePrereqDlg.aip"/>
+    <ROW Fragment="PrerequisitesDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\PrerequisitesDlg.aip"/>
+    <ROW Fragment="ProgressPrereqDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\ProgressPrereqDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+    <ROW Fragment="WelcomePrereqDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomePrereqDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_ConfigureChainer" Description="Configuring prerequisites launcher" DescriptionLocId="ActionText.Description.AI_ConfigureChainer" Template="Configure Launcher" TemplateLocId="ActionText.Template.AI_ConfigureChainer"/>
+    <ROW Action="AI_CplAppletConfig" Description="Executing install Control Panel applets" DescriptionLocId="ActionText.Description.AI_CplAppletConfig" Template="Applet: [1]" TemplateLocId="ActionText.Template.AI_CplAppletConfig"/>
+    <ROW Action="AI_CplAppletInstall" Description="Generating actions to configure Control Panel applets resources" DescriptionLocId="ActionText.Description.AI_CplAppletInstall"/>
+    <ROW Action="AI_CplAppletRemove" Description="Executing uninstall Control Panel applets" DescriptionLocId="ActionText.Description.AI_CplAppletRemove" Template="Applet: [1]" TemplateLocId="ActionText.Template.AI_CplAppletRemove"/>
+    <ROW Action="AI_CplAppletRollback" Description="Executing rollback Control Panel applets" DescriptionLocId="ActionText.Description.AI_CplAppletRollback" Template="Applet: [1]" TemplateLocId="ActionText.Template.AI_CplAppletRollback"/>
+    <ROW Action="AI_CplAppletUninstall" Description="Generating actions to uninstall Control Panel applets resources" DescriptionLocId="ActionText.Description.AI_CplAppletUninstall"/>
+    <ROW Action="AI_DownloadPrereq" Description="Downloading prerequisite software" DescriptionLocId="ActionText.Description.AI_DownloadPrereq" Template="Downloading [1]{[2] completed}" TemplateLocId="ActionText.Template.AI_DownloadPrereq"/>
+    <ROW Action="AI_ExtractPrereq" Description="Extracting prerequisite software" DescriptionLocId="ActionText.Description.AI_ExtractPrereq" Template="Extracting [1]{[2] completed}" TemplateLocId="ActionText.Template.AI_ExtractPrereq"/>
+    <ROW Action="AI_FwConfig" Description="Executing Windows Firewall configurations" DescriptionLocId="ActionText.Description.AI_FwConfig" Template="Configuring Windows Firewall rule: &quot;[1]&quot;" TemplateLocId="ActionText.Template.AI_FwConfig"/>
+    <ROW Action="AI_FwInstall" Description="Generating actions to configure Windows Firewall" DescriptionLocId="ActionText.Description.AI_FwInstall"/>
+    <ROW Action="AI_FwRemove" Description="Executing Windows Firewall configurations" DescriptionLocId="ActionText.Description.AI_FwRemove" Template="Configuring Windows Firewall rule:  &quot;[1]&quot;" TemplateLocId="ActionText.Template.AI_FwRemove"/>
+    <ROW Action="AI_FwRollback" Description="Rolling back Windows Firewall configurations." DescriptionLocId="ActionText.Description.AI_FwRollback" Template="Rolling back Windows Firewall configurations." TemplateLocId="ActionText.Template.AI_FwRollback"/>
+    <ROW Action="AI_FwUninstall" Description="Generating actions to configure Windows Firewall" DescriptionLocId="ActionText.Description.AI_FwUninstall"/>
+    <ROW Action="AI_InstallPostPrerequisite" Description="Installing prerequisite software" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" Template="Installing [1]{[2] completed}" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_InstallPrerequisite" Description="Installing prerequisite software" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" Template="Installing [1]{[2] completed}" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_VerifyPrereq" Description="Verifying prerequisites" DescriptionLocId="ActionText.Description.AI_VerifyPrereq" Template="[1] was not installed correctly." TemplateLocId="ActionText.Template.AI_VerifyPrereq"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="NetFirewall.dll" SourcePath="&lt;AI_CUSTACTS&gt;NetFirewall.dll"/>
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="ShortcutFlags.dll" SourcePath="&lt;AI_CUSTACTS&gt;ShortcutFlags.dll"/>
+    <ROW Name="SoftwareDetector.dll" SourcePath="&lt;AI_CUSTACTS&gt;SoftwareDetector.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="aipackagechainer.exe" SourcePath="&lt;AI_CUSTACTS&gt;aipackagechainer.exe"/>
+    <ROW Name="cplapplet.cpl" SourcePath="&lt;AI_CUSTACTS&gt;cplapplet.cpl"/>
+    <ROW Name="file_deleter.ps1" SourcePath="&lt;AI_SCRIPTS&gt;file_deleter.ps1"/>
+    <ROW Name="viewer.exe" SourcePath="&lt;AI_CUSTACTS&gt;viewer.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="ScrollableText" X="20" Y="60" Width="330" Height="120" Attributes="7" Order="400" TextLocId="Control.Text.LicenseAgreementDlg#AgreementText" MsiKey="LicenseAgreementDlg#AgreementText"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="InstallDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="203"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="InstallDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="204"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="InstallDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="InstallDlg" Control_="Hyperlink" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL AND ReadLicense" Ordering="201"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="NewDialog" Argument="InstallDlg" Condition="AI_INSTALL AND ReadLicense" Ordering="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL AND ReadLicense" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL AND ReadLicense" Ordering="202"/>
+    <ROW Dialog_="ExitDialog" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="301"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="102"/>
+    <ROW Dialog_="UserExit" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="101"/>
+    <ROW Dialog_="WelcomePrereqDlg" Control_="Next" Event="NewDialog" Argument="PrerequisitesDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="PrerequisitesDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="PrerequisitesDlg" Control_="Back" Event="NewDialog" Argument="WelcomePrereqDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
+    <ROW Action="AI_ApplyShortcutFlags" Type="3073" Source="ShortcutFlags.dll" Target="UpdateShortcutFlags" WithoutSeq="true"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_CleanPrereq" Type="65" Source="Prereq.dll" Target="CleanPrereq" WithoutSeq="true"/>
+    <ROW Action="AI_ConfigureChainer" Type="1" Source="Prereq.dll" Target="ConfigurePrereqLauncher"/>
+    <ROW Action="AI_CplAppletConfig" Type="11265" Source="cplapplet.cpl" Target="OnCplAppletConfig" WithoutSeq="true"/>
+    <ROW Action="AI_CplAppletInstall" Type="1" Source="cplapplet.cpl" Target="OnCplAppletInstall"/>
+    <ROW Action="AI_CplAppletRemove" Type="11265" Source="cplapplet.cpl" Target="OnCplAppletRemove" WithoutSeq="true"/>
+    <ROW Action="AI_CplAppletRollback" Type="11521" Source="cplapplet.cpl" Target="OnCplAppletRollback" WithoutSeq="true"/>
+    <ROW Action="AI_CplAppletUninstall" Type="1" Source="cplapplet.cpl" Target="OnCplAppletUninstall"/>
+    <ROW Action="AI_DATA_SETTER_1" Type="51" Source="CustomActionData" Target="[~]"/>
+    <ROW Action="AI_DATA_SETTER_2" Type="51" Source="CustomActionData" Target="[~]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DetectSoftware" Type="257" Source="SoftwareDetector.dll" Target="OnDetectSoftware"/>
+    <ROW Action="AI_DownloadPrereq" Type="1" Source="Prereq.dll" Target="DownloadPrereq"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_ExtractPrereq" Type="65" Source="Prereq.dll" Target="ExtractPrereq"/>
+    <ROW Action="AI_FwConfig" Type="11265" Source="NetFirewall.dll" Target="OnFwConfig" WithoutSeq="true"/>
+    <ROW Action="AI_FwInstall" Type="1" Source="NetFirewall.dll" Target="OnFwInstall" AdditionalSeq="AI_DATA_SETTER_1"/>
+    <ROW Action="AI_FwRemove" Type="11265" Source="NetFirewall.dll" Target="OnFwRemove" WithoutSeq="true"/>
+    <ROW Action="AI_FwRollback" Type="11521" Source="NetFirewall.dll" Target="OnFwRollback" WithoutSeq="true"/>
+    <ROW Action="AI_FwUninstall" Type="1" Source="NetFirewall.dll" Target="OnFwUninstall" AdditionalSeq="AI_DATA_SETTER_2"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_InstallPostPrerequisite" Type="1" Source="Prereq.dll" Target="InstallPostPrereq"/>
+    <ROW Action="AI_InstallPrerequisite" Type="1" Source="Prereq.dll" Target="InstallPrereq"/>
+    <ROW Action="AI_LaunchChainer" Type="3314" Source="AI_PREREQ_CHAINER"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PinShortcuts" Type="1" Source="ShortcutFlags.dll" Target="PinShortcuts"/>
+    <ROW Action="AI_PinToStartScreen" Type="1025" Source="ShortcutFlags.dll" Target="PinToStartScreen" WithoutSeq="true"/>
+    <ROW Action="AI_PinToTaskbar" Type="1025" Source="ShortcutFlags.dll" Target="PinToTaskbar" WithoutSeq="true"/>
+    <ROW Action="AI_PrepareShortcutFlags" Type="1" Source="ShortcutFlags.dll" Target="PrepareActionData"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_RestartElevated" Type="1" Source="aicustact.dll" Target="RestartElevated"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_UnpinFromStartScreen" Type="1025" Source="ShortcutFlags.dll" Target="UnpinFromStartScreen" WithoutSeq="true"/>
+    <ROW Action="AI_UnpinFromTaskbar" Type="1025" Source="ShortcutFlags.dll" Target="UnpinFromTaskbar" WithoutSeq="true"/>
+    <ROW Action="AI_UnpinShortcuts" Type="1" Source="ShortcutFlags.dll" Target="UnpinShortcuts"/>
+    <ROW Action="AI_VerifyPrereq" Type="1" Source="Prereq.dll" Target="VerifyPrereq"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFiles64Folder]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]" MultiBuildTarget="DefaultBuild:[ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiEnvComponent">
+    <ROW Environment="slmgr" Name="=-*slmgr" Value="[#LicenseManager.exe]" Component_="LicenseManager.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="libkms64.dll"/>
+    <ROW Feature_="MainFeature" Component_="vlmcsd.ini"/>
+    <ROW Feature_="MainFeature" Component_="LicenseManager.exe"/>
+    <ROW Feature_="MainFeature" Component_="vlmcs.exe"/>
+    <ROW Feature_="MainFeature" Component_="vlmcsd.exe"/>
+    <ROW Feature_="MainFeature" Component_="libkms32.dll"/>
+    <ROW Feature_="D5D54AFFAD641D2B30BF3F03FA9D51C" Component_="D5D54AFFAD641D2B30BF3F03FA9D51C"/>
+    <ROW Feature_="MainFeature" Component_="Path"/>
+    <ROW Feature_="MainFeature" Component_="Version"/>
+    <ROW Feature_="MainFeature" Component_="cpl.applet_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="LicenseManager.exe" SourcePath="files\LicenseManager.exe" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1397"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_PrepareShortcutFlags" Condition="(VersionNT &gt; 501) AND ((NOT Installed) OR (Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;)))" Sequence="4501"/>
+    <ROW Action="AI_PinShortcuts" Condition="(VersionNT &gt; 600) AND ((NOT Installed) OR (Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;)))" Sequence="6499"/>
+    <ROW Action="AI_UnpinShortcuts" Condition="(VersionNT &gt; 600) AND (REMOVE = &quot;ALL&quot;)" Sequence="3199"/>
+    <ROW Action="AI_AppSearchEx" Sequence="102"/>
+    <ROW Action="AI_ConfigureChainer" Condition="((UILevel = 2) OR (UILevel = 3)) AND (NOT UPGRADINGPRODUCTCODE)" Sequence="6597"/>
+    <ROW Action="AI_LaunchChainer" Condition="AI_PREREQ_CHAINER AND (NOT UPGRADINGPRODUCTCODE)" Sequence="6598"/>
+    <ROW Action="AI_VerifyPrereq" Sequence="1101"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+    <ROW Action="AI_FwInstall" Condition="(VersionNT &gt;= 501) AND (REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5802"/>
+    <ROW Action="AI_DATA_SETTER_1" Condition="(VersionNT &gt;= 501) AND (REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5801"/>
+    <ROW Action="AI_FwUninstall" Condition="(VersionNT &gt;= 501) AND (REMOVE=&quot;ALL&quot;)" Sequence="1702"/>
+    <ROW Action="AI_DATA_SETTER_2" Condition="(VersionNT &gt;= 501) AND (REMOVE=&quot;ALL&quot;)" Sequence="1701"/>
+    <ROW Action="AI_CplAppletInstall" Condition="(VersionNT &gt;= 500) AND ((Not Installed) OR REINSTALL)" Sequence="5401"/>
+    <ROW Action="AI_CplAppletUninstall" Condition="(VersionNT &gt;= 500) AND (REMOVE)" Sequence="2401"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="54"/>
+    <ROW Action="AI_DpiContentScale" Sequence="53"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="52"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="103"/>
+    <ROW Action="AI_AppSearchEx" Sequence="102"/>
+    <ROW Action="AI_DownloadPrereq" Sequence="1297"/>
+    <ROW Action="AI_ExtractPrereq" Sequence="1298"/>
+    <ROW Action="AI_InstallPrerequisite" Sequence="1299"/>
+    <ROW Action="AI_InstallPostPrerequisite" Sequence="1301"/>
+    <ROW Action="AI_CleanPrereq" Sequence="1302"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+    <ROW Action="AI_RestartElevated" Sequence="51" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="( Version9X OR VersionNT64 )" Description="[ProductName] cannot be installed on [WindowsTypeNTDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_DOTNET_VERSION &gt;= AI_REQUIRED_DOTNET_VERSION" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_REQUIRED_DOTNET_DISPLAY]." DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_WINDOWS_POWERSHELL_VERSION &gt;= AI_REQUIRED_WINDOWS_POWERSHELL_VERSION" Description="[ProductName] cannot be installed on systems without [AI_REQUIRED_WINDOWS_POWERSHELL_DISPLAY]." DescriptionLocId="AI.LaunchCondition.Windows.PowerShell" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="D5D54AFFAD641D2B30BF3F03FA9D51C" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]\[ProductVersion]" Name="D5D54AFFAD641D2B30BF3F03FA9D51C" Value="1" Component_="D5D54AFFAD641D2B30BF3F03FA9D51C"/>
+    <ROW Registry="Path_1" Root="2" Key="Software\TheFlightSims\License Manager" Name="Path" Value="[APPDIR]" Component_="Path"/>
+    <ROW Registry="Version_1" Root="2" Key="Software\TheFlightSims\License Manager" Name="Version" Value="[ProductVersion]" Component_="Version"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiServCtrlComponent">
+    <ROW ServiceControl="vlmcsd.exe" Name="vlmcsd" Event="161" Wait="0" Component_="vlmcsd.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiServInstComponent">
+    <ROW ServiceInstall="vlmcsd.exe" Name="vlmcsd" DisplayName="Volume Activation Service" ServiceType="16" StartType="2" ErrorControl="1" Arguments="  -i &quot;[#vlmcsd.ini]&quot; -j &quot;[#vlmcsd.kmd]&quot;" Component_="vlmcsd.exe" Description="Volume Activation Service for Windows service"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="LicenseManager" Directory_="DesktopFolder" Name="LICENS~1|License Manager" Component_="LicenseManager.exe" Target="[#LicenseManager.exe]" Description="License Manager, by TheFlightSims (feat. Hotbird64 &amp; @kkkgo)" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="LicenseManager_Dir" CustomFlags="2"/>
+    <ROW Shortcut="LicenseManager_1" Directory_="ProgramMenuFolder" Name="LICENS~1|License Manager" Component_="LicenseManager.exe" Target="[#LicenseManager.exe]" Description="License Manager, by TheFlightSims (feat. Hotbird64 &amp; @kkkgo)" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="LicenseManager_Dir" CustomFlags="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="BF9259651485FB4F316A40CB01E7B" DisplayName=".NET Framework 4.8 (web installer)" SetupFileUrl="Prerequisites\.NET Framework 4.8\ndp48-web.exe" Location="0" ExactSize="0" WinNTVersions="Windows Vista x86, Windows Server 2008 x86, Windows 7 RTM x86, Windows 8 x86, Windows 10 version 1507 x86, Windows 10 version 1511 x86, Windows 10 version 1903 x86, Windows 10 version 1909 x86, Windows 10 version 2004 x86, Windows 10 version 20H2 x86, Windows 10 version 21H1 x86, Windows 10 version 21H2 x86" WinNT64Versions="Windows Vista x64, Windows Server 2008 x64, Windows 7 RTM x64, Windows Server 2008 R2 RTM x64, Windows 8 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64, Windows 10 version 1903 x64, Windows 10 version 1909 x64, Windows 10 version 2004 x64, Windows 10 version 20H2 x64, Windows 10 version 21H1 x64, Windows 10 version 21H2 x64, Windows Server 2022 x64, Windows 11 x64" Operator="1" NoUiComLine="/q /norestart" Options="xy" TargetName=".NET Framework 4.8\ndp48-web.exe"/>
+    <ROW PrereqKey="D5D54AFFAD641D2B30BF3F03FA9D51C" DisplayName="MSXML 4.0 Parser SP3" VersionMin="4.30" SetupFileUrl="Prerequisites\MSXML 4.0 Parser SP3\msxml4-KB2758694-enu.exe" Location="0" ExactSize="0" Operator="1" ComLine="/l nul" BasicUiComLine="/qb /l nul" NoUiComLine="/quiet /l nul" Options="f" TargetName="MSXML 4.0 Parser SP3\msxml4-KB2758694-enu.exe" Feature="D5D54AFFAD641D2B30BF3F03FA9D51C"/>
+    <ATTRIBUTE name="PrereqsOrder" value="BF9259651485FB4F316A40CB01E7B D5D54AFFAD641D2B30BF3F03FA9D51C"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="BF9259651485FB4F316A40CB01E7BReleas" Prereq="BF9259651485FB4F316A40CB01E7B" SearchType="9" SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\Release" RefContent="G528048" Order="1" Property="PreReqSearch_BF9259651485FB4F316A40"/>
+    <ROW SearchKey="D5D54AFFAD641D2B30BF3F03FA9D51CSyst" Prereq="D5D54AFFAD641D2B30BF3F03FA9D51C" SearchType="0" SearchString="[SystemFolder]msxml4.dll" VerMin="4.30.2117.0" Order="1" Property="PreReqSearch_D5D54AFFAD641D2B30BF3F"/>
+  </COMPONENT>
+</DOCUMENT>

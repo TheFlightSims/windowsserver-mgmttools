@@ -52,7 +52,7 @@ namespace HGM.Hotbird64.LicenseManager
     {
         public override object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var stringValue = value?.ToString();
+            string stringValue = value?.ToString();
 
             if (stringValue != null && Regex.IsMatch(stringValue, PidGen.EpidPattern))
             {

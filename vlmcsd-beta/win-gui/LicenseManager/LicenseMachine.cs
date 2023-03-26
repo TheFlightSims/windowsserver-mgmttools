@@ -222,7 +222,7 @@ namespace HGM.Hotbird64.LicenseManager
 
             try
             {
-                var temp = @"\\" + computerName + @"\root\cimv2";
+                string temp = @"\\" + computerName + @"\root\cimv2";
                 scope = new ManagementScope(temp, credentials);
 
                 try
@@ -257,8 +257,8 @@ namespace HGM.Hotbird64.LicenseManager
             }
             catch (UnauthorizedAccessException ex)
             {
-                var tempComputer = (ComputerName.Contains(".") ? ComputerName : ComputerName.ToUpper());
-                var tempUser = UserName ?? WindowsIdentity.GetCurrent().Name;
+                string tempComputer = (ComputerName.Contains(".") ? ComputerName : ComputerName.ToUpper());
+                string tempUser = UserName ?? WindowsIdentity.GetCurrent().Name;
                 throw new UnauthorizedAccessException("Access denied by " + tempComputer +
                                                       " with the credentials you provided. Make sure\r\n\r\n" +
                                                       "1) You spelled your password correctly.\r\n" +
@@ -274,15 +274,15 @@ namespace HGM.Hotbird64.LicenseManager
 
             GetSystemInfo();
 
-            foreach (var licenseProvider in LicenseProvidersList)
+            foreach (LicenseProvider licenseProvider in LicenseProvidersList)
             {
                 licenseProvider.Version = null;
                 try
                 {
-                    var serviceClass = new ManagementClass(scope,
+                    ManagementClass serviceClass = new ManagementClass(scope,
                         new ManagementPath(licenseProvider.LicenseClassName),
                         wmiObjectOptions);
-                    foreach (var serviceItem in serviceClass.GetInstances())
+                    foreach (ManagementBaseObject serviceItem in serviceClass.GetInstances())
                     {
                         licenseProvider.Version = (string)serviceItem["Version"];
                     }
@@ -314,12 +314,12 @@ namespace HGM.Hotbird64.LicenseManager
         [SuppressMessage("ReSharper", "EmptyGeneralCatchClause")]
         public void GetSystemInfo()
         {
-            var si = SysInfo;
+            SysInfoClass si = SysInfo;
             dynamic DateConverter(dynamic x) => ManagementDateTimeConverter.ToDateTime(x);
 
             try
             {
-                using (var osInfoObject = new ManagementObject(scope, new ManagementPath("Win32_OperatingSystem=@"), wmiObjectOptions))
+                using (ManagementObject osInfoObject = new ManagementObject(scope, new ManagementPath("Win32_OperatingSystem=@"), wmiObjectOptions))
                 {
                     si.OsInfo.BuildNumber = osInfoObject.TryGetObject("BuildNumber", x => Convert.ToUInt32(x));
                     si.OsInfo.CsName = osInfoObject.TryGetObject("CSName");
@@ -336,9 +336,9 @@ namespace HGM.Hotbird64.LicenseManager
 
             try
             {
-                using (var csProductClass = new ManagementClass(scope, new ManagementPath("Win32_ComputerSystemProduct"), wmiObjectOptions))
-                using (var csProductCollection = csProductClass.GetInstances())
-                using (var csProductObject = csProductCollection.OfType<ManagementObject>().First())
+                using (ManagementClass csProductClass = new ManagementClass(scope, new ManagementPath("Win32_ComputerSystemProduct"), wmiObjectOptions))
+                using (ManagementObjectCollection csProductCollection = csProductClass.GetInstances())
+                using (ManagementObject csProductObject = csProductCollection.OfType<ManagementObject>().First())
                 {
                     si.CsProductInfo.IdentifyingNumber = csProductObject.TryGetObject("IdentifyingNumber");
                     si.CsProductInfo.Name = csProductObject.TryGetObject("Name");
@@ -351,9 +351,9 @@ namespace HGM.Hotbird64.LicenseManager
 
             try
             {
-                using (var biosClass = new ManagementClass(scope, new ManagementPath("Win32_BIOS"), wmiObjectOptions))
-                using (var biosCollection = biosClass.GetInstances())
-                using (var biosObject = biosCollection.OfType<ManagementObject>().First())
+                using (ManagementClass biosClass = new ManagementClass(scope, new ManagementPath("Win32_BIOS"), wmiObjectOptions))
+                using (ManagementObjectCollection biosCollection = biosClass.GetInstances())
+                using (ManagementObject biosObject = biosCollection.OfType<ManagementObject>().First())
                 {
                     si.BiosSerialNumber = biosObject.TryGetObject("SerialNumber");
                     si.BiosManufacturer = biosObject.TryGetObject("Manufacturer");
@@ -363,9 +363,9 @@ namespace HGM.Hotbird64.LicenseManager
 
             try
             {
-                using (var chassisClass = new ManagementClass(scope, new ManagementPath("Win32_SystemEnclosure"), wmiObjectOptions))
-                using (var chassisCollection = chassisClass.GetInstances())
-                using (var chassisObject = chassisCollection.OfType<ManagementObject>().First())
+                using (ManagementClass chassisClass = new ManagementClass(scope, new ManagementPath("Win32_SystemEnclosure"), wmiObjectOptions))
+                using (ManagementObjectCollection chassisCollection = chassisClass.GetInstances())
+                using (ManagementObject chassisObject = chassisCollection.OfType<ManagementObject>().First())
                 {
                     si.ChassisInfo.SerialNumber = chassisObject.TryGetObject("SerialNumber");
                     si.ChassisInfo.Manufacturer = chassisObject.TryGetObject("Manufacturer");
@@ -376,9 +376,9 @@ namespace HGM.Hotbird64.LicenseManager
 
             try
             {
-                using (var baseBoardClass = new ManagementClass(scope, new ManagementPath("Win32_Baseboard"), wmiObjectOptions))
-                using (var baseBoardCollection = baseBoardClass.GetInstances())
-                using (var baseBoardObject = baseBoardCollection.OfType<ManagementObject>().First())
+                using (ManagementClass baseBoardClass = new ManagementClass(scope, new ManagementPath("Win32_Baseboard"), wmiObjectOptions))
+                using (ManagementObjectCollection baseBoardCollection = baseBoardClass.GetInstances())
+                using (ManagementObject baseBoardObject = baseBoardCollection.OfType<ManagementObject>().First())
                 {
                     si.MotherboardInfo.Product = baseBoardObject.TryGetObject("Product");
                     si.MotherboardInfo.Manufacturer = baseBoardObject.TryGetObject("Manufacturer");
@@ -390,14 +390,14 @@ namespace HGM.Hotbird64.LicenseManager
 
             try
             {
-                using (var nicClass = new ManagementClass(scope, new ManagementPath("Win32_NetworkAdapter"), wmiObjectOptions))
-                using (var nicCollection = nicClass.GetInstances())
+                using (ManagementClass nicClass = new ManagementClass(scope, new ManagementPath("Win32_NetworkAdapter"), wmiObjectOptions))
+                using (ManagementObjectCollection nicCollection = nicClass.GetInstances())
                 {
                     si.NicInfos.Clear();
 
-                    foreach (var nicObject in nicCollection)
+                    foreach (ManagementBaseObject nicObject in nicCollection)
                     {
-                        var ni = new NicInfo
+                        NicInfo ni = new NicInfo
                         {
                             NetConnectionId = nicObject.TryGetObject("NetConnectionID"),
                             MacAddress = nicObject.TryGetObject("MACAddress"),
@@ -415,11 +415,11 @@ namespace HGM.Hotbird64.LicenseManager
 
             try
             {
-                using (var disk2PartClass = new ManagementClass(scope, new ManagementPath("Win32_LogicalDiskToPartition"), wmiObjectOptions))
+                using (ManagementClass disk2PartClass = new ManagementClass(scope, new ManagementPath("Win32_LogicalDiskToPartition"), wmiObjectOptions))
                 {
-                    using (var disk2PartCollection = disk2PartClass.GetInstances())
+                    using (ManagementObjectCollection disk2PartCollection = disk2PartClass.GetInstances())
                     {
-                        foreach (var disk2PartObject in disk2PartCollection)
+                        foreach (ManagementBaseObject disk2PartObject in disk2PartCollection)
                         {
                             using (ManagementObject partitionObject = new ManagementObject(scope, new ManagementPath((string)disk2PartObject["Antecedent"]), wmiObjectOptions),
                                 logicalDrive = new ManagementObject(scope, new ManagementPath((string)disk2PartObject["Dependent"]), wmiObjectOptions))
@@ -429,21 +429,21 @@ namespace HGM.Hotbird64.LicenseManager
                                     continue;
                                 }
 
-                                var x = @"Win32_DiskDrive.DeviceID='\\.\PHYSICALDRIVE" + partitionObject["DiskIndex"] + "'";
-                                using (var physicalDisk = new ManagementObject(scope, new ManagementPath(x), wmiObjectOptions))
+                                string x = @"Win32_DiskDrive.DeviceID='\\.\PHYSICALDRIVE" + partitionObject["DiskIndex"] + "'";
+                                using (ManagementObject physicalDisk = new ManagementObject(scope, new ManagementPath(x), wmiObjectOptions))
                                 {
                                     si.DiskSerialNumber = ((string)physicalDisk["SerialNumber"]);
                                     if (si.DiskSerialNumber != null)
                                     {
-                                        var serial = si.DiskSerialNumber;
-                                        var decodedSerial = "";
+                                        string serial = si.DiskSerialNumber;
+                                        string decodedSerial = "";
                                         try
                                         {
-                                            for (var i = 0; i < serial.Length; i += 4)
+                                            for (int i = 0; i < serial.Length; i += 4)
                                             {
-                                                for (var j = 2; j >= 0; j -= 2)
+                                                for (int j = 2; j >= 0; j -= 2)
                                                 {
-                                                    var hexByteString = serial.Substring(i + j, 2);
+                                                    string hexByteString = serial.Substring(i + j, 2);
                                                     decodedSerial += (char)ushort.Parse(hexByteString, NumberStyles.AllowHexSpecifier);
                                                 }
                                             }
@@ -540,7 +540,7 @@ namespace HGM.Hotbird64.LicenseManager
         {
             try
             {
-                using (var queryResult = GetManagementObjectCollection("SELECT LicenseStatus from SoftwareLicensingProduct WHERE ApplicationID = '55c92734-d682-4d71-983e-d6ec3f16059f' and LicenseStatus = 1"))
+                using (ManagementObjectCollection queryResult = GetManagementObjectCollection("SELECT LicenseStatus from SoftwareLicensingProduct WHERE ApplicationID = '55c92734-d682-4d71-983e-d6ec3f16059f' and LicenseStatus = 1"))
                 {
                     isWindowsActivated = queryResult.OfType<ManagementObject>().Any();
                 }
@@ -550,17 +550,17 @@ namespace HGM.Hotbird64.LicenseManager
                 isWindowsActivated = false;
             }
 
-            foreach (var licenseProvider in LicenseProvidersList)
+            foreach (LicenseProvider licenseProvider in LicenseProvidersList)
             {
                 ManagementObjectCollection queryResult = null;
 
                 try
                 {
-                    var querystring = $"SELECT ApplicationID, Description, ID, Name, PartialProductKey, LicenseStatus from {licenseProvider.ProductClassName} WHERE Description like '%KMSCLIENT%'";
+                    string querystring = $"SELECT ApplicationID, Description, ID, Name, PartialProductKey, LicenseStatus from {licenseProvider.ProductClassName} WHERE Description like '%KMSCLIENT%'";
 
                     queryResult = GetManagementObjectCollection(querystring);
 
-                    foreach (var license in queryResult)
+                    foreach (ManagementBaseObject license in queryResult)
                     {
                         result.Add(new KmsLicense
                         {
@@ -612,7 +612,7 @@ namespace HGM.Hotbird64.LicenseManager
         private ManagementObjectCollection GetManagementObjectCollection(string querystring)
         {
             ManagementObjectCollection queryResult;
-            using (var query = new ManagementObjectSearcher(scope, new ObjectQuery(querystring)))
+            using (ManagementObjectSearcher query = new ManagementObjectSearcher(scope, new ObjectQuery(querystring)))
             {
                 try
                 {
@@ -626,7 +626,7 @@ namespace HGM.Hotbird64.LicenseManager
                     }
 
                     ReEstablishConnection(ex);
-                    using (var query2 = new ManagementObjectSearcher(scope, new ObjectQuery(querystring)))
+                    using (ManagementObjectSearcher query2 = new ManagementObjectSearcher(scope, new ObjectQuery(querystring)))
                     {
                         queryResult = query2.Get();
                     }
@@ -648,18 +648,18 @@ namespace HGM.Hotbird64.LicenseManager
 
         public void RefreshLicenses()
         {
-            var errorMessage = "";
+            string errorMessage = "";
             ProductLicenseList.Clear();
 
-            for (var i = 0; i < LicenseProvidersList.Length; i++)
+            for (int i = 0; i < LicenseProvidersList.Length; i++)
             {
                 string propertyList;
 
                 try
                 {
-                    using (var managementClass = new ManagementClass(scope, new ManagementPath(LicenseProvidersList[i].ProductClassName), new ObjectGetOptions(null, TimeSpan.MaxValue, true)))
+                    using (ManagementClass managementClass = new ManagementClass(scope, new ManagementPath(LicenseProvidersList[i].ProductClassName), new ObjectGetOptions(null, TimeSpan.MaxValue, true)))
                     {
-                        var properties = managementClass.Properties.Cast<PropertyData>().Where(p => RequiredProperties.Contains(p.Name)).ToArray();
+                        PropertyData[] properties = managementClass.Properties.Cast<PropertyData>().Where(p => RequiredProperties.Contains(p.Name)).ToArray();
                         propertyList = properties.Aggregate("", (current, managementClassProperty) => current + (managementClassProperty.Name + (managementClassProperty != properties.Last() ? ", " : "")));
                     }
                 }
@@ -672,7 +672,7 @@ namespace HGM.Hotbird64.LicenseManager
 
                 try
                 {
-                    var querystring = $"SELECT {propertyList} from "
+                    string querystring = $"SELECT {propertyList} from "
                                       + LicenseProvidersList[i].ProductClassName
                                       + (IncludeInactiveLicenses == false
                                           ? " WHERE PartialProductKey IS NOT NULL"
@@ -680,7 +680,7 @@ namespace HGM.Hotbird64.LicenseManager
 
                     collection = GetManagementObjectCollection(querystring);
 
-                    foreach (var currentLicense in collection.OfType<ManagementObject>())
+                    foreach (ManagementObject currentLicense in collection.OfType<ManagementObject>())
                     {
                         ProductLicenseList.Add(new ProductLicense
                         {
@@ -745,14 +745,14 @@ namespace HGM.Hotbird64.LicenseManager
 #if DEBUG
             MessageBox.Show("RECONNECTING DUE TO ACCESS DENIED BUG\r\n\r\n" + ex.Message, "FUCK!", MessageBoxButton.OK, MessageBoxImage.Error);
 #endif
-            var temp = @"\\" + computerName + @"\root\cimv2";
+            string temp = @"\\" + computerName + @"\root\cimv2";
             scope = new ManagementScope(temp, credentials);
             scope.Connect();
         }
 
         public ManagementObject GetLicenseProviderParameters(string serviceName)
         {
-            var serviceClass = new ManagementClass(scope, new ManagementPath(serviceName), wmiObjectOptions);
+            ManagementClass serviceClass = new ManagementClass(scope, new ManagementPath(serviceName), wmiObjectOptions);
             ManagementObjectCollection collection;
             try
             {
@@ -765,7 +765,7 @@ namespace HGM.Hotbird64.LicenseManager
                 collection = serviceClass.GetInstances();
             }
 
-            var result = collection.OfType<ManagementObject>().FirstOrDefault();
+            ManagementObject result = collection.OfType<ManagementObject>().FirstOrDefault();
             if (result == null)
             {
                 throw new ApplicationException("Licensing service " + serviceName + " did not return any parameters.");
@@ -777,8 +777,8 @@ namespace HGM.Hotbird64.LicenseManager
 
         public string InstallProductKey(string key)
         {
-            var errorDetail = "";
-            foreach (var ls in LicenseProvidersList)
+            string errorDetail = "";
+            foreach (LicenseProvider ls in LicenseProvidersList)
             {
                 if (ls.Version == null)
                 {
@@ -929,7 +929,7 @@ namespace HGM.Hotbird64.LicenseManager
             if (intObject != null)
             {
                 uint intValue = 0;
-                var stringIsEmpty = (string)intObject == "";
+                bool stringIsEmpty = (string)intObject == "";
                 try
                 {
                     if (!stringIsEmpty)
@@ -1048,7 +1048,7 @@ namespace HGM.Hotbird64.LicenseManager
         {
             try
             {
-                using (var target = new ManagementObject(scope, new ManagementPath(wmiServiceName + "." + uniqueKey + "='" + id + "'"), wmiObjectOptions))
+                using (ManagementObject target = new ManagementObject(scope, new ManagementPath(wmiServiceName + "." + uniqueKey + "='" + id + "'"), wmiObjectOptions))
                 {
                     try
                     {
@@ -1066,7 +1066,7 @@ namespace HGM.Hotbird64.LicenseManager
                         }
 
                         ReEstablishConnection(ex);
-                        using (var target2 = new ManagementObject(scope, new ManagementPath(wmiServiceName + "." + uniqueKey + "='" + id + "'"), wmiObjectOptions))
+                        using (ManagementObject target2 = new ManagementObject(scope, new ManagementPath(wmiServiceName + "." + uniqueKey + "='" + id + "'"), wmiObjectOptions))
                         {
                             return target2.InvokeMethod(method, inParams);
                         }
@@ -1075,7 +1075,7 @@ namespace HGM.Hotbird64.LicenseManager
             }
             catch (UnauthorizedAccessException ex)
             {
-                var tempString = "You need administrative privileges to perform " + method + ". ";
+                string tempString = "You need administrative privileges to perform " + method + ". ";
                 if (ComputerName == ".")
                 {
                     tempString += "Run this program as administrator.";
@@ -1100,7 +1100,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void InvokeProductMethod(ProductLicense productLicense, string method, params object[] inParams)
         {
-            GetProductLicenseId(productLicense, out var serviceName, out var licenseId);
+            GetProductLicenseId(productLicense, out string serviceName, out string licenseId);
             InvokeMethod(serviceName, "ID", licenseId, method, inParams);
         }
 
@@ -1171,8 +1171,8 @@ namespace HGM.Hotbird64.LicenseManager
 
         public void InstallLicenseFile(LicenseProvider provider, string fileName)
         {
-            var xml = XDocument.Load(fileName, LoadOptions.PreserveWhitespace);
-            var xmlString = xml.ToString(SaveOptions.DisableFormatting);
+            XDocument xml = XDocument.Load(fileName, LoadOptions.PreserveWhitespace);
+            string xmlString = xml.ToString(SaveOptions.DisableFormatting);
             InstallLicense(provider, xmlString);
         }
 
@@ -1224,7 +1224,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         public uint StopService(LicenseProvider provider, int maxTries = 3)
         {
-            for (var i = 0; ; i++)
+            for (int i = 0; ; i++)
             {
                 try
                 {
@@ -1233,7 +1233,7 @@ namespace HGM.Hotbird64.LicenseManager
 									  ", Status=" + service["Status"] +
 									  ", Started=" + ((bool)service["Started"] == true ? "True" : "False"));*/
 
-                    var result = InvokeMethod("Win32_Service", "Name", provider.ServiceName, "StopService", null);
+                    object result = InvokeMethod("Win32_Service", "Name", provider.ServiceName, "StopService", null);
                     switch ((uint)result)
                     {
                         case 0:    // Success
@@ -1241,7 +1241,7 @@ namespace HGM.Hotbird64.LicenseManager
                         case 10:   // (Has already been stopped) Never happens, because WMI class is buggy, but just in case
                             break;
                         case 5:    // Has already been stopped (should be 10 according to http://msdn.microsoft.com/en-us/library/windows/desktop/aa393660(v=vs.85).aspx)
-                            using (var service = GetServiceState(provider))
+                            using (ManagementObject service = GetServiceState(provider))
                             {
                                 if ((bool)service["Started"]
                                   || (string)service["State"] != "Stopped"
@@ -1270,11 +1270,11 @@ namespace HGM.Hotbird64.LicenseManager
 
         public uint StartService(LicenseProvider provider, int maxTries = 3)
         {
-            for (var i = 0; ; i++)
+            for (int i = 0; ; i++)
             {
                 try
                 {
-                    var result = InvokeMethod("Win32_Service", "Name", provider.ServiceName, "StartService", null);
+                    object result = InvokeMethod("Win32_Service", "Name", provider.ServiceName, "StartService", null);
 
                     switch ((uint)result)
                     {

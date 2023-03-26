@@ -19,14 +19,14 @@ namespace HGM.Hotbird64.LicenseManager.Extensions
         /// <returns></returns>
         public static BitmapSource GenerateImage(this Visual renderTarget, UIElement control, double width, double height)
         {
-            var source = PresentationSource.FromVisual(renderTarget);
+            PresentationSource source = PresentationSource.FromVisual(renderTarget);
             if (source?.CompositionTarget == null) throw new InvalidOperationException("Unrendered Control specified");
 
-            var scaleX = source.CompositionTarget.TransformToDevice.M11;
-            var scaleY = source.CompositionTarget.TransformToDevice.M22;
-            var rect = new Rect(0, 0, width * scaleX * scaleX, height * scaleY * scaleY);
+            double scaleX = source.CompositionTarget.TransformToDevice.M11;
+            double scaleY = source.CompositionTarget.TransformToDevice.M22;
+            Rect rect = new Rect(0, 0, width * scaleX * scaleX, height * scaleY * scaleY);
 
-            var rtb = new RenderTargetBitmap
+            RenderTargetBitmap rtb = new RenderTargetBitmap
             (
                 (int)Math.Round(width * scaleX * scaleX * scaleX),
                 (int)Math.Round(height * scaleY * scaleY * scaleY),
@@ -43,14 +43,14 @@ namespace HGM.Hotbird64.LicenseManager.Extensions
         [SuppressMessage("ReSharper", "PartialTypeWithSinglePart")]
         public static void ExpandAll(this ItemsControl control, bool isExpanded)
         {
-            foreach (var item in control.Items)
+            foreach (object item in control.Items)
             {
                 if (!(item is TreeViewItem))
                 {
                     continue;
                 }
 
-                var treeViewItem = (TreeViewItem)item;
+                TreeViewItem treeViewItem = (TreeViewItem)item;
                 treeViewItem.IsExpanded = isExpanded;
                 ExpandAll(treeViewItem, isExpanded);
             }

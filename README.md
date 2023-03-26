@@ -3,43 +3,43 @@
 # The Repository
 
 ***This repository presents to you a collection of server management tools for various purposes:***
-- *Mass administrative on Active Directory environment*
-- *Manage multiple databases (e.g. MySQL, Microsoft SQL Server, e.t.c.)*
+- *Mass administration of Active Directory environment*
+- *Manage multiple databases (e.g., MySQL, Microsoft SQL Server, etc.)*
 - *Backup all Hyper-V virtual machines*
-- *Clean-up temporary NVIDIA GPU drivers*
+- *Clean up temporary NVIDIA GPU drivers*
 - *Remote install for MSI installer*
-- *Passthrough physical device into virtual machine*
+- *Passthrough physical device into the virtual machine*
 - *Activation services for server*
-- Manage updates for servers and clients
+- *Manage updates for servers and clients*
 
 For better understanding, you can see the [wiki page](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki).
 
 # Use and install
-***To run and using applications in this project, make sure your computer is install these features:***
- - dotNET 2.1, dotNET 3.5, dotNET 4.8. These are built-in features, and can be enabled on Windows 7 SP1 and later
- - Modern applications require .NET 6.0.11 and .NET 7.0. You can download [here](https://dotnet.microsoft.com/en-us/download)
- - Visual C++ 2015 and all versions later. You can download [here](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)
-
+***To run and use applications in this project, make sure your computer is installed with features:***
+ - dotNET 2.1, dotNET 3.5, dotNET 4.8. These are built-in features and can be enabled. You can see the document [here](https://learn.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows)
+ - Modern applications require .NET 6.0.11 and .NET 7.0. You can download in [there](https://dotnet.microsoft.com/en-us/download)
+ - Visual C++ 2015 and all versions later. You can download in [here](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 
 # The Files and Folders
 
 ***The repo consists of three parts***
- - **[!bin!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!bin!):** store compiled source codes (if the solution source needs to be complied)
- - **[!docs & ref!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!docs%20&%20ref!):** store documents and Visual Studio configurations. In this project, we use **Visual Studio 2022 (17.4 LTSC)** to edit the sources codes, and **Visual Studio 2019 build tools** for additional compliers.
+ - **[!bin!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!bin!):** store compiled source codes (if the solution source needs to comply)
+ - **[!docs & ref!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!docs%20&%20ref!):** store documents and Visual Studio configurations. We use **Visual Studio 2022 (17.5 LTSC)** to edit the source codes and [Advanced Installer](https://www.advancedinstaller.com/) to create installer.
  - **[!pub!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!pub!):** store complied and published packages. We will update it monthly, if possible.
- - **[!makevs!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!makevs!):** Make Visual Studio offline layout. It is recommeneded to fully editing in this project.
+ - **[!makevs!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!makevs!):** Make Visual Studio offline layout. It is recommended to fully editing in this project.
  - **.vs:**: includes Visual Studio source files.
  - **winser-mgmttools.sln:** solution files, contains all required paths for all projects.
- - **The rest of files and folders:** Project files and folders.
+ - **The rest of the files and folders:** Project files and folders.
 
 # Contributing & Feedback
 
 ## Contributing
-To fully edit this repository, run to download all layout for the Visual Studio 2022 that located in **[!makevs!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!makevs!):**.
+To fully edit this repository, run to download all layouts for the Visual Studio 2022 that located in **[!makevs!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!makevs!):**.
+Also, you may need [Advanced Installer](https://www.advancedinstaller.com/) to create installer. These are all located in folder [!bin](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!bin!) in each project.
 
 Otherwise, you can do other ways:
  - [Review Wiki Page](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki)
- - [Submit bugs and feature requests](https://github.com/TheFlightSims/windowsserver-mgmttools/issues)
+ - Submit bugs and feature requests in [GitHub](https://github.com/TheFlightSims/windowsserver-mgmttools/issues) or our [Discord server](https://discord.gg/VdbJAHKhuW)
  - [Review source codes](https://github.com/TheFlightSims/windowsserver-mgmttools)
  - [Review and commit pull requests](https://github.com/TheFlightSims/windowsserver-mgmttools/pulls)
 
@@ -52,7 +52,7 @@ To feedback this repository, go to [**feedback**](https://github.com/TheFlightSi
 ## License 
 This repo uses [**GNU GPL 3.0**](https://www.gnu.org/licenses/gpl-3.0.en.html) and [**MIT License**](https://opensource.org/licenses/MIT) for all contributors to have free, no limit to 
 - Use (for both private and commercial uses)
-- Modify (included edit the source files and complie/decomplied) 
+- Modify (including edit the source files and compile/decompile) 
 - Distribution without permission directly from TheFlightSims, except emergency revokes permission. In that case, this repo will be moved to private and cannot be accessed by the public.
 
 ## Original Contributors
@@ -70,7 +70,7 @@ This repo uses [**GNU GPL 3.0**](https://www.gnu.org/licenses/gpl-3.0.en.html) a
 |Computer Management|[Remote MSI Manager](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/remote-msi-manager)|@[DCourtel](https://github.com/DCourtel), TheFlightSims staff|https://github.com/DCourtel/Remote_MSI_Manager|
 |Computer Management|[SxS Management](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/sxs-mgmt)| Aunty Mel|https://pastebin.com/raw/9iuAqJSn|
 |Security|[User Rights](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/user-rights)|@[jcasale](https://github.com/jcasale), TheFlightSims staff|https://github.com/jcasale/UserRights|
-|Volume Activation|[vlmcsd beta](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/vlmcsd-beta)|@[Wind4](https://github.com/Wind4/vlmcsd), @[kkkgo](https://github.com/kkkgo), @[HarukaMa](https://github.com/HarukaMa), Hotbird64, Nang, TheFlightSims staff|https://github.com/kkkgo/vlmcsd|
+|Volume Activation|[vlmcsd beta](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/vlmcsd-beta)|@[Wind4](https://github.com/Wind4/vlmcsd), @[kkkgo](https://github.com/kkkgo), @[HarukaMa](https://github.com/HarukaMa), Hotbird64, Nang, TheFlightSims staff, Linus Torvalds, Erik Andersen, Waldemar Brodkorb, Denys Vlasenko, H. Peter Anvin|https://github.com/kkkgo/vlmcsd|
 |Group Policy|[GPO Checker](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/gpo-checker)|@[georgeatgrayson](https://github.com/georgeatgrayson), TheFlightSims staff|https://github.com/georgeatgrayson/Windows-GPO-Security-Checker|
 |Windows Update Services|[Windows Update Remote Service](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/winupdate-remote-svc)|@[EliaSaSe](https://github.com/EliaSaSe), @[dependabot[bot]](https://github.com/apps/dependabot), @[florianknecht](https://github.com/florianknecht), @[tinogruse](https://github.com/tinogruse), TheFlightSims staff|https://github.com/EliaSaSe/windows-update-remote-service|
 |Windows Update Services|[WSUS Workgroup Utilities](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/wsusworkgrouputilities)|@[blndev](https://github.com/blndev/), TheFlightSims staff|https://github.com/blndev/wsusworkgroup|

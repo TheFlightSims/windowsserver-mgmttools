@@ -92,9 +92,9 @@ namespace HGM.Hotbird64.LicenseManager
         [SuppressMessage("ReSharper", "PossibleInvalidOperationException")]
         private void ExportXml()
         {
-            using (var stream = new MemoryStream())
+            using (MemoryStream stream = new MemoryStream())
             {
-                var settings = new XmlWriterSettings
+                XmlWriterSettings settings = new XmlWriterSettings
                 {
                     NewLineHandling = NewLineHandling.Replace,
                     NewLineOnAttributes = CheckBoxMultiLine.IsChecked.Value,
@@ -104,14 +104,14 @@ namespace HGM.Hotbird64.LicenseManager
                     IndentChars = $"{tabs}",
                 };
 
-                var writer = XmlWriter.Create(stream, settings);
-                var serializer = new XmlSerializer(typeof(KmsData));
+                XmlWriter writer = XmlWriter.Create(stream, settings);
+                XmlSerializer serializer = new XmlSerializer(typeof(KmsData));
 
                 serializer.Serialize(writer, KmsLists.KmsData);
-                var buffer = new byte[stream.Length];
+                byte[] buffer = new byte[stream.Length];
                 stream.Seek(0, SeekOrigin.Begin);
                 stream.Read(buffer, 0, (int)stream.Length);
-                var text = encoding.GetString(buffer);
+                string text = encoding.GetString(buffer);
 
                 TextBoxOutput.Text = CheckBoxBlankLines.IsChecked.Value ?
                   Regex.Replace(text, CheckBoxMultiLine.IsChecked.Value ? ".*>" : "<.*>", m =>
@@ -122,7 +122,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void ExportVlmcsd()
         {
-            var vlmcsdHeader = default(VlmcsdHeader);
+            VlmcsdHeader vlmcsdHeader = default(VlmcsdHeader);
 
 #if DEBUG
             Debug.Assert(CheckBoxIncludeApp.IsChecked != null, "CheckBoxIncludeApp.IsChecked != null");
@@ -132,7 +132,7 @@ namespace HGM.Hotbird64.LicenseManager
             Debug.Assert(CheckBoxIncludeBetaSku.IsChecked != null, "CheckBoxIncludeBetaSku.IsChecked != null");
 #endif
 
-            using (var stream = vlmcsdHeader.WriteData
+            using (MemoryStream stream = vlmcsdHeader.WriteData
             (
                 CheckBoxIncludeApp.IsChecked.Value,
                 CheckBoxIncludeKms.IsChecked.Value,
@@ -145,11 +145,11 @@ namespace HGM.Hotbird64.LicenseManager
 
             TextBoxOutput.Text = "uint8_t DefaultKmsData[] =\n{\n";
 
-            for (var i = 0; i < vlmcsdBytes.Length; i += 16)
+            for (int i = 0; i < vlmcsdBytes.Length; i += 16)
             {
-                var text = $"{tabs}/* {i:X4} */ ";
+                string text = $"{tabs}/* {i:X4} */ ";
 
-                for (var j = 0; j < 16; j++)
+                for (int j = 0; j < 16; j++)
                 {
                     if (i + j < vlmcsdBytes.Length)
                     {
@@ -163,14 +163,14 @@ namespace HGM.Hotbird64.LicenseManager
 
                 text += "  // ";
 
-                for (var j = 0; j < 16; j++)
+                for (int j = 0; j < 16; j++)
                 {
                     if (i + j >= vlmcsdBytes.Length)
                     {
                         continue;
                     }
 
-                    var character = vlmcsdBytes[i + j];
+                    byte character = vlmcsdBytes[i + j];
                     text += (character < 0x20 || (j == 15 && character == 0x5c)) || (character > 0x7e && character < 0xa1) ? '.' : (char)vlmcsdBytes[i + j];
                 }
 
@@ -183,7 +183,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void ExportKmsIds()
         {
-            var kmsIdList = KmsLists.KmsItemList.OrderBy(k => KmsLists.AppItemList.IndexOf(k.App)).ThenBy(k => k.ToString());
+            IOrderedEnumerable<KmsItem> kmsIdList = KmsLists.KmsItemList.OrderBy(k => KmsLists.AppItemList.IndexOf(k.App)).ThenBy(k => k.ToString());
 
             switch (ExportFormat)
             {
@@ -200,14 +200,14 @@ namespace HGM.Hotbird64.LicenseManager
                     break;
             }
 
-            foreach (var kmsId in kmsIdList)
+            foreach (KmsItem kmsId in kmsIdList)
             {
                 //var vlmcsdEpidName = kmsId.VlmcsdEpidNameSpecified ? kmsId.VlmcsdEpidName.ToString() : kmsId.App.VlmcsdEpidName.ToString();
                 //var friendlyNamePadding = new string(' ', maxFriendlyNameLength - kmsId.ToString().Length);
                 //var ePidMacroPadding = new string(' ', maxEpidMacroLength - vlmcsdEpidName.Length);
                 // ReSharper disable once PossibleInvalidOperationException
-                var guidComment = CheckBoxAddComment.IsChecked.Value ? $" /*{kmsId.Guid}*/" : string.Empty;
-                var part4 = kmsId.Guid.Part4.Aggregate("", (current, guidByte) => current + $"0x{guidByte:x2}, ");
+                string guidComment = CheckBoxAddComment.IsChecked.Value ? $" /*{kmsId.Guid}*/" : string.Empty;
+                string part4 = kmsId.Guid.Part4.Aggregate("", (current, guidByte) => current + $"0x{guidByte:x2}, ");
 
                 switch (ExportFormat)
                 {
@@ -251,13 +251,13 @@ namespace HGM.Hotbird64.LicenseManager
                     break;
             }
 
-            foreach (var appId in KmsLists.AppItemList)
+            foreach (AppItem appId in KmsLists.AppItemList)
             {
-                var kmsIdList = KmsLists.KmsItemList.Where(k => k.App == appId).OrderBy(k => k.DisplayName).ToArray();
+                KmsItem[] kmsIdList = KmsLists.KmsItemList.Where(k => k.App == appId).OrderBy(k => k.DisplayName).ToArray();
 
-                foreach (var kmsId in kmsIdList)
+                foreach (KmsItem kmsId in kmsIdList)
                 {
-                    var skuIdList = KmsLists.SkuItemList.Where(s => s.KmsItem == kmsId).OrderBy(s => s.DisplayName);
+                    IOrderedEnumerable<SkuItem> skuIdList = KmsLists.SkuItemList.Where(s => s.KmsItem == kmsId).OrderBy(s => s.DisplayName);
                     if (ExportFormat != ExportFormat.PyKms)
                     {
                         AddOutput(string.Format(CCommentFormat, appId != KmsLists.AppItemList.First() || kmsId != kmsIdList.First() ? Environment.NewLine : "", kmsId, tabs));
@@ -268,9 +268,9 @@ namespace HGM.Hotbird64.LicenseManager
                         AddOutput($"#{tabs}ifdef INCLUDE_BETAS");
                     }
 
-                    foreach (var skuId in skuIdList)
+                    foreach (SkuItem skuId in skuIdList)
                     {
-                        var part4 = skuId.Guid.Part4.Aggregate("", (current, guidByte) => current + $"0x{guidByte:x2}, ");
+                        string part4 = skuId.Guid.Part4.Aggregate("", (current, guidByte) => current + $"0x{guidByte:x2}, ");
                         //var vlmcsdEpidName = skuId.KmsItem.VlmcsdEpidNameSpecified ? skuId.KmsItem.VlmcsdEpidName.ToString() : skuId.KmsItem.App.VlmcsdEpidName.ToString();
                         //var vlmcsdName = skuId.KmsItem.App.VlmcsdName.ToString();
                         //var vlmcsdKmsIdName = skuId.KmsItem.VlmcsdName.ToString();
@@ -278,7 +278,7 @@ namespace HGM.Hotbird64.LicenseManager
                         //var friendlyNamePadding = new string(' ', maxFriendlyNameLength - skuId.ToString().Length);
                         //var ePidMacroPadding = new string(' ', maxEpidMacroLength - vlmcsdEpidName.Length);
                         //var appMacroPadding = new string(' ', maxAppMacroLength - vlmcsdName.Length);
-                        var guidComment = CheckBoxAddComment.IsChecked.Value ? $" /*{skuId.Guid}*/" : string.Empty;
+                        string guidComment = CheckBoxAddComment.IsChecked.Value ? $" /*{skuId.Guid}*/" : string.Empty;
 
                         switch (ExportFormat)
                         {
@@ -348,7 +348,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new SaveFileDialog()
+            SaveFileDialog dialog = new SaveFileDialog()
             {
                 CheckPathExists = true,
                 AddExtension = false,
@@ -373,7 +373,7 @@ namespace HGM.Hotbird64.LicenseManager
                     break;
             }
 
-            var result = dialog.ShowDialog(this);
+            bool? result = dialog.ShowDialog(this);
             if (!result.Value)
             {
                 return;
@@ -385,7 +385,7 @@ namespace HGM.Hotbird64.LicenseManager
 
                 if (ExportFormat != ExportFormat.Vlmcsd)
                 {
-                    var textToWrite = TextBoxOutput.Text;
+                    string textToWrite = TextBoxOutput.Text;
                     await Task.Run(() => File.WriteAllText(dialog.FileName, textToWrite, encoding));
                 }
                 else

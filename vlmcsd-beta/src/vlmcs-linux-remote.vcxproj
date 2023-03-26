@@ -114,8 +114,8 @@
     </SourcePath>
     <RemoteLdToolExe>gcc</RemoteLdToolExe>
     <IncludePath>$(IncludePath);$(ISenseIncludePath);$(ProjectDir)VisualStudio-Linux-Remote\toolchains\gcc5-x86_64-linux-gnu\usr\include</IncludePath>
-    <IntDir>..\..\..\!bin!\vlmcsd-linux</IntDir>
-    <OutDir>..\..\..\!bin!\vlmcsd-linux</OutDir>
+    <IntDir>$(ProjectDir)vlmcs\obj\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>..\..\!bin!\vlmcsd-linux\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>vlmcs-x64-glibc</TargetName>

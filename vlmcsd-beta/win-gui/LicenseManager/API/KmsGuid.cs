@@ -44,7 +44,7 @@ namespace HGM.Hotbird64.Vlmcs
         {
             if (guidBytes.Count != 16) throw new ArgumentException("GUIDs must have a length of 16 bytes.");
 
-            for (var i = 0; i < 16; i++)
+            for (int i = 0; i < 16; i++)
             {
                 Data[i] = guidBytes[i];
             }
@@ -92,7 +92,7 @@ namespace HGM.Hotbird64.Vlmcs
 
         public KmsGuid(string guidString)
         {
-            var guid = new Guid(guidString);
+            Guid guid = new Guid(guidString);
             FromByteArray(guid.ToByteArray());
         }
 

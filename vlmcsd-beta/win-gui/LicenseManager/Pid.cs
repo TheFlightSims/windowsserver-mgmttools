@@ -125,15 +125,15 @@ namespace HGM.Hotbird64.LicenseManager
                 return null;
             }
 
-            var configs = MainWindow.CsvlkConfigs.Where(c => c.RefGroupId == pid.GroupId).ToArray();
-            var configIds = configs.Select(c => c.ActConfigGuid);
-            var range = MainWindow.CsvlkRanges.SingleOrDefault(r => configIds.Contains(r.RefActConfigGuid) && r.Start <= pid.KeyId && pid.KeyId <= r.End);
+            ProductKeyConfigurationConfigurationsConfiguration[] configs = MainWindow.CsvlkConfigs.Where(c => c.RefGroupId == pid.GroupId).ToArray();
+            IEnumerable<KmsGuid> configIds = configs.Select(c => c.ActConfigGuid);
+            ProductKeyConfigurationKeyRangesKeyRange range = MainWindow.CsvlkRanges.SingleOrDefault(r => configIds.Contains(r.RefActConfigGuid) && r.Start <= pid.KeyId && pid.KeyId <= r.End);
             if (range == null)
             {
                 return null;
             }
 
-            var config = configs.First(c => c.ActConfigGuid == range.RefActConfigGuid);
+            ProductKeyConfigurationConfigurationsConfiguration config = configs.First(c => c.ActConfigGuid == range.RefActConfigGuid);
             if (KmsLists.CsvlkItemList[config.ActConfigGuid] == null)
             {
                 return config;
@@ -236,7 +236,7 @@ namespace HGM.Hotbird64.LicenseManager
                     throw new FormatException($"LCID \"{Split[5]}\" in ePID is not in the format #####");
                 }
 
-                var tempInt = int.Parse(Split[5], CultureInfo.InvariantCulture);
+                int tempInt = int.Parse(Split[5], CultureInfo.InvariantCulture);
                 CultureInfo culture;
 
                 try
@@ -271,9 +271,9 @@ namespace HGM.Hotbird64.LicenseManager
                     throw new FormatException($"The ePID date \"{Split[7]}\" is not in the format DDDYYYY");
                 }
 
-                var date = IllegalDate;
-                var dayOfYear = uint.Parse(Split[7].Substring(0, 3), CultureInfo.InvariantCulture);
-                var year = uint.Parse(Split[7].Substring(3, 4), CultureInfo.InvariantCulture);
+                DateTime date = IllegalDate;
+                uint dayOfYear = uint.Parse(Split[7].Substring(0, 3), CultureInfo.InvariantCulture);
+                uint year = uint.Parse(Split[7].Substring(3, 4), CultureInfo.InvariantCulture);
                 if (year == 0)
                 {
                     throw new ArgumentOutOfRangeException("There is no year 0 in the proleptic gregorian calendar", (Exception)null);
@@ -300,13 +300,13 @@ namespace HGM.Hotbird64.LicenseManager
                     throw new FormatException("The ePID has no OS build number");
                 }
 
-                var os = Split[6].Split('.');
+                string[] os = Split[6].Split('.');
                 if (os.Length != 2 || os[1] != "0000" || !Regex.IsMatch(os[0], "^[0-9]{4,5}$"))
                 {
                     throw new FormatException($"The ePID OS build number \"{Split[6]}\" is not in the format #####.0000");
                 }
 
-                var osBuild = uint.Parse(os[0], CultureInfo.InvariantCulture);
+                uint osBuild = uint.Parse(os[0], CultureInfo.InvariantCulture);
                 return osBuild;
             }
         }
@@ -315,7 +315,7 @@ namespace HGM.Hotbird64.LicenseManager
         {
             get
             {
-                var winBuilds = KmsLists.KmsData.WinBuilds.OrderBy(b => b.BuildNumber).ToArray() as IReadOnlyList<WinBuild>;
+                IReadOnlyList<WinBuild> winBuilds = KmsLists.KmsData.WinBuilds.OrderBy(b => b.BuildNumber).ToArray() as IReadOnlyList<WinBuild>;
 
                 if (OsBuild < (uint)winBuilds[0].BuildNumber)
                 {
@@ -327,7 +327,7 @@ namespace HGM.Hotbird64.LicenseManager
                     return $"Newer than {winBuilds[winBuilds.Count - 1].DisplayName}";
                 }
 
-                for (var i = 0; i < winBuilds.Count; i++)
+                for (int i = 0; i < winBuilds.Count; i++)
                 {
                     if (OsBuild == (uint)winBuilds[i].BuildNumber)
                     {

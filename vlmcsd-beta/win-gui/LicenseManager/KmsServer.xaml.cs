@@ -36,10 +36,10 @@ namespace HGM.Hotbird64.LicenseManager
                 return true;
             }
 
-            var multiplierChar = intervalString.ToUpperInvariant().Last();
-            var numberString = intervalString.Substring(0, intervalString.Length - 1);
+            char multiplierChar = intervalString.ToUpperInvariant().Last();
+            string numberString = intervalString.Substring(0, intervalString.Length - 1);
 
-            if (!uint.TryParse(numberString, NumberStyles.AllowThousands | NumberStyles.AllowTrailingSign, CultureInfo.CurrentCulture, out var rawValue))
+            if (!uint.TryParse(numberString, NumberStyles.AllowThousands | NumberStyles.AllowTrailingSign, CultureInfo.CurrentCulture, out uint rawValue))
             {
                 return false;
             }
@@ -116,7 +116,7 @@ namespace HGM.Hotbird64.LicenseManager
                         TextBoxInfoText.AppendText(nl);
                     }
 
-                    var statusText = value ? "started" : "stopped";
+                    string statusText = value ? "started" : "stopped";
                     TextBoxInfoText.AppendText($"vlmcsd {Kms.EmulatorVersion}, API level {Kms.ApiVersion.Major}.{Kms.ApiVersion.Minor} has been {statusText}.");
                     TextBoxInfoText.ScrollToEnd();
 
@@ -131,7 +131,7 @@ namespace HGM.Hotbird64.LicenseManager
                                 return;
                             }
 
-                            var version = TapMirror.Start(TextBoxTapIp.Text, ((TapMirror.TapDevice)ComboBoxTap.Items[ComboBoxTap.SelectedIndex]).Name);
+                            Version version = TapMirror.Start(TextBoxTapIp.Text, ((TapMirror.TapDevice)ComboBoxTap.Items[ComboBoxTap.SelectedIndex]).Name);
                             ComboBoxTap.IsEnabled = false;
                             TextBoxInfoText.AppendText($"{nl}TAP {version} device \"{ComboBoxTap.SelectionBoxItem}\" has been started.");
                         }
@@ -153,7 +153,7 @@ namespace HGM.Hotbird64.LicenseManager
                         TapMirror.Stop();
                         UseTap.IsEnabled = TapMirror.GetTapDevices().Any();
                         ComboBoxTap.IsEnabled = true;
-                        foreach (var appItem in KmsLists.AppItemList)
+                        foreach (AppItem appItem in KmsLists.AppItemList)
                         {
                             appItem.Reset();
                         }
@@ -168,7 +168,7 @@ namespace HGM.Hotbird64.LicenseManager
             DataContext = this;
             TopElement.LayoutTransform = Scaler;
 
-            var tapList = TapMirror.GetTapDevices().ToArray();
+            TapMirror.TapDevice[] tapList = TapMirror.GetTapDevices().ToArray();
 
             UseTap.IsChecked = UseTap.IsEnabled = tapList.Any();
             ComboBoxTap.Visibility = UseTap.IsEnabled ? Visibility.Visible : Visibility.Collapsed;
@@ -179,7 +179,7 @@ namespace HGM.Hotbird64.LicenseManager
                 ComboBoxTap.SelectedIndex = 0;
             }
 
-            var dllVersion = Kms.ApiVersion;
+            ProtocolVersion dllVersion = Kms.ApiVersion;
 
             if (dllVersion < Kms.RequiredDllVersion)
             {
@@ -209,7 +209,7 @@ namespace HGM.Hotbird64.LicenseManager
                 {
                 }
 
-                foreach (var csvlkItem in Csvlks)
+                foreach (CsvlkItem csvlkItem in Csvlks)
                 {
                     csvlkItem.PropertyChanged -= CsvlkItem_PropertyChanged;
                 }
@@ -219,7 +219,7 @@ namespace HGM.Hotbird64.LicenseManager
             {
                 Icon = this.GenerateImage(new Icons.KmsServerIcon(), 16, 16);
 
-                foreach (var csvlkItem in Csvlks)
+                foreach (CsvlkItem csvlkItem in Csvlks)
                 {
                     csvlkItem.PropertyChanged += CsvlkItem_PropertyChanged;
                 }
@@ -249,13 +249,13 @@ namespace HGM.Hotbird64.LicenseManager
         [SuppressMessage("ReSharper", "PossibleInvalidOperationException")]
         public int ProcessKmsRequest(IntPtr requestPtr, IntPtr responsePtr, IntPtr hwIdPtr, IntPtr clientIpAddressPtr)
         {
-            var request = (KmsRequest)Marshal.PtrToStructure(requestPtr, typeof(KmsRequest));
-            var clientIpAddress = Marshal.PtrToStringAnsi(clientIpAddressPtr);
-            var response = new KmsResponse();
+            KmsRequest request = (KmsRequest)Marshal.PtrToStructure(requestPtr, typeof(KmsRequest));
+            string clientIpAddress = Marshal.PtrToStringAnsi(clientIpAddressPtr);
+            KmsResponse response = new KmsResponse();
             HwId hwId;
-            var result = 0;
-            var csvlkItem = Csvlks.SingleOrDefault(c => c.Activates.Select(a => a.Guid).Contains(request.KmsID)) ?? Csvlks[KmsLists.AppItemList[request.ID]?.VlmcsdIndex ?? 0];
-            var appItem = KmsLists.AppItemList[request.ApplicationID] ?? KmsLists.AppItemList.SingleOrDefault(a => a.VlmcsdIndex == 0) ?? KmsLists.AppItemList.First();
+            int result = 0;
+            CsvlkItem csvlkItem = Csvlks.SingleOrDefault(c => c.Activates.Select(a => a.Guid).Contains(request.KmsID)) ?? Csvlks[KmsLists.AppItemList[request.ID]?.VlmcsdIndex ?? 0];
+            AppItem appItem = KmsLists.AppItemList[request.ApplicationID] ?? KmsLists.AppItemList.SingleOrDefault(a => a.VlmcsdIndex == 0) ?? KmsLists.AppItemList.First();
 
             Dispatcher.Invoke(() =>
             {
@@ -272,9 +272,9 @@ namespace HGM.Hotbird64.LicenseManager
             response.ClientMachineID = request.ClientMachineID;
             response.TimeStamp = request.TimeStamp;
             response.Version = request.Version;
-            var allowUnknownProducts = false;
-            var allowRetailAndBetaProducts = false;
-            var checkTime = false;
+            bool allowUnknownProducts = false;
+            bool allowRetailAndBetaProducts = false;
+            bool checkTime = false;
 
             Dispatcher.Invoke(() =>
             {
@@ -301,12 +301,12 @@ namespace HGM.Hotbird64.LicenseManager
 
                 try
                 {
-                    var product = KmsLists.SkuItemList[request.ID]?.ToString() ??
+                    string product = KmsLists.SkuItemList[request.ID]?.ToString() ??
                                                 KmsLists.KmsItemList[request.KmsID]?.ToString() ??
                                                 KmsLists.AppItemList[request.ApplicationID]?.ToString() ??
                                                 "Unknown";
 
-                    var kmsItem = KmsLists.KmsItemList[request.KmsID];
+                    KmsItem kmsItem = KmsLists.KmsItemList[request.KmsID];
 
                     if (!allowRetailAndBetaProducts && kmsItem != null && (kmsItem.IsPreview || kmsItem.IsRetail))
                     {
@@ -341,7 +341,7 @@ namespace HGM.Hotbird64.LicenseManager
                         return result;
                     }
 
-                    var clientDate = DateTime.FromFileTime(request.TimeStamp).ToUniversalTime();
+                    DateTime clientDate = DateTime.FromFileTime(request.TimeStamp).ToUniversalTime();
 
                     if (checkTime && Math.Abs((clientDate - DateTime.UtcNow).TotalHours) > 4.0)
                     {
@@ -440,7 +440,7 @@ namespace HGM.Hotbird64.LicenseManager
 #if DEBUG
                 Debug.Assert(CheckBoxPreCharge.IsChecked != null, "CheckBoxPreCharge.IsChecked != null");
 #endif
-                foreach (var appItem in KmsLists.AppItemList)
+                foreach (AppItem appItem in KmsLists.AppItemList)
                 {
                     appItem.PreCharge(CheckBoxPreCharge.IsChecked.Value);
                 }
@@ -491,10 +491,10 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void ActivationInterval_TextChanged(object sender, TextChangedEventArgs e)
         {
-            var textBox = (TextBox)sender;
+            TextBox textBox = (TextBox)sender;
 
-            var parsedTextBox = ((Grid)textBox.Parent).Children.OfType<TextBox>().FirstOrDefault(uiElement => uiElement.Name == textBox.Name + "Parsed");
-            var isValidInterval = ActivationInterval.TryParse(textBox.Text, out uint validationInterval);
+            TextBox parsedTextBox = ((Grid)textBox.Parent).Children.OfType<TextBox>().FirstOrDefault(uiElement => uiElement.Name == textBox.Name + "Parsed");
+            bool isValidInterval = ActivationInterval.TryParse(textBox.Text, out uint validationInterval);
 
             if (!isValidInterval)
             {
@@ -510,7 +510,7 @@ namespace HGM.Hotbird64.LicenseManager
                 textBox.Background = Brushes.LightGreen;
             }
 
-            var timeSpan = TimeSpan.FromMinutes(validationInterval);
+            TimeSpan timeSpan = TimeSpan.FromMinutes(validationInterval);
             if (parsedTextBox != null)
             {
                 parsedTextBox.Text = $"{timeSpan.Days} days, {timeSpan.Hours} hours, {timeSpan.Minutes} minutes";
@@ -519,7 +519,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void UseTap_Click(object sender, RoutedEventArgs e)
         {
-            var checkBox = (CheckBox)sender;
+            CheckBox checkBox = (CheckBox)sender;
 
 #if DEBUG
             Debug.Assert(checkBox.IsChecked != null, "checkBox.IsChecked != null");
@@ -530,15 +530,15 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void TextBoxTapIp_TextChanged(object sender, TextChangedEventArgs e)
         {
-            var textBox = (TextBox)sender;
-            var isValid = TapMirror.IsValidSubnet(textBox.Text, out var errorReason);
+            TextBox textBox = (TextBox)sender;
+            bool isValid = TapMirror.IsValidSubnet(textBox.Text, out string errorReason);
             textBox.ToolTip = errorReason;
             textBox.Background = isValid ? Brushes.LightGreen : Brushes.OrangeRed;
         }
 
         private void TextBoxHwId_TextChanged(object sender, TextChangedEventArgs e)
         {
-            var textBox = (TextBox)sender;
+            TextBox textBox = (TextBox)sender;
             HwId hwid;
 
             try
@@ -556,7 +556,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void TextBoxPort_TextChanged(object sender, TextChangedEventArgs e)
         {
-            var textBox = (TextBox)sender;
+            TextBox textBox = (TextBox)sender;
 
             if (!ushort.TryParse(textBox.Text, NumberStyles.None, CultureInfo.CurrentCulture, out ushort port) || port == 0)
             {

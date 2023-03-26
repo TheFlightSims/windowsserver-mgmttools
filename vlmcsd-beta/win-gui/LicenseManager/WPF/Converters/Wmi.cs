@@ -31,7 +31,7 @@ namespace HGM.Hotbird64.LicenseManager.WPF.Converters
 
                 try
                 {
-                    var _ = WmiManagementObject[PropertyName];
+                    object _ = WmiManagementObject[PropertyName];
                     return false;
                 }
                 catch (ManagementException ex) when (ex.ErrorCode == ManagementStatus.NotFound)
@@ -69,7 +69,7 @@ namespace HGM.Hotbird64.LicenseManager.WPF.Converters
         public override object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             WmiProperty = (IWmiProperty)value;
-            var provider = WmiProperty?.LicenseProvider;
+            LicenseMachine.LicenseProvider provider = WmiProperty?.LicenseProvider;
             return $"{provider?.FriendlyName} {provider?.Version}";
         }
     }
@@ -92,7 +92,7 @@ namespace HGM.Hotbird64.LicenseManager.WPF.Converters
 
                 try
                 {
-                    var ePid = new EPid(WmiManagementObject[PropertyName]);
+                    EPid ePid = new EPid(WmiManagementObject[PropertyName]);
                     EPidPropertyValue = typeof(EPid).GetProperty(EPidPropertyName)?.GetValue(ePid);
                 }
                 catch
@@ -136,8 +136,8 @@ namespace HGM.Hotbird64.LicenseManager.WPF.Converters
     {
         public override object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var stringValue = (string)base.Convert(value, targetType, parameter, culture);
-            var developerMode = WmiProperty.DeveloperMode;
+            string stringValue = (string)base.Convert(value, targetType, parameter, culture);
+            bool developerMode = WmiProperty.DeveloperMode;
 
             if (IsUnsupported || !developerMode || stringValue == null)
             {
@@ -155,21 +155,21 @@ namespace HGM.Hotbird64.LicenseManager.WPF.Converters
                 return stringValue;
             }
 
-            var data1 = (uint)(guidBytes[3] << 24 |
+            uint data1 = (uint)(guidBytes[3] << 24 |
                                guidBytes[2] << 16 |
                                guidBytes[1] << 8 |
                                guidBytes[0]);
 
-            var data2 = (ushort)(guidBytes[5] << 8 |
+            ushort data2 = (ushort)(guidBytes[5] << 8 |
                                  guidBytes[4]);
 
-            var data3 = (ushort)(guidBytes[7] << 8 |
+            ushort data3 = (ushort)(guidBytes[7] << 8 |
                                  guidBytes[6]);
 
-            var byteList = "";
-            var cGuid = $" / {{ 0x{data1:x8}, 0x{data2:x4}, 0x{data3:x4}, {{ ";
+            string byteList = "";
+            string cGuid = $" / {{ 0x{data1:x8}, 0x{data2:x4}, 0x{data3:x4}, {{ ";
 
-            for (var i = 8; i < 16; i++)
+            for (int i = 8; i < 16; i++)
             {
                 byteList += $"0x{guidBytes[i]:x2}{(i == 15 ? "" : ",")} ";
             }
@@ -189,8 +189,8 @@ namespace HGM.Hotbird64.LicenseManager.WPF.Converters
         {
             try
             {
-                var result = "";
-                var rawValue = (base.Convert(value, targetType, parameter, culture) as IConvertible)?.ToString(culture);
+                string result = "";
+                string rawValue = (base.Convert(value, targetType, parameter, culture) as IConvertible)?.ToString(culture);
 
                 if (rawValue == null)
                 {
@@ -202,7 +202,7 @@ namespace HGM.Hotbird64.LicenseManager.WPF.Converters
                     throw new Exception();
                 }
 
-                for (var i = 0; i < 9; i++)
+                for (int i = 0; i < 9; i++)
                 {
                     result += rawValue.Substring(i * rawValue.Length / 9, rawValue.Length / 9) + (i == 8 ? "" : " ");
                 }
@@ -220,7 +220,7 @@ namespace HGM.Hotbird64.LicenseManager.WPF.Converters
     {
         public override object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var result = (base.Convert(value, targetType, parameter, culture) as IConvertible)?.ToString(culture);
+            string result = (base.Convert(value, targetType, parameter, culture) as IConvertible)?.ToString(culture);
 
             if (result == null) { return null; }
 

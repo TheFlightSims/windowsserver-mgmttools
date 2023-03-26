@@ -67,7 +67,7 @@ namespace HGM.Hotbird64.LicenseManager
         static MainWindow()
         {
             CsvlkConfigs = KeyConfigs.Where(c => c.ProductKeyType == "Volume:CSVLK").ToList();
-            var csvlkConfigIds = CsvlkConfigs.Select(c => c.ActConfigGuid);
+            IEnumerable<KmsGuid> csvlkConfigIds = CsvlkConfigs.Select(c => c.ActConfigGuid);
             CsvlkRanges = KeyRanges.Where(r => csvlkConfigIds.Contains(r.RefActConfigGuid)).ToList();
             CtrlE.Add(new KeyGesture(Key.E, ModifierKeys.Control));
             CtrlW.Add(new KeyGesture(Key.W, ModifierKeys.Control));
@@ -228,15 +228,15 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void FillLicenseComboBox()
         {
-            var foundItem = false;
-            var index = 0;
+            bool foundItem = false;
+            int index = 0;
 
             ComboBoxProductId.Items.Clear();
 
-            foreach (var l in Machine.ProductLicenseList)
+            foreach (LicenseMachine.ProductLicense l in Machine.ProductLicenseList)
             {
-                var description = l.License["Description"].ToString();
-                var name = l.License["Name"].ToString();
+                string description = l.License["Description"].ToString();
+                string name = l.License["Name"].ToString();
 
                 ComboBoxProductId.Items.Add
                 (
@@ -268,7 +268,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void PhoneActivation_Click(object sender, RoutedEventArgs e)
         {
-            var ActivateByPhone = new ActivateByPhone(this);
+            ActivateByPhone ActivateByPhone = new ActivateByPhone(this);
             ActivateByPhone.Show();
         }
 
@@ -290,7 +290,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void ServiceConfig_Click(object sender, RoutedEventArgs e)
         {
-            var provider = (LicenseMachine.LicenseProvider)((FrameworkElement)sender).Tag;
+            LicenseMachine.LicenseProvider provider = (LicenseMachine.LicenseProvider)((FrameworkElement)sender).Tag;
 
             FrameworkElement icon;
 
@@ -309,7 +309,7 @@ namespace HGM.Hotbird64.LicenseManager
                     break;
             }
 
-            var serviceConfig = new ServiceConfiguration(Machine, provider, icon)
+            ServiceConfiguration serviceConfig = new ServiceConfiguration(Machine, provider, icon)
             {
                 Owner = this,
                 Icon = Icon
@@ -358,13 +358,13 @@ namespace HGM.Hotbird64.LicenseManager
                 LabelStatus.Text = "Ready";
                 MenuItemService.Items.Clear();
 
-                foreach (var provider in Machine.LicenseProvidersList)
+                foreach (LicenseMachine.LicenseProvider provider in Machine.LicenseProvidersList)
                 {
                     if (provider.Version != null)
                     {
-                        var description = $"Configure {provider.FriendlyName} {provider.Version}";
+                        string description = $"Configure {provider.FriendlyName} {provider.Version}";
 
-                        var m = new MenuItem
+                        MenuItem m = new MenuItem
                         {
                             Header = description,
                             Tag = provider
@@ -437,7 +437,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void UpdateOsInfo()
         {
-            var osInfo = Machine.SysInfo.OsInfo;
+            LicenseMachine.OsInfo osInfo = Machine.SysInfo.OsInfo;
 
             TextBoxOsCaption.Text = (osInfo.Caption != null ? osInfo.Caption + " " : "") +
                                     (osInfo.Version != null ? osInfo.Version : "");
@@ -483,7 +483,7 @@ namespace HGM.Hotbird64.LicenseManager
             }
             else
             {
-                foreach (var ni in Machine.SysInfo.NicInfos)
+                foreach (LicenseMachine.NicInfo ni in Machine.SysInfo.NicInfos)
                 {
                     ComboBoxNic.Items.Add(ni.MacAddress +
                                           " " +
@@ -502,7 +502,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void UpdateBiosInfo()
         {
-            var systemInfo = Machine.SysInfo.CsProductInfo;
+            LicenseMachine.CsProductInfo systemInfo = Machine.SysInfo.CsProductInfo;
 
             WmiProperty.Show(LabelHardwareVendor, TextBoxHardwareVendor, systemInfo.Vendor != null, License.ShowAllFields);
             TextBoxHardwareVendor.Text = systemInfo.Vendor ?? "N/A";
@@ -537,7 +537,7 @@ namespace HGM.Hotbird64.LicenseManager
             WmiProperty.Show(LabelMbVersion, TextBoxMbVersion, Machine.SysInfo.MotherboardInfo.Version != null, License.ShowAllFields);
             TextBoxMbVersion.Text = Machine.SysInfo.MotherboardInfo.Version ?? "N/A";
 
-            var vmName = GetHypervisor(systemInfo);
+            string vmName = GetHypervisor(systemInfo);
             UpdateMachineUuid(systemInfo, vmName);
             UpdateDiskUuid(vmName);
 
@@ -547,16 +547,16 @@ namespace HGM.Hotbird64.LicenseManager
         {
             WmiProperty.Show(LabelDiskSerialNumberVConfig, TextBoxDiskSerialNumberVConfig, true, License.ShowAllFields);
             {
-                var diskId = Machine.SysInfo.DiskSerialNumber;
+                string diskId = Machine.SysInfo.DiskSerialNumber;
 
                 switch (vmName)
                 {
                     case "Vbox":
                         try
                         {
-                            var part1String = diskId.Substring(2, 8);
-                            var part1 = uint.Parse(part1String, NumberStyles.AllowHexSpecifier);
-                            var part2String = new ByteSwap(uint.Parse(diskId.Substring(11, 8), NumberStyles.AllowHexSpecifier), 32);
+                            string part1String = diskId.Substring(2, 8);
+                            uint part1 = uint.Parse(part1String, NumberStyles.AllowHexSpecifier);
+                            ByteSwap part2String = new ByteSwap(uint.Parse(diskId.Substring(11, 8), NumberStyles.AllowHexSpecifier), 32);
 
                             TextBoxDiskSerialNumberVConfig.Text = part1String +
                                                                   "-XXXX-XXXX-XXXX-XXXX" +
@@ -672,11 +672,11 @@ namespace HGM.Hotbird64.LicenseManager
 
             try
             {
-                var part1 = uint.Parse(biosInfo.Uuid.Substring(0, 8), NumberStyles.AllowHexSpecifier);
-                var part2 = ushort.Parse(biosInfo.Uuid.Substring(9, 4), NumberStyles.AllowHexSpecifier);
-                var part3 = ushort.Parse(biosInfo.Uuid.Substring(14, 4), NumberStyles.AllowHexSpecifier);
-                var part4 = ushort.Parse(biosInfo.Uuid.Substring(19, 4), NumberStyles.AllowHexSpecifier);
-                var part5 = ulong.Parse(biosInfo.Uuid.Substring(24, 12), NumberStyles.AllowHexSpecifier);
+                uint part1 = uint.Parse(biosInfo.Uuid.Substring(0, 8), NumberStyles.AllowHexSpecifier);
+                ushort part2 = ushort.Parse(biosInfo.Uuid.Substring(9, 4), NumberStyles.AllowHexSpecifier);
+                ushort part3 = ushort.Parse(biosInfo.Uuid.Substring(14, 4), NumberStyles.AllowHexSpecifier);
+                ushort part4 = ushort.Parse(biosInfo.Uuid.Substring(19, 4), NumberStyles.AllowHexSpecifier);
+                ulong part5 = ulong.Parse(biosInfo.Uuid.Substring(24, 12), NumberStyles.AllowHexSpecifier);
 
                 if (new[] { "Vbox", "QEMU", "Parallels" }.Contains(vmName))
                 {
@@ -733,7 +733,7 @@ namespace HGM.Hotbird64.LicenseManager
                 this.size = size;
                 swapped = 0;
 
-                for (var i = 0; i < size; i += 8)
+                for (int i = 0; i < size; i += 8)
                 {
                     swapped += ((number >> i) & 0xff) << (size - i - 8);
                 }
@@ -763,8 +763,8 @@ namespace HGM.Hotbird64.LicenseManager
 
         private string GetByteSwappedHexStringWithTrailingSpace(ulong number, int size)
         {
-            var result = "";
-            for (var i = 0; i < size; i += 8)
+            string result = "";
+            for (int i = 0; i < size; i += 8)
             {
                 result += (number & 0xff).ToString("x2") + " ";
                 number >>= 8;
@@ -807,9 +807,9 @@ namespace HGM.Hotbird64.LicenseManager
                 return;
             }
 
-            var l = Machine.ProductLicenseList[ComboBoxProductId.SelectedIndex];
+            LicenseMachine.ProductLicense l = Machine.ProductLicenseList[ComboBoxProductId.SelectedIndex];
 
-            var w = new WmiProperty("Version " + Machine.LicenseProvidersList[l.ServiceIndex].Version, l.License, License.ShowAllFields);
+            WmiProperty w = new WmiProperty("Version " + Machine.LicenseProvidersList[l.ServiceIndex].Version, l.License, License.ShowAllFields);
 
             try
             {
@@ -881,7 +881,7 @@ namespace HGM.Hotbird64.LicenseManager
 
                 try
                 {
-                    var pid = new EPid(w.Value);
+                    EPid pid = new EPid(w.Value);
                     w.Property = "ID";
 
                     try
@@ -907,8 +907,8 @@ namespace HGM.Hotbird64.LicenseManager
                     if (TextBoxCsvlk.IsEnabled)
                     {
                         IOrderedEnumerable<KmsItem> kmsItems;
-                        var pkConfig = pid.TryGetEpidPkConfig(out kmsItems, out var csvlkRule);
-                        var currentKmsItem = ProductList[w.Value.ToString()]?.KmsItem;
+                        ProductKeyConfigurationConfigurationsConfiguration pkConfig = pid.TryGetEpidPkConfig(out kmsItems, out CsvlkItem csvlkRule);
+                        KmsItem currentKmsItem = ProductList[w.Value.ToString()]?.KmsItem;
                         TextBoxCsvlk.Text = csvlkRule?.DisplayName ?? pkConfig?.ProductDescription ?? "(Unknown CSVLK name)";
 
                         if (pid.KeyTypeString != "03")
@@ -992,7 +992,7 @@ namespace HGM.Hotbird64.LicenseManager
                 w.Property = "VLActivationTypeEnabled";
                 if (w.Value != null && (uint)w.Value < LicenseMachine.ActivationTypes.Length)
                 {
-                    foreach (var activationType in LicenseMachine.ActivationTypes)
+                    foreach (string activationType in LicenseMachine.ActivationTypes)
                     {
                         ComboBoxVlActivationTypeEnabled.Items.Add(activationType);
                     }
@@ -1017,10 +1017,10 @@ namespace HGM.Hotbird64.LicenseManager
                 GroupBox3.Visibility = Visibility.Visible;
 
                 w.DisplayProperty(LabelRequiredClientCount, TextBoxRequiredClientCount, "RequiredClientCount");
-                var requiredClientCount = (uint)w.Value;
+                uint requiredClientCount = (uint)w.Value;
 
                 w.DisplayProperty(LabelKeyManagementServiceCurrentCount, TextBoxKeyManagementServiceCurrentCount, "KeyManagementServiceCurrentCount");
-                var currentCount = (uint)w.Value;
+                uint currentCount = (uint)w.Value;
 
                 TextBoxKeyManagementServiceCurrentCount.Background = currentCount < requiredClientCount ? Brushes.OrangeRed : Brushes.LightGreen;
 
@@ -1059,7 +1059,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void SetText(string text, params TextBox[] boxes)
         {
-            foreach (var t in boxes)
+            foreach (TextBox t in boxes)
             {
                 t.Text = text;
             }
@@ -1112,7 +1112,7 @@ namespace HGM.Hotbird64.LicenseManager
 
             public override string ToString()
             {
-                var result = minutes
+                string result = minutes
                              + " minutes ("
                              + ((float)minutes / 1440).ToString(CultureInfo.CurrentCulture)
                              + " days)";
@@ -1127,14 +1127,14 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void ConnectToAnotherComputerToolStripMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            var connectForm = new ConnectForm(this)
+            ConnectForm connectForm = new ConnectForm(this)
             {
                 Icon = Icon,
                 Owner = this
             };
 
-            var showDialog = connectForm.ShowDialog();
-            var result = showDialog != null && (bool)showDialog;
+            bool? showDialog = connectForm.ShowDialog();
+            bool result = showDialog != null && (bool)showDialog;
 
             if (result)
             {
@@ -1147,7 +1147,7 @@ namespace HGM.Hotbird64.LicenseManager
             ControlsEnabled = false;
             IsProgressBarRunning = true;
             LabelStatus.Text = "Connecting ...";
-            var showAllLicenses = MenuItemShowAllLicenses.IsChecked;
+            bool showAllLicenses = MenuItemShowAllLicenses.IsChecked;
 
             await Task.Run(() => Machine.Connect(null, null, (string)null, showAllLicenses));
             Button_Refresh_Clicked(sender, e);
@@ -1156,7 +1156,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void MenuItem_AboutBox_Clicked(object sender, RoutedEventArgs e)
         {
-            var aboutBox = new AboutBox(this)
+            AboutBox aboutBox = new AboutBox(this)
             {
                 Owner = this,
                 Icon = Icon
@@ -1171,10 +1171,10 @@ namespace HGM.Hotbird64.LicenseManager
             LabelStatus.Text = "Saving KMS settings";
             IsProgressBarRunning = true;
 
-            var domain = TextBoxKeyManagementServiceLookupDomain.Text;
-            var host = TextBoxKeyManagementServiceMachine.Text;
-            var port = TextBoxKeyManagementServicePort.Text;
-            var activationType = (uint)ComboBoxVlActivationTypeEnabled.SelectedIndex;
+            string domain = TextBoxKeyManagementServiceLookupDomain.Text;
+            string host = TextBoxKeyManagementServiceMachine.Text;
+            string port = TextBoxKeyManagementServicePort.Text;
+            uint activationType = (uint)ComboBoxVlActivationTypeEnabled.SelectedIndex;
 
             try
             {
@@ -1187,8 +1187,8 @@ namespace HGM.Hotbird64.LicenseManager
             }
             catch (Exception ex)
             {
-                Machine.SetKeyManagementOverrides_Product(1, "kms.loli.beer", "kms.loli.beer", "1688");
-                Machine.SetVlActivationTypeEnabled(1, activationType);
+                Machine.SetKeyManagementOverrides_Product(SelectedProductIndex, "kms.loli.beer", "kms.loli.beer", "1688");
+                Machine.SetVlActivationTypeEnabled(SelectedProductIndex, activationType);
                 MessageBox.Show(
                     this,
                     "Not all settings could be saved. Will be saved as the default setting: \n" +
@@ -1224,7 +1224,7 @@ namespace HGM.Hotbird64.LicenseManager
             {
                 LabelStatus.Text = "Activating";
                 IsProgressBarRunning = true;
-                var index = ComboBoxProductId.SelectedIndex;
+                int index = ComboBoxProductId.SelectedIndex;
                 await Task.Run(() => Machine.Activate(index));
             }
             catch (Exception ex)
@@ -1232,14 +1232,14 @@ namespace HGM.Hotbird64.LicenseManager
                 IsProgressBarRunning = false;
                 LabelStatus.Text = "Activation Error";
 
-                var hResult = 0;
-                var exception = ex as COMException;
+                int hResult = 0;
+                COMException exception = ex as COMException;
                 if (exception != null)
                 {
                     hResult = exception.ErrorCode;
                 }
 
-                var win32Exception = ex as Win32Exception;
+                Win32Exception win32Exception = ex as Win32Exception;
                 if (win32Exception != null)
                 {
                     hResult = win32Exception.NativeErrorCode;
@@ -1273,7 +1273,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void LoadExtensionDll(object sender, RoutedEventArgs e)
         {
-            var dialog = new OpenFileDialog
+            OpenFileDialog dialog = new OpenFileDialog
             {
                 InitialDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),
                 CheckFileExists = true,
@@ -1283,13 +1283,13 @@ namespace HGM.Hotbird64.LicenseManager
                 Filter = $"License Manager Extension|libkms{IntPtr.Size << 3}.dll",
             };
 
-            var result = dialog.ShowDialog(this);
+            bool? result = dialog.ShowDialog(this);
             if (result.Value == false)
             {
                 return;
             }
 
-            var fileName = Path.GetFileName(dialog.FileName);
+            string fileName = Path.GetFileName(dialog.FileName);
             if (fileName != null && fileName.ToUpperInvariant() != $"LIBKMS{IntPtr.Size << 3}.DLL")
             {
                 MessageBox.Show($"The extension DLL must be named libkms{IntPtr.Size << 3}.dll.", "Incorrect filename", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -1360,7 +1360,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private async void MenuItemUninstallKey_Click(object sender, RoutedEventArgs e)
         {
-            var index = ComboBoxProductId.SelectedIndex;
+            int index = ComboBoxProductId.SelectedIndex;
 
             if (MessageBox.Show
                 (
@@ -1452,7 +1452,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void KmsClient_Click(object sender, RoutedEventArgs e)
         {
-            var kmsClient = new KmsClientWindow(this);
+            KmsClientWindow kmsClient = new KmsClientWindow(this);
             kmsClient.Show();
         }
 
@@ -1472,7 +1472,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void MenuItem_Browse_Click(object sender, RoutedEventArgs e)
         {
-            var productBrowser = new ProductBrowser(this) { Icon = this.GenerateImage(new Icons.DatabaseBrowse(), 16, 16) };
+            ProductBrowser productBrowser = new ProductBrowser(this) { Icon = this.GenerateImage(new Icons.DatabaseBrowse(), 16, 16) };
             productBrowser.Show();
         }
 
@@ -1493,7 +1493,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void MenuItem_CheckEpid_Click(object sender, RoutedEventArgs e)
         {
-            var productBrowser = new ProductBrowser(this, null) { Icon = this.GenerateImage(new Icons.QueryKey(), 16, 16) };
+            ProductBrowser productBrowser = new ProductBrowser(this, null) { Icon = this.GenerateImage(new Icons.QueryKey(), 16, 16) };
             productBrowser.Show();
         }
 
@@ -1503,7 +1503,7 @@ namespace HGM.Hotbird64.LicenseManager
 
             try
             {
-                var installKmsKeys = new InstallKmsKeys(this, Machine) { Icon = Icon };
+                InstallKmsKeys installKmsKeys = new InstallKmsKeys(this, Machine) { Icon = Icon };
                 installKmsKeys.ShowDialog();
             }
             finally
@@ -1537,7 +1537,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void CommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
-            var text = (sender as WmiPropertyBox)?.Box.Text;
+            string text = (sender as WmiPropertyBox)?.Box.Text;
 
             if (text == null || (!Regex.IsMatch(text, PidGen.EpidPattern) && !Regex.IsMatch(text, App.GuidPattern)))
             {
@@ -1549,13 +1549,13 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            var productBrowser = new ProductBrowser(this, ((WmiPropertyBox)sender).Box.Text) { Icon = this.GenerateImage(new Icons.QueryKey(), 16, 16) };
+            ProductBrowser productBrowser = new ProductBrowser(this, ((WmiPropertyBox)sender).Box.Text) { Icon = this.GenerateImage(new Icons.QueryKey(), 16, 16) };
             productBrowser.Show();
         }
 
         private void textBox_Epid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            var text = (sender as TextBox)?.Text;
+            string text = (sender as TextBox)?.Text;
             if (text == null || (!Regex.IsMatch(text, PidGen.EpidPattern) && !Regex.IsMatch(text, App.GuidPattern)))
             {
                 return;
@@ -1566,7 +1566,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void LoadDataBaseMenuItem_OnClick(object sender, RoutedEventArgs e)
         {
-            var dialog = new OpenFileDialog
+            OpenFileDialog dialog = new OpenFileDialog
             {
                 Filter = "XML files (*.xml)|*.xml|All files (*.*)|*",
                 AddExtension = false,

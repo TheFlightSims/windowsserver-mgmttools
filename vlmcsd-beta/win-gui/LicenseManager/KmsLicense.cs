@@ -85,7 +85,7 @@ namespace HGM.Hotbird64.LicenseManager
                         return;
                     }
 
-                    foreach (var kmsLicense in List.Where(l => l != this)) kmsLicense.IsRadioButtonChecked = false;
+                    foreach (KmsLicense kmsLicense in List.Where(l => l != this)) kmsLicense.IsRadioButtonChecked = false;
                 }
 
                 if (isRadioButtonChecked == value) return;
@@ -113,7 +113,7 @@ namespace HGM.Hotbird64.LicenseManager
             {
                 if (id == value) return;
                 id = value;
-                var skuItem = KmsLists.SkuItemList[value];
+                SkuItem skuItem = KmsLists.SkuItemList[value];
                 Gvlk = skuItem?.Gvlk == null ? null : (BinaryProductKey?)skuItem.Gvlk;
                 IsGeneratedGvlk = skuItem?.IsGeneratedGvlk;
                 NotifyOfPropertyChange();
@@ -129,7 +129,7 @@ namespace HGM.Hotbird64.LicenseManager
         {
             get
             {
-                var skuItem = KmsLists.SkuItemList[ID];
+                SkuItem skuItem = KmsLists.SkuItemList[ID];
                 return skuItem?.ToString() ?? Name ?? Description;
             }
         }

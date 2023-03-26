@@ -165,7 +165,7 @@ namespace HGM.Hotbird64.LicenseManager
         {
             ParseSubnet(subnet, out int address, out int network, out int mask);
             device = OpenTapHandle(tapName);
-            var version = DriverVersion;
+            Version version = DriverVersion;
             if (version.Major == 8 && version.Minor < 2) throw new NotSupportedException("TAP driver 8.x or 9.x greater than 8.2 required");
 
             SetSubnet(address, network, mask);
@@ -187,18 +187,18 @@ namespace HGM.Hotbird64.LicenseManager
         private static unsafe void Mirror()
         {
             tap = new FileStream(device.Handle, FileAccess.ReadWrite, Mtu, true);
-            var buffer = new byte[Mtu];
+            byte[] buffer = new byte[Mtu];
 
             while (true)
             {
                 try
                 {
-                    var bytesRead = tap.Read(buffer, 0, buffer.Length);
+                    int bytesRead = tap.Read(buffer, 0, buffer.Length);
 
                     fixed (byte* b = buffer)
                     {
-                        var packet = (IpHeader*)b;
-                        var temp = packet->SourceIP;
+                        IpHeader* packet = (IpHeader*)b;
+                        uint temp = packet->SourceIP;
                         packet->SourceIP = packet->DestinationIP;
                         packet->DestinationIP = temp;
                     }
@@ -233,8 +233,8 @@ namespace HGM.Hotbird64.LicenseManager
         {
             get
             {
-                var tapDriverVersion = new TapDriverVersion();
-                var len = DevCtl(TapIoctl.GetVersion, &tapDriverVersion, sizeof(TapDriverVersion));
+                TapDriverVersion tapDriverVersion = new TapDriverVersion();
+                int len = DevCtl(TapIoctl.GetVersion, &tapDriverVersion, sizeof(TapDriverVersion));
 
                 switch (len)
                 {
@@ -254,7 +254,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         public static int IpAddressInt(string ipAddressString)
         {
-            var ipAddress = IPAddress.Parse(ipAddressString);
+            IPAddress ipAddress = IPAddress.Parse(ipAddressString);
             if (ipAddress.AddressFamily != AddressFamily.InterNetwork) throw new FormatException($"{ipAddressString} is not a valid IPv4 address");
             return IPAddress.NetworkToHostOrder(BitConverter.ToInt32(ipAddress.GetAddressBytes(), 0));
         }
@@ -262,7 +262,7 @@ namespace HGM.Hotbird64.LicenseManager
         private static void ParseSubnet(string subnet, out int address, out int network, out int mask)
         {
             int cidr;
-            var split = subnet.Split('/');
+            string[] split = subnet.Split('/');
             if (split.Length > 2) throw new FormatException("Subnet must be <IPv4 address>[/<CIDR mask>]");
 
             if (split.Length == 2)
@@ -279,7 +279,7 @@ namespace HGM.Hotbird64.LicenseManager
 
             mask = unchecked((int)~(uint.MaxValue >> cidr));
             network = address & mask;
-            var broadcast = address | ~mask;
+            int broadcast = address | ~mask;
 
             unchecked
             {
@@ -311,13 +311,13 @@ namespace HGM.Hotbird64.LicenseManager
 
         private static unsafe void SetSubnet(int address, int network, int mask)
         {
-            var tapConfigTun = new TapConfigTun { Address = address, Network = network, Mask = mask };
+            TapConfigTun tapConfigTun = new TapConfigTun { Address = address, Network = network, Mask = mask };
             DevCtl(TapIoctl.ConfigureIPv4Tunnel, &tapConfigTun, sizeof(TapConfigTun));
         }
 
         private static unsafe void EnableDhcp(int address, int mask)
         {
-            var tapConfigDhcp = new TapConfigDhcp
+            TapConfigDhcp tapConfigDhcp = new TapConfigDhcp
             {
                 Address = address,
                 Mask = mask,
@@ -333,7 +333,7 @@ namespace HGM.Hotbird64.LicenseManager
             get => isVirtualCableConnected && IsStarted;
             set
             {
-                var status = value ? 1 : 0;
+                int status = value ? 1 : 0;
                 DevCtl(TapIoctl.SetMediaStatus, &status, sizeof(int));
                 isVirtualCableConnected = value;
             }
@@ -343,12 +343,12 @@ namespace HGM.Hotbird64.LicenseManager
         {
             const string adapterKey = @"SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002BE10318}";
 
-            using (var regAdapters = Registry.LocalMachine.OpenSubKey(adapterKey, writable: false))
+            using (RegistryKey regAdapters = Registry.LocalMachine.OpenSubKey(adapterKey, writable: false))
             {
-                var keyNames = regAdapters?.GetSubKeyNames();
+                string[] keyNames = regAdapters?.GetSubKeyNames();
                 if (keyNames == null) yield break;
 
-                foreach (var keyName in keyNames)
+                foreach (string keyName in keyNames)
                 {
                     RegistryKey regAdapter;
 
@@ -363,9 +363,9 @@ namespace HGM.Hotbird64.LicenseManager
 
                     try
                     {
-                        var id = regAdapter?.GetValue("ComponentId")?.ToString();
+                        string id = regAdapter?.GetValue("ComponentId")?.ToString();
                         if (!tapDeviceVariants.Select(v => v.Class).Contains(id) || id == null) continue;
-                        var guid = regAdapter.GetValue("NetCfgInstanceId").ToString();
+                        string guid = regAdapter.GetValue("NetCfgInstanceId").ToString();
 
                         yield return new TapDevice
                         {
@@ -385,9 +385,9 @@ namespace HGM.Hotbird64.LicenseManager
 
         private static TapDevice OpenTapHandle(string deviceName = null)
         {
-            foreach (var tapDevice in GetTapDevices().Where(d => deviceName == null || d.Name == deviceName))
+            foreach (TapDevice tapDevice in GetTapDevices().Where(d => deviceName == null || d.Name == deviceName))
             {
-                var tapHandle = CreateFileW
+                SafeFileHandle tapHandle = CreateFileW
                 (
                     $@"\\.\Global\{tapDevice.Guid}.{tapDevice.DeviceSuffix}",
                     FileAccess.ReadWrite, FileShare.None, IntPtr.Zero, FileMode.Open,
@@ -405,7 +405,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private static string GetDisplayName(string tapGuid)
         {
-            var regConnection = Registry.LocalMachine.OpenSubKey
+            RegistryKey regConnection = Registry.LocalMachine.OpenSubKey
             (
                 $@"SYSTEM\CurrentControlSet\Control\Network\{{4D36E972-E325-11CE-BFC1-08002BE10318}}\{tapGuid}\Connection",
                 true

@@ -290,7 +290,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         public KmsClientWindow(MainWindow mainWindow) : base(mainWindow)
         {
-            var dllVersion = Kms.ApiVersion;
+            ProtocolVersion dllVersion = Kms.ApiVersion;
 
             if (dllVersion < Kms.RequiredDllVersion)
             {
@@ -377,14 +377,14 @@ namespace HGM.Hotbird64.LicenseManager
             //TextBox_HwId.Visibility = request.Version.Major > 5 ? Visibility.Visible : Visibility.Collapsed;
             DataGridEmulatorDetection.Visibility = DataGridProtocolConformance.Visibility = Visibility.Collapsed;
 
-            foreach (var textBox in responseTextBoxes)
+            foreach (TextBox textBox in responseTextBoxes)
             {
                 textBox.Text = null;
                 textBox.Background = readonlyTextBoxBrush;
                 textBox.Visibility = Visibility.Visible;
             }
 
-            foreach (var checkBox in responseCheckBoxes)
+            foreach (CheckBox checkBox in responseCheckBoxes)
             {
                 checkBox.IsChecked = false;
                 checkBox.Foreground = SystemColors.ControlTextBrush;
@@ -394,7 +394,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void ValidateGuid(TextBox textBox, out KmsGuid kmsGuid)
         {
-            var isValid = Guid.TryParse(textBox.Text, out Guid guid);
+            bool isValid = Guid.TryParse(textBox.Text, out Guid guid);
             textBox.Background = isValid && !KmsGuid.InvalidGuid.Equals(guid) ? Brushes.LightGreen : Brushes.OrangeRed;
             kmsGuid = isValid ? new KmsGuid(guid) : KmsGuid.InvalidGuid;
             ButtonSendRequest.IsEnabled = IsValidInput;
@@ -402,7 +402,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void ValidateUint(TextBox textBox, out uint uint32)
         {
-            var isValid = uint.TryParse(textBox.Text, out uint32);
+            bool isValid = uint.TryParse(textBox.Text, out uint32);
             if (!isValid)
             {
                 uint32 = ~0U;
@@ -414,7 +414,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void ValidateUShort(TextBox textBox, out ushort ushort16)
         {
-            var isValid = ushort.TryParse(textBox.Text, out ushort16);
+            bool isValid = ushort.TryParse(textBox.Text, out ushort16);
             textBox.Background = isValid && ushort16 != 0 ? Brushes.LightGreen : Brushes.OrangeRed;
             ButtonSendRequest.IsEnabled = IsValidInput;
         }
@@ -422,7 +422,7 @@ namespace HGM.Hotbird64.LicenseManager
         [SuppressMessage("ReSharper", "ReturnValueOfPureMethodIsNotUsed")]
         private void ValidateTime(TextBox textBox, out DateTime time)
         {
-            var isValid = DateTime.TryParse(textBox.Text, out time);
+            bool isValid = DateTime.TryParse(textBox.Text, out time);
 
             try
             {
@@ -517,7 +517,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void ComboBox_RemainingTime_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var comboBox = (ComboBox)sender;
+            ComboBox comboBox = (ComboBox)sender;
             if (comboBox.SelectedIndex < 0)
             {
                 return;
@@ -536,7 +536,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void TextBox_RemainingTime_TextChanged(object sender, TextChangedEventArgs e)
         {
-            var textBox = sender as TextBox;
+            TextBox textBox = sender as TextBox;
             ValidateUint(textBox, out MinutesRemaining);
             if (noTextTrigger)
             {
@@ -552,7 +552,7 @@ namespace HGM.Hotbird64.LicenseManager
 
             try
             {
-                var split = TextBoxVersion.Text.Split('.');
+                string[] split = TextBoxVersion.Text.Split('.');
                 if (split.Length != 2)
                 {
                     return;
@@ -677,7 +677,7 @@ namespace HGM.Hotbird64.LicenseManager
                 return false;
             }
 
-            var closingBracketPosition = address.LastIndexOf(']');
+            int closingBracketPosition = address.LastIndexOf(']');
             if (address.Length == closingBracketPosition + 2)
             {
                 return false;
@@ -696,7 +696,7 @@ namespace HGM.Hotbird64.LicenseManager
             port = "1688";
             if (address[0] == '[')
             {
-                var closingBracketPosition = address.LastIndexOf(']');
+                int closingBracketPosition = address.LastIndexOf(']');
                 host = address.Substring(1, closingBracketPosition - 1);
 
                 if (address.Length > closingBracketPosition + 2)
@@ -712,7 +712,7 @@ namespace HGM.Hotbird64.LicenseManager
                 }
                 else
                 {
-                    var split = address.Split(':');
+                    string[] split = address.Split(':');
                     host = split[0];
                     port = split[1];
                 }
@@ -721,8 +721,8 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void TextBox_Address_TextChanged(object sender, TextChangedEventArgs e)
         {
-            var textBox = (TextBox)sender;
-            var isValid = IsValidKmsAddress(textBox.Text);
+            TextBox textBox = (TextBox)sender;
+            bool isValid = IsValidKmsAddress(textBox.Text);
             ButtonSendRequest.IsEnabled = IsValidInput;
             textBox.Background = isValid ? Brushes.LightGreen : Brushes.OrangeRed;
             if (noTextTrigger)
@@ -738,7 +738,7 @@ namespace HGM.Hotbird64.LicenseManager
                     return;
                 }
 
-                SplitKmsAddress(textBox.Text, out var host, out var port);
+                SplitKmsAddress(textBox.Text, out string host, out string port);
 
                 try
                 {
@@ -837,7 +837,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void RandomGuidButton_Click(object sender, RoutedEventArgs e)
         {
-            var children = ((Grid)((Button)sender).Parent).Children;
+            UIElementCollection children = ((Grid)((Button)sender).Parent).Children;
             TextBox textBox = children.OfType<TextBox>().First();
             textBox.Text = KmsGuid.NewGuid().ToString();
         }
@@ -852,7 +852,7 @@ namespace HGM.Hotbird64.LicenseManager
         {
             TextBoxWorktstationName.Text = "";
 
-            foreach (var names in dnsNames)
+            foreach (string[] names in dnsNames)
             {
                 TextBoxWorktstationName.Text += names[random.Next(names.Length)];
             }
@@ -874,7 +874,7 @@ namespace HGM.Hotbird64.LicenseManager
         [SuppressMessage("ReSharper", "PossibleInvalidOperationException")]
         private void CheckBoxAutoRandomClientId_Click(object sender, RoutedEventArgs e)
         {
-            var isChecked = ((CheckBox)sender).IsChecked.Value;
+            bool isChecked = ((CheckBox)sender).IsChecked.Value;
             ButtonRandomClientId.Visibility = isChecked ? Visibility.Collapsed : Visibility.Visible;
             SetTextColorFromCheckBox(TextBoxClientGuid, isChecked);
         }
@@ -882,20 +882,20 @@ namespace HGM.Hotbird64.LicenseManager
         [SuppressMessage("ReSharper", "PossibleInvalidOperationException")]
         private void CheckBoxAutoRandomClientName_Click(object sender, RoutedEventArgs e)
         {
-            var isChecked = ((CheckBox)sender).IsChecked.Value;
+            bool isChecked = ((CheckBox)sender).IsChecked.Value;
             ButtonRandomDns.Visibility = isChecked ? Visibility.Collapsed : Visibility.Visible;
             SetTextColorFromCheckBox(TextBoxWorktstationName, isChecked);
         }
 
         private void Button_PickProduct_Click(object sender, RoutedEventArgs e)
         {
-            var productSelector = new ProductSelector
+            ProductSelector productSelector = new ProductSelector
             {
                 Icon = Icon,
                 Owner = this
             };
 
-            var showDialog = productSelector.ShowDialog();
+            bool? showDialog = productSelector.ShowDialog();
             if (showDialog != null && showDialog.Value && productSelector.SelectedProduct != null)
             {
                 ComboBoxProduct.SelectedIndex = KmsLists.SkuItemList.IndexOf(productSelector.SelectedProduct);
@@ -917,7 +917,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void ResponseCheckBox_Click(object sender, RoutedEventArgs e)
         {
-            var checkBox = (CheckBox)sender;
+            CheckBox checkBox = (CheckBox)sender;
             checkBox.IsChecked = !checkBox.IsChecked;
             e.Handled = true;
         }
@@ -974,9 +974,9 @@ namespace HGM.Hotbird64.LicenseManager
                     RandomDnsButton_Click(null, null);
                 }
 
-                var requestTime = RequestTime.ToUniversalTime().ToFileTimeUtc();
+                long requestTime = RequestTime.ToUniversalTime().ToFileTimeUtc();
 
-                var kmsRequest = new KmsRequest
+                KmsRequest kmsRequest = new KmsRequest
                 {
                     ApplicationID = AppGuid,
                     ClientMachineID = ClientGuid,
@@ -995,11 +995,11 @@ namespace HGM.Hotbird64.LicenseManager
                 ResetResponseControls();
 
                 byte[] hwId = null;
-                var kmsResponse = default(KmsResponse);
-                var kmsResult = default(KmsResult);
-                var rpcDiag = default(RpcDiag);
+                KmsResponse kmsResponse = default(KmsResponse);
+                KmsResult kmsResult = default(KmsResult);
+                RpcDiag rpcDiag = default(RpcDiag);
 
-                using (var kmsClient = new KmsClient(TextBoxHost.Text, kmsPort))
+                using (KmsClient kmsClient = new KmsClient(TextBoxHost.Text, kmsPort))
                 {
                     string warnings = null;
                     bool useMultiplexedRpc, useNdr64, useBtfn;
@@ -1037,7 +1037,7 @@ namespace HGM.Hotbird64.LicenseManager
                     }
 
                     TextBoxHwId.Text = $"{hwId[0]:X2} {hwId[1]:X2} {hwId[2]:X2} {hwId[3]:X2} {hwId[4]:X2} {hwId[5]:X2} {hwId[6]:X2} {hwId[7]:X2}";
-                    var pid = new EPid(kmsResponse.KmsPid);
+                    EPid pid = new EPid(kmsResponse.KmsPid);
 
                     CheckEpidForErrors(pid);
                     AnalyzeRpc(rpcDiag, pid, kmsRequest.KmsID);
@@ -1059,7 +1059,7 @@ namespace HGM.Hotbird64.LicenseManager
                         return;
                     }
 
-                    var testRequest = kmsRequest;
+                    KmsRequest testRequest = kmsRequest;
                     testRequest.TimeStamp = DateTime.FromFileTime(kmsRequest.TimeStamp).AddHours(5).ToFileTime();
 
                     if (!await AnalyzeExpectedError(
@@ -1200,10 +1200,10 @@ namespace HGM.Hotbird64.LicenseManager
         {
             string warnings, errors;
             RpcDiag rpcDiag;
-            var testResponse = default(KmsResponse);
+            KmsResponse testResponse = default(KmsResponse);
             byte[] testHwId;
 
-            var serverTestResult = new ServerTestResult
+            ServerTestResult serverTestResult = new ServerTestResult
             {
                 DisplayName = "Multiple requests over a single connection",
                 HasPassed = true,
@@ -1216,7 +1216,7 @@ namespace HGM.Hotbird64.LicenseManager
 
             try
             {
-                var result = serverTestResult;
+                ServerTestResult result = serverTestResult;
 
                 await Task.Run(() =>
                 {
@@ -1250,8 +1250,8 @@ namespace HGM.Hotbird64.LicenseManager
                 $"The first response reported \"{kmsResponse.KmsPid.Text}\".\n A second response reported \"{testResponse.KmsPid.Text}\"."
             });
 
-            var lastReportedClients = testResponse.KMSCurrentCount;
-            var oldRequiredClientCount = kmsRequest.RequiredClientCount;
+            uint lastReportedClients = testResponse.KMSCurrentCount;
+            uint oldRequiredClientCount = kmsRequest.RequiredClientCount;
 
             if (CheckBoxDangerousTests.IsChecked.Value)
             {
@@ -1268,7 +1268,7 @@ namespace HGM.Hotbird64.LicenseManager
                         };
 
                         kmsRequest.RequiredClientCount = kmsRequest.ApplicationID == Kms.WinGuid ? 52U : 12U;
-                        var minClients = testResponse.KMSCurrentCount + 2;
+                        uint minClients = testResponse.KMSCurrentCount + 2;
                         if (minClients > kmsRequest.RequiredClientCount)
                         {
                             kmsRequest.RequiredClientCount = minClients + 1;
@@ -1350,7 +1350,7 @@ namespace HGM.Hotbird64.LicenseManager
 
             kmsRequest.ID = KmsGuid.NewGuid();
 
-            var serverTestResult = new ServerTestResult
+            ServerTestResult serverTestResult = new ServerTestResult
             {
                 DisplayName = "Success on random SKU ID",
                 HasPassed = true,
@@ -1398,7 +1398,7 @@ namespace HGM.Hotbird64.LicenseManager
 
             string warnings;
 
-            var serverTestResult = new ServerTestResult
+            ServerTestResult serverTestResult = new ServerTestResult
             {
                 DisplayName = displayName,
                 Severity = severity,
@@ -1537,12 +1537,12 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void AnalyzeKeyRanges(EPid pid, KmsRequest request)
         {
-            var pkConfig = pid.TryGetEpidPkConfig(out var kmsItems, out var csvlkItem);
+            ProductKeyConfigurationConfigurationsConfiguration pkConfig = pid.TryGetEpidPkConfig(out IOrderedEnumerable<KmsItem> kmsItems, out CsvlkItem csvlkItem);
             DataGridProtocolConformance.ItemsSource = kmsItems;
 
             DataGridProtocolConformance.Visibility = kmsItems == null ? Visibility.Collapsed : Visibility.Visible;
 
-            var serverTestResult = new ServerTestResult
+            ServerTestResult serverTestResult = new ServerTestResult
             {
                 DisplayName = "KMS ID matches CSVLK",
                 Severity = 40,
@@ -1607,10 +1607,10 @@ namespace HGM.Hotbird64.LicenseManager
                 return;
             }
 
-            var application = ApplicationList[request.ApplicationID];
-            var product = KmsProductList[request.KmsID];
+            AppItem application = ApplicationList[request.ApplicationID];
+            KmsItem product = KmsProductList[request.KmsID];
 
-            var serverTestResult = new ServerTestResult
+            ServerTestResult serverTestResult = new ServerTestResult
             {
                 DisplayName = "Refuse if unknown Kms ID",
                 Severity = 10,
@@ -1646,7 +1646,7 @@ namespace HGM.Hotbird64.LicenseManager
                 serverTestResult.HasPassed = false;
                 serverTestResult.ToolTip += $"\n\nThe KMS server is an emulator because it activated an application other than ";
 
-                foreach (var app in ApplicationList)
+                foreach (AppItem app in ApplicationList)
                 {
                     serverTestResult.ToolTip += app == ApplicationList.First() ? $"{app}" : app == ApplicationList.Last() ? $" or {app}." : $", {app}";
                 }
@@ -1721,7 +1721,7 @@ namespace HGM.Hotbird64.LicenseManager
                 TextBoxEPid.Background = Brushes.LightYellow;
             }
 
-            var serverTestResult = new ServerTestResult
+            ServerTestResult serverTestResult = new ServerTestResult
             {
                 DisplayName = "EPID has valid LCID",
                 ToolTip = "The LCID in the EPID must be valid."
@@ -1754,7 +1754,7 @@ namespace HGM.Hotbird64.LicenseManager
 
             ValidateEpidField(() =>
             {
-                var thresholdDate = new DateTime(2009, 1, 1);
+                DateTime thresholdDate = new DateTime(2009, 1, 1);
                 if (pid.Date >= thresholdDate)
                 {
                     return;
@@ -1841,7 +1841,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void SetTextBoxFromPidProperty(TextBox textBox, EPid pid, string propertyName)
         {
-            var p = pid.GetType().GetProperty(propertyName);
+            PropertyInfo p = pid.GetType().GetProperty(propertyName);
 
             try
             {
@@ -1875,9 +1875,9 @@ namespace HGM.Hotbird64.LicenseManager
 
             TextBoxResponseClientId.Text = $"{response.ClientMachineID}";
             TextBoxResponseClientId.Background = kmsResult.IsValidClientMachineId.Value ? Brushes.LightGreen : Brushes.OrangeRed;
-            var timeStampUtc = DateTime.FromFileTimeUtc(response.TimeStamp).ToUniversalTime();
+            DateTime timeStampUtc = DateTime.FromFileTimeUtc(response.TimeStamp).ToUniversalTime();
 
-            var timeStampLocal = timeStampUtc.ToLocalTime();
+            DateTime timeStampLocal = timeStampUtc.ToLocalTime();
             TextBoxResponseTimeStamp.Text = $"{timeStampLocal.ToLongDateString()} {timeStampLocal.ToLongTimeString()} {CurrentTimeZone}";
             TextBoxResponseTimeStampUtc.Text = $"{timeStampUtc.ToLongDateString()} {timeStampUtc.ToLongTimeString()} UTC";
             TextBoxResponseTimeStampUtc.Background = kmsResult.IsValidTimeStamp.Value ? Brushes.LightGreen : Brushes.OrangeRed;
@@ -1902,7 +1902,7 @@ namespace HGM.Hotbird64.LicenseManager
                 TextBoxWarnings.AppendText("The KMS server has been \"overcharged\".\n");
             }
 
-            var timeSpan = new TimeSpan(0, (int)response.VLRenewalInterval, 0);
+            TimeSpan timeSpan = new TimeSpan(0, (int)response.VLRenewalInterval, 0);
             TextBoxRenewalInterval.Text = $"{timeSpan.Days} days, {timeSpan.Hours} hours, {timeSpan.Minutes} minutes";
             timeSpan = new TimeSpan(0, (int)response.VLActivationInterval, 0);
             TextBoxRetryInterval.Text = $"{timeSpan.Days} days, {timeSpan.Hours} hours, {timeSpan.Minutes} minutes";
@@ -1910,7 +1910,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void CommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
-            var text = (sender as TextBox)?.Text;
+            string text = (sender as TextBox)?.Text;
             if (text == null || (!Regex.IsMatch(text, PidGen.EpidPattern) && !Regex.IsMatch(text, App.GuidPattern)))
             {
                 return;
@@ -1926,7 +1926,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void CheckableTextBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            var text = (sender as TextBox)?.Text;
+            string text = (sender as TextBox)?.Text;
             if (text == null || (!Regex.IsMatch(text, PidGen.EpidPattern) && !Regex.IsMatch(text, App.GuidPattern)))
             {
                 return;
@@ -1937,7 +1937,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void CheckBoxMultipleTest_Click(object sender, RoutedEventArgs e)
         {
-            var checkBox = (CheckBox)sender;
+            CheckBox checkBox = (CheckBox)sender;
 
 #if DEBUG
             Debug.Assert(checkBox.IsChecked != null);
@@ -1960,21 +1960,21 @@ namespace HGM.Hotbird64.LicenseManager
         [SuppressMessage("ReSharper", "PossibleInvalidOperationException")]
         private void CheckBoxDangerousTests_Click(object sender, RoutedEventArgs e)
         {
-            var checkBox = (CheckBox)sender;
+            CheckBox checkBox = (CheckBox)sender;
             ButtonSendRequest.Content = checkBox.IsChecked.Value ? "Dangerous Server _Test" : "Server _Test";
             ButtonSendRequest.Foreground = checkBox.IsChecked.Value ? Brushes.Red : Brushes.Black;
         }
 
         private void AutoSize_Click(object sender, RoutedEventArgs e)
         {
-            var menuItem = (MenuItem)sender;
+            MenuItem menuItem = (MenuItem)sender;
             menuItem.IsChecked = !menuItem.IsChecked;
             SizeToContent = menuItem.IsChecked ? SizeToContent.Height : SizeToContent.Manual;
         }
 
         private void ShowAllDetectionTests_Click(object sender, RoutedEventArgs e)
         {
-            var menuItem = (MenuItem)sender;
+            MenuItem menuItem = (MenuItem)sender;
             menuItem.IsChecked = !menuItem.IsChecked;
             ShowEmulatorDetectionTests();
         }

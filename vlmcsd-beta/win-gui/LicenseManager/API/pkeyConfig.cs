@@ -61,7 +61,7 @@ namespace HGM.Hotbird64.Vlmcs
             get
             {
                 if (ProductKeyType == null) return -1;
-                var split = ProductKeyType.Split(':');
+                string[] split = ProductKeyType.Split(':');
 
                 switch (split[0].ToUpperInvariant())
                 {
@@ -94,7 +94,7 @@ namespace HGM.Hotbird64.Vlmcs
                     break;
 
                 case "Volume:GVLK":
-                    var kmsDataBaseName = KmsLists.SkuItemList[ActConfigGuid]?.DisplayName;
+                    string kmsDataBaseName = KmsLists.SkuItemList[ActConfigGuid]?.DisplayName;
                     if (kmsDataBaseName != null) return kmsDataBaseName;
                     break;
             }
@@ -168,7 +168,7 @@ namespace HGM.Hotbird64.Vlmcs
 
         public override bool Equals(object obj)
         {
-            var other = obj as ProductKeyConfigurationKeyRangesKeyRange;
+            ProductKeyConfigurationKeyRangesKeyRange other = obj as ProductKeyConfigurationKeyRangesKeyRange;
             if (other == null) return false;
 
             return
@@ -208,7 +208,7 @@ namespace HGM.Hotbird64.Vlmcs
 
         public override bool Equals(object obj)
         {
-            var other = obj as ProductKeyConfigurationPublicKeysPublicKey;
+            ProductKeyConfigurationPublicKeysPublicKey other = obj as ProductKeyConfigurationPublicKeysPublicKey;
             return GroupId == other?.GroupId;
         }
     }

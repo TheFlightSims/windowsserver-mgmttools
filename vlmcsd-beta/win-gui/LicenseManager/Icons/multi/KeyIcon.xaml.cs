@@ -22,7 +22,7 @@ namespace HGM.Hotbird64.Icons
 
         public static void AngleChanged(DependencyObject sender, DependencyPropertyChangedEventArgs e)
         {
-            var key = (KeyIcon)sender;
+            KeyIcon key = (KeyIcon)sender;
             key.RotateTransform.Angle = (double)e.NewValue;
         }
     }

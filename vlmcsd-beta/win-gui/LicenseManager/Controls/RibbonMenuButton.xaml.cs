@@ -34,19 +34,19 @@ namespace HGM.Hotbird64.LicenseManager.Controls
 
         public static void TextChanged(DependencyObject sender, DependencyPropertyChangedEventArgs e)
         {
-            var ribbonMenuButton = (RibbonMenuButton)sender;
+            RibbonMenuButton ribbonMenuButton = (RibbonMenuButton)sender;
             ribbonMenuButton.TextBlock.Text = ((string)e.NewValue).Replace("_", "");
         }
 
         public static void ImageChanged(DependencyObject sender, DependencyPropertyChangedEventArgs e)
         {
-            var ribbonMenuButton = (RibbonMenuButton)sender;
+            RibbonMenuButton ribbonMenuButton = (RibbonMenuButton)sender;
             ribbonMenuButton.ImageSource.Source = (ImageSource)e.NewValue;
         }
 
         public static void IconChanged(DependencyObject sender, DependencyPropertyChangedEventArgs e)
         {
-            var ribbonMenuButton = (RibbonMenuButton)sender;
+            RibbonMenuButton ribbonMenuButton = (RibbonMenuButton)sender;
             ribbonMenuButton.IconContent.Content = e.NewValue;
         }
     }

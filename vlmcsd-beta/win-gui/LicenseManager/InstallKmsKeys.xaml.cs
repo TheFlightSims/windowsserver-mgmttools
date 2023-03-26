@@ -33,11 +33,11 @@ namespace HGM.Hotbird64.LicenseManager
 
                 if (!isWindowsActivated)
                 {
-                    var firstWindowsLicense = kmsLicenses.FirstOrDefault(l => l.ApplicationID == Kms.WinGuid);
+                    KmsLicense firstWindowsLicense = kmsLicenses.FirstOrDefault(l => l.ApplicationID == Kms.WinGuid);
                     if (firstWindowsLicense != null) firstWindowsLicense.IsRadioButtonChecked = true;
                 }
 
-                foreach (var kmsLicense in kmsLicenses.Where(l => l.ApplicationID != Kms.WinGuid))
+                foreach (KmsLicense kmsLicense in kmsLicenses.Where(l => l.ApplicationID != Kms.WinGuid))
                 {
                     kmsLicense.IsCheckBoxChecked = kmsLicense.IsNotActivated;
                 }
@@ -75,9 +75,9 @@ namespace HGM.Hotbird64.LicenseManager
 
             try
             {
-                foreach (var kmsLicense in kmsLicenses) kmsLicense.IsControlEnabled = false;
+                foreach (KmsLicense kmsLicense in kmsLicenses) kmsLicense.IsControlEnabled = false;
 
-                foreach (var kmsLicense in kmsLicenses.Where(l => l.ApplicationID == Kms.WinGuid ? !l.IsRadioButtonChecked : !l.IsCheckBoxChecked))
+                foreach (KmsLicense kmsLicense in kmsLicenses.Where(l => l.ApplicationID == Kms.WinGuid ? !l.IsRadioButtonChecked : !l.IsCheckBoxChecked))
                 {
                     kmsLicense.InstallMessage = "N/A";
                     kmsLicense.InstallToolTip = "The GVLK has not been selected for installation";
@@ -90,7 +90,7 @@ namespace HGM.Hotbird64.LicenseManager
             {
                 try
                 {
-                    var licenseProvider = machine.InstallProductKey((string)kmsLicense.Gvlk);
+                    string licenseProvider = machine.InstallProductKey((string)kmsLicense.Gvlk);
                     NeedsRefresh = true;
 
                     Dispatcher.InvokeAsync(() =>

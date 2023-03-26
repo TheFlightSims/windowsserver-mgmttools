@@ -1,0 +1,35 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v150\Platforms\x64\PlatformToolsets\v141_xp\Toolset.targets(39,5): warning MSB8051: Support for targeting Windows XP is deprecated and will not be present in future releases of Visual Studio. Please see https://go.microsoft.com/fwlink/?linkid=2023588 for more information.
+  crypto.c
+  crypto_windows.c
+  dns_srv.c
+  endian.c
+  helpers.c
+  kms.c
+  kmsdata-full.c
+  network.c
+  ntservice.c
+  output.c
+  rpc.c
+  shared_globals.c
+c:\users\takineko\documents\github\windowsserver-mgmttools\vlmcsd-beta\src\shared_globals.h(9): fatal error C1083: Cannot open include file: 'sys/types.h': No such file or directory (compiling source file ..\..\src\shared_globals.c)
+c:\users\takineko\documents\github\windowsserver-mgmttools\vlmcsd-beta\src\helpers.c(27): fatal error C1083: Cannot open include file: 'string.h': No such file or directory
+c:\users\takineko\documents\github\windowsserver-mgmttools\vlmcsd-beta\src\endian.h(173): fatal error C1083: Cannot open include file: 'stdlib.h': No such file or directory (compiling source file ..\..\src\endian.c)
+c:\program files (x86)\microsoft sdks\windows\v7.1a\include\winnt.h(31): fatal error C1083: Cannot open include file: 'ctype.h': No such file or directory (compiling source file ..\..\src\crypto.c)
+c:\users\takineko\documents\github\windowsserver-mgmttools\vlmcsd-beta\src\rpc.c(12): fatal error C1083: Cannot open include file: 'stdlib.h': No such file or directory
+c:\program files (x86)\microsoft sdks\windows\v7.1a\include\winnt.h(31): fatal error C1083: Cannot open include file: 'ctype.h': No such file or directory (compiling source file ..\..\src\dns_srv.c)
+c:\program files (x86)\microsoft sdks\windows\v7.1a\include\winnt.h(31): fatal error C1083: Cannot open include file: 'ctype.h': No such file or directory (compiling source file ..\..\src\ntservice.c)
+c:\users\takineko\documents\github\windowsserver-mgmttools\vlmcsd-beta\src\output.h(9): fatal error C1083: Cannot open include file: 'errno.h': No such file or directory (compiling source file ..\..\src\output.c)
+c:\users\takineko\documents\github\windowsserver-mgmttools\vlmcsd-beta\src\kms.c(14): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory
+  vlmcs.c
+  vlmcsd.c
+c:\program files (x86)\microsoft sdks\windows\v7.1a\include\winnt.h(31): fatal error C1083: Cannot open include file: 'ctype.h': No such file or directory (compiling source file ..\..\src\network.c)
+c:\program files (x86)\microsoft sdks\windows\v7.1a\include\winnt.h(31): fatal error C1083: Cannot open include file: 'ctype.h': No such file or directory (compiling source file ..\..\src\crypto_windows.c)
+  vlmcsdmulti.c
+  wingetopt.c
+  wintap.c
+c:\program files (x86)\microsoft sdks\windows\v7.1a\include\winnt.h(31): fatal error C1083: Cannot open include file: 'ctype.h': No such file or directory (compiling source file ..\..\src\kmsdata-full.c)
+c:\users\takineko\documents\github\windowsserver-mgmttools\vlmcsd-beta\src\wingetopt.c(14): fatal error C1083: Cannot open include file: 'string.h': No such file or directory
+c:\program files (x86)\microsoft sdks\windows\v7.1a\include\winnt.h(31): fatal error C1083: Cannot open include file: 'ctype.h': No such file or directory (compiling source file ..\..\src\wintap.c)
+c:\program files (x86)\microsoft sdks\windows\v7.1a\include\winnt.h(31): fatal error C1083: Cannot open include file: 'ctype.h': No such file or directory (compiling source file ..\..\src\vlmcs.c)
+c:\users\takineko\documents\github\windowsserver-mgmttools\vlmcsd-beta\src\vlmcsdmulti.c(14): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory
+c:\users\takineko\documents\github\windowsserver-mgmttools\vlmcsd-beta\src\vlmcsd.c(26): fatal error C1083: Cannot open include file: 'stdio.h': No such file or directory

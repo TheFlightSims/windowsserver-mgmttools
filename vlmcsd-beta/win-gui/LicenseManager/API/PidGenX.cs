@@ -165,9 +165,9 @@ namespace HGM.Hotbird64.Vlmcs
 
         internal static unsafe byte[] GetBytes(byte* b, int len)
         {
-            var result = new byte[len];
+            byte[] result = new byte[len];
 
-            for (var i = 0; i < len; i++)
+            for (int i = 0; i < len; i++)
             {
                 result[i] = b[i];
             }
@@ -193,7 +193,7 @@ namespace HGM.Hotbird64.Vlmcs
                 throw new ArgumentException($"\"{ePid}\" is not a valid EPID", nameof(ePid));
             }
 
-            var activationRequest = Encoding.Unicode.GetBytes
+            byte[] activationRequest = Encoding.Unicode.GetBytes
             (
                 "<ActivationRequest xmlns=\"http://www.microsoft.com/DRM/SL/BatchActivationRequest/1.0\">" +
                     "<VersionNumber>2.0</VersionNumber>" +
@@ -206,9 +206,9 @@ namespace HGM.Hotbird64.Vlmcs
                 "</ActivationRequest>"
             );
 
-            var digest = new HMACSHA256(MSActivationServerHmacKey).ComputeHash(activationRequest, 0, activationRequest.Length);
+            byte[] digest = new HMACSHA256(MSActivationServerHmacKey).ComputeHash(activationRequest, 0, activationRequest.Length);
 
-            var soapRequest = Encoding.UTF8.GetBytes
+            byte[] soapRequest = Encoding.UTF8.GetBytes
             (
                 "<?xml version=\"1.0\" encoding=\"utf-8\"?>" +
                 "<s:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" " +
@@ -226,7 +226,7 @@ namespace HGM.Hotbird64.Vlmcs
                 "</s:Envelope>"
             );
 
-            var httpRequest = (HttpWebRequest)WebRequest.Create("https://activation.sls.microsoft.com/BatchActivation/BatchActivation.asmx");
+            HttpWebRequest httpRequest = (HttpWebRequest)WebRequest.Create("https://activation.sls.microsoft.com/BatchActivation/BatchActivation.asmx");
 
             httpRequest.Method = "POST";
             httpRequest.ContentType = "application/soap+xml; charset=utf-8";
@@ -235,41 +235,41 @@ namespace HGM.Hotbird64.Vlmcs
             httpRequest.UserAgent = "Mozilla/4.0 (compatible; MSIE 6.0; MS Web Services Client Protocol 4.0.30319.1)";
             httpRequest.Host = "activation.sls.microsoft.com";
 
-            using (var requestStream = httpRequest.GetRequestStream())
+            using (Stream requestStream = httpRequest.GetRequestStream())
             {
                 requestStream.Write(soapRequest, 0, soapRequest.Length);
             }
 
-            var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+            HttpWebResponse httpResponse = (HttpWebResponse)httpRequest.GetResponse();
 
             if (httpResponse.StatusCode != HttpStatusCode.OK)
             {
                 throw new WebException($"Error while communicating with activation.sls.microsoft.com. Http status: {httpResponse.StatusCode} ({(int)httpResponse.StatusCode})", WebExceptionStatus.ProtocolError);
             }
 
-            var soapResponseDocument = new XmlDocument();
+            XmlDocument soapResponseDocument = new XmlDocument();
 
-            using (var soapResponse = httpResponse.GetResponseStream())
+            using (Stream soapResponse = httpResponse.GetResponseStream())
             {
                 if (soapResponse != null) soapResponseDocument.Load(soapResponse);
             }
 
-            var activationResponseDocument = new XmlDocument();
+            XmlDocument activationResponseDocument = new XmlDocument();
             activationResponseDocument.LoadXml(soapResponseDocument.LastChild.FirstChild.FirstChild.FirstChild.FirstChild.InnerText);
 
-            var responseError = activationResponseDocument.SelectSingleNode("/*[local-name()='ActivationResponse']/*[local-name()='ErrorInfo']/*[local-name()='ErrorCode']")?.InnerText;
+            string responseError = activationResponseDocument.SelectSingleNode("/*[local-name()='ActivationResponse']/*[local-name()='ErrorInfo']/*[local-name()='ErrorCode']")?.InnerText;
 
             if (responseError != null)
             {
                 throw new EPidQueryException($"EPID \"{ePid}\" is in an unknown format.", GetNumber(responseError), ePid);
             }
 
-            var payLoadNode = activationResponseDocument.SelectSingleNode("/*[local-name()='ActivationResponse']/*[local-name()='Responses']/*[local-name()='Response']");
-            var errorCodeText = payLoadNode?.SelectSingleNode("//*[local-name()='ErrorInfo']/*[local-name()='ErrorCode']")?.InnerText;
+            XmlNode payLoadNode = activationResponseDocument.SelectSingleNode("/*[local-name()='ActivationResponse']/*[local-name()='Responses']/*[local-name()='Response']");
+            string errorCodeText = payLoadNode?.SelectSingleNode("//*[local-name()='ErrorInfo']/*[local-name()='ErrorCode']")?.InnerText;
 
             if (errorCodeText != null)
             {
-                var errorCode = GetNumber(errorCodeText);
+                int errorCode = GetNumber(errorCodeText);
 
                 switch (errorCode)
                 {
@@ -282,7 +282,7 @@ namespace HGM.Hotbird64.Vlmcs
                 }
             }
 
-            var responsePid = payLoadNode?.SelectSingleNode("//*[local-name()='PID']")?.InnerText;
+            string responsePid = payLoadNode?.SelectSingleNode("//*[local-name()='PID']")?.InnerText;
 
             if (responsePid == null)
             {
@@ -294,7 +294,7 @@ namespace HGM.Hotbird64.Vlmcs
                 throw new EPidQueryException($"Requested info for EPID \"{ePid}\" but got answer for EPID \"{responsePid}\"", -1, ePid);
             }
 
-            var activationsRemainingText = payLoadNode.SelectSingleNode("//*[local-name()='ActivationRemaining']")?.InnerText;
+            string activationsRemainingText = payLoadNode.SelectSingleNode("//*[local-name()='ActivationRemaining']")?.InnerText;
 
             if (activationsRemainingText == null)
             {
@@ -307,7 +307,7 @@ namespace HGM.Hotbird64.Vlmcs
 
         public static void CheckKey(string key, string pkeyConfigFileName, out DigitalProductId2 id2, out DigitalProductId3 id3, out DigitalProductId4 id4)
         {
-            var osBuild = Environment.OSVersion.Version.Build;
+            int osBuild = Environment.OSVersion.Version.Build;
             string ePidStart;
 
             if (osBuild >= 10000)
@@ -332,11 +332,11 @@ namespace HGM.Hotbird64.Vlmcs
             id3.size = DigitalProductId3.Size;
             id4.size = DigitalProductId4.Size;
 
-            var hResult = PidGenX(key, pkeyConfigFileName, ePidStart, IntPtr.Zero, out id2, ref id3, ref id4);
+            uint hResult = PidGenX(key, pkeyConfigFileName, ePidStart, IntPtr.Zero, out id2, ref id3, ref id4);
 
             if (hResult != 0)
             {
-                var innerException = (hResult & 0xffff0000) == 0x80070000 ? new Win32Exception(unchecked((int)hResult)) : null;
+                Win32Exception innerException = (hResult & 0xffff0000) == 0x80070000 ? new Win32Exception(unchecked((int)hResult)) : null;
                 switch (hResult)
                 {
                     case 0x80070002:

@@ -39,7 +39,7 @@ namespace HGM.Hotbird64.Vlmcs
 
                 fixed (char* c = UnsafeText)
                 {
-                    for (var i = 0; i < value.Length; i++)
+                    for (int i = 0; i < value.Length; i++)
                     {
                         c[i] = value[i];
                     }
@@ -72,8 +72,8 @@ namespace HGM.Hotbird64.Vlmcs
 
         public static explicit operator ProtocolVersion(string versionString)
         {
-            var result = new ProtocolVersion();
-            var split = versionString.Split('.');
+            ProtocolVersion result = new ProtocolVersion();
+            string[] split = versionString.Split('.');
             if (split.Length != 2) throw new FormatException("KMS protocol must contain exactly one period.");
             result.Major = ushort.Parse(split[0], CultureInfo.InvariantCulture);
             result.Minor = ushort.Parse(split[1], CultureInfo.InvariantCulture);
@@ -170,11 +170,11 @@ namespace HGM.Hotbird64.Vlmcs
         {
             get
             {
-                var result = new byte[8];
+                byte[] result = new byte[8];
 
                 fixed (byte* b = Data)
                 {
-                    for (var i = 0; i < result.Length; i++)
+                    for (int i = 0; i < result.Length; i++)
                     {
                         result[i] = *(b + i);
                     }
@@ -188,7 +188,7 @@ namespace HGM.Hotbird64.Vlmcs
 
                 fixed (byte* b = Data)
                 {
-                    for (var i = 0; i < 8; i++)
+                    for (int i = 0; i < 8; i++)
                     {
                         *(b + i) = value[i];
                     }
@@ -200,9 +200,9 @@ namespace HGM.Hotbird64.Vlmcs
         {
             get
             {
-                var result = "";
+                string result = "";
 
-                foreach (var b in ByteArray)
+                foreach (byte b in ByteArray)
                 {
                     result += $"{b:X02} ";
                 }
@@ -212,13 +212,13 @@ namespace HGM.Hotbird64.Vlmcs
             }
             set
             {
-                var cleanhex = value.ToUpperInvariant().Where(c => c >= '0' && c <= 'F').Where(c => c <= '9' || c >= 'A').Aggregate("", (current, c) => current + c);
+                string cleanhex = value.ToUpperInvariant().Where(c => c >= '0' && c <= 'F').Where(c => c <= '9' || c >= 'A').Aggregate("", (current, c) => current + c);
 
                 if (cleanhex.Length != 16) throw new ArgumentException("Hardware ID must be exactly 8 hex bytes.", nameof(HwId));
 
-                var hwId = new byte[8];
+                byte[] hwId = new byte[8];
 
-                for (var i = 0; i < hwId.Length; i++)
+                for (int i = 0; i < hwId.Length; i++)
                 {
                     hwId[i] = byte.Parse(cleanhex.Substring(i << 1, 2), NumberStyles.HexNumber, CultureInfo.InvariantCulture);
                 }
@@ -306,17 +306,17 @@ namespace HGM.Hotbird64.Vlmcs
 
         public RpcDiag ConnectRpc(bool useMultiplexedRpc, bool useNdr64, bool useBtfn)
         {
-            var rpcDiag = default(RpcDiag);
-            var rpcStatus = BindRpc(ctx, useMultiplexedRpc, useNdr64, useBtfn, ref rpcDiag);
+            RpcDiag rpcDiag = default(RpcDiag);
+            int rpcStatus = BindRpc(ctx, useMultiplexedRpc, useNdr64, useBtfn, ref rpcDiag);
 
             if (rpcStatus == 0) return rpcDiag;
-            var exception = new Win32Exception(rpcStatus);
+            Win32Exception exception = new Win32Exception(rpcStatus);
             throw new KmsException(LibKmsMessage, exception);
         }
 
         public string Connect(AddressFamily addressFamily, out RpcDiag rpcDiag, bool useMultiplexedRpc = true, bool useNdr64 = true, bool useBtfn = true)
         {
-            var warnings = ConnectTcp(addressFamily);
+            string warnings = ConnectTcp(addressFamily);
             rpcDiag = ConnectRpc(useMultiplexedRpc, useNdr64, useBtfn);
             warnings += LibKmsMessage;
             return warnings;
@@ -341,7 +341,7 @@ namespace HGM.Hotbird64.Vlmcs
         {
             if (!Connected)
             {
-                var innerException = ctx == invalidCtx ? null : new Win32Exception(10057);
+                Win32Exception innerException = ctx == invalidCtx ? null : new Win32Exception(10057);
                 Close();
                 throw new KmsException("The TCP connection is closed" + (innerException != null ? $"\n{innerException.Message}" : ""), innerException);
             }
@@ -350,18 +350,18 @@ namespace HGM.Hotbird64.Vlmcs
             //  "KmsHgm.KmsRequest", string.Format("{0}.{1}", baseRequest.Version.Major, baseRequest.Version.Minor), "Protocol version must be 4.0, 5.0 or 6.0."
             //);
 
-            var baseRequestPtr = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(KmsRequest)));
+            IntPtr baseRequestPtr = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(KmsRequest)));
             try
             {
-                var baseResponsePtr = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(KmsResponse)));
+                IntPtr baseResponsePtr = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(KmsResponse)));
                 try
                 {
-                    var hwIdPtr = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(HwId)));
+                    IntPtr hwIdPtr = Marshal.AllocHGlobal(Marshal.SizeOf(typeof(HwId)));
                     try
                     {
-                        var errorMessage = new StringBuilder(256, 16384);
+                        StringBuilder errorMessage = new StringBuilder(256, 16384);
                         Marshal.StructureToPtr(baseRequest, baseRequestPtr, false);
-                        var status = SendKmsRequest(ctx, baseResponsePtr, baseRequestPtr, out var result, hwIdPtr);
+                        uint status = SendKmsRequest(ctx, baseResponsePtr, baseRequestPtr, out uint result, hwIdPtr);
                         warnings = LibKmsMessage;
 
                         if (status != 0)
@@ -382,7 +382,7 @@ namespace HGM.Hotbird64.Vlmcs
 
                         baseResponse = (KmsResponse)Marshal.PtrToStructure(baseResponsePtr, typeof(KmsResponse));
                         hwId = ((HwId)Marshal.PtrToStructure(hwIdPtr, typeof(HwId))).ByteArray;
-                        var kmsResult = new KmsResult(result, baseResponse.Version);
+                        KmsResult kmsResult = new KmsResult(result, baseResponse.Version);
 
                         if ((result & (int)ResultCode.DecryptSuccess) == 0) errorMessage.AppendLine("AES Decryption of KMS response failed.");
                         if ((result & (int)ResultCode.IsValidPidLength) == 0) errorMessage.AppendLine("The length field of the KMS PID is not valid.");
@@ -395,8 +395,8 @@ namespace HGM.Hotbird64.Vlmcs
                         if ((result & (int)ResultCode.IsRpcStatusSuccess) == 0) errorMessage.AppendLine("RPC returned non-zero result code.");
                         if ((result & (int)ResultCode.IsRandomInitializationVector) == 0) warnings += "Non-random initialization vector (salt) used in KMSv6 protocol.\n";
 
-                        var correctResponseSize = result >> 23;
-                        var effectiveResponseSize = (result >> 14) & 0x1ff;
+                        uint correctResponseSize = result >> 23;
+                        uint effectiveResponseSize = (result >> 14) & 0x1ff;
 
                         if (correctResponseSize != effectiveResponseSize)
                         {
@@ -429,8 +429,8 @@ namespace HGM.Hotbird64.Vlmcs
         {
             get
             {
-                var resultPtr = GetErrorMessage();
-                var result = Marshal.PtrToStringAnsi(resultPtr);
+                IntPtr resultPtr = GetErrorMessage();
+                string result = Marshal.PtrToStringAnsi(resultPtr);
                 return result?.TrimStart();
             }
         }
@@ -446,12 +446,12 @@ namespace HGM.Hotbird64.Vlmcs
 
             if (address[0] == '[')
             {
-                var closingBracketPosition = address.LastIndexOf(']');
+                int closingBracketPosition = address.LastIndexOf(']');
                 host = address.Substring(1, closingBracketPosition - 1);
 
                 if (address.Length > closingBracketPosition + 2)
                 {
-                    var portString = address.Substring(closingBracketPosition + 2);
+                    string portString = address.Substring(closingBracketPosition + 2);
                     port = ushort.Parse(portString, CultureInfo.InvariantCulture);
                 }
             }
@@ -463,7 +463,7 @@ namespace HGM.Hotbird64.Vlmcs
                 }
                 else
                 {
-                    var split = address.Split(':');
+                    string[] split = address.Split(':');
                     host = split[0];
                     port = ushort.Parse(split[1], CultureInfo.InvariantCulture);
                 }
@@ -619,7 +619,7 @@ namespace HGM.Hotbird64.Vlmcs
         public static void StopServer()
         {
             CheckDllVersion();
-            var status = StopKmsServer();
+            int status = StopKmsServer();
             if (status != 0) throw new KmsException("KMS Service is already stopped");
         }
 
@@ -628,9 +628,9 @@ namespace HGM.Hotbird64.Vlmcs
             CheckDllVersion();
             if (port < 1 || port > 65535) throw new ArgumentOutOfRangeException(nameof(port), port, "Port must be between 1 and 65535.");
 
-            var status = StartKmsServer(port, callback);
+            int status = StartKmsServer(port, callback);
             if (status == 0) return;
-            var winException = new Win32Exception(status);
+            Win32Exception winException = new Win32Exception(status);
             throw new KmsException($"Could not start a KMS server on port {port}: {winException.Message}", winException);
         }
 

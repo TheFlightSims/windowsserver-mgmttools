@@ -90,7 +90,7 @@ namespace HGM.Hotbird64.Vlmcs
 
         public override bool Equals(object obj)
         {
-            var other = obj as IProductKey;
+            IProductKey other = obj as IProductKey;
             if (other == null) return false;
             return Key == other.Key;
         }

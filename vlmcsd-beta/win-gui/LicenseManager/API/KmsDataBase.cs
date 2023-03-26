@@ -279,7 +279,7 @@ namespace HGM.Hotbird64.Vlmcs
                 return;
             }
 
-            for (var i = 0; i < (MaxActiveClients >> 1) - 1; i++)
+            for (int i = 0; i < (MaxActiveClients >> 1) - 1; i++)
             {
                 AddClient(KmsGuid.NewGuid());
             }
@@ -444,7 +444,7 @@ namespace HGM.Hotbird64.Vlmcs
 
             set
             {
-                var index = IndexOf(this[guid]);
+                int index = IndexOf(this[guid]);
                 if (index < 0)
                 {
                     throw new IndexOutOfRangeException($"The guid {guid} was not found in the list");
@@ -481,7 +481,7 @@ namespace HGM.Hotbird64.Vlmcs
 
             set
             {
-                var index = IndexOf(this[guid]);
+                int index = IndexOf(this[guid]);
                 if (index < 0)
                 {
                     throw new IndexOutOfRangeException($"The guid {guid} was not found in the list");
@@ -566,18 +566,18 @@ namespace HGM.Hotbird64.Vlmcs
                     throw new InvalidOperationException("You must implement a method that retrieves an open System.IO.Stream containing the XSD file for the database.");
                 }
 
-                using (var xsdStream = GetXsdValidationStream())
+                using (Stream xsdStream = GetXsdValidationStream())
                 {
-                    var errors = new StringBuilder();
-                    var schema = XmlSchema.Read(xsdStream, (s, e) => throw e.Exception);
-                    var settings = new XmlReaderSettings
+                    StringBuilder errors = new StringBuilder();
+                    XmlSchema schema = XmlSchema.Read(xsdStream, (s, e) => throw e.Exception);
+                    XmlReaderSettings settings = new XmlReaderSettings
                     {
                         ValidationType = ValidationType.Schema,
                     };
 
                     settings.ValidationEventHandler += (s, e) => { errors.AppendLine($"Line {e.Exception.LineNumber}, position {e.Exception.LinePosition}: {e.Exception.Message}"); };
                     settings.Schemas.Add(schema);
-                    var xmlFile = XmlReader.Create(stream, settings);
+                    XmlReader xmlFile = XmlReader.Create(stream, settings);
                     while (xmlFile.Read()) { }
                     if (errors.Length != 0)
                     {
@@ -588,15 +588,15 @@ namespace HGM.Hotbird64.Vlmcs
                 stream.Seek(0, SeekOrigin.Begin);
             }
 
-            var serializer = new XmlSerializer(typeof(KmsData));
+            XmlSerializer serializer = new XmlSerializer(typeof(KmsData));
 
             KmsData.Lock.AcquireWriterLock(2000);
 
             try
             {
                 KmsData = (KmsData)serializer.Deserialize(XmlReader.Create(stream));
-                var epidBuilds = KmsData.EpidBuilds;
-                var buildCount = epidBuilds.Count;
+                IReadOnlyList<WinBuild> epidBuilds = KmsData.EpidBuilds;
+                int buildCount = epidBuilds.Count;
 
                 while
                 (
@@ -611,12 +611,12 @@ namespace HGM.Hotbird64.Vlmcs
                     buildIndex = KmsServer.Rand.Next(0, buildCount);
                 }
 
-                foreach (var appItem in KmsData.Items)
+                foreach (AppItem appItem in KmsData.Items)
                 {
-                    foreach (var kmsItem in appItem.KmsItems)
+                    foreach (KmsItem kmsItem in appItem.KmsItems)
                     {
                         kmsItem.App = appItem;
-                        foreach (var skuItem in kmsItem.SkuItems)
+                        foreach (SkuItem skuItem in kmsItem.SkuItems)
                         {
                             skuItem.KmsItem = kmsItem;
                             if (skuItem.Gvlk == null || !skuItem.Gvlk.Contains('N'))
@@ -624,7 +624,7 @@ namespace HGM.Hotbird64.Vlmcs
                                 continue;
                             }
 
-                            var binaryKey = (BinaryProductKey)skuItem.Gvlk;
+                            BinaryProductKey binaryKey = (BinaryProductKey)skuItem.Gvlk;
                             skuItem.KeyGroup = (int)binaryKey.Group;
                             skuItem.KeyId = (int)binaryKey.Id;
                         }
@@ -635,11 +635,11 @@ namespace HGM.Hotbird64.Vlmcs
                 CheckForDuplicateIds(SkuItemList, nameof(SkuItemList));
                 CheckForDuplicateIds(AppItemList, nameof(AppItemList));
 
-                foreach (var csvlkItem in CsvlkItemList)
+                foreach (CsvlkItem csvlkItem in CsvlkItemList)
                 {
                     if (csvlkItem.GroupId < 0)
                     {
-                        var groupId = ProductBrowser.KeyConfigs.FirstOrDefault(k => k.ActConfigGuid == csvlkItem.Guid && k.RefGroupIdSpecified)?.RefGroupId;
+                        int? groupId = ProductBrowser.KeyConfigs.FirstOrDefault(k => k.ActConfigGuid == csvlkItem.Guid && k.RefGroupIdSpecified)?.RefGroupId;
 
                         if (!groupId.HasValue)
                         {
@@ -651,7 +651,7 @@ namespace HGM.Hotbird64.Vlmcs
 
                     if (csvlkItem.MinKeyId < 0 || csvlkItem.MaxKeyId < 0)
                     {
-                        var keyRange = ProductBrowser.KeyRanges.Where(r => r.RefActConfigGuid == csvlkItem.Guid && r.StartSpecified && r.EndSpecified).OrderByDescending(r => r.KeysAvailable).FirstOrDefault();
+                        ProductKeyConfigurationKeyRangesKeyRange keyRange = ProductBrowser.KeyRanges.Where(r => r.RefActConfigGuid == csvlkItem.Guid && r.StartSpecified && r.EndSpecified).OrderByDescending(r => r.KeysAvailable).FirstOrDefault();
 
                         if (keyRange == null)
                         {
@@ -678,8 +678,8 @@ namespace HGM.Hotbird64.Vlmcs
                     }
                 }
 
-                var exportedCsvlk = CsvlkItemList.Where(c => c.Export).OrderBy(c => c.VlmcsdIndex).ToArray();
-                var exportedActivates = exportedCsvlk.SelectMany(c => c.Activates).ToArray();
+                CsvlkItem[] exportedCsvlk = CsvlkItemList.Where(c => c.Export).OrderBy(c => c.VlmcsdIndex).ToArray();
+                Activate[] exportedActivates = exportedCsvlk.SelectMany(c => c.Activates).ToArray();
                 IReadOnlyList<string> exportedIniFileNames = exportedCsvlk.Select(e => e.IniFileName.ToUpperInvariant()).ToArray();
 
                 if (exportedIniFileNames.Count != exportedIniFileNames.Distinct().Count())
@@ -704,7 +704,7 @@ namespace HGM.Hotbird64.Vlmcs
                     throw new InvalidDataException($"'{nameof(CsvlkItem.VlmcsdIndex)}' has been set for {nameof(CsvlkItem)}s with overlapping {nameof(KmsItem)}s");
                 }
 
-                foreach (var appItem in AppItemList)
+                foreach (AppItem appItem in AppItemList)
                 {
                     if (!CsvlkItemList.Select(c => c.VlmcsdIndex).Contains(appItem.VlmcsdIndex))
                     {
@@ -720,16 +720,16 @@ namespace HGM.Hotbird64.Vlmcs
 
         public static void GetRandomEPid(CsvlkItem csvlkItem)
         {
-            var buildNumber = KmsData.EpidBuilds[buildIndex].BuildNumber;
-            var keyId = KmsServer.Rand.Next(csvlkItem.MinKeyId, csvlkItem.MaxKeyId + 1);
+            int buildNumber = KmsData.EpidBuilds[buildIndex].BuildNumber;
+            int keyId = KmsServer.Rand.Next(csvlkItem.MinKeyId, csvlkItem.MaxKeyId + 1);
             csvlkItem.EPid = $"{GetPlatformId(buildNumber):D5}-{csvlkItem.GroupId:D5}-{keyId / 1000000:D3}-{keyId % 1000000:D6}-03-{KmsServer.Lcid}-{buildNumber}.0000-{DateTime.Now.ToEpidPart()}";
         }
 
         public static int GetPlatformId(int buildNumber)
         {
-            var winBuilds = KmsData.WinBuilds.OrderByDescending(b => b.BuildNumber).ToArray() as IReadOnlyList<WinBuild>;
+            IReadOnlyList<WinBuild> winBuilds = KmsData.WinBuilds.OrderByDescending(b => b.BuildNumber).ToArray() as IReadOnlyList<WinBuild>;
 
-            foreach (var winBuild in winBuilds)
+            foreach (WinBuild winBuild in winBuilds)
             {
                 if (buildNumber >= winBuild.BuildNumber)
                 {
@@ -747,8 +747,8 @@ namespace HGM.Hotbird64.Vlmcs
                 return;
             }
 
-            var duplicates = string.Empty;
-            var duplicateIds = list.GroupBy(k => k.Guid).Where(g => g.Count() > 1).Select(k => k.Key).Distinct();
+            string duplicates = string.Empty;
+            IEnumerable<KmsGuid> duplicateIds = list.GroupBy(k => k.Guid).Where(g => g.Count() > 1).Select(k => k.Key).Distinct();
             duplicates = duplicateIds.Aggregate(duplicates, (current, id) => current + $"{id}\n");
             KmsData = null;
             throw new InvalidDataException($"The following GUIDs are used more than once in {listName}:\n\n{duplicates}");

@@ -10,7 +10,7 @@ namespace HGM.Hotbird64.LicenseManager
         {
             InitializeComponent();
             TopElement.LayoutTransform = Scaler;
-            var version = Assembly.GetCallingAssembly().GetName().Version;
+            System.Version version = Assembly.GetCallingAssembly().GetName().Version;
             LabelVersion.Content = "Version " + version.ToString(3) + (version.MinorRevision < 2300 ? $" Beta {version.MinorRevision}" : "");
         }
 

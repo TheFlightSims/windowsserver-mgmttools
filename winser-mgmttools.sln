@@ -53,24 +53,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vlmcsd - License Manager", 
 		vlmcsd-beta\VisualStudio\vlmcsd.sln = vlmcsd-beta\VisualStudio\vlmcsd.sln
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WinMan", "WinMan", "{79FBD3AE-7D01-4318-954C-3D64607E34C6}"
-	ProjectSection(SolutionItems) = preProject
-		winman\WinMan.sln = winman\WinMan.sln
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "X-Mouse Controls", "X-Mouse Controls", "{00223C54-4029-46F8-AAE6-C2B775C3C238}"
 	ProjectSection(SolutionItems) = preProject
 		xmouse-controls-develop\X-Mouse Controls.sln = xmouse-controls-develop\X-Mouse Controls.sln
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WSUS Admin Assistant", "WSUS Admin Assistant", "{ADAFE54E-9846-4DE7-9766-E16EEAA8AFD5}"
-	ProjectSection(SolutionItems) = preProject
-		wsusadminassistant\WSUSAdminAssistant.sln = wsusadminassistant\WSUSAdminAssistant.sln
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WSUS Online Descriptions", "WSUS Online Descriptions", "{4DCF829B-39D2-4BB4-981C-BC49D9A532F2}"
-	ProjectSection(SolutionItems) = preProject
-		wsusonlinedescriptions\WSUSOnlineDescriptions.sln = wsusonlinedescriptions\WSUSOnlineDescriptions.sln
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WSUS Workgroup Utillities", "WSUS Workgroup Utillities", "{6ACAA565-6113-4695-B9AF-401FC19A5A05}"

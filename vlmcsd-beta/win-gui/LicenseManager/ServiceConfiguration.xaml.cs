@@ -74,7 +74,7 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void RefreshWindow()
         {
-            var w = new WmiProperty("Version " + licenseProvider.Version, serviceParameters, MenuItemShowAllFields.IsChecked);
+            WmiProperty w = new WmiProperty("Version " + licenseProvider.Version, serviceParameters, MenuItemShowAllFields.IsChecked);
 
             w.DisplayProperty(LabelClientMachineId, TextBoxClientMachineID, "ClientMachineID");
 
@@ -98,7 +98,7 @@ namespace HGM.Hotbird64.LicenseManager
             );
 
             w.Property = "IsKeyManagementServiceMachine";
-            var kmsServerEnabled = false;
+            bool kmsServerEnabled = false;
 
             try
             {
@@ -152,10 +152,10 @@ namespace HGM.Hotbird64.LicenseManager
             CheckBoxKeyManagementServiceHostCaching.IsEnabled = w.Value != null;
 
             w.DisplayProperty(LabelRequiredClientCount, TextBoxRequiredClientCount, "RequiredClientCount");
-            var requiredClientCount = (uint)w.Value;
+            uint requiredClientCount = (uint)w.Value;
 
             w.DisplayProperty(LabelKeyManagementServiceCurrentCount, TextBoxKeyManagementServiceCurrentCount, "KeyManagementServiceCurrentCount");
-            var currentCount = (uint)w.Value;
+            uint currentCount = (uint)w.Value;
 
             if (kmsServerEnabled)
             {
@@ -237,16 +237,16 @@ namespace HGM.Hotbird64.LicenseManager
         {
             LabelServiceStatus.Text = "Saving KMS settings";
 
-            var domain = GetControlContent(TextBoxKeyManagementServiceLookupDomain, TextBoxKeyManagementServiceLookupDomain.Text);
-            var host = GetControlContent(TextBoxKeyManagementServiceMachine, TextBoxKeyManagementServiceMachine.Text);
-            var port = GetControlContent(TextBoxKeyManagementServicePort, TextBoxKeyManagementServicePort.Text);
+            string domain = GetControlContent(TextBoxKeyManagementServiceLookupDomain, TextBoxKeyManagementServiceLookupDomain.Text);
+            string host = GetControlContent(TextBoxKeyManagementServiceMachine, TextBoxKeyManagementServiceMachine.Text);
+            string port = GetControlContent(TextBoxKeyManagementServicePort, TextBoxKeyManagementServicePort.Text);
 
-            var hostCaching = (bool)CheckBoxKeyManagementServiceHostCaching.IsChecked;
-            var listenPort = GetControlContent(TextBoxKeyManagementServiceListeningPort, TextBoxKeyManagementServiceListeningPort.Text);
-            var clientActivationInterval = GetControlContent(TextBoxVlActivationInterval, TextBoxVlActivationInterval.Text);
-            var clientRenewalInterval = GetControlContent(TextBoxVlRenewalInterval, TextBoxVlRenewalInterval.Text);
-            var enableDnsPublishing = GetControlContent(CheckBoxKeyManagementServiceDnsPublishing, CheckBoxKeyManagementServiceDnsPublishing.IsChecked);
-            var runWithLowPriority = GetControlContent(CheckBoxKeyManagementServiceLowPriority, CheckBoxKeyManagementServiceLowPriority.IsChecked);
+            bool hostCaching = (bool)CheckBoxKeyManagementServiceHostCaching.IsChecked;
+            string listenPort = GetControlContent(TextBoxKeyManagementServiceListeningPort, TextBoxKeyManagementServiceListeningPort.Text);
+            string clientActivationInterval = GetControlContent(TextBoxVlActivationInterval, TextBoxVlActivationInterval.Text);
+            string clientRenewalInterval = GetControlContent(TextBoxVlRenewalInterval, TextBoxVlRenewalInterval.Text);
+            bool? enableDnsPublishing = GetControlContent(CheckBoxKeyManagementServiceDnsPublishing, CheckBoxKeyManagementServiceDnsPublishing.IsChecked);
+            bool? runWithLowPriority = GetControlContent(CheckBoxKeyManagementServiceLowPriority, CheckBoxKeyManagementServiceLowPriority.IsChecked);
             MainDialogRefreshRequired = true;
 
             MainGrid.IsEnabled = false;
@@ -314,7 +314,7 @@ namespace HGM.Hotbird64.LicenseManager
         {
             MainDialogRefreshRequired = true;
 
-            var openFileDialog = new OpenFileDialog
+            OpenFileDialog openFileDialog = new OpenFileDialog
             {
                 Filter = "License files (*.xrm-ms)|*.xrm-ms|All files (*.*)|*",
                 Multiselect = true,
@@ -329,11 +329,11 @@ namespace HGM.Hotbird64.LicenseManager
             IEnumerable<string> fileNames = openFileDialog.FileNames;
 
             MainGrid.IsEnabled = false;
-            var errorstring = "";
+            string errorstring = "";
 
             await Task.Run(() =>
             {
-                foreach (var fileName in fileNames)
+                foreach (string fileName in fileNames)
                 {
                     Dispatcher.Invoke(() => LabelServiceStatus.Text = "Installing " + Path.GetFileName(fileName));
 

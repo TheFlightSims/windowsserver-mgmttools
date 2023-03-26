@@ -45,17 +45,17 @@ namespace HGM.Hotbird64.LicenseManager
         static App()
         {
             // TODO: Get rid of this
-            var win2008A = new KmsGuid("33e156e4-b76f-4a52-9f91-f641dd95ac48");
-            var win2008B = new KmsGuid("8fe53387-3087-4447-8985-f75132215ac9");
-            var win2008C = new KmsGuid("8a21fdf3-cbc5-44eb-83f3-fe284e6680a7");
-            var win2008R2A = new KmsGuid("0fc6ccaf-ff0e-4fae-9d08-4370785bf7ed");
-            var win2008R2B = new KmsGuid("ca87f5b6-cd46-40c0-b06d-8ecd57a4373f");
-            var win2008R2C = new KmsGuid("b2ca2689-a9a8-42d7-938d-cf8e9f201958");
-            var win2012 = new KmsGuid("8665cb71-468c-4aa3-a337-cb9bc9d5eaac");
-            var win2012R2 = new KmsGuid("8456efd3-0c04-4089-8740-5b7238535a65");
-            var win2016 = new KmsGuid("6e9fc069-257d-4bc4-b4a7-750514d32743");
-            var win2019 = new KmsGuid("8449b1fb-f0ea-497a-99ab-66ca96e9a0f5");
-            var win2022 = new KmsGuid("b74263e4-0f92-46c6-bcf8-c11d5efe2959");
+            KmsGuid win2008A = new KmsGuid("33e156e4-b76f-4a52-9f91-f641dd95ac48");
+            KmsGuid win2008B = new KmsGuid("8fe53387-3087-4447-8985-f75132215ac9");
+            KmsGuid win2008C = new KmsGuid("8a21fdf3-cbc5-44eb-83f3-fe284e6680a7");
+            KmsGuid win2008R2A = new KmsGuid("0fc6ccaf-ff0e-4fae-9d08-4370785bf7ed");
+            KmsGuid win2008R2B = new KmsGuid("ca87f5b6-cd46-40c0-b06d-8ecd57a4373f");
+            KmsGuid win2008R2C = new KmsGuid("b2ca2689-a9a8-42d7-938d-cf8e9f201958");
+            KmsGuid win2012 = new KmsGuid("8665cb71-468c-4aa3-a337-cb9bc9d5eaac");
+            KmsGuid win2012R2 = new KmsGuid("8456efd3-0c04-4089-8740-5b7238535a65");
+            KmsGuid win2016 = new KmsGuid("6e9fc069-257d-4bc4-b4a7-750514d32743");
+            KmsGuid win2019 = new KmsGuid("8449b1fb-f0ea-497a-99ab-66ca96e9a0f5");
+            KmsGuid win2022 = new KmsGuid("b74263e4-0f92-46c6-bcf8-c11d5efe2959");
             ServerKmsGuids = new[] { win2008A, win2008B, win2008C, win2008R2A, win2008R2B, win2008R2C, win2012, win2012R2, win2016, win2019, win2022 };
         }
 
@@ -66,15 +66,15 @@ namespace HGM.Hotbird64.LicenseManager
                 return true;
             }
 
-            var error = Marshal.GetLastWin32Error();
+            int error = Marshal.GetLastWin32Error();
 
             if (error == 126)
             {
                 return false;
             }
 
-            var ex = new Win32Exception(error);
-            var message = ex.Message.Replace("%1", dllFileName);
+            Win32Exception ex = new Win32Exception(error);
+            string message = ex.Message.Replace("%1", dllFileName);
             throw new Win32Exception(error, message);
         }
 
@@ -85,7 +85,7 @@ namespace HGM.Hotbird64.LicenseManager
                 TapMirror.Stop();
                 if (ProductBrowser.PKeyConfigFiles == null) { return; }
 
-                foreach (var file in ProductBrowser.PKeyConfigFiles)
+                foreach (PKeyConfigFile file in ProductBrowser.PKeyConfigFiles)
                 {
                     if (!file.IsOnFileSystem || file.IsUnzippedExternal)
                     {
@@ -181,7 +181,7 @@ namespace HGM.Hotbird64.LicenseManager
 
                 try
                 {
-                    using (var stream = new FileStream(DatabaseFileName, FileMode.Open, FileAccess.Read, FileShare.Read))
+                    using (FileStream stream = new FileStream(DatabaseFileName, FileMode.Open, FileAccess.Read, FileShare.Read))
                     {
                         KmsLists.ReadDatabase(stream);
                         IsDatabaseLoaded = true;
@@ -198,7 +198,7 @@ namespace HGM.Hotbird64.LicenseManager
                     $"Could not read {Path.GetFileName(DatabaseFileName)}", MessageBoxButton.OK, MessageBoxImage.Error
                   );
                     }
-                    using (var stream = GetResourceStream(new Uri("pack://application:,,,/LmInternalDatabase.xml"))?.Stream)
+                    using (Stream stream = GetResourceStream(new Uri("pack://application:,,,/LmInternalDatabase.xml"))?.Stream)
                     {
                         KmsLists.ReadDatabase(stream);
                         IsDatabaseLoaded = true;

@@ -86,19 +86,19 @@ namespace HGM.Hotbird64.LicenseManager
             {
                 StringBuilder userPassword = new StringBuilder(256), userID = new StringBuilder(256);
 
-                var credUI = new CREDUI_INFO();
+                CREDUI_INFO credUI = new CREDUI_INFO();
                 credUI.cbSize = Marshal.SizeOf(credUI);
                 credUI.CaptionText = captionText;
                 credUI.MessageText = messageText;
-                var save = true;
-                var flags = (showUI ? CREDUI_FLAGS.ALWAYS_SHOW_UI : 0) | CREDUI_FLAGS.GENERIC_CREDENTIALS | CREDUI_FLAGS.SHOW_SAVE_CHECK_BOX | CREDUI_FLAGS.EXPECT_CONFIRMATION;
+                bool save = true;
+                CREDUI_FLAGS flags = (showUI ? CREDUI_FLAGS.ALWAYS_SHOW_UI : 0) | CREDUI_FLAGS.GENERIC_CREDENTIALS | CREDUI_FLAGS.SHOW_SAVE_CHECK_BOX | CREDUI_FLAGS.EXPECT_CONFIRMATION;
 
-                var returnCode = CredUIPromptForCredentials(ref credUI, ServerName, IntPtr.Zero, 0, userID, 100, userPassword, 100, ref save, flags);
+                CredUiReturnCodes returnCode = CredUIPromptForCredentials(ref credUI, ServerName, IntPtr.Zero, 0, userID, 100, userPassword, 100, ref save, flags);
 
                 User = userID.ToString();
 
                 SecurePassword = new SecureString();
-                for (var i = 0; i < userPassword.Length; i++)
+                for (int i = 0; i < userPassword.Length; i++)
                 {
                     SecurePassword.AppendChar(userPassword[i]);
                 }

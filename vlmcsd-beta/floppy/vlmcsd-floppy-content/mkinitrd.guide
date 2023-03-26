@@ -1,0 +1,6 @@
+rm initrd
+cd initrd-sources
+find . | cpio -o -H newc > ../initrd~
+cd ..
+lzma initrd~
+mv initrd~.lzma initrd

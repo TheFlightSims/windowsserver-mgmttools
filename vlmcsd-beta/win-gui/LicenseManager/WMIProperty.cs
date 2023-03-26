@@ -102,7 +102,7 @@ namespace HGM.Hotbird64.LicenseManager
 
             Show(textbox);
 
-            foreach (var control in controls)
+            foreach (Control control in controls)
             {
                 Show(control);
             }
@@ -142,7 +142,7 @@ namespace HGM.Hotbird64.LicenseManager
         {
             Hide(textbox, showAllFields);
 
-            foreach (var control in controls)
+            foreach (Control control in controls)
             {
                 Hide(control, showAllFields);
             }
@@ -177,8 +177,8 @@ namespace HGM.Hotbird64.LicenseManager
 
             Show(controls, textbox);
 
-            var minutesRemaining = (double)(uint)Value;
-            var tempDate = DateTime.Now.AddMinutes((uint)Value);
+            double minutesRemaining = (double)(uint)Value;
+            DateTime tempDate = DateTime.Now.AddMinutes((uint)Value);
             textbox.Text = (minutesRemaining == 0.0)
                     ? ("forever (unless you install a new key or tamper with the license tokens)")
                     : (Math.Round(minutesRemaining / 24.0 / 60.0).ToString(CultureInfo.CurrentCulture)) + " days, until " +
@@ -195,8 +195,8 @@ namespace HGM.Hotbird64.LicenseManager
             }
             try
             {
-                var licenseStatus = (uint)Value;
-                var licenseStatusString = Model.LicenseStatus.GetText(licenseStatus);
+                uint licenseStatus = (uint)Value;
+                string licenseStatusString = Model.LicenseStatus.GetText(licenseStatus);
 
                 switch (licenseStatus)
                 {
@@ -262,12 +262,12 @@ namespace HGM.Hotbird64.LicenseManager
 
         public void DisplayPropertyAsDate(IEnumerable<Control> controlEnumerable, TextBox textBox, string p)
         {
-            var controls = controlEnumerable as IList<Control> ?? controlEnumerable.ToArray();
+            IList<Control> controls = controlEnumerable as IList<Control> ?? controlEnumerable.ToArray();
 
             Property = p;
             try
             {
-                var tempDate = ManagementDateTimeConverter.ToDateTime((string)Value).ToUniversalTime();
+                DateTime tempDate = ManagementDateTimeConverter.ToDateTime((string)Value).ToUniversalTime();
                 if (tempDate.Year <= 1601)
                 {
                     Hide(controls, textBox);
@@ -306,7 +306,7 @@ namespace HGM.Hotbird64.LicenseManager
                 return;
             }
 
-            var pid = new EPid(Value);
+            EPid pid = new EPid(Value);
             pidBox.Text = pid.Id;
             Show(pidControl, pidBox);
 

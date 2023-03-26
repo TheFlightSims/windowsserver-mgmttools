@@ -304,3 +304,5 @@ C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\vlmcsd-beta\win-gui\L
 C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\vlmcsd-beta\win-gui\LicenseManager\obj\Debug\LicenseManager.csproj.CoreCompileInputs.cache
 C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\vlmcsd-beta\win-gui\LicenseManager\obj\Debug\LicenseManager.exe
 C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\vlmcsd-beta\win-gui\LicenseManager\obj\Debug\LicenseManager.pdb
+D:\#source-code\windowsserver-mgmttools\vlmcsd-beta\win-gui\LicenseManager\obj\Debug\ActivateByPhone.g.cs
+D:\#source-code\windowsserver-mgmttools\vlmcsd-beta\win-gui\LicenseManager\obj\Debug\ActivateByPhone.baml
