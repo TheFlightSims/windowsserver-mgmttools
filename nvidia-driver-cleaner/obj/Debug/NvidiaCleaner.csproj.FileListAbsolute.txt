@@ -66,3 +66,17 @@ C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\nvidia-driver-cleaner
 C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.csproj.CoreCompileInputs.cache
 C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\Nvidia Cleaner.exe
 C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\Nvidia Cleaner.pdb
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.exe.config
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.xml
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.exe
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.pdb
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.exe.CodeAnalysisLog.xml
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\NVIDIA Driver Cleaner\Nvidia Cleaner.exe.lastcodeanalysissucceeded
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.csproj.AssemblyReference.cache
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.csproj.SuggestedBindingRedirects.cache
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.MainForm.resources
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.Properties.Resources.resources
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.csproj.GenerateResource.cache
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\NvidiaCleaner.csproj.CoreCompileInputs.cache
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\Nvidia Cleaner.exe
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\nvidia-driver-cleaner\obj\Debug\Nvidia Cleaner.pdb

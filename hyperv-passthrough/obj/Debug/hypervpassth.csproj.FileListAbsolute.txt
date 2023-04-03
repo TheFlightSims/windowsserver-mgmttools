@@ -68,3 +68,17 @@ C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\hyperv-passthrough\ob
 C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\hypervpassth.csproj.CopyComplete
 C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\Hyper-V Passthrough Device.exe
 C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\Hyper-V Passthrough Device.pdb
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\Hyper-V Device Passthrough\Hyper-V Passthrough Device.exe.config
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\Hyper-V Device Passthrough\Hyper-V Passthrough Device.exe
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\Hyper-V Device Passthrough\Hyper-V Passthrough Device.pdb
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\hypervpassth.csproj.AssemblyReference.cache
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\hypervpassth.csproj.SuggestedBindingRedirects.cache
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\DiscreteDeviceAssigner.MainForm.resources
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\DiscreteDeviceAssigner.PnpDeviceForm.resources
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\HyperVpassthroughdev.Properties.Resources.resources
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\HyperVpassthroughdev.SetMemory.resources
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\hypervpassth.csproj.GenerateResource.cache
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\hypervpassth.csproj.CoreCompileInputs.cache
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\hypervpassth.csproj.CopyComplete
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\Hyper-V Passthrough Device.exe
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\hyperv-passthrough\obj\Debug\Hyper-V Passthrough Device.pdb

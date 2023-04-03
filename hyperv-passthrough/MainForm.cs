@@ -141,18 +141,23 @@ namespace DiscreteDeviceAssigner
 
         private void 移除设备ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DeviceData data = contextMenuStrip.Tag as DeviceData;
-            if (MessageBox.Show("Perform removal device " + data.Item2.Name + " from " + data.Item1.Name, "Confirm?", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                try
+            try {  
+                DeviceData data = contextMenuStrip.Tag as DeviceData;
+                if (MessageBox.Show("Perform removal device " + data.Item2.Name + " from " + data.Item1.Name, "Confirm?", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    PowerShellWrapper.RemoveVMAssignableDevice(data.Item1, data.Item2);
+                    try
+                    {
+                        PowerShellWrapper.RemoveVMAssignableDevice(data.Item1, data.Item2);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Error");
+                    }
+                    UpdateVM();
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "Error");
-                }
-                UpdateVM();
+            }
+            catch (Exception ex) {
+                MessageBox.Show($"The specific VM has no device selected, nor the error has occured. \nError:" + ex.Message, $"Message", MessageBoxButtons.OK, MessageBoxIcon.Error); 
             }
         }
 
