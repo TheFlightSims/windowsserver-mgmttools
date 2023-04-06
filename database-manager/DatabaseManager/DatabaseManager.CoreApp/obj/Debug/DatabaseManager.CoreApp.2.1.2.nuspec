@@ -16,7 +16,7 @@
         <dependency id="DatabaseInterpreter.Utility" version="2.1.0" exclude="Build,Analyzers" />
         <dependency id="DatabaseManager.Core" version="2.1.2" exclude="Build,Analyzers" />
         <dependency id="DatabaseManager.Profile" version="2.0.0" exclude="Build,Analyzers" />
-        <dependency id="DiffPlex" version="1.6.2" exclude="Build,Analyzers" />
+        <dependency id="DiffPlex" version="1.7.1" exclude="Build,Analyzers" />
         <dependency id="Microsoft.SqlServer.Types" version="160.1000.6" exclude="Build,Analyzers" />
         <dependency id="ObjectListView.Repack.Core3" version="2.9.2" exclude="Build,Analyzers" />
       </group>
@@ -28,7 +28,7 @@
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\GUI\CoreApp\Debug\net7.0-windows\DatabaseManager.CoreApp.runtimeconfig.json" target="lib\net7.0-windows7.0\DatabaseManager.CoreApp.runtimeconfig.json" />
-    <file src="C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\!bin!\DatabaseManager\GUI\CoreApp\Debug\net7.0-windows\DatabaseManager.CoreApp.dll" target="lib\net7.0-windows7.0\DatabaseManager.CoreApp.dll" />
+    <file src="D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\DatabaseManager\GUI\CoreApp\Debug\net7.0-windows\DatabaseManager.CoreApp.runtimeconfig.json" target="lib\net7.0-windows7.0\DatabaseManager.CoreApp.runtimeconfig.json" />
+    <file src="D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\DatabaseManager\GUI\CoreApp\Debug\net7.0-windows\DatabaseManager.CoreApp.dll" target="lib\net7.0-windows7.0\DatabaseManager.CoreApp.dll" />
   </files>
 </package>

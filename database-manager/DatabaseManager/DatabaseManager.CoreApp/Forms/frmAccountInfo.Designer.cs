@@ -29,60 +29,60 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAccountInfo));
-            this.btnConfirm = new System.Windows.Forms.Button();
-            this.ucAccountInfo = new DatabaseManager.Controls.UC_DbAccountInfo();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            btnConfirm = new System.Windows.Forms.Button();
+            ucAccountInfo = new Controls.UC_DbAccountInfo();
+            btnCancel = new System.Windows.Forms.Button();
+            SuspendLayout();
             // 
             // btnConfirm
             // 
-            this.btnConfirm.Location = new System.Drawing.Point(135, 278);
-            this.btnConfirm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(88, 33);
-            this.btnConfirm.TabIndex = 11;
-            this.btnConfirm.Text = "OK";
-            this.btnConfirm.UseVisualStyleBackColor = true;
-            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
+            btnConfirm.Location = new System.Drawing.Point(135, 245);
+            btnConfirm.Margin = new System.Windows.Forms.Padding(4);
+            btnConfirm.Name = "btnConfirm";
+            btnConfirm.Size = new System.Drawing.Size(88, 29);
+            btnConfirm.TabIndex = 11;
+            btnConfirm.Text = "OK";
+            btnConfirm.UseVisualStyleBackColor = true;
+            btnConfirm.Click += btnConfirm_Click;
             // 
             // ucAccountInfo
             // 
-            this.ucAccountInfo.DatabaseType = DatabaseInterpreter.Model.DatabaseType.SqlServer;
-            this.ucAccountInfo.Location = new System.Drawing.Point(4, 17);
-            this.ucAccountInfo.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.ucAccountInfo.Name = "ucAccountInfo";
-            this.ucAccountInfo.Size = new System.Drawing.Size(444, 252);
-            this.ucAccountInfo.TabIndex = 0;
+            ucAccountInfo.DatabaseType = DatabaseInterpreter.Model.DatabaseType.SqlServer;
+            ucAccountInfo.Location = new System.Drawing.Point(3, 14);
+            ucAccountInfo.Margin = new System.Windows.Forms.Padding(5);
+            ucAccountInfo.Name = "ucAccountInfo";
+            ucAccountInfo.Size = new System.Drawing.Size(444, 222);
+            ucAccountInfo.TabIndex = 0;
+            ucAccountInfo.Load += ucAccountInfo_Load;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(250, 278);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(88, 33);
-            this.btnCancel.TabIndex = 12;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            btnCancel.Location = new System.Drawing.Point(250, 245);
+            btnCancel.Margin = new System.Windows.Forms.Padding(4);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new System.Drawing.Size(88, 29);
+            btnCancel.TabIndex = 12;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // frmAccountInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 329);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnConfirm);
-            this.Controls.Add(this.ucAccountInfo);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximizeBox = false;
-            this.Name = "frmAccountInfo";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Database Account";
-            this.Activated += new System.EventHandler(this.frmAccountInfo_Activated);
-            this.Load += new System.EventHandler(this.frmAccountInfo_Load);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(450, 290);
+            Controls.Add(btnCancel);
+            Controls.Add(btnConfirm);
+            Controls.Add(ucAccountInfo);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4);
+            MaximizeBox = false;
+            Name = "frmAccountInfo";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Database Account";
+            Activated += frmAccountInfo_Activated;
+            Load += frmAccountInfo_Load;
+            ResumeLayout(false);
         }
 
         #endregion

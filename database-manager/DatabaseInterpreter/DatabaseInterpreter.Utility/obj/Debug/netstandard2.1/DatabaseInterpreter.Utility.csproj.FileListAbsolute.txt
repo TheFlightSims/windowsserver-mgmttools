@@ -24,3 +24,16 @@ D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\Dat
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\ref\DatabaseInterpreter.Utility.dll
 C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\refint\DatabaseInterpreter.Utility.dll
 C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\ref\DatabaseInterpreter.Utility.dll
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\DatabaseManager\dbinter\utillity\Debug\netstandard2.1\DatabaseInterpreter.Utility.deps.json
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\DatabaseManager\dbinter\utillity\Debug\netstandard2.1\DatabaseInterpreter.Utility.dll
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\DatabaseManager\dbinter\utillity\Debug\netstandard2.1\DatabaseInterpreter.Utility.pdb
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\DatabaseInterpreter.Utility.csproj.AssemblyReference.cache
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\DatabaseInterpreter.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\DatabaseInterpreter.Utility.AssemblyInfoInputs.cache
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\DatabaseInterpreter.Utility.AssemblyInfo.cs
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\DatabaseInterpreter.Utility.csproj.CoreCompileInputs.cache
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\DatabaseInterpreter.Utility.csproj.CopyComplete
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\DatabaseInterpreter.Utility.dll
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\refint\DatabaseInterpreter.Utility.dll
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\DatabaseInterpreter.Utility.pdb
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseInterpreter\DatabaseInterpreter.Utility\obj\Debug\netstandard2.1\ref\DatabaseInterpreter.Utility.dll

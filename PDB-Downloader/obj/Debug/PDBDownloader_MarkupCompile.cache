@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\obj\Debug\
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\PDB-Downloader\obj\Debug\
 SymbolFetch
 none
 false
 DEBUG;TRACE
-C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\PDB-Downloader\App.xaml
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\PDB-Downloader\App.xaml
 2-2012769803
 
-101662447533
+11-710741642
 15-928923290
 MainWindow.xaml;Resources\StaticResources.xaml;
 
-False
+True
 

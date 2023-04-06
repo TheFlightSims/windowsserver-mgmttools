@@ -35,3 +35,16 @@ D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAn
 D:\#source-code\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\ref\SqlAnalyser.Core.dll
 C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\refint\SqlAnalyser.Core.dll
 C:\Users\takineko\Documents\GitHub\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\ref\SqlAnalyser.Core.dll
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\DatabaseManager\dbconvert\sqlanalysercore\Debug\netstandard2.1\SqlAnalyser.Core.deps.json
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\DatabaseManager\dbconvert\sqlanalysercore\Debug\netstandard2.1\SqlAnalyser.Core.dll
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\!bin!\DatabaseManager\dbconvert\sqlanalysercore\Debug\netstandard2.1\SqlAnalyser.Core.pdb
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.csproj.AssemblyReference.cache
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.AssemblyInfoInputs.cache
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.AssemblyInfo.cs
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.csproj.CoreCompileInputs.cache
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.csproj.CopyComplete
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.dll
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\refint\SqlAnalyser.Core.dll
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\SqlAnalyser.Core.pdb
+D:\#source-code\TheFlightSims\windowsserver-mgmttools\database-manager\DatabaseConverter\SqlAnalyser.Core\obj\Debug\netstandard2.1\ref\SqlAnalyser.Core.dll

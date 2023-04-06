@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseConverter\\SqlAnalyser.Core\\SqlAnalyser.Core.csproj": {}
+    "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseConverter\\SqlAnalyser.Core\\SqlAnalyser.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseConverter\\SqlAnalyser.Core\\SqlAnalyser.Core.csproj": {
+    "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseConverter\\SqlAnalyser.Core\\SqlAnalyser.Core.csproj": {
       "version": "2.1.2",
       "restore": {
-        "projectUniqueName": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseConverter\\SqlAnalyser.Core\\SqlAnalyser.Core.csproj",
+        "projectUniqueName": "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseConverter\\SqlAnalyser.Core\\SqlAnalyser.Core.csproj",
         "projectName": "SqlAnalyser.Core",
-        "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseConverter\\SqlAnalyser.Core\\SqlAnalyser.Core.csproj",
-        "packagesPath": "C:\\Users\\takineko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseConverter\\SqlAnalyser.Core\\obj\\",
+        "projectPath": "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseConverter\\SqlAnalyser.Core\\SqlAnalyser.Core.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseConverter\\SqlAnalyser.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\.temp\\shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\takineko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Utility\\DatabaseInterpreter.Utility.csproj": {
-                "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Utility\\DatabaseInterpreter.Utility.csproj"
+              "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Utility\\DatabaseInterpreter.Utility.csproj": {
+                "projectPath": "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Utility\\DatabaseInterpreter.Utility.csproj"
               }
             }
           }
@@ -75,24 +75,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\DatabaseInterpreter.Model.csproj": {
+    "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\DatabaseInterpreter.Model.csproj": {
       "version": "2.1.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\DatabaseInterpreter.Model.csproj",
+        "projectUniqueName": "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\DatabaseInterpreter.Model.csproj",
         "projectName": "DatabaseInterpreter.Model",
-        "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\DatabaseInterpreter.Model.csproj",
-        "packagesPath": "C:\\Users\\takineko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\obj\\",
+        "projectPath": "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\DatabaseInterpreter.Model.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\.temp\\shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\takineko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -135,24 +135,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Utility\\DatabaseInterpreter.Utility.csproj": {
+    "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Utility\\DatabaseInterpreter.Utility.csproj": {
       "version": "2.1.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Utility\\DatabaseInterpreter.Utility.csproj",
+        "projectUniqueName": "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Utility\\DatabaseInterpreter.Utility.csproj",
         "projectName": "DatabaseInterpreter.Utility",
-        "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Utility\\DatabaseInterpreter.Utility.csproj",
-        "packagesPath": "C:\\Users\\takineko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Utility\\obj\\",
+        "projectPath": "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Utility\\DatabaseInterpreter.Utility.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\.temp\\shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\takineko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -168,8 +168,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\DatabaseInterpreter.Model.csproj": {
-                "projectPath": "C:\\Users\\takineko\\Documents\\GitHub\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\DatabaseInterpreter.Model.csproj"
+              "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\DatabaseInterpreter.Model.csproj": {
+                "projectPath": "D:\\#source-code\\TheFlightSims\\windowsserver-mgmttools\\database-manager\\DatabaseInterpreter\\DatabaseInterpreter.Model\\DatabaseInterpreter.Model.csproj"
               }
             }
           }
@@ -209,7 +209,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

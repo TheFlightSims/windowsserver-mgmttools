@@ -12,7 +12,7 @@ namespace DatabaseManager
 {
     public partial class frmAccountInfo : Form
     {
-        private bool requriePassword = false;
+        private bool requriePassword;
         public DatabaseType DatabaseType { get; set; }
         public string AccountProfileId { get; set; }
         public AccountProfileInfo AccountProfileInfo { get; set; }
@@ -65,7 +65,7 @@ namespace DatabaseManager
 
             AccountProfileInfo accountProfileInfo = this.GetAccountProfileInfo();
 
-            var profiles = await AccountProfileManager.GetProfiles(this.DatabaseType.ToString());
+            var profiles = await AccountProfileManager.GetProfiles(DatabaseType.ToString()).ConfigureAwait(false);
 
             bool isAdd = this.AccountProfileInfo == null;
 
@@ -82,7 +82,7 @@ namespace DatabaseManager
             }
             else
             {
-                if (profiles.Where(item => item.Id != this.AccountProfileInfo.Id).Any(item => item.Server == accountProfileInfo.Server
+                if (profiles.Where(predicate: item => item.Id != AccountProfileInfo.Id).Any(item => item.Server == accountProfileInfo.Server
                                                        && item.IntegratedSecurity == accountProfileInfo.IntegratedSecurity
                                                        && item.UserId == accountProfileInfo.UserId
                                                        && item.Port == accountProfileInfo.Port))
@@ -92,7 +92,7 @@ namespace DatabaseManager
                 }
             }
 
-            this.AccountProfileId = await AccountProfileManager.Save(accountProfileInfo, this.ucAccountInfo.RememberPassword);
+            this.AccountProfileId = await AccountProfileManager.Save(accountProfileInfo, ucAccountInfo.RememberPassword).ConfigureAwait(false);
 
             this.AccountProfileInfo = accountProfileInfo;
 
@@ -125,6 +125,11 @@ namespace DatabaseManager
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ucAccountInfo_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
