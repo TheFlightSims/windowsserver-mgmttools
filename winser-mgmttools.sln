@@ -17,16 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hyper-V Backup", "Hyper-V B
 		hyperv-backup\HVBackup.sln = hyperv-backup\HVBackup.sln
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hyper-V Enhanced Session for Linux", "Hyper-V Enhanced Session for Linux", "{95F358EF-F552-4BC2-BDF3-BC87E9606C02}"
-	ProjectSection(SolutionItems) = preProject
-		hyper-v-enhanced-session-linux\install_esm_centos7.sh = hyper-v-enhanced-session-linux\install_esm_centos7.sh
-		hyper-v-enhanced-session-linux\install_esm_fedora29.sh = hyper-v-enhanced-session-linux\install_esm_fedora29.sh
-		hyper-v-enhanced-session-linux\install_esm_fedora30.sh = hyper-v-enhanced-session-linux\install_esm_fedora30.sh
-		hyper-v-enhanced-session-linux\install_esm_fedora31.sh = hyper-v-enhanced-session-linux\install_esm_fedora31.sh
-		hyper-v-enhanced-session-linux\install_esm_fedora36.sh = hyper-v-enhanced-session-linux\install_esm_fedora36.sh
-		hyper-v-enhanced-session-linux\install_esm_fedora3x.sh = hyper-v-enhanced-session-linux\install_esm_fedora3x.sh
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hyper-V Device Passthrough", "Hyper-V Device Passthrough", "{5B2D0647-5F4F-450D-A8AA-DDC72D3A3202}"
 	ProjectSection(SolutionItems) = preProject
 		hyperv-passthrough\hypervpassth.sln = hyperv-passthrough\hypervpassth.sln
@@ -53,50 +43,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vlmcsd - License Manager", 
 		vlmcsd-beta\VisualStudio\vlmcsd.sln = vlmcsd-beta\VisualStudio\vlmcsd.sln
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "X-Mouse Controls", "X-Mouse Controls", "{00223C54-4029-46F8-AAE6-C2B775C3C238}"
-	ProjectSection(SolutionItems) = preProject
-		xmouse-controls-develop\X-Mouse Controls.sln = xmouse-controls-develop\X-Mouse Controls.sln
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WSUS Workgroup Utillities", "WSUS Workgroup Utillities", "{6ACAA565-6113-4695-B9AF-401FC19A5A05}"
-	ProjectSection(SolutionItems) = preProject
-		wsusworkgrouputilities\WSUSWorkgroupUtilitys.sln = wsusworkgrouputilities\WSUSWorkgroupUtilitys.sln
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows Update Control Service", "Windows Update Control Service", "{9EEC3CFF-C21E-4A86-823B-773B9D8737B5}"
-	ProjectSection(SolutionItems) = preProject
-		winupdate-remote-svc\WindowsUpdateControlService.sln = winupdate-remote-svc\WindowsUpdateControlService.sln
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User Rights", "User Rights", "{EDE1080F-BF74-4164-AA76-EC4B909566F2}"
-	ProjectSection(SolutionItems) = preProject
-		user-rights\UserRights.sln = user-rights\UserRights.sln
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sxs Management", "Sxs Management", "{1843AA0A-1684-4990-8B1B-1580C8639C5D}"
-	ProjectSection(SolutionItems) = preProject
-		sxs-mgmt\Start.cmd = sxs-mgmt\Start.cmd
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Helper", "_Helper", "{C76AE85B-71DE-4E45-B717-2F62AB9AE23B}"
-	ProjectSection(SolutionItems) = preProject
-		sxs-mgmt\_Helper\cabarc.exe = sxs-mgmt\_Helper\cabarc.exe
-		sxs-mgmt\_Helper\cabdir.exe = sxs-mgmt\_Helper\cabdir.exe
-		sxs-mgmt\_Helper\definitions.cmd = sxs-mgmt\_Helper\definitions.cmd
-		sxs-mgmt\_Helper\nsudocamd64.exe = sxs-mgmt\_Helper\nsudocamd64.exe
-		sxs-mgmt\_Helper\nsudocx86.exe = sxs-mgmt\_Helper\nsudocx86.exe
-		sxs-mgmt\_Helper\SxSExp64.exe = sxs-mgmt\_Helper\SxSExp64.exe
-		sxs-mgmt\_Helper\SxSExpand.exe = sxs-mgmt\_Helper\SxSExpand.exe
-		sxs-mgmt\_Helper\SxSExport.cmd = sxs-mgmt\_Helper\SxSExport.cmd
-		sxs-mgmt\_Helper\SxSExtract.vbs = sxs-mgmt\_Helper\SxSExtract.vbs
-		sxs-mgmt\_Helper\SxSExtract_original.vbs = sxs-mgmt\_Helper\SxSExtract_original.vbs
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{4958CEC5-0AF9-4197-9978-DA48A6BE2450}"
-	ProjectSection(SolutionItems) = preProject
-		sxs-mgmt\Samples\ImportList.txt = sxs-mgmt\Samples\ImportList.txt
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PDB Downloader", "PDB Downloader", "{BE174082-9B76-48B8-B92F-F5A84AA7FB82}"
 	ProjectSection(SolutionItems) = preProject
 		PDB-Downloader\PDB-Downloader.sln = PDB-Downloader\PDB-Downloader.sln
@@ -110,10 +56,6 @@ EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{C76AE85B-71DE-4E45-B717-2F62AB9AE23B} = {1843AA0A-1684-4990-8B1B-1580C8639C5D}
-		{4958CEC5-0AF9-4197-9978-DA48A6BE2450} = {1843AA0A-1684-4990-8B1B-1580C8639C5D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D457191C-B5F8-4E7F-B289-7AFCEC7B93C5}
