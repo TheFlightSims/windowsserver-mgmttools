@@ -66,3 +66,4 @@ vlmcsd-beta/vlmcsd/VisualStudio
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/mkinitrd.guide
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/syslinux.cfg
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/bzImage
+*.exe
