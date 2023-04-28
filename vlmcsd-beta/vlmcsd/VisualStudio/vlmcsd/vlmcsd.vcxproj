@@ -88,22 +88,47 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <GenerateManifest>false</GenerateManifest>
-    <OutDir>..\..\..\..\!bin!\vlmcsd</OutDir>
-    <TargetName>vlmcsd-Windows-x64</TargetName>
-    <IntDir>..\..\..\..\!bin!\vlmcsd</IntDir>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</OutDir>
+    <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</IntDir>
+    <TargetName>libkms32</TargetName>
     <GenerateManifest>false</GenerateManifest>
-    <TargetName>vlmcsd-Windows-x86</TargetName>
-    <OutDir>..\..\..\..\!bin!\vlmcsd-windows</OutDir>
+    <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
-    <LinkIncremental>false</LinkIncremental>
+    <TargetName>libkms32</TargetName>
     <GenerateManifest>false</GenerateManifest>
-    <TargetName>vlmcsd-Windows-x86</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</OutDir>
+    <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</OutDir>
+    <TargetName>libkms64</TargetName>
+    <GenerateManifest>false</GenerateManifest>
+    <TargetExt>.dll</TargetExt>
+    <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <TargetName>$(ProjectName)64</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</OutDir>
+    <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <TargetExt>.dll</TargetExt>
+    <TargetName>$(ProjectName)32</TargetName>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</OutDir>
+    <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <TargetExt>.dll</TargetExt>
+    <TargetName>$(ProjectName)32</TargetName>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</OutDir>
+    <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

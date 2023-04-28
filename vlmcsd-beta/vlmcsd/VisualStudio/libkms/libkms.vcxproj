@@ -89,7 +89,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>..\..\..\..\!bin!\vlmcsd-windows</OutDir>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\libkms</OutDir>
+    <IntDir>..\..\..\..\!bin!\vlmcsd\libkms</IntDir>
     <TargetName>libkms32</TargetName>
     <GenerateManifest>false</GenerateManifest>
     <TargetExt>.dll</TargetExt>
@@ -98,28 +99,36 @@
     <TargetName>libkms32</TargetName>
     <GenerateManifest>false</GenerateManifest>
     <TargetExt>.dll</TargetExt>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\libkms</OutDir>
+    <IntDir>..\..\..\..\!bin!\vlmcsd\libkms</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>..\..\..\!bin!</OutDir>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\libkms</OutDir>
     <TargetName>libkms64</TargetName>
     <GenerateManifest>false</GenerateManifest>
     <TargetExt>.dll</TargetExt>
-    <IntDir>..\..\..\!bin!</IntDir>
+    <IntDir>..\..\..\..\!bin!\vlmcsd\libkms</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <GenerateManifest>false</GenerateManifest>
     <TargetName>$(ProjectName)64</TargetName>
     <TargetExt>.dll</TargetExt>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\libkms</OutDir>
+    <IntDir>..\..\..\..\!bin!\vlmcsd\libkms</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <GenerateManifest>false</GenerateManifest>
     <TargetExt>.dll</TargetExt>
     <TargetName>$(ProjectName)32</TargetName>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\libkms</OutDir>
+    <IntDir>..\..\..\..\!bin!\vlmcsd\libkms</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <GenerateManifest>false</GenerateManifest>
     <TargetExt>.dll</TargetExt>
     <TargetName>$(ProjectName)32</TargetName>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\libkms</OutDir>
+    <IntDir>..\..\..\..\!bin!\vlmcsd\libkms</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
