@@ -9,8 +9,6 @@ To prevent bugs, and other misconfiguration for all contributors in this project
 |Usage|Name|Contributors|Original path|
 |--|--|--|--|
 |IIS Management|[Check IIS](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/check-iis)|@[TheFlyingCorpse](https://github.com/TheFlyingCorpse), TheFlightSims staff|https://github.com/TheFlyingCorpse/check_iis
-|Database Management|[Database Manager](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/database-manager)|@[dependabot[bot]](https://github.com/apps/dependabot), @[victor-wiki](https://github.com/victor-wiki), TheFlightSims staff|https://github.com/victor-wiki/DatabaseManager|
-|VM Management|[Hyper-V Backup](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/hyperv-backup)|@[pablopioli](https://github.com/pablopioli), @[schtritoff](https://github.com/schtritoff), TheFlightSims staff|https://github.com/ColiseoSoftware/hypervbackup|
 |VM Management|[Hyper-V Passthrough Device](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/hyperv-passthrough)|@[chanket](https://github.com/chanket), TheFlightSims staff|https://github.com/chanket/DDA|
 |Computer Management|[NVIDIA Driver Cleaner](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/nvidia-driver-cleaner)|@[ataberkylmz](https://github.com/ataberkylmz), TheFlightSims staff|https://github.com/ataberkylmz/NvidiaDriverCleaner|
 |Debugging|[PDB Downloader](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/PDB-Downloader)|@[rajkumar-rangaraj](https://github.com/rajkumar-rangaraj), TheFlightSims staff|https://github.com/rajkumar-rangaraj/PDB-Downloader

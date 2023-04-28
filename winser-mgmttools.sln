@@ -7,16 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Check IIS", "Check IIS", "{
 		check-iis\check_iis.sln = check-iis\check_iis.sln
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database Manager", "Database Manager", "{1C5DFB03-137D-4636-8C81-84F593166C14}"
-	ProjectSection(SolutionItems) = preProject
-		database-manager\DatabaseManager.sln = database-manager\DatabaseManager.sln
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hyper-V Backup", "Hyper-V Backup", "{0534D8B0-B2F9-4158-B74B-EBB9719DD1CA}"
-	ProjectSection(SolutionItems) = preProject
-		hyperv-backup\HVBackup.sln = hyperv-backup\HVBackup.sln
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hyper-V Device Passthrough", "Hyper-V Device Passthrough", "{5B2D0647-5F4F-450D-A8AA-DDC72D3A3202}"
 	ProjectSection(SolutionItems) = preProject
 		hyperv-passthrough\hypervpassth.sln = hyperv-passthrough\hypervpassth.sln
@@ -39,8 +29,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Remote MSI Manager", "Remot
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vlmcsd - License Manager", "vlmcsd - License Manager", "{AD5B945C-D5BC-4FB1-BAD3-C27CC9BC2A5B}"
 	ProjectSection(SolutionItems) = preProject
-		vlmcsd-beta\win-gui\LicenseManager.sln = vlmcsd-beta\win-gui\LicenseManager.sln
-		vlmcsd-beta\VisualStudio\vlmcsd.sln = vlmcsd-beta\VisualStudio\vlmcsd.sln
+		vlmcsd-beta\license-manager\LicenseManager.sln = vlmcsd-beta\license-manager\LicenseManager.sln
+		vlmcsd-beta\vlmcsd\VisualStudio\vlmcsd-linux.sln = vlmcsd-beta\vlmcsd\VisualStudio\vlmcsd-linux.sln
+		vlmcsd-beta\vlmcsd\VisualStudio\vlmcsd-windows.sln = vlmcsd-beta\vlmcsd\VisualStudio\vlmcsd-windows.sln
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PDB Downloader", "PDB Downloader", "{BE174082-9B76-48B8-B92F-F5A84AA7FB82}"

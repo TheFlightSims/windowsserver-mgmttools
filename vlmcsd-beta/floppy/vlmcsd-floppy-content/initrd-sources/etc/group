@@ -1,4 +1,0 @@
-root:x:0:
-users:x:1000:
-guests:x:1111:
-services:x:100:

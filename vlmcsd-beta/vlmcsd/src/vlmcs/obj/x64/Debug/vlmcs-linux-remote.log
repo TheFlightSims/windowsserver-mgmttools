@@ -1,0 +1,1 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\Application Type\Linux\1.0\Linux.targets(160,5): error : There are no remote machines configured for remote builds. Please configure a machine using Tools | Options | Cross Platform | Connection Manager.

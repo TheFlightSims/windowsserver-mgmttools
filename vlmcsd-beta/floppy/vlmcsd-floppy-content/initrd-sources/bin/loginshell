@@ -1,4 +1,0 @@
-#!/bin/ash
-echo -e "Press Ctrl-D to exit pre-service shell\n"
-/bin/ash -l
-clear
