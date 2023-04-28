@@ -1,6 +1,7 @@
 # Ignore changes globally
+/.vs
 *.vs
-!bin!
+/!bin!
 *.csproj
 *.sln
 *.suo
