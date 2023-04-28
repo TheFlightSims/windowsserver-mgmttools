@@ -61,7 +61,7 @@ vlmcsd-beta/vlmcsd/src/*.vcsproj
 vlmcsd-beta/vlmcsd/src/*.vcsproj.user
 vlmcsd-beta/vlmcsd/src/*.vcsproj.filters
 vlmcsd-beta/vlmcsd/src/GNUmakefile
-#vlmcsd-beta/vlmcsd/VisualStudio
+vlmcsd-beta/vlmcsd/VisualStudio
 
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/mkinitrd.guide
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/syslinux.cfg
