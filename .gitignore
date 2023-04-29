@@ -12,6 +12,7 @@
 *.pdb
 *.CopyComplete
 *.dll
+/!pub!
 
 # Ignore changes in check-iis
 /check-iis/.vs
