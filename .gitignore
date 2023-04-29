@@ -2,10 +2,10 @@
 /.vs
 *.vs
 /!bin!
-#*.csproj
-#*.sln
-#*.suo
-#*.vcsproj
+*.csproj
+*.sln
+*.suo
+*.vcsproj
 *.cache
 *.exe
 *.compressed
@@ -65,12 +65,12 @@ vlmcsd-beta/license-manager/obj
 vlmcsd-beta/license-manager/LicenseManager.sln
 vlmcsd-beta/license-manager/LicenseManager.sln.DotSettings
 
-#vlmcsd-beta/vlmcsd/buildroot-configs
-#vlmcsd-beta/vlmcsd/hotbird64-mass-build
-#vlmcsd-beta/vlmcsd/src/*.vcsproj
-#vlmcsd-beta/vlmcsd/src/*.vcsproj.user
-#vlmcsd-beta/vlmcsd/src/*.vcsproj.filters
-#vlmcsd-beta/vlmcsd/src/GNUmakefile
-#vlmcsd-beta/vlmcsd/VisualStudio
+vlmcsd-beta/vlmcsd/buildroot-configs
+vlmcsd-beta/vlmcsd/hotbird64-mass-build
+vlmcsd-beta/vlmcsd/src/*.vcsproj
+vlmcsd-beta/vlmcsd/src/*.vcsproj.user
+vlmcsd-beta/vlmcsd/src/*.vcsproj.filters
+vlmcsd-beta/vlmcsd/src/GNUmakefile
+vlmcsd-beta/vlmcsd/VisualStudio
 
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/mkinitrd.guide
