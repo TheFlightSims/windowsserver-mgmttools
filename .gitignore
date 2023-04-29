@@ -16,7 +16,8 @@
 # Ignore changes in check-iis
 /check-iis/.vs
 /check-iis/obj/
-/check-iis/check-iis/obj/
+/check-iis/check-iis/obj
+/check-iis/check-iis/bin
 check-iis/check_iis.sln
 check-iis/check_iis/obj/Debug/check_iis.csproj.FileListAbsolute.txt
 
