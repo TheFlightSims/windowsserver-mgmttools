@@ -2,22 +2,23 @@
 /.vs
 *.vs
 /!bin!
-*.csproj
-*.sln
+#*.csproj
+#*.sln
 *.suo
-*.vcsproj
+#*.vcsproj
 *.cache
 *.exe
 *.compressed
 *.pdb
 *.CopyComplete
-
+*.dll
 
 # Ignore changes in check-iis
 /check-iis/.vs
 /check-iis/obj/
 /check-iis/check-iis/obj/
 check-iis/check_iis.sln
+check-iis/check_iis/obj/Debug/check_iis.csproj.FileListAbsolute.txt
 
 # Ignore changes in gpo-checker
 gpo-checker/.vs
@@ -74,4 +75,4 @@ vlmcsd-beta/vlmcsd/VisualStudio
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/mkinitrd.guide
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/syslinux.cfg
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/bzImage
-check-iis/check_iis/obj/Debug/check_iis.csproj.FileListAbsolute.txt
+
