@@ -7,6 +7,7 @@
 *.suo
 *.vcsproj
 *.cache
+*.exe
 
 # Ignore changes in check-iis
 /check-iis/.vs
@@ -58,15 +59,14 @@ vlmcsd-beta/license-manager/obj
 vlmcsd-beta/license-manager/LicenseManager.sln
 vlmcsd-beta/license-manager/LicenseManager.sln.DotSettings
 
-#vlmcsd-beta/vlmcsd/buildroot-configs
-#vlmcsd-beta/vlmcsd/hotbird64-mass-build
-#vlmcsd-beta/vlmcsd/src/*.vcsproj
-#vlmcsd-beta/vlmcsd/src/*.vcsproj.user
-#vlmcsd-beta/vlmcsd/src/*.vcsproj.filters
-#vlmcsd-beta/vlmcsd/src/GNUmakefile
-#vlmcsd-beta/vlmcsd/VisualStudio
+vlmcsd-beta/vlmcsd/buildroot-configs
+vlmcsd-beta/vlmcsd/hotbird64-mass-build
+vlmcsd-beta/vlmcsd/src/*.vcsproj
+vlmcsd-beta/vlmcsd/src/*.vcsproj.user
+vlmcsd-beta/vlmcsd/src/*.vcsproj.filters
+vlmcsd-beta/vlmcsd/src/GNUmakefile
+vlmcsd-beta/vlmcsd/VisualStudio
 
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/mkinitrd.guide
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/syslinux.cfg
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/bzImage
-*.exe
