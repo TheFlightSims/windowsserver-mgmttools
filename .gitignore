@@ -57,6 +57,7 @@ remote-msi-manager/obj
 remote-msi-manager/RemoteMsiManager.suo
 remote-msi-manager/RemoteMsiManager.v12.suo
 remote-msi-manager/RemoteMsiManager.sln
+/remote-msi-manager/RemoteMsiManager/obj/
 
 # Ignore changes in vlmcsd-beta
 vlmcsd-beta/license-manager/.vs
@@ -75,4 +76,3 @@ vlmcsd-beta/vlmcsd/VisualStudio
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/mkinitrd.guide
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/syslinux.cfg
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/bzImage
-
