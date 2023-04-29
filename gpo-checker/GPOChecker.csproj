@@ -44,7 +44,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.GroupPolicy.Management, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Windows\WinSxS\msil_microsoft.grouppolicy.management_31bf3856ad364e35_6.3.9600.16384_none_2fbb157ab49b3cf2\Microsoft.GroupPolicy.Management.dll</HintPath>
+      <HintPath>Microsoft.GroupPolicy.Management.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
