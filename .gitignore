@@ -6,6 +6,7 @@
 *.sln
 *.suo
 *.vcsproj
+*.cache
 
 # Ignore changes in check-iis
 /check-iis/.vs
