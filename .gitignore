@@ -76,3 +76,17 @@ vlmcsd-beta/vlmcsd/src/GNUmakefile
 vlmcsd-beta/vlmcsd/VisualStudio
 
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/mkinitrd.guide
+gpo-checker/GPOChecker.csproj
+gpo-checker/GPOChecker.sln
+hyperv-passthrough/hypervpassth.csproj
+hyperv-passthrough/hypervpassth.csproj.user
+hyperv-passthrough/hypervpassth.sln
+nvidia-driver-cleaner/NvidiaCleaner.csproj
+nvidia-driver-cleaner/NvidiaCleaner.sln
+PDB-Downloader/PDB-Downloader.csproj
+PDB-Downloader/PDB-Downloader.sln
+port-scanner/PortScanner.csproj
+port-scanner/PortScanner.sln
+remote-msi-manager/UnitTest/obj/x64/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+remote-msi-manager/UnitTest/obj/x64/Release/build.force
+remote-msi-manager/UnitTest/obj/x86/Release/build.force
