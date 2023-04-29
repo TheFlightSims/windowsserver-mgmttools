@@ -60,7 +60,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141_xp</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -93,12 +93,12 @@
     <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</IntDir>
     <TargetName>libkms32</TargetName>
     <GenerateManifest>false</GenerateManifest>
-    <TargetExt>.dll</TargetExt>
+    <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <TargetName>libkms32</TargetName>
     <GenerateManifest>false</GenerateManifest>
-    <TargetExt>.dll</TargetExt>
+    <TargetExt>.exe</TargetExt>
     <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</OutDir>
     <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</IntDir>
   </PropertyGroup>
@@ -106,26 +106,26 @@
     <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</OutDir>
     <TargetName>libkms64</TargetName>
     <GenerateManifest>false</GenerateManifest>
-    <TargetExt>.dll</TargetExt>
+    <TargetExt>.exe</TargetExt>
     <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <GenerateManifest>false</GenerateManifest>
     <TargetName>$(ProjectName)64</TargetName>
-    <TargetExt>.dll</TargetExt>
+    <TargetExt>.exe</TargetExt>
     <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</OutDir>
     <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <GenerateManifest>false</GenerateManifest>
-    <TargetExt>.dll</TargetExt>
+    <TargetExt>.exe</TargetExt>
     <TargetName>$(ProjectName)32</TargetName>
     <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</OutDir>
     <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <GenerateManifest>false</GenerateManifest>
-    <TargetExt>.dll</TargetExt>
+    <TargetExt>.exe</TargetExt>
     <TargetName>$(ProjectName)32</TargetName>
     <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</OutDir>
     <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-beta</IntDir>

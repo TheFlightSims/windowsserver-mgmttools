@@ -60,7 +60,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141_xp</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -91,34 +91,34 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <TargetName>vlmcsdmulti-Windows-x86</TargetName>
     <GenerateManifest>false</GenerateManifest>
-	<OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</OutDir>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</OutDir>
     <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <TargetName>vlmcsdmulti-Windows-x86</TargetName>
     <GenerateManifest>false</GenerateManifest>
-	<OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</OutDir>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</OutDir>
     <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>vlmcsdmulti-Windows-x64</TargetName>
     <GenerateManifest>false</GenerateManifest>
-	<OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</OutDir>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</OutDir>
     <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <GenerateManifest>false</GenerateManifest>
-	<OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</OutDir>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</OutDir>
     <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <GenerateManifest>false</GenerateManifest>
-	<OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</OutDir>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</OutDir>
     <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <GenerateManifest>false</GenerateManifest>
-	<OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</OutDir>
+    <OutDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</OutDir>
     <IntDir>..\..\..\..\!bin!\vlmcsd\vlmcsd-multi</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
