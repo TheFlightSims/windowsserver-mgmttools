@@ -8,8 +8,9 @@
 *.vcsproj
 
 # Ignore changes in check-iis
-check-iis/.vs
-check-iis/obj
+/check-iis/.vs
+/check-iis/obj/
+/check-iis/check-iis/obj/
 check-iis/check_iis.sln
 
 # Ignore changes in gpo-checker
