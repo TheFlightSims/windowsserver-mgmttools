@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.5.33530.505
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vlmcsd-Windows", "vlmcsd\vlmcsd.vcxproj", "{918B4F5B-6356-451E-998C-5FCB29988170}"
-	ProjectSection(ProjectDependencies) = postProject
-		{2A0FC04D-C3C0-43E2-8812-53AE901C5395} = {2A0FC04D-C3C0-43E2-8812-53AE901C5395}
-		{2B3F305D-6351-4F4A-A7F2-1F9B1988CDEE} = {2B3F305D-6351-4F4A-A7F2-1F9B1988CDEE}
-	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vlmcs-Windows", "vlmcs\vlmcs.vcxproj", "{2B3F305D-6351-4F4A-A7F2-1F9B1988CDEE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vlmcsdmulti-Windows", "vlmcsdmulti\vlmcsdmulti.vcxproj", "{7F07671D-1432-43E9-9D72-08435F216B5E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libkms-Windows", "libkms\libkms.vcxproj", "{2A0FC04D-C3C0-43E2-8812-53AE901C5395}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vlmcsd-gcc5", "..\src\vlmcsd-linux-remote.vcxproj", "{CC2FBE0B-B9DF-4306-88A1-20706BBD2B0C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vlmcs-gcc5", "..\src\vlmcs-linux-remote.vcxproj", "{1ED83566-8AE1-4EE8-9B62-37188A7AC7CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,11 +73,28 @@ Global
 		{2A0FC04D-C3C0-43E2-8812-53AE901C5395}.Release|x64.Build.0 = Release|x64
 		{2A0FC04D-C3C0-43E2-8812-53AE901C5395}.Release|x86.ActiveCfg = Release|Win32
 		{2A0FC04D-C3C0-43E2-8812-53AE901C5395}.Release|x86.Build.0 = Release|Win32
+		{CC2FBE0B-B9DF-4306-88A1-20706BBD2B0C}.Debug|x64.ActiveCfg = Debug|x64
+		{CC2FBE0B-B9DF-4306-88A1-20706BBD2B0C}.Debug|x64.Build.0 = Debug|x64
+		{CC2FBE0B-B9DF-4306-88A1-20706BBD2B0C}.Debug|x86.ActiveCfg = Debug|x86
+		{CC2FBE0B-B9DF-4306-88A1-20706BBD2B0C}.Debug|x86.Build.0 = Debug|x86
+		{CC2FBE0B-B9DF-4306-88A1-20706BBD2B0C}.publish|x64.ActiveCfg = Release|x64
+		{CC2FBE0B-B9DF-4306-88A1-20706BBD2B0C}.publish|x86.ActiveCfg = Release|x86
+		{CC2FBE0B-B9DF-4306-88A1-20706BBD2B0C}.Release|x64.ActiveCfg = Release|x64
+		{CC2FBE0B-B9DF-4306-88A1-20706BBD2B0C}.Release|x64.Build.0 = Release|x64
+		{CC2FBE0B-B9DF-4306-88A1-20706BBD2B0C}.Release|x86.ActiveCfg = Release|x86
+		{CC2FBE0B-B9DF-4306-88A1-20706BBD2B0C}.Release|x86.Build.0 = Release|x86
+		{1ED83566-8AE1-4EE8-9B62-37188A7AC7CA}.Debug|x64.ActiveCfg = Debug|x64
+		{1ED83566-8AE1-4EE8-9B62-37188A7AC7CA}.Debug|x64.Build.0 = Debug|x64
+		{1ED83566-8AE1-4EE8-9B62-37188A7AC7CA}.Debug|x86.ActiveCfg = Debug|x86
+		{1ED83566-8AE1-4EE8-9B62-37188A7AC7CA}.Debug|x86.Build.0 = Debug|x86
+		{1ED83566-8AE1-4EE8-9B62-37188A7AC7CA}.publish|x64.ActiveCfg = Release|x64
+		{1ED83566-8AE1-4EE8-9B62-37188A7AC7CA}.publish|x86.ActiveCfg = Release|x86
+		{1ED83566-8AE1-4EE8-9B62-37188A7AC7CA}.Release|x64.ActiveCfg = Release|x64
+		{1ED83566-8AE1-4EE8-9B62-37188A7AC7CA}.Release|x64.Build.0 = Release|x64
+		{1ED83566-8AE1-4EE8-9B62-37188A7AC7CA}.Release|x86.ActiveCfg = Release|x86
+		{1ED83566-8AE1-4EE8-9B62-37188A7AC7CA}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E03937D7-555A-4877-A437-B99A826BD2C1}
 	EndGlobalSection
 EndGlobal

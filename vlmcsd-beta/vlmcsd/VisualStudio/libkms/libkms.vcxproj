@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2A0FC04D-C3C0-43E2-8812-53AE901C5395}</ProjectGuid>
     <RootNamespace>vlmcsdmulti-Windows</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
     <ProjectName>libkms-Windows</ProjectName>
-    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -40,7 +40,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141_xp</PlatformToolset>
+    <PlatformToolset>v120_xp</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -54,13 +54,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141_xp</PlatformToolset>
+    <PlatformToolset>v140_xp</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v120_xp</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -89,8 +89,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>..\..\..\..\!bin!\vlmcsd\libkms</OutDir>
-    <IntDir>..\..\..\..\!bin!\vlmcsd\libkms</IntDir>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
     <TargetName>libkms32</TargetName>
     <GenerateManifest>false</GenerateManifest>
     <TargetExt>.dll</TargetExt>
@@ -99,36 +98,27 @@
     <TargetName>libkms32</TargetName>
     <GenerateManifest>false</GenerateManifest>
     <TargetExt>.dll</TargetExt>
-    <OutDir>..\..\..\..\!bin!\vlmcsd\libkms</OutDir>
-    <IntDir>..\..\..\..\!bin!\vlmcsd\libkms</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>..\..\..\..\!bin!\vlmcsd\libkms</OutDir>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
     <TargetName>libkms64</TargetName>
     <GenerateManifest>false</GenerateManifest>
     <TargetExt>.dll</TargetExt>
-    <IntDir>..\..\..\..\!bin!\vlmcsd\libkms</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <GenerateManifest>false</GenerateManifest>
     <TargetName>$(ProjectName)64</TargetName>
     <TargetExt>.dll</TargetExt>
-    <OutDir>..\..\..\..\!bin!\vlmcsd\libkms</OutDir>
-    <IntDir>..\..\..\..\!bin!\vlmcsd\libkms</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <GenerateManifest>false</GenerateManifest>
     <TargetExt>.dll</TargetExt>
     <TargetName>$(ProjectName)32</TargetName>
-    <OutDir>..\..\..\..\!bin!\vlmcsd\libkms</OutDir>
-    <IntDir>..\..\..\..\!bin!\vlmcsd\libkms</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <GenerateManifest>false</GenerateManifest>
     <TargetExt>.dll</TargetExt>
     <TargetName>$(ProjectName)32</TargetName>
-    <OutDir>..\..\..\..\!bin!\vlmcsd\libkms</OutDir>
-    <IntDir>..\..\..\..\!bin!\vlmcsd\libkms</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -205,8 +195,6 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>_X86_=1;i386=1;STD_CALL;%(PreprocessorDefinitions);_CRYPTO_WINDOWS;SIMPLE_SOCKETS;NO_TIMEOUT;NO_SIGHUP;NO_CL_PIDS;NO_EXTENDED_PRODUCT_LIST;NO_BASIC_PRODUCT_LIST;NO_LOG;NO_RANDOM_EPID;NO_INI_FILE;NO_HELP;NO_CUSTOM_INTERVALS;NO_PID_FILE;NO_USER_SWITCH;NO_VERBOSE_LOG;NO_LIMIT;NO_VERSION_INFORMATION;NO_PRIVATE_IP_DETECT;IS_LIBRARY=1</PreprocessorDefinitions>
       <AdditionalOptions>$(ExternalCompilerOptions) %(AdditionalOptions)</AdditionalOptions>
-      <LanguageStandard>Default</LanguageStandard>
-      <LanguageStandard_C>Default</LanguageStandard_C>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -289,8 +277,6 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <AdditionalOptions>$(ExternalCompilerOptions) %(AdditionalOptions)</AdditionalOptions>
-      <LanguageStandard>Default</LanguageStandard>
-      <LanguageStandard_C>Default</LanguageStandard_C>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
