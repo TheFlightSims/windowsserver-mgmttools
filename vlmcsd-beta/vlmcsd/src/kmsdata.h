@@ -16,4 +16,3 @@ __pure size_t getDefaultKmsDataSize();
 #endif // NO_INTERNAL_DATA
 
 #endif // KMSDATA_SERVER_H
-

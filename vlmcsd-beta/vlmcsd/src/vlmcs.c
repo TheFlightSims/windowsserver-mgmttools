@@ -1,5 +1,6 @@
 #ifndef CONFIG
 #define CONFIG "config.h"
+
 #endif // CONFIG
 #include CONFIG
 
@@ -48,11 +49,11 @@
 #include "helpers.h"
 #include "dns_srv.h"
 
-
 #define VLMCS_OPTION_GRAB_INI 1
 #define VLMCS_OPTION_NO_GRAB_INI 2
 
 #ifndef IS_LIBRARY
+
 
 // Function Prototypes
 static void CreateRequestBase(REQUEST *Request);
@@ -70,7 +71,7 @@ static DWORD LicenseStatus = 0x02;
 static const char *CMID = NULL;
 static const char *CMID_prev = NULL;
 static const char *WorkstationName = NULL;
-static int BindingExpiration = 43200; //30 days
+static int BindingExpiration = 0; //Unlimited
 static const char *RemoteAddr;
 static int_fast8_t ReconnectForEachRequest = FALSE;
 #ifndef USE_MSRPC
@@ -108,7 +109,7 @@ static DnsNames ClientDnsNames =
 {
 	{ "www", "ftp", "kms", "hack-me", "smtp", "ns1", "mx1", "ns1", "pop3", "imap", "mail", "dns", "headquarter", "we-love", "_vlmcs._tcp", "ceo-laptop" },
 	{ ".microsoft", ".apple", ".amazon", ".samsung", ".adobe", ".google", ".yahoo", ".facebook", ".ubuntu", ".oracle", ".borland", ".htc", ".acer", ".windows", ".linux", ".sony" },
-	{ ".com", ".net", ".org", ".cn", ".co.uk", ".de", ".com.tw", ".us", ".fr", ".it", ".me", ".info", ".biz", ".co.jp", ".ua", ".at", ".es", ".pro", ".by", ".ru", ".pl", ".kr" }
+	{ ".com", ".net", ".org", ".cn", ".co.uk", ".de", ".com.tw", ".us", ".fr", ".it", ".me", ".info", ".biz", ".co.jp", ".ua", ".at", ".es", ".pro", ".by", ".ru", ".pl", ".kr" },
 };
 
 // Request Count Control Variables
