@@ -1,16 +1,17 @@
-﻿using HGM.Hotbird64.LicenseManager.Extensions;
-using HGM.Hotbird64.Vlmcs;
-using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
+﻿using System;
 using System.Linq;
+using System.Text;
 using System.Windows;
-using System.Windows.Controls;
+using Microsoft.Win32;
+using HGM.Hotbird64.Vlmcs;
+using System.Globalization;
 using System.Windows.Input;
+using System.Windows.Controls;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using System.Diagnostics.CodeAnalysis;
+using HGM.Hotbird64.LicenseManager.Extensions;
 
-// ReSharper disable once CheckNamespace
 namespace HGM.Hotbird64.LicenseManager
 {
     public partial class OwnKeyWindow
@@ -213,6 +214,9 @@ namespace HGM.Hotbird64.LicenseManager
 
             DataGridKeys.ItemsSource = productKeyList.OrderBy(p => p.InstallDate);
         }
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        static extern uint GetSystemFirmwareTable(uint firmwareTableProviderSignature, uint firmwareTableID, IntPtr firmwareTableBuffer, uint bufferSize);
 
         private void InstallKey_CanExecute(object sender, CanExecuteRoutedEventArgs e) => e.CanExecute = IsKeyInCurrentCell();
 

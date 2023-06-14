@@ -1,24 +1,24 @@
-﻿using HGM.Hotbird64.LicenseManager.Extensions;
-using HGM.Hotbird64.Vlmcs;
-using LicenseManager.Annotations;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
+﻿using System;
 using System.Linq;
-using System.Net.Sockets;
-using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
+using System.Reflection;
+using System.Diagnostics;
+using System.Net.Sockets;
+using HGM.Hotbird64.Vlmcs;
+using System.Globalization;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.ComponentModel;
+using System.Threading.Tasks;
+using System.Windows.Controls;
+using LicenseManager.Annotations;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Text.RegularExpressions;
+using System.Diagnostics.CodeAnalysis;
+using System.Runtime.CompilerServices;
+using System.Windows.Controls.Primitives;
+using HGM.Hotbird64.LicenseManager.Extensions;
 
 namespace HGM.Hotbird64.LicenseManager
 {
@@ -86,12 +86,12 @@ namespace HGM.Hotbird64.LicenseManager
                     hasPassed = value;
                     if (value)
                     {
-                        ResultText = "Passed";
+                        ResultText = "True";
                         ResultBrush = Brushes.Green;
                     }
                     else
                     {
-                        ResultText = "Failed";
+                        ResultText = "False";
                         ResultBrush = Brushes.Red;
                     }
                 }

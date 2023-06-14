@@ -13,7 +13,7 @@
       </requestedPrivileges>
       <applicationRequestMinimum>
         <defaultAssemblyRequest permissionSetReference="Custom" />
-        <PermissionSet ID="Custom" SameSite="site" Unrestricted="true" />
+        <PermissionSet ID="Custom" SameSite="site" />
       </applicationRequestMinimum>
     </security>
   </trustInfo>

@@ -1,33 +1,31 @@
-﻿using HGM.Hotbird64.LicenseManager.Contracts;
-using HGM.Hotbird64.LicenseManager.Controls;
-using HGM.Hotbird64.LicenseManager.Extensions;
-using HGM.Hotbird64.LicenseManager.Model;
-using HGM.Hotbird64.Vlmcs;
-using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Globalization;
+﻿using System;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-using System.Security.Principal;
-using System.Text.RegularExpressions;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
+using Microsoft.Win32;
+using System.Threading;
+using System.Reflection;
+using System.Xml.Schema;
+using HGM.Hotbird64.Vlmcs;
+using System.Globalization;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Xml.Schema;
-
+using System.ComponentModel;
+using System.Threading.Tasks;
+using System.Windows.Controls;
+using System.Security.Principal;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
+using System.Runtime.CompilerServices;
+using HGM.Hotbird64.LicenseManager.Model;
+using System.Windows.Controls.Primitives;
+using HGM.Hotbird64.LicenseManager.Controls;
+using HGM.Hotbird64.LicenseManager.Contracts;
+using HGM.Hotbird64.LicenseManager.Extensions;
 
 namespace HGM.Hotbird64.LicenseManager
 {
-
     public delegate void BusyHandler(object sender, BusyEventArgs e);
 
     public class BusyEventArgs : EventArgs
@@ -264,12 +262,6 @@ namespace HGM.Hotbird64.LicenseManager
             {
                 ComboBoxProductId.SelectedIndex = 0;
             }
-        }
-
-        private void PhoneActivation_Click(object sender, RoutedEventArgs e)
-        {
-            ActivateByPhone ActivateByPhone = new ActivateByPhone(this);
-            ActivateByPhone.Show();
         }
 
         internal async void Button_Refresh_Clicked(object sender, RoutedEventArgs e)

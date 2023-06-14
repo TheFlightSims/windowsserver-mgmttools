@@ -698,7 +698,7 @@ namespace HGM.Hotbird64.LicenseManager
                     switch (ex.ErrorCode)
                     {
                         //case ManagementStatus.NotFound:
-                        case ManagementStatus.InvalidClass: // Licensing Service is not installed
+                        case ManagementStatus.InvalidClass: // Licensing Service is not installed (old Windows version?)
                         case ManagementStatus.ProviderLoadFailure: // e.g. non-fully removed Office 2010 Licensing Service after De-Installation
 #if DEBUG2
                             errorMessage += "\r\n\r\nThe Licensing Provider " + LicenseProvidersList[i].FriendlyName +
@@ -902,7 +902,6 @@ namespace HGM.Hotbird64.LicenseManager
             }
             catch (COMException ex)
             {
-                //The f***ing license service always returns an empty error message
                 if (ex.Source == "WinMgmt")
                 {
                     throw new COMException(Kms.StatusMessage((uint)ex.ErrorCode), ex.ErrorCode);
@@ -1085,7 +1084,6 @@ namespace HGM.Hotbird64.LicenseManager
             }
             catch (COMException ex)
             {
-                //The f***ing license service always returns an empty error message
                 if (ex.Source == "WinMgmt")
                 {
                     throw new COMException(Kms.StatusMessage((uint)ex.ErrorCode), ex.ErrorCode);
@@ -1094,8 +1092,7 @@ namespace HGM.Hotbird64.LicenseManager
                 throw;
             }
         }
-
-        //private void InvokeProductMethod(string wmiServiceName, string licenseId, string method, object[] inParams) => InvokeMethod(wmiServiceName, "ID", licenseId, method, inParams);
+        
         private void InvokeProductMethod(int productIndex, string method, params object[] inParams) => InvokeProductMethod(ProductLicenseList[productIndex], method, inParams);
 
         private void InvokeProductMethod(ProductLicense productLicense, string method, params object[] inParams)
@@ -1116,10 +1113,7 @@ namespace HGM.Hotbird64.LicenseManager
         }
 
         private void InvokeServiceMethod(int providerIndex, string method, params object[] inParams) => InvokeServiceMethod(LicenseProvidersList[providerIndex], method, inParams);
-        //private void Activate(string productServiceName, string licenseId) => InvokeProductMethod(productServiceName, licenseId, "Activate", null);
         public void Activate(int productIndex) => InvokeProductMethod(productIndex, "Activate", null);
-        //public void Activate(ProductLicense productLicense) => InvokeProductMethod(productLicense, "Activate", null);
-        //private void UninstallProductKey(string productServiceName, string licenseId) => InvokeProductMethod(productServiceName, licenseId, "UninstallProductKey", null);
         public void UninstallProductKey(int productIndex) => InvokeProductMethod(productIndex, "UninstallProductKey", null);
 
         public void SetVlActivationTypeEnabled(ProductLicense productLicense, uint activationType)
@@ -1228,11 +1222,6 @@ namespace HGM.Hotbird64.LicenseManager
             {
                 try
                 {
-                    /*                    MessageBox.Show(service["Name"] +
-									  ": State=" + service["State"] +
-									  ", Status=" + service["Status"] +
-									  ", Started=" + ((bool)service["Started"] == true ? "True" : "False"));*/
-
                     object result = InvokeMethod("Win32_Service", "Name", provider.ServiceName, "StopService", null);
                     switch ((uint)result)
                     {

@@ -142,9 +142,6 @@
     <Compile Include="AboutBox.xaml.cs">
       <DependentUpon>AboutBox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ActivateByPhone.xaml.cs">
-      <DependentUpon>ActivateByPhone.xaml</DependentUpon>
-    </Compile>
     <Compile Include="API\BinaryProductKey.cs" />
     <Compile Include="API\KmsDataBase.cs" />
     <Compile Include="API\KmsGuid.cs" />
@@ -262,10 +259,6 @@
     <Compile Include="WPF\Converters\ConverterBase.cs" />
     <Compile Include="WPF\Converters\Wmi.cs" />
     <Page Include="AboutBox.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ActivateByPhone.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
