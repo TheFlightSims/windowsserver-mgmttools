@@ -96,3 +96,5 @@ vlmcsd-beta/database-config/sql/getcontent.msmetadata
 *.o
 vlmcsd-beta/vlmcsd/bin/vlmcs
 vlmcsd-beta/vlmcsd/bin/vlmcsd
+vlmcsd-beta/vlmcsd/bin/CMakeCache.txt
+vlmcsd-beta/vlmcsd/bin/CMakeFiles/cmake.check_cache
