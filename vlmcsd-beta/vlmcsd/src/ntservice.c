@@ -90,38 +90,6 @@ VOID ReportServiceStatus(const DWORD dwCurrentState, const DWORD dwWin32ExitCode
 	SetServiceStatus(gSvcStatusHandle, &gSvcStatus);
 }
 
-/*VOID ServiceReportEvent(char *szFunction)
-{
-	HANDLE hEventSource;
-	const char *eventStrings[2];
-	TCHAR Buffer[80];
-
-	hEventSource = RegisterEventSource(NULL, NT_SERVICE_NAME);
-
-	if (hEventSource)
-	{
-		snprintf(Buffer, 80, "%s failed with %d", szFunction, GetLastError());
-
-		eventStrings[0] = NT_SERVICE_NAME;
-		eventStrings[1] = Buffer;
-
-		ReportEvent(hEventSource,        // event log handle
-					EVENTLOG_ERROR_TYPE, // event type
-					0,                   // event category
-					00,           // event identifier
-					NULL,                // no security identifier
-					2,                   // size of lpszStrings array
-					0,                   // no binary data
-					eventStrings,         // array of strings
-					NULL);               // no binary data
-
-		DeregisterEventSource(hEventSource);
-	}
-}*/
-
-//Returns 0=Error, 1=Success, 2=Doesn't exist
-
-
 static uint_fast8_t OpenAndRemoveService(DWORD *dwPreviousState, SC_HANDLE *schSCManager)
 {
 	SERVICE_STATUS status;

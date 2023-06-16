@@ -81,8 +81,6 @@ static int AddressFamily = 0;
 #endif // USE_MSRPC
 static int_fast8_t incompatibleOptions = 0;
 static const char* fn_ini_client = NULL;
-//static int_fast16_t kmsVersionMinor = 0;
-//static const char* ePidGroup[] = { "Windows", "Office2010", "Office2013", "Office2016" };
 static int32_t ActiveProductIndex = 0;
 static int32_t NCountPolicy = 0;
 static GUID AppGuid, KmsGuid, SkuGuid;
@@ -92,9 +90,6 @@ static uint16_t MajorVersion;
 #ifndef NO_DNS
 static int_fast8_t NoSrvRecordPriority = FALSE;
 #endif // NO_DNS
-
-
-//typedef char iniFileEpidLines[4][256];
 
 typedef struct
 {
@@ -109,7 +104,7 @@ static DnsNames ClientDnsNames =
 {
 	{ "www", "ftp", "kms", "hack-me", "smtp", "ns1", "mx1", "ns1", "pop3", "imap", "mail", "dns", "headquarter", "we-love", "_vlmcs._tcp", "ceo-laptop" },
 	{ ".microsoft", ".apple", ".amazon", ".samsung", ".adobe", ".google", ".yahoo", ".facebook", ".ubuntu", ".oracle", ".borland", ".htc", ".acer", ".windows", ".linux", ".sony" },
-	{ ".com", ".net", ".org", ".cn", ".co.uk", ".de", ".com.tw", ".us", ".fr", ".it", ".me", ".info", ".biz", ".co.jp", ".ua", ".at", ".es", ".pro", ".by", ".ru", ".pl", ".kr" },
+	{ ".com", ".net", ".org", ".cn", ".co.uk", ".de", ".com.tw", ".us", ".fr", ".it", ".me", ".info", ".biz", ".co.jp", ".ua", ".at", ".es", ".pro", ".by", ".ru", ".pl", ".kr" }
 };
 
 // Request Count Control Variables
@@ -134,68 +129,65 @@ __noreturn static void clientUsage(const char* const programName)
 	errorout(
 		"vlmcs %s \n\n"
 #		ifndef NO_DNS
-		"Usage: %s [options] [ <host>[:<port>] | .<domain> | - ] [options]\n\n"
+		"Usage: %s [Options] [<Host>:<port> | <domain|FQDN> ] [Advanced Options]\n\n"
 #		else // DNS
-		"Usage: %s [options] [<host>[:<port>]] [options]\n\n"
+		"Usage: %s [Options] [<Host>:<port> | <domain|FQDN> ] [Advanced Options]\n\n"
 #		endif // DNS
-
 		"Options:\n\n"
-
 #		ifndef NO_VERBOSE_LOG
-		"  -v Be verbose\n"
+		"  -v : Verbose logging\n"
 #		endif
-		"  -l <app>\n"
-		"  -4 Force V4 protocol\n"
-		"  -5 Force V5 protocol\n"
-		"  -6 Force V6 protocol\n"
+		"  -l : <app>\n"
+		"  -4 : Force KMS V4 protocol\n"
+		"  -5 : Force KMS V5 protocol\n"
+		"  -6 : Force KMS V6 protocol\n"
 #		ifndef USE_MSRPC
-		"  -i <IpVersion> Use IP protocol (4 or 6)\n"
+		"  -i : Use IP protocol (4 or 6)\n"
 #		endif // USE_MSRPC
 #		ifndef NO_EXTERNAL_DATA
-		"  -j <file> Load external KMS data file <file>\n"
+		"  -j : Load external KMS data file\n"
 #		endif // NO_EXTERNAL_DATA
-		"  -e Show some valid examples\n"
-		"  -x Show valid Apps\n"
-		"  -d no DNS names, use Netbios names (no effect if -w is used)\n"
-		"  -V show version information and exit\n\n"
+		"  -e : Show some valid examples\n"
+		"  -x : Show valid Apps\n"
+		"  -d : no DNS names, use Netbios names (no effect if -w is used)\n"
+		"  -V : show version information and exit\n\n"
 
 		"Advanced options:\n\n"
 
-		"  -a <AppGUID> Use custom Application GUID\n"
-		"  -s <ActGUID> Use custom Activation Configuration GUID\n"
-		"  -k <KmsGUID> Use custom KMS GUID\n"
-		"  -c <ClientGUID> Use custom Client GUID. Default: Use random\n"
-		"  -o <PreviousClientGUID> Use custom Prevoius Client GUID. Default: ZeroGUID\n"
-		"  -K <ProtocolVersion> Use a specific (possibly invalid) protocol version\n"
-		"  -w <Workstation> Use custom workstation name. Default: Use random\n"
-		"  -r <RequiredClientCount> Fake required clients\n"
-		"  -n <Requests> Fixed # of requests (Default: Enough to charge)\n"
-		"  -m Pretend to be a virtual machine\n"
-		"  -G <file> Get ePID/HwId data and write to <file>. Can't be used with -l, -4, -5, -6, -a, -s, -k, -r and -n\n"
+		"  -a : Use custom Application GUID\n"
+		"  -s : Use custom Activation Configuration GUID\n"
+		"  -k : Use custom KMS GUID\n"
+		"  -c : Use custom Client GUID. Default: Use random\n"
+		"  -o : Use custom Prevoius Client GUID. Default: ZeroGUID\n"
+		"  -K : Use a specific (possibly invalid) protocol version\n"
+		"  -w : Use custom workstation name. Default: Use random\n"
+		"  -r : Fake required clients\n"
+		"  -n : Fixed # of requests (Default: Enough to charge)\n"
+		"  -m : Pretend to be a virtual machine\n"
+		"  -G : Get ePID/HwId data and write to <file>. Can't be used with -l, -4, -5, -6, -a, -s, -k, -r and -n\n"
 #		ifndef USE_MSRPC
-		"  -T Use a new TCP connection for each request.\n"
-		"  -N <0|1> disable or enable NDR64. Default: 1\n"
-		"  -B <0|1> disable or enable RPC bind time feature negotiation. Default: 1\n"
+		"  -T : Use a new TCP connection for each request.\n"
+		"  -N : <0|1> disable or enable NDR64. Default: 1\n"
+		"  -B : <0|1> disable or enable RPC bind time feature negotiation. Default: 1\n"
 #		endif // USE_MSRPC
-		"  -t <LicenseStatus> Use specfic license status (0 <= T <= 6)\n"
-		"  -g <BindingExpiration> Use a specfic binding expiration time in minutes. Default 43200\n"
+		"  -t : Use specfic license status (0 <= T <= 6)\n"
+		"  -g : Use a specfic binding expiration time in minutes. Default 43200\n"
 #		ifndef NO_DNS
-		"  -P Ignore priority and weight in DNS SRV records\n"
+		"  -P : Ignore priority and weight in DNS SRV records\n"
 #		endif // NO_DNS
 #		ifndef USE_MSRPC
-		"  -p Don't use multiplexed RPC bind\n"
+		"  -p : Don't use multiplexed RPC bind\n"
 #		endif // USE_MSRPC
 		"\n"
 
-		"<port>:\t\tTCP port name of the KMS to use. Default 1688.\n"
-		"<host>:\t\thost name of the KMS to use. Default 127.0.0.1\n"
+		"<port> : \tTCP port name of the KMS to use. Blank means leaving the default port 1688.\n"
+		"<host> : \thost name of the KMS to use. Blank means leaving the default local hosting\n"
 #		ifndef NO_DNS
-		".<domain>:\tfind KMS server in <domain> via DNS\n"
+		"<domain|FQDN> :\t find KMS server in <domain> via DNS\n"
 #		endif // NO_DNS
 		"<app>:\t\t(Type %s -x to see a list of valid apps)\n\n",
 		Version, programName, programName
 	);
-
 	exit(VLMCSD_EINVAL);
 }
 
@@ -632,18 +624,6 @@ static void parseCommandLinePass2(const char *const programName, const int argc,
 		clientUsage(programName);
 }
 
-
-///*
-// * Compares 2 GUIDs where one is host-endian and the other is little-endian (network byte order)
-// */
-//int_fast8_t IsEqualGuidLEHE(const GUID* const guid1, const GUID* const guid2)
-//{
-//	GUID tempGuid;
-//	LEGUID(&tempGuid, guid2);
-//	return IsEqualGUID(guid1, &tempGuid);
-//}
-
-
 #ifndef USE_MSRPC
 static void checkRpcLevel(const REQUEST* request, RESPONSE* response)
 {
@@ -652,11 +632,6 @@ static void checkRpcLevel(const REQUEST* request, RESPONSE* response)
 
 	if (UseClientRpcBTFN && UseClientRpcNDR64 && RpcFlags.HasNDR64 && !RpcFlags.HasBTFN)
 		errorout("\nWARNING: Server's RPC protocol has NDR64 but no BTFN.\n");
-
-	//#	ifndef NO_BASIC_PRODUCT_LIST
-	//	if (!IsEqualGuidLEHE(&request->KMSID, &ProductList[15].guid) && UseClientRpcBTFN && !RpcFlags.HasBTFN)
-	//		errorout("\nWARNING: A server with pre-Vista RPC activated a product other than Office 2010.\n");
-	//#	endif // NO_BASIC_PRODUCT_LIST
 }
 #endif // USE_MSRPC
 
@@ -1229,10 +1204,6 @@ int client_main(int argc, CARGV argv)
 #endif // _NTSERVICE
 
 	randomNumberInit();
-
-	//#	ifndef NO_EXTERNAL_DATA
-	//	ExplicitDataLoad = TRUE;
-	//#	endif // NO_EXTERNAL_DATA
 
 	parseCommandLinePass0(argc, argv);
 

@@ -74,7 +74,7 @@ typedef struct {
 	GUID KMSID;						// This is actually what the KMS server uses to grant or refuse activation (see kms.c, table BasicProductList).
 	GUID CMID;						// Client machine id. Used by the KMS server for counting minimum clients.
 	DWORD N_Policy;					// Minimum clients required for activation.
-	FILETIME ClientTime;			// Current client time.
+	FILETIME ClientTime;			// Current client time. Checking the timezone is skipped
 	GUID CMID_prev;					// previous client machine id. All zeros, if it never changed.
 	WCHAR WorkstationName[64];		// Workstation name. FQDN if available, NetBIOS otherwise.
 } /*__packed*/ REQUEST;
@@ -368,12 +368,6 @@ typedef struct VlmcsdHeader
 	};
 
 } VlmcsdHeader_t, *PVlmcsdHeader_t;
-
-//#define EPID_INDEX_WINDOWS 0
-//#define EPID_INDEX_OFFICE2010 1
-//#define EPID_INDEX_OFFICE2013 2
-//#define EPID_INDEX_OFFICE2016 3
-//#define EPID_INDEX_WINCHINAGOV 4
 
 typedef HRESULT(__stdcall *RequestCallback_t)(REQUEST* baseRequest, RESPONSE *const baseResponse, BYTE *const hwId, const char* const ipstr);
 

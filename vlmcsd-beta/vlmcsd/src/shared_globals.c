@@ -8,8 +8,8 @@
 int global_argc, multi_argc = 0;
 CARGV global_argv, multi_argv = NULL;
 const char *const Version = VERSION;
-DWORD VLActivationInterval = 60 * 2;   // 2 hours
-DWORD VLRenewalInterval = 60 * 24 * 7; // 7 days
+DWORD VLActivationInterval = 1440; //min, = 12 days
+DWORD VLRenewalInterval = 20160; //min, = 14 days
 int_fast8_t DisconnectImmediately = FALSE;
 const char *const cIPv4 = "IPv4";
 const char *const cIPv6 = "IPv6";

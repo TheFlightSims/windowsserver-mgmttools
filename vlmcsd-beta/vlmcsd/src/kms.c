@@ -73,9 +73,6 @@ const char* getNextString(const char* s)
 
 
 #ifndef NO_RANDOM_EPID
-//static const uint16_t HostBuilds[] = { 6002, 7601, 9200, 9600, 14393, 17763 };
-
-// Valid language identifiers to be used in the ePID
 static const uint16_t LcidList[] = {
 	1078, 1052, 1025, 2049, 3073, 4097, 5121, 6145, 7169, 8193, 9217, 10241, 11265, 12289, 13313, 14337, 15361, 16385,
 	1067, 1068, 2092, 1069, 1059, 1093, 5146, 1026, 1027, 1028, 2052, 3076, 4100, 5124, 1050, 4122, 1029, 1030, 1125, 1043, 2067,
@@ -149,7 +146,7 @@ uint32_t IsValidHostBuild(const int32_t hostBuild)
 
 
 // Unix time is seconds from 1970-01-01. Should be 64 bits to avoid year 2038 overflow bug.
-// FILETIME is 100 nanoseconds from 1601-01-01. Must be 64 bits.
+// FILETIME is 100 nanoseconds from 1601-01-01. Must be 64 bits. (Why not mid-32-64?)
 void getUnixTimeAsFileTime(FILETIME* ts)
 {
 	const int64_t unixtime = (int64_t)time(NULL);
@@ -774,17 +771,6 @@ size_t CreateResponseV4(REQUEST_V4 *const request_v4, BYTE *const responseBuffer
 
 	return encryptSize + sizeof(response->MAC);
 }
-
-/*
-// Workaround for buggy GCC 4.2/4.3
-#if defined(__GNUC__) && (__GNUC__ == 4 && __GNUC_MINOR__ < 4)
-__attribute__((noinline))
-#endif
-__pure static uint64_t TimestampInterval(void *ts)
-{
-	return ( GET_UA64LE(ts) / TIME_C1 ) * TIME_C2 + TIME_C3;
-}*/
-
 
 /*
  * Creates the HMAC for v6
