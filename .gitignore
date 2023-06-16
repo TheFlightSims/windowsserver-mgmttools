@@ -93,3 +93,6 @@ remote-msi-manager/UnitTest/obj/x64/Release/.NETFramework,Version=v4.8.AssemblyA
 remote-msi-manager/UnitTest/obj/x64/Release/build.force
 remote-msi-manager/UnitTest/obj/x86/Release/build.force
 vlmcsd-beta/database-config/sql/getcontent.msmetadata
+*.o
+vlmcsd-beta/vlmcsd/bin/vlmcs
+vlmcsd-beta/vlmcsd/bin/vlmcsd
