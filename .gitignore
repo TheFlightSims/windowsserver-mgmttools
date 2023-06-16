@@ -76,6 +76,8 @@ vlmcsd-beta/vlmcsd/src/GNUmakefile
 vlmcsd-beta/vlmcsd/VisualStudio
 
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/mkinitrd.guide
+
+# Auto add by editor
 gpo-checker/GPOChecker.csproj
 gpo-checker/GPOChecker.sln
 hyperv-passthrough/hypervpassth.csproj
