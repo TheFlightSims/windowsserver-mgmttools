@@ -24,7 +24,7 @@
    * Define your own version identifier here, e.g. '#define VERSION "my vlmcsd based on 1103"'
    */
 
-#define VERSION " - Built by TheFlightSims and maintainers. Visit https://github.com/TheFlightSims/windowsserver-mgmttools"
+#define VERSION "- built version 6/17/23"
 
 #endif // VERSION
 

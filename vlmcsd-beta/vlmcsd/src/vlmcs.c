@@ -149,7 +149,7 @@ __noreturn static void clientUsage(const char* const programName)
 #		endif // NO_EXTERNAL_DATA
 		"  -e : Show some valid examples\n"
 		"  -x : Show valid Apps\n"
-		"  -d : no DNS names, use Netbios names (no effect if -w is used)\n"
+		"  -d : no DNS names, use NetBIOS names (no effect if -w is used)\n"
 		"  -V : show version information and exit\n\n"
 
 		"Advanced options:\n\n"
@@ -158,7 +158,7 @@ __noreturn static void clientUsage(const char* const programName)
 		"  -s : Use custom Activation Configuration GUID\n"
 		"  -k : Use custom KMS GUID\n"
 		"  -c : Use custom Client GUID. Default: Use random\n"
-		"  -o : Use custom Prevoius Client GUID. Default: ZeroGUID\n"
+		"  -o : Use custom previous Client GUID. Default: ZeroGUID\n"
 		"  -K : Use a specific (possibly invalid) protocol version\n"
 		"  -w : Use custom workstation name. Default: Use random\n"
 		"  -r : Fake required clients\n"
@@ -170,8 +170,8 @@ __noreturn static void clientUsage(const char* const programName)
 		"  -N : <0|1> disable or enable NDR64. Default: 1\n"
 		"  -B : <0|1> disable or enable RPC bind time feature negotiation. Default: 1\n"
 #		endif // USE_MSRPC
-		"  -t : Use specfic license status (0 <= T <= 6)\n"
-		"  -g : Use a specfic binding expiration time in minutes. Default 43200\n"
+		"  -t : Use specific license status (0 <= T <= 6)\n"
+		"  -g : Use a specific binding expiration time in minutes. Default 43200\n"
 #		ifndef NO_DNS
 		"  -P : Ignore priority and weight in DNS SRV records\n"
 #		endif // NO_DNS
