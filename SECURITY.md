@@ -1,18 +1,37 @@
-
 # Security
-To prevent bugs, and other misconfiguration for all contributors in this project, make sure that you're all update the project layout to these following security runtimes:
- + At least .NET 4.8 and should **NOT** update to .NET 4.8.1 (compatibility with Windows Server 2016 and Server 2019)
- + If the application is based-web, or the least version of .NET is 2.1, upgrade it to 2.1
- + If it is UWP-based or modern application, update to .NET 7.0
 
-## List of applications
-|Usage|Name|Contributors|Original path|
-|--|--|--|--|
-|IIS Management|[Check IIS](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/check-iis)|@[TheFlyingCorpse](https://github.com/TheFlyingCorpse), TheFlightSims staff|https://github.com/TheFlyingCorpse/check_iis
-|VM Management|[Hyper-V Passthrough Device](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/hyperv-passthrough)|@[chanket](https://github.com/chanket), TheFlightSims staff|https://github.com/chanket/DDA|
-|Computer Management|[NVIDIA Driver Cleaner](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/nvidia-driver-cleaner)|@[ataberkylmz](https://github.com/ataberkylmz), TheFlightSims staff|https://github.com/ataberkylmz/NvidiaDriverCleaner|
-|Debugging|[PDB Downloader](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/PDB-Downloader)|@[rajkumar-rangaraj](https://github.com/rajkumar-rangaraj), TheFlightSims staff|https://github.com/rajkumar-rangaraj/PDB-Downloader
-|Computer Management|[Port Scanner](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/port-scanner)|@[IceMoonHSV](https://github.com/IceMoonHSV), TheFlightSims staff|https://github.com/IceMoonHSV/PortScanner|
-|Computer Management|[Remote MSI Manager](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/remote-msi-manager)|@[DCourtel](https://github.com/DCourtel), TheFlightSims staff|https://github.com/DCourtel/Remote_MSI_Manager|
-|Volume Activation|[vlmcsd beta/License Manager](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/vlmcsd-beta)|@[Wind4](https://github.com/Wind4/vlmcsd), @[kkkgo](https://github.com/kkkgo), @[HarukaMa](https://github.com/HarukaMa), @[Hotbird64](https://forums.mydigitallife.net/members/hotbird64.333466/), @[Nang](https://jike.info/user/nang), TheFlightSims staff, @[Linus Torvalds](https://github.com/torvalds), Erik Andersen, Waldemar Brodkorb, Denys Vlasenko, H. Peter Anvin|https://github.com/kkkgo/vlmcsd|
-|Group Policy|[GPO Checker](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/gpo-checker)|@[georgeatgrayson](https://github.com/georgeatgrayson), TheFlightSims staff|https://github.com/georgeatgrayson/Windows-GPO-Security-Checker|
+TheFlightSims takes the security responsibilities  of our software products and services seriously, including all open-source software and closed-source software
+
+## Reporting Security Issues
+
+**Note:** You shouldn't report the security vulnerabilities on the Issue or the public place. Any attackers can use these vulnerabilities to exploit non-public data - which causes security vulnerability.
+
+You can report security issues on these platforms:
+
+* [Discord]() (Direct Message is recommended)
+* The repository security page (Prefered)
+* [Email](mailto:theflightsims@gmail.com)
+
+If you prefer to report using email, we recommend encrypting your message with our PGP key; please download it from the [Microsoft Security Response Center PGP Key page](https://www.microsoft.com/msrc/pgp-key-msrc).
+
+Please include the requested information listed below (as much as you can provide) to help us better understand the nature and scope of the possible issue:
+
+* Type of issue (e.g., buffer overflow, SQL injection, cross-site scripting)
+
+* Full paths of the source file(s) related to the manifestation of the issue
+
+* The location of the affected source code (tag/branch/commit or direct URL)
+
+* Any special configuration required to reproduce the issue
+
+* Step-by-step instructions to reproduce the issue
+
+* Proof-of-concept or exploit code (if possible)
+
+* Impact of the case, including how an attacker might control the issue
+
+This information will help us triage your report more quickly.
+
+# Preferred Languages
+
+You can use all human-valid languages. However, you may consider using English (US) to prevent misunderstanding.
