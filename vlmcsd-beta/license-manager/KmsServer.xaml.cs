@@ -75,10 +75,10 @@ namespace HGM.Hotbird64.LicenseManager
     public partial class KmsServer : INotifyPropertyChanged
     {
         private static readonly string nl = Environment.NewLine;
-        public static Random Rand = new Random(unchecked((int)DateTime.UtcNow.Ticks));
+        //public static Random Rand = new Random(unchecked((int)DateTime.UtcNow.Ticks));
+        public static Random Rand = RandomNumberGenerator.GetInt32((int)DateTime.UtcNow.Ticks);
         public ushort Port { get; private set; }
-        //public static readonly short[] LcidList = CultureInfo.GetCultures(CultureTypes.AllCultures).Where(c => c.LCID > 999 && c.LCID < 32768).Select(c => (short)c.LCID).Distinct().OrderBy(l => l).ToArray();
-        public static int Lcid = 1033; //LcidList[Rand.Next(0, LcidList.Length)];
+        public static int Lcid = 1033; //1033 is EN-US (locale)
         private static ObservableCollection<CsvlkItem> csvlks = new ObservableCollection<CsvlkItem>(KmsLists.CsvlkItemList.Where(c => c.Export).OrderBy(c => c.VlmcsdIndex));
 
         public ObservableCollection<CsvlkItem> Csvlks
