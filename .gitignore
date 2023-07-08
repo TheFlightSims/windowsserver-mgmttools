@@ -76,6 +76,8 @@ vlmcsd-beta/vlmcsd/src/GNUmakefile
 vlmcsd-beta/vlmcsd/VisualStudio
 
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/mkinitrd.guide
+
+# Auto add by editor
 gpo-checker/GPOChecker.csproj
 gpo-checker/GPOChecker.sln
 hyperv-passthrough/hypervpassth.csproj
@@ -91,3 +93,8 @@ remote-msi-manager/UnitTest/obj/x64/Release/.NETFramework,Version=v4.8.AssemblyA
 remote-msi-manager/UnitTest/obj/x64/Release/build.force
 remote-msi-manager/UnitTest/obj/x86/Release/build.force
 vlmcsd-beta/database-config/sql/getcontent.msmetadata
+*.o
+vlmcsd-beta/vlmcsd/bin/vlmcs
+vlmcsd-beta/vlmcsd/bin/vlmcsd
+vlmcsd-beta/vlmcsd/bin/CMakeCache.txt
+vlmcsd-beta/vlmcsd/bin/CMakeFiles/cmake.check_cache

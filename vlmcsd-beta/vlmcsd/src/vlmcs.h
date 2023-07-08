@@ -26,4 +26,3 @@ int client_main(int argc, CARGV argv);
 int SendActivationRequest(const RpcCtx sock, RESPONSE *baseResponse, REQUEST *baseRequest, RESPONSE_RESULT *result, BYTE *const hwid);
 
 #endif /* VLMCS_H_ */
-

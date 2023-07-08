@@ -16,8 +16,6 @@
 #include "endian.h"
 #include "helpers.h"
 
-// ReSharper disable All
-
 #ifndef NO_LOG
 static void vlogger(const char *message, va_list args)
 {
@@ -36,10 +34,7 @@ static void vlogger(const char *message, va_list args)
 		if (!strcmp(fn_log, "syslog"))
 		{
 			openlog("vlmcsd", LOG_CONS | LOG_PID, LOG_USER);
-
-			////PORTABILITY: vsyslog is not in Posix but virtually all Unixes have it
 			vsyslog(LOG_INFO, message, args);
-
 			closelog();
 			return;
 		}
@@ -59,7 +54,7 @@ static void vlogger(const char *message, va_list args)
 
 	if (LogDateAndTime)
 		strftime(mbstr, sizeof(mbstr), "%Y-%m-%d %X: ", localtime(&now));
-	else
+	else 
 		*mbstr = 0;
 
 #	ifndef USE_THREADS
@@ -68,18 +63,9 @@ static void vlogger(const char *message, va_list args)
 	vfprintf(log, message, args);
 	fflush(log);
 
-#	else // USE_THREADS
-
-	// We write everything to a string before we really log inside the critical section
-	// so formatting the output can be concurrent
+#	else
 	int len = (int)strlen(mbstr);
-	//#	if !_MSC_VER
-
 	vlmcsd_vsnprintf(mbstr + len, sizeof(mbstr) - len, message, args);
-	//#	else
-	//	wvsprintf(mbstr + len, message, args);
-	//#	endif
-
 	lock_mutex(&logmutex);
 	fprintf(log, "%s", mbstr);
 	fflush(log);
@@ -88,9 +74,6 @@ static void vlogger(const char *message, va_list args)
 #	endif // USE_THREADS
 	if (log != stdout) fclose(log);
 }
-
-
-// Always sends to log output
 int logger(const char *const fmt, ...)
 {
 	va_list args;
@@ -101,10 +84,8 @@ int logger(const char *const fmt, ...)
 	return 0;
 }
 
-#endif //NO_LOG
+#endif
 
-
-// Output to stderr if it is available or to log otherwise (e.g. if running as daemon/service)
 int printerrorf(const char *const fmt, ...)
 {
 	int error = errno;
@@ -140,17 +121,13 @@ int printerrorf(const char *const fmt, ...)
 	return 0;
 }
 
-
-// Always output to stderr
 int errorout(const char* fmt, ...)
 {
 	va_list args;
-
 	va_start(args, fmt);
 	int i = vfprintf(stderr, fmt, args);
 	va_end(args);
 	fflush(stderr);
-
 	return i;
 }
 
@@ -160,8 +137,7 @@ static const char *LicenseStatusText[] =
 {
 	"Unlicensed", "Licensed", "OOB grace", "OOT grace", "Non-Genuine", "Notification", "Extended grace"
 };
-#endif // !defined(NO_VERBOSE_LOG) && !defined(NO_LOG)
-
+#endif
 
 void uuid2StringLE(const GUID *const guid, char *const string)
 {
@@ -278,7 +254,7 @@ void printPlatform()
 #		endif
 
 #		if __x86_64__ || __amd64__ || _M_X64 || _M_AMD64
-		" Intel x86_64"
+		" Intel x86-64"
 #		endif
 
 #		if _M_ARM || __arm__
@@ -298,7 +274,7 @@ void printPlatform()
 #		endif
 
 #		if __ia64__
-		" Intel Itanium"
+		" Intel Itanium IA64"
 #		endif
 
 #		if __mips__
@@ -414,11 +390,11 @@ void printPlatform()
 #		endif
 
 #		if defined(_WIN32) && !defined(_WIN64)
-		" Windows32"
+		" Windows 32-bit"
 #		endif
 
 #		if defined(_WIN32) && defined(_WIN64)
-		" Windows64"
+		" Windows 64-bit"
 #		endif
 
 #		if __MVS__ || __TOS_MVS__
@@ -436,14 +412,6 @@ void printPlatform()
 #		if defined(__linux__) && !defined(__GLIBC__) && !defined(__UCLIBC__) && !defined(__ANDROID__) && !defined(__BIONIC__)
 		" musl"
 #		endif
-
-		//#		if _MIPSEL || __MIPSEL__ || __ARMEL__ || __THUMBEL__
-		//		" little-endian"
-		//#		endif
-		//
-		//#		if _MIPSEB || __MIPSEB__ || __ARMEB__ || __THUMBEB__
-		//		" big-endian"
-		//#		endif
 
 #		if __PIE__ || __pie__
 		" PIE"

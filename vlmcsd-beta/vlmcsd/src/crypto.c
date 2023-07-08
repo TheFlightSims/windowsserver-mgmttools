@@ -38,9 +38,6 @@ static const BYTE SBox[] = {
 
 void XorBlock(const BYTE *const in, const BYTE *out) // Ensure that this is always 32 bit aligned
 {
-	/*UAA64( out, 0 ) ^= UAA64( in, 0 );
-	UAA64( out, 1 ) ^= UAA64( in, 1 );*/
-
 	uint_fast8_t i;
 
 	for (i = 0; i < AES_BLOCK_WORDS; i++)
@@ -59,21 +56,6 @@ void XorBlock(const BYTE *const in, const BYTE *out) // Ensure that this is alwa
 #define MulB(word) (Mul8(word) ^ Mul3(word))
 #define MulD(word) (Mul8(word) ^ Mul4(word) ^ word)
 #define MulE(word) (Mul8(word) ^ Mul4(word) ^ Mul2(word))
-
-//32 bit Galois Multiplication (generates bigger code than Macros)
-/*static DWORD Mul(DWORD x, DWORD y)
-{
-	DWORD result = x, yTemp = y, log2;
-
-	if (!y) return 0;
-
-	for (log2 = 0; yTemp >>= 1; log2++ )
-	{
-		result = Mul2(result);
-	}
-
-	return result ^ Mul(x, y - (1 << log2));
-}*/
 
 
 void MixColumnsR(BYTE *restrict state)

@@ -266,8 +266,8 @@ static __noreturn void usage()
 {
 	printerrorf("vlmcsd %s\n"
 		"\nUsage:\n"
-		"   %s [ options ]\n\n"
-		"Where:\n"
+		"   %s [Options]\n\n"
+		"Options:\n"
 #		if !defined(_WIN32) && !defined(NO_USER_SWITCH)
 		"  -u <user>\t\tset uid to <user>\n"
 		"  -g <group>\t\tset gid to <group>\n"
