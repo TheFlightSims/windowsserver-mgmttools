@@ -80,6 +80,7 @@ namespace HGM.Hotbird64.LicenseManager
         public static ISet<ProductKeyConfigurationKeyRangesKeyRange> KeyRanges => PKeyConfig.Items.OfType<ProductKeyConfigurationKeyRanges>().Single().KeyRange;
 
         //private readonly Random random = new Random(unchecked((int)DateTime.Now.Ticks));
+
         private readonly Random random = new RandomNumberGenerator.GetInt32((int)DateTime.Now.Ticks);
         private IEnumerable<ProductKeyConfigurationKeyRangesKeyRange> keyRanges;
         private ProductKeyConfigurationConfigurationsConfiguration keyConfig;
