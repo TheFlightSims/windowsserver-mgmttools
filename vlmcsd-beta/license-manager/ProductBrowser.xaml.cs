@@ -90,7 +90,6 @@ namespace HGM.Hotbird64.LicenseManager
         private readonly bool isManualEpid;
         private readonly bool isInputChanging;
         private readonly object lookupLockObject = new object();
-        //private static readonly int[] knownBuildNumbers = { 3790, 6000, 6001, 6002, 7600, 7601, 9200, 9600, 10240, 14393, 15063, 16299, 17134, 17763 };
 
         public static IList<PKeyConfigFile> PKeyConfigFiles = new List<PKeyConfigFile>
         {
