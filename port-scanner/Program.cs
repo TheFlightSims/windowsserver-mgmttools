@@ -120,7 +120,7 @@ Samples:
                         else if (parts[1] == "all-ports")
                         {
                             Console.WriteLine("[Notification] All ports of the destination computer will be scanned\n");
-                            results["ports"] = new object[] {};
+                            results["ports"] = new object[] {Enumerable.Range(1, 65535).ToArray()};
                         }
                         else
                         {
