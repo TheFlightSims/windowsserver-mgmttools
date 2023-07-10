@@ -164,7 +164,7 @@ def office2021():
 
 #Where we start
 def start():
-    ask = int(input("1. Download Keys for Microsoft Windows 7 \n2. Download Keys for Microsoft Windows 8.1 \n3. Download Keys for Microsoft Windows 10/11 \n4. Download Keys for Microsoft Windows Server 2016/2019 \n5. Download Keys for Microsoft Windows Server 2022 \n6. Download Keys for Microsoft Office 2010 \n7. Download Keys for Microsoft Office 2013 \n8. Download Keys for Microsoft Office 2016 \n9. Download Keys for Microsoft Office 2019 \n10.Download Keys for Microsoft Office 2021 \nChoose operation mode: "))
+    ask = int(input("1. Download Keys for Microsoft Windows 7 \n2. Download Keys for Microsoft Windows 8.1 \n3. Download Keys for Microsoft Windows 10/11 \n4. Download Keys for Microsoft Windows Server 2016/2019 \n5. Download Keys for Microsoft Windows Server 2022 \n6. Download Keys for Microsoft Office 2010 \n7. Download Keys for Microsoft Office 2013 \n8. Download Keys for Microsoft Office 2016 \n9. Download Keys for Microsoft Office 2019 \n10.Download Keys for Microsoft Office 2021 \n11.Download key for All\nChoose operation mode: "))
     if ask == 1:
         win7()
     elif ask == 2:
@@ -185,6 +185,18 @@ def start():
     elif ask == 9:
         office2019()
     elif ask == 10:
+        office2021()
+    elif ask == 11:
+        win7()
+        win81()
+        win10()
+        win10home()
+        server1619()
+        server2022()
+        office2010()
+        office2013()
+        office2016()
+        office2019()
         office2021()
     else:
         print("Invaild input. Please do it again...")
