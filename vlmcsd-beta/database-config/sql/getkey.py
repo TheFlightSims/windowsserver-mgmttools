@@ -14,7 +14,7 @@
     This script is used to download all keys for Windows/Office products. DO NOT use it for
     any illegal operation. 
        
-    Thanks to TheFlightSims sysadmins, Hotbird64, @kkkgo, @harukaMa and other contributors for 
+    Thanks to @takinekotfs, Hotbird64, @kkkgo, @harukaMa and other contributors for 
     all contributions to this project.
 
     By community, for community.
