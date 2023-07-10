@@ -81,8 +81,8 @@ def gen(pag, web, ver):
     for liner in open(str(ver) + str("_pre.rowkey"), 'r'):
         open(str(ver) + str(".txt"), 'a').write(liner.replace('Key: ', ' '))
     
-    #Delete old *_pre.txt
-    os.remove(str(ver) + str("_pre.txt"))
+    #Delete old *_pre.rowkey
+    os.remove(str(ver) + str("_pre.rowkey"))
 
 def win7():
     print("Downloading Microsoft Windows 7 Keys")
