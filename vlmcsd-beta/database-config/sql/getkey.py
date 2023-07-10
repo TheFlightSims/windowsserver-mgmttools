@@ -24,23 +24,21 @@ Report problems at: https://github.com/TheFlightSims/windowsserver-mgmttools/iss
 """
 
 #Installed libs
-import os, math, re, csv
+import os
 
 
 # Install from PyPI if `import` failed
 try:
-    import requests, re
+    import requests
     from bs4 import BeautifulSoup
-    import pandas as pd
 except:
     cs = os.system
     if os.name == 'nt':
-        cs('python -m pip install requests bs4 pandas')
+        cs('python -m pip install requests bs4')
     else:
-        cs('python3 -m pip install requests bs4 pandas')
-    import requests, re
+        cs('python3 -m pip install requests bs4')
+    import requests
     from bs4 import BeautifulSoup
-    import pandas as pd
 
 # Recommended for who change this header, since this's old version header
 headers = {
@@ -68,7 +66,7 @@ def gen(pag, web, ver):
             for line in open('getcontent.msmetadata', 'r', encoding="utf-8").readlines():
                 
                 if (line.startswith("Key: ")):
-                    open(str(ver) + str("_pre.txt"),'a',encoding="utf-8").write(line)
+                    open(str(ver) + str("_pre.rowkey"),'a',encoding="utf-8").write(line)
                 
                 if (line.startswith("Description: ")):
                     open(str(ver) + str("_pre.rowkey"),'a',encoding="utf-8").write(line)
@@ -77,22 +75,14 @@ def gen(pag, web, ver):
             os.remove("getcontent.msmetadata")
 
         #If the selecting page isn't every 2 pages, continue the code and ignore the export
-        else: 
+        else:
             continue
             
-    for liner in open(str(ver) + str("_pre.txt"), 'r'):
+    for liner in open(str(ver) + str("_pre.rowkey"), 'r'):
         open(str(ver) + str(".txt"), 'a').write(liner.replace('Key: ', ' '))
     
     #Delete old *_pre.txt
     os.remove(str(ver) + str("_pre.txt"))
-
-
-'''
-Some varible name meanings:
-pag: page numbers. Means these keys are listed on these specific number on the jike.info server-2016-2019-retail
-web: default string URL
-ver: prodiuct names and its versions
-'''
 
 def win7():
     print("Downloading Microsoft Windows 7 Keys")
@@ -140,6 +130,7 @@ def server2022():
 def office2010():
     print("Downloading Microsoft Office 2010 Keys")
     pag = int(3)
+    web = str("https://jike.info/topic/360/office-2010-proplus-vl_mak%E6%BF%80%E6%B4%BB%E5%AF%86%E9%92%A5?lang=en-GB&page=")
     ver = str("office2010")
     gen(pag, web, ver)
 
