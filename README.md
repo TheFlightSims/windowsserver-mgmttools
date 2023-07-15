@@ -6,21 +6,20 @@
 - *Clean up temporary NVIDIA GPU drivers*
 - *Remote install for MSI installer*
 - *Passthrough physical device into the virtual machine*
-- *Activation services for server*
+- *Activation services for the server*
 - *Manage updates for servers and clients*
 
 For better understanding, you can see the [wiki page](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki).
 
 # Use and install
-***To run and use applications in this project, make sure your computer is installed with features:***
+***To run and use applications in this project, make sure your computer is installed with the features:***
  - dotNET 2.1, dotNET 3.5, dotNET 4.8. These are built-in features and can be enabled. You can see the document [here](https://learn.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows)
- - Modern applications require .NET 7.0. You can download in [there](https://dotnet.microsoft.com/en-us/download)
- - Visual C++ 2015 and all versions later. You can download in [here](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+ - Modern applications require .NET 7.0. You can download it [here](https://dotnet.microsoft.com/en-us/download)
+ - Visual C++ 2015 and all versions later. You can download it [here](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 
 # The Files and Folders
 
 ***The repo consists of three parts***
- - **[!pub!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!pub!):** store complied and published packages. We will update it monthly, if possible.
  - **[!makevs!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!makevs!):** Make Visual Studio offline layout. It is recommended to fully editing in this project.
  - **winser-mgmttools.sln:** solution files, contains all required paths for all projects.
  - **The rest of the files and folders:** Project files and folders.
@@ -28,8 +27,8 @@ For better understanding, you can see the [wiki page](https://github.com/TheFlig
 # Contributing & Feedback
 
 ## Contributing
-To fully edit this repository, run to download all layouts for the Visual Studio 2022 that located in **[!makevs!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!makevs!)**.
-Also, you may need [Advanced Installer](https://www.advancedinstaller.com/) to create installer. These are all located in folder [!bin](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!bin!) in each project.
+To fully edit this repository, run to download all layouts for Visual Studio 2022 that are located in **[!makevs!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!makevs!)**.
+Also, you may need [Advanced Installer](https://www.advancedinstaller.com/) to create an installer. These are all located in the folder [!bin!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!bin!) in each project.
 
 Otherwise, you can do other ways:
  - [Review Wiki Page](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki)
