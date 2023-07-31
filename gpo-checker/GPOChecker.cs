@@ -41,7 +41,7 @@ namespace GPOChecker
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Display dotNet 4.8 requirement is not required - dotnet 4.8 only runs on Windows 7 SP1 or later
+            
         }
 
         private void NextButton_Click(object sender, EventArgs e)
@@ -155,25 +155,6 @@ namespace GPOChecker
                                     {
                                         var name = GetChildByName(pol, "q" + i.ToString() + ":Name");
                                         var state = GetChildByName(pol, "q" + i.ToString() + ":State");
-                                        if (name != null && state != null)
-                                        {
-                                            /*
-                                            if (state.InnerText == "Enabled")
-                                            {
-                                                try { Policies1.Add(pol.ChildNodes[0].InnerText, 0); }
-                                                catch (Exception) { }
-                                            }
-                                            else if (state.InnerText == "Disabled")
-                                            {
-                                                Policies1.Add(pol.ChildNodes[0].InnerText, 0);
-                                            }
-                                            else
-                                            {
-                                            */
-                                            //Policies1.Add(pol.ChildNodes[0].InnerText, 2);
-                                            //}
-
-                                        }
                                     }
                                 }
                             }
@@ -207,7 +188,7 @@ namespace GPOChecker
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show($"Your computer is not joined into the domain, nor the domain cannot be contacted.", $"Error", MessageBoxButtons.OK);
+                    MessageBox.Show($"Your computer is not joined into the domain, nor the domain cannot be contacted. \nThe program will exit.", $"Error", MessageBoxButtons.OK);
                 }
 
             }
