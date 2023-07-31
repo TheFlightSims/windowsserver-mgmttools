@@ -2,11 +2,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Check IIS", "Check IIS", "{47070227-5F6B-4D80-BFC0-261ABB0B033C}"
-	ProjectSection(SolutionItems) = preProject
-		check-iis\check_iis.sln = check-iis\check_iis.sln
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hyper-V Device Passthrough", "Hyper-V Device Passthrough", "{5B2D0647-5F4F-450D-A8AA-DDC72D3A3202}"
 	ProjectSection(SolutionItems) = preProject
 		hyperv-passthrough\hypervpassth.sln = hyperv-passthrough\hypervpassth.sln
