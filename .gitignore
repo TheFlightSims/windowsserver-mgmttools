@@ -2,7 +2,7 @@
 /.vs
 *.vs
 /!bin!
-*.csproj
+*.csproj*
 *.sln
 *.suo
 *.vcsproj
@@ -12,6 +12,7 @@
 *.pdb
 *.CopyComplete
 *.dll
+*.pfx
 /!pub!
 
 # Ignore changes in check-iis
