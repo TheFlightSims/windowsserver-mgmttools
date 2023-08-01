@@ -64,7 +64,7 @@
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup />
@@ -78,7 +78,7 @@
     <ApplicationIcon>main.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>B33668CC670C314A74A41D1A8484406BB233945F</ManifestCertificateThumbprint>
@@ -182,7 +182,6 @@
     <EmbeddedResource Include="SetMemory.resx">
       <DependentUpon>SetMemory.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="code-signing.pfx" />
     <None Include="etc\cert.pfx" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
