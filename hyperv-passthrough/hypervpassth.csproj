@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HyperVpassthroughdev</RootNamespace>
-    <AssemblyName>Hyper-V Passthrough Device</AssemblyName>
+    <AssemblyName>Hyper-V Device Passthrough</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
