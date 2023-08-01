@@ -287,7 +287,7 @@ if [ "$INETD" == "Y" ]; then
   inetd
 fi
 
-echo -e "\nClient check time is enabled. If the time difference on the client is more than 4 hours, the activation is refused.\n"
+echo -e "\nClient check time is disabled.\n"
 echo -e "vlmcsd log file stores at /var/log/vlmcsd.log.\nYou can edit the vlmcsd configuration at /etc/vlmcsd.ini to re-design the log file location"
 echo -e "\nPress ALT-F2 to ALT-F6 to login locally or ALT-F8 for menu\n"
 
