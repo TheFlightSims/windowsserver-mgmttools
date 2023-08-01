@@ -1,4 +1,3 @@
-# Ignore changes globally
 /.vs
 *.vs
 /!bin!
@@ -14,52 +13,37 @@
 *.dll
 *.pfx
 /!pub!
-
-# Ignore changes in gpo-checker
 gpo-checker/.vs
 gpo-checker/obj
 gpo-checker/GPOChecker.csproj
 gpo-checker/GPOChecker.sln
-
-# Ignore changes in hyperv-passthrough
 hyperv-passthrough/.vs
 hyperv-passthrough/obj
 hyperv-passthrough/hypervpassth.csproj
 hyperv-passthrough/hypervpassth.sln
-
-# Ignore changes in nvidia-driver-cleaner
 nvidia-driver-cleaner/.vs
 nvidia-driver-cleaner/obj
 nvidia-driver-cleaner/NvidiaCleaner.csproj
 nvidia-driver-cleaner/NvidiaCleaner.sln
 nvidia-driver-cleaner/NvidiaCleaner.csproj.user
-
-# Ignore changes in PDB-Downloader
 PDB-Downloader/PDB-Downloader.csproj
 PDB-Downloader/.vs
 PDB-Downloader/obj
 PDB-Downloader/PDB-Downloader.sln
-
-# Ignore changes in port-scanner
 port-scanner/.vs
 port-scanner/obj
 port-scanner/PortScanner.csproj
 port-scanner/PortScanner.sln
-
-# Ignore changes in remote-msi-manager
 remote-msi-manager/.vs
 remote-msi-manager/obj
 remote-msi-manager/RemoteMsiManager.suo
 remote-msi-manager/RemoteMsiManager.v12.suo
 remote-msi-manager/RemoteMsiManager.sln
 /remote-msi-manager/RemoteMsiManager/obj/
-
-# Ignore changes in vlmcsd-beta
 vlmcsd-beta/license-manager/.vs
 vlmcsd-beta/license-manager/obj
 vlmcsd-beta/license-manager/LicenseManager.sln
 vlmcsd-beta/license-manager/LicenseManager.sln.DotSettings
-
 vlmcsd-beta/vlmcsd/buildroot-configs
 vlmcsd-beta/vlmcsd/hotbird64-mass-build
 vlmcsd-beta/vlmcsd/src/*.vcsproj
@@ -67,10 +51,7 @@ vlmcsd-beta/vlmcsd/src/*.vcsproj.user
 vlmcsd-beta/vlmcsd/src/*.vcsproj.filters
 vlmcsd-beta/vlmcsd/src/GNUmakefile
 vlmcsd-beta/vlmcsd/VisualStudio
-
 vlmcsd-beta/vlmcsd-floppy/vlmcsd-floppy-content/mkinitrd.guide
-
-# Auto add by editor
 gpo-checker/GPOChecker.csproj
 gpo-checker/GPOChecker.sln
 hyperv-passthrough/hypervpassth.csproj
@@ -86,7 +67,6 @@ remote-msi-manager/UnitTest/obj/x64/Release/.NETFramework,Version=v4.8.AssemblyA
 remote-msi-manager/UnitTest/obj/x64/Release/build.force
 remote-msi-manager/UnitTest/obj/x86/Release/build.force
 vlmcsd-beta/database-config/sql/getcontent.msmetadata
-*.o
 vlmcsd-beta/vlmcsd/bin/vlmcs
 vlmcsd-beta/vlmcsd/bin/vlmcsd
 vlmcsd-beta/vlmcsd/bin/CMakeCache.txt
