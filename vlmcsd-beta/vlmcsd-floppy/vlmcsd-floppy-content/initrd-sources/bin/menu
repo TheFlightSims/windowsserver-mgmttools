@@ -1,0 +1,190 @@
+#!/bin/ash
+
+get_kernel_command_line_parameter()
+{
+  while [ "$1" != "" ]; do
+    eval $(echo -n $(cat /proc/cmdline) | awk "match(\$0, /$1=\\S*\\s/) { printf \"%s\", substr(\$0, RSTART, RLENGTH - 1) }")
+    shift
+  done
+}
+
+kill_vlmcsd()
+{
+  if [ -f /var/run/vlmcsd/vlmcsd.pid ]; then
+    kill $(cat /var/run/vlmcsd/vlmcsd.pid)
+    echo "Closing vlmcsd service..."
+    sleep 1
+    if [ -f /var/run/vlmcsd/vlmcsd.pid ]; then
+      killall -KILL vlmcsd
+      [ $? == 0 ] && echo "Closing vlmcsd service and its dependencies..."
+      rm -f /var/run/vlmcsd/vlmcsd.pid
+    fi
+  else
+    [ "$1" == "-q" ] && killall -KILL vlmcsd 1>/dev/null 2>&1
+    [ "$1" == "-q" ] || killall -KILL vlmcsd
+  fi
+}
+
+start_vlmcsd()
+{
+  kill_vlmcsd -q
+  echo "Starting vlmcsd service..." on /dev/console
+  vlmcsd -e -i /etc/vlmcsd.ini >/dev/console </dev/console 2>&1
+}
+
+kill_inetd()
+{
+  if [ "$(ps | grep inetd | grep -v grep)" == "" ]; then
+    [ "$1" != "-q" ] && echo "Network service is not started"
+  else
+    killall inetd
+    echo "Killing network service..."
+    sleep 1
+    if [ "$(ps | grep inetd | grep -v grep)" != "" ]; then
+      killall -KILL inetd
+      [ $? == 0 ] && echo "Killing network service and its dependencies..."
+    fi
+
+    if [ "$1" != "-q" ]; then
+      [ "$(ps | grep telnetd | grep -v grep)" != "" ] && killall -KILL telnetd
+      [ "$(ps | grep ftpd | grep -v grep)" != "" ] && killall -KILL ftpd
+    fi
+  fi
+}
+
+start_inetd()
+{
+  kill_inetd -q
+  inetd
+  if [ "$(ps | grep inetd | grep -v grep)" == "" ]; then
+    echo "Network service cannot be started nornally"
+  else
+    echo "Network service has started"
+  fi
+}
+
+show_ip_config()
+{
+  ifconfig eth0
+  echo -e "\n\nIPv4 routes"
+  ip -4 route
+  echo -e "\n\nIPv6 routes"
+  ip -6 route
+  echo -e "\n"
+  netstat -autpen
+}
+
+change_time_zone()
+{
+  read -p "Enter timezone (e.g.: PST8PDT, M3.2.0, M11.1.0 or JST-9, UTC2, UTC-7. Default: UTC0): " TZ
+  [ "$TZ" == "" ] && TZ=UTC0
+  DUMMY=$(echo "")
+  export TZ
+  echo $TZ > /etc/timezone
+  echo -e "\nLocal is now" $(date)
+
+  if [ "$(ps | grep vlmcsd | grep -v grep)" != "" ]; then
+    start_vlmcsd
+  fi
+}
+
+change_keyboard()
+{
+  echo "Choose one of the following layouts: "
+  echo $(ls -1 /usr/share/kmap | cut -d. -f1)
+  read kb_layout
+  /bin/k $kb_layout
+  unset kb_layout
+}
+
+if [ $(id -u) != 0 ]; then
+  echo "Must be root to run $0"
+  exit 7
+fi
+
+while [ 1 ]; do
+  echo " ======================================================== "
+  echo "|                  VLMCSD Floppy-disk                    |"
+  echo "|              TheFlightSims (ft. Hotbird64)             |"
+  echo "|                  Contribute more on                    |"
+  echo "|    github.com/TheFlightSims/windowsserver-mgmttols     |"
+  echo " ======================================================== "
+  echo -e "\n"
+  echo " ======================================================== "
+  echo "| Enter one of the following commands:                   |"
+  echo " -------------------------------------------------------- "
+  echo "|                                                        |"
+  echo "|  1. Restart vlmcsd service                             |"
+  echo "|  2. Stop vlmcsd service                                |"
+  echo "|  3. Restart network service (includes telnet and ftp)  |"
+  echo "|  4. Stop network service (includes telnet and ftp)     |"
+  echo "|  5. Change the timezone                                |"
+  echo "|  6. Show all kernel boot parameters                    |"
+  echo "|  7. Show boot log                                      |"
+  echo "|  8. Show TCP/IP configuration                          |"
+  echo "|  9. Show running processes                             |"
+  echo "|                                                        |"
+  echo "|  k. Change keyboard layout                             |"
+  echo "|                                                        |"
+  echo "|  s. Shutdown the computer                              |"
+  echo "|  r. Reboot the computer                                |"
+  echo " ======================================================== "
+  echo " > "
+
+  read -s -n1 KEY
+  echo ""
+
+  case $KEY in
+    1)
+	start_vlmcsd
+	;;
+    2)
+	kill_vlmcsd
+	;;
+    3)
+	start_inetd
+	;;
+    4)
+	kill_inetd
+	;;
+    5)
+	change_time_zone
+	;;
+    k)
+	change_keyboard
+        ;;
+    6)
+	cat /proc/cmdline | sed -e 's/ /\n/g' | less
+	less=1
+        ;;
+    7)
+	dmesg | less
+        less=1
+        ;;
+    8)
+	show_ip_config | less
+        less=1
+	;;
+    9)
+	top
+	less=1
+	;;
+    s)
+	poweroff -f
+	;;
+    r)
+	reboot -f
+	;;
+    *)
+	echo "Unknown command"
+  esac
+
+  if [ "$less" == "" ]; then
+    echo -e "\nPress any key to continue"
+    read -n1 -s DUMMY
+  fi
+
+  unset less
+  clear
+
+done
