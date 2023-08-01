@@ -16,41 +16,57 @@ namespace Scanner
         {
             Console.WriteLine(
              @"
-./PortScanner.exe {hosts} {ports} [timeout] [outfile]
-                
-Usage:
+PortScanner is a part of Windows Server Management Tools
+Currently maintained by TheFlightSims
 
-    hosts          : Required. Comma for each hosts. Can be FQDN or IP address
-    ports          : Required. Comma for each port. Must be an interger
-                        You can use these pre-defined commands:
-                        admin     - Scan ports: 135, 139, 445, 3389, 5985, 5986
+See more at: https://github.com/TheFlightSims/windowsserver-mgmttools
 
-                        web       - Scan ports: 21, 23, 25, 80, 443, 8080
+PortScanner.exe {hosts} {ports} [timeout] [outfile]
 
-                        top20     - Scan ports: 21, 22, 23, 25, 53, 80, 110, 111,
-                                            135, 139, 143, 443, 445, 993, 995, 
-                                            1723, 3306, 3389, 5900, 8080
+DESCRIPTION:
+    PortScanner is used to scan any opening ports of the target computer
+    The commands are depend on how you use, but general mapping are still 
+    can be seen above.
 
-                        server-common - Scan ports: 7, 9, 13, 17, 19, 25, 42,
-                                                    80, 88, 110, 111, 119, 135,
-                                                    149, 389, 443, 445, 465, 
-                                                    563, 587, 636, 808, 993, 995,
-                                                    1433, 1688, 1801, 3268, 3269, 
-                                                    3387, 3388, 3389, 4044, 6516, 
-                                                    6881, 8391, 8443, 8530, 8531, 
-                                                    9389
+GENERAL COMMANDS:
+    hosts         - Target computers. Can use FQDN or IP. Seperate by comma
 
-                        all-ports  - All ports in range 1 to 65535
-             
-    timeout=[value]: Optional. Counts in miliseconds. 
-                If the value is lower than 500, it will be ignored.
-    outfile=[path] : Optional. Vaild path configs only             
-             
-Samples:
-    ./PortScanner.exe hosts=127.0.0.1,google.com ports=21,22,23 timeout=5000 outfile=C:\scans.txt
-    ./PortScanner.exe hosts=localhost ports=admin
-             "
-           );
+    ports         - Ports that needs to be scanned. Seperate by comma. 
+                    You can use defined ports. See below for more info.
+                    Port range is not supported in this version
+
+    timeout       - Maximum scanning time per port. Useful when scanning on
+                    large number of ports
+
+    outfile       - Export results to a file. R/W is required on the target
+                    directory
+
+DEFINED PORTS:
+
+    Defined ports are the ports containing specific roles, providing specific 
+    features on computer. The list below shows all defined ports on PortScanner
+    
+    admin         - 135, 139, 445, 3389, 5985, 5986, 8000, 8080.
+
+    web           - 21, 23, 25, 80, 443, 8080.
+
+    top20         - 21, 22, 23, 25, 53, 80, 110, 111, 135, 139, 
+                    143, 443, 445, 993, 995, 1723, 3306, 3389, 
+                    5900, 8080.
+
+    server-common - 7, 9, 13, 17, 19, 25, 42, 80, 88, 110, 111, 
+                    119, 135, 149, 389, 443, 445, 465, 563, 587, 
+                    636, 808, 993, 995, 1433, 1688, 1801, 3268, 
+                    3269, 3387, 3388, 3389, 4044, 6516, 6881, 
+                    8000, 8080, 8800, 8391, 8443, 8530, 8531, 
+                    9389
+
+    all-ports    - All ports in range 1, 65535
+
+SAMPLES:
+    PortScanner.exe hosts=127.0.0.1,google.com ports=21,22,23 timeout=5000 outfile=C:\scans.txt
+    PortScanner.exe hosts=localhost ports=admin
+              ");
         }
 
         static Dictionary<string, object> results = new Dictionary<string, object>();
@@ -98,8 +114,8 @@ Samples:
                     case "ports":
                         if (parts[1] == "admin")
                         {
-                            Console.WriteLine("[Notification] The following ports will be scanned: 135, 139, 445, 3389, 5985, 5986. \n");
-                            results["ports"] = new object[] { 135, 139, 445, 3389, 5985, 5986 };
+                            Console.WriteLine("[Notification] The following ports will be scanned: 135, 139, 445, 3389, 5985, 5986, 8000, 8080. \n");
+                            results["ports"] = new object[] { 135, 139, 445, 3389, 5985, 5986, 8000, 8080 };
                         }
                         else if (parts[1] == "web")
                         {
@@ -114,8 +130,8 @@ Samples:
                         else if (parts[1] == "server-common")
                         {
                             Console.WriteLine("[Notification] The following ports will be scanned: 7, 9, 13, 17, 19, 25, 42, 80, 88, 110, 111, 119, 135, 149, 389, 443, 445, 465, 563, 587, 636, 808, 993, " +
-                                "995, 1433, 1688, 1801, 3268, 3269, 3387, 3388, 3389, 4044, 6516, 6881, 8391, 8443, 8530, 8531, 9389 \n");
-                            results["ports"] = new object[] { 7, 9, 13, 17, 19, 25, 42, 80, 88, 110, 111, 119, 135, 149, 389, 443, 445, 465, 563, 587, 636, 808, 993, 995, 1433, 1688, 1801, 3268, 3269, 3387, 3388, 3389, 4044, 6516, 6881, 8391, 8443, 8530, 8531, 9389 };
+                                "995, 1433, 1688, 1801, 3268, 3269, 3387, 3388, 3389, 4044, 6516, 6881, 8000, 8080, 8800, 8391, 8443, 8530, 8531, 9389 \n");
+                            results["ports"] = new object[] { 7, 9, 13, 17, 19, 25, 42, 80, 88, 110, 111, 119, 135, 149, 389, 443, 445, 465, 563, 587, 636, 808, 993, 995, 1433, 1688, 1801, 3268, 3269, 3387, 3388, 3389, 4044, 6516, 6881, 8000, 8080, 8800, 8391, 8443, 8530, 8531, 9389 };
                         }
                         else if (parts[1] == "all-ports")
                         {
@@ -145,6 +161,7 @@ Samples:
             }
             return results;
         }
+
         public static bool IsPortOpen(string host, object ports1)
         {
             bool bRet;
@@ -167,28 +184,24 @@ Samples:
 
         public static void PortScan(string host, object outfileName)
         {
-            string formatString = "{0} : port {1} is {2}.";
-            Parallel.ForEach((object[])results["ports"], ports =>
-            {
-                string content = String.Format(formatString, host, ports, IsPortOpen(host, ports) ? "open" : "closed");
-                if (file != null)
+            bool scanresult;
+            string content;
+            Parallel.ForEach((object[])results["ports"], ports => {
+                scanresult = IsPortOpen(host, ports);
+                if (scanresult)
                 {
-                    fileMutex.WaitOne();
-                    try
+                    content = String.Format("{0} : port {1} is {2}", host, ports, "opening");
+                    if (file != null)
                     {
-                        file.WriteLine(content, "a");
+                        fileMutex.WaitOne();
+                        try { file.WriteLine(content, "a"); }
+                        catch (Exception ex) { Console.WriteLine("[Error] Exception occurred while writing to file: {0}\n{1}", ex.Message, ex.StackTrace); }
+                        finally { fileMutex.ReleaseMutex(); }
                     }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine("[Error] Exception occurred while writing to file: {0}\n{1}", ex.Message, ex.StackTrace);
-                    }
-                    finally
-                    {
-                        fileMutex.ReleaseMutex();
-                    }
+                    Console.WriteLine(String.Format("{0} : port {1} is {2}", host, ports, "opening"));
                 }
-                Console.WriteLine(String.Format(formatString, host, ports, IsPortOpen(host, ports) ? "open" : "closed"));
             });
+            Console.WriteLine("[Notification] All unlisted ports are not open, nor timed out");
         }
 
         static void Main(string[] args)
@@ -197,19 +210,28 @@ Samples:
             {
                 Usage();
             }
+
             else
             {
                 ArgParser(args);
-                string outfileName = "";
+                string outfileName = null;
+                
                 if (results.TryGetValue("outfile", out object value))
                     outfileName = value.ToString();
-                if (outfileName != "")
-                    file = new StreamWriter(outfileName, true);
+
+                if (outfileName != null)
+                {
+
+                    try { file = new StreamWriter(outfileName, true); }
+                    catch (Exception ex) { Console.WriteLine("[Error] Cannot write into file " + outfileName, ex.Message, ex.StackTrace); }
+                }
+
                 foreach (object host in (object[])results["hosts"])
                 {
                     PortScan(host.ToString(), outfileName);
                     Console.WriteLine("[Notification] Scanner complete.");
                 }
+
                 if (file != null)
                     file.Close();
             }
