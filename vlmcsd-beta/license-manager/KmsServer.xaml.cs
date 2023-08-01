@@ -4,7 +4,6 @@ using LicenseManager.Annotations;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Linq;
@@ -14,8 +13,6 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-
-// ReSharper disable once CheckNamespace
 
 namespace HGM.Hotbird64.LicenseManager
 {
@@ -75,8 +72,7 @@ namespace HGM.Hotbird64.LicenseManager
     public partial class KmsServer : INotifyPropertyChanged
     {
         private static readonly string nl = Environment.NewLine;
-        //public static Random Rand = new Random(unchecked((int)DateTime.UtcNow.Ticks));
-        public static Random Rand = RandomNumberGenerator.GetInt32((int)DateTime.UtcNow.Ticks);
+        public static Random Rand = new Random(unchecked((int)DateTime.UtcNow.Ticks));
         public ushort Port { get; private set; }
         public static int Lcid = 1033; //1033 is EN-US (locale)
         private static ObservableCollection<CsvlkItem> csvlks = new ObservableCollection<CsvlkItem>(KmsLists.CsvlkItemList.Where(c => c.Export).OrderBy(c => c.VlmcsdIndex));

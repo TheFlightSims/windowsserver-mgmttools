@@ -5,7 +5,6 @@ using LicenseManager.Annotations;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.IO;
@@ -78,10 +77,7 @@ namespace HGM.Hotbird64.LicenseManager
         public static ISet<ProductKeyConfigurationConfigurationsConfiguration> KeyConfigs => PKeyConfig.Items.OfType<ProductKeyConfigurationConfigurations>().Single().Configuration;
         public static ISet<ProductKeyConfigurationPublicKeysPublicKey> PublicKeys => PKeyConfig.Items.OfType<ProductKeyConfigurationPublicKeys>().Single().PublicKey;
         public static ISet<ProductKeyConfigurationKeyRangesKeyRange> KeyRanges => PKeyConfig.Items.OfType<ProductKeyConfigurationKeyRanges>().Single().KeyRange;
-
-        //private readonly Random random = new Random(unchecked((int)DateTime.Now.Ticks));
-
-        private readonly Random random = new RandomNumberGenerator.GetInt32((int)DateTime.Now.Ticks);
+        private readonly Random random = new Random(unchecked((int)DateTime.Now.Ticks));
         private IEnumerable<ProductKeyConfigurationKeyRangesKeyRange> keyRanges;
         private ProductKeyConfigurationConfigurationsConfiguration keyConfig;
         private bool? isUsageAccepted = false;
