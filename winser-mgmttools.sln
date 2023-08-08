@@ -39,11 +39,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Group Policy Checker", "Gro
 		gpo-checker\GPOChecker.sln = gpo-checker\GPOChecker.sln
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WSUS Package Publisher", "WSUS Package Publisher", "{541FBAAE-AB31-4EC0-A903-FFB7B5A4DE4E}"
-	ProjectSection(SolutionItems) = preProject
-		wsus-package-publisher\WSUS Package Publisher.sln = wsus-package-publisher\WSUS Package Publisher.sln
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
