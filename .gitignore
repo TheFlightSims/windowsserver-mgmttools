@@ -10,9 +10,10 @@
 *.compressed
 *.pdb
 *.CopyComplete
-#*.dll
+*.dll
 *.pfx
 /!pub!
+*/obj/*
 gpo-checker/.vs
 gpo-checker/obj
 gpo-checker/GPOChecker.csproj
@@ -71,3 +72,14 @@ vlmcsd-beta/vlmcsd/bin/vlmcs
 vlmcsd-beta/vlmcsd/bin/vlmcsd
 vlmcsd-beta/vlmcsd/bin/CMakeCache.txt
 vlmcsd-beta/vlmcsd/bin/CMakeFiles/cmake.check_cache
+
+wsus-package-publisher/Code/CustomAction/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/CustomUpdateCreator/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/CustomUpdateEngine/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/WPP.ActiveDirectory/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/WPP.Management/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/WPP.Security/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/WPP.Tools/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/WPP.Wsus/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS Package Creator/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
