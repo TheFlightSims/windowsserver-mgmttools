@@ -83,3 +83,97 @@ wsus-package-publisher/Code/WSUS AD Comparator/WPP.Security/obj/Debug/.NETFramew
 wsus-package-publisher/Code/WSUS AD Comparator/WPP.Tools/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
 wsus-package-publisher/Code/WSUS AD Comparator/WPP.Wsus/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
 wsus-package-publisher/Code/WSUS Package Creator/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.AddRegKeyAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.AddRegKeyAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.AddRegValueAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.AddRegValueAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.ChangeRegDataAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.ChangeRegDataAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.ChangeServiceAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.ChangeServiceAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.CopyFileAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.CopyFileAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.CreateFolderAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.CreateFolderAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.CreateShortcutAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.CreateShortcutAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.CreateTextFileAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.CreateTextFileAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.DeleteFileAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.DeleteFileAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.DeleteFolderAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.DeleteFolderAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.DeleteRegKeyAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.DeleteRegKeyAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.DeleteRegValueAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.DeleteRegValueAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.DeleteTaskAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.DeleteTaskAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.ExecutableAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.ExecutableAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.FrmEnvironmentVariables.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.FrmEnvironmentVariables.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.GenericAction.en.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.GenericAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.GenericAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.ImportRegFileAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.ImportRegFileAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.InstallMsiAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.InstallMsiAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.KillProcessAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.KillProcessAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.Localization.CustomActionsStrings.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.Localization.CustomActionsStrings.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.Properties.Resources.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.RegisterDLLAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.RegisterDLLAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.RenameFileAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.RenameFileAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.RenameFolderAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.RenameFolderAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.RenameRegKeyAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.RenameRegKeyAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.RenameRegValueAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.RenameRegValueAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.RunPowershellScriptAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.RunPowershellScriptAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.RunVbScriptAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.RunVbScriptAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.ShutdownAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.StartServiceAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.StartServiceAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.StopServiceAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.StopServiceAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.UninstallMsiProductByGuidAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.UninstallMsiProductByGuidAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.UninstallMsiProductByNameAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.UninstallMsiProductByNameAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.UnregisterDLLAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.UnregisterDLLAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.UnregisterServiceAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.UnregisterServiceAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.WaitAction.fr.resources
+wsus-package-publisher/Code/CustomAction/obj/Debug/CustomActions.WaitAction.resources
+wsus-package-publisher/Code/CustomAction/obj/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/CustomAction/obj/x64/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/CustomUpdateCreator/obj/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/CustomUpdateCreator/obj/x64/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/CustomUpdateEngine/obj/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/CustomUpdateEngine/obj/Release/build.force
+wsus-package-publisher/Code/CustomUpdateEngine/obj/x64/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/CustomUpdateEngine/obj/x64/Release/build.force
+wsus-package-publisher/Code/WSUS AD Comparator/obj/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/obj/x64/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/WPP.ActiveDirectory/obj/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/WPP.ActiveDirectory/obj/x64/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/WPP.Management/obj/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/WPP.Management/obj/x64/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/WPP.Security/obj/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/WPP.Security/obj/x64/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/WPP.Tools/obj/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/WPP.Tools/obj/x64/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/WPP.Wsus/obj/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS AD Comparator/WPP.Wsus/obj/x64/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS Package Creator/obj/Debug/Wsus_Package_Publisher.Properties.Resources.resources
+wsus-package-publisher/Code/WSUS Package Creator/obj/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+wsus-package-publisher/Code/WSUS Package Creator/obj/x64/Release/.NETFramework,Version=v4.8.AssemblyAttributes.cs
