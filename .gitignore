@@ -10,7 +10,7 @@
 *.compressed
 *.pdb
 *.CopyComplete
-#*.dll
+*.dll
 *.pfx
 /!pub!
 gpo-checker/.vs
