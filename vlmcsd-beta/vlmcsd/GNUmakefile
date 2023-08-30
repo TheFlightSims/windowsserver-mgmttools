@@ -14,7 +14,7 @@ BASE_MULTI_NAME=$(notdir $(MULTI_NAME))
 BASE_DLL_NAME=$(notdir $(DLL_NAME))
 BASE_A_NAME=$(notdir $(A_NAME))
 
-TARGETPLATFORM := $(shell LANG=en_US.UTF-8 $(CC) -v 2>&1 | grep '^Target: ' | cut -f 2 -d ' ')
+TARGETPLATFORM := $(shell LANG=en_US.UTF-8 LANGUAGE=en_US $(CC) -v 2>&1 | grep '^Target: ' | cut -f 2 -d ' ')
 
 ifneq (,$(findstring darwin,$(TARGETPLATFORM)))
   DARWIN := 1
