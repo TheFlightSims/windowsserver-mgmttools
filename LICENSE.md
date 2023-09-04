@@ -2,6 +2,8 @@ MIT License
 
 Copyright (c) 2023 TheFlightSims
 
+Linked with embedded `TFS-OSSH` license. To see what are TheFlightSims embedded licenses, [check it out](https://github.com/TheFlightSims/.github/blob/main/guides/Licenses%2C%20Credits%20and%20Attributions.md).
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
