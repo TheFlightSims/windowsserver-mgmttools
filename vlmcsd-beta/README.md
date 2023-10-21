@@ -20,7 +20,7 @@
 | [kkkgo](https://github.com/kkkgo) | Contributor of VLMCSD, VLMCSD on Floppy |
 | [HarukaMa](https://github.com/HarukaMa) | Contributor of VLMCSD, VLMCSD on Floppy |
 | Nang | Contributor of VLMCSD database
-| [takineko](https://github.com/takinekotfs) | Contributor of VLMCSD, License Manager, VLMCSD on Floppy, VLMCSD on WSL, VLMCSD Database |
+| [shiroineko](https://github.com/shiroinekotfs) | Contributor of VLMCSD, License Manager, VLMCSD on Floppy, VLMCSD on WSL, VLMCSD Database |
 
 ## The Files and Folders
 
