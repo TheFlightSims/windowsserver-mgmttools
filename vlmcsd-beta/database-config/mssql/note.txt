@@ -1,0 +1,11 @@
+KeyID: int - four-byte signed integer [DT_I4]
+ProductKey: varchar(32)
+ProductID: varchar(64)
+ExtendedPID: varchar(64)
+SKUID: varchar(64)
+SubType: varchar(32)
+PublishChannel: varchar(64)
+KeyStatus: varchar(32)
+
+-----------
+The rest are nvarchar(255)
