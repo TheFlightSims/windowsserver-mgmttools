@@ -1,483 +1,960 @@
-Product,Number of product keys
-Win 10 2015 LTSB RTM EnterpriseS Volume:MAK,40
-Win 7 Home PremiumN Retail,40
-Win 7 Starter OEM:NONSLP,40
-Win 10 RTM ProfessionalN OEM:DM,40
-Win 8 RTM Professional;ProfessionalN;Enterprise;EnterpriseN Volume:MAK,40
-Win 7 SP1 Professional Retail,40
-Win 8.1 RTM ProfessionalN Retail,40
-Win 8.1 RTM Professional Retail,40
-Win 8.1 RTM CoreSingleLanguage OEM:DM,40
-Win 10 RTM Enterprise OEM:NONSLP,40
-Win 8.1 RTM Professional OEM:DM,40
-Win 10 2015 LTSB RTM EnterpriseSN Volume:MAK,40
-Win 8.1 RTM ProfessionalWMC Retail,40
-Win 10 RTM Core OEM:DM,40
-Win 10 RTM ProfessionalWorkstation Volume:MAK,40
-Win 7 Home Premium OEM:COA,40
-Win 10 RTM EnterpriseN Volume:MAK,40
-Win 10 RTM Professional OEM:NONSLP,40
-Win 8 RTM Professional;ProfessionalN Volume:MAK,40
-Win 7 Professional OEM:NONSLP,40
-Win 8.1 RTM Core OEM:DM,40
-Win 8 RTM Core OEM:DM,40
-Win 7 SP1 ProfessionalN Retail,40
-Win 7 Ultimate Retail,40
-Win 7 Professional Retail,40
-Win 10 RTM Education Volume:MAK,40
-Win Vista Ultimate Retail,40
-Win 7 Home Basic Retail,40
-Win 7 All Volume Editions Volume:MAK,40
-Win 10 2016 LTSB RTM EnterpriseS Volume:MAK,40
-Win 10 RTM ProfessionalEducation Volume:MAK,40
-Win 10 2019 LTSC RTM EnterpriseS Volume:MAK,40
-Win 8 RTM ProfessionalWMC Retail,40
-Win 7 Home Premium OEM:NONSLP,40
-Win 8.1 RTM Core Retail,40
-Win 10 2016 LTSB RTM EnterpriseSN Volume:MAK,40
-Win 8.1 RTM Professional OEM:NONSLP,40
-Win 8.1 Embedded Industry RTM EmbeddedIndustry Retail,40
-Thin PC Embedded Volume:MAK,40
-Win 8.1 RTM Professional;ProfessionalN;Enterprise;EnterpriseN Volume:MAK,40
-Win 7 ProfessionalN Retail,40
-Win 10 RTM CoreCountrySpecific OEM:DM,40
-Win 10 RTM Professional OEM:DM,40
-Win 7 StarterN OEM:NONSLP,40
-Win 10 RTM Enterprise Volume:MAK,40
-Win 10 RTM CoreN OEM:DM,40
-Win 10 RTM Professional Volume:MAK,40
-Win 7 Professional OEM:COA,40
-Win 7 SP1 Ultimate Retail,40
-Win 8 RTM ProfessionalN Retail,40
-Win 7 Home Premium Retail,40
-Win 10 RTM CoreSingleLanguage OEM:DM,40
-Win 10 RTM EducationN Retail,40
-Win 10 RTM ProfessionalN Volume:MAK,40
-Win 10 RTM ProfessionalWorkstation Retail,40
-Win 10 RTM Core Retail,40
-Win 10 RTM Education Retail,40
-Win 8 RTM CoreSingleLanguage OEM:DM,40
-Win 8 RTM Professional OEM:DM,40
-Win 10 RTM ProfessionalN Retail,40
-Win 7 UltimateN Retail,40
-Win 8 RTM Core Retail,40
-Win 8 RTM Professional Retail,40
-Win 10 RTM Core OEM:NONSLP,40
-Win 8 RTM Professional OEM:NONSLP,40
-Win Vista ALL Volume SKUs - MAK,40
-Win 10 RTM Professional Retail,40
-Win 10 2016 LTSB RTM EnterpriseS OEM:NONSLP,39
-Win 11 RTM EnterpriseS Volume:MAK,36
-Win 10 RTM EducationN Volume:MAK,34
-Win 10 2019 LTSC RTM EnterpriseSN Volume:MAK,31
-Win 8 RTM APPXLOB-Client Volume:MAK,30
-Win 11 RTM EnterpriseSN Volume:MAK,30
-Win 7 Ultimate OEM:COA,29
-Win 7 Ultimate OEM:NONSLP,29
-Win 7 Starter OEM:COA,28
-Win 8 RC Professional Retail,27
-Win 10 RTM CoreN Retail,27
-Win 7 Home Basic OEM:COA,26
-Win 10 2015 LTSB RTM EnterpriseS OEM:NONSLP,26
-Win 10 RTM ProfessionalWorkstationN Retail,21
-Win 10 RTM ProfessionalWorkstationN Volume:MAK,20
-VS 2015 Visual Studio 2015 RTM Volume:MAK Visual Studio 2015 RTM Ultimate Volume,19
-Win 7 SP1 HomePremium Retail,19
-Win 10 RTM Enterprise OEM:DM,19
-Win 10 2015 LTSB RTM EnterpriseS OEM:DM,19
-Win 7 SP1 UltimateN Retail,18
-Win 7 Home Basic OEM:NONSLP,15
-Win 8 Embedded Industry RTM APPXLOB-Embedded Volume:MAK,15
-Win 10 RTM CoreSingleLanguage OEM:NONSLP,14
-Win 10 RTM ProfessionalEducation Retail,13
-Win 10 RTM Education OEM:DM,13
-Win 10 RTM ProfessionalN OEM:NONSLP,12
-Win 10 2016 LTSB RTM EnterpriseS OEM:DM,12
-Win 10 RTM EducationN OEM:DM,12
-Win 10 RTM EnterpriseG Volume:MAK,11
-Win 10 RTM EnterpriseGN Volume:MAK,11
-Win 8.1 Embedded Industry RTM EmbeddedIndustryE Volume:MAK,11
-Win 7 All Volume Editions Volume:CSVLK,11
-Win 8 Embedded Industry RTM EmbeddedIndustryE Volume:MAK,11
-Win 8.1 RTM CoreSingleLanguage OEM:NONSLP,11
-Win 10 RTM ProfessionalEducationN Volume:MAK,11
-Win 8 Embedded Industry RTM EmbeddedIndustry Volume:MAK,11
-Win Vista ALL Volume SKUs - CSVLK,10
-Win 10 2019 LTSC RTM EnterpriseS OEM:NONSLP,10
-Win 8.1 Embedded Industry RTM EmbeddedIndustry Volume:MAK,10
-Win Vista Business Retail,10
-Win 7 SP1 HomeBasic Retail,10
-Win 10 RTM ProfessionalEducationN OEM:DM,9
-Win 10 RTM CoreSingleLanguage Retail,9
-Win 10 RC Professional Retail,9
-Win Vista Home Premium Retail,9
-Win 10 RTM CoreCountrySpecific Retail,9
-Win 10 RTM ProfessionalEducation OEM:DM,9
-Win 10 Pre-Release Professional Volume:GVLK,9
-Win 8.1 RTM Core OEM:NONSLP,8
-Win 10 RTM ProfessionalEducation OEM:NONSLP,7
-Win 10 RTM Cloud Volume:MAK,7
-Win Vista Home Premium - OEM:COA,7
-Win 10 RTM ProfessionalEducationN OEM:NONSLP,7
-Win 10 RTM CoreN OEM:NONSLP,6
-Win Vista Home Basic Retail,6
-Win 10 RTM CoreConnectedSingleLanguage OEM:NONSLP,6
-Win 8.1 Embedded Industry RTM EmbeddedIndustryE Retail,6
-Win Vista Home Premium - OEM:NONSLP,5
-Win 8 RTM CoreSingleLanguage OEM:NONSLP,5
-Win 10 RTM IoTEnterpriseS OEM:NONSLP,5
-Win 8 RTM Core OEM:NONSLP,5
-Win 10 RTM CoreCountrySpecific OEM:NONSLP,4
-Win 10 Next Pre-Release ProfessionalS Volume:GVLK,4
-Win 10 Next Pre-Release CoreConnected Volume:GVLK,4
-Win 8 Embedded Standard RTM APPXLOB-Embedded Volume:MAK,4
-Win 10 Next Pre-Release ProfessionalStudent Volume:GVLK,4
-Win 10 RTM ProfessionalWorkstation OEM:DM,4
-Win 10 Next Pre-Release CoreConnectedCountrySpecific Volume:GVLK,4
-Win 10 2019 LTSC RTM EnterpriseS OEM:DM,4
-Win 10 Next Pre-Release ProfessionalStudentN Volume:GVLK,4
-Win 10 Next Pre-Release CoreConnectedN Volume:GVLK,4
-Win 10 Next Pre-Release CoreConnectedSingleLanguage Volume:GVLK,4
-Win 10 RTM ProfessionalWorkstationN OEM:DM,4
-Win 8.1 RTM CoreN Retail,4
-Win 10 Next Pre-Release ProfessionalSN Volume:GVLK,4
-Win 10 RTM Enterprise Volume:GVLK,4
-Win 10 RTM IoTEnterprise OEM:NONSLP,4
-Win 10 Embedded Industry Next Beta EmbeddedIndustryE Volume:GVLK,3
-Win 10 RTM CoreSingleLanguage Volume:GVLK,3
-Win 10 2015 LTSB RTM EnterpriseSN Volume:GVLK,3
-Win 10 Embedded Industry Next Beta EmbeddedIndustryA Volume:GVLK,3
-Win 8 PK3 Embedded Standard 00140 DLA/Bypass Retail Toolkit,3
-Win 10 Pre-Release ProfessionalWMC Volume:GVLK,3
-Win 10 RTM PPIPro OEM:NONSLP,3
-Win 10 2016 LTSB RTM EnterpriseS Volume:GVLK,3
-Win 10 RTM ProfessionalEducationN Retail,3
-Win 8.1 RTM Enterprise;EnterpriseN;Professional;ProfessionalN Volume:CSVLK,3
-Win 10 Embedded Industry Next Beta EmbeddedIndustry Volume:GVLK,3
-Win 10 Pre-Release CoreARM Volume:GVLK,3
-Win 10 RTM ProfessionalWorkstation OEM:NONSLP,3
-Win 10 RTM EducationN OEM:NONSLP,3
-Win 10 RTM ProfessionalWorkstationN OEM:NONSLP,3
-Win 7 SP1 HomePremiumN Retail,3
-Win 10 Pre-Release Enterprise Volume:GVLK,3
-Win 8 RC Core Retail,3
-Win 10 Pre-Release Professional Retail,3
-Win 8 RTM Enterprise;EnterpriseN;Professional;ProfessionalN Volume:CSVLK,3
-Win 10 RTM CloudN Volume:MAK,3
-Win 10 RTM Education OEM:NONSLP,3
-Win 10 RTM Enterprise;EnterpriseN;Professional;ProfessionalN;EnterpriseS;EnterpriseSN;Education;EducationN Volume:CSVLK,3
-Win 10 RTM EducationN Volume:GVLK,2
-Win 10 Pre-Release CoreConnected Volume:MAK,2
-VS Dev11 RTM Express for Web Retail,2
-Win 10 Pre-Release CoreConnectedSingleLanguage OEM:NONSLP,2
-Win 10 Pre-Release Core OEM:NONSLP,2
-Win 7 Professional Volume:GVLK,2
-Win 10 2019 LTSC RTM EnterpriseS Volume:GVLK,2
-Win 10 RTM Education Volume:GVLK,2
-Win 10 RTM EnterpriseN Volume:GVLK,2
-Win 8 RC Enterprise Retail,2
-Win 10 RTM EnterpriseG Volume:GVLK,2
-Win 8.1 RTM Enterprise Volume:GVLK,2
-Win 8.1 Embedded Industry RTM EmbeddedIndustryA Volume:GVLK,2
-Win 10 Next Pre-Release MobileEnterprise Volume:MAK,2
-Win 10 RTM ProfessionalWorkstation Volume:GVLK,2
-Win 10 RTM EnterpriseGN Volume:GVLK,2
-Win 10 Pre-Release ProfessionalN Volume:MAK,2
-Win 10 Pre-Release CoreCountrySpecific OEM:NONSLP,2
-Win 10 RTM ProfessionalN Volume:GVLK,2
-Win 8 RTM ProfessionalWMC Volume:GVLK,2
-Win 10 2015 LTSB Next Pre-Release EnterpriseSN Volume:MAK,2
-Win 8 RTM ProfessionalN OEM:DM,2
-Win 10 Pre-Release Enterprise OEM:NONSLP,2
-Win 10 Next Pre-Release Education Volume:GVLK,2
-Win 10 Next Pre-Release ProfessionalS Volume:MAK,2
-Win 10 Pre-Release CoreConnectedCountrySpecific Volume:MAK,2
-Win 8.1 RTM CoreConnected Volume:GVLK,2
-Win 10 Pre-Release CoreARM OEM:NONSLP,2
-Win 10 Pre-Release ProfessionalStudentN OEM:NONSLP,2
-Win 10 RTM IoTEnterprise OEM:DM,2
-Win 8 RTM Enterprise Volume:GVLK,2
-Win 8.1 Embedded Industry RTM EmbeddedIndustry Volume:GVLK,2
-Win 8.1 Embedded Industry RTM EmbeddedIndustryE Volume:GVLK,2
-Win 10 Embedded Industry Next Beta EmbeddedIndustryE OEM:NONSLP,2
-Win 10 Embedded Industry Next Beta EmbeddedIndustryE Volume:MAK,2
-Win 10 Pre-Release CoreConnectedCountrySpecific OEM:NONSLP,2
-Win 10 Pre-Release ProfessionalS Volume:MAK,2
-Win 8 Embedded Standard RTM Embedded Retail:TB:Eval,2
-Win 10 Pre-Release PPIPro OEM:NONSLP,2
-Win 10 RTM CloudE Volume:GVLK,2
-Win 10 Embedded Industry Next Beta EmbeddedIndustryA OEM:NONSLP,2
-Win 10 RTM Core Volume:GVLK,2
-Win 10 Pre-Release CoreConnectedN Volume:MAK,2
-Win 10 Pre-Release ProfessionalN Retail,2
-Win 10 Pre-Release Professional Volume:MAK,2
-Win 10 Pre-Release ProfessionalStudentN Volume:MAK,2
-Win 10 Next Pre-Release PPIPro Volume:MAK,2
-Win 10 Pre-Release Education OEM:NONSLP,2
-Win 10 Next Pre-Release Enterprise OEM:NONSLP,2
-Win 10 Pre-Release ProfessionalStudent Volume:MAK,2
-Win 10 2015 LTSB RTM EnterpriseS Volume:GVLK,2
-Win 10 Pre-Release CoreN OEM:NONSLP,2
-Win 10 Next Pre-Release CoreConnectedSingleLanguage OEM:NONSLP,2
-Win 10 Next Pre-Release Professional Volume:MAK,2
-Win 10 Pre-Release EducationN Volume:MAK,2
-Win 10 RTM Holographic OEM:DM,2
-Win 10 RTM CoreN Volume:GVLK,2
-Win 10 RTM ProfessionalEducation Volume:GVLK,2
-Win 10 Next Pre-Release CoreConnected OEM:NONSLP,2
-Win 10 Pre-Release Education Volume:MAK,2
-Win 10 Pre-Release ProfessionalN OEM:NONSLP,2
-Win 10 RTM ProfessionalWorkstationN Volume:GVLK,2
-Win Vista Business - GVLK,2
-Win 10 Next Pre-Release CoreConnectedN OEM:NONSLP,2
-Win 10 Pre-Release Professional OEM:NONSLP,2
-Win 10 Next Pre-Release ProfessionalStudent OEM:NONSLP,2
-Win 10 Pre-Release Education Volume:GVLK,2
-Win 10 2015 LTSB Pre-Release EnterpriseS Volume:MAK,2
-Win Vista Business N - GVLK,2
-Win 7 Embedded Standard Retail Std Edtn Eval OEM,2
-Win 10 Next Pre-Release CoreConnectedCountrySpecific OEM:NONSLP,2
-Win 10 Next Pre-Release ProfessionalStudentN OEM:NONSLP,2
-Win 10 2019 LTSC RTM EnterpriseSN Volume:GVLK,2
-Win 10 Pre-Release EducationN OEM:NONSLP,2
-Win 10 RTM CoreCountrySpecific Volume:GVLK,2
-Win 8 RC CoreSingleLanguage Retail,2
-Win 10 Pre-Release ProfessionalSN Volume:MAK,2
-Win 10 Next Pre-Release ProfessionalSN Volume:MAK,2
-Win 10 Pre-Release Core Volume:GVLK,2
-Win 10 Pre-Release CoreConnected OEM:NONSLP,2
-Win 8 RTM EnterpriseN Volume:GVLK,2
-Win Vista Enterprise - GVLK,2
-Win 10 RTM ProfessionalEducationN Volume:GVLK,2
-Win 8.1 RTM CoreN OEM:NONSLP,2
-Win 8.1 RTM EnterpriseN Volume:GVLK,2
-Win 10 2015 LTSB Pre-Release EnterpriseSN Volume:MAK,2
-Win 10 Pre-Release CoreConnectedN OEM:NONSLP,2
-Win 10 2015 LTSB Pre-Release EnterpriseSN OEM:NONSLP,2
-Win 10 Next Pre-Release Enterprise Volume:MAK,2
-Win 10 Pre-Release CoreConnectedSingleLanguage Volume:MAK,2
-Win 10 2016 LTSB RTM EnterpriseSN Volume:GVLK,2
-Win 10 Pre-Release Enterprise Volume:MAK,2
-Win 10 Pre-Release EnterpriseN Volume:MAK,2
-Win 10 2015 LTSB Next Pre-Release EnterpriseS OEM:NONSLP,2
-Win 10 Pre-Release CoreSingleLanguage OEM:NONSLP,2
-Win 8 RTM CoreCountrySpecific OEM:DM,2
-Win 10 Pre-Release ProfessionalStudent OEM:NONSLP,2
-Win 10 2015 LTSB Pre-Release EnterpriseS OEM:NONSLP,2
-Win 10 Pre-Release Education Retail,1
-Win 10 Embedded Industry Next Beta EmbeddedIndustry OEM:DM,1
-Win 10 Pre-Release EnterpriseN Retail,1
-VS Dev11 RTM Test Professional Retail,1
-Win 8.1 RTM ProfessionalStudent Retail,1
-Win 10 Next Pre-Release Education Volume:MAK,1
-Win 8.1 RTM CoreCountrySpecific Volume:GVLK,1
-Win 10 Embedded Industry Next Beta EmbeddedIndustry OEM:NONSLP,1
-Win 10 RTM Enterprise;EnterpriseN;Professional;ProfessionalN;EnterpriseS;EnterpriseSN;Education;EducationN Volume:CSVLK VL Additional Lab,1
-Win 8 RTM Professional Volume:GVLK,1
-Win 10 Pre-Release ProfessionalStudent Retail,1
-Win 10 Next Pre-Release ProfessionalStudent Volume:MAK,1
-Win 10 Pre-Release CoreARM OEM:DM,1
-Win 10 Pre-Release CoreConnectedSingleLanguage Retail,1
-Win 7 Enterprise Retail:TB:Eval,1
-Win 10 2015 LTSB Pre-Release EnterpriseSN Volume:GVLK,1
+Products,Number of product keys
+CRM 2011 Workgroup Retail,1
+Digital License SQLSvr Bsnss Intelligence 2012 DLA #13 Rtl,1
+Exchange Server 2013 Enterprise Volume:GVLK,1
+Exchange Server 2013 Standard Volume:GVLK,2
+Forefront for Exchange,1
+ForeFront for Sharepoint,1
+Multipoint Server Volume:GVLK,1
+Office 2010 RTM Access KMS Client,1
+Office 2010 RTM Access MAK,28
+Office 2010 RTM Access Retail,308
+Office 2010 RTM Access Trial,6
+Office 2010 RTM Excel KMS Client,1
+Office 2010 RTM Excel MAK,27
+Office 2010 RTM Groove KMS Client,1
+Office 2010 RTM Groove MAK,26
+Office 2010 RTM HomeBusiness BypassTrial,1
+Office 2010 RTM HomeBusiness OEM Perp,2
+Office 2010 RTM HomeBusiness Retail,44
+Office 2010 RTM HomeBusiness Retail2,85
+Office 2010 RTM HomeBusiness Retail3,2
+Office 2010 RTM HomeBusiness Trial2,10
+Office 2010 RTM HomeStudent OEM Perp,2
+Office 2010 RTM HomeStudent Retail,35
+Office 2010 RTM HomeStudent Retail2,23
+Office 2010 RTM HomeStudent Trial,19
+Office 2010 RTM HSPowerPoint Trial,1
+Office 2010 RTM InfoPath KMS Client,1
+Office 2010 RTM InfoPath MAK,27
+Office 2010 RTM InfoPath Retail,3
+Office 2010 RTM Mondo KMS Client,1
+Office 2010 RTM Mondo KMS Client2,1
+Office 2010 RTM OneNote KMS Client,1
+Office 2010 RTM OneNote MAK,26
+Office 2010 RTM OneNote Retail,201
+Office 2010 RTM OneNote Trial,6
+Office 2010 RTM Outlook KMS Client,1
+Office 2010 RTM Outlook MAK,28
+Office 2010 RTM Outlook Trial,6
+Office 2010 RTM PowerPoint KMS Client,1
+Office 2010 RTM PowerPoint MAK,27
+Office 2010 RTM PowerPoint Trial,6
+Office 2010 RTM Professional OEM Perp,4
+Office 2010 RTM Professional Retail,54
+Office 2010 RTM Professional Trial2,26
+Office 2010 RTM ProfessionalAcad Retail,6
+Office 2010 RTM ProjectPro KMS Client,1
+Office 2010 RTM ProjectPro MAK,113
+Office 2010 RTM ProjectPro Retail,4
+Office 2010 RTM ProjectPro Retail2,19
+Office 2010 RTM ProjectPro Trial,7
+Office 2010 RTM ProjectProMSDN Retail,38
+Office 2010 RTM ProjectStd KMS Client,1
+Office 2010 RTM ProjectStd MAK,67
+Office 2010 RTM ProjectStd MAK2,5
+Office 2010 RTM ProjectStd Retail,19
+Office 2010 RTM ProPlus KMS Client,1
+Office 2010 RTM ProPlus KMS Host,4
+Office 2010 RTM ProPlus MAK,940
+Office 2010 RTM ProPlus Retail,428
+Office 2010 RTM ProPlus Retail2,7
+Office 2010 RTM ProPlus Trial,14
+Office 2010 RTM ProPlusAcad MAK,28
+Office 2010 RTM ProPlusAcad Retail,3
+Office 2010 RTM ProPlusMSDN Retail,11
+Office 2010 RTM Publisher KMS Client,1
+Office 2010 RTM Publisher MAK,26
+Office 2010 RTM Publisher Trial,6
+Office 2010 RTM SmallBusBasics KMS Client,1
+Office 2010 RTM SmallBusBasics MAK,8
+Office 2010 RTM SPD ByPass,1
+Office 2010 RTM Standard KMS Client,1
+Office 2010 RTM Standard MAK,346
+Office 2010 RTM StandardMSDN Retail,149
+Office 2010 RTM VisioPrem KMS Client,1
+Office 2010 RTM VisioPrem MAK,97
+Office 2010 RTM VisioPrem Retail,60
+Office 2010 RTM VisioPrem Trial,1
+Office 2010 RTM VisioPro KMS Client,1
+Office 2010 RTM VisioPro MAK,90
+Office 2010 RTM VisioPro Retail,49
+Office 2010 RTM VisioPro Retail2,453
+Office 2010 RTM VisioPro Trial,6
+Office 2010 RTM VisioProMSDN Retail,3
+Office 2010 RTM VisioStd KMS Client,1
+Office 2010 RTM VisioStd MAK,75
+Office 2010 RTM VisioStd Retail,40
+Office 2010 RTM Word KMS Client,1
+Office 2010 RTM Word MAK,28
+Office 2013 AccessR Retail,311
+Office 2013 AccessVL KMS Client,1
+Office 2013 AccessVL MAK,12
+Office 2013 Alpha AccessVL KMS Client,1
+Office 2013 Alpha ExcelVL KMS Client,1
+Office 2013 Alpha GrooveVL KMS Client,1
+Office 2013 Alpha InfoPathVL KMS Client,1
+Office 2013 Alpha LyncVL KMS Client,1
+Office 2013 Alpha MondoVL KMS Client,1
+Office 2013 Alpha OneNoteVL KMS Client,1
+Office 2013 Alpha OutlookVL KMS Client,1
+Office 2013 Alpha PowerPointVL KMS Client,1
+Office 2013 Alpha ProjectProVL KMS Client,1
+Office 2013 Alpha ProjectProVL MAK,8
+Office 2013 Alpha ProjectStdVL KMS Client,1
+Office 2013 Alpha ProPlusVL KMS Client,1
+Office 2013 Alpha ProPlusVL MAK,58
+Office 2013 Alpha PublisherVL KMS Client,1
+Office 2013 Alpha VisioProVL KMS Client,1
+Office 2013 Alpha VisioProVL MAK,6
+Office 2013 Alpha VisioStdVL KMS Client,1
+Office 2013 Alpha WordVL KMS Client,1
+Office 2013 CRM 6 RTM Enterprise Server Retail,1
+Office 2013 CRM 6 RTM Workgroup Server Retail,1
+Office 2013 CRM 7 RTM Enterprise Server Retail,1
+Office 2013 CRM 7 RTM Workgroup Server Retail,1
+Office 2013 ExcelVL KMS Client,1
+Office 2013 ExcelVL MAK,12
+Office 2013 GrooveR Grace,1
+Office 2013 GrooveVL KMS Client,2
+Office 2013 HomeBusinessR OEM Perp,15
+Office 2013 HomeBusinessR Retail,146
+Office 2013 HomeStudentR OEM Perp,45
+Office 2013 HomeStudentR Retail,38
+Office 2013 InfoPathR Retail,301
+Office 2013 InfoPathVL KMS Client,1
+Office 2013 InfoPathVL MAK,12
+Office 2013 KMSHostVL KMS Host,3
+Office 2013 LyncVL KMS Client,1
+Office 2013 LyncVL MAK,31
+Office 2013 MondoR KMS Automation,2
+Office 2013 MondoVL KMS Client,1
+Office 2013 MOSS Bypass,2
+Office 2013 MOSSPremium Bypass,3
+Office 2013 O365HomePremR PIN1,3
+Office 2013 O365HomePremR Subscription4,2
+Office 2013 OneNoteR Retail,303
+Office 2013 OneNoteVL KMS Client,1
+Office 2013 OneNoteVL MAK,12
+Office 2013 OutlookR Retail,3
+Office 2013 OutlookVL KMS Client,1
+Office 2013 OutlookVL MAK,14
+Office 2013 PersonalR Retail,1
+Office 2013 PowerPointVL KMS Client,1
+Office 2013 PowerPointVL MAK,12
+Office 2013 ProfessionalR OEM Perp,2
+Office 2013 ProfessionalR Retail,41
+Office 2013 ProjectProMSDNR Retail,71
+Office 2013 ProjectProR Retail,702
+Office 2013 ProjectProVL KMS Client,1
+Office 2013 ProjectProVL MAK,71
+Office 2013 ProjectServer Bypass,3
+Office 2013 ProjectStdVL KMS Client,1
+Office 2013 ProjectStdVL MAK,36
+Office 2013 ProPlusMSDNR Retail,1092
+Office 2013 ProPlusR Grace,1
+Office 2013 ProPlusR Retail,1089
+Office 2013 ProPlusR Trial,11
+Office 2013 ProPlusVL KMS Client,1
+Office 2013 ProPlusVL MAK,933
+Office 2013 PublisherR Retail,3
+Office 2013 PublisherVL KMS Client,1
+Office 2013 PublisherVL MAK,12
+Office 2013 SPDFreeR PrepidBypass,1
+Office 2013 StandardVL KMS Client,1
+Office 2013 StandardVL MAK,137
+Office 2013 VisioProMSDNR Retail,104
+Office 2013 VisioProR Grace,1
+Office 2013 VisioProR Retail,522
+Office 2013 VisioProR Trial,1
+Office 2013 VisioProVL KMS Client,1
+Office 2013 VisioProVL MAK,95
+Office 2013 VisioStdR Retail,2
+Office 2013 VisioStdVL KMS Client,1
+Office 2013 VisioStdVL MAK,37
+Office 2013 WCServer Bypass,3
+Office 2013 WordR Retail,1
+Office 2013 WordVL KMS Client,1
+Office 2013 WordVL MAK,12
+Office 2016 AccessR Retail,244
+Office 2016 AccessVL KMS Client,2
+Office 2016 AccessVL MAK,6
+Office 2016 ExcelR Retail,1
+Office 2016 ExcelVL KMS Client,2
+Office 2016 ExcelVL MAK,7
+Office 2016 HomeBusinessR OEM Perp,2
+Office 2016 HomeBusinessR Retail3,420
+Office 2016 HomeStudentR Retail,172
+Office 2016 MondoR KMS Automation,3
+Office 2016 MondoVL KMS Client,3
+Office 2016 MondoVL MAK,1
+Office 2016 MOSSPremium BypassTrial180,1
+Office 2016 OneNoteVL KMS Client,2
+Office 2016 OutlookR Retail,15
+Office 2016 OutlookVL KMS Client,2
+Office 2016 OutlookVL MAK,6
+Office 2016 PowerPointR Retail,1
+Office 2016 PowerPointVL KMS Client,2
+Office 2016 PowerPointVL MAK,9
+Office 2016 ProfessionalR OEM Perp,10
+Office 2016 ProfessionalR Retail,102
+Office 2016 ProfessionalR Trial,1
+Office 2016 ProjectProMSDNR Retail,116
+Office 2016 ProjectProR Retail,936
+Office 2016 ProjectProR Trial,1
+Office 2016 ProjectProVL KMS Client,3
+Office 2016 ProjectProVL MAK,25
+Office 2016 ProjectProXC2RVL KMS ClientC2R,1
+Office 2016 ProjectProXC2RVL MAKC2R,4
+Office 2016 ProjectStdR Retail,2
+Office 2016 ProjectStdVL KMS Client,2
+Office 2016 ProjectStdVL MAK,15
+Office 2016 ProjectStdXC2RVL KMS ClientC2R,1
+Office 2016 ProjectStdXC2RVL MAKC2R,3
+Office 2016 ProPlusMSDNR Retail,4120
+Office 2016 ProPlusR Grace,1
+Office 2016 ProPlusR Retail,757
+Office 2016 ProPlusVL KMS Client,4
+Office 2016 ProPlusVL MAK,216
+Office 2016 PublisherR Retail,2
+Office 2016 PublisherVL KMS Client,2
+Office 2016 PublisherVL MAK,10
+Office 2016 RTM19 HomeBusiness2019R Retail,74
+Office 2016 RTM19 HomeStudent2019R OEM Perp,112
+Office 2016 RTM19 HomeStudent2019R Retail,4
+Office 2016 RTM19 Professional2019R OEM Perp,8
+Office 2016 RTM19 ProjectPro2019MSDNR Retail,20
+Office 2016 RTM19 ProjectPro2019R Retail,1665
+Office 2016 RTM19 ProjectPro2019VL MAK AE,2
+Office 2016 RTM19 ProjectStd2019R Retail,9
+Office 2016 RTM19 ProPlus2019MSDNR Retail,2708
+Office 2016 RTM19 ProPlus2019R Retail,348
+Office 2016 RTM19 ProPlus2019VL MAK AE,66
+Office 2016 RTM19 Standard2019VL MAK AE,22
+Office 2016 RTM19 VisioPro2019R Retail,1770
+Office 2016 RTM19 VisioPro2019VL MAK AE,2
+Office 2016 RTM19 VisioStd2019R Retail,36
+Office 2016 RTM19 Word2019R Retail,2
+Office 2016 SkypeforBusinessVL KMS Client,2
+Office 2016 SkypeforBusinessVL MAK,11
+Office 2016 StandardVL KMS Client,2
+Office 2016 StandardVL MAK,70
+Office 2016 VisioProMSDNR Retail,140
+Office 2016 VisioProR Retail,1379
+Office 2016 VisioProR Trial,1
+Office 2016 VisioProVL KMS Client,3
+Office 2016 VisioProVL MAK,27
+Office 2016 VisioProXC2RVL KMS ClientC2R,1
+Office 2016 VisioProXC2RVL MAKC2R,3
+Office 2016 VisioStdR Retail,3
+Office 2016 VisioStdVL KMS Client,2
+Office 2016 VisioStdVL MAK,13
+Office 2016 VisioStdXC2RVL KMS ClientC2R,1
+Office 2016 VisioStdXC2RVL MAKC2R,3
+Office 2016 WordR Retail,9
+Office 2016 WordVL KMS Client,2
+Office 2016 WordVL MAK,5
+Office 2019 Access2019R Retail,17
+Office 2019 Access2019VL KMS Client AE,1
+Office 2019 Excel2019VL KMS Client AE,1
+Office 2019 Outlook2019R Retail,5
+Office 2019 Outlook2019VL KMS Client AE,1
+Office 2019 Personal2019R OEM Perp,1
+Office 2019 PowerPoint2019VL KMS Client AE,1
+Office 2019 ProjectPro2019VL KMS Client AE,1
+Office 2019 ProjectPro2019XC2RVL KMS ClientC2R,1
+Office 2019 ProjectPro2019XC2RVL MAKC2R,1
+Office 2019 ProjectStd2019VL KMS Client AE,1
+Office 2019 ProPlus2019VL KMS Client AE,1
+Office 2019 ProPlus2019XC2RVL KMS ClientC2R,1
+Office 2019 ProPlus2019XC2RVL MAKC2R,1
+Office 2019 Publisher2019VL KMS Client AE,1
+Office 2019 RTM19 VisioPro2019MSDNR Retail,20
+Office 2019 SkypeforBusiness2019VL KMS Client AE,1
+Office 2019 Standard2019VL KMS Client AE,1
+Office 2019 VisioPro2019VL KMS Client AE,1
+Office 2019 VisioPro2019XC2RVL KMS ClientC2R,1
+Office 2019 VisioPro2019XC2RVL MAKC2R,1
+Office 2019 VisioStd2019VL KMS Client AE,1
+Office 2019 Word2019VL KMS Client AE,1
+Office 2019 Word2019VL MAK AE,1
+Office 2021 Access2021R Retail,15
+Office 2021 Access2021VL KMS Client AE,1
+Office 2021 Excel2021VL KMS Client AE,1
+Office 2021 Outlook2021VL KMS Client AE,1
+Office 2021 PowerPoint2021VL KMS Client AE,1
+Office 2021 ProjectPro2021MSDNR Retail1,4
+Office 2021 ProjectPro2021PreviewVL KMS Client AE,1
+Office 2021 ProjectPro2021R Retail,142
+Office 2021 ProjectPro2021VL KMS Client AE,1
+Office 2021 ProjectStd2021R Retail,1
+Office 2021 ProjectStd2021VL KMS Client AE,1
+Office 2021 ProPlus2021MSDNR Retail,121
+Office 2021 ProPlus2021PreviewVL KMS Client AE,1
+Office 2021 ProPlus2021R Retail,1
+Office 2021 ProPlus2021VL KMS Client AE,1
+Office 2021 Publisher2021VL KMS Client AE,1
+Office 2021 SkypeforBusiness2021VL KMS Client AE,1
+Office 2021 Standard2021VL KMS Client AE,1
+Office 2021 VisioPro2021MSDNR Retail,6
+Office 2021 VisioPro2021PreviewVL KMS Client AE,1
+Office 2021 VisioPro2021R Retail,145
+Office 2021 VisioPro2021VL KMS Client AE,1
+Office 2021 VisioStd2021VL KMS Client AE,1
+Office 2021 Word2021VL KMS Client AE,1
+RTM MOSS ByPass,3
+RTM MOSS BypassTrial,3
+RTM MOSSFISEnt ByPass,1
+RTM MOSSPremium ByPass,5
+RTM MOSSPremium BypassTrial,2
+RTM ProjectServer ByPass,2
+RTM ProjectServer BypassTrial,1
+RTM SearchServer ByPass,2
+RTM WCServer ByPass,3
+Server 2011 CRM Retail,1
 System Center 2012 Virtual Machine Manager FPP Retail,1
-Win 10 Next Pre-Release MobileCore Retail,1
-Win 8 ProfessionalPlus,1
-Win 10 Next Pre-Release ProfessionalN Volume:MAK,1
-Win 8 RC Professional;ProfessionalN;Enterprise;EnterpriseN Volume:MAK,1
-Win 10 Pre-Release ProfessionalStudent Volume:GVLK,1
-Win 8.1 RTM CoreN Volume:GVLK,1
 Thin PC Embedded Volume:GVLK,1
-Win 10 RTM CoreConnectedN OEM:DM,1
-Win 10 RTM EnterpriseG OEM:NONSLP,1
-Win 10 Next Pre-Release EnterpriseN Volume:MAK,1
-Win Vista Home Basic N Retail,1
-Win 8 Next Beta PrereleaseARM Retail,1
-Win 8 RC Core Volume:GVLK,1
-Win 8 Embedded Standard RC EmbeddedE Retail:TB:Eval,1
-Win 10 RTM EnterpriseNEval Retail:TB:Eval,1
-Win 8 RTM CoreARM Volume:GVLK,1
-Win 7 Embedded POSReady POSReady Retail:TB:Eval,1
-Win 10 Pre-Release ProfessionalS Volume:GVLK,1
-Win 8 Embedded Industry RTM EmbeddedIndustryE Volume:GVLK,1
-Win 8 RC ProfessionalWMC Retail,1
-Win 10 Next Pre-Release CoreConnectedN Retail,1
-Win 10 RTM EnterpriseG OEM:DM,1
-Win Vista EnterpriseN GVLK,1
-Win 10 RTM AnalogOneCoreEnterprise Volume:MAK,1
-Win 10 Pre-Release ProfessionalN Volume:GVLK,1
-Win 10 RTM ProfessionalStudentN OEM:DM,1
-Win 8 Next Beta PrereleaseN Retail,1
-Win 10 9XMK8-N3FG8-KH2T4-T9QJM-HPHQX,1
-Win 10 Pre-Release CoreSingleLanguage Retail,1
-Win 10 Pre-Release MobileEnterprise Volume:MAK,1
-Win 8.1 RTM CoreConnectedCountrySpecific Volume:GVLK,1
-VS Dev11 RTM Professional Retail,1
-Win 7 Embedded Standard Retail Acad Edtn OEM,1
-Win 10 Next Pre-Release ProfessionalStudentN Retail,1
-Win 10 RTM CloudEdition Retail,1
-Win 8 RTM CoreN Volume:GVLK,1
-Win 10 RTM EnterpriseGN OEM:NONSLP,1
-Win 10 2015 LTSB Next Pre-Release EnterpriseSN OEM:NONSLP,1
-Win Vista Business N Retail,1
-Win 10 Pre-Release EducationN Retail,1
-Win 10 Next Pre-Release PPIPro Retail,1
-Win 10 2015 LTSB Next Pre-Release EnterpriseS Volume:MAK,1
-Win 8 Embedded Standard RTM Embedded OEM:NONSLP,1
-Visual Studio 2010 Test Load Agent Controller (Volume 1K pack),1
-Win 8.1 RTM Core Volume:GVLK,1
-Win 10 Next Enterprise Volume:GVLK,1
-Win 10 Pre-Release Professional Retail Tencent,1
-Win 10 RTM APPXLOB-Client Volume:MAK,1
-Win 8.1 RTM CoreCountrySpecific OEM:DM,1
-Win 10 2015 LTSB Next Pre-Release EnterpriseS Volume:GVLK,1
-Win 10 Next Pre-Release CoreConnectedSingleLanguage Retail,1
-Win 8.1 RTM CoreConnectedCountrySpecific OEM:NONSLP,1
-Win 10 Pre-Release CoreCountrySpecific Volume:GVLK,1
-Win 11 RTM IoTEnterpriseS Volume:GVLK,1
-Win 10 RTM IoTUAPCommercial Volume:MAK,1
-Win 10 Next Pre-Release CoreConnectedSingleLanguage Volume:MAK,1
-Win 10 RTM ProfessionalStudentN OEM:NONSLP,1
-Win 10 2015 LTSB RTM EnterpriseSNEval Retail:TB:Eval,1
-Win 10 RTM Lite OEM:DM,1
-VS 2013 Digital License VS Test Pro w/MSDN 2013 DLA Retail 42,1
-Win 10 RTM CloudE OEM:DM,1
-Win 10 2019 LTSC RTM EnterpriseSNEval Retail:TB:Eval,1
-Win 10 Next StarterN Retail,1
-Win 10 2015 LTSB Next Pre-Release EnterpriseSN Volume:GVLK,1
-Win 8.1 Embedded Industry RTM EmbeddedIndustryA Volume:MAK,1
-Win 8.1 RTM CoreN OEM:DM,1
-Visual Studio 2010 (MSDN Subscription),1
-Win 10 J427X-9NHBK-VRWQQ-B8Y42-T927K,1
-Win 10 Pre-Release ProfessionalSN Volume:GVLK,1
-Win 10 2016 LTSB RTM EnterpriseSubscription Volume:MAK,1
-Win 8.1 RTM ProfessionalStudent Volume:GVLK,1
-Win 10 RTM ProfessionalStudent OEM:DM,1
-Win 10 XMMNR-TCVTR-DK8GY-KKJ33-3HM99,1
-Win 7 Hyper-V ProdAct All Programs,1
-Win 8.1 RTM CoreARM Volume:GVLK,1
-Win 10 2015 LTSB Pre-Release EnterpriseS Volume:GVLK,1
-Win 10 RTM Andromeda OEM:DM,1
-VS 2013 Digital License VS Premium w/MSDN 2013 DLA Retail 36,1
-Win 10 KD69N-VWMRK-Y9KBG-FCBM3-KF7QX,1
-Win 8 RC EnterpriseN Retail,1
-Win 8 RTM Core Volume:GVLK,1
-Win 10 Pre-Release Core Retail Qihoo,1
-Win 7 Embedded POSReady POSReady Volume:GVLK,1
-Win 10 Pre-Release CoreConnected Volume:GVLK,1
-Win 10 Pre-Release CoreConnectedN Retail,1
-Win 8 RTM EnterpriseEval Retail:TB:Eval,1
-Win 10 2015 LTSB Pre-Release EnterpriseS Retail,1
-Win 10 Next Pre-Release CoreConnected Retail,1
-Win 10 Pre-Release CoreConnectedSingleLanguage Volume:GVLK,1
-Win 8 Embedded Industry RTM EmbeddedIndustry Retail:TB:Eval,1
-Win 10 Next Pre-Release EducationN Retail,1
-VS Dev11 RTM Ultimate Retail,1
-Win 8 RTM ProfessionalN Volume:GVLK,1
-Win 8.1 RTM CoreSingleLanguage Volume:GVLK,1
-Win 10 JH8W6-VMNWP-6QBDM-PBP4B-J9FX9,1
-Win 8 Embedded Industry RTM EmbeddedIndustry Volume:GVLK,1
-Win 8 RTM CoreCountrySpecific Volume:GVLK,1
-VS Dev11 RTM Express for Retail,1
-Win 10 2015 LTSB RTM EnterpriseSEval Retail:TB:Eval,1
-VS 2013 Digital License Visual Studio Pro w/MSDN 2013 DLA Retail 21,1
-Win 10 Next Pre-Release CoreConnectedCountrySpecific Volume:MAK,1
-Win 10 RTM CoreConnectedCountrySpecific OEM:DM,1
-Win 8.1 RTM CoreARM OEM:DM,1
-Win 10 RTM CloudEditionN Retail,1
-Win 10 Next Pre-Release EducationN Volume:GVLK,1
-Win 10 Pre-Release ProfessionalStudentN Volume:GVLK,1
-Win 8.1 Embedded Industry RTM EmbeddedIndustryA OEM:NONSLP,1
-Win 8 Embedded Standard RC Embedded Retail:TB:Eval,1
-Win 10 RTM CoreConnectedSingleLanguage OEM:DM,1
-Win 10 ProfessionalSingleLanguage,1
-Win 10 RTM EnterpriseEval Retail:TB:Eval,1
-Win 10 Pre-Release CoreCountrySpecific Retail,1
-Win 10 ProfessionalCountrySpecific,1
-Win 10 RTM CloudEditionN Volume:GVLK,1
-Win 7 EnterpriseE Volume:GVLK,1
-Win 10 Pre-Release ProfessionalStudentN Retail,1
-Win 10 Next Beta EnterpriseEval Retail:TB:Eval,1
-Win 10 Pre-Release CoreConnectedCountrySpecific Volume:GVLK,1
-Win 10 Embedded Industry Next Beta EmbeddedIndustryA OEM:DM,1
-Win 10 Next Pre-Release CoreConnectedCountrySpecific Retail,1
-Win 10 Next Pre-Release ProfessionalStudentN Volume:MAK,1
-Win 10 Pre-Release Core Retail,1
-Win 8 RC CoreN Retail,1
-Win 10 Pre-Release CoreN Volume:GVLK,1
-Win 10 Pre-Release CoreSingleLanguage Volume:GVLK,1
-Win 7 Enterprise Volume:GVLK,1
-Win 7 ProfessionalE Volume:GVLK,1
-Win 8 RTM CoreSingleLanguage Volume:GVLK,1
-Win 8.1 RTM ProfessionalN OEM:NONSLP,1
-Win 7 EnterpriseN Volume:GVLK,1
-Win 10 Pre-Release CoreConnectedCountrySpecific Retail,1
-Win Vista Ultimate - OEM:NONSLP,1
-Win 10 RTM OneCoreUpdateOS Retail,1
-Win 10 Next Starter Retail,1
-Win 8.1 RTM ProfessionalN OEM:DM,1
-Win 10 Next Pre-Release ProfessionalStudent Retail,1
-Win 10 RTM HubOS OEM:DM,1
-Visual Studio 2010 Isolated Shell,1
-Win 10 BGN6F-KCBM8-HCFMM-Q744R-W3P7K,1
-Win 10 Next Professional Volume:GVLK,1
-Win 8.1 RTM ProfessionalStudentN Volume:GVLK,1
-VS 2013 Digital License VS Ultimate w/MSDN 2013 DLA Retail 30,1
-Win 10 Pre-Release PPIPro Volume:GVLK,1
-Win 10 RC Enterprise Retail,1
-Win 10 Embedded Industry Next Beta EmbeddedIndustry Volume:MAK,1
-Win 10 Pre-Release EnterpriseN Volume:GVLK,1
-Win 8 POSReady Beta EmbeddedIndustryE Volume:MAK,1
-Win 8 RC ProfessionalWMC Volume:GVLK,1
-Win 8 RC ProfessionalN Retail,1
-VS 2015 Visual Studio 2015 RTM Volume:MAK Visual Studio 2015 RTM Professional Volume,1
-Visual Studio 2010 Team Essentials (Volume License),1
-Win 10 RTM CloudEdition OEM:DM,1
-Win 10 RTM EnterpriseGN OEM:DM,1
-Win 10 RTM CoreConnected OEM:DM,1
-Win 10 RTM ProfessionalStudent OEM:NONSLP,1
-Visual Studio 2010 Test Essentials (Volume License),1
-Visual Studio 2010 Test Load Agent Controller (Volume 2.5K pack),1
-Win 10 NMGYT-GD9DR-298BC-TXK84-4TGVK,1
-Win 10 Pre-Release Enterprise Retail,1
-Visual Studio 2010 Professional (Volume License),1
-Win 8.1 RTM ProfessionalWMC Volume:GVLK,1
-Win 8 RTM ProfessionalN OEM:NONSLP,1
-Win 10 Embedded Industry Next Beta EmbeddedIndustryA Volume:MAK,1
-Win 10 RTM CloudEditionN OEM:DM,1
-Win 8.1 RTM Professional Volume:GVLK,1
-Win 10 EnterpriseS,1
-Win 10 Next Beta EnterpriseNEval Retail:TB:Eval,1
-Win 10 Next Pre-Release EducationN Volume:MAK,1
-Win 10 RTM CloudEdition Volume:GVLK,1
-Win 8.1 RTM ProfessionalN Volume:GVLK,1
-Win 10 RTM IoTEnterpriseS OEM:DM,1
-Win 7 ProfessionalN Volume:GVLK,1
-Win 10 Pre-Release CoreConnectedN Volume:GVLK,1
-Win 10 N3FPV-KQP4R-4M6H6-7Q8TK-HYMDX,1
-Win 10 Pre-Release Professional Retail Qihoo,1
-Win 10 Next Pre-Release CoreConnectedN Volume:MAK,1
-Win 10 Pre-Release ProfessionalS Retail,1
-Win 8.1 RTM CoreConnectedN Volume:GVLK,1
-Win 10 Pre-Release Core Retail Tencent,1
-Win 10 Pre-Release APPXLOB-Client Volume:MAK,1
-Win 8 RC CoreARM Retail,1
+Thin PC Embedded Volume:MAK,68
 Visual Basic 2010 Express (Registered),1
-Win 10 RTM IoTUAP Retail,1
-Win 10 Pre-Release ProfessionalSN Retail,1
-Win 10 Next Pre-Release CoreConnected Volume:MAK,1
-Win 10 Pre-Release EducationN Volume:GVLK,1
-Win 10 RC ProfessionalWMC Retail,1
-Win 8 RC CoreCountrySpecific Retail,1
-Win 10 RTM Professional Volume:GVLK,1
-Win 10 Next Pre-Release Education Retail,1
-Win 7 Embedded POSReady POSReady Retail,1
-VS Dev11 RTM Premium Retail,1
-Win 10 2019 LTSC RTM EnterpriseSEval Retail:TB:Eval,1
-Win 8.1 RTM CoreConnectedSingleLanguage Volume:GVLK,1
-Win 10 Pre-Release CoreConnected Retail,1
-Win 10 ServerTurbineCor,1
-Win 8 Embedded Standard RC Embedded Retail,1
-VS 2013 Digital License VS Team Foundation Svr 2013 DLA Retail 52,1
-Win 10 2016 LTSB RTM EnterpriseSubscriptionN Volume:MAK,1
-Win 10 Pre-Release CoreN Retail,1
+Visual Studio 2010 (MSDN Subscription),1
+Visual Studio 2010 Isolated Shell,1
+Visual Studio 2010 Professional (Volume License),1
+Visual Studio 2010 Team Essentials (Volume License),1
+Visual Studio 2010 Test Essentials (Volume License),1
+Visual Studio 2010 Test Load Agent Controller (Volume 1K pack),1
+Visual Studio 2010 Test Load Agent Controller (Volume 2.5K pack),1
+Visual Studio 2013 Digital License Visual Studio Premium w/MSDN 2013 DLA Retail 36,1
+Visual Studio 2013 Digital License Visual Studio Pro w/MSDN 2013 DLA Retail 21,1
+Visual Studio 2013 Digital License Visual Studio Team Foundation Svr 2013 DLA Retail 52,1
+Visual Studio 2013 Digital License Visual Studio Test Pro w/MSDN 2013 DLA Retail 42,1
+Visual Studio 2013 Digital License Visual Studio Ultimate w/MSDN 2013 DLA Retail 30,1
+Visual Studio 2015 Visual Studio 2015 RTM Volume:MAK Visual Studio 2015 RTM Professional Volume,1
+Visual Studio 2015 Visual Studio 2015 RTM Volume:MAK Visual Studio 2015 RTM Ultimate Volume,19
+Visual Studio Dev11 RTM Express for Retail,1
+Visual Studio Dev11 RTM Express for Web Retail,1
+Visual Studio Dev11 RTM Premium Retail,1
+Visual Studio Dev11 RTM Professional Retail,1
+Visual Studio Dev11 RTM Test Professional Retail,1
+Visual Studio Dev11 RTM Ultimate Retail,1
+Windows 10 2015 LTSB Next Pre-Release EnterpriseS OEM:NONSLP,2
+Windows 10 2015 LTSB Next Pre-Release EnterpriseS Volume:GVLK,1
+Windows 10 2015 LTSB Next Pre-Release EnterpriseS Volume:MAK,1
+Windows 10 2015 LTSB Next Pre-Release EnterpriseSN OEM:NONSLP,1
+Windows 10 2015 LTSB Next Pre-Release EnterpriseSN Volume:GVLK,1
+Windows 10 2015 LTSB Next Pre-Release EnterpriseSN Volume:MAK,2
+Windows 10 2015 LTSB Pre-Release EnterpriseS OEM:NONSLP,2
+Windows 10 2015 LTSB Pre-Release EnterpriseS Retail,1
+Windows 10 2015 LTSB Pre-Release EnterpriseS Volume:GVLK,1
+Windows 10 2015 LTSB Pre-Release EnterpriseS Volume:MAK,2
+Windows 10 2015 LTSB Pre-Release EnterpriseSN OEM:NONSLP,2
+Windows 10 2015 LTSB Pre-Release EnterpriseSN Volume:GVLK,1
+Windows 10 2015 LTSB Pre-Release EnterpriseSN Volume:MAK,2
+Windows 10 2015 LTSB RTM EnterpriseS OEM:DM,19
+Windows 10 2015 LTSB RTM EnterpriseS OEM:NONSLP,26
+Windows 10 2015 LTSB RTM EnterpriseS Volume:GVLK,2
+Windows 10 2015 LTSB RTM EnterpriseS Volume:MAK,125
+Windows 10 2015 LTSB RTM EnterpriseSEval Retail:TB:Eval,1
+Windows 10 2015 LTSB RTM EnterpriseSN Volume:GVLK,3
+Windows 10 2015 LTSB RTM EnterpriseSN Volume:MAK,56
+Windows 10 2015 LTSB RTM EnterpriseSNEval Retail:TB:Eval,1
+Windows 10 2016 LTSB RTM EnterpriseS OEM:DM,12
+Windows 10 2016 LTSB RTM EnterpriseS OEM:NONSLP,39
+Windows 10 2016 LTSB RTM EnterpriseS Volume:GVLK,3
+Windows 10 2016 LTSB RTM EnterpriseS Volume:MAK,263
+Windows 10 2016 LTSB RTM EnterpriseSN Volume:GVLK,2
+Windows 10 2016 LTSB RTM EnterpriseSN Volume:MAK,46
+Windows 10 2016 LTSB RTM EnterpriseSubscription Volume:MAK,1
+Windows 10 2016 LTSB RTM EnterpriseSubscriptionN Volume:MAK,1
+Windows 10 2019 LTSC RTM EnterpriseS OEM:DM,4
+Windows 10 2019 LTSC RTM EnterpriseS OEM:NONSLP,10
+Windows 10 2019 LTSC RTM EnterpriseS Volume:GVLK,2
+Windows 10 2019 LTSC RTM EnterpriseS Volume:MAK,213
+Windows 10 2019 LTSC RTM EnterpriseSEval Retail:TB:Eval,1
+Windows 10 2019 LTSC RTM EnterpriseSN Volume:GVLK,2
+Windows 10 2019 LTSC RTM EnterpriseSN Volume:MAK,31
+Windows 10 2019 LTSC RTM EnterpriseSNEval Retail:TB:Eval,1
+Windows 10 9XMK8-N3FG8-KH2T4-T9QJM-HPHQX,1
+Windows 10 BGN6F-KCBM8-HCFMM-Q744R-W3P7K,1
+Windows 10 Embedded Industry Next Beta EmbeddedIndustry OEM:DM,1
+Windows 10 Embedded Industry Next Beta EmbeddedIndustry OEM:NONSLP,1
+Windows 10 Embedded Industry Next Beta EmbeddedIndustry Volume:GVLK,3
+Windows 10 Embedded Industry Next Beta EmbeddedIndustry Volume:MAK,1
+Windows 10 Embedded Industry Next Beta EmbeddedIndustryA OEM:DM,1
+Windows 10 Embedded Industry Next Beta EmbeddedIndustryA OEM:NONSLP,2
+Windows 10 Embedded Industry Next Beta EmbeddedIndustryA Volume:GVLK,3
+Windows 10 Embedded Industry Next Beta EmbeddedIndustryA Volume:MAK,1
+Windows 10 Embedded Industry Next Beta EmbeddedIndustryE OEM:NONSLP,2
+Windows 10 Embedded Industry Next Beta EmbeddedIndustryE Volume:GVLK,3
+Windows 10 Embedded Industry Next Beta EmbeddedIndustryE Volume:MAK,2
+Windows 10 EnterpriseS,1
+Windows 10 J427X-9NHBK-VRWQQ-B8Y42-T927K,1
+Windows 10 JH8W6-VMNWP-6QBDM-PBP4B-J9FX9,1
+Windows 10 KD69N-VWMRK-Y9KBG-FCBM3-KF7QX,1
+Windows 10 N3FPV-KQP4R-4M6H6-7Q8TK-HYMDX,1
+Windows 10 Next Beta EnterpriseEval Retail:TB:Eval,1
+Windows 10 Next Beta EnterpriseNEval Retail:TB:Eval,1
+Windows 10 Next Enterprise Volume:GVLK,1
+Windows 10 Next Pre-Release CoreConnected OEM:NONSLP,2
+Windows 10 Next Pre-Release CoreConnected Retail,1
+Windows 10 Next Pre-Release CoreConnected Volume:GVLK,4
+Windows 10 Next Pre-Release CoreConnected Volume:MAK,1
+Windows 10 Next Pre-Release CoreConnectedCountrySpecific OEM:NONSLP,2
+Windows 10 Next Pre-Release CoreConnectedCountrySpecific Retail,1
+Windows 10 Next Pre-Release CoreConnectedCountrySpecific Volume:GVLK,4
+Windows 10 Next Pre-Release CoreConnectedCountrySpecific Volume:MAK,1
+Windows 10 Next Pre-Release CoreConnectedN OEM:NONSLP,2
+Windows 10 Next Pre-Release CoreConnectedN Retail,1
+Windows 10 Next Pre-Release CoreConnectedN Volume:GVLK,4
+Windows 10 Next Pre-Release CoreConnectedN Volume:MAK,1
+Windows 10 Next Pre-Release CoreConnectedSingleLanguage OEM:NONSLP,2
+Windows 10 Next Pre-Release CoreConnectedSingleLanguage Retail,1
+Windows 10 Next Pre-Release CoreConnectedSingleLanguage Volume:GVLK,4
+Windows 10 Next Pre-Release CoreConnectedSingleLanguage Volume:MAK,1
+Windows 10 Next Pre-Release Education Retail,1
+Windows 10 Next Pre-Release Education Volume:GVLK,2
+Windows 10 Next Pre-Release Education Volume:MAK,1
+Windows 10 Next Pre-Release EducationN Retail,1
+Windows 10 Next Pre-Release EducationN Volume:GVLK,1
+Windows 10 Next Pre-Release EducationN Volume:MAK,1
+Windows 10 Next Pre-Release Enterprise OEM:NONSLP,2
+Windows 10 Next Pre-Release Enterprise Volume:MAK,2
+Windows 10 Next Pre-Release EnterpriseN Volume:MAK,1
+Windows 10 Next Pre-Release MobileCore Retail,1
+Windows 10 Next Pre-Release MobileEnterprise Volume:MAK,2
+Windows 10 Next Pre-Release PPIPro Retail,1
+Windows 10 Next Pre-Release PPIPro Volume:MAK,2
+Windows 10 Next Pre-Release Professional Volume:MAK,2
+Windows 10 Next Pre-Release ProfessionalN Volume:MAK,1
+Windows 10 Next Pre-Release ProfessionalS Volume:GVLK,4
+Windows 10 Next Pre-Release ProfessionalS Volume:MAK,2
+Windows 10 Next Pre-Release ProfessionalSN Volume:GVLK,4
+Windows 10 Next Pre-Release ProfessionalSN Volume:MAK,2
+Windows 10 Next Pre-Release ProfessionalStudent OEM:NONSLP,2
+Windows 10 Next Pre-Release ProfessionalStudent Retail,1
+Windows 10 Next Pre-Release ProfessionalStudent Volume:GVLK,4
+Windows 10 Next Pre-Release ProfessionalStudent Volume:MAK,1
+Windows 10 Next Pre-Release ProfessionalStudentN OEM:NONSLP,2
+Windows 10 Next Pre-Release ProfessionalStudentN Retail,1
+Windows 10 Next Pre-Release ProfessionalStudentN Volume:GVLK,4
+Windows 10 Next Pre-Release ProfessionalStudentN Volume:MAK,1
+Windows 10 Next Professional Volume:GVLK,1
+Windows 10 Next Starter Retail,1
+Windows 10 Next StarterN Retail,1
+Windows 10 NMGYT-GD9DR-298BC-TXK84-4TGVK,1
+Windows 10 Pre-Release APPXLOB-Client Volume:MAK,1
+Windows 10 Pre-Release Core OEM:NONSLP,2
+Windows 10 Pre-Release Core Retail,1
+Windows 10 Pre-Release Core Retail Qihoo,1
+Windows 10 Pre-Release Core Retail Tencent,1
+Windows 10 Pre-Release Core Volume:GVLK,2
+Windows 10 Pre-Release CoreARM OEM:DM,1
+Windows 10 Pre-Release CoreARM OEM:NONSLP,2
+Windows 10 Pre-Release CoreARM Volume:GVLK,3
+Windows 10 Pre-Release CoreConnected OEM:NONSLP,2
+Windows 10 Pre-Release CoreConnected Retail,1
+Windows 10 Pre-Release CoreConnected Volume:GVLK,1
+Windows 10 Pre-Release CoreConnected Volume:MAK,2
+Windows 10 Pre-Release CoreConnectedCountrySpecific OEM:NONSLP,2
+Windows 10 Pre-Release CoreConnectedCountrySpecific Retail,1
+Windows 10 Pre-Release CoreConnectedCountrySpecific Volume:GVLK,1
+Windows 10 Pre-Release CoreConnectedCountrySpecific Volume:MAK,2
+Windows 10 Pre-Release CoreConnectedN OEM:NONSLP,2
+Windows 10 Pre-Release CoreConnectedN Retail,1
+Windows 10 Pre-Release CoreConnectedN Volume:GVLK,1
+Windows 10 Pre-Release CoreConnectedN Volume:MAK,2
+Windows 10 Pre-Release CoreConnectedSingleLanguage OEM:NONSLP,2
+Windows 10 Pre-Release CoreConnectedSingleLanguage Retail,1
+Windows 10 Pre-Release CoreConnectedSingleLanguage Volume:GVLK,1
+Windows 10 Pre-Release CoreConnectedSingleLanguage Volume:MAK,2
+Windows 10 Pre-Release CoreCountrySpecific OEM:NONSLP,2
+Windows 10 Pre-Release CoreCountrySpecific Retail,1
+Windows 10 Pre-Release CoreCountrySpecific Volume:GVLK,1
+Windows 10 Pre-Release CoreN OEM:NONSLP,2
+Windows 10 Pre-Release CoreN Retail,1
+Windows 10 Pre-Release CoreN Volume:GVLK,1
+Windows 10 Pre-Release CoreSingleLanguage OEM:NONSLP,2
+Windows 10 Pre-Release CoreSingleLanguage Retail,1
+Windows 10 Pre-Release CoreSingleLanguage Volume:GVLK,1
+Windows 10 Pre-Release Education OEM:NONSLP,2
+Windows 10 Pre-Release Education Retail,1
+Windows 10 Pre-Release Education Volume:GVLK,2
+Windows 10 Pre-Release Education Volume:MAK,2
+Windows 10 Pre-Release EducationN OEM:NONSLP,2
+Windows 10 Pre-Release EducationN Retail,1
+Windows 10 Pre-Release EducationN Volume:GVLK,1
+Windows 10 Pre-Release EducationN Volume:MAK,2
+Windows 10 Pre-Release Enterprise OEM:NONSLP,2
+Windows 10 Pre-Release Enterprise Retail,1
+Windows 10 Pre-Release Enterprise Volume:GVLK,3
+Windows 10 Pre-Release Enterprise Volume:MAK,2
+Windows 10 Pre-Release EnterpriseN Retail,1
+Windows 10 Pre-Release EnterpriseN Volume:GVLK,1
+Windows 10 Pre-Release EnterpriseN Volume:MAK,2
+Windows 10 Pre-Release MobileEnterprise Volume:MAK,1
+Windows 10 Pre-Release PPIPro OEM:NONSLP,2
+Windows 10 Pre-Release PPIPro Volume:GVLK,1
+Windows 10 Pre-Release Professional OEM:NONSLP,2
+Windows 10 Pre-Release Professional Retail,2
+Windows 10 Pre-Release Professional Retail Qihoo,1
+Windows 10 Pre-Release Professional Retail Tencent,1
+Windows 10 Pre-Release Professional Volume:GVLK,9
+Windows 10 Pre-Release Professional Volume:MAK,2
+Windows 10 Pre-Release ProfessionalN OEM:NONSLP,2
+Windows 10 Pre-Release ProfessionalN Retail,1
+Windows 10 Pre-Release ProfessionalN Volume:GVLK,1
+Windows 10 Pre-Release ProfessionalN Volume:MAK,2
+Windows 10 Pre-Release ProfessionalS Retail,1
+Windows 10 Pre-Release ProfessionalS Volume:GVLK,1
+Windows 10 Pre-Release ProfessionalS Volume:MAK,2
+Windows 10 Pre-Release ProfessionalSN Retail,1
+Windows 10 Pre-Release ProfessionalSN Volume:GVLK,1
+Windows 10 Pre-Release ProfessionalSN Volume:MAK,2
+Windows 10 Pre-Release ProfessionalStudent OEM:NONSLP,2
+Windows 10 Pre-Release ProfessionalStudent Retail,1
+Windows 10 Pre-Release ProfessionalStudent Volume:GVLK,1
+Windows 10 Pre-Release ProfessionalStudent Volume:MAK,2
+Windows 10 Pre-Release ProfessionalStudentN OEM:NONSLP,2
+Windows 10 Pre-Release ProfessionalStudentN Retail,1
+Windows 10 Pre-Release ProfessionalStudentN Volume:GVLK,1
+Windows 10 Pre-Release ProfessionalStudentN Volume:MAK,2
+Windows 10 Pre-Release ProfessionalWMC Volume:GVLK,3
+Windows 10 ProfessionalCountrySpecific,1
+Windows 10 ProfessionalSingleLanguage,1
+Windows 10 RC Enterprise Retail,3
+Windows 10 RC Professional Retail,36
+Windows 10 RC ProfessionalWMC Retail,2
+Windows 10 RTM AnalogOneCoreEnterprise Volume:MAK,1
+Windows 10 RTM Andromeda OEM:DM,1
+Windows 10 RTM APPXLOB-Client Volume:MAK,31
+Windows 10 RTM Cloud Volume:MAK,7
+Windows 10 RTM CloudE OEM:DM,1
+Windows 10 RTM CloudE Volume:GVLK,2
+Windows 10 RTM CloudEdition OEM:DM,1
+Windows 10 RTM CloudEdition Retail,1
+Windows 10 RTM CloudEdition Volume:GVLK,1
+Windows 10 RTM CloudEditionN OEM:DM,1
+Windows 10 RTM CloudEditionN Retail,1
+Windows 10 RTM CloudEditionN Volume:GVLK,1
+Windows 10 RTM CloudN Volume:MAK,3
+Windows 10 RTM Core OEM:DM,257
+Windows 10 RTM Core OEM:NONSLP,80
+Windows 10 RTM Core Retail,1652
+Windows 10 RTM Core Volume:GVLK,2
+Windows 10 RTM CoreConnected OEM:DM,1
+Windows 10 RTM CoreConnectedCountrySpecific OEM:DM,1
+Windows 10 RTM CoreConnectedN OEM:DM,1
+Windows 10 RTM CoreConnectedSingleLanguage OEM:DM,1
+Windows 10 RTM CoreConnectedSingleLanguage OEM:NONSLP,6
+Windows 10 RTM CoreCountrySpecific OEM:DM,23
+Windows 10 RTM CoreCountrySpecific OEM:NONSLP,4
+Windows 10 RTM CoreCountrySpecific Retail,9
+Windows 10 RTM CoreCountrySpecific Volume:GVLK,2
+Windows 10 RTM CoreN OEM:DM,67
+Windows 10 RTM CoreN OEM:NONSLP,6
+Windows 10 RTM CoreN Retail,22
+Windows 10 RTM CoreN Volume:GVLK,2
+Windows 10 RTM CoreSingleLanguage OEM:DM,234
+Windows 10 RTM CoreSingleLanguage OEM:NONSLP,14
+Windows 10 RTM CoreSingleLanguage Retail,9
+Windows 10 RTM CoreSingleLanguage Volume:GVLK,2
+Windows 10 RTM Education OEM:DM,13
+Windows 10 RTM Education OEM:NONSLP,3
+Windows 10 RTM Education Retail,1938
+Windows 10 RTM Education Volume:GVLK,2
+Windows 10 RTM Education Volume:MAK,141
+Windows 10 RTM EducationN OEM:DM,12
+Windows 10 RTM EducationN OEM:NONSLP,3
+Windows 10 RTM EducationN Retail,566
+Windows 10 RTM EducationN Volume:GVLK,2
+Windows 10 RTM EducationN Volume:MAK,34
+Windows 10 RTM Enterprise OEM:DM,19
+Windows 10 RTM Enterprise OEM:NONSLP,48
+Windows 10 RTM Enterprise Volume:GVLK,2
+Windows 10 RTM Enterprise Volume:MAK,1056
+Windows 10 RTM Enterprise;EnterpriseN;Professional;ProfessionalN;EnterpriseS;EnterpriseSN;Education;EducationN Volume:CSVLK,3
+Windows 10 RTM Enterprise;EnterpriseN;Professional;ProfessionalN;EnterpriseS;EnterpriseSN;Education;EducationN Volume:CSVLK VL Additional Lab,1
+Windows 10 RTM EnterpriseEval Retail:TB:Eval,1
+Windows 10 RTM EnterpriseG OEM:DM,1
+Windows 10 RTM EnterpriseG OEM:NONSLP,1
+Windows 10 RTM EnterpriseG Volume:GVLK,2
+Windows 10 RTM EnterpriseG Volume:MAK,11
+Windows 10 RTM EnterpriseGN OEM:DM,1
+Windows 10 RTM EnterpriseGN OEM:NONSLP,1
+Windows 10 RTM EnterpriseGN Volume:GVLK,2
+Windows 10 RTM EnterpriseGN Volume:MAK,11
+Windows 10 RTM EnterpriseN Volume:GVLK,2
+Windows 10 RTM EnterpriseN Volume:MAK,49
+Windows 10 RTM EnterpriseNEval Retail:TB:Eval,1
+Windows 10 RTM Holographic OEM:DM,2
+Windows 10 RTM HubOS OEM:DM,1
+Windows 10 RTM IoTEnterprise OEM:DM,2
+Windows 10 RTM IoTEnterprise OEM:NONSLP,4
+Windows 10 RTM IoTEnterpriseS OEM:DM,1
+Windows 10 RTM IoTEnterpriseS OEM:NONSLP,5
+Windows 10 RTM IoTUAP Retail,1
+Windows 10 RTM IoTUAPCommercial Volume:MAK,1
+Windows 10 RTM Lite OEM:DM,1
+Windows 10 RTM OneCoreUpdateOS Retail,1
+Windows 10 RTM PPIPro OEM:NONSLP,3
+Windows 10 RTM Professional OEM:DM,246
+Windows 10 RTM Professional OEM:NONSLP,144
+Windows 10 RTM Professional Retail,8870
+Windows 10 RTM Professional Volume:GVLK,1
+Windows 10 RTM Professional Volume:MAK,1151
+Windows 10 RTM ProfessionalEducation OEM:DM,9
+Windows 10 RTM ProfessionalEducation OEM:NONSLP,7
+Windows 10 RTM ProfessionalEducation Retail,13
+Windows 10 RTM ProfessionalEducation Volume:GVLK,2
+Windows 10 RTM ProfessionalEducation Volume:MAK,395
+Windows 10 RTM ProfessionalEducationN OEM:DM,9
+Windows 10 RTM ProfessionalEducationN OEM:NONSLP,7
+Windows 10 RTM ProfessionalEducationN Retail,3
+Windows 10 RTM ProfessionalEducationN Volume:GVLK,2
+Windows 10 RTM ProfessionalEducationN Volume:MAK,11
+Windows 10 RTM ProfessionalN OEM:DM,38
+Windows 10 RTM ProfessionalN OEM:NONSLP,12
+Windows 10 RTM ProfessionalN Retail,231
+Windows 10 RTM ProfessionalN Volume:GVLK,2
+Windows 10 RTM ProfessionalN Volume:MAK,71
+Windows 10 RTM ProfessionalStudent OEM:DM,1
+Windows 10 RTM ProfessionalStudent OEM:NONSLP,1
+Windows 10 RTM ProfessionalStudentN OEM:DM,1
+Windows 10 RTM ProfessionalStudentN OEM:NONSLP,1
+Windows 10 RTM ProfessionalWorkstation OEM:DM,4
+Windows 10 RTM ProfessionalWorkstation OEM:NONSLP,3
+Windows 10 RTM ProfessionalWorkstation Retail,95
+Windows 10 RTM ProfessionalWorkstation Volume:GVLK,2
+Windows 10 RTM ProfessionalWorkstation Volume:MAK,47
+Windows 10 RTM ProfessionalWorkstationN OEM:DM,4
+Windows 10 RTM ProfessionalWorkstationN OEM:NONSLP,3
+Windows 10 RTM ProfessionalWorkstationN Retail,19
+Windows 10 RTM ProfessionalWorkstationN Volume:GVLK,2
+Windows 10 RTM ProfessionalWorkstationN Volume:MAK,20
+Windows 10 ServerTurbineCor,1
+Windows 10 XMMNR-TCVTR-DK8GY-KKJ33-3HM99,1
+Windows 11 RTM EnterpriseS Volume:MAK,36
+Windows 11 RTM EnterpriseSN Volume:MAK,30
+Windows 11 RTM IoTEnterpriseS Volume:GVLK,1
+Windows 7 All Volume Editions Volume:CSVLK,11
+Windows 7 All Volume Editions Volume:MAK,2493
+Windows 7 Embedded POSReady POSReady Retail,1
+Windows 7 Embedded POSReady POSReady Retail:TB:Eval,1
+Windows 7 Embedded POSReady POSReady Volume:GVLK,1
+Windows 7 Embedded Standard Retail Acad Edtn OEM,1
+Windows 7 Embedded Standard Retail Std Edtn Eval OEM,2
+Windows 7 Enterprise Retail:TB:Eval,1
+Windows 7 Enterprise Volume:GVLK,1
+Windows 7 EnterpriseE Volume:GVLK,1
+Windows 7 EnterpriseN Volume:GVLK,1
+Windows 7 Home Basic OEM:COA,13
+Windows 7 Home Basic OEM:NONSLP,15
+Windows 7 Home Basic Retail,235
+Windows 7 Home Premium OEM:COA,134
+Windows 7 Home Premium OEM:NONSLP,212
+Windows 7 Home Premium Retail,350
+Windows 7 Home PremiumN Retail,84
+Windows 7 Hyper-V ProdAct All Programs,1
+Windows 7 Professional OEM:COA,790
+Windows 7 Professional OEM:NONSLP,30
+Windows 7 Professional Retail,782
+Windows 7 Professional Volume:GVLK,2
+Windows 7 ProfessionalE Volume:GVLK,1
+Windows 7 ProfessionalN Retail,100
+Windows 7 ProfessionalN Volume:GVLK,1
+Windows 7 SP1 HomeBasic Retail,10
+Windows 7 SP1 HomePremium Retail,19
+Windows 7 SP1 HomePremiumN Retail,3
+Windows 7 SP1 Professional Retail,998
+Windows 7 SP1 ProfessionalN Retail,433
+Windows 7 SP1 Ultimate Retail,217
+Windows 7 SP1 UltimateN Retail,18
+Windows 7 Starter OEM:COA,17
+Windows 7 Starter OEM:NONSLP,247
+Windows 7 StarterN OEM:NONSLP,53
+Windows 7 Ultimate OEM:COA,29
+Windows 7 Ultimate OEM:NONSLP,29
+Windows 7 Ultimate Retail,141
+Windows 7 UltimateN Retail,198
+Windows 8 Embedded Industry RTM APPXLOB-Embedded Volume:MAK,10
+Windows 8 Embedded Industry RTM EmbeddedIndustry Retail:TB:Eval,1
+Windows 8 Embedded Industry RTM EmbeddedIndustry Volume:GVLK,1
+Windows 8 Embedded Industry RTM EmbeddedIndustry Volume:MAK,11
+Windows 8 Embedded Industry RTM EmbeddedIndustryE Volume:GVLK,1
+Windows 8 Embedded Industry RTM EmbeddedIndustryE Volume:MAK,11
+Windows 8 Embedded Standard RC Embedded Retail,1
+Windows 8 Embedded Standard RC Embedded Retail:TB:Eval,1
+Windows 8 Embedded Standard RC EmbeddedE Retail:TB:Eval,1
+Windows 8 Embedded Standard RTM APPXLOB-Embedded Volume:MAK,4
+Windows 8 Embedded Standard RTM Embedded OEM:NONSLP,1
+Windows 8 Embedded Standard RTM Embedded Retail:TB:Eval,2
+Windows 8 Next Beta PrereleaseARM Retail,1
+Windows 8 Next Beta PrereleaseN Retail,1
+Windows 8 PK3 Embedded Standard 00140 DLA/Bypass Retail Toolkit,3
+Windows 8 POSReady Beta EmbeddedIndustryE Volume:MAK,1
+Windows 8 ProfessionalPlus,1
+Windows 8 RC Core Retail,3
+Windows 8 RC Core Volume:GVLK,1
+Windows 8 RC CoreARM Retail,1
+Windows 8 RC CoreCountrySpecific Retail,1
+Windows 8 RC CoreN Retail,1
+Windows 8 RC CoreSingleLanguage Retail,2
+Windows 8 RC EnterpriseN Retail,1
+Windows 8 RC Professional;ProfessionalN;Enterprise;EnterpriseN Volume:MAK,1
+Windows 8 RC ProfessionalN Retail,1
+Windows 8 RC ProfessionalWMC Volume:GVLK,1
+Windows 8 RTM Core OEM:DM,222
+Windows 8 RTM Core OEM:NONSLP,6
+Windows 8 RTM Core Retail,120
+Windows 8 RTM Core Volume:GVLK,1
+Windows 8 RTM CoreARM Volume:GVLK,1
+Windows 8 RTM CoreCountrySpecific OEM:DM,2
+Windows 8 RTM CoreCountrySpecific Volume:GVLK,1
+Windows 8 RTM CoreN Volume:GVLK,1
+Windows 8 RTM CoreSingleLanguage OEM:DM,162
+Windows 8 RTM CoreSingleLanguage OEM:NONSLP,6
+Windows 8 RTM CoreSingleLanguage Volume:GVLK,1
+Windows 8 RTM Enterprise Volume:GVLK,2
+Windows 8 RTM Enterprise;EnterpriseN;Professional;ProfessionalN Volume:CSVLK,3
+Windows 8 RTM EnterpriseEval Retail:TB:Eval,1
+Windows 8 RTM EnterpriseN Volume:GVLK,2
+Windows 8 RTM Professional OEM:DM,10
+Windows 8 RTM Professional OEM:NONSLP,55
+Windows 8 RTM Professional Retail,1530
+Windows 8 RTM Professional Volume:GVLK,1
+Windows 8 RTM Professional;ProfessionalN Volume:MAK,1370
+Windows 8 RTM ProfessionalN OEM:DM,2
+Windows 8 RTM ProfessionalN OEM:NONSLP,1
+Windows 8 RTM ProfessionalN Retail,333
+Windows 8 RTM ProfessionalN Volume:GVLK,1
+Windows 8 RTM ProfessionalWMC Retail,1301
+Windows 8 RTM ProfessionalWMC Volume:GVLK,2
+Windows 8.1 Embedded Industry RTM EmbeddedIndustry Retail,270
+Windows 8.1 Embedded Industry RTM EmbeddedIndustry Volume:GVLK,2
+Windows 8.1 Embedded Industry RTM EmbeddedIndustry Volume:MAK,10
+Windows 8.1 Embedded Industry RTM EmbeddedIndustryA OEM:NONSLP,1
+Windows 8.1 Embedded Industry RTM EmbeddedIndustryA Volume:GVLK,2
+Windows 8.1 Embedded Industry RTM EmbeddedIndustryA Volume:MAK,1
+Windows 8.1 Embedded Industry RTM EmbeddedIndustryE Retail,6
+Windows 8.1 Embedded Industry RTM EmbeddedIndustryE Volume:GVLK,2
+Windows 8.1 Embedded Industry RTM EmbeddedIndustryE Volume:MAK,11
+Windows 8.1 RTM Core OEM:NONSLP,7
+Windows 8.1 RTM Core Volume:GVLK,1
+Windows 8.1 RTM CoreARM OEM:DM,1
+Windows 8.1 RTM CoreARM Volume:GVLK,1
+Windows 8.1 RTM CoreConnected Volume:GVLK,2
+Windows 8.1 RTM CoreConnectedCountrySpecific OEM:NONSLP,1
+Windows 8.1 RTM CoreConnectedCountrySpecific Volume:GVLK,1
+Windows 8.1 RTM CoreConnectedN Volume:GVLK,1
+Windows 8.1 RTM CoreConnectedSingleLanguage Volume:GVLK,1
+Windows 8.1 RTM CoreCountrySpecific OEM:DM,1
+Windows 8.1 RTM CoreCountrySpecific Volume:GVLK,1
+Windows 8.1 RTM CoreN OEM:DM,1
+Windows 8.1 RTM CoreN OEM:NONSLP,1
+Windows 8.1 RTM CoreN Retail,4
+Windows 8.1 RTM CoreN Volume:GVLK,1
+Windows 8.1 RTM CoreSingleLanguage Volume:GVLK,2
+Windows 8.1 RTM Enterprise Volume:GVLK,4
+Windows 8.1 RTM Enterprise;EnterpriseN;Professional;ProfessionalN Volume:CSVLK,3
+Windows 8.1 RTM EnterpriseN Volume:GVLK,2
+Windows 8.1 RTM Professional Volume:GVLK,1
+Windows 8.1 RTM Professional;ProfessionalN;Enterprise;EnterpriseN Volume:MAK,2913
+Windows 8.1 RTM ProfessionalN OEM:DM,1
+Windows 8.1 RTM ProfessionalN OEM:NONSLP,1
+Windows 8.1 RTM ProfessionalN Volume:GVLK,1
+Windows 8.1 RTM ProfessionalStudent Retail,1
+Windows 8.1 RTM ProfessionalStudent Volume:GVLK,1
+Windows 8.1 RTM ProfessionalStudentN Volume:GVLK,1
+Windows 8.1 RTM ProfessionalWMC Volume:GVLK,1
+Windows Server 12 R2 RTM Datacenter Volume:MAK,61
+Windows Server 12 R2 RTM Standard Volume:MAK,96
+Windows Server 2008 Compute Cluster GVLK,1
+Windows Server 2008 Datacenter & Itanium CSVLK,3
+Windows Server 2008 Datacenter & Itanium MAK,297
+Windows Server 2008 Datacenter GVLK,1
+Windows Server 2008 DatacenterV GVLK,1
+Windows Server 2008 Enterprise GVLK,1
+Windows Server 2008 EnterpriseV GVLK,1
+Windows Server 2008 Itanium GVLK,1
+Windows Server 2008 ProdKey3 Foundation 00150 OEMAct/Preinstall PrePop OA II,1
+Windows Server 2008 R2 Compute Cluster (HPC) Volume:GVLK,1
+Windows Server 2008 R2 Datacenter Volume:GVLK,1
+Windows Server 2008 R2 DC and IA64 Volume:CSVLK (KMS C),3
+Windows Server 2008 R2 DC and IA64 Volume:MAK (MAK C),618
+Windows Server 2008 R2 Enterprise IA64 Volume:GVLK,1
+Windows Server 2008 R2 Enterprise Volume:GVLK,1
+Windows Server 2008 R2 Standard Volume:GVLK,1
+Windows Server 2008 R2 Std and Ent Volume:CSVLK (KMS B),4
+Windows Server 2008 R2 Std and Ent Volume:MAK (MAK B),840
+Windows Server 2008 R2 Web and CC Volume:CSVLK (KMS A),3
+Windows Server 2008 R2 Web and CC Volume:MAK (MAK A),399
+Windows Server 2008 R2 Web Volume:GVLK,1
+Windows Server 2008 Standard & Enterprise CSVLK,4
+Windows Server 2008 Standard & Enterprise MAK,1187
+Windows Server 2008 Standard GVLK,1
+Windows Server 2008 StandardV GVLK,1
+Windows Server 2008 Web & Compute Cluster CSVLK,3
+Windows Server 2008 Web & Compute Cluster MAK,288
+Windows Server 2008 Web GVLK,1
+Windows Server 2011 Small Business Solution,27
+Windows Server 2012 CloudStorage R2 RTM CloudStorage Volume:GVLK,3
+Windows Server 2012 Essentials R2 RTM Solution Retail,411
+Windows Server 2012 Essentials R2 RTM Solution Retail:TB:Eval,1
+Windows Server 2012 Essentials R2 RTM Solution Volume:GVLK,3
+Windows Server 2012 Essentials R2 RTM Solution Volume:MAK,14
+Windows Server 2012 Essentials RTM Solution Retail,199
+Windows Server 2012 Essentials RTM Solution Volume:MAK,45
+Windows Server 2012 MultiPoint RTM MultiPointPremium Retail,203
+Windows Server 2012 MultiPoint RTM MultiPointPremium Volume:GVLK,1
+Windows Server 2012 MultiPoint RTM MultiPointPremium Volume:MAK,5
+Windows Server 2012 MultiPoint RTM MultiPointStandard Retail,201
+Windows Server 2012 MultiPoint RTM MultiPointStandard Volume:GVLK,1
+Windows Server 2012 MultiPoint RTM MultiPointStandard Volume:MAK,3
+Windows Server 2012 RC StorageStandardEval Retail:TB:Eval,1
+Windows Server 2012 RC StorageWorkgroupEval Retail:TB:Eval,1
+Windows Server 2012 RTM APPXLOB- Volume:MAK,1
+Windows Server 2012 RTM Datacenter Retail,652
+Windows Server 2012 RTM Datacenter Volume:GVLK,1
+Windows Server 2012 RTM Datacenter Volume:MAK,41
+Windows Server 2012 RTM Datacenter Volume:MAK (MUI locked to zh-CN),1
+Windows Server 2012 RTM Datacenter;Standard;MultiPointStandard;MultiPointPremium Volume:CSVLK,1
+Windows Server 2012 RTM Standard Retail,307
+Windows Server 2012 RTM Standard Volume:GVLK,2
+Windows Server 2012 RTM Standard Volume:MAK,84
+Windows Server 2012 RTM Standard Volume:MAK (MUI locked to zh-CN),1
+Windows Server 2012 Storage RTM StorageStandard Volume:MAK,1
+Windows Server 2012 Storage RTM StorageWorkgroup Volume:MAK,1
+Windows Server 2016 CloudStorage RTM CloudStorage Volume:GVLK,3
+Windows Server 2016 Essentials RTM Solution Retail,90
+Windows Server 2016 Essentials RTM Solution Volume:GVLK,3
+Windows Server 2016 Essentials RTM Solution Volume:MAK,9
+Windows Server 2016 RTM ARM64 Volume:GVLK,2
+Windows Server 2016 RTM AzureCor Volume:GVLK,2
+Windows Server 2016 RTM AzureNano Retail,1
+Windows Server 2016 RTM Datacenter OEM:DM,1
+Windows Server 2016 RTM Datacenter OEM:NONSLP,9
+Windows Server 2016 RTM Datacenter Retail,481
+Windows Server 2016 RTM Datacenter Volume:GVLK,4
+Windows Server 2016 RTM Datacenter Volume:MAK,37
+Windows Server 2016 RTM DatacenterACor Volume:GVLK,2
+Windows Server 2016 RTM DatacenterACor Volume:MAK,2
+Windows Server 2016 RTM Standard OEM:DM,1
+Windows Server 2016 RTM Standard OEM:NONSLP,8
+Windows Server 2016 RTM Standard Retail,493
+Windows Server 2016 RTM Standard Volume:GVLK,3
+Windows Server 2016 RTM Standard Volume:MAK,37
+Windows Server 2016 RTM StandardACor Volume:GVLK,2
+Windows Server 2016 RTM StandardACor Volume:MAK,2
+Windows Server 2016 SQL RTM Enterprise Core Volume:GVLK,1
+Windows Server 2016 SQL RTM Enterprise Volume:GVLK,1
+Windows Server 2016 SQL RTM Standard Volume:GVLK,1
+Windows Server 2016 SQL RTM Web Volume:GVLK,1
+Windows Server 2019 RTM ARM64 Volume:GVLK,2
+Windows Server 2019 RTM AzureCor Retail,1
+Windows Server 2019 RTM AzureCor Volume:GVLK,2
+Windows Server 2019 RTM AzureStackHCIAddOn Retail,659
+Windows Server 2019 RTM AzureStackHCICor Retail,1
+Windows Server 2019 RTM Datacenter OEM:DM,4
+Windows Server 2019 RTM Datacenter OEM:DM (MUI locked to zh-CN),2
+Windows Server 2019 RTM Datacenter OEM:NONSLP,5
+Windows Server 2019 RTM Datacenter Volume:GVLK,2
+Windows Server 2019 RTM Datacenter;DatacenterACor Volume:MAK,17
+Windows Server 2019 RTM DatacenterACor Retail,1
+Windows Server 2019 RTM DatacenterACor Volume:GVLK,2
+Windows Server 2019 RTM DatacenterACor Volume:MAK,2
+Windows Server 2019 RTM DatacenterEval Retail:TB:Eval,1
+Windows Server 2019 RTM Rdsh Volume:GVLK,2
+Windows Server 2019 RTM Standard OEM:DM,4
+Windows Server 2019 RTM Standard OEM:DM (MUI locked to zh-CN),1
+Windows Server 2019 RTM Standard OEM:NONSLP,7
+Windows Server 2019 RTM Standard Retail,1147
+Windows Server 2019 RTM Standard Volume:GVLK,2
+Windows Server 2019 RTM Standard;StandardACor Volume:MAK,17
+Windows Server 2019 RTM StandardACor Retail,1
+Windows Server 2019 RTM StandardACor Volume:GVLK,2
+Windows Server 2019 RTM StandardACor Volume:MAK,2
+Windows Server 2019 RTM StandardEval Retail:TB:Eval,1
+Windows Server 2019 RTM Turbine Retail,1
+Windows Server 2019 RTM Turbine Volume:GVLK,1
+Windows Server 2019 RTM Turbine Volume:MAK,1
+Windows Server 2022 RTM AzureCor Volume:GVLK,2
+Windows Server 2022 RTM Datacenter Volume:GVLK,1
+Windows Server 2022 RTM Datacenter;AzureStackHCIAddOn Retail,80
+Windows Server 2022 RTM Datacenter;DatacenterACor;AzureStackHCIAddOn Volume:MAK,15
+Windows Server 2022 RTM DatacenterACor Volume:GVLK,2
+Windows Server 2022 RTM DatacenterCor Retail,1
+Windows Server 2022 RTM DatacenterEval Retail:TB:Eval,1
+Windows Server 2022 RTM DatacenterEvalCor Retail:TB:Eval,1
+Windows Server 2022 RTM Standard Retail,77
+Windows Server 2022 RTM Standard Volume:GVLK,1
+Windows Server 2022 RTM Standard;StandardACor Volume:MAK,16
+Windows Server 2022 RTM StandardACor Volume:GVLK,2
+Windows Server 2022 RTM StandardCor Retail,1
+Windows Server 2022 RTM StandardEval Retail:TB:Eval,1
+Windows Server 7 Home Premium,1
+Windows Server 7 Home Standard,1
+Windows Server 7 SB Retail,1
+Windows Server 7 SBS Standard retail,1
+Windows Server CloudStorage Next Beta CloudStorage OEM:NONSLP,2
+Windows Server Essentials 2019 RTM Solution OEM:DM,2
+Windows Server Essentials 2019 RTM Solution Retail,335
+Windows Server Essentials 2019 RTM Solution Volume:GVLK,2
+Windows Server Essentials 2019 RTM Solution Volume:MAK,7
+Windows Server Next  Beta APPXLOB For Editions Volume:MAK,8
+Windows Server Next  Beta ARM64 Retail,1
+Windows Server Next  Beta Datacenter VT:IA,1
+Windows Server Next  Beta DatacenterACor Volume:MAK,2
+Windows Server Next  Beta HI OEM:NONSLP,1
+Windows Server Next  Beta HI Retail,1
+Windows Server Next  Beta HI Volume:GVLK,3
+Windows Server Next  Beta HI Volume:MAK,1
+Windows Server Next  Beta Rdsh OEM:NONSLP,1
+Windows Server Next  Beta Rdsh Retail,1
+Windows Server Next  Beta Rdsh Volume:GVLK,2
+Windows Server Next  Beta Rdsh Volume:MAK,1
+Windows Server Next  Beta StandardACor Volume:MAK,2
+Windows Server Next  Datacenter Retail,4
+Windows Server Next  Datacenter Volume:GVLK,4
+Windows Server Next  Datacenter Volume:MAK,2
+Windows Server Next  DatacenterEval Retail:TB:Eval,1
+Windows Server Next  Foundation OEM:NONSLP,1
+Windows Server Next  MultiPointPremium OEM:NONSLP,1
+Windows Server Next  MultiPointStandard OEM:NONSLP,1
+Windows Server Next  RTM DatacenterNano Retail,1
+Windows Server Next  RTM StandardNano Retail,1
+Windows Server Next  Standard Retail,1
+Windows Server Next  Standard Volume:GVLK,3
+Windows Server Next  Standard Volume:MAK,2
+Windows Server Next  StandardEval Retail:TB:Eval,1
+Windows Server Next  StorageStandard OEM:NONSLP,2
+Windows Server Next  StorageWorkgroup OEM:NONSLP,2
+Windows Server Next  Web Retail,1
+Windows Server Next  Web Volume:GVLK,1
+Windows Server Next  Web Volume:MAK,1
+Windows Server Solution Retail,1
+Windows Server Solutions Next Solution Retail,2
+Windows Server Solutions Next Solution Volume:MAK,2
+Windows Server Solutions Premium Retail,1
+Windows Vista ALL Volume SKUs - CSVLK,10
+Windows Vista ALL Volume SKUs - MAK,408
+Windows Vista Business - GVLK,2
+Windows Vista Business N - GVLK,2
+Windows Vista Business N Retail,1
+Windows Vista Business Retail,10
+Windows Vista Enterprise - GVLK,2
+Windows Vista EnterpriseN GVLK,1
+Windows Vista Home Basic N Retail,1
+Windows Vista Home Basic Retail,6
+Windows Vista Home Premium - OEM:COA,2
+Windows Vista Home Premium - OEM:NONSLP,5
+Windows Vista Home Premium Retail,9
+Windows Vista Ultimate - OEM:NONSLP,1
+Windows Vista Ultimate Retail,84
+Windows Windows Server 2012 R2 RTM CoreSystem Retail,1
+Windows Windows Server 2012 R2 RTM Datacenter OEM:NONSLP,7
+Windows Windows Server 2012 R2 RTM Datacenter Retail,408
+Windows Windows Server 2012 R2 RTM Datacenter Volume:GVLK,3
+Windows Windows Server 2012 R2 RTM Datacenter;Standard Volume:CSVLK,1
+Windows Windows Server 2012 R2 RTM Standard OEM:NONSLP,6
+Windows Windows Server 2012 R2 RTM Standard Retail,220
+Windows Windows Server 2012 R2 RTM Standard Volume:GVLK,2
+Windows Windows Server 2022 RTM StandardEvalCor Retail:TB:Eval,1
