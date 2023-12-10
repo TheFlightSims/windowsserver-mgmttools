@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <KmsData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.0" Author="Hotbird64" xsi:noNamespaceSchemaLocation="KmsDataBase.xsd">
 
 	<WinBuilds>
@@ -8,17 +7,21 @@
 		<WinBuild BuildNumber="528" ReleaseDate="1992-04-06T00:00:00Z" DisplayName="Windows NT 3.1" PlatformId="55041" />
 		<WinBuild BuildNumber="807" ReleaseDate="1994-09-21T00:00:00Z" DisplayName="Windows NT 3.5" PlatformId="55041" />
 		<WinBuild BuildNumber="1057" ReleaseDate="1995-05-30T00:00:00Z" DisplayName="Windows NT 3.51" PlatformId="55041" />
+		<WinBuild BuildNumber="1175" ReleaseDate="1996-07-29T00:00:00Z" DisplayName="Windows NT 4.0" PlatformId="55041" />
 		<WinBuild BuildNumber="1381" ReleaseDate="1996-07-29T00:00:00Z" DisplayName="Windows NT 4.0" PlatformId="55041" />
 		<WinBuild BuildNumber="950" ReleaseDate="1995-08-24T00:00:00Z" DisplayName="Windows 95" PlatformId="55041" />
+		<WinBuild BuildNumber="999" ReleaseDate="1996-07-29T00:00:00Z" DisplayName="Windows 96" PlatformId="55041" />
 		<WinBuild BuildNumber="1998" ReleaseDate="1995-08-24T00:00:00Z" DisplayName="Windows 98 (First Build)" PlatformId="55041" />
 		<WinBuild BuildNumber="3000" ReleaseDate="2000-09-14T00:00:00Z" DisplayName="Windows ME" PlatformId="55041" />
 		<WinBuild BuildNumber="2195" ReleaseDate="2000-02-17T00:00:00Z" DisplayName="Windows 2000" PlatformId="55041" />
 		<WinBuild BuildNumber="2600" ReleaseDate="2001-10-25T00:00:00Z" DisplayName="Windows XP Build 2600" PlatformId="55041" />
 		<WinBuild BuildNumber="2700" ReleaseDate="2004-10-12T00:00:00Z" DisplayName="Windows XP build 2700" PlatformId="55041" />
 		<WinBuild BuildNumber="3790" ReleaseDate="2003-03-28T00:00:00Z" DisplayName="Windows Server 2003 / XP 64-bit" PlatformId="55041" MayBeServer="true" />
+		<WinBuild BuildNumber="5111" ReleaseDate="2001-10-25T00:00:00Z" DisplayName="Windows XP - Beta" PlatformId="55041" />
 		<WinBuild BuildNumber="6000" ReleaseDate="2006-11-30T00:00:00Z" DisplayName="Windows Vista / Server 2008 without SP" PlatformId="55041" MayBeServer="true" />
 		<WinBuild BuildNumber="6001" ReleaseDate="2008-02-04T00:00:00Z" DisplayName="Windows Vista / Server 2008 SP1" PlatformId="55041" MayBeServer="true" />
 		<WinBuild BuildNumber="6002" ReleaseDate="2009-05-26T00:00:00Z" DisplayName="Windows Vista / Server 2008 SP2" PlatformId="55041" MayBeServer="true" />
+		<WinBuild BuildNumber="7224" ReleaseDate="2003-03-28T00:00:00Z" DisplayName="Windows Essential Business Server 2008 R2" PlatformId="55041" MayBeServer="true" />
 		<WinBuild BuildNumber="7600" ReleaseDate="2009-10-22T00:00:00Z" DisplayName="Windows 7 / Server 2008 R2 without SP" PlatformId="55041" MayBeServer="true" />
 		<WinBuild BuildNumber="7601" ReleaseDate="2011-02-22T00:00:00Z" DisplayName="Windows 7 / Server 2008 R2 SP1" PlatformId="55041" MayBeServer="true" />
 		<WinBuild BuildNumber="9200" ReleaseDate="2012-10-26T00:00:00Z" DisplayName="Windows 8 / Server 2012" PlatformId="5426" MayBeServer="true" UsesNDR64="true" />
@@ -36,6 +39,7 @@
 		<WinBuild BuildNumber="19042" ReleaseDate="2020-09-22T00:00:00Z" DisplayName="Windows 10 20H2" PlatformId="3612" MayBeServer="true" UsesNDR64="true" />
 		<WinBuild BuildNumber="19043" ReleaseDate="2021-04-08T00:00:00Z" DisplayName="Windows 10 21H1" PlatformId="3612" UsesNDR64="true" />
 		<WinBuild BuildNumber="19044" ReleaseDate="2021-11-16T00:00:00Z" DisplayName="Windows 10 21H2" PlatformId="3612" UsesNDR64="true" />
+		<WinBuild BuildNumber="20279" ReleaseDate="2020-09-22T00:00:00Z" DisplayName="Windows 10X" PlatformId="3612" MayBeServer="true" />
 		<WinBuild BuildNumber="20348" ReleaseDate="2021-08-18T00:00:00Z" DisplayName="Windows Server 2022" PlatformId="3612" MayBeServer="true" UseForEpid="true" UsesNDR64="true" />
 		<WinBuild BuildNumber="22000" ReleaseDate="2021-06-24T00:00:00Z" DisplayName="Windows 11 21H2" PlatformId="3612" MayBeServer="true" UsesNDR64="true" />
 		<WinBuild BuildNumber="22610" ReleaseDate="2022-09-21T00:00:00Z" DisplayName="Windows 11 22H2" PlatformId="3612" MayBeServer="true" UsesNDR64="true" />
@@ -43,17 +47,13 @@
 		<WinBuild BuildNumber="25247" ReleaseDate="2022-12-01T00:00:00Z" DisplayName="Windows 11 22H2 Preview" PlatformId="3612" MayBeServer="true" UsesNDR64="true" />
 		<WinBuild BuildNumber="25252" ReleaseDate="2022-12-01T19:08:21Z" DisplayName="Windows Server 2022 (22H2) vNext" PlatformId="3612" MayBeServer="true" UsesNDR64="true" />
 		<WinBuild BuildNumber="25246" ReleaseDate="2022-12-01T19:08:21Z" DisplayName="Windows Server 2022 (22H2) vNext" PlatformId="3612" MayBeServer="true" UsesNDR64="true" />
-		<WinBuild BuildNumber="1175" ReleaseDate="1996-07-29T00:00:00Z" DisplayName="Windows NT 4.0" PlatformId="55041" />
-		<WinBuild BuildNumber="999" ReleaseDate="1996-07-29T00:00:00Z" DisplayName="Windows 96" PlatformId="55041" />
-		<WinBuild BuildNumber="5111" ReleaseDate="2001-10-25T00:00:00Z" DisplayName="Windows XP - Beta" PlatformId="55041" />
-		<WinBuild BuildNumber="20279" ReleaseDate="2020-09-22T00:00:00Z" DisplayName="Windows 10X" PlatformId="3612" MayBeServer="true" />
-		<WinBuild BuildNumber="7224" ReleaseDate="2003-03-28T00:00:00Z" DisplayName="Windows Essential Business Server 2008 R2" PlatformId="55041" MayBeServer="true" />
 	</WinBuilds>
 
 	<CsvlkItems>
 		<CsvlkItem DisplayName="Windows Server 2022" VlmcsdIndex="0" GroupId="4573" MinKeyId="30000" MaxKeyId="20029999" IniFileName="Windows" ReleaseDate="2021-08-18T00:00:00Z" EPid="03612-04573-018-246887-03-1033-20348.0000-1862021" Id="661f7658-7035-4b4c-9f35-010682943ec2">
 			<Activate KmsItem="b74263e4-0f92-46c6-bcf8-c11d5efe2959" />
 			<Activate KmsItem="58e2134f-8e11-4d17-9cb2-91069c151148" />
+			
 			<Activate KmsItem="7fde5219-fbfa-484a-82c9-34d1ad53e856" />
 			<Activate KmsItem="3c40b358-5948-45af-923b-53d21fcc7e79" />
 			<Activate KmsItem="cb8fc780-2c05-495a-9710-85afffc904d7" />
@@ -66,8 +66,6 @@
 			<Activate KmsItem="8665cb71-468c-4aa3-a337-cb9bc9d5eaac" />
 			<Activate KmsItem="8456efd3-0c04-4089-8740-5b7238535a65" />
 			<Activate KmsItem="6e9fc069-257d-4bc4-b4a7-750514d32743" />
-			<Activate KmsItem="212a64dc-43b1-4d3d-a30c-2fc69d2095c6" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
 			<Activate KmsItem="969fe3c0-a3ec-491a-9f25-423605deb365" />
 			<Activate KmsItem="11b15659-e603-4cf1-9c1f-f0ec01b81888" />
 			<Activate KmsItem="8449b1fb-f0ea-497a-99ab-66ca96e9a0f5" />
@@ -93,7 +91,6 @@
 			<Activate KmsItem="6e9fc069-257d-4bc4-b4a7-750514d32743" />
 			<Activate KmsItem="969fe3c0-a3ec-491a-9f25-423605deb365" />
 			<Activate KmsItem="212a64dc-43b1-4d3d-a30c-2fc69d2095c6" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
 			<Activate KmsItem="8449b1fb-f0ea-497a-99ab-66ca96e9a0f5" />
 			<Activate KmsItem="11b15659-e603-4cf1-9c1f-f0ec01b81888" />
 			<Activate KmsItem="cbdcb1ba-e093-4c81-a463-10775291fdf9" />
@@ -105,7 +102,7 @@
 
 		<CsvlkItem DisplayName="Windows Server 2019 (Azure Only)" GroupId="206" MinKeyId="2865000" MaxKeyId="2874999" IniFileName="Windows" ReleaseDate="2018-10-02T00:00:00Z" Id="3c006fa7-3b03-45a4-93da-63ddc1bdce11">
 			<Activate KmsItem="58e2134f-8e11-4d17-9cb2-91069c151148" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
+			
 			<Activate KmsItem="cb8fc780-2c05-495a-9710-85afffc904d7" />
 			<Activate KmsItem="3c40b358-5948-45af-923b-53d21fcc7e79" />
 			<Activate KmsItem="7fde5219-fbfa-484a-82c9-34d1ad53e856" />
@@ -140,7 +137,7 @@
 			<Activate KmsItem="8456efd3-0c04-4089-8740-5b7238535a65" />
 			<Activate KmsItem="6e9fc069-257d-4bc4-b4a7-750514d32743" />
 			<Activate KmsItem="212a64dc-43b1-4d3d-a30c-2fc69d2095c6" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
+			
 			<Activate KmsItem="8449b1fb-f0ea-497a-99ab-66ca96e9a0f5" />
 			<Activate KmsItem="969fe3c0-a3ec-491a-9f25-423605deb365" />
 			<Activate KmsItem="11b15659-e603-4cf1-9c1f-f0ec01b81888" />
@@ -165,7 +162,7 @@
 			<Activate KmsItem="6e9fc069-257d-4bc4-b4a7-750514d32743" />
 			<Activate KmsItem="969fe3c0-a3ec-491a-9f25-423605deb365" />
 			<Activate KmsItem="212a64dc-43b1-4d3d-a30c-2fc69d2095c6" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
+			
 			<Activate KmsItem="8449b1fb-f0ea-497a-99ab-66ca96e9a0f5" />
 			<Activate KmsItem="11b15659-e603-4cf1-9c1f-f0ec01b81888" />
 			<Activate KmsItem="cbdcb1ba-e093-4c81-a463-10775291fdf9" />
@@ -187,7 +184,7 @@
 			<Activate KmsItem="6e9fc069-257d-4bc4-b4a7-750514d32743" />
 			<Activate KmsItem="969fe3c0-a3ec-491a-9f25-423605deb365" />
 			<Activate KmsItem="212a64dc-43b1-4d3d-a30c-2fc69d2095c6" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
+			
 		</CsvlkItem>
 
 		<CsvlkItem DisplayName="Windows Server 2016 (Microsoft Internal Lab)" IsLab="true" GroupId="206" MinKeyId="1510000" MaxKeyId="2009999" IniFileName="Windows" ReleaseDate="2016-08-02T00:00:00Z" Id="3c2da9a5-1c6e-45d1-855f-fdbef536676f">
@@ -209,7 +206,7 @@
 			<Activate KmsItem="6e9fc069-257d-4bc4-b4a7-750514d32743" />
 			<Activate KmsItem="969fe3c0-a3ec-491a-9f25-423605deb365" />
 			<Activate KmsItem="212a64dc-43b1-4d3d-a30c-2fc69d2095c6" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
+			
 		</CsvlkItem>
 
 		<CsvlkItem DisplayName="Windows 10 2019" GroupId="206" MinKeyId="256000000" MaxKeyId="265999999" IniFileName="Windows" ReleaseDate="2018-10-02T00:00:00Z" Id="90da7373-1c51-430b-bf26-c97e9c5cdc31">
@@ -220,7 +217,7 @@
 			<Activate KmsItem="3c40b358-5948-45af-923b-53d21fcc7e79" />
 			<Activate KmsItem="cb8fc780-2c05-495a-9710-85afffc904d7" />
 			<Activate KmsItem="212a64dc-43b1-4d3d-a30c-2fc69d2095c6" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
+			
 		</CsvlkItem>
 
 		<CsvlkItem DisplayName="Windows 10 2015" GroupId="206" MinKeyId="390000000" MaxKeyId="404999999" IniFileName="Windows" ReleaseDate="2015-07-29T00:00:00Z" Id="0724cb7d-3437-4cb7-93cb-830375d0079d">
@@ -229,7 +226,7 @@
 			<Activate KmsItem="3c40b358-5948-45af-923b-53d21fcc7e79" />
 			<Activate KmsItem="cb8fc780-2c05-495a-9710-85afffc904d7" />
 			<Activate KmsItem="212a64dc-43b1-4d3d-a30c-2fc69d2095c6" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
+			
 		</CsvlkItem>
 
 		<CsvlkItem DisplayName="Windows 10 2016" GroupId="206" MinKeyId="531000000" MaxKeyId="545999999" IniFileName="Windows" ReleaseDate="2016-08-02T00:00:00Z" Id="30a42c86-b7a0-4a34-8c90-ff177cb2acb7">
@@ -239,7 +236,7 @@
 			<Activate KmsItem="3c40b358-5948-45af-923b-53d21fcc7e79" />
 			<Activate KmsItem="cb8fc780-2c05-495a-9710-85afffc904d7" />
 			<Activate KmsItem="212a64dc-43b1-4d3d-a30c-2fc69d2095c6" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
+			
 		</CsvlkItem>
 
 		<CsvlkItem DisplayName="Windows 10 2015 (Microsoft Internal Lab)" IsLab="true" GroupId="206" MinKeyId="10700000" MaxKeyId="10799999" IniFileName="Windows" ReleaseDate="2016-08-02T00:00:00Z" Id="7a802526-4c94-4bd1-ba14-835a1aca2120">
@@ -251,7 +248,7 @@
 			<Activate KmsItem="e1c51358-fe3e-4203-a4a2-3b6b20c9734e" />
 			<Activate KmsItem="bbb97b3b-8ca4-4a28-9717-89fabd42c4ac" />
 			<Activate KmsItem="6d646890-3606-461a-86ab-598bb84ace82" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
+			
 			<Activate KmsItem="cbdcb1ba-e093-4c81-a463-10775291fdf9" />
 		</CsvlkItem>
 
@@ -266,7 +263,7 @@
 			<Activate KmsItem="e1c51358-fe3e-4203-a4a2-3b6b20c9734e" />
 			<Activate KmsItem="bbb97b3b-8ca4-4a28-9717-89fabd42c4ac" />
 			<Activate KmsItem="6d646890-3606-461a-86ab-598bb84ace82" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
+			
 			<Activate KmsItem="cbdcb1ba-e093-4c81-a463-10775291fdf9" />
 		</CsvlkItem>
 
@@ -280,7 +277,7 @@
 			<Activate KmsItem="e1c51358-fe3e-4203-a4a2-3b6b20c9734e" />
 			<Activate KmsItem="bbb97b3b-8ca4-4a28-9717-89fabd42c4ac" />
 			<Activate KmsItem="6d646890-3606-461a-86ab-598bb84ace82" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
+			
 			<Activate KmsItem="cbdcb1ba-e093-4c81-a463-10775291fdf9" />
 		</CsvlkItem>
 
@@ -291,7 +288,7 @@
 			<Activate KmsItem="cb8fc780-2c05-495a-9710-85afffc904d7" />
 			<Activate KmsItem="212a64dc-43b1-4d3d-a30c-2fc69d2095c6" />
 			<Activate KmsItem="5f94a0bb-d5a0-4081-a685-5819418b2fe0" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
+			
 		</CsvlkItem>
 
 		<CsvlkItem DisplayName="Windows Server Next (Pre-Release)" IsPreview="true" GroupId="206" MinKeyId="21001500" MaxKeyId="21010499" IniFileName="Windows" ReleaseDate="2015-07-29T00:00:00Z" Id="c609957a-dc23-48b3-8c6b-31b303479de2">
@@ -312,7 +309,7 @@
 			<Activate KmsItem="8456efd3-0c04-4089-8740-5b7238535a65" />
 			<Activate KmsItem="6e9fc069-257d-4bc4-b4a7-750514d32743" />
 			<Activate KmsItem="6d5f5270-31ac-433e-b90a-39892923c657" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
+			
 		</CsvlkItem>
 
 		<CsvlkItem DisplayName="Windows Server 2012 R2 With Win 10" GroupId="206" MinKeyId="405000000" MaxKeyId="424999999" IniFileName="Windows" ReleaseDate="2015-07-29T00:00:00Z" Id="20e938bb-df44-45ee-bde1-4e4fe7477f37">
@@ -329,7 +326,7 @@
 			<Activate KmsItem="8665cb71-468c-4aa3-a337-cb9bc9d5eaac" />
 			<Activate KmsItem="8456efd3-0c04-4089-8740-5b7238535a65" />
 			<Activate KmsItem="212a64dc-43b1-4d3d-a30c-2fc69d2095c6" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
+			
 		</CsvlkItem>
 
 		<CsvlkItem DisplayName="Windows Server 2012 R2 With Win 10 (Microsoft Internal Lab)" IsLab="true" GroupId="206" MinKeyId="17650000" MaxKeyId="17849999" IniFileName="Windows" ReleaseDate="2015-07-29T00:00:00Z" Id="9e3fde40-d4b3-4c1d-9bde-32735aa19b39">
@@ -349,7 +346,7 @@
 			<Activate KmsItem="8665cb71-468c-4aa3-a337-cb9bc9d5eaac" />
 			<Activate KmsItem="8456efd3-0c04-4089-8740-5b7238535a65" />
 			<Activate KmsItem="212a64dc-43b1-4d3d-a30c-2fc69d2095c6" />
-			<Activate KmsItem="d27cd636-1962-44e9-8b4f-27b6c23efb85" />
+			
 		</CsvlkItem>
 
 		<CsvlkItem DisplayName="Windows 8.1" GroupId="206" MinKeyId="339000000" MaxKeyId="353999999" IniFileName="Windows" ReleaseDate="2013-10-17T00:00:00Z" Id="29d0b60f-66da-4858-bcaf-9eb513cd310d">
@@ -528,8 +525,8 @@
 				<SkuItem DisplayName="Windows Server 2022 Azure Core" Id="8c8f0ad3-9a43-4e05-b840-93b8d1475cbc" Gvlk="6N379-GGTMK-23C6M-XVVTC-CKFRQ" />
 				<SkuItem DisplayName="Windows Server 2022 Datacenter" Id="ef6cfc9f-8c5d-44ac-9aad-de6a2ea0ae03" Gvlk="WX4NM-KYWYW-QJJR4-XV3QB-6VM33" />
 				<SkuItem DisplayName="Windows Server 2022 Standard" Id="9bd77860-9b31-4b7b-96ad-2564017315bf" Gvlk="VDYBN-27WPP-V4HQT-9VMD4-VMK7H" />
-				<SkuItem DisplayName="Windows Server 2022 Datacenter (Semi-Annual Channel)" Id="39e69c41-42b4-4a0a-abad-8e3c10a797cc" Gvlk="QFND9-D3Y9C-J3KKY-6RPVP-2DPYV" />
-				<SkuItem DisplayName="Windows Server 2022 Standard (Semi-Annual Channel)" Id="f5e9429c-f50b-4b98-b15c-ef92eb5cff39" Gvlk="67KN8-4FYJW-2487Q-MQ2J7-4C4RG" />
+				<SkuItem DisplayName="Windows Server 2021 Datacenter (Semi-Annual Channel)" Id="39e69c41-42b4-4a0a-abad-8e3c10a797cc" Gvlk="QFND9-D3Y9C-J3KKY-6RPVP-2DPYV" />
+				<SkuItem DisplayName="Windows Server 2021 Standard (Semi-Annual Channel)" Id="f5e9429c-f50b-4b98-b15c-ef92eb5cff39" Gvlk="67KN8-4FYJW-2487Q-MQ2J7-4C4RG" />
 				<SkuItem DisplayName="Windows Server 2022 KMS Host" Id="661f7658-7035-4b4c-9f35-010682943ec2" Gvlk="R47NX-MVMYR-98PV9-XYVXY-XBXCH" />
 			</KmsItem>
 
@@ -565,8 +562,14 @@
 				<SkuItem DisplayName="Windows 10 Home N" Id="7b9e1751-a8da-4f75-9560-5fadfe3d8e38" Gvlk="3KHY7-WNT83-DGQKR-F7HPR-844BM" />
 				<SkuItem DisplayName="Windows 10 Home Single Language" Id="cd918a57-a41b-4c82-8dce-1a538e221a83" Gvlk="7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH" />
 			</KmsItem>
-
+			
+			<KmsItem DisplayName="Windows ServerRdsh (Volume)" Id="cbdcb1ba-e093-4c81-a463-10775291fdf9" IsPreview="false" DefaultKmsProtocol="6.0">
+				<SkuItem DisplayName="Windows 10/11 Remote Server" Id="e4db50ea-bda1-4566-b047-0ca50abc6f07" Gvlk="7NBT4-WGBQX-MP4H7-QXFF8-YP3KX" />
+			</KmsItem>
+			
 			<KmsItem DisplayName="Windows 10/11 (Volume)" Id="58e2134f-8e11-4d17-9cb2-91069c151148" IsPreview="false" DefaultKmsProtocol="6.0">
+				<SkuItem DisplayName="Windows 10 Enterprise 2015 LTSB" Id="7b51a46c-0c04-4e8f-9af4-8496cca90d5e" Gvlk="WNMTR-4C88C-JK8YV-HQ7T2-76DF9" />
+				<SkuItem DisplayName="Windows 10 Enterprise 2015 LTSB N" Id="87b838b7-41b6-4590-8318-5797951d8529" Gvlk="2F77B-TNFGY-69QQF-B8YKP-D69TJ" />
 				<SkuItem DisplayName="Windows 10/11 Education" Id="e0c42288-980c-4788-a014-c080d2e1926e" Gvlk="NW6C2-QMPVW-D7KKK-3GKT6-VCFB2" />
 				<SkuItem DisplayName="Windows 10/11 Education N" Id="3c102355-d027-42c6-ad23-2e7ef8a02585" Gvlk="2WH4N-8QGBV-H22JP-CT43Q-MDWWJ" />
 				<SkuItem DisplayName="Windows 10/11 Enterprise" Id="73111121-5638-40f6-bc11-f1d7b0d64300" Gvlk="NPPR9-FWDCX-D2C8J-H872K-2YT43" />
@@ -580,18 +583,12 @@
 				<SkuItem DisplayName="Windows 10/11 Professional Preview" Id="ff808201-fec6-4fd4-ae16-abbddade5706" Gvlk="XQHPH-N4D9W-M8P96-DPDFP-TMVPY" IsGeneratedGvlk="true" />
 				<SkuItem DisplayName="Windows 10/11 Enterprise Preview" Id="43f2ab05-7c87-4d56-b27c-44d0f9a3dabd" Gvlk="QNMXX-GCD3W-TCCT4-872RV-G6P4J" IsGeneratedGvlk="true" />
 				<SkuItem DisplayName="Windows 10/11 Enterprise for Virtual Desktops" Id="ec868e65-fadf-4759-b23e-93fe37f2cc29" Gvlk="CPWHC-NT2C7-VYW78-DHDB2-PG3GK" />
-				<SkuItem DisplayName="Windows 10/11 Remote Server" Id="e4db50ea-bda1-4566-b047-0ca50abc6f07" Gvlk="7NBT4-WGBQX-MP4H7-QXFF8-YP3KX" />
 				<SkuItem DisplayName="Windows 10/11 S (Lean)" Id="0df4f814-3f57-4b8b-9a9d-fddadcd69fac" Gvlk="NBTWJ-3DR69-3C4V8-C26MC-GQ9M6" />
 				<SkuItem DisplayName="Windows 10/11 SE" Id="ca7df2e3-5ea0-47b8-9ac1-b1be4d8edd69" Gvlk="37D7F-N49CB-WQR8W-TBJ73-FM8RX" />
 				<SkuItem DisplayName="Windows 10/11 SE N" Id="d30136fc-cb4b-416e-a23d-87207abc44a9" Gvlk="6XN7V-PCBDC-BDBRH-8DQY7-G6R44" />
-				<SkuItem DisplayName="Windows 11 (only) RTM IoTEnterprise LTSC" Id="59eb965c-9150-42b7-a0ec-22151b9897c5" Gvlk="KBN8V-HFGQ4-MGXVD-347P6-PDQGT" />
+				<SkuItem DisplayName="Windows 11 IoT Enterprise (LTSC)" Id="59eb965c-9150-42b7-a0ec-22151b9897c5" Gvlk="KBN8V-HFGQ4-MGXVD-347P6-PDQGT" />
 			</KmsItem>
 
-			<KmsItem DisplayName="Windows 10 2015 (Volume)" Id="58e2134f-8e11-4d17-9cb2-91069c151148" IsPreview="false" DefaultKmsProtocol="6.0">
-				<SkuItem DisplayName="Windows 10 Enterprise 2015 LTSB" Id="7b51a46c-0c04-4e8f-9af4-8496cca90d5e" Gvlk="WNMTR-4C88C-JK8YV-HQ7T2-76DF9" />
-				<SkuItem DisplayName="Windows 10 Enterprise 2015 LTSB N" Id="87b838b7-41b6-4590-8318-5797951d8529" Gvlk="2F77B-TNFGY-69QQF-B8YKP-D69TJ" />
-			</KmsItem>
-			
 			<KmsItem DisplayName="Windows 7" Id="7fde5219-fbfa-484a-82c9-34d1ad53e856" IsPreview="false" DefaultKmsProtocol="4.0">
 				<SkuItem DisplayName="Windows 7 Enterprise" Id="ae2ee509-1b34-41c0-acb7-6d4650168915" Gvlk="33PXH-7Y6KF-2VJC9-XBBR8-HVTHH" />
 				<SkuItem DisplayName="Windows 7 Enterprise E" Id="46bbed08-9c7b-48fc-a614-95250573f4ea" Gvlk="C29WB-22CC8-VJ326-GHFJW-H9DH4" />
