@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Management.Automation;
 using System.Management.Automation.Runspaces;
-
+using System.Windows.Forms;
 
 namespace DiscreteDeviceAssigner
 {
@@ -126,14 +126,34 @@ namespace DiscreteDeviceAssigner
             catch { }
         }
 
-        public static void GpuPartitioning(VirtualMachine vm)
+        public static void GpuPartitioning(VirtualMachine vm, CimInstance device)
         {
-            RunScript("Add-VMGpuPartitionAdapter -VMName \"" + vm.Name + "\"");
-            RunScript("Set-VMGpuPartitionAdapter -MinPartitionVRAM 8000000 -MaxPartitionVRAM 10000000 " +
-                "-OptimalPartitionVRAM 10000000 -MinPartitionEncode 8000000 -MaxPartitionEncode 10000000 " +
-                "-OptimalPartitionEncode 10000000 -MinPartitionDecode 8000000 -MaxPartitionDecode 10000000 " +
-                "-OptimalPartitionDecode 10000000 -MinPartitionCompute 8000000 -MaxPartitionCompute 10000000 " +
-                "-OptimalPartitionCompute 10000000 -VMName \"" + vm.Name + "\"");
+            string DeviceIDInstance = device.CimInstanceProperties["DeviceId"] != null ? device.CimInstanceProperties["DeviceId"].Value as string : null;
+            var locationPath = GetPnpDeviceLocationPath(DeviceIDInstance)[0];
+            
+            //securing devices from crashing
+            try 
+            {
+                RunScript("Set-VM -Name \"" + vm.Name + "\" -AutomaticStopAction TurnOff");
+                RunScript("Set-VM -GuestControlledCacheTypes $true -VMName \"" + vm.Name + "\"");
+                RunScript("Set-VM -LowMemoryMappedIoSpace 3Gb -VMName \"" + vm.Name + "\"");
+                RunScript("Set-VM -HighMemoryMappedIoSpace 33280Mb -VMName \"" + vm.Name + "\"");
+            } catch 
+            {
+                MessageBox.Show($"Setting VM is failed, failing the application"); //Securing the devices
+                throw new InvalidOperationException("Operation failed! Raise function GpuPartitioning (line 129), with the debug DeviceIDInstance: " + DeviceIDInstance);
+            }
+
+            try
+            {
+                RunScript("Disable-PnpDevice -InstanceId \"" + DeviceIDInstance + "\" -Confirm:$false");
+                RunScript("Dismount-VMHostAssignableDevice -Force -LocationPath \"" + locationPath + "\"");
+                RunScript("Add-VMAssignableDevice -LocationPath \"" + locationPath + "\" -VMName \"" + vm.Name + "\"");
+            } catch
+            {
+                MessageBox.Show($"Disable device is failed, failing the application"); //Securing the devices and VMs
+                throw new InvalidOperationException("Operation failed! Raise function GpuPartitioning (line 129), with the debug locationPath: " + locationPath);
+            }
         }
 
         public static void RemoveGpuPartitioning(VirtualMachine vm)
@@ -184,6 +204,11 @@ namespace DiscreteDeviceAssigner
             }
             catch { }
             RunScript("Add-VMAssignableDevice -LocationPath \"" + locationPaths[0] + "\" -VMName \"" + vm.Name + "\"");
+        }
+
+        internal static void GpuPartitioning(VirtualMachine item1, VMAssignedDevice item2)
+        {
+            throw new NotImplementedException();
         }
     }
 }

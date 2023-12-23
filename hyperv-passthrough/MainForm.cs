@@ -102,14 +102,12 @@ namespace DiscreteDeviceAssigner
                 {
                     if (Convert.ToString(dev.CimInstanceProperties["PnpClass"]).Contains("Display") == true)
                     {
-                        if (MessageBox.Show($"The selected device is the GPU. Do you want to pass through it via shared GPU partition mode?", $"Advanced GPU partition mode", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                        if (MessageBox.Show($"The selected device is the GPU. Do you want to pass through it using DDA mode?", $"Prompt for DDA", MessageBoxButtons.YesNo) == DialogResult.Yes)
                         {
                             try
                             {
-                                MessageBox.Show($"Note: If you have more than one GPU, the Hyper-V will automatic choose one of your GPUs. The device you choose may not be pass through. \n" +
-                                                $"If you want to pass through the specific, go to Device Manager, then disable all other device while leaving the device you want to pass through \n\n" +
-                                                $"Sorry for that, this application is still under development.", $"Note", MessageBoxButtons.OK);
-                                PowerShellWrapper.GpuPartitioning(data.Item1);
+                                MessageBox.Show($"The GPU Passthrough is renewed to the DDA method, but still under development.", $"Note", MessageBoxButtons.OK);
+                                PowerShellWrapper.GpuPartitioning(data.Item1, dev);
                             }
                             catch (Exception ex)
                             {
@@ -210,6 +208,7 @@ namespace DiscreteDeviceAssigner
             UInt32 MemorySet = new SetMemory().ReturnResult();
             PowerShellWrapper.SetLowMemoryMappedIoSpace(data.Item1);
             PowerShellWrapper.SetHighMemoryMappedIoSpace(data.Item1, MemorySet * 1024 * 1024);
+            
         }
     }
 }
