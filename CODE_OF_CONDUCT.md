@@ -42,7 +42,7 @@ Some TheFlightSims open source projects may adopt a project-specific code of con
 In those cases, a TheFlightSims employee will be identified as the Project Steward,
 who will receive and handle reports of code of conduct violations. In the event
 that a project hasn’t identified a Project Steward, you can report problems by
-emailing to theflightsims@gmail.com.
+emailing to welcome.tfs@outlook.com.
 
 We will investigate every complaint, but you may not receive a direct response.
 We will use our discretion in determining when and how to follow up on reported
@@ -53,5 +53,3 @@ taken. The identity of the reporter will be omitted from the details of the
 report supplied to the accused. In potentially harmful situations, such as
 ongoing harassment or threats to anyone's safety, we may take action without
 notice.
-
-[IndieWeb Code of Conduct]: https://indieweb.org/code-of-conduct
