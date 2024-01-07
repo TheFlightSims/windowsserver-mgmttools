@@ -69,5 +69,4 @@ remote-msi-manager/UnitTest/obj/x86/Release/build.force
 vlmcsd-beta/database-config/sql/getcontent.msmetadata
 vlmcsd-beta/vlmcsd/bin/vlmcs
 vlmcsd-beta/vlmcsd/bin/vlmcsd
-vlmcsd-beta/vlmcsd/bin/CMakeCache.txt
-vlmcsd-beta/vlmcsd/bin/CMakeFiles/cmake.check_cache
+*.o
