@@ -9,7 +9,7 @@ Windows Server management tools are the collection of various projects by many d
 It's depending on the way contributors react to our projects. Currently, this repo only supports these tools:
 
 * [GPO Checker](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki/GPO-Checker)
-* [Hyper-V Passthrough Device](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki/Hyper-V-Passthrough-Device)
+* [Hyper-V Device Passthrough](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki/Hyper-V-Passthrough-Device)
 * [NVIDIA Driver Cleaner](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki/NVIDIA-Driver-Cleaner)
 * [PDB Downloader](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki/PDB-Downloader)
 * [Port Scanner](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki/Port-Scanner)
