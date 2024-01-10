@@ -261,7 +261,7 @@ mv initrd~.lzma initrd
 > You still can change the behavior of the compression model (e.g., compress with a smaller packet size), but you must know what you do.
 > To understand how to use WSL, you can see [here](https://aka.ms/wsl). Although WSL1 and WSL2 can do the same, we recommend WSL2 because more stable and secure for your device
 
-1. Edit the virtual floppy disk
+2. Edit the virtual floppy disk
 
 You may need to use [OSFMount](https://www.osforensics.com/tools/mount-disk-images.html) to mount the formatted-FAT16-[floppy disk](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/vlmcsd-beta/vlmcsd-floppy/vlmcsd-beta-floppy.vfd).
 
