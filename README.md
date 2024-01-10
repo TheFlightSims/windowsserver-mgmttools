@@ -17,7 +17,6 @@ For better understanding, you can see the [wiki page](https://github.com/TheFlig
 ***To run and use applications in this project, make sure your computer is installed with the features:***
 
  - dotNET 2.1, dotNET 3.5, dotNET 4.8. These are built-in features and can be enabled. You can see the document [here](https://learn.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows)
- - Modern applications require .NET 7.0. You can download it [here](https://dotnet.microsoft.com/en-us/download)
  - Visual C++ 2015 and all versions later. You can download it [here](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 
 # The Files and Folders
