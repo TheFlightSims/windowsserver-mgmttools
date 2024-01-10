@@ -14,4 +14,8 @@ GPO Checker is a vulnerabilities scanner, to check the misconfigurations in the 
 
 > Note: Always run GPO Checker with Administrator privilege
 
+![Alt text](images/gpo-01.png)
 
+Once it's running, click `Go` then wait for a minute for the GPO Checker scan all policies.
+
+> If you're not running the application on the computer not joined into a domain, nor the domain cannot be contacted, GPO Checker won't check the policies, and return the error.
