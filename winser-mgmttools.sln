@@ -7,19 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hyper-V Device Passthrough"
 		hyperv-passthrough\hypervpassth.sln = hyperv-passthrough\hypervpassth.sln
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NVIDIA Driver Cleaner", "NVIDIA Driver Cleaner", "{51D71224-5A91-46FB-A274-B7DDF83C0DBD}"
-	ProjectSection(SolutionItems) = preProject
-		nvidia-driver-cleaner\NvidiaCleaner.sln = nvidia-driver-cleaner\NvidiaCleaner.sln
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Port Scanner", "Port Scanner", "{0C277634-934B-4B5A-B982-F051906515CF}"
 	ProjectSection(SolutionItems) = preProject
 		port-scanner\PortScanner.sln = port-scanner\PortScanner.sln
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Remote MSI Manager", "Remote MSI Manager", "{A5B95174-1AE6-4B12-AF7C-1BECAF8ECDBA}"
-	ProjectSection(SolutionItems) = preProject
-		remote-msi-manager\RemoteMsiManager.sln = remote-msi-manager\RemoteMsiManager.sln
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vlmcsd - License Manager", "vlmcsd - License Manager", "{AD5B945C-D5BC-4FB1-BAD3-C27CC9BC2A5B}"
@@ -27,11 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "vlmcsd - License Manager", 
 		vlmcsd-beta\license-manager\LicenseManager.sln = vlmcsd-beta\license-manager\LicenseManager.sln
 		vlmcsd-beta\vlmcsd\VisualStudio\vlmcsd-linux.sln = vlmcsd-beta\vlmcsd\VisualStudio\vlmcsd-linux.sln
 		vlmcsd-beta\vlmcsd\VisualStudio\vlmcsd-windows.sln = vlmcsd-beta\vlmcsd\VisualStudio\vlmcsd-windows.sln
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PDB Downloader", "PDB Downloader", "{BE174082-9B76-48B8-B92F-F5A84AA7FB82}"
-	ProjectSection(SolutionItems) = preProject
-		PDB-Downloader\PDB-Downloader.sln = PDB-Downloader\PDB-Downloader.sln
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Group Policy Checker", "Group Policy Checker", "{AA23841C-E480-4291-8BB6-E1525327271E}"
