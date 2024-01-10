@@ -1,10 +1,10 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
-[assembly: AssemblyTitle("Hyper-V Passthrough Device")]
+[assembly: AssemblyTitle("Hyper-V Device Passthrough")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("TheFlightSims (feat. chanket@github")]
-[assembly: AssemblyProduct("Hyper-V Passthrough Device")]
+[assembly: AssemblyProduct("Hyper-V Device Passthrough")]
 [assembly: AssemblyCopyright("Copyright © 2018 - 2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -606,7 +606,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Hyper-V Passthrough Device</value>
+    <value>Hyper-V Device Passthrough</value>
   </data>
   <data name="&gt;&gt;columnHeaderDevice.Name" xml:space="preserve">
     <value>columnHeaderDevice</value>
