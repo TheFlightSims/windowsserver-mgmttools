@@ -38,7 +38,7 @@ Also, you may need [Advanced Installer](https://www.advancedinstaller.com/) to c
 Otherwise, you can do other ways:
 
  - [Review Wiki Page](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki)
- - Submit bugs and feature requests in [GitHub](https://github.com/TheFlightSims/windowsserver-mgmttools/issues) or our [Discord server](https://discord.gg/VdbJAHKhuW)
+ - Submit bugs and feature requests in [GitHub](https://github.com/TheFlightSims/windowsserver-mgmttools/issues)
  - [Review source codes](https://github.com/TheFlightSims/windowsserver-mgmttools)
  - [Review and commit pull requests](https://github.com/TheFlightSims/windowsserver-mgmttools/pulls)
 
@@ -46,7 +46,7 @@ Otherwise, you can do other ways:
 
 ## Feedback
 
-To feedback this repository, go to [**feedback**](https://github.com/TheFlightSims/windowsserver-mgmttools/issues) or **[join our Discord server](https://discord.gg/VdbJAHKhuW)**
+To feedback this repository, go to [**feedback**](https://github.com/TheFlightSims/windowsserver-mgmttools/issues)
 
 # License & Original Contributors
 
