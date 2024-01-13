@@ -182,7 +182,7 @@
     <EmbeddedResource Include="SetMemory.resx">
       <DependentUpon>SetMemory.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="etc\cert.pfx" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -205,10 +205,18 @@ namespace DiscreteDeviceAssigner
         private void memchangeloc(object sender, EventArgs e)
         {
             DeviceData data = contextMenuStrip.Tag as DeviceData;
-            UInt32 MemorySet = new SetMemory().ReturnResult();
-            PowerShellWrapper.SetLowMemoryMappedIoSpace(data.Item1);
-            PowerShellWrapper.SetHighMemoryMappedIoSpace(data.Item1, MemorySet * 1024 * 1024);
-            
+            try {
+                UInt32[] LowHighCollection = new SetMemory().ReturnResult();
+                UInt32 MemorySetLow = LowHighCollection[0];
+                UInt32 MemorySetHigh = LowHighCollection[1];
+                PowerShellWrapper.SetLowMemoryMappedIoSpace(data.Item1, MemorySetLow * 1024 * 1024);
+                PowerShellWrapper.SetHighMemoryMappedIoSpace(data.Item1, MemorySetHigh * 1024 * 1024);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,"Error", MessageBoxButtons.OK);
+            }
+
         }
     }
 }

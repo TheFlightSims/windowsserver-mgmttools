@@ -1081,9 +1081,6 @@ namespace HGM.Hotbird64.LicenseManager
 
         private void CheckBoxHideInput_Click(object sender, RoutedEventArgs e)
         {
-#if DEBUG
-            Debug.Assert(CheckBoxHideInput.IsChecked != null, "CheckBoxHideInput.IsChecked != null");
-#endif
             if (CheckBoxHideInput.IsChecked.Value)
             {
                 PassWordBoxEpidInput.Visibility = Visibility.Visible;

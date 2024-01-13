@@ -8,11 +8,7 @@ namespace HyperVpassthroughdev
         public SetMemory()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            ShowDialog();
         }
 
         private void HighMemchanges(object sender, EventArgs e)
@@ -22,31 +18,23 @@ namespace HyperVpassthroughdev
 
         public void OKClick(object sender, EventArgs e)
         {
-            try
-            {
-                if (Convert.ToInt32(HighMem.Text) < Convert.ToInt32("512"))
-                {
-                    MessageBox.Show($"The high memory location must be higher than 512Mib", $"Error", MessageBoxButtons.OK);
-                }
-                else
-                {
-                    Close();
-                }
-            }
-            catch (Exception exp)
-            {
-                MessageBox.Show($"An error has occurred: \n" + exp, "Error", MessageBoxButtons.OK);
-            }
-
+            Close();
         }
 
-        public UInt32 ReturnResult()
+        public UInt32[] ReturnResult()
         {
-            ShowDialog();
-            return (uint)Convert.ToInt32(HighMem.Text);
+            UInt32 LowMemSet = (uint)Convert.ToInt32(LowMem.Text);
+            UInt32 HighMemSet = (uint)Convert.ToInt32(HighMem.Text);
+            UInt32[] Memory = { LowMemSet, HighMemSet };
+            return Memory;
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void LowMemChanges(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelhimem_Click(object sender, EventArgs e)
         {
 
         }

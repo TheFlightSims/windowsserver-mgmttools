@@ -22,7 +22,6 @@
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.其它toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GCCTtoolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.removegpupass = new System.Windows.Forms.ToolStripMenuItem();
             this.changeMemoryLocationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.添加设备ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,7 +79,6 @@
             // 
             this.其它toolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GCCTtoolStripMenuItem,
-            this.removegpupass,
             this.changeMemoryLocationToolStripMenuItem});
             this.其它toolStripMenuItem.Name = "其它toolStripMenuItem";
             resources.ApplyResources(this.其它toolStripMenuItem, "其它toolStripMenuItem");
@@ -93,12 +91,6 @@
             this.GCCTtoolStripMenuItem.Name = "GCCTtoolStripMenuItem";
             resources.ApplyResources(this.GCCTtoolStripMenuItem, "GCCTtoolStripMenuItem");
             this.GCCTtoolStripMenuItem.Click += new System.EventHandler(this.GCCTtoolStripMenuItem_Click);
-            // 
-            // removegpupass
-            // 
-            this.removegpupass.Name = "removegpupass";
-            resources.ApplyResources(this.removegpupass, "removegpupass");
-            this.removegpupass.Click += new System.EventHandler(this.removegpupass_Click);
             // 
             // changeMemoryLocationToolStripMenuItem
             // 
@@ -171,7 +163,6 @@
         private System.Windows.Forms.ToolStripMenuItem 复制地址toolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 其它toolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem GCCTtoolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem removegpupass;
         private System.Windows.Forms.ToolStripMenuItem changeMemoryLocationToolStripMenuItem;
     }
 }

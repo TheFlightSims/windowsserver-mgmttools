@@ -166,19 +166,13 @@
     <value>21, 18</value>
   </metadata>
   <data name="GCCTtoolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 22</value>
+    <value>222, 22</value>
   </data>
   <data name="GCCTtoolStripMenuItem.Text" xml:space="preserve">
     <value>GuestControlledCacheTypes</value>
   </data>
-  <data name="removegpupass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 22</value>
-  </data>
-  <data name="removegpupass.Text" xml:space="preserve">
-    <value>Remove GPU Passed through</value>
-  </data>
   <data name="changeMemoryLocationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 22</value>
+    <value>222, 22</value>
   </data>
   <data name="changeMemoryLocationToolStripMenuItem.Text" xml:space="preserve">
     <value>Change Memory Location</value>
@@ -220,7 +214,7 @@
     <value>Refresh</value>
   </data>
   <data name="contextMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 148</value>
+    <value>183, 126</value>
   </data>
   <data name="&gt;&gt;contextMenuStrip.Name" xml:space="preserve">
     <value>contextMenuStrip</value>
@@ -636,12 +630,6 @@
     <value>GCCTtoolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;GCCTtoolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;removegpupass.Name" xml:space="preserve">
-    <value>removegpupass</value>
-  </data>
-  <data name="&gt;&gt;removegpupass.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;changeMemoryLocationToolStripMenuItem.Name" xml:space="preserve">

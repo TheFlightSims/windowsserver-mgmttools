@@ -1,6 +1,7 @@
 ﻿using Microsoft.HyperV.PowerShell;
 using Microsoft.Management.Infrastructure;
 using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Management.Automation;
@@ -101,9 +102,9 @@ namespace DiscreteDeviceAssigner
             }
         }
 
-        public static void SetLowMemoryMappedIoSpace(VirtualMachine vm)
+        public static void SetLowMemoryMappedIoSpace(VirtualMachine vm, uint bytes)
         {
-            RunScript("Set-VM \"" + vm.Name + "\" -LowMemoryMappedIoSpace " + Convert.ToInt32("512") * 1024 * 1024);
+            RunScript("Set-VM \"" + vm.Name + "\" -LowMemoryMappedIoSpace " + bytes);
         }
 
         public static void SetHighMemoryMappedIoSpace(VirtualMachine vm, uint bytes)
