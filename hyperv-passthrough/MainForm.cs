@@ -1,12 +1,12 @@
-﻿using Microsoft.Management.Infrastructure;
+﻿using HyperVpassthroughdev;
+using Microsoft.Management.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DeviceData = System.Tuple<Microsoft.HyperV.PowerShell.VirtualMachine, Microsoft.HyperV.PowerShell.VMAssignedDevice>;
-using HyperVpassthroughdev;
 
-namespace DiscreteDeviceAssigner
+namespace HyperVPassthoughDevice
 {
     public partial class MainForm : Form
     {
@@ -139,7 +139,8 @@ namespace DiscreteDeviceAssigner
 
         private void 移除设备ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            try {  
+            try
+            {
                 DeviceData data = contextMenuStrip.Tag as DeviceData;
                 if (MessageBox.Show("Perform removal device " + data.Item2.Name + " from " + data.Item1.Name, "Confirm?", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
@@ -154,8 +155,9 @@ namespace DiscreteDeviceAssigner
                     UpdateVM();
                 }
             }
-            catch (Exception ex) {
-                MessageBox.Show($"The specific VM has no device selected, nor the error has occured. \nError:" + ex.Message, $"Message", MessageBoxButtons.OK, MessageBoxIcon.Error); 
+            catch (Exception ex)
+            {
+                MessageBox.Show($"The specific VM has no device selected, nor the error has occured. \nError:" + ex.Message, $"Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -186,6 +188,48 @@ namespace DiscreteDeviceAssigner
             }
         }
 
+        private void memchangeloc(object sender, EventArgs e)
+        {
+            DeviceData data = contextMenuStrip.Tag as DeviceData;
+            try
+            {
+                UInt32[] LowHighCollection = new SetMemory().ReturnResult();
+                UInt32 MemorySetLow = LowHighCollection[0];
+                UInt32 MemorySetHigh = LowHighCollection[1];
+                PowerShellWrapper.SetLowMemoryMappedIoSpace(data.Item1, MemorySetLow * 1024 * 1024);
+                PowerShellWrapper.SetHighMemoryMappedIoSpace(data.Item1, MemorySetHigh * 1024 * 1024);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+            }
+
+        }
+
+        private void RemoveAllDev(object sender, EventArgs e)
+        {
+            if (MessageBox.Show($"This will stop all virtual machines and perform the removal of all assigned device.\nContinue?", $"Warning", MessageBoxButtons.YesNoCancel) == DialogResult.Yes)
+            {
+                try
+                {
+                    PowerShellWrapper.StartRemovalAssignedDevices();
+                    UpdateVM();
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show($"An error has occured:\n\n" + exception, $"Error", MessageBoxButtons.OK);
+                }
+            }
+        }
+
+        private void CheckAssignableDevice(object sender, EventArgs e)
+        {
+            new DisplayAssignableDevices();
+        }
+
+        /*
+         * Security functions
+         */
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -196,26 +240,8 @@ namespace DiscreteDeviceAssigner
 
         }
 
-        private void removegpupass_Click(object sender, EventArgs e)
+        private void contextMenuStrip_Opening(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            DeviceData data = contextMenuStrip.Tag as DeviceData;
-            PowerShellWrapper.RemoveGpuPartitioning(data.Item1);
-        }
-
-        private void memchangeloc(object sender, EventArgs e)
-        {
-            DeviceData data = contextMenuStrip.Tag as DeviceData;
-            try {
-                UInt32[] LowHighCollection = new SetMemory().ReturnResult();
-                UInt32 MemorySetLow = LowHighCollection[0];
-                UInt32 MemorySetHigh = LowHighCollection[1];
-                PowerShellWrapper.SetLowMemoryMappedIoSpace(data.Item1, MemorySetLow * 1024 * 1024);
-                PowerShellWrapper.SetHighMemoryMappedIoSpace(data.Item1, MemorySetHigh * 1024 * 1024);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message,"Error", MessageBoxButtons.OK);
-            }
 
         }
     }

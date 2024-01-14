@@ -1,4 +1,4 @@
-﻿namespace DiscreteDeviceAssigner
+﻿namespace HyperVPassthoughDevice
 {
     partial class MainForm
     {
@@ -29,6 +29,8 @@
             this.复制地址toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.刷新列表toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeAllAssignedDevicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkAssignableDevicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,9 +73,12 @@
             this.移除设备ToolStripMenuItem,
             this.复制地址toolStripMenuItem,
             this.toolStripSeparator1,
-            this.刷新列表toolStripMenuItem});
+            this.刷新列表toolStripMenuItem,
+            this.removeAllAssignedDevicesToolStripMenuItem,
+            this.checkAssignableDevicesToolStripMenuItem});
             this.contextMenuStrip.Name = "contextMenuStrip";
             resources.ApplyResources(this.contextMenuStrip, "contextMenuStrip");
+            this.contextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip_Opening);
             // 
             // 其它toolStripMenuItem
             // 
@@ -132,6 +137,18 @@
             resources.ApplyResources(this.刷新列表toolStripMenuItem, "刷新列表toolStripMenuItem");
             this.刷新列表toolStripMenuItem.Click += new System.EventHandler(this.刷新列表ToolStripMenuItem_Click);
             // 
+            // removeAllAssignedDevicesToolStripMenuItem
+            // 
+            this.removeAllAssignedDevicesToolStripMenuItem.Name = "removeAllAssignedDevicesToolStripMenuItem";
+            resources.ApplyResources(this.removeAllAssignedDevicesToolStripMenuItem, "removeAllAssignedDevicesToolStripMenuItem");
+            this.removeAllAssignedDevicesToolStripMenuItem.Click += new System.EventHandler(this.RemoveAllDev);
+            // 
+            // checkAssignableDevicesToolStripMenuItem
+            // 
+            this.checkAssignableDevicesToolStripMenuItem.Name = "checkAssignableDevicesToolStripMenuItem";
+            resources.ApplyResources(this.checkAssignableDevicesToolStripMenuItem, "checkAssignableDevicesToolStripMenuItem");
+            this.checkAssignableDevicesToolStripMenuItem.Click += new System.EventHandler(this.CheckAssignableDevice);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -164,6 +181,8 @@
         private System.Windows.Forms.ToolStripMenuItem 其它toolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem GCCTtoolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changeMemoryLocationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem removeAllAssignedDevicesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem checkAssignableDevicesToolStripMenuItem;
     }
 }
 

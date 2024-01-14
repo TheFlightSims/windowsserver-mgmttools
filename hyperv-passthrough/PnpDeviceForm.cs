@@ -3,7 +3,7 @@ using System;
 using System.Collections.ObjectModel;
 using System.Windows.Forms;
 
-namespace DiscreteDeviceAssigner
+namespace HyperVPassthoughDevice
 {
     public partial class PnpDeviceForm : Form
     {

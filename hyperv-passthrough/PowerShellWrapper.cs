@@ -1,14 +1,14 @@
 ﻿using Microsoft.HyperV.PowerShell;
 using Microsoft.Management.Infrastructure;
 using System;
-using System.CodeDom;
+using System.Text;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Management.Automation;
 using System.Management.Automation.Runspaces;
 using System.Windows.Forms;
 
-namespace DiscreteDeviceAssigner
+namespace HyperVPassthoughDevice
 {
     class PowerShellWrapper
     {
@@ -131,13 +131,14 @@ namespace DiscreteDeviceAssigner
         {
             string DeviceIDInstance = device.CimInstanceProperties["DeviceId"] != null ? device.CimInstanceProperties["DeviceId"].Value as string : null;
             var locationPath = GetPnpDeviceLocationPath(DeviceIDInstance)[0];
-            
+
             //securing devices from crashing
-            try 
+            try
             {
                 RunScript("Set-VM -Name \"" + vm.Name + "\" -AutomaticStopAction TurnOff");
                 RunScript("Set-VM -GuestControlledCacheTypes $true -VMName \"" + vm.Name + "\""); //Needed
-            } catch 
+            }
+            catch
             {
                 MessageBox.Show($"Setting VM is failed, failing the application"); //Securing the devices
                 throw new InvalidOperationException("Operation failed! Raise function GpuPartitioning (line 143), with the debug DeviceIDInstance: " + DeviceIDInstance);
@@ -148,7 +149,8 @@ namespace DiscreteDeviceAssigner
                 RunScript("Disable-PnpDevice -InstanceId \"" + DeviceIDInstance + "\" -Confirm:$false");
                 RunScript("Dismount-VMHostAssignableDevice -Force -LocationPath \"" + locationPath + "\"");
                 RunScript("Add-VMAssignableDevice -LocationPath \"" + locationPath + "\" -VMName \"" + vm.Name + "\"");
-            } catch
+            }
+            catch
             {
                 MessageBox.Show($"Disable device is failed, failing the application"); //Securing the devices and VMs
                 throw new InvalidOperationException("Operation failed! Raise function GpuPartitioning (line 154), with the debug locationPath: " + locationPath);
@@ -205,9 +207,14 @@ namespace DiscreteDeviceAssigner
             RunScript("Add-VMAssignableDevice -LocationPath \"" + locationPaths[0] + "\" -VMName \"" + vm.Name + "\"");
         }
 
-        internal static void GpuPartitioning(VirtualMachine item1, VMAssignedDevice item2)
+        public static void StartRemovalAssignedDevices()
         {
-            throw new NotImplementedException();
+            Collection<PSObject> HostDevicesAssigned = RunScript("Get-VMHostAssignableDevice | Select-Object -ExpandProperty LocationPath");
+            foreach (PSObject obj in HostDevicesAssigned)
+            {
+                //MessageBox.Show("Device: " + obj.ToString(), $"Notification", MessageBoxButtons.OK);
+                RunScript("Mount-VMHostAssignableDevice -LocationPath \"" + obj.ToString() + "\"");
+            }
         }
     }
 }
