@@ -136,13 +136,11 @@ namespace DiscreteDeviceAssigner
             try 
             {
                 RunScript("Set-VM -Name \"" + vm.Name + "\" -AutomaticStopAction TurnOff");
-                RunScript("Set-VM -GuestControlledCacheTypes $true -VMName \"" + vm.Name + "\"");
-                RunScript("Set-VM -LowMemoryMappedIoSpace 3Gb -VMName \"" + vm.Name + "\"");
-                RunScript("Set-VM -HighMemoryMappedIoSpace 33280Mb -VMName \"" + vm.Name + "\"");
+                RunScript("Set-VM -GuestControlledCacheTypes $true -VMName \"" + vm.Name + "\""); //Needed
             } catch 
             {
                 MessageBox.Show($"Setting VM is failed, failing the application"); //Securing the devices
-                throw new InvalidOperationException("Operation failed! Raise function GpuPartitioning (line 129), with the debug DeviceIDInstance: " + DeviceIDInstance);
+                throw new InvalidOperationException("Operation failed! Raise function GpuPartitioning (line 143), with the debug DeviceIDInstance: " + DeviceIDInstance);
             }
 
             try
@@ -153,7 +151,7 @@ namespace DiscreteDeviceAssigner
             } catch
             {
                 MessageBox.Show($"Disable device is failed, failing the application"); //Securing the devices and VMs
-                throw new InvalidOperationException("Operation failed! Raise function GpuPartitioning (line 129), with the debug locationPath: " + locationPath);
+                throw new InvalidOperationException("Operation failed! Raise function GpuPartitioning (line 154), with the debug locationPath: " + locationPath);
             }
         }
 
