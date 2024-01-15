@@ -4,11 +4,10 @@
 
 ***This repository presents to you a collection of server management tools for various purposes:***
 
-- *Clean up temporary NVIDIA GPU drivers*
-- *Remote install for MSI installer*
-- *Passthrough physical device into the virtual machine*
-- *Activation services for the server*
-- *Manage updates for servers and clients*
+* *Checking Group Policy vulnerabilities*
+* *Passthrough physical device into the virtual machine*
+* *Activation services for the server*
+* *Scanning open ports on the target*
 
 For better understanding, you can see the [wiki page](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki).
 
