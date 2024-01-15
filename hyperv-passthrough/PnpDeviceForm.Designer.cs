@@ -1,4 +1,4 @@
-﻿namespace DiscreteDeviceAssigner
+﻿namespace HyperVPassthoughDevice
 {
     partial class PnpDeviceForm
     {

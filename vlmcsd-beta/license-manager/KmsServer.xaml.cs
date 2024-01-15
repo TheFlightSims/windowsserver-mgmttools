@@ -100,9 +100,6 @@ namespace HGM.Hotbird64.LicenseManager
 
                 Dispatcher.InvokeAsync(() =>
                 {
-#if DEBUG
-                    Debug.Assert(UseTap.IsChecked != null, "UseTap.IsChecked != null");
-#endif // DEBUG
 
                     ButtonStartStop.Content = (value ? "Stop" : "Start") + " Server";
                     TextBoxPort.IsEnabled = !value;
@@ -431,52 +428,11 @@ namespace HGM.Hotbird64.LicenseManager
                 }
 
                 IsRunning = true;
-
                 KmsLists.LoadDatabase();
-#if DEBUG
-                Debug.Assert(CheckBoxPreCharge.IsChecked != null, "CheckBoxPreCharge.IsChecked != null");
-#endif
                 foreach (AppItem appItem in KmsLists.AppItemList)
                 {
                     appItem.PreCharge(CheckBoxPreCharge.IsChecked.Value);
                 }
-                //if
-                //(
-                //    !string.IsNullOrWhiteSpace(TextBoxWindowsPid.Text) &&
-                //    !string.IsNullOrWhiteSpace(TextBoxOffice2010Pid.Text) &&
-                //    !string.IsNullOrWhiteSpace(TextBoxOffice2013Pid.Text) &&
-                //    !string.IsNullOrWhiteSpace(TextBoxOffice2016Pid.Text) &&
-                //    !string.IsNullOrWhiteSpace(TextBoxWindowsChinaGovPid.Text)
-                //)
-                //{
-                //    var winEpid = new EPid(TextBoxWindowsPid.Text);
-                //    var o2010Epid = new EPid(TextBoxOffice2010Pid.Text);
-                //    var o2013Epid = new EPid(TextBoxOffice2013Pid.Text);
-                //    var o2016Epid = new EPid(TextBoxOffice2016Pid.Text);
-                //    var winChinaGovEpid = new EPid(TextBoxWindowsChinaGovPid.Text);
-
-                //    if
-                //    (
-                //        winEpid.LcidString != o2010Epid.LcidString ||
-                //        o2010Epid.LcidString != o2013Epid.LcidString ||
-                //        o2013Epid.LcidString != o2016Epid.LcidString ||
-                //        o2016Epid.LcidString != winChinaGovEpid.LcidString
-                //    )
-                //    {
-                //        TextBoxInfoText.AppendText($"{nl}Warning: LCIDs of all EPIDs must be the same.");
-                //    }
-                //    if
-                //    (
-                //        winEpid.OsBuildString != o2010Epid.OsBuildString ||
-                //        o2010Epid.OsBuildString != o2013Epid.OsBuildString ||
-                //        o2013Epid.OsBuildString != o2016Epid.OsBuildString ||
-                //        o2016Epid.OsBuildString != winChinaGovEpid.OsBuildString
-                //    )
-                //    {
-                //        TextBoxInfoText.AppendText($"{nl}Warning: OS build numbers of all EPIDs must be the same.");
-                //    }
-                //}
-
                 new Thread(KmsServerThread).Start();
             }
             else
@@ -516,11 +472,6 @@ namespace HGM.Hotbird64.LicenseManager
         private void UseTap_Click(object sender, RoutedEventArgs e)
         {
             CheckBox checkBox = (CheckBox)sender;
-
-#if DEBUG
-            Debug.Assert(checkBox.IsChecked != null, "checkBox.IsChecked != null");
-#endif // DEBUG
-
             TextBoxTapIp.Visibility = ComboBoxTap.Visibility = checkBox.IsChecked.Value ? Visibility.Visible : Visibility.Collapsed;
         }
 

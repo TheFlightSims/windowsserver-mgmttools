@@ -165,68 +165,74 @@
   <metadata name="contextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>21, 18</value>
   </metadata>
-  <data name="GCCTtoolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 22</value>
-  </data>
-  <data name="GCCTtoolStripMenuItem.Text" xml:space="preserve">
-    <value>GuestControlledCacheTypes</value>
-  </data>
-  <data name="removegpupass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 22</value>
-  </data>
-  <data name="removegpupass.Text" xml:space="preserve">
-    <value>Remove GPU Passed through</value>
-  </data>
-  <data name="changeMemoryLocationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 22</value>
-  </data>
-  <data name="changeMemoryLocationToolStripMenuItem.Text" xml:space="preserve">
-    <value>Change Memory Location</value>
-  </data>
   <data name="其它toolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 22</value>
+    <value>228, 22</value>
   </data>
   <data name="其它toolStripMenuItem.Text" xml:space="preserve">
     <value>Other settings</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 6</value>
+    <value>225, 6</value>
   </data>
   <data name="添加设备ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 22</value>
+    <value>228, 22</value>
   </data>
   <data name="添加设备ToolStripMenuItem.Text" xml:space="preserve">
     <value>Add device</value>
   </data>
   <data name="移除设备ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 22</value>
+    <value>228, 22</value>
   </data>
   <data name="移除设备ToolStripMenuItem.Text" xml:space="preserve">
     <value>Remove device</value>
   </data>
   <data name="复制地址toolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 22</value>
+    <value>228, 22</value>
   </data>
   <data name="复制地址toolStripMenuItem.Text" xml:space="preserve">
     <value>Copy device address</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 6</value>
+    <value>225, 6</value>
   </data>
   <data name="刷新列表toolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 22</value>
+    <value>228, 22</value>
   </data>
   <data name="刷新列表toolStripMenuItem.Text" xml:space="preserve">
     <value>Refresh</value>
   </data>
+  <data name="removeAllAssignedDevicesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 22</value>
+  </data>
+  <data name="removeAllAssignedDevicesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Remove All Assigned Devices</value>
+  </data>
+  <data name="checkAssignableDevicesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 22</value>
+  </data>
+  <data name="checkAssignableDevicesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Check Assignable Devices</value>
+  </data>
   <data name="contextMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 148</value>
+    <value>229, 192</value>
   </data>
   <data name="&gt;&gt;contextMenuStrip.Name" xml:space="preserve">
     <value>contextMenuStrip</value>
   </data>
   <data name="&gt;&gt;contextMenuStrip.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GCCTtoolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 22</value>
+  </data>
+  <data name="GCCTtoolStripMenuItem.Text" xml:space="preserve">
+    <value>GuestControlledCacheTypes</value>
+  </data>
+  <data name="changeMemoryLocationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 22</value>
+  </data>
+  <data name="changeMemoryLocationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Change Memory Location</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -638,12 +644,6 @@
   <data name="&gt;&gt;GCCTtoolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;removegpupass.Name" xml:space="preserve">
-    <value>removegpupass</value>
-  </data>
-  <data name="&gt;&gt;removegpupass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;changeMemoryLocationToolStripMenuItem.Name" xml:space="preserve">
     <value>changeMemoryLocationToolStripMenuItem</value>
   </data>
@@ -684,6 +684,18 @@
     <value>刷新列表toolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;刷新列表toolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removeAllAssignedDevicesToolStripMenuItem.Name" xml:space="preserve">
+    <value>removeAllAssignedDevicesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;removeAllAssignedDevicesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkAssignableDevicesToolStripMenuItem.Name" xml:space="preserve">
+    <value>checkAssignableDevicesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;checkAssignableDevicesToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
