@@ -1,6 +1,7 @@
 ﻿using Microsoft.HyperV.PowerShell;
 using Microsoft.Management.Infrastructure;
 using System;
+using System.Text;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Management.Automation;
