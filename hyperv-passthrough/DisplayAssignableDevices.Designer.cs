@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisplayAssignableDevices));
             this.CloseButton = new System.Windows.Forms.Button();
-            this.TopLabel = new System.Windows.Forms.Label();
             this.start = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
@@ -45,15 +44,6 @@
             this.CloseButton.UseVisualStyleBackColor = true;
             this.CloseButton.Click += new System.EventHandler(this.CloseDiaglog);
             // 
-            // TopLabel
-            // 
-            this.TopLabel.AutoSize = true;
-            this.TopLabel.Location = new System.Drawing.Point(13, 13);
-            this.TopLabel.Name = "TopLabel";
-            this.TopLabel.Size = new System.Drawing.Size(265, 13);
-            this.TopLabel.TabIndex = 2;
-            this.TopLabel.Text = "Checking assignable devices on your Hyper-V server...";
-            // 
             // start
             // 
             this.start.Location = new System.Drawing.Point(397, 346);
@@ -66,9 +56,9 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 37);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(568, 303);
+            this.richTextBox1.Size = new System.Drawing.Size(568, 328);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             this.richTextBox1.WordWrap = false;
@@ -79,7 +69,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(592, 381);
             this.Controls.Add(this.start);
-            this.Controls.Add(this.TopLabel);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.CloseButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -87,14 +76,12 @@
             this.Name = "DisplayAssignableDevices";
             this.Text = "Display Assignable Devices";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button CloseButton;
-        private System.Windows.Forms.Label TopLabel;
         private System.Windows.Forms.Button start;
         private System.Windows.Forms.RichTextBox richTextBox1;
     }
