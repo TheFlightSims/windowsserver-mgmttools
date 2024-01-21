@@ -2,6 +2,9 @@
 
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/TheFlightSims/windowsserver-mgmttools/total)
 ![Docker Tracker](https://img.shields.io/docker/pulls/theflightsims/vlmcsd)
+![GitHub language count](https://img.shields.io/github/languages/count/TheFlightSims/windowsserver-mgmttools)
+![GitHub repo size](https://img.shields.io/github/repo-size/TheFlightSims/windowsserver-mgmttools)
+![GitHub Repo stars](https://img.shields.io/github/stars/TheFlightSims/windowsserver-mgmttools)
 
 # The Repository
 
