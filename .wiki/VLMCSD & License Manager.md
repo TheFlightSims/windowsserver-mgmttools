@@ -1,6 +1,10 @@
 # VLMCSD & License Manager
 
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/TheFlightSims/windowsserver-mgmttools/total)
 ![Docker Tracker](https://img.shields.io/docker/pulls/theflightsims/vlmcsd)
+![GitHub language count](https://img.shields.io/github/languages/count/TheFlightSims/windowsserver-mgmttools)
+![GitHub repo size](https://img.shields.io/github/repo-size/TheFlightSims/windowsserver-mgmttools)
+![GitHub Repo stars](https://img.shields.io/github/stars/TheFlightSims/windowsserver-mgmttools)
 
 ***VLMCSD*** is a free, open-source software to provide an activation service (KMS) for any computer using Office and Windows products
 
