@@ -1,5 +1,8 @@
 ![Windows Server Management Tools* Banner](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/banner.png?raw=true)
 
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/TheFlightSims/windowsserver-mgmttools/total)
+![Docker Tracker](https://img.shields.io/docker/pulls/theflightsims/vlmcsd)
+
 # The Repository
 
 ***This repository presents to you a collection of server management tools for various purposes:***
