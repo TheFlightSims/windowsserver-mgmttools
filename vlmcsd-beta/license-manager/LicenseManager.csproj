@@ -492,9 +492,6 @@
     <Resource Include="Icons\16\size_vertical.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="KmsDataBase.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
