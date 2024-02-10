@@ -120,7 +120,8 @@ You can skip waiting for 5 seconds by pressing any other key. You also will see 
 
 The floppy image only provides basic Unix commands—type busybox or /bin to get a list. The only editor available is `vi`.  If you don't like `vi`,  you may transfer config files via FTP to edit them with the editor of your choice and transfer them back.
 
-**4. The menu system**
+#### 4. The menu system
+
 You may need some just-in-time commands by pressing `ALT-F8`.
 
 ```text
@@ -174,7 +175,7 @@ wsl --import <Your Distro Name> <Your installation directory> vlmcsd.tar
 
 ![image](https://user-images.githubusercontent.com/99700363/225810410-8003e36e-cb60-4c90-8e87-bce2586c53d3.png)
 
-Click on "Install a Generic Key", and select the key that you want to install. You can copy-n-paste the key, or click "Check" and then click "Install" on the Product Finder window.
+Click on **Install a Generic Key**, and select the key that you want to install. You can copy-n-paste the key, or click **Check** and then click **Install** on the Product Finder window.
 
 > For Microsoft Visual Studio, Microsoft SQL Server, and Microsoft SCCM, you need to copy-n-paste in the product key box. License Manager cannot install these keys on your machine
 
@@ -187,6 +188,7 @@ Click on "Install a Generic Key", and select the key that you want to install. Y
 You will need to determine which server responds to your request by entering the field Override KMS Host data with the IP Address or DNS Name, or you just need to determine the KMS Domain. Don't forget to save the settings!
 
 > Pro tip: if you use the Server edition, License Manager can verify whether the server can respond with your product activation in "Start a KMS Client"
+>
 >![image](https://user-images.githubusercontent.com/99700363/225837594-879e4761-0129-4dd4-af4f-75b0d81e4e4b.png)
 
 #### 4. Install or verify a product key
@@ -204,12 +206,10 @@ You can choose to Install it or Check the availability online.
 You can export to these specific files in License Manager:
 |Export format| File extension | Description |
 |--|--|--|
-| vlmcsd | .kmd | This format used by vlmcsd, as the external (add-on) database |
-| py-kms classic | .txt | This format used by py-kms (KMS for Python 2) |
-| Generic C/C++/C# | .txt | This format helps developers to modify the vlmcsd source code |
-| License Manager database, py-kms | .xml | This format used by License Manager
-
-> Unless you export the database for License Manager only, you MUST delete the Visual Studio keys, SQL Server keys, and SCCM keys because these are NOT KMS keys and cannot be activated as KMS protocols.
+| VLMCSD | `.kmd` | This format used by vlmcsd, as the external (add-on) database |
+| py-kms classic | `.txt` | This format used by py-kms (KMS for Python 2) |
+| Generic C/C++/C# | `.txt`, `.c`, `.cpp`, `.h`, `.hpp`, `.cs` | This format helps developers to modify the vlmcsd source code |
+| License Manager database, py-kms | `.xml` | This format used by License Manager
 
 ## Build VLMCSD, License Manager & Edit Database
 
@@ -220,7 +220,8 @@ You can export to these specific files in License Manager:
 ![image](https://user-images.githubusercontent.com/99700363/225601211-38d78847-3421-40d5-8bbb-1e4ad0d793c3.png)
 
 > If the VS 2022 selection isn't in Open With, you can add VS2022 within the Add Program
-![image](https://user-images.githubusercontent.com/99700363/225601991-c4a7b0a6-2fd2-4ce0-87cc-4ae7eeb091ca.png)
+>
+> ![image](https://user-images.githubusercontent.com/99700363/225601991-c4a7b0a6-2fd2-4ce0-87cc-4ae7eeb091ca.png)
 
 * 2. After opening this, you can build VLMCSD
 
@@ -278,7 +279,9 @@ After mounting the floppy disk, copy-n-paste the files you have already edited.
 * 1. Open  **winser-mgmttools.sln**, then click on  **LicenseManager.sln**  and open with Visual Studio
 ![image](https://user-images.githubusercontent.com/99700363/225634845-54651f8d-62da-4de1-a146-292722d64643.png)
 
-> If the VS 2022 selection isn't in Open With, you can add VS2022 within the Add Program![image](https://user-images.githubusercontent.com/99700363/225601991-c4a7b0a6-2fd2-4ce0-87cc-4ae7eeb091ca.png)
+> If the VS 2022 selection isn't in Open With, you can add VS2022 within the Add Program
+>
+> ![image](https://user-images.githubusercontent.com/99700363/225601991-c4a7b0a6-2fd2-4ce0-87cc-4ae7eeb091ca.png)
 
 * 2. After opening this, you can build License Manager
 
@@ -286,15 +289,15 @@ After mounting the floppy disk, copy-n-paste the files you have already edited.
 
 ### Build & Manage Database
 
-* [License Manager + VLMCSD database](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/vlmcsd-beta/database-config/license-manager)
+* License Manager database
 
-License Manager is a XML database, stores License Manager product keys and Windows versions. You can follow [this form](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/vlmcsd-beta/database-config/license-manager/KmsDataBase.xml) to know how to edit this.
+Since the [PR #37](https://github.com/TheFlightSims/windowsserver-mgmttools/pull/37), we have merged external LMDB within the application. That means, you're no longer can use external database.
 
-VLMCSD Service configuration (or known as [vlmcsd.ini](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/vlmcsd-beta/database-config/license-manager/vlmcsd.ini)) is as vlmcsd service configuration.
+* [VLMCSD database](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/vlmcsd-beta/database-config/vlmcsdb)
 
-VLMCSD Database (or known as [vlmcsd.kmd](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/vlmcsd-beta/database-config/license-manager/vlmcsd.kmd)) is the binary, external vlmcsd database. You can configure it in [vlmcsd.ini](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/vlmcsd-beta/database-config/license-manager/vlmcsd.ini), or you can use CLI.
+VLMCSD Service configuration (or known as [vlmcsd.ini](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/vlmcsd-beta/database-config/vlmcsdb/vlmcsd.ini)) is as vlmcsd service configuration.
 
-> In the vlmcsd.kmd, make sure that Microsoft Visual Studio, Microsoft SQL Server and Microsoft SCCM keys are not in vlmcsd.kmd because these are NOT KMS keys and cannot be activated as KMS protocols, and causes vlmcsd service crash to desktop (CTD).
+VLMCSD Database (or known as [vlmcsd.kmd](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/vlmcsd-beta/database-config/vlmcsdb/vlmcsd.kmd)) is the binary, external `vlmcsd` database. You can configure it in [vlmcsd.ini](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/vlmcsd-beta/database-config/vlmcsdb/vlmcsd.ini), or you can use on the command line interface.
 
 * [Product Key database on Microsoft SQL Server 2022](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/vlmcsd-beta/database-config/sql)
 
