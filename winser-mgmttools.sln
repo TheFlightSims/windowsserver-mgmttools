@@ -24,6 +24,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Group Policy Checker", "Gro
 		gpo-checker\GPOChecker.sln = gpo-checker\GPOChecker.sln
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PortProxyGUI", "PortProxyGUI", "{D504F783-3977-4ED3-B884-911EBBB7154A}"
+	ProjectSection(SolutionItems) = preProject
+		PortProxyGUI\PortProxyGUI.sln = PortProxyGUI\PortProxyGUI.sln
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

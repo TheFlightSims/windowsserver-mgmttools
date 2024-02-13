@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworks>net48</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Authors>Shiroi Neko (ft. zmjack)</Authors>
+    <Company>TheFlightSIms</Company>
+    <Description>A manager of the netsh interface portproxy which is to evaluate TCP/IP port redirect on Windows.</Description>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags></PackageTags>
+    <PackageLicenseFile></PackageLicenseFile>
+    <Copyright>Copyright © TheFlightSims</Copyright>
+    <Version>1.4.1</Version>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <ApplicationDefaultFont>Microsoft Sans Serif, 8pt</ApplicationDefaultFont>
+    <AssemblyName>PPGUI</AssemblyName>
+    <LangVersion>preview</LangVersion>
+    <Configurations>Release</Configurations>
+    <StartupObject>PortProxyGUI.Program</StartupObject>
+    <SignAssembly>False</SignAssembly>
+    <PackAsTool>False</PackAsTool>
+    <PackageOutputPath>..\!bin!\$(OutputPath)</PackageOutputPath>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+    <AnalysisLevel>latest-all</AnalysisLevel>
+    <BaseOutputPath>..\!bin!\PortProxyGUI</BaseOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net48|AnyCPU'">
+    <FileAlignment>512</FileAlignment>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SQLib.Sqlite" Version="0.11.0" />
+  </ItemGroup>
+
+</Project>
