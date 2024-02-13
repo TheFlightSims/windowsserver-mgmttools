@@ -1,6 +1,6 @@
 # PortProxyGUI
 
-PortProxyGUI is a port export and proxy director for Windows and Windows Server, especially for forwarding application and between web servers within the network, or LDAP.
+PortProxyGUI is a port export and proxy director for Windows and Windows Server, especially for forwarding applications and between web servers within the network, or LDAP.
 
 ## Contributors
 
@@ -17,9 +17,9 @@ PortProxyGUI is a port export and proxy director for Windows and Windows Server,
 
 ![alt text](images/ppg1.png)
 
-Once you're in, you  will see the main interface as shown above. Right-click for displaying and configuring your proxy settings
+Once you're in, you  will see the main interface as shown above. Right-click to display and configure your proxy settings
 
-* Click "New (N)" to add a new rule, then you can set the Rule Name, Listen on IP address with its port and forwarding port. After that click "Set", the application will make the proxy between the requested port and the real application port.
+* Click "New (N)" to add a new rule, then you can set the Rule Name and listen on the IP address with its port and forwarding port. After that click "Set", the application will make the proxy between the requested port and the real application port.
 
 ![alt text](images/ppg2.png)
 
@@ -27,6 +27,6 @@ Once you're in, you  will see the main interface as shown above. Right-click for
 
 ![alt text](images/pp3.png)
 
-Backing up and Restoring  rules are performed by exporting and importing `.db` files, which contain all the information about the connection and its port forwarding to.
+Backing up and Restoring  rules are performed by exporting and importing `.db` files, which contain all the information about the connection and port forwarding.
 
 ![alt text](images/ppg4.png)
