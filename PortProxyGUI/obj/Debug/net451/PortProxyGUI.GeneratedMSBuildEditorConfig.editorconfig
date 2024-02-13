@@ -1,0 +1,11 @@
+is_global = true
+build_property.ApplicationManifest = app.manifest
+build_property.StartupObject = 
+build_property.ApplicationDefaultFont = Microsoft Sans Serif, 8pt
+build_property.ApplicationHighDpiMode = 
+build_property.ApplicationUseCompatibleTextRendering = 
+build_property.ApplicationVisualStyles = 
+build_property.RootNamespace = PortProxyGUI
+build_property.ProjectDir = F:\source-code\org\windowsserver-mgmttools\PortProxyGUI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

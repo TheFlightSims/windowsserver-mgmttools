@@ -1,0 +1,54 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\source-code\\org\\windowsserver-mgmttools\\PortProxyGUI\\PortProxyGUI.csproj": {}
+  },
+  "projects": {
+    "F:\\source-code\\org\\windowsserver-mgmttools\\PortProxyGUI\\PortProxyGUI.csproj": {
+      "version": "1.4.1",
+      "restore": {
+        "projectUniqueName": "F:\\source-code\\org\\windowsserver-mgmttools\\PortProxyGUI\\PortProxyGUI.csproj",
+        "projectName": "PPGUI",
+        "projectPath": "F:\\source-code\\org\\windowsserver-mgmttools\\PortProxyGUI\\PortProxyGUI.csproj",
+        "packagesPath": "C:\\Users\\shiroinekotfs\\.nuget\\packages\\",
+        "outputPath": "F:\\source-code\\org\\windowsserver-mgmttools\\PortProxyGUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "C:\\Users\\shiroinekotfs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "SQLib.Sqlite": {
+              "target": "Package",
+              "version": "[0.11.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
