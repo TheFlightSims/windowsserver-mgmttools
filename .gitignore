@@ -1,10 +1,7 @@
 /.vs
 *.vs
 /!bin!
-*.csproj*
-*.sln
 *.suo
-*.vcsproj
 *.cache
 *.exe
 *.compressed
