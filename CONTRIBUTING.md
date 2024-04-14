@@ -9,8 +9,7 @@ To clone this project, you need to clone all its base and submodules, following 
 
 ```bash
 git clone https://github.com/TheFlightSims/windowsserver-mgmttools.git
-git submodule init
-git submodule update
+git submodule update --init --recursive
 ```
 
 ## Other ways to contribute
