@@ -5,7 +5,7 @@
 To fully edit this repository, run to download all layouts for Visual Studio 2022 that are located in **[!makevs!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!makevs!)**.
 Also, you may need [Advanced Installer](https://www.advancedinstaller.com/) to create an installer. These are all located in the folder [!bin!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!bin!) in each project.
 
-To clone this project, you need to clone all its base and submodules, following by these commands:
+To clone this project, you need to clone all its base and submodules, following these commands:
 
 ```bash
 git clone https://github.com/TheFlightSims/windowsserver-mgmttools.git
