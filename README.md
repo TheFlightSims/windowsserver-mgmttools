@@ -39,6 +39,14 @@ For better understanding, you can see the [wiki page](https://github.com/TheFlig
 To fully edit this repository, run to download all layouts for Visual Studio 2022 that are located in **[!makevs!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!makevs!)**.
 Also, you may need [Advanced Installer](https://www.advancedinstaller.com/) to create an installer. These are all located in the folder [!bin!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!bin!) in each project.
 
+To clone this project, you need to clone all its base and submodules, following by these commands:
+
+```bash
+git clone https://github.com/TheFlightSims/windowsserver-mgmttools.git
+git submodule init
+git submodule update
+```
+
 Otherwise, you can do other ways:
 
 * [Review Wiki Page](https://github.com/TheFlightSims/windowsserver-mgmttools/wiki)
@@ -61,13 +69,3 @@ This repo uses [**GNU GPL 3.0**](https://www.gnu.org/licenses/gpl-3.0.en.html) a
 * Use (for both private and commercial uses)
 * Modify (including edit the source files)
 * Distribution without permission directly from TheFlightSims, except emergency revokes permission. In that case, this repo will be moved to private and cannot be accessed by the public.
-
-### Original Contributors
-
-|Usage|Name|Contributors|Original path|
-|--|--|--|--|
-|VM Management|[Hyper-V Passthrough Device](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/hyperv-passthrough)|@[chanket](https://github.com/chanket), TheFlightSims staff|https://github.com/chanket/DDA|
-|Computer Management|[Port Scanner](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/port-scanner)|@[IceMoonHSV](https://github.com/IceMoonHSV), TheFlightSims staff|https://github.com/IceMoonHSV/PortScanner|
-|Volume Activation|[vlmcsd beta/License Manager](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/vlmcsd-beta)|@[Wind4](https://github.com/Wind4/vlmcsd), @[kkkgo](https://github.com/kkkgo), @[HarukaMa](https://github.com/HarukaMa), @[Hotbird64](https://forums.mydigitallife.net/members/hotbird64.333466/), @[Nang](https://jike.info/user/nang), TheFlightSims staff, @[Linus Torvalds](https://github.com/torvalds), Erik Andersen, Waldemar Brodkorb, Denys Vlasenko, H. Peter Anvin|https://github.com/kkkgo/vlmcsd|
-|Group Policy|[GPO Checker](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/gpo-checker)|@[georgeatgrayson](https://github.com/georgeatgrayson), TheFlightSims staff|https://github.com/georgeatgrayson/Windows-GPO-Security-Checker|
-|Port Management|[Port Proxy GUI](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/PortProxyGUI)|@[zmjack](https://github.com/zmjack), TheFlightSims staff|https://github.com/zmjack/PortProxyGUI|
