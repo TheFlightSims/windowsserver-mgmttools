@@ -1,4 +1,4 @@
-![Windows Server Management Tools Banner](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/banner.png?raw=true)
+![Windows Server Management Tools Banner](https://repository-images.githubusercontent.com/589945469/63740ef9-7624-4fbf-b1f6-6b7bd4905361)
 
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/TheFlightSims/windowsserver-mgmttools/total)
 ![Docker Tracker](https://img.shields.io/docker/pulls/theflightsims/vlmcsd)
