@@ -1,4 +1,4 @@
-![Windows Server Management Tools* Banner](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/banner.png?raw=true)
+![Windows Server Management Tools Banner](https://github.com/TheFlightSims/windowsserver-mgmttools/blob/master/banner.png?raw=true)
 
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/TheFlightSims/windowsserver-mgmttools/total)
 ![Docker Tracker](https://img.shields.io/docker/pulls/theflightsims/vlmcsd)
@@ -28,7 +28,7 @@ For better understanding, you can see the [wiki page](https://github.com/TheFlig
 
 ***The repo consists of three parts***
 
-* **[.makevs](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/.makevs):** Make Visual Studio offline layout. It is recommended to fully editing in this project.
+* **[.makevs](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/.makevs):** Make Visual Studio offline layout. It is recommended to fully edit this project.
 * **winser-mgmttools.sln:** solution files, contains all required paths for all projects.
 * **The rest of the files and folders:** Project files and folders.
 
@@ -39,7 +39,7 @@ For better understanding, you can see the [wiki page](https://github.com/TheFlig
 To fully edit this repository, run to download all layouts for Visual Studio 2022 that are located in **[!makevs!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!makevs!)**.
 Also, you may need [Advanced Installer](https://www.advancedinstaller.com/) to create an installer. These are all located in the folder [!bin!](https://github.com/TheFlightSims/windowsserver-mgmttools/tree/master/!bin!) in each project.
 
-To clone this project, you need to clone all its base and submodules, following by these commands:
+To clone this project, you need to clone all its base and submodules, following these commands:
 
 ```bash
 git clone https://github.com/TheFlightSims/windowsserver-mgmttools.git
@@ -57,14 +57,14 @@ Otherwise, you can do other ways:
 
 ### Feedback
 
-To feedback this repository, go to [**feedback**](https://github.com/TheFlightSims/windowsserver-mgmttools/issues)
+To feedback on this repository, go to [**feedback**](https://github.com/TheFlightSims/windowsserver-mgmttools/issues)
 
 ## License & Original Contributors
 
 ### License
 
-This repo uses [**GNU GPL 3.0**](https://www.gnu.org/licenses/gpl-3.0.en.html) and [**MIT License**](https://opensource.org/licenses/MIT) for all contributors to have free, no limit to
+This repo uses [**MIT License**](https://opensource.org/licenses/MIT) for all contributors to have free, no limit to
 
 * Use (for both private and commercial uses)
-* Modify (including edit the source files)
+* Modify (including editing the source files)
 * Distribution without permission directly from TheFlightSims, except emergency revokes permission. In that case, this repo will be moved to private and cannot be accessed by the public.
