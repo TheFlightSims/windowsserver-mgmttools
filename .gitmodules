@@ -1,24 +1,24 @@
 [submodule "gpo-checker"]
     path = gpo-checker
-    url = https://github.com/tfslabs/gpo-checker
+    url = https://github.com/tfslabs/gpo-checker.git
 [submodule "hyperv-passthrough"]
     path = hyperv-passthrough
-    url = https://github.com/tfslabs/hyperv-passthrough
+    url = https://github.com/tfslabs/hyperv-passthrough.git
 [submodule "port-scanner"]
     path = port-scanner
-    url = https://github.com/tfslabs/port-scanner
+    url = https://github.com/tfslabs/port-scanner.git
 [submodule "PortProxyGUI"]
     path = PortProxyGUI
-    url = https://github.com/tfslabs/PortProxyGUI
+    url = https://github.com/tfslabs/PortProxyGUI.git
 [submodule "license-manager"]
     path = vlmcsd-repos/license-manager
-    url = https://github.com/tfslabs/license-manager
+    url = https://github.com/tfslabs/license-manager.git
 [submodule "vlmcsd-db"]
     path = vlmcsd-repos/vlmcsd-db
-    url = https://github.com/tfslabs/vlmcsd-db
+    url = https://github.com/tfslabs/vlmcsd-db.git
 [submodule "vlmcsd-quick-deployments"]
     path = vlmcsd-repos/vlmcsd-quick-deployments
-    url = https://github.com/tfslabs/vlmcsd-quick-deployments
+    url = https://github.com/tfslabs/vlmcsd-quick-deployments.git
 [submodule "vlmcsd"]
     path = vlmcsd-repos/vlmcsd
-    url = https://github.com/tfslabs/vlmcsd
+    url = https://github.com/tfslabs/vlmcsd.git
