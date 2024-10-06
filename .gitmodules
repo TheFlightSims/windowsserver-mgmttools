@@ -1,6 +1,3 @@
-[submodule "gpo-checker"]
-    path = gpo-checker
-    url = https://github.com/tfslabs/gpo-checker.git
 [submodule "hyperv-passthrough"]
     path = hyperv-passthrough
     url = https://github.com/tfslabs/hyperv-passthrough.git
